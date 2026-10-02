@@ -289,3 +289,5 @@ risk what you carry; fight beside your pair; listen to a living world; and
 remember the planet's story, season after season.
 
 Everything in the other chapters exists to serve the vision set out here.
+
+When in doubt about any feature, return to the four pillars and the five promises.

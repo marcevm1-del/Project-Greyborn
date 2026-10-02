@@ -144,3 +144,119 @@ Heartwood in the south. Any final chapter of Greyborn's story, years from now,
 will most likely bring the two poles together: a journey to the First Root, a
 journey into the Seed, or the moment the planet's heart and the Murmur's heart
 finally meet. What happens then is for the director to decide.
+
+## Life at the poles
+
+| | The Heartwood | The Starwound |
+|---|---|---|
+| **Creatures** | Heartwood Elk, Amber Beetles, Mossback herds, Greymother (Old One), Lumen Bees | Hushed Answers, Blighted creatures frozen in glass, Glass Weavers, Lattice Fawns (Season 5) |
+| **Plants** | Heartwood Giants, Heartmoss, Heartbloom, Sapbloom | Lattice Vines, glass versions of everything, the Glass Flower's kin |
+| **Sound** | A deep, slow heartbeat; soft birdsong; the First Root's hum | Whispers in harmony; spires humming; the Seed's pulse |
+| **Light** | Warm amber shafts through mist | Cold cyan-violet waves through crystal |
+| **Weather** | Sap Rain, gentle mist | Shard Storm, never anything else |
+
+## The poles through the seasons
+
+| Season | The Heartwood | The Starwound |
+|---|---|---|
+| 1 | Untouched | The Glass Range leaves the Hushed Watch |
+| 2 | Calm | The Murmur's attention turns to the Rimewastes |
+| 3 | The planet's heartbeat quickens at the red streak | The spires go dark at the red streak |
+| 4 | The First Root pulses toward the north, toward the Glass Flower | The Seed hums a new tone |
+| 5 | The planet creates new life in its groves | Glass Gardens spread from the rim |
+| 6 | The heartbeat races in Rime; the planet wakes early | The Lattice Sea shakes with the Roaring |
+| 7 | Heat reaches the Heartwood's edges in the Fever, but nothing there burns | The spires go cold and silent |
+
+## Beneath the First Root: possible answers
+
+The story keeps this unresolved ([35](35-heart-and-seed.md#the-heartwood-layers-inward)). Possible answers, for the director when the time comes:
+
+1. **The planet's oldest memory:** the moment it first became aware.
+2. **Where the Kith are first imagined:** the source of every birth-node.
+3. **A second Sleeper:** another answer the planet has hidden.
+4. **Nothing:** the root goes down forever, and that is the planet's mind: an endless depth.
+
+## Inside the Seed: possible answers
+
+1. **A last piece of the Quiet World:** a fragment of crystal from the Murmur's home, still glowing with its blue sun.
+2. **The Murmur's original mind:** the part of it that fled, small and frightened, at the centre of everything it has become.
+3. **A message:** something the Murmur carried for someone, or something, it lost.
+4. **The Clamor's mark:** a scorch from the Roaring, proof of what it fled.
+
+## How the poles could host the story's ending
+
+Three sketches, none committed:
+
+- **The Meeting:** the planet's root and the Murmur's crystal grow toward each
+  other across the whole Greyreach, meeting halfway at the Last Braid.
+- **The Descent:** broods of both sides descend together into the Seed, and
+  find the Murmur's oldest self, alone.
+- **The Pilgrimage:** a Hushed Kith walks, alone and unharmed, all the way
+  south to the First Root, and the planet lets it touch the root.
+
+## Art and sound per layer
+
+| Layer | Key art note | Key sound note |
+|---|---|---|
+| Old Edge | Scale: trees too tall to see the tops | A hum under everything |
+| Amber Lakes | Perfect reflections | Softness: every sound muffled |
+| Root Hills | Warm, skin-like bark | The bark's slow movement creaking |
+| Listening Grove | Trees caught mid-turn | Silence, then a creak as they turn |
+| First Root | A pulse of amber light inside the bark | A heartbeat |
+| Glass Rim | Creatures frozen mid-step | Whispers everywhere |
+| Stair of Shards | Giant glass steps, howling storms | Wind through glass |
+| Hushed Watch | Six vast still shapes | Total silence |
+| Lattice Sea | Light moving like thought | Spires humming in unison |
+| The Seed | A warm stone glowing at the centre | Whispers falling silent, then one pulse |
+
+## Why the poles stay unplayable (for now)
+
+The Heartwood and the Starwound are the two most powerful places in the
+world. Keeping them out of regular play does three things:
+
+1. **It protects the mirror.** Each pole favours one side by its nature
+   (Blight can't grow in one; roots can't hold in the other). No fair PvP map could be set there.
+2. **It keeps them special.** A place players can only glimpse on the horizon
+   stays mysterious. The first time they set foot there should be an event.
+3. **It saves them for the story.** The ending of Greyborn's war, whenever it
+   comes, will most likely happen at one of the poles, or between them.
+
+## Glimpses players already get
+
+- **The southern glow** on the horizon at night, over the Heartwood.
+- **The northern pulse** over the Starwound.
+- **The Heartwood Elk** in groves, the planet's messenger.
+- **The Hushed Answers**, walking out of the Starwound (the Glass Range in Season 1).
+- **Memories** of the First Root and the Seed.
+- **The Den's sky**, where both glows can be seen through the crack in the roof on clear nights.
+
+## Proposed first visits
+
+| Pole | First visit idea | When |
+|---|---|---|
+| The Starwound | **The Hushed Watch** co-op mode: facing all six Hushed Answers ([40](40-hushed-answers.md#the-six-together)) | A future season's finale |
+| The Heartwood | **The Pilgrimage**: a gentle co-op journey with a Heartwood Elk calf ([27](27-modes.md#future-mode-ideas)) | A Bloom season |
+| Both | **The Meeting**: the story's final act | Years in, the director's decision |
+
+## The poles in one image each
+
+- **The Heartwood:** a single root as wide as a mountain, glowing amber from inside, plunging into darkness.
+- **The Starwound:** a warm stone at the centre of a crystal sea, pulsing, alone.
+
+## Rules for anyone writing about the poles
+
+1. **Never show the bottom of the First Root** or **the inside of the Seed**
+   until the director decides what's there.
+2. **Never let either pole be captured, damaged or changed** by ordinary
+   seasons. They change only in the ways listed in this chapter.
+3. **Keep the mirror:** whatever the Heartwood gains in a season, the Starwound
+   gains something of equal weight, and vice versa.
+4. **Keep them quiet:** the poles are the calmest places in the world, the
+   Heartwood in its warmth and the Starwound in its stillness. Noise belongs to the war in between.
+
+## The two poles and the players
+
+Most players will never walk in either place. But every player should know
+where they are, feel them on the horizon, and wonder what lies at their
+centres. That wondering is part of what keeps the world larger than any match,
+and it's what will make the first real visit, whenever it comes, unforgettable.
