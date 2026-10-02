@@ -40,6 +40,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 20 | [Season 1: The Hush Wakes](gdd/20-season-1.md) | Fronts, community goals, weekly beats, results, and the Glass Range finale mode |
 | 21 | [Season 2: The Sleeper Stirs](gdd/21-season-2.md) | The Waking finale and the seventh lineage, Stillheart, the universal partner |
 | 22 | [Season 3: The Second Light](gdd/22-season-3.md) | The Clamor, a rival hive mind; Landfall events; the Second Stone finale |
+| 23 | [Art Direction](gdd/23-art-direction.md) | Style pillars, palette, region looks, the sky, key art briefs, UI |
+| 24 | [The Three Minds](gdd/24-the-three-minds.md) | How the planet, the Murmur and the Clamor think, and the rules for writing them |
 
 ## Superseded material
 

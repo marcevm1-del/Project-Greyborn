@@ -41,6 +41,9 @@ Please confirm or override:
 | 35 | Stillheart **Attunement** (a small bonus tuned to one chosen ally per life) to give the universal partner a strong identity. Keep it? | Proposed | [21](21-season-2.md#pairing-universal-partner-decided) |
 | 36 | The rival hive mind: names **the Clamor** (hive) and **Scald** (its growth); loud, fast and devouring, the opposite of the Murmur | Proposed | [22](22-season-3.md) |
 | 37 | Clamor Landfall as a hostile third force in 4v4 matches (attacks both teams, one team gets the reward). Does that fit? Is a future Wildborn + Blightborn truce mode interesting? | Proposed | [22](22-season-3.md#how-the-clamor-appears-in-matches) |
+| 38 | Art direction: "primal majesty, readable at a glance", three surface materials (roots, Blight, Scald), glow only for meaning, a grey base world. Does this match your vision? | Proposed | [23](23-art-direction.md) |
+| 39 | The source pages show Captured nodes in **cyan**, which is also the Murmur's colour. Show node ownership with team outline colours instead? | Proposed | [23](23-art-direction.md#ui-direction) |
+| 40 | Long-term arc: could the Murmur slowly learn to *create* by copying the planet? Commit to it, or keep it as an option? | Option only | [24](24-the-three-minds.md#how-the-three-relate) |
 
 ## Decided
 
@@ -89,3 +92,4 @@ Please confirm or override:
 | gdd-0.12 | 2026-10-02 | Post-launch maps (Fevermouth, The Sleeper, Shard Reef) added to 16. New chapter **20 — Season 1: The Hush Wakes** (fronts, mirrored goals, weekly beats, results, and the Glass Range Walks finale mode). |
 | gdd-0.13 | 2026-10-02 | New chapter **21 — Season 2: The Sleeper Stirs**: Season 1 carry-over, fronts, weekly beats, The Waking finale, the draft seventh lineage **Stillheart**, the pairing problem, and three options for Season 3's Second Light. |
 | gdd-0.14 | 2026-10-02 | Stillheart decided as a universal partner, with an Attunement proposal. Second light decided as a rival hive mind. New chapter **22 — Season 3: The Second Light** (the Clamor, Scald, Landfall events, Clamor creatures, season plan and finale). |
+| gdd-0.15 | 2026-10-02 | New chapters **23 — Art Direction** (style, pillars, palette, region looks, sky, key art briefs, UI) and **24 — The Three Minds** (the planet, the Murmur and the Clamor: personalities, relationships, writing rules). |
