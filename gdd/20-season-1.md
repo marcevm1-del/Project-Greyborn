@@ -272,3 +272,11 @@ Every step it takes rings like a struck bell, and leaves a footprint of Glaze.
 Season 1 is a promise: that Greyborn is a world where things happen, that
 players shape them, and that the planet will remember. The Glass Range is
 the first thing the community decides. It won't be the last.
+
+## Season 1 rewards, listed again for quick reference
+
+Glass-ridge Titan Growth; Ash Markings; front sets; the Glass Range Memory and brood mark; the Migration call voice.
+
+It all begins with a shape on the horizon.
+
+The rest of Greyborn's story grows from here.

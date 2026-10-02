@@ -297,3 +297,7 @@ community is most likely to talk about for years.
 Season 6 is the heart of Greyborn's second year: the season that shows what
 the two minds could be together. Everything that breaks in Season 7 breaks
 because Season 6 made it real.
+
+The Truce is the season players will remember; the braid is what they'll miss.
+
+Season 6 is where the story turns.

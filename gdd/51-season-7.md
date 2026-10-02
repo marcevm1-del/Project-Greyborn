@@ -164,3 +164,147 @@ a single point of light.
 3. **Keep the Last Braid quiet.** No fanfare, no reward ceremony. It's a small thing that endures.
 4. **Leave the door open.** The season ends sad but not hopeless; the Last Braid
    is the promise that the story isn't over.
+
+## Week by week, in depth
+
+**Week 1.** The Fever Turn. Volcanoes rumble on every map; the sky is red at
+dusk. Braided ground from Season 6 is still visible on many maps, glowing softly.
+
+**Week 2.** The planet burns the last of the Scald, and the fire spreads to
+the braided ground. Players watch it burn in their matches.
+
+**Week 3.** The two-halved Memory: *The Fever* and *Burned Again*. Both minds' pain, side by side.
+
+**Week 4.** The Hushed Kith stop humming. The Blightborn's calls turn cold.
+
+**Week 5.** Braided regions become fronts on the War Map. Players fight over what they once shared.
+
+**Week 6.** The surviving Glass Gardens fortify, crystal walls growing around them.
+
+**Week 7.** The Last Braid is discovered on the Shattered Coast.
+
+**Week 8.** Patron week: both minds are angry, and their events fire often.
+
+**Week 9.** Fronts close.
+
+**Week 10.** The Unbraiding.
+
+## A moment in an ordinary match
+
+Breathing Canopy, Season 7. In the centre glade there's a patch of braided
+ground left from the Truce, half burnt, half glazed, the threads pulling
+apart. A Wildborn Verdant reaches it and starts to root. A Blightborn Hollow
+arrives from the other side. Both stop for a second. Their players remember
+standing on ground like this together. Then the Hollow opens a rift, and the
+Verdant's roots tear through the crystal, and the braid unravels a little
+more under them both.
+
+## The finale, walked through
+
+**0:00–4:00.** Every node on the special Shard Reef starts as unravelling
+braided ground. Both teams race to claim nodes; each held node slowly
+unravels toward its owner's material.
+
+**4:00–8:00.** Fights over the central causeways. The Last Braid glows at the
+edge of the map, on a quiet beach, untouched. No one can reach it.
+
+**8:00–12:00.** The map becomes two colours again, amber and cyan, with fewer
+and fewer braided threads between them.
+
+**12:00.** The match ends. Whatever happened, the Last Braid is still there.
+
+## How the result is presented
+
+1. The War Map shows every braided region unravelling.
+2. A short cinematic: the braids pulling apart across the Greyreach.
+3. **Planet reclaims:** a root reaching into an empty space where crystal
+   used to be. **Murmur reclaims:** a single hum, alone, then silence.
+4. The camera finds the Last Braid on the shore. A Stray sleeping beside it.
+5. The Memory unlocks for everyone.
+
+## Season 7 at a glance
+
+| | |
+|---|---|
+| Mood | Grief, and a single point of hope |
+| Central image | Braided ground pulling apart; one small braid that doesn't |
+| Change | The truce breaks; Truce mode becomes a Memory |
+| Signature sound | The harmony breaking mid-phrase; the hum stopping |
+| Leaves behind | The Last Braid, unexplained |
+
+## The Last Braid, in detail
+
+| Aspect | Detail |
+|---|---|
+| **Where** | A small beach on the Shattered Coast, below the Breaker's Steps |
+| **Size** | No wider than a Titan's stride |
+| **Look** | A root and a crystal so tightly grown together that neither fire nor cold could find where one ends |
+| **Sound** | A faint creak and a faint chime together, in harmony |
+| **Who visits** | Strays sleep beside it. Shard Gulls won't take its glass. Tide Scuttlers walk around it |
+| **In matches** | Visible at the edge of Shard Reef; can't be reached or affected |
+| **On the War Map** | A single point that can't be captured |
+| **In the Den** | Players who saw it in week 7 get a small woven root-and-crystal on their Den floor |
+
+## Tuning for the Unbraiding
+
+| Measure | Target |
+|---|---|
+| Braided nodes per map | 2 (worth double Territorial Influence) |
+| Time for a held braided node to unravel fully | About 3 minutes |
+| Share of matches decided by braided nodes | Noticeable but not dominant: under 30% |
+| Fever weather frequency | High: about half of matches |
+
+## The Fever Turn in this season
+
+The Fever is the cause of the tragedy, so it's everywhere:
+
+- **Heat vents and lava** are more active on maps that have them.
+- **Predators are aggressive,** making every map feel dangerous.
+- **The planet's patron events** fire with more anger: Heartquakes crack the ground harder.
+- **The sky** is red at every dusk.
+
+It's important that the Fever is shown as **illness**, not choice. The planet
+isn't deciding to destroy the braid; it's burning in a fever it can't control.
+
+## The season's legacy
+
+Season 7 leaves the world sadder, but not empty:
+
+1. **The truce is over** in story; the Truce mode lives on as a Memory.
+2. **Braided ground is gone,** except for the Last Braid.
+3. **The hum is silent.**
+4. **Both minds carry a regret,** shown in the result Memory.
+5. **The Last Braid** is the seed for whatever comes next.
+
+## Rewards, in full
+
+| Reward | Source |
+|---|---|
+| **Unravelled Growths** | Reward track |
+| **Fever Markings** | Reward track and Fever Storms |
+| **The Last Braid brood mark** | Visiting the Last Braid on coastal maps in week 7 |
+| **A woven root-and-crystal Den decoration** | Seeing the Last Braid |
+| **"I was there: The Unbraiding"** Memory | Finale participation |
+
+## Writing the Last Braid: what not to do
+
+- **Don't explain it.** No Memory should show why it survived.
+- **Don't make it powerful.** It grants no bonuses, no buffs, no rewards in matches.
+- **Don't make it a quest.** Players can't do anything to it. They can only see it.
+- **Don't let it disappear.** Whatever happens next, the Last Braid should still be on that beach.
+
+Its power is that it exists, untouched, in a world that burned everything else.
+
+## For Season 8 and beyond
+
+The Last Braid opens the next chapter of the story, whichever direction the
+director chooses ([50](50-master-timeline.md#possible-directions-after-season-7)):
+a braid that begins to grow, an Old One who carries both worlds, a descent
+into the Seed, or a new answer from the planet. Season 7 ends sad, but it
+leaves the door open.
+
+## Closing note
+
+Season 7 is the hardest season to write, and the most important to get right.
+It must make players grieve without making them blame anyone, and it must end
+on one small, quiet image that makes them hope.
