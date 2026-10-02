@@ -148,3 +148,142 @@ every season into the next. No two matches on the same map play out quite alike.
 **Every player grows from a small creature into a giant during the match,
 on a living planet at war with an alien mind, where carrying your progress
 home is the biggest risk you take and your partner is your greatest strength.**
+
+## The promise to players
+
+Greyborn makes players five promises:
+
+1. **You will grow.** Every match, from a small creature to a giant.
+2. **Your choices will matter.** When to return, which branch to take, which partner to stay beside.
+3. **The world will be alive.** Herds, weather, events and a story that moves every season.
+4. **The fight will be fair.** Both sides are always equal; nothing is for sale that wins matches.
+5. **You'll be part of something larger.** Every match feeds the war, and the war writes the world's history.
+
+## The emotional range of one match
+
+A good Greyborn match should move players through a range of feelings:
+
+| Moment | Feeling |
+|---|---|
+| Budding | Calm, curiosity |
+| Early hunting | Playfulness |
+| Lineage awakening | Excitement |
+| Carrying 300 cores home | Tension, dread |
+| Converting at the birth-pool | Relief, power |
+| A Synergy landing | Elation, connection with your partner |
+| A patron event | Awe |
+| A lost fight | Frustration, but never humiliation |
+| Phase 4 as an Ascendant | Majesty |
+| The ending | Triumph, or dignified loss |
+
+## The design tensions at Greyborn's heart
+
+Great games are built on tensions that never fully resolve. Greyborn has four:
+
+1. **Risk vs. safety.** Carry more for a bigger bonus, or return now?
+2. **Individual vs. pair.** Roam for kills alone, or stay with your partner for Synergies?
+3. **Fight vs. territory.** Chase the enemy, or hold the map?
+4. **Planet vs. Murmur, and both vs. the Clamor.** In the story, who is the enemy, really?
+
+Each match asks the first three. Each season asks the fourth.
+
+## Why monsters, and why a planet
+
+**Why monsters?** Because transformation is one of the most satisfying
+fantasies in games, and monsters let that transformation be physical,
+visible and huge. A player doesn't just get stronger; they become something else.
+
+**Why a living planet?** Because it makes the map more than a board. When the
+world itself is a character (one that breathes, sleeps, fights and feels pain),
+every match happens inside a story, and every node captured is a nerve of something alive.
+
+**Why a hive mind as the enemy?** Because it can copy the planet's creatures,
+which justifies both teams sharing a roster, and because a mind that can only
+copy is a mystery waiting to be solved, which gives the story somewhere to go.
+
+## The long-term vision
+
+| Horizon | Goal |
+|---|---|
+| **Launch** | A tight, readable 4v4 with a living world and a clear mirror |
+| **Year 1** | Four seasons of mystery; the War Map becomes a shared history |
+| **Year 2** | The turning point; the Truce; the tragedy |
+| **Year 3+** | New lineages, new regions, and the question of what the two minds become |
+| **Long term** | A world players feel they've lived in, and a story they shaped, told without a single word |
+
+## How we'll know it's working
+
+| Signal | Target |
+|---|---|
+| Players can explain the carry-and-return risk after one match | Most new players |
+| Players stay with their pair partner more than half the match | Common by their 10th match |
+| Players stop in a match just to watch the wildlife | Often reported in playtests |
+| Both sides' win rates | Within 49–51% |
+| Season finale participation | A large share of active players |
+| Players talk about the story without having read anything | The clearest sign the wordless storytelling works |
+
+## Every feature, checked against the pillars
+
+| Feature | Evolution Is the Scoreboard | Risk What You Carry | Interdependency | The Map Is Alive |
+|---|---|---|---|---|
+| Stages and Ultimate Forms | ✔ | | | |
+| Carry signature and returns | | ✔ | | |
+| Synergies and cross-resonance | | | ✔ | |
+| Wildlife and the food web | | | | ✔ |
+| Tension and global events | | | | ✔ |
+| Stillheart's Hibernate | | ✔ | ✔ | |
+| Patron events | | | | ✔ |
+| Sound signatures | ✔ | ✔ | | |
+| Seedbeds (Season 5) | | | ✔ | ✔ |
+| The War Map | | | | ✔ |
+
+A feature that serves no pillar is a candidate to cut.
+
+## Inspirations beyond games
+
+The tone draws on sources outside games:
+
+- **Nature documentaries:** herds, migrations, predators and prey, the patience of the natural world.
+- **Myth and folklore about the land as a living being:** mountains as sleeping giants, forests that breathe.
+- **Wordless storytelling** in animation and illustration, where image and music carry everything.
+- **Stories of refugees and lost homes,** for the Murmur's arc.
+- **The changing of the seasons,** for the planet's year.
+
+## The pitch, at three lengths
+
+**One line:** *A 4v4 game where you grow from a small creature into a giant on a living planet at war with an alien mind.*
+
+**One paragraph:** *Greyborn is a 4v4 team game set on a living planet. Every
+player starts as a small Kith and evolves through twenty levels into a
+towering Ascendant by hunting, carrying their progress home, and fighting
+beside a partner whose lineage completes theirs. One team is the planet's
+answer; the other is infected by the Murmur, a hive mind from a fallen star.
+Both play the same creatures. The world breathes, migrates and burns around
+them, and every season changes it for good.*
+
+**One page:** this chapter.
+
+## What a spectator sees
+
+Greyborn is designed to be watchable. A spectator who has never played
+should be able to follow a match because:
+
+- **Size shows who's winning.** The bigger creatures belong to the team with more evolution.
+- **Colour shows who holds the map.** Amber and cyan spread across the ground as territory changes.
+- **Sound shows the big moments.** Stage changes, Synergies and patron events are heard map-wide.
+- **The world reacts.** Stampedes, falling stars and erupting volcanoes make every match look different.
+- **The risk is visible.** A glowing, humming carrier running home is a story anyone can follow.
+
+## Closing statement
+
+Greyborn is a game about growing up into something huge, on a world that is
+alive, in a war where no one is simply wrong. It asks players to take risks,
+to trust a partner, and to listen to a world that never speaks. If it does
+that well, players won't just remember the matches they won. They'll
+remember the planet.
+
+## The vision in five words
+
+**Grow. Risk. Pair. Listen. Remember.** Grow from a Kith into an Ascendant;
+risk what you carry; fight beside your pair; listen to a living world; and
+remember the planet's story, season after season.

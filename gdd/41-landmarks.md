@@ -215,3 +215,7 @@ toward the Vertebrae", "their base is under the Fevermouth". This gives
 callouts a natural vocabulary and makes every map easier to learn. It also
 means the world beyond the map is always visible, reminding players that the
 battle they're in is one small part of a planet at war.
+
+Landmarks are the world's anchors: the places players name, remember and return to.
+
+Every new landmark added should pass the four-part test above before it reaches a map.

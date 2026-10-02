@@ -220,3 +220,5 @@ If one Memory had to stand for all of them, it would be **#40, Return**: an
 Ascendant's body sinking slowly back into the soil after a battle, and a
 flower opening where it lay. It's found on any map, it's quiet, and it holds
 the whole idea of the planet in eight seconds.
+
+Memories are the only way Greyborn ever tells its past. Every one should be worth finding.
