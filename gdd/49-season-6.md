@@ -155,3 +155,145 @@ away ([51](51-season-7.md)). The truce breaks, the braids burn, and the
 grief only works because Season 6 made the alliance feel real. The Last
 Braid only matters because players remember what braided ground looked
 like, in their own matches, under their own feet.
+
+## A moment in the Truce
+
+Shard Reef, burning. Wave 5. The sea is boiling at the edges, and red rain
+falls from a sky full of streaks. Four creatures hold the central causeway:
+a Wildborn Titan, a Wildborn Verdant, a Blightborn Brawler and a Blightborn
+Hollow. Twenty minutes ago, in a different match, these players were trying
+to kill each other.
+
+The Verdant roots the causeway. The Hollow opens a rift over the roots, and for
+the first time, a Void Garden grows from Wildborn roots and Blightborn void
+together: amber and cyan, woven. Scald Hulks lumber in and slow to a crawl.
+The Titan calls "Slam up". The Brawler rolls. A Hulk flies. Where the Titan's
+fists cracked the stone, crystal grows into the cracks, and braided ground
+spreads under all four of them.
+
+Behind them, the first Roar-vent bursts through the crust, shouting.
+
+## The finale, walked through
+
+**Approach (0:00–4:00).** Mixed broods land on the reef's edge. The Clamor's
+crust covers the causeways; Shriekers scream from every direction. Teams
+fight forward node by node, braiding ground as they go.
+
+**The vent mountain (4:00–9:00).** At the reef's centre, a mountain of crust
+has grown around the second stone, studded with Roar-vents. Each vent must be
+broken. Ventborn crawl out to defend them. Spore Kites seed new crust behind
+the team.
+
+**The Roar (9:00–14:00).** When the last vent breaks, the mountain splits open
+and the Roar climbs out, every vent on its back shouting. Calls are drowned
+out within 30 metres. Teams must coordinate without them: one player draws it
+with noise while others break its vents. Stillheart's Frost Against Fire
+holds the crust back.
+
+**The end.** The Roar collapses into ash, or the team falls. Every match's
+result feeds the community bar.
+
+## Memories of Season 6
+
+| Memory | Vision |
+|---|---|
+| **The Roaring, Again** | The Murmur's view: red streaks over Greyborn, overlaid with the same streaks over the Quiet World |
+| **Why It Was Made** | The planet growing Stillheart, long ago, toward a hunger in the dark |
+| **Side by Side** | A Wildborn Titan and a Blightborn Brawler, back to back, the first braided ground spreading under them |
+| **The Braided Pool** | Light of both colours pouring into one birth-pool |
+| **Held Back / Takes the Coast** | The finale result |
+
+## How the result is presented
+
+1. The War Map shows the shared bar, full or not.
+2. A short cinematic: the Roar collapsing, or rising over the coast.
+3. **Held back:** ash drifting over a quiet sea, braided ground glowing along the shore.
+   **Takes the coast:** the cliffs crusted red, the sea steaming, the braid holding at its edge.
+4. The braided cosmetic set is granted to every player.
+
+## Tuning for the Truce
+
+| Measure | Target |
+|---|---|
+| Truce completion rate (normal difficulty) | 60–70% |
+| Truce completion rate (hardest difficulty) | 15–25% |
+| Share of Truce teams that braid at least 10 cells | 90%+ (it should happen naturally) |
+| Average Truce length | 15–18 minutes |
+| Share of finale matches where the Roar is reached | 70%+ |
+
+## The Rime Turn in this season
+
+The Roaring comes in Rime, when the planet sleeps and is weakest. Frost
+covers every map, the planet's patron events are slower to fire, and the
+whispers are bold. It makes the alliance feel necessary: alone, neither
+mind could stand against the Clamor in this season.
+
+## Season 6 at a glance
+
+| | |
+|---|---|
+| Mood | Dread turning to solidarity |
+| Central image | Braided ground: roots and crystal woven together against the fire |
+| Featured mode | The Truce |
+| Reveal | Why Stillheart was made |
+| New community mechanic | One shared bar for both sides |
+| Signature sound | Both themes in harmony, for the first time |
+| Leaves behind | A question: will the truce last? (Season 7: no) |
+
+## Week by week, in depth
+
+**Week 1.** The Rime Turn begins. That night, and every night after, the sky
+is streaked red. On every map, the Hushed Kith stop humming mid-note. Wild
+Kith and Blighted creatures alike stand still and watch the sky.
+
+**Week 2.** Two Landfalls per match. The expanded Truce mode opens, framed as
+a call from the world itself: the first time the game asks Wildborn and
+Blightborn to stand together.
+
+**Week 3.** *The Roaring* Memory unlocks for everyone. Players see the Quiet
+World burn, and understand what the Murmur is afraid of.
+
+**Week 4.** Braided ground appears in Truce matches. Players share
+screenshots of amber and cyan woven together.
+
+**Week 5.** The reveal: *Why It Was Made*. Stillheart's purpose becomes clear.
+
+**Weeks 6–7.** Scald spreads across the War Map. The Roar begins appearing in
+Phase 4 of PvP matches, and both teams must deal with it.
+
+**Week 8.** Frost Against Fire goes live for Stillheart in the Truce.
+
+**Week 9.** The shared bar is counted.
+
+**Week 10.** The Roar Falls.
+
+## Why the alliance works as a design
+
+The Truce could have broken Greyborn's competitive core. It doesn't, because:
+
+1. **PvP never changes.** The mirror holds in every 4v4 match.
+2. **The alliance lives in co-op,** where there's no opposing team to be unfair to.
+3. **The shared bar is additive.** It never takes points from either side's own goals.
+4. **It's temporary.** Season 7 ends it, which makes it precious rather than permanent.
+
+## The season's legacy
+
+Even after Season 7 breaks the truce, Season 6 leaves things that last:
+the braided cosmetic set every player owns, the Truce mode (as a Memory),
+the Last Braid, and the knowledge, shared by every player who lived through
+it, that the two minds once fought side by side. It's the season Greyborn's
+community is most likely to talk about for years.
+
+## Writing guidance
+
+1. **Make the alliance feel earned,** not convenient. Show fear first, then necessity, then trust.
+2. **Never let either side become the Clamor's victim alone.** Show Wildborn and Blightborn creatures fleeing and fighting together.
+3. **Braided ground is sacred.** Every image of it should be beautiful.
+4. **Plant the tragedy.** A few small moments should hint that the alliance is fragile: the planet's
+   heat rising in its sleep, the Murmur's creatures flinching from warmth.
+
+## Closing note
+
+Season 6 is the heart of Greyborn's second year: the season that shows what
+the two minds could be together. Everything that breaks in Season 7 breaks
+because Season 6 made it real.

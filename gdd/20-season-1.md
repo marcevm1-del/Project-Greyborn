@@ -143,3 +143,132 @@ Then the round ends, the sides swap, and both teams play it again from the other
 - **The War Map** ([18](18-the-answering-war.md)): the community's first season of shared history.
 - **The Sleeper** (Season 2): in the final week, the Rimewastes front sees a
   strange frost appear on every map for a single match. A hint of what's next.
+
+## Week by week, in depth
+
+**Week 1: The War Map opens.** Players see the Greyreach for the first time,
+three fronts pulsing. Every match sends a spark to a front. Nothing strange
+happens in matches yet; the season begins quietly.
+
+**Weeks 2–3: First tremors.** Once per match, the ground trembles faintly.
+Strays stop what they're doing and turn north for longer than usual. Players
+start asking what it means.
+
+**Week 4: Starfall Nights.** A weekend of night matches under falling meteor
+glass. Starshard veins give double cores. The sky is unforgettable, and in
+the north, very faintly, something on the horizon catches the starlight.
+
+**Week 5: The first Memory.** *A glass mountain, sleeping*: a vast shape of
+black glass lying at the edge of the Starwound, perfectly still.
+
+**Weeks 6–7: The Range stirs.** Glass shards fall on the Bone Flats. On every
+map, a silhouette appears on the northern horizon: something huge, standing.
+Each week it is a little closer.
+
+**Week 8: Patron week.** Planet Pulse and Murmur Surge events fire twice as often.
+
+**Week 9: Fronts close.** Results revealed on the War Map. The Glass Range is
+clearly visible from Ashfall Crossing now: a walking mountain of black glass.
+
+**Week 10: The Glass Range Walks.**
+
+## The Glass Range on the horizon
+
+The Glass Range's approach is the season's main visual thread. It must be:
+
+- **Visible from every map,** always in the north.
+- **Slightly closer each week,** so returning players notice it has moved.
+- **Silent at first,** then, from week 7, faintly audible: a deep glass tone with every step, felt more than heard.
+- **Never explained in words.** Players work out what it is from the Memories and the finale.
+
+## Season 1 Memories
+
+| Memory | Vision |
+|---|---|
+| **A Glass Mountain, Sleeping** | The Glass Range lying still at the crater's edge |
+| **Copying** | A glass Titan forming plate by plate, in perfect imitation of the first Titan |
+| **The Six Mirrors** | Six glass shapes in a ring, one of them now gone |
+| **The Kneeling Range** / **The Standing Range** | The finale result |
+
+## The front goals, in detail
+
+| Front | Wildborn goal | Blightborn goal |
+|---|---|---|
+| **Ashen Steppe** | Rally creatures (especially from the Migration); purge Blight cells; win tunnel fights during the Migration | Infect creatures; consume root cells; win tunnel fights during the Migration |
+| **Bone Flats** | Find Memory sites; break weak points; destroy Enemy Cores | The same actions, for the Murmur's side |
+| **Rootwilds** | Protect Aphid herds; capture during canopy-fall; purge Weavemother webs | Destroy or infect Aphids; capture during canopy-fall; keep webs on enemy nodes |
+
+## Tuning the finale
+
+| Measure | Target |
+|---|---|
+| Glass Range walking speed | About 60 m per minute, faster after each heart breaks |
+| Time for a skilled Wildborn team to break all three hearts | 8–10 minutes |
+| Share of rounds where the Glass Range reaches the grove | 40–50% (a close contest) |
+| Round length | 12 minutes maximum |
+
+## How the result is presented
+
+1. The War Map darkens; the Starwound glows.
+2. A short cinematic: the Glass Range at the edge of the Ashen Steppe.
+3. **Retreats:** it turns, walks back into the crater, and kneels at the
+   Hushed Watch. **Stands:** it stops on the steppe's edge and stays there, frozen, a new landmark.
+4. The Memory unlocks for everyone.
+
+## Writing guidance
+
+1. **The Glass Range is majestic, not monstrous:** a copy of a hero, not a villain.
+2. **Keep the Murmur's motive hidden.** Why it wakes the Range is never stated.
+3. **The planet is defending, not attacking.** The finale is about stopping the Range, not destroying the Murmur.
+4. **This is the first season.** It should make players curious about everything that follows.
+
+## Season 1 at a glance
+
+| | |
+|---|---|
+| Mood | Curiosity and growing unease |
+| Central image | A glass mountain on the horizon, closer each week |
+| Finale | The Glass Range Walks: escort or stop |
+| Signature sound | A deep glass tone with every step |
+| Leaves behind | The first community result, and the first question: are there more? |
+
+## Why Season 1 matters most
+
+Season 1 sets every expectation players will have about Greyborn's live game:
+
+- **That the world changes.** The Glass Range's approach proves the world isn't static.
+- **That the community matters.** The War Map and the finale result are the
+  first proof that players' matches add up to something.
+- **That the story is told without words.** Players will learn to read the
+  horizon, the Memories and the creatures' behaviour.
+- **That results last.** Whatever happens to the Glass Range stays true forever.
+
+If Season 1 lands well, every later season inherits that trust.
+
+## Launch-season considerations
+
+Season 1 begins with the game's launch, so it has to work for players who
+have never played before:
+
+- **The story starts quietly** (weeks 1–3) so new players can learn the game first.
+- **The War Map is introduced** with a short wordless animation the first time it opens.
+- **Starfall Nights** (week 4) is spectacular but doesn't change the rules, so it's friendly to new players.
+- **The finale** is played in two rounds with swapped sides, so every player
+  experiences both escorting and stopping the Range.
+- **All three fronts** are on launch maps, so every match contributes.
+
+## The Glass Range, described
+
+A walking mountain of black glass, as tall as the trees are high. Inside it,
+veins of cyan light flow slowly upward, like sap rising in reverse. Its shape
+is a near-perfect copy of the Mountain That Walked: the same hunched
+shoulders, the same ridge along its back. But where the original had moss and
+earth, it has smooth, glossy planes that reflect the sky. Three hearts glow
+through it: one in its back, one in its shoulders, one deep in its chest.
+Every step it takes rings like a struck bell, and leaves a footprint of Glaze.
+
+## Closing note
+
+Season 1 is a promise: that Greyborn is a world where things happen, that
+players shape them, and that the planet will remember. The Glass Range is
+the first thing the community decides. It won't be the last.
