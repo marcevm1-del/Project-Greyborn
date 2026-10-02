@@ -49,6 +49,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 29 | [The Planet's Year](gdd/29-the-planets-year.md) | Bloom, Ash, Rime and Fever; how they shape seasons and matches |
 | 30 | [Season 4: The Glass Flower](gdd/30-season-4.md) | The Nerve map, four new creatures, the Glass Flower mystery, a story roadmap for Seasons 1–4 |
 | 31 | [Evolution Branches](gdd/31-evolution-branches.md) | Aggression vs. Tactical Control for every lineage, with 42 Ultimate Forms |
+| 32 | [Cross-Resonance](gdd/32-cross-resonance.md) | Small passives for the 12 non-pair lineage combinations |
+| 33 | [Structures of the War](gdd/33-structures.md) | What bases, Enemy Cores, Hubs and nodes are in the world, for each side |
 
 ## Superseded material
 

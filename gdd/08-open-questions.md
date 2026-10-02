@@ -13,7 +13,7 @@ Please confirm or override:
 | 4 | What do the S1/S2/S3 values for weak points mean? | Regrowth time by the victim's Stage | [04](04-synergies.md#weak-points) |
 | 5 | What is the Base Form species called in-world? | "Base Form" for now | [02](02-ascendant-roster.md) |
 | 6 | Synergy level vs. Ascendant level | Two separate tracks (pair 1–10, player 1–20) | [04](04-synergies.md) |
-| 7 | The other 12 lineage pairings | Minor cross-resonance passives only | [04](04-synergies.md#open-the-other-12-pairings) |
+| 7 | The other 12 lineage pairings | Designed as small cross-resonance passives (L8+, within 15 m) | [32](32-cross-resonance.md) |
 | 8 | Win condition | Base Heart, TI at 25:00, or 80% TI mercy rule | [06](06-match-flow.md#win-conditions-proposal) |
 | 9 | Duplicate lineages per team? | Not allowed | [06](06-match-flow.md) |
 | 10 | Is "Vaelmoor" the studio, or a region/continent of Greyborn? | Unknown | [00](00-source-pages.md) |
@@ -54,6 +54,7 @@ Please confirm or override:
 | 48 | Season 4's Glass Flower keeps question 40 open: a memory of the Murmur's home, or its first creation. The community result tilts it; the director decides | Open by design | [30](30-season-4.md#the-central-mystery) |
 | 49 | After Season 4: an origin season, a turning-point season, or a truce season? | Director's call | [30](30-season-4.md#story-roadmap-seasons-14) |
 | 50 | Evolution branches for all 7 lineages (42 Ultimate Forms). Which feel right for each lineage? Step Between and Shatterfist flagged as possibly too strong | Proposed | [31](31-evolution-branches.md) |
+| 51 | In-world names for structures: Cradle/Clutch (bases), Heartseeds/Shard Hearts (Enemy Cores), Sap Wells/Glow Wells (Hubs), Root-knots/Whisper-nodes (nodes) | Proposed | [33](33-structures.md) |
 
 ## Decided
 
@@ -108,3 +109,4 @@ Please confirm or override:
 | gdd-0.18 | 2026-10-02 | New chapters **28 — Tales & Trailer** (three tone stories, a wordless announcement-trailer storyboard) and **29 — The Planet's Year** (four Turns, how they map to live seasons and match atmosphere, the planet's day). |
 | gdd-0.19 | 2026-10-02 | New chapter **30 — Season 4: The Glass Flower** (Bloom Turn, The Nerve map, four new creatures, front goals, finale, story roadmap for Seasons 1–4). Map 7 noted in 16; new creatures noted in 09. |
 | gdd-0.20 | 2026-10-02 | New chapter **31 — Evolution Branches**: Aggression and Tactical Control branches for all 7 lineages, L10 and L15 upgrades, and 3 Ultimate Forms per branch (fights, objectives, unusual). |
+| gdd-0.21 | 2026-10-02 | New chapters **32 — Cross-Resonance** (12 small passives for the non-pair combinations, draft implications) and **33 — Structures of the War** (in-world forms of bases, Enemy Cores, Hubs and nodes for each side). |

@@ -105,4 +105,4 @@ star of the final phase. Confirm with the director.)*
 
 Six lineages make **15 possible pairs**; the source pages show 3. Proposal:
 every other pair has a small **cross-resonance** passive (e.g. Titan + Verdant:
-Bulwark also protects rooted nodes behind it) but no Synergy ability. Flagged in [08](08-open-questions.md).
+Bulwark also protects rooted nodes behind it) but no Synergy ability. All 12 are designed in [32 — Cross-Resonance](32-cross-resonance.md).

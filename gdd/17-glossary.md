@@ -21,6 +21,8 @@ were confirmed by the director; everything else is proposed.
 | **C1 / C2 / C3** | Conversion-time tiers at base (15/12/9 s proposed) | [03](03-evolution-system.md) |
 | **Cinderveil** | Volcanic highlands; the planet's fever | [11](11-atlas.md) |
 | **Calls** | Wordless pings and emotes voiced as creature sounds | [25](25-calls-and-onboarding.md) |
+| **Cradle / Clutch** | The Wildborn / Blightborn base: a birth-node cluster | [33](33-structures.md) |
+| **Cross-resonance** | A small passive between two lineages that aren't a true pair | [32](32-cross-resonance.md) |
 | **Clamor, the** | Proposed name for the rival hive mind from the second meteorite: loud, fast, devouring | [22](22-season-3.md) |
 | **Codex (Memory)** | The collection of Memories a player has found | [13](13-legends.md) |
 | **Conversion** | Turning carried cores into EXP at base (or at a Hub, at 70%) | [03](03-evolution-system.md) |
@@ -44,6 +46,7 @@ were confirmed by the director; everything else is proposed.
 | **Grey Migration** | The great herd crossing; a map event on Ashfall Crossing | [15](15-ecology.md), [16](16-launch-maps.md) |
 | **Greyreach** | Greyborn's single great landmass | [11](11-atlas.md) |
 | **Heartwood** | The planet's heart, opposite the Starwound (**decided name**); also each map's grove zone | [10](10-world.md), [11](11-atlas.md) |
+| **Heartseeds / Shard Hearts** | Wildborn / Blightborn Enemy Cores | [33](33-structures.md) |
 | **Hollow** | Void-caster lineage; Root & Void pair | [02](02-ascendant-roster.md) |
 | **Hollow Mire** | Fog-bound swamp; the planet's gut | [11](11-atlas.md) |
 | **Hushed Answers** | The Murmur's glass copies of the First Answers | [13](13-legends.md) |
@@ -65,6 +68,7 @@ were confirmed by the director; everything else is proposed.
 | **Rootwilds** | Breathing forest; the planet's lungs | [11](11-atlas.md) |
 | **S1 / S2 / S3** | Synergy tiers (cooldowns 15/12/9 s) | [04](04-synergies.md) |
 | **SAP** | The planet's lifeblood; the team currency | [05](05-territory-and-economy.md) |
+| **Sap Wells / Glow Wells** | Resource Hubs held by Wildborn / Blightborn | [33](33-structures.md) |
 | **Scald** | The Clamor's rust-red spore growth; eats both roots and Blight | [22](22-season-3.md) |
 | **Seed, the** | The meteorite's core at the centre of the Starwound | [11](11-atlas.md), [12](12-life-on-greyborn.md) |
 | **Shattered Coast** | Shard-studded cliffs; the wound's edge | [11](11-atlas.md) |
