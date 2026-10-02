@@ -260,3 +260,11 @@ Most players will never walk in either place. But every player should know
 where they are, feel them on the horizon, and wonder what lies at their
 centres. That wondering is part of what keeps the world larger than any match,
 and it's what will make the first real visit, whenever it comes, unforgettable.
+
+The heart and the seed are the beginning and the end of every story told on Greyborn.
+
+## In summary
+
+The Heartwood is warmth, memory and the planet's heart. The Starwound is
+stillness, loneliness and the Murmur's heart. They face each other across the
+world, and everything in between is the war.

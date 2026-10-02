@@ -286,3 +286,5 @@ a player can already speak Greyborn's only language: the calls of its creatures.
 
 Calls let a wordless world talk; the First Budding lets a new player be born
 into it. Both follow the same rule: show, never tell.
+
+Every call a player makes is, at heart, the sound a wild Kith would make.

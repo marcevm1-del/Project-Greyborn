@@ -152,3 +152,143 @@ can't refuse; Hushed Kith hear a voice that feels like company. Both are
 creatures doing what their nature tells them. That's the quiet tragedy at the
 heart of Greyborn: the players' species fights a war it doesn't understand,
 for two minds far larger than itself.
+
+---
+
+## Kith anatomy in detail
+
+| Feature | Description | Why it matters |
+|---|---|---|
+| **Height** | About knee-high to a stag (roughly 1 m at the shoulder) | Small enough that every lineage is a dramatic jump in size |
+| **Build** | Slender, light-boned, quick | Base Forms feel fragile and fast |
+| **Head** | Large, rounded, with big amber eyes and long, mobile ears | Readable expressions; ears turn toward sounds |
+| **Skin** | Grey, soft, flecked with moss; bark-like plates on the shoulders and spine | The bark plates are where lineage growth begins at Level 3 |
+| **Hands** | Four long fingers with blunt claws | Good for climbing and digging |
+| **Feet** | Wide, padded, sensitive | How Kith feel the planet's call |
+| **Tail** | A short, expressive tail | Shows mood: raised when curious, low when afraid |
+| **Voice** | Chirps, clicks, a low hum, a distress call | The base of every call in the game |
+
+**Hushed Kith** share every feature, with glass patches along the spine where
+the bark plates would be, faint cyan veins under the skin, and violet eyes
+that flicker. Their tails rarely move: the Murmur keeps them still.
+
+## How Kith communicate in the wild
+
+| Sound | Meaning |
+|---|---|
+| A single chirp | "I'm here" |
+| Rapid clicking | "Danger nearby" |
+| A low hum | "All is well" (heard when a brood rests together) |
+| A rising whistle | "Come here, I found food" |
+| The distress call | "Help": every Kith nearby turns toward it |
+| Silence | Fear, or listening |
+
+These are the sounds the player's call wheel grows out of ([25](25-calls-and-onboarding.md)).
+At Base Form, a player's calls are exactly these wild Kith sounds.
+
+## A Hushed Kith's life
+
+Hushed Kith bud from birth-nodes in Blight. From the first moment, they hear
+the whispers. They don't play the way wild Kith do; they move together,
+perfectly, and rest in still rows rather than rings. They don't fear Blighted
+creatures, which walk among them like neighbours. They don't face north at
+dusk: they *are* the north, in a sense.
+
+But they're still Kith. They still feel hunger and cold. They still grieve,
+though quietly: when a brood-mate shatters into glass dust, the others stand
+over the place where it fell, for exactly as long as wild Kith would.
+
+In Season 5, they begin to hum. It's the first sound Hushed Kith have ever
+made that isn't the Murmur's whisper or a copy of a wild Kith's call. Some
+players believe the hum is the Murmur's; others believe it's the Kith's own.
+The story never says.
+
+## Kith elders
+
+Wild Kith that live long enough become **elders**: grey-muzzled, slower,
+their bark plates thick and cracked. Elders lead broods by example, not by
+command: the brood follows the elder's lead when foraging, sheltering or fleeing.
+Elders are the most likely Kith to stop and stare at an Old One, and the
+most likely to lie down quietly near a Memory site when their time comes.
+
+**In matches:** some Stray groups include an elder. Killing an elder makes the
+rest of its brood scatter in panic. Leaving it alive makes the group calmer
+and slower to grow into a Wild Ascendant.
+
+## Kith populations (lore)
+
+- Kith are **common** across the Greyreach, except in the Glasswaste (only
+  Hushed Kith) and the Rimewastes (few, hardy broods).
+- A single region might hold **thousands** of wild broods.
+- Only a **tiny fraction** are ever called to evolve.
+- The planet calls more Kith in Fever (when it fights) and fewer in Rime (when it sleeps).
+
+## The Kith across the seasons
+
+| Season | What happens to the Kith |
+|---|---|
+| 1 | Strays face north for longer as the Glass Range walks |
+| 2 | Kith huddle in the cold; some Hushed Kith gather at the Sleeper's crack |
+| 3 | Wild and Hushed Kith alike turn to watch the red streaks |
+| 4 | Wild Kith play in the Bloom; Hushed Kith gather around the Glass Flower |
+| 5 | Hushed Kith hum |
+| 6 | Wild and Hushed Kith flee the Roaring together |
+| 7 | The hum stops. A Stray sleeps beside the Last Braid |
+
+## Kith FAQ
+
+**Are the Kith intelligent?** Like clever animals: crows, wolves, apes. They
+solve problems, recognise each other, grieve and play, but have no language or tools.
+
+**Do the Kith know they're in a war?** No. They feel the planet's call, or the
+Murmur's whisper, and they follow it.
+
+**Why are players Kith?** Because the Kith are the planet's original creature,
+carrying every lineage (decided). They're the only creatures that can become Ascendants.
+
+**Can a Hushed Kith ever be freed?** Never shown. It's one of the questions a
+future story could ask, especially after the Last Braid.
+
+## The Kith in one sentence
+
+**Small, curious, loyal creatures carrying a giant inside them, fighting a
+war between two minds they will never understand.**
+
+## The Kith in art
+
+- **At Base Form,** Kith must feel young and vulnerable: big eyes, small body,
+  curious movement. Players should feel protective of their own Kith in the first minutes.
+- **Their faces are expressive** but animal, never human. No smiles, no
+  brows; emotion comes from ears, eyes, tail and posture.
+- **Every lineage grows out of the same body,** so Stage 1 forms should keep
+  traces of the Kith: the same eyes, the same ears, for a while.
+- **Wild and Hushed Kith** must look like the same species, with the Hushed
+  glass patches and stillness the only differences.
+
+## How Kith grow into lineages
+
+At Level 3, the lineage awakens, and the Kith's body begins to change from
+the bark plates outward:
+
+| Lineage | First sign of change |
+|---|---|
+| Titan | The shoulder plates thicken into stone |
+| Brawler | The arms lengthen; the knuckles harden |
+| Verdant | Small antler buds push up from the head |
+| Hollow | A small, dark opening appears in the chest |
+| Thornrunner | Thorns sprout along the spine; extra legs begin to form |
+| Bonespire | Small bone spikes rise along the back |
+| Stillheart | Frost forms on the fur; the heartbeat slows |
+
+The Kith's eyes stay the same through Stage 1, and only change in Stage 2.
+It's a small detail that keeps the player's creature recognisable as the Kith
+they began as.
+
+## The Kith's relationship with the player
+
+The player *is* a Kith. That relationship is deliberately tender: the game
+begins with the player as something small and vulnerable, and every system
+(the brood, calls, the birth-pool, the gentle deaths) treats the Kith with care.
+When the player's creature becomes a towering Ascendant, they should still
+remember, somewhere, the small grey creature that stepped blinking out of the
+root knot at the start of the match.
