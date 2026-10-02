@@ -259,3 +259,22 @@ never clutter a fight.
 - **Truce (mixed):** both together, twisted around each other like braided ground.
 - Threads fade out entirely during intense combat and reappear when it calms,
   so they inform without distracting.
+
+## When players notice cross-resonance
+
+| Player stage | What they notice |
+|---|---|
+| **First matches** | Nothing; cross-resonance works quietly in the background |
+| **10–20 matches** | The small icons by their portraits; the thin threads between teammates |
+| **50+ matches** | Which lineage combinations feel stronger, and why |
+| **Competitive players** | Drafting around cross-resonance, and countering the enemy's connections |
+
+This gradual discovery is intended. Cross-resonance adds depth without asking
+anything of new players.
+
+## Design summary
+
+Cross-resonance turns six lineages into a web. Three strong pairs sit at its
+centre; twelve smaller links connect everything else; Stillheart touches all
+of it. Whatever four lineages a team brings, they are always connected
+somehow, which is the source pages' idea of interdependency, applied to every team.

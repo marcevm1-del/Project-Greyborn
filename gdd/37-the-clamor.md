@@ -273,3 +273,24 @@ if they stopped fighting each other, and what they lose when they don't.**
 - **Don't** give it motives a player could sympathise with.
 - **Don't** explain where it comes from beyond the faint streaks in the sky.
 - **Don't** let it become a joke or a routine: every Landfall should feel like a disaster arriving.
+
+## Clamor creatures by tier
+
+| Tier | Creatures | Typical count per Landfall | Threat |
+|---|---|---|---|
+| I | Shriekers, Spore Kites | 6–12 | Reveal, spread |
+| II | Ashmouths, Kindlers | 2–4 | Growth, chaos |
+| III | Scald Hulks, Ventborn | 1–2 | Durable, area denial |
+| IV (Apex) | The Roar | 0–1 (Phase 4, Season 6+, finales, Truce) | Everything at once |
+
+Landfalls should feel dangerous, but a full brood should always be able to
+clear one. A team that ignores a Landfall should feel its cost, in lost
+territory and in being revealed, within about a minute.
+
+## The Clamor's sound on the War Map and in the Den
+
+Even outside matches, the Clamor is heard. On the War Map, Scald regions
+crackle faintly. In the Den, from Season 3, the crack in the roof shows the
+red streak, and on Landfall Rush weekends a distant roar rolls in from far
+away, every few minutes. Players should feel, even at home between matches,
+that something hungry is out there in the dark, listening.

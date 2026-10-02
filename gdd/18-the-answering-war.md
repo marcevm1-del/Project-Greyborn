@@ -267,3 +267,15 @@ say *"I was there when that fell"*, and a new player can scroll back and see it 
   faintly underneath: the planet's exhale and the Murmur's whisper.
 - **Scald regions (Season 3+):** crackle and smoke on the map; burnt-out
   regions turn grey and quiet, and slowly green again over the following seasons.
+
+## The War Map season by season
+
+| Season | What the War Map adds |
+|---|---|
+| 1 | The map itself; three fronts; the history layer begins |
+| 2 | Frost across the north; the Sleeper marked in the Rimewastes |
+| 3 | The third colour: Scald; the red streak drawn across the sky above the map |
+| 4 | The Glass Flower marked in the Glasswaste, glowing pale blue |
+| 5 | Glass Gardens as a new pale-blue region type |
+| 6 | The shared "Hold the Line" bar; braided regions shown as woven amber and cyan |
+| 7 | Braided regions unravelling; the Last Braid, a single point no one can capture |

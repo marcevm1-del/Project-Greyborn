@@ -239,3 +239,14 @@ Lineages are hidden until Level 3, so the first minutes are guesswork:
 | **Strider Cranes** | Avoid startling them, or startle them on purpose as a distraction |
 | **Lantern Lizard** | Kill it before an ambush, or leave it as an alarm |
 | **Strays** | Don't let them grow near your nodes, or a Wild Ascendant will rise |
+
+## Quick reference card
+
+- **Return at 300.** Earlier only if a Stage is close; later never.
+- **Pairs together.** Synergy levels, Resonance and combos all need proximity.
+- **Phase 3 is for objectives.** Synergies slow; Hubs and Cores don't.
+- **Read the world.** Birds, herds, vultures and scavengers tell you where fights are.
+- **Manage Tension.** Let borders erupt where events favour you.
+- **Kill the Verdant first** against Root & Void; **flank the Titan** against Commit; **break line of sight** against Hunt.
+- **Protect your carriers;** hunt theirs.
+- **Call everything.** Calls win fights.

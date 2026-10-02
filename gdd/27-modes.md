@@ -276,3 +276,18 @@ the full story of the season.
 3. **No mode wastes a player's time.** Every mode feeds Mastery, Pair Bonds or the War Map.
 4. **Modes should feel like places in the world,** not playlists: the Truce is
    a memory of an alliance, Apex Hunt is a hunting season, the Den is home.
+
+## Mode terms
+
+| Term | Meaning |
+|---|---|
+| **The Answering** | The core 4v4 mode |
+| **Brood Skirmish** | 2v2, one pair per team |
+| **Apex Hunt** | Casual race to bring down apex creatures |
+| **The Truce** | Co-op, mixed sides, against the Clamor |
+| **Memory of the Truce** | The Truce's framing from Season 7 onward |
+| **The Den** | Training and the player's home |
+| **Finale mode** | A season's limited-time story mode |
+| **AI fill** | An AI taking a disconnected player's place in casual modes |
+| **Pair protection** | The draft keeping queued pairs in compatible lineage slots |
+| **Side balance** | Ranked matchmaking keeping each player's side split close to even |

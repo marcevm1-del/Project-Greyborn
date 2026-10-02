@@ -280,3 +280,13 @@ record of the season.
 | New creatures | Prismwings, Dawnwings, Lattice Fawn, Firstlight Fawn |
 | Signature sound | The hum |
 | Leaves behind | The question: does the Murmur still need to take the planet? |
+
+## Decisions this season leaves for the director
+
+1. **How far should the Murmur's creation go?** Season 5 shows gardens, moths
+   and a fawn. Could it one day create an entire lineage of its own?
+2. **How does the planet feel about its own new creations?** Its answering
+   creatures are its first new life since Stillheart. Is it proud, uneasy, or changed?
+3. **Do the Glass Gardens stay on the War Map permanently,** even after the
+   truce breaks in Season 7, as fortified gardens? (Season 7 currently says yes.)
+4. **Does the hum ever return** after it falls silent in Season 7?

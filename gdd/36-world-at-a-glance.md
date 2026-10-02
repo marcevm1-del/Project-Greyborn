@@ -252,3 +252,11 @@ learning to create; why the Kith are called; and the directions of Seasons
 - **Writers:** 10, 13, 24, 28, 38, 48 and 50.
 - **Audio:** 19, then any chapter's "sound" sections.
 - **Producers:** 08 for decisions, 18–22 and 30, 47, 49, 51 for the season roadmap.
+
+## The biggest open questions
+
+1. What lies beneath the First Root, and inside the Seed?
+2. Why does neither mind touch the Last Braid?
+3. Where does the story go after Season 7?
+4. How could the war, one day, end?
+5. Are the faint old streaks in the sky other worlds the Clamor devoured?

@@ -275,3 +275,14 @@ Greyborn's story is built around questions it never answers in words:
 - **What do we owe the creatures who fight for us?** The Kith fight a war they don't understand.
 - **Can something made to copy learn to create?** The Murmur, from Season 4.
 - **What remains after loss?** The Last Braid.
+
+## The world in one paragraph
+
+Greyborn is a living, aware planet of forests, steppes, swamps and ice, whose
+native Kith carry every lineage inside them. Long ago, a stone fell from the
+sky carrying the Murmur, the last survivor of a crystal world devoured by the
+Clamor. The Murmur spread as glass Blight, copying the planet's creatures, and
+the planet answered by calling broods of Kith to evolve and fight. That war
+is every match. Over the seasons, the Murmur learns to create, the Clamor
+follows it to Greyborn, the two minds stand together and then break apart,
+and a single braided patch of ground remains, untouched, on a quiet shore.
