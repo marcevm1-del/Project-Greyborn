@@ -63,6 +63,7 @@ were confirmed by the director; everything else is proposed.
 | **Murmur, the** | The hive mind from the meteorite (**decided**) | [10](10-world.md) |
 | **Murmur Surge** | Patron events that help the Blightborn when they're behind | [05](05-territory-and-economy.md) |
 | **Node** | A capturable cluster of map cells. States: Captured, Vulnerable, Inaccessible | [05](05-territory-and-economy.md) |
+| **Old Ones** | Ancient Ascendants from before the Fall who kept living, neutral in the war | [46](46-wild-ascendants.md) |
 | **Overhunting / Stressed** | A region becomes dangerous after too many creatures die there | [15](15-ecology.md) |
 | **Pair Bond** | Long-term progress for two friends playing a pair together | [26](26-collection.md) |
 | **Planet Pulse** | Patron events that help the Wildborn when they're behind | [05](05-territory-and-economy.md) |
@@ -95,4 +96,5 @@ were confirmed by the director; everything else is proposed.
 | **Verdant** | Territory-controller lineage; Root & Void pair | [02](02-ascendant-roster.md) |
 | **Weak point** | Each Ascendant's vulnerable spot; breaks after 20% max Health of damage | [04](04-synergies.md) |
 | **Whisper-node** | A crystal cluster where the Murmur's thought gathers | [12](12-life-on-greyborn.md) |
+| **Wild Ascendant** | A Stray that evolved to Stage 3 on its own, belonging to neither team | [46](46-wild-ascendants.md) |
 | **Wildborn** | Nature's response; the planet's side (**decided**) | [10](10-world.md) |

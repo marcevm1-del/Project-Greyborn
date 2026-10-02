@@ -65,6 +65,7 @@ Please confirm or override:
 | 59 | Wildlife reacting to nearby lineages gives observant players free hints (e.g. birds go quiet near a Hollow). Keep it, as long as it never reveals more than sound signatures? | Proposed | [43](43-living-creatures.md#how-wildlife-reacts-to-ascendants) |
 | 60 | Flora: Scald kills interactable plants while Blight keeps them working. Keep that difference? | Proposed | [44](44-flora.md#blighted-and-scalded-forms) |
 | 61 | Lore: the First Answers were Kith grown to full potential, so every Kith carries all six lineages (and Stillheart) inside it. Adopt this as the answer to "why the Kith"? | Proposed | [45](45-the-kith.md#why-the-kith) |
+| 62 | Wild Ascendants (neutral Stage 3 threat once per match, rewards a team-wide Wild Echo) and the Old Ones (ancient neutral Ascendants). Keep both? | Proposed | [46](46-wild-ascendants.md) |
 
 ## Decided
 
@@ -126,3 +127,4 @@ Please confirm or override:
 | gdd-0.25 | 2026-10-02 | New chapters **40 — The Hushed Answers** (all six as encounters, where each fits, an endgame idea) and **41 — Landmarks & Future Map Seeds** (24 landmarks across 12 regions, three map seeds to develop). |
 | gdd-0.26 | 2026-10-02 | New chapters **42 — Map Seeds, Developed** (the Skull Basin, the Ash Sea, the Glass Forest; a full 10-map list) and **43 — Ascendants as Living Creatures** (movement, idle, feeding and signature behaviour per lineage; wildlife reactions). |
 | gdd-0.27 | 2026-10-02 | New chapters **44 — Flora** (26 plants and fungi, Blighted and Scalded forms, by region) and **45 — The Kith** (body, behaviour, three kinds of Kith, why the planet calls them, life span, art and audio). |
+| gdd-0.28 | 2026-10-02 | New chapter **46 — Wild Ascendants & the Old Ones** (wild evolution of Strays into a neutral threat; ancient surviving Ascendants as living landmarks and events). |

@@ -64,6 +64,7 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 43 | [Ascendants as Living Creatures](gdd/43-living-creatures.md) | How each lineage moves, rests and feeds, and how wildlife reacts to it |
 | 44 | [Flora](gdd/44-flora.md) | 26 plants and fungi across every region, with Blighted and Scalded forms |
 | 45 | [The Kith](gdd/45-the-kith.md) | A full portrait of the players' species: body, behaviour, kinds, and why the planet calls them |
+| 46 | [Wild Ascendants & the Old Ones](gdd/46-wild-ascendants.md) | Kith that evolve on their own, and ancient Ascendants who survived from before the Fall |
 
 ## Superseded material
 

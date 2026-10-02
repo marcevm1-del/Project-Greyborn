@@ -65,7 +65,7 @@ other creatures, to become Ascendants?** Proposal:
 | Elder | Grey-muzzled, slow, still with its brood | **Doesn't apply:** a called Kith evolves instead of aging |
 | Death | Sinks into the soil and returns to the planet | Dies in battle and returns to the soil, or reaches Ascendant |
 
-**What happens to Ascendants after the war?** Left open. The First Answers
+**What happens to Ascendants after the war?** Explored in [46 — Wild Ascendants & the Old Ones](46-wild-ascendants.md). The First Answers
 lay down and became landscape ([13](13-legends.md)). Perhaps every Ascendant
 eventually does the same.
 
