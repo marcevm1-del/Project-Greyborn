@@ -28,7 +28,9 @@ Please confirm or override:
 | 20 | What are the Base Form species called on Greyborn? Their proposed life cycle (budding from birth-nodes, broods, Strays) is in 12 | Open | [12](12-life-on-greyborn.md) |
 | 21 | Launch maps: Ashfall Crossing, The Elder Ribs, Breathing Canopy. Are three the right number, and these the right regions? | Proposed | [11](11-atlas.md#proposed-launch-match-maps) |
 | 22 | Should weather and time of day vary per match, or be fixed per map? | Varies per match (visibility and sound only) | [12](12-life-on-greyborn.md#weather-and-time-of-day) |
-| 23 | The Sleeper (Rimewastes) and the Murmur's possible loneliness are left as mysteries. Do you want either developed into a story thread? | Unresolved on purpose | [11](11-atlas.md), [12](12-life-on-greyborn.md#how-the-murmur-thinks) |
+| 23 | The Sleeper (Rimewastes) and the Murmur's possible loneliness are left as mysteries. Do you want either developed into a story thread? The Sleeper is now proposed as a possible **seventh answer** (future lineage) | Unresolved on purpose | [13](13-legends.md#the-sleeper-a-seventh-answer), [12](12-life-on-greyborn.md#how-the-murmur-thinks) |
+| 24 | **Memories** (wordless lore visions at map sites, collected in a Codex, cosmetic rewards only). Is this the right way to tell the story with no words? | Proposed | [13](13-legends.md#how-players-learn-the-history-memories) |
+| 25 | **Hushed Answers** (glass copies of the First Answers): seasonal bosses, Starwound endgame, or a PvE mode? | Open | [13](13-legends.md#the-hushed-answers) |
 
 ## Decided
 
@@ -65,3 +67,4 @@ Please confirm or override:
 | gdd-0.4 | 2026-10-02 | New chapter **09 — Wildlife**: 40 creatures across 5 body-plan groups, 4 threat tiers, lineage affinities, an income cap, 6 proposed biomes. |
 | gdd-0.5 | 2026-10-02 | New chapter **10 — The World**: living planet, the Starwound meteorite, the Murmur hive mind, Wildborn vs. Blightborn, lineages as the planet's six answers, timeline, tone. Patron event decks (comeback mechanic), Roots vs. Blight, crater and Heartwood zones, wildlife infection and rallying. |
 | gdd-0.6 | 2026-10-02 | Names approved. New chapters **11 — Atlas** (the Greyreach, 12 regions on an infection gradient, launch maps) and **12 — Life on Greyborn** (Base Form life cycle, flora, weather, Murmur biology and Blight stages). |
+| gdd-0.7 | 2026-10-02 | New chapters **13 — Legends** (Memories codex, the six First Answers and their resting places, the Sleeper as a possible seventh answer, the Fall in seven Memories, the Hushed Answers, creature myth-behaviours) and **14 — Lineage Forms** (readability rules, Stage looks for both sides, per-lineage Wildborn/Blightborn art and sound briefs, transformation moments). |

@@ -30,6 +30,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 10 | [The World](gdd/10-world.md) | The living planet, the Starwound meteorite, the Murmur hive mind, Wildborn vs. Blightborn |
 | 11 | [Atlas](gdd/11-atlas.md) | The Greyreach: 12 regions from the Heartwood to the Starwound, the infection gradient, launch maps |
 | 12 | [Life on Greyborn](gdd/12-life-on-greyborn.md) | Base Form life cycle, plants, weather, the biology of the Murmur |
+| 13 | [Legends](gdd/13-legends.md) | The First Answers, the Fall, the Sleeper, the Hushed Answers, Memories |
+| 14 | [Lineage Forms](gdd/14-lineage-forms.md) | How each lineage looks and sounds at every Stage, Wildborn and Blightborn |
 
 ## Superseded material
 
