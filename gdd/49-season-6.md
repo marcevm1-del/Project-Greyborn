@@ -110,3 +110,48 @@ For the first time, the War Map has a **shared goal** ([18](18-the-answering-war
 2. **Stillheart's purpose** is known: the planet's answer to the Clamor.
 3. **The two sides have fought for something together.** The PvP war continues,
    but its meaning has changed.
+
+---
+
+## How Season 6 feels
+
+Season 6 is the most dramatic season yet. The sky is red every night, the
+planet is asleep and vulnerable, and the Clamor falls in force. For the first
+time, players see the Murmur afraid: its creatures flinching from the
+red streaks, its whispers falling silent.
+
+The emotional centre is the Truce. Players who have fought the other side
+for a year and a half are put on mixed teams. The first time a Wildborn Titan
+and a Blightborn Brawler land a Smash & Roll together against a Scald Hulk,
+and braided ground spreads under their feet, it should feel like something
+historic has happened. The Truce is meant to be the moment players remember
+when they think of Greyborn's story.
+
+## Braided ground, described
+
+Where roots and crystal meet in a Truce match, they don't fight. The roots
+grow into cracks in the crystal; the crystal grows around the roots like
+frost around grass. The result is a woven surface, warm amber and cold cyan
+threads together, glowing softly. It hums with both sounds at once: a creak
+of wood and a chime of glass, in harmony. Scald struggles to take it.
+
+Braided ground is the season's central visual, and it should be beautiful.
+It's the image on the key art, the cosmetic set, the loading screens.
+
+## Season 6 rewards
+
+| Reward | Source |
+|---|---|
+| **Braided cosmetic set** (every lineage, root and crystal together) | Everyone, whatever the finale result |
+| **Truce Bond marks** | Completing Truce matches with a mixed team |
+| **Frost Against Fire** Stillheart Growth | Playing Stillheart in the Truce |
+| **"I was there: The Roar Falls"** Memory | Finale participation |
+| **Roar trophy** | Being in the team that lands the final blow on the Roar |
+
+## Why Season 6 matters for what follows
+
+Season 6 gives the players something precious so that Season 7 can take it
+away ([51](51-season-7.md)). The truce breaks, the braids burn, and the
+grief only works because Season 6 made the alliance feel real. The Last
+Braid only matters because players remember what braided ground looked
+like, in their own matches, under their own feet.

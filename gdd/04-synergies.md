@@ -106,3 +106,64 @@ star of the final phase. Confirm with the director.)*
 Six lineages make **15 possible pairs**; the source pages show 3. Proposal:
 every other pair has a small **cross-resonance** passive (e.g. Titan + Verdant:
 Bulwark also protects rooted nodes behind it) but no Synergy ability. All 12 are designed in [32 — Cross-Resonance](32-cross-resonance.md).
+
+---
+
+## Each Synergy, described as it happens
+
+**Void Garden (Verdant + Hollow).** The Verdant kneels and drives its roots
+into the ground; moss spreads in a wide circle. The Hollow glides over it and
+opens a Void Rift in the centre. Where root and void meet, the air dims and
+the ground goes soft and dark, like a forest floor at midnight. Enemies inside
+feel heavy and slow; their capture channels flicker and fail. On the
+Blightborn side, the roots are crystal lattices and the void is full of
+turning shards, but the shape and the timing are identical.
+
+**Co-Stalk (Thornrunner + Bonespire).** The Thornrunner freezes, then lets out
+a clicking trill, and a glowing mark appears on the target's weak point,
+visible to the whole team. Across the map, the Bonespire sets its feet. The
+lance flies, curving slightly in the air toward the mark, and strikes. The
+weak point cracks with a sound like a bone snapping, and the target staggers,
+revealed and exposed.
+
+**Smash & Roll (Titan + Brawler).** The Titan rears up and brings both fists
+down; the ground buckles in a ring and the target staggers. In the same
+breath, the Brawler, already moving, tucks into its Roll Commit and hits the
+staggered target at full speed. The target is launched into the air, hangs
+for a second, and both partners strike it before it lands. If the Brawler is
+late, the Titan's fists strike empty ground, and the cooldown penalty makes
+the cost of poor timing felt.
+
+## Synergy HUD and feedback
+
+| Element | What players see |
+|---|---|
+| **Partner tether** | A faint line to your pair partner when within 15 m; brighter when Synergy is ready |
+| **Synergy level** | A small ring of 10 pips around the partner's portrait |
+| **Tier indicator** | S1 / S2 / S3 shown on the Synergy icon, with its current cooldown |
+| **Phase lock** | In Phase 3 and 4, locked tiers are greyed with a small icon of the phase |
+| **Success** | A unique sound sting for each Synergy, heard by both teams |
+| **Failure** | Smash & Roll's cooldown penalty is shown as a cracked icon on the Titan's slam |
+
+## Synergy level progression in a match
+
+| Time | Typical Synergy level (for a pair that stays together) |
+|---|---|
+| 5:00 | 2–3 |
+| 10:00 | 5 (S2) |
+| 15:00 | 7–8 |
+| 18:00 | 10 (S3) |
+
+A pair that splits up for long stretches falls well behind this curve and may
+not reach S3 before Phase 4, when S3 is the only tier allowed. Staying
+together is the whole point.
+
+## Counter-play summary
+
+Every Synergy has a clear answer, so pairs are powerful but never unbeatable:
+
+| Synergy | Weakness |
+|---|---|
+| Void Garden | Needs the Verdant's roots first: kill or displace the Verdant |
+| Co-Stalk | Needs line of sight for the lance: break it after being Marked |
+| Smash & Roll | Needs the Brawler within 1.5 s: spread out, or bait the Titan into slamming alone |

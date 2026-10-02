@@ -102,3 +102,48 @@ behaviours make the legends visible in the world:
 - **Bonewrights** build their totems facing the Elder Ribs.
 - **Blighted creatures** pause when they pass a Memory site, as if listening.
   The Murmur is learning the planet's history too.
+
+---
+
+## The First Answers, in portrait
+
+**The Mountain That Walked.** The first Titan was not a warrior. It was a
+shaper: it walked, and where it walked, mountains rose behind it. In the
+Fall, it turned its strength against the glass tide for the first time. When
+the war ended for it, it lay down along the Spirecliffs, and its spine became
+the Vertebrae. On clear days, the shape of its head can still be seen in the
+northernmost peak.
+
+**The Breaker.** The first Brawler was the planet's storm: restless, loud,
+always moving. When the first Blightborn tide poured down the coast, it stood
+on the shore and hammered the ground until the cliffs cracked into the sea,
+breaking the tide's path. The fist-shaped craters down the cliffs are its
+work ([41](41-landmarks.md)).
+
+**The Breath.** The first Verdant breathed, and forests grew. In the Fall, it
+grew a wall of trees so dense the Murmur couldn't pass, and then it became
+part of that wall. The Rootwilds still breathe in its rhythm.
+
+**The Quiet.** The first Hollow held the deep places. When the Murmur's
+whispers reached the Underroot, it sank down and sealed the nerves of the
+planet with its own silence. The swamp above still holds that silence.
+
+**The Hunt That Never Ended.** The first Thornrunner chose never to stop. It
+still runs, around and around the world, and the herds follow it. Some say
+it's still hunting the first Blightborn that escaped it.
+
+**The Rememberer.** The first Bonespire gathered the bones of everything
+lost in the Fall, so the planet would never forget. Its ribcage, the Elder
+Ribs, still shelters those bones.
+
+## Telling legends without words
+
+Because the world has no words, every legend is told through four layers:
+
+1. **The landscape:** the Vertebrae, the cracked cliffs, the breathing forest.
+2. **Creature behaviour:** the herds following the Hunt; Strays facing north.
+3. **Memories:** short wordless visions at map sites ([38](38-memory-catalogue.md)).
+4. **Music:** each First Answer has a short motif, woven into its region's soundscape.
+
+A player who never opens the Codex should still sense the legends from the
+world around them. A player who does will find them told in full.

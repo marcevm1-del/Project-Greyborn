@@ -107,3 +107,50 @@ as it grows over time. They have no extra rules, so the two sides stay mirrored.
 - It may be **lonely**. A mind that crossed the stars in a stone, with no voice
   but its own, endlessly copying the shapes of others… (A thread for future
   story, kept deliberately unresolved.)
+
+---
+
+## How life feels on Greyborn
+
+Everything on Greyborn is connected to the planet. Plants drink its SAP;
+grazers eat the plants; predators eat the grazers; and everything that dies
+sinks back into the soil and becomes the planet again. Nothing is wasted.
+The Kith understand this without words. They feel the planet underfoot as a
+pressure, a warmth, sometimes a call.
+
+The Murmur breaks this circle. Blighted creatures don't eat, don't die in the
+same way, and don't return to the soil; they shatter into glass dust that
+never becomes anything else. Where the Murmur is strong, the circle of life
+stops turning, and the world goes quiet.
+
+## A Kith's first day, in matches and in the wild
+
+| | In the wild | In a match |
+|---|---|---|
+| **Budding** | A birth-node ripens over days, then splits | The match starts; the Cradle or Clutch splits |
+| **First food** | Sapbloom petals | Critters, Strays, Sapbloom |
+| **First danger** | An Ashfang pack | An enemy brood, or the same Ashfang pack |
+| **The call** | Rarely comes | Comes immediately: the planet (or the Murmur) wants this brood now |
+| **Growth** | Slow, over seasons, or never | Twenty levels in twenty minutes |
+
+The match is a compressed, intense version of a Kith's life: everything a
+wild Kith might do over a lifetime, a called Kith does in one battle.
+
+## Weather in depth
+
+**Ashfall** turns the air grey and soft. Sound travels farther than sight,
+so players hunt by ear. **Rime Fog** hangs low over cold ground; shapes
+loom out of it suddenly. **Sap Rain** falls warm and amber, and every surface
+glistens. **Shard Storm** is the strangest: glittering glass falling from a
+clear sky, chiming as it lands. **Breathing Night** is darkness lit only by the
+moon, the Fall-line and the living glow of the world: Lanternmoss, nerve-light, and Blight.
+
+## The Murmur's biology, as a scientist might see it
+
+If anyone on Greyborn could study the Murmur, they would note:
+
+- **It isn't a fungus, a crystal or an animal.** It's a mind that grows as crystal.
+- **It needs SAP** to grow, but doesn't eat it like an animal; it absorbs it through Blight.
+- **It has no single brain.** Thought gathers in whisper-nodes, and densest in the Lattice Sea.
+- **It copies by touch.** A creature taken by Blight is studied, and the Murmur learns its shape.
+- **It can now create** (Season 5): something it had never done on Greyborn before.

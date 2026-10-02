@@ -141,3 +141,4 @@ Please confirm or override:
 | gdd-0.31 | 2026-10-02 | Quiet World and Season 6 direction decided. New chapter **49 — Season 6: The Roaring Comes** (the Stillheart reveal, the expanded Truce with braided ground, a shared community bar, The Roar Falls finale). |
 | gdd-0.32 | 2026-10-02 | New chapter **50 — Master Timeline** (the whole story in order, decided vs. proposed, season branches, open threads). |
 | gdd-0.33 | 2026-10-02 | Stillheart's purpose and the broken truce decided. New chapter **51 — Season 7: The Unbraiding** (the break as a tragedy, braided regions as fronts, the Last Braid, Memory of the Truce, The Unbraiding finale). Timeline updated. |
+| gdd-0.34 | 2026-10-02 | **Expansion pass** (director's request): every chapter now has at least 1,000 words, with new in-depth descriptive sections added to 39 chapters. No decisions changed. |
