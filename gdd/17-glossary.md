@@ -81,6 +81,7 @@ were confirmed by the director; everything else is proposed.
 | **Territorial Influence (TI)** | % of the map a team controls | [05](05-territory-and-economy.md) |
 | **Thornrunner** | Stalker lineage; Hunt pair | [02](02-ascendant-roster.md) |
 | **Titan** | Juggernaut lineage; Commit pair | [02](02-ascendant-roster.md) |
+| **Turns** | The planet's natural year: Bloom, Ash, Rime, Fever | [29](29-the-planets-year.md) |
 | **Underroot** | Caves beneath everything; the planet's nerves | [11](11-atlas.md) |
 | **Verdant** | Territory-controller lineage; Root & Void pair | [02](02-ascendant-roster.md) |
 | **Weak point** | Each Ascendant's vulnerable spot; breaks after 20% max Health of damage | [04](04-synergies.md) |

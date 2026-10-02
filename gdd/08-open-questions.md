@@ -49,6 +49,8 @@ Please confirm or override:
 | 43 | Business model (free-to-play, premium, battle pass?). Collection rewards are defined without pricing | Open | [26](26-collection.md) |
 | 44 | Extra modes: Ranked, Brood Skirmish (2v2, one pair per team), Apex Hunt, The Truce (co-op vs. the Clamor), The Den (training), Custom/tournament. Which are in scope for launch? | Proposed | [27](27-modes.md) |
 | 45 | Tournament preset turns patron events (the comeback mechanic) **off**. Agree? | To be tested | [27](27-modes.md#custom--tournament) |
+| 46 | Announcement trailer "The Answering" (90 s, wordless). Does the storyboard capture the game? Include the Second Light tag? | Proposed | [28](28-tales-and-trailer.md#announcement-trailer-the-answering-storyboard) |
+| 47 | The planet's year (Bloom, Ash, Rime, Fever), with each live season set in one Turn. What story should Season 4 (Bloom) tell? | Proposed; Season 4 open | [29](29-the-planets-year.md) |
 
 ## Decided
 
@@ -100,3 +102,4 @@ Please confirm or override:
 | gdd-0.15 | 2026-10-02 | New chapters **23 — Art Direction** (style, pillars, palette, region looks, sky, key art briefs, UI) and **24 — The Three Minds** (the planet, the Murmur and the Clamor: personalities, relationships, writing rules). |
 | gdd-0.16 | 2026-10-02 | New chapters **25 — Calls & the First Budding** (wordless call wheel and instinct emotes; story-driven onboarding) and **26 — Collection & Long-Term Progression** (Growths, Markings, Lineage Mastery, Pair Bonds, Memory Codex, season rewards, the Den). |
 | gdd-0.17 | 2026-10-02 | New chapter **27 — Modes**. Consistency pass: Stillheart noted in the roster, glossary and roster-size question; wildlife habitats linked to the atlas. |
+| gdd-0.18 | 2026-10-02 | New chapters **28 — Tales & Trailer** (three tone stories, a wordless announcement-trailer storyboard) and **29 — The Planet's Year** (four Turns, how they map to live seasons and match atmosphere, the planet's day). |

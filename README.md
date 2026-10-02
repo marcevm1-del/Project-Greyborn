@@ -45,6 +45,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 25 | [Calls & the First Budding](gdd/25-calls-and-onboarding.md) | Wordless communication as creature calls; onboarding as a Kith's birth |
 | 26 | [Collection](gdd/26-collection.md) | Cosmetics, Lineage Mastery, Pair Bonds, the Memory Codex, the Den. No in-match power |
 | 27 | [Modes](gdd/27-modes.md) | Ranked, Brood Skirmish (2v2 pairs), Apex Hunt, The Truce (co-op vs. the Clamor), training, custom |
+| 28 | [Tales & Trailer](gdd/28-tales-and-trailer.md) | Three short stories for tone; a wordless announcement-trailer storyboard |
+| 29 | [The Planet's Year](gdd/29-the-planets-year.md) | Bloom, Ash, Rime and Fever; how they shape seasons and matches |
 
 ## Superseded material
 
