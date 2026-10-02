@@ -14,6 +14,7 @@ were confirmed by the director; everything else is proposed.
 | **Blight** | The Murmur's crystal growth. Blightborn territory, the mirror of roots | [10](10-world.md), [12](12-life-on-greyborn.md) |
 | **Blighted** (variant) | A wildlife creature infected by the Murmur | [09](09-wildlife.md) |
 | **Blightborn** | The infected side. Base Forms taken by the Murmur (**decided**) | [10](10-world.md) |
+| **Braided ground** | Roots and Blight grown together in the Truce; resists Scald | [49](49-season-6.md) |
 | **Bone Flats** | Salt plain of fossils; the planet's memory | [11](11-atlas.md) |
 | **Bonespire** | Siege-sniper lineage; Hunt pair | [02](02-ascendant-roster.md) |
 | **Brawler** | Diver/bruiser lineage; Commit pair | [02](02-ascendant-roster.md) |

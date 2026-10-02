@@ -30,6 +30,8 @@ everything else points to the chapter where it's proposed.
 | **The Murmur's past** | The Clamor devoured its home world; a fragment fled in the meteorite; the Clamor followed it |
 | **The Murmur learns to create** | Its first creation is the Glass Flower (Season 4), shaped from a memory of home. Season 5 is the turning point |
 | **Why the Kith** | The First Answers were Kith; every Kith carries all the lineages sleeping inside it |
+| **The Quiet World** | The Murmur's lost home: a crystal world where it was the native life, until the Clamor devoured it |
+| **Season 6: The Roaring Comes** | The Clamor in full force; the planet and the Murmur face it together |
 
 ## The war in one paragraph
 

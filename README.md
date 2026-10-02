@@ -66,7 +66,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 45 | [The Kith](gdd/45-the-kith.md) | A full portrait of the players' species: body, behaviour, kinds, and why the planet calls them |
 | 46 | [Wild Ascendants & the Old Ones](gdd/46-wild-ascendants.md) | Kith that evolve on their own, and ancient Ascendants who survived from before the Fall |
 | 47 | [Season 5: The First Made Thing](gdd/47-season-5.md) | The turning point: the Murmur creates, the planet answers, and both sides grow on the battlefield |
-| 48 | [Beyond the Sky](gdd/48-beyond-the-sky.md) | The Murmur's lost home, the Clamor's hunt, the sky as a map, and Season 6 options |
+| 48 | [Beyond the Sky](gdd/48-beyond-the-sky.md) | The Murmur's lost home (the Quiet World), the Clamor's hunt, the sky as a map |
+| 49 | [Season 6: The Roaring Comes](gdd/49-season-6.md) | The Clamor in full force, why Stillheart was made, braided ground, and a shared fight |
 
 ## Superseded material
 

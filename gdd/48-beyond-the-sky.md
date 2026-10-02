@@ -7,7 +7,7 @@ a proposal. It's revealed **only through Memories and visions**, never words ([2
 
 ## The Murmur's lost home
 
-Proposed name for the team: **the Quiet World** (never named in the game).
+**Decided (2026-10-02):** the Murmur's lost home is **the Quiet World**, a world of crystal where the Murmur was the native, calm life (the name is for the team only; it's never named in the game).
 
 | Aspect | Description |
 |---|---|
@@ -70,6 +70,8 @@ makes the Clamor come in greater force.
    Murmur is a refugee; neither is wrong. The Clamor is the only true threat, and even it is a force of nature rather than a villain.
 
 ## Season 6 options
+
+**Decided (2026-10-02): A, The Roaring Comes.** See [49](49-season-6.md).
 
 The turning point ([47](47-season-5.md#the-question-the-turning-point-opens))
 plus the Clamor coming in force suggest three directions. The director's call:
