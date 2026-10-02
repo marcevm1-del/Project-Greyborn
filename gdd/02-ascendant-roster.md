@@ -123,3 +123,190 @@ from Level 8 to Level 16.
 - **Speed** is a % of base move speed. Big Ascendants get *relatively* slower,
   except the Thornrunner.
 - **Control** scales crowd-control duration *and* node capture/uproot power.
+
+---
+
+## The lineages in depth
+
+### Titan: the mountain that fights
+
+**How it plays.** The Titan is the slowest lineage and the hardest to kill.
+It wins by being where it needs to be before the fight starts: in front of a
+Hub, in a chokepoint, between a carrier and the enemy. Its Quake Slam is the
+best crowd-control setup in the game, and it exists to be followed up, by a
+Brawler above all, but also by a Bonespire's lance or a Thornrunner's dash.
+
+**Strengths:** huge Health, frontal guard, the best setup ability, strong in
+Phase 4 when fights are decided by who holds the line.
+**Weaknesses:** slow to rotate, a weak point on its back that flankers love,
+and punished for slamming alone (+50% cooldown without a follow-up).
+
+**Ability growth.** At **L5**, Quake Slam's radius grows by 20%. At **L10**, the
+branch upgrade (Aggression: longer stagger; Tactical: Bulwark protects allies
+behind). At **L15**, the second branch upgrade. At **L20**, its Ultimate Form.
+
+**The feeling of playing it:** patience, then one perfect slam.
+
+### Brawler: the storm that commits
+
+**How it plays.** The Brawler is all momentum. It wants to be in the middle
+of a fight and never leave. Roll Commit makes it unstoppable for a moment, and
+that moment is when it chooses its target. It's the best hunter of carriers
+on their way home, and the partner who turns a Titan's slam into a kill.
+
+**Strengths:** burst damage, mobility, unstoppable engage, excellent at
+denying evolution by killing carriers.
+**Weaknesses:** a weak point exposed after every Roll Commit, poor at range,
+and a pick that fails without follow-up.
+
+**Ability growth.** At **L5**, Haymaker charges faster. Branch upgrades at **L10**
+and **L15**; Ultimate Form at **L20**.
+
+**The feeling of playing it:** constant motion, and the thrill of the dive.
+
+### Verdant: the forest that claims
+
+**How it plays.** The Verdant wins the map rather than fights. Its Deep Root
+captures twice as fast as anyone else, its Bramble Walls reshape paths, and its
+Sap Draw keeps the team alive. It's the engine of territory and SAP, and the
+foundation of the Void Garden with the Hollow.
+
+**Strengths:** fastest capture, healing, path control, the strongest
+territory Synergy.
+**Weaknesses:** low damage, a bloom-pod weak point on its shoulder, and a
+priority target for every enemy who understands the map.
+
+**Ability growth.** At **L5**, Entangle lasts 0.3 s longer. Branch upgrades at
+**L10** and **L15**; Ultimate Form at **L20**.
+
+**The feeling of playing it:** watching the map turn your colour.
+
+### Hollow: the silence that controls
+
+**How it plays.** The Hollow is a zone controller and disruptor. Its Void Rift
+slows and drains Control, its Null Pulse silences, and its Hollow Step lets it
+appear where no one expects. It's the quietest creature on the map, and the
+one that decides where a fight happens.
+
+**Strengths:** area denial, silence, mobility, stealth by sound.
+**Weaknesses:** fragile, a large frontal weak point, and dependent on
+positioning more than any other lineage.
+
+**Ability growth.** At **L5**, Void Rift's slow increases. Branch upgrades at
+**L10** and **L15**; Ultimate Form at **L20**.
+
+**The feeling of playing it:** being the reason the enemy can't do what it planned.
+
+### Thornrunner: the hunt that finds
+
+**How it plays.** The Thornrunner is the scout and assassin. It's the fastest
+lineage, the quietest moving one, and the one that marks prey for the team.
+Mark Prey exposes a weak point to everyone, and that turns the whole team
+into hunters. It farms wildlife on the flanks and intercepts carriers.
+
+**Strengths:** speed, stealth, weak-point exposure, information.
+**Weaknesses:** low Health, poor in long fights, and an abdomen weak point.
+
+**Ability growth.** At **L5**, Thorn Dash's bleed lasts longer. Branch upgrades
+at **L10** and **L15**; Ultimate Form at **L20**.
+
+**The feeling of playing it:** the moment you spot the heaviest carrier on the map, alone.
+
+### Bonespire: the memory that strikes from afar
+
+**How it plays.** The Bonespire is the long-range damage dealer and siege
+specialist. Its Spire Lance deals double damage on exposed weak points, its
+Ossuary walls control ground, and its late-game Bone Cathedral tears down
+structures. With a Thornrunner marking targets, it breaks weak points from
+across the map.
+
+**Strengths:** range, siege damage, weak-point breaking, Calcify's stun.
+**Weaknesses:** slow, a loud lance that gives away its position, and a back
+weak point that divers aim for.
+
+**Ability growth.** At **L5**, Spire Lance travels faster. Branch upgrades at
+**L10** and **L15**; Ultimate Form at **L20**.
+
+**The feeling of playing it:** the crack of a lance landing on a glowing weak point from forty metres away.
+
+## Matchups at a glance
+
+| | Strong against | Weak against |
+|---|---|---|
+| **Titan** | Brawler dives (Bulwark), Verdant (slams interrupt rooting) | Bonespire (back weak point at range), Hollow (slowed and drained) |
+| **Brawler** | Bonespire, Thornrunner (catches fragile targets) | Titan (guard), Stillheart (Lull and Drowse) |
+| **Verdant** | Long fights (healing), territory battles | Thornrunner (fast flanks), Brawler dives |
+| **Hollow** | Grouped teams, channels (Null Pulse) | Thornrunner (Mark reveals it), Brawler |
+| **Thornrunner** | Carriers, Hollow, Bonespire in the open | Titan in close range, area control |
+| **Bonespire** | Titan, structures | Brawler, Thornrunner |
+| **Stillheart** | Brawler, divers | Ranged poke (Bonespire), long fights |
+
+These are tendencies, not rules. Pairs change everything.
+
+### Stillheart: the patience that stops fire (from Season 3)
+
+**How it plays.** Stillheart slows everything down for the enemy and buys
+time for its own team. Lull and Drowse stop divers in their tracks; Hibernate
+saves a teammate carrying hundreds of cores from certain death; Long Night
+makes enemy cooldowns crawl. It has no Synergy of its own, but it makes every
+partner better through Lullaby Resonance and Attunement ([21](21-season-2.md#pairing-universal-partner-decided)).
+
+**Strengths:** the best protection for carriers, strong anti-dive tools, fits any team.
+**Weaknesses:** low damage, a heart weak point that's visible at every Stage,
+and a slow, readable movement pattern between bursts.
+
+**Lore:** the planet's answer to the Clamor, grown long before the Fall and
+put to sleep because the planet feared what it was for ([49](49-season-6.md#the-reveal-why-stillheart-sleeps)).
+
+**The feeling of playing it:** catching an ally in ice a heartbeat before the killing blow.
+
+## Team roles
+
+Every team of four needs some of these jobs covered. Each lineage covers one
+or two well:
+
+| Role | Best at it | Can do it |
+|---|---|---|
+| **Front line** (hold ground, absorb damage) | Titan | Brawler, Stillheart |
+| **Engage** (start fights on your terms) | Brawler | Titan, Hollow |
+| **Territory** (capture and hold nodes) | Verdant | Hollow, Titan (Tactical) |
+| **Control** (slow, silence, displace) | Hollow, Stillheart | Titan, Bonespire |
+| **Scout and hunt** (information, carriers) | Thornrunner | Brawler |
+| **Siege** (Hubs and Enemy Cores) | Bonespire | Titan (Avalanche), Brawler (Wrecking Rush) |
+| **Sustain and save** (healing, protection) | Verdant, Stillheart | Titan (Bulwark) |
+
+A team with all seven roles covered is rare; most teams pick their strengths
+and accept a gap.
+
+## Lineage design principles
+
+1. **Every lineage has a clear fantasy** rooted in a part of the planet's body: bones, fury, growth, silence, hunters, memory, sleep.
+2. **Every lineage has one weak point** in a place that matches its weakness:
+   the Titan's back (flanked), the Brawler's chest (after it commits), the Hollow's open chest (from the front).
+3. **Every lineage is better with a partner** than alone.
+4. **Every lineage has a sound** you can recognise with your eyes closed.
+5. **No lineage is best at everything.** Strength in one role always costs something in another.
+
+## Base Form tips (Levels 1–2)
+
+Before the lineage awakens, every player is the same small Kith. Good early habits:
+
+- **Eat everything small.** Critters and Strays get you to Level 3 fastest.
+- **Stay near your pair partner.** Synergy levels build from the very start.
+- **Don't take fights you can't escape.** A Base Form dies in seconds.
+- **Watch the enemy at 2:30–3:30.** Their awakenings reveal the enemy draft.
+- **Root cheap nodes near base.** Early territory feeds passive income all match.
+
+## Silhouettes at a glance
+
+At match distance, each lineage must be recognisable in solid black:
+
+| Lineage | Silhouette key |
+|---|---|
+| Titan | Huge, broad, top-heavy; a ridge along the back |
+| Brawler | Hunched, long arms, knuckle-walking |
+| Verdant | Tall, slender legs; wide branching antlers |
+| Hollow | Thin, floating; a visible hole through the torso |
+| Thornrunner | Low and long; many legs; spiked outline |
+| Bonespire | Hunched; tall spikes rising from the back |
+| Stillheart | Long-limbed and antlered, slow, with a rounded, shaggy outline |

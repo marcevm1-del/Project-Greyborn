@@ -117,3 +117,143 @@ feeding, idle calls. These follow Stage (deeper as it grows) and side (wood
 or glass). Breathing is especially important: a player who stops moving
 should hear their creature breathe, slower when healthy and faster when hurt,
 which tells them their state without a glance at the HUD.
+
+---
+
+## Each lineage, observed
+
+Field notes, as if a patient observer watched each lineage for a whole match.
+
+**The Titan** spends most of its time still. Between fights, it stands at a
+chokepoint or beside a Hub and shifts its weight from foot to foot, and the
+ground creaks under it. Small creatures treat it like a hill: Cairnshells
+climb onto its back, birds land on its shoulders. When it moves, it moves with
+purpose, and everything nearby moves out of its way. When it fights, it seems
+to wait for the exact moment, then commits completely.
+
+**The Brawler** never seems to rest. It paces, circles, drums its knuckles on
+the ground, tests the air. It approaches every creature it meets as if
+deciding whether to fight it. It's playful with its pair partner: a shoulder
+bump, a short mock charge. In a fight, it's pure motion.
+
+**The Verdant** moves slowly and carefully, and everything around it seems to
+calm down. Grazers follow it. Lumen Bees settle on its antlers. It stops often
+to touch the ground, and wherever it touches, moss spreads. It's the only
+lineage that seems to *tend* the world rather than move through it.
+
+**The Hollow** is hard to observe. It glides between shadows, hangs perfectly
+still for long stretches, then moves suddenly. Sounds dim around it. Birds
+stop singing. If you watch it long enough, you notice it seems to be
+*listening*, always, to something no one else can hear.
+
+**The Thornrunner** is always low to the ground, head moving in quick jerks,
+tasting the air. When it finds prey, it freezes completely, sometimes for
+several seconds, then explodes into motion. Between hunts, it grooms its
+thorns, and it never sleeps in the open.
+
+**The Bonespire** is the most methodical. It walks like a heron, deliberately,
+stopping to scan. It collects bones: after every kill, it picks one up and
+fits it onto its back, adjusting until it's satisfied. Scavengers follow it at
+a distance, expecting what it leaves behind.
+
+**Stillheart** seems asleep most of the time, frost forming on its fur. Then,
+when danger comes, it moves faster than anything its size should, and its
+heartbeat, visible in its chest, races. When the danger passes, it slows, and
+the frost returns.
+
+## Rivalries and recognitions
+
+Lineages recognise each other, and their idle behaviour shows it:
+
+| When near… | Behaviour |
+|---|---|
+| **Its pair partner** | Turns toward it; small greeting gesture (Titan and Brawler bump shoulders; Verdant and Hollow share a moment of stillness; Thornrunner and Bonespire exchange a click) |
+| **An enemy of the same lineage** | A long, wary stare; a challenge call |
+| **An enemy of its pair partner's lineage** | Instinctive aggression; leans toward it |
+| **A Stillheart (any side)** | Slows slightly; seems calmer |
+| **A Wild Ascendant** | Uncertainty: a lowered head, a soft call, as if recognising something ancient |
+| **An Old One** | Stops and watches, in silence |
+
+## Behaviour through the Turns and weather
+
+| Condition | How creatures behave |
+|---|---|
+| **Bloom** | More playful; Kith and Base Forms chase small creatures |
+| **Ash** | Restless; frequent glances north at dusk |
+| **Rime** | Slower; breath visible; creatures huddle when idle |
+| **Fever** | Panting, agitated; idles are shorter and twitchier |
+| **Ashfall weather** | Creatures squint and shake ash from their coats |
+| **Sap Rain** | Creatures turn their faces up to drink |
+| **Shard Storm** | Wildborn flinch from falling glass; Blightborn stand still and let it fall on them |
+| **Breathing Night** | Creatures stay closer together |
+
+## How behaviour helps the competitive game
+
+Every behaviour here is **cosmetic** except where stated, but together they
+make the game easier to read:
+
+- **Hurt states** show weakness without health bars.
+- **Size-fear** shows the power gap between Stages.
+- **Pair greetings** show which enemies are paired up.
+- **Freeze-then-strike** gives a tiny tell before a Thornrunner pounces.
+- **Weather reactions** confirm the conditions at a glance.
+
+The goal is a battlefield where a skilled player reads the enemy's state from
+body language alone, the way a hunter reads an animal.
+
+## Feeding and resting in detail
+
+| Lineage | Feeding animation | Resting animation |
+|---|---|---|
+| **Titan** | Scoops cores in a cupped hand, swallows slowly; the glow travels down its stone throat | Lowers itself to the ground and becomes nearly indistinguishable from rock |
+| **Brawler** | Snatches cores and tears into them; quick, greedy bites | Never fully rests; sits on its haunches, alert |
+| **Verdant** | Cores are absorbed through its hooves; flowers open along its back | Lies down like a deer, legs folded, antlers resting on the ground |
+| **Hollow** | Cores float into its chest cavity and fade | Hangs motionless in the air, just above the ground |
+| **Thornrunner** | Snaps cores out of the air mid-stride | Curls up tightly, thorns out, in a hollow or under a ledge |
+| **Bonespire** | Grinds cores between bony plates with a soft crunch | Stands still, one leg raised, like a sleeping heron |
+| **Stillheart** | Cores freeze on contact and slowly melt into its fur | Falls asleep standing; frost spreads over it |
+
+## Sound vignettes
+
+Short descriptions for sound designers of what a player should hear standing
+still beside each lineage:
+
+- **Titan:** a slow grinding as it shifts, a breath like wind in a cave, small stones settling.
+- **Brawler:** quick snorts, knuckles tapping, a low rumble in the chest.
+- **Verdant:** leaves rustling, a soft creak, bees humming nearby.
+- **Hollow:** almost nothing. A faint pressure, like the air before a storm.
+- **Thornrunner:** quick clicks, a hiss of breath, thorns rattling.
+- **Bonespire:** bones clicking as it adjusts, a whistle of air through bone.
+- **Stillheart:** a slow, deep heartbeat; frost crackling.
+
+The Blightborn versions add, under each, a faint whisper in harmony.
+
+## How wildlife perceives Ascendants
+
+For the AI that drives wildlife, each Ascendant has three perception values:
+
+| Value | Meaning | Example |
+|---|---|---|
+| **Threat** | How dangerous it seems to prey | High for Thornrunner and Brawler; low for Verdant |
+| **Presence** | How far away creatures notice it | High for Titan (sound) and Stage 3s; low for Hollow and Thornrunner |
+| **Attraction** | Whether certain creatures are drawn to it | Grazers to Verdant; scavengers to Bonespire; Hoarfrost Mites to Stillheart |
+
+These values feed the behaviours above (fleeing, following, falling silent).
+They're tuned so wildlife reactions stay **hints**, never more revealing than
+the creature's own sound signature ([43](43-living-creatures.md#how-wildlife-reacts-to-ascendants)).
+
+## Accessibility of behaviour cues
+
+Because body language carries information, it needs fallbacks:
+
+- **Hurt states** are also shown by the health bar for players who turn on
+  "always show enemy health"; limping is a bonus, not a requirement.
+- **Wildlife reactions** (birds going silent, prey fleeing) have optional
+  on-screen indicators: a small icon over the region where the reaction happens.
+- **Size-fear crouch** is reinforced by the Stage icon over each creature.
+- **Blightborn synchronisation** is cosmetic only; no information depends on noticing it.
+- **Breathing as a health cue** has a visual equivalent: the player's own
+  vignette pulses faster when hurt.
+
+The rule from sound design applies here too: **every cue that carries
+information must have a second way to be read.**
