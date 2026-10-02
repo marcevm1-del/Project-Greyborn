@@ -11,15 +11,22 @@ Please confirm or override:
 | 2 | What do the Synergy Access Matrix rows (S1–S4) mean? | Match phases; cells are cooldowns; "–" means locked | [04](04-synergies.md#synergy-access-by-match-phase) |
 | 3 | Phase 4's label ("Thornrunna and Bonstruction") | "Hunt" phase | [06](06-match-flow.md) |
 | 4 | What do the S1/S2/S3 values for weak points mean? | Regrowth time by the victim's Stage | [04](04-synergies.md#weak-points) |
-| 5 | Is the Level 1 humanoid the "Greyborn"? | Yes. Shared Base Form; lineage awakens at L3 | [02](02-ascendant-roster.md) |
+| 5 | What is the Level 1 humanoid called in-world, and how does it relate to the planet? (Native species? Colonists? Something the planet creates?) | Called "Base Form" for now | [02](02-ascendant-roster.md) |
 | 6 | Synergy level vs. Ascendant level | Two separate tracks (pair 1–10, player 1–20) | [04](04-synergies.md) |
 | 7 | The other 12 lineage pairings | Minor cross-resonance passives only | [04](04-synergies.md#open-the-other-12-pairings) |
 | 8 | Win condition | Base Heart, TI at 25:00, or 80% TI mercy rule | [06](06-match-flow.md#win-conditions-proposal) |
 | 9 | Duplicate lineages per team? | Not allowed | [06](06-match-flow.md) |
-| 10 | Is "Vaelmoor" the world, the studio or the domain? | Assumed to be the world/studio name | [00](00-source-pages.md) |
+| 10 | Is "Vaelmoor" the studio, or a region/continent of Greyborn? | Unknown | [00](00-source-pages.md) |
 | 11 | "18 months … Dost-Tamur" on p. 121 | Unknown: production timeline or place name? | [00](00-source-pages.md) |
 | 12 | Camera, platform and input | 3D third-person, PC first (assumed from the wireframe art) | [01](01-vision.md) |
 | 13 | Roster size at launch: 6, or more beyond what's shown? | 6 | [02](02-ascendant-roster.md) |
+| 14 | The "4v4" panels show a **world-map heat map**. Is there a planet-wide layer where match results change territory across Greyborn (a seasonal war map)? | Not designed yet. It would fit "Dominate the map" at planet scale | [05](05-territory-and-economy.md) |
+
+## Decided
+
+| Date | Decision |
+|---|---|
+| 2026-10-02 | **Greyborn is the planet.** The game's world is named after it; it is not the name of the humanoid Base Form. |
 
 ## Design risks to watch
 
@@ -39,3 +46,4 @@ Please confirm or override:
 | Version | Date | Change |
 |---|---|---|
 | gdd-0.1 | 2026-10-02 | Rebuilt from GDD v1.0 pp. 120–124: transcription and decoding, vision, roster, evolution, synergies, territory and economy, match flow, tactical notes. Replaces the placeholder single-player concept in `docs/` and `prototype/`, which was invented before the source pages were shared. |
+| gdd-0.2 | 2026-10-02 | Greyborn confirmed as the planet. Removed the assumption that the humanoid Base Form is "the Greyborn"; added an open question about a planet-wide territory layer. |

@@ -105,6 +105,7 @@ production note (an 18-month timeline?) or a place name. Flagged in open questio
 
 | Term | Type | Notes |
 |---|---|---|
+| **Greyborn** | Planet | The game's world (confirmed by the director, 2026-10-02) |
 | Titan, Brawler, Verdant, Hollow, Thornrunner, Bonespire | Ascendant lineages | 6 shown; the 6-icon team panel suggests the roster is 6 at minimum |
 | Evolution cores | Resource | Dropped on kills |
 | Enemy Cores | Map structure | Destroying them denies enemy progression |
@@ -112,4 +113,4 @@ production note (an 18-month timeline?) or a place name. Flagged in open questio
 | Resource Hub | Map structure | Hub Defense Level 1–10 |
 | Base | Map structure | Where you return to convert cores |
 | Ascendant | Player character | The evolved monster form |
-| vaelmoor.gg | Footer URL | Spelled "vaelmoor / vaeimoor / yaelmoor"; probably the studio or world name **Vaelmoor** |
+| vaelmoor.gg | Footer URL | Spelled "vaelmoor / vaeimoor / yaelmoor"; probably the studio name, or a region of Greyborn: **Vaelmoor** |

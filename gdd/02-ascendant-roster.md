@@ -19,10 +19,10 @@ and names in this file are **proposals** built on the source pages.
 
 ---
 
-## Shared Base Form (Levels 1–2): the Greyborn
+## Shared Base Form (Levels 1–2)
 
-Every player spawns as the same small grey humanoid. *(Interpretation: this
-is probably where the game's name comes from. Confirm with the director.)*
+Every player spawns as the same small humanoid Base Form. *(Its in-world
+name and its link to the planet Greyborn are still open; see [08](08-open-questions.md).)*
 
 - Kit: light melee combo, dodge, **Root** (channel to capture a node), **Return** (start the trip home).
 - At **Level 3** the lineage *awakens* and the player gets the lineage kit.

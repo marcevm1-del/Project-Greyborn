@@ -2,8 +2,8 @@
 
 > *Kills fuel evolution. Returns fuel tactical choice. Dominate the map.*
 
-**Greyborn** is a **4v4 team PvP game** about evolution and territory. Every
-player starts as a small grey humanoid Base Form and evolves during the match,
+**Greyborn** is a **4v4 team PvP game** about evolution and territory, set
+on the planet **Greyborn**. Every player starts as a small humanoid Base Form and evolves during the match,
 through 20 levels and 3 Stages, into a towering **Ascendant**: Titan, Brawler,
 Verdant, Hollow, Thornrunner or Bonespire. Paired Ascendants unlock
 **Synergies**, and teams fight to root nodes, hold Resource Hubs and dominate

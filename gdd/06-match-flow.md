@@ -8,7 +8,7 @@
 
 1. Teams draft lineages in alternating picks (1-2-2-2-1). No duplicates within a team.
 2. Each player's lineage is **hidden from the enemy** until it awakens at Level 3.
-   The enemy sees only the four Greyborn Base Forms.
+   The enemy sees only four identical humanoid Base Forms.
 3. Draft strategy: two full pairs (strong synergy), or one pair plus two
    singles (more flexible, but fewer Synergies).
 

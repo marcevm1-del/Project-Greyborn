@@ -6,7 +6,7 @@
 
 | Stage | Levels | Form | Milestones |
 |---|---|---|---|
-| **Stage 1: Base Form** | 1–9 | Greyborn humanoid (1–2), then the awakened lineage (3–9) | **L3:** lineage awakens |
+| **Stage 1: Base Form** | 1–9 | Humanoid Base Form (1–2), then the awakened lineage (3–9) | **L3:** lineage awakens |
 | **Stage 2: Enhanced Form** | 10–19 | Larger, more detailed form ("growth-detailed") | **L10:** choose a branch (Aggression or Tactical Control) · **L12 / L15 / L18:** pair Synergies unlock |
 | **Stage 3: Ultimate Form** | 20 | Ascendant ("hyper-detailed" / "hyper-rooted") | **L20:** choose 1 of 3 Ultimate forms in your branch |
 
