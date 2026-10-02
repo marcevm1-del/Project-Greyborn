@@ -28,6 +28,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 08 | [Open Questions](gdd/08-open-questions.md) | Decisions needed, risks, iteration log |
 | 09 | [Wildlife](gdd/09-wildlife.md) | 40 native creatures of Greyborn: four-, two-, six- and eight-legged, plus insects; infection and rallying |
 | 10 | [The World](gdd/10-world.md) | The living planet, the Starwound meteorite, the Murmur hive mind, Wildborn vs. Blightborn |
+| 11 | [Atlas](gdd/11-atlas.md) | The Greyreach: 12 regions from the Heartwood to the Starwound, the infection gradient, launch maps |
+| 12 | [Life on Greyborn](gdd/12-life-on-greyborn.md) | Base Form life cycle, plants, weather, the biology of the Murmur |
 
 ## Superseded material
 

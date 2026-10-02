@@ -8,8 +8,8 @@
 > **assigned each match** · the infection spreads **Blight** instead of roots,
 > **infects wildlife**, leaves **crater zones**, and **nature fights back**.
 >
-> All **names** below (Starwound, the Murmur, Wildborn, Blightborn…) are
-> proposals awaiting the director's approval.
+> **Names approved (2026-10-02):** Starwound, the Murmur, Wildborn, Blightborn, Heartwood.
+> See also [11 — Atlas](11-atlas.md) and [12 — Life on Greyborn](12-life-on-greyborn.md).
 
 ## Greyborn, the living planet
 
