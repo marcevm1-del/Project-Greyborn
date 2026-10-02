@@ -147,3 +147,129 @@ Because the world has no words, every legend is told through four layers:
 
 A player who never opens the Codex should still sense the legends from the
 world around them. A player who does will find them told in full.
+
+## The Long Stand, in more detail
+
+After the first battles of the Fall, the war settled into an age-long
+struggle. The First Answers held a line across the north of the Greyreach:
+
+- **The Breaker** held the coast, where the glass tide came from the sea's edge.
+- **The Breath** held the forest-wall across the south of what is now the Glasswaste.
+- **The Mountain That Walked** stood in the gap between them, its slams breaking every glass push.
+- **The Quiet** held the deep places, keeping the Murmur from reaching the planet's nerves.
+- **The Hunt That Never Ended** ran the length of the line, carrying the planet's warnings.
+- **The Rememberer** gathered the fallen and kept them, so nothing would be forgotten.
+
+For an age, the line held. Then, one by one, the First Answers grew tired.
+They didn't fall in defeat; they **lay down**, and became the land they'd
+defended. The Murmur advanced only as far as each one let it, and no further.
+Their bodies are still the shape of the Greyreach today.
+
+## Each First Answer's last moment
+
+| First Answer | Its last moment (as a Memory would show it) |
+|---|---|
+| **The Mountain That Walked** | Lying down along the Spirecliffs, its spine rising into peaks as it settles |
+| **The Breaker** | Striking the cliffs one last time, then sitting, and becoming stone, facing the sea |
+| **The Breath** | Breathing in, and not breathing out: becoming the forest that still breathes |
+| **The Quiet** | Sinking into the swamp, and the silence closing over it like water |
+| **The Hunt That Never Ended** | It never had one. It is still running |
+| **The Rememberer** | Placing the last bone, then lying down among them, its ribs rising over the fossils it kept |
+
+## The Hushed, in more detail
+
+While the First Answers fought, the Murmur watched. It didn't attack them
+directly at first; it **studied** them. Every movement, every shape, every
+sound. It had never seen anything like them on the Quiet World.
+
+Then it built them, in glass, one by one, in the Starwound, perfect and still.
+The Hushed Answers didn't fight in the Long Stand. They simply stood at the
+crater's edge, waiting, while their originals wore themselves out. When the
+last First Answer lay down, the Hushed Answers were still standing.
+
+**Why** the Murmur made them is never fully said. Perhaps as weapons. Perhaps
+as guardians. Perhaps because, after a long time alone, it wanted to have
+something beautiful of its own to look at, even if it was only a copy.
+
+## Legends players will make
+
+Greyborn's history doesn't stop with the First Answers. Every season adds
+legends that players themselves created:
+
+- **"The season the Glass Range was turned back"** (or stood).
+- **"The Waking"**: which version of the Sleeper opened its eyes first.
+- **"The Roaring"**: the season everyone stood together.
+- **"The Unbraiding"**: the season it fell apart.
+
+Over years, these community legends become as important as the First Answers:
+the history of Greyborn is partly written by its players.
+
+## Legend motifs in music
+
+Each First Answer has a short musical motif ([19](19-sound-and-music.md#regional-music-motifs)),
+heard in its region and in its Memories:
+
+| First Answer | Motif |
+|---|---|
+| The Mountain That Walked | Three deep, slow notes, like footsteps |
+| The Breaker | A rising, pounding rhythm on frame drums |
+| The Breath | A phrase that rises and falls, like breathing |
+| The Quiet | A single held note that fades into silence |
+| The Hunt That Never Ended | A fast, repeating figure that never resolves |
+| The Rememberer | A slow melody on bone percussion, like counting |
+
+## The Sleeper's legend
+
+Before the six, the planet made a seventh. The Memories show it only in
+glimpses: a shape growing in the far west, frost forming around it, and then
+the planet **flinching**, covering it with ice, and slowing its heart almost
+to nothing. For ages, it slept beneath the Rimewastes, and the planet never
+spoke of it, in the wordless way the planet speaks.
+
+The creatures of the Rimewastes knew it was there. Drift Owlbears sleep in
+rows in the Snow Halls nearby. Hoarfrost Mites gather over the lake. An Old
+One, the Drowsing One, sits in the ice caves as if keeping watch.
+
+In Season 2, it wakes. In Season 6, players learn why it slept: it was made
+to stop a hunger the planet felt in the dark, and the planet feared what
+something made to stop that hunger could do.
+
+## How legends are discovered
+
+| Channel | What players learn |
+|---|---|
+| **The landscape** | That the land has shapes too regular to be natural: a spine, ribs, fist-craters |
+| **Creature behaviour** | That the creatures remember something: Strays facing north, herds following an invisible runner |
+| **Memories** | What happened, in wordless visions |
+| **Music** | Each First Answer's motif, heard in its region |
+| **The Codex** | The full set, in order |
+
+A player can understand Greyborn's legends at any of these depths. Most will
+sense them; some will piece them together; a few will complete the Codex.
+
+## Legends and the Kith
+
+The First Answers were Kith (decided). That makes every player's Kith a
+possible First Answer: every match, a brood of Kith grows toward the shapes
+the legends describe. When a player reaches Stage 3 and their Ascendant
+stands over the battlefield, they are, in a small way, living the legend
+again. The Mastery rank *First Answer's Echo* ([26](26-collection.md#lineage-mastery-in-depth))
+makes that connection visible.
+
+## Closing thought
+
+Greyborn's legends are carved into its land, carried by its creatures and
+remembered by its planet. No one tells them, because no one on Greyborn speaks.
+They're simply there, everywhere, for anyone who looks.
+
+## The legends in one table
+
+| Legend | Where it lives now | Its rival |
+|---|---|---|
+| The Mountain That Walked | The Vertebrae | The Glass Range |
+| The Breaker | The Shattered Coast | The Shatterer |
+| The Breath | The Breathing Canopy | The Lattice Grove |
+| The Quiet | The Swallowing Pool | The Unspoken |
+| The Hunt That Never Ended | Still running | The Endless Pursuit |
+| The Rememberer | The Elder Ribs | The Archive |
+| The Sleeper (Stillheart) | Awake, from Season 2 | None yet |

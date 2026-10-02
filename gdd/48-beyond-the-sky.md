@@ -132,3 +132,127 @@ The Quiet World is never shown all at once. Players discover it in fragments:
 
 By the end of Season 6, a player who has followed the story understands
 the Murmur completely, without a single word having been spoken.
+
+## The Roaring, as the Murmur remembers it
+
+It began as a sound. On a world where nothing had ever been loud, a roar came
+down out of the blue sky, and every spire on the Quiet World rang with it.
+Then the red streak. Then the impact, and heat, which the Quiet World had
+never known.
+
+Crust spread across the crystal plains faster than anything had ever moved
+there. The Murmur's spires cracked one after another. It tried what it knew:
+it whispered louder, grew faster, gathered itself together. None of it
+mattered. The Clamor didn't hear whispers. It only heard minds, and ate them.
+
+At the very end, the Murmur did something it had never done: it gathered a
+small part of itself into a single stone at the edge of the burning world and
+threw it out into the dark.
+
+Behind it, the Quiet World went silent forever.
+
+## The long dark
+
+For a time the Murmur cannot measure, the stone drifted. The fragment inside
+it was small and cold, and it whispered to itself to stay awake. Sometimes it
+passed other dead worlds, scorched by the same red fire, and it whispered more
+quietly then, afraid of being heard.
+
+Then, ahead, a grey world. Alive. Breathing. Full of shapes the Murmur had
+never imagined: herds and forests and small grey creatures that could become anything.
+
+It felt, for the first time since the Roaring, something like hope. Then it fell.
+
+## Arrival, from the Murmur's side
+
+To the planet, the Fall was a wound. To the Murmur, it was a landing, and a
+terrifying one. It woke in a crater, surrounded by a living world that
+immediately began to push it away: roots pulling back, creatures fleeing,
+the ground itself trembling with pain. The Murmur did the only thing it knew:
+it spread, it copied, it took. It made itself part of what was around it, so
+it wouldn't be alone, and so it couldn't be easily removed.
+
+From the planet's view, that was an infection. From the Murmur's view, it was survival.
+
+## Greyborn's sky, as a whole
+
+| Object | Description |
+|---|---|
+| **The Grey Eye** | Greyborn's sun: pale, softened by the planet's haze, never harsh |
+| **The Lantern** | Greyborn's single amber moon, rising over the Heartwood |
+| **The Fall-line** | The Murmur's road: a cyan-violet scar from the north |
+| **The red streak** | The Clamor's road, from Season 3 |
+| **Faint old streaks** | Other roads, other falls, other dead worlds |
+| **The stars** | Few and dim through the haze; most clearly seen in the Rimewastes on Rime nights |
+
+## What players will never be told
+
+Some things about the world beyond the sky are left unknown forever, by design:
+
+- **Where the Clamor came from** in the first place.
+- **How many worlds** it has devoured.
+- **Whether any other fragment** of the Quiet World survived.
+- **Whether the faint old streaks** carried other refugees, to other worlds.
+
+These unanswered questions keep the universe beyond Greyborn vast and
+frightening, which makes the living planet feel even more precious.
+
+## How much is revealed, season by season
+
+| Season | Revealed about the world beyond the sky |
+|---|---|
+| Launch | Only the Fall-line |
+| 3 | The Clamor exists; the Murmur fled something |
+| 4 | The Glass Flower: something from elsewhere |
+| 5 | The Flower is a memory of the Murmur's home |
+| Memories #41–#46 | The Quiet World, the Roaring and the long dark |
+| 6 | The Roaring happens again, on Greyborn |
+| Never | Where the Clamor began; how many worlds it ate |
+
+## Rules for showing the Quiet World
+
+1. **Only through the Murmur's Memories.** No other way into it exists.
+2. **Always slightly unreal:** a dreamlike blur, a cyan colour drift, as a memory would be.
+3. **Never show its full geography.** Spires, plains, seas, two moons, flowers, and nothing that maps it.
+4. **Always calm until the Roaring.** The Quiet World is shown at peace, so its loss is felt.
+5. **Never inhabited by anything but the Murmur.** No creatures, no other life.
+
+## Art notes for the Quiet World
+
+| Element | Treatment |
+|---|---|
+| **Sky** | Pale, clear blue, with a small white-blue sun |
+| **Ground** | Endless smooth crystal plains, reflecting the sky perfectly |
+| **Spires** | Tall spirals of clear crystal with light moving through them in slow waves |
+| **Seas** | Flat, glassy, faintly ringing at the shore |
+| **Night** | Two small moons; glass flowers opening |
+| **Sound** | A soft, constant whisper; ringing; no wind, no animals |
+| **The Roaring** | The only red, the only fire, the only noise the Quiet World ever saw |
+
+## What the Quiet World means to the story
+
+The Quiet World turns the Murmur from an invader into a survivor. It explains
+three things about it on Greyborn: why it's afraid (it has seen its world
+die), why it copies (it never had to create anything on a world with
+nothing else alive), and why its first creation is a flower from home (it
+misses it). Without the Quiet World, the Murmur would be a monster. With it,
+the Murmur is the saddest character in the game.
+
+## The sky as the season's clock
+
+Players can tell the season from the sky alone:
+
+| Sky | Season |
+|---|---|
+| The Fall-line alone | Launch to Season 2 |
+| A second faint light on the Fall-line | Season 2 (the tease) |
+| A red streak beside the Fall-line | Season 3 onward |
+| Red streaks every night | Season 6 |
+| Red dusks, heat haze | Season 7 (Fever) |
+
+## Closing note
+
+Beyond Greyborn's sky lies a dark full of dead worlds and one hungry fire.
+Everything in this chapter exists to make the living planet feel precious,
+and the Murmur's arrival feel like what it was: a lonely survivor landing on
+the only living world it could find, and not knowing how to belong there.

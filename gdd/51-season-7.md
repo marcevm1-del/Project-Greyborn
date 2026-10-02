@@ -308,3 +308,9 @@ leaves the door open.
 Season 7 is the hardest season to write, and the most important to get right.
 It must make players grieve without making them blame anyone, and it must end
 on one small, quiet image that makes them hope.
+
+The truce breaks; the braid remains.
+
+Grief, and one woven patch of hope.
+
+The braid remains.

@@ -289,3 +289,7 @@ humming with the Murmur's whisper.
 One body, two materials, three Stages, seven lineages: the forms system is
 simple at its core, so that players can always read what they're fighting,
 and rich in its details, so that every creature feels alive.
+
+Read the shape, see the material, know the Stage.
+
+Every form is a Kith, grown.
