@@ -207,6 +207,8 @@ Every creature has a Blighted look. These six also change how they behave:
 
 Season 4 adds **Lumen Bees (#43), Seedcaller (#44), Mossback Calves (#45)
 and Emberbark (#46)**. See [30 — Season 4](30-season-4.md#new-creatures-for-bloom).
+Far-region natives #47–#54 (Rimewastes, Cinderveil, Shattered Coast, Heartwood)
+are in [34](34-far-region-creatures.md).
 Season 3 adds the hostile Clamor creatures ([22](22-season-3.md#clamor-creatures-proposed)).
 
 ## Regional variants

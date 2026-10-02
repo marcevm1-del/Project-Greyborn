@@ -38,6 +38,7 @@ were confirmed by the director; everything else is proposed.
 | **Glaze / Lattice / Spire** | The visual stages of Blight growth | [12](12-life-on-greyborn.md) |
 | **Front / front points** | A War Map region active in a season, and the points each side earns there | [18](18-the-answering-war.md), [20](20-season-1.md) |
 | **Glass Range** | The Hushed Answer copied from the Mountain That Walked; Season 1's finale threat | [13](13-legends.md), [20](20-season-1.md) |
+| **First Root** | The mountain-wide root at the centre of the Heartwood, plunging toward the planet's core | [35](35-heart-and-seed.md) |
 | **First Budding** | The onboarding: a new player's birth as a Kith | [25](25-calls-and-onboarding.md) |
 | **Global event** | An event triggered when a border reaches 100 Tension | [05](05-territory-and-economy.md) |
 | **Greyborn** | The **planet** (**decided**), and the game's name | [10](10-world.md) |
@@ -47,12 +48,14 @@ were confirmed by the director; everything else is proposed.
 | **Greyreach** | Greyborn's single great landmass | [11](11-atlas.md) |
 | **Heartwood** | The planet's heart, opposite the Starwound (**decided name**); also each map's grove zone | [10](10-world.md), [11](11-atlas.md) |
 | **Heartseeds / Shard Hearts** | Wildborn / Blightborn Enemy Cores | [33](33-structures.md) |
+| **Heartwood Elk** | An unharmable apex, the planet's messenger; the only creature with no Blighted form | [34](34-far-region-creatures.md) |
 | **Hollow** | Void-caster lineage; Root & Void pair | [02](02-ascendant-roster.md) |
 | **Hollow Mire** | Fog-bound swamp; the planet's gut | [11](11-atlas.md) |
 | **Hushed Answers** | The Murmur's glass copies of the First Answers | [13](13-legends.md) |
 | **Infect / Rally** | Turning a weakened creature to fight for your side (Blightborn / Wildborn) | [09](09-wildlife.md) |
 | **Kith** | The native humanoid species of Greyborn that every player starts as (**decided**) | [02](02-ascendant-roster.md), [12](12-life-on-greyborn.md) |
 | **Landfall** | A Clamor shard striking a match map; its core can be destroyed for a reward | [22](22-season-3.md) |
+| **Lattice Sea** | The crystal plain at the heart of the Starwound, where the Murmur's mind is densest | [35](35-heart-and-seed.md) |
 | **Lantern, the** | Greyborn's amber moon | [15](15-ecology.md) |
 | **Lineage Mastery** | Long-term per-lineage progress, from Sprout to First Answer's Echo | [26](26-collection.md) |
 | **Lineage** | An evolutionary path. Six at launch (Titan, Brawler, Verdant, Hollow, Thornrunner, Bonespire); Stillheart is the seventh, from Season 3 | [02](02-ascendant-roster.md) |

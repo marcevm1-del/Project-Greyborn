@@ -51,6 +51,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 31 | [Evolution Branches](gdd/31-evolution-branches.md) | Aggression vs. Tactical Control for every lineage, with 42 Ultimate Forms |
 | 32 | [Cross-Resonance](gdd/32-cross-resonance.md) | Small passives for the 12 non-pair lineage combinations |
 | 33 | [Structures of the War](gdd/33-structures.md) | What bases, Enemy Cores, Hubs and nodes are in the world, for each side |
+| 34 | [Far-Region Creatures](gdd/34-far-region-creatures.md) | Natives of the Rimewastes, Cinderveil, Shattered Coast and Heartwood (54 creatures total) |
+| 35 | [The Heart and the Seed](gdd/35-heart-and-seed.md) | The Heartwood and the Starwound, layer by layer: the world's two poles |
 
 ## Superseded material
 

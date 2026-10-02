@@ -55,6 +55,8 @@ Please confirm or override:
 | 49 | After Season 4: an origin season, a turning-point season, or a truce season? | Director's call | [30](30-season-4.md#story-roadmap-seasons-14) |
 | 50 | Evolution branches for all 7 lineages (42 Ultimate Forms). Which feel right for each lineage? Step Between and Shatterfist flagged as possibly too strong | Proposed | [31](31-evolution-branches.md) |
 | 51 | In-world names for structures: Cradle/Clutch (bases), Heartseeds/Shard Hearts (Enemy Cores), Sap Wells/Glow Wells (Hubs), Root-knots/Whisper-nodes (nodes) | Proposed | [33](33-structures.md) |
+| 52 | Far-region creatures (#47–#54), including the unharmable Heartwood Elk, the only creature without a Blighted form | Proposed | [34](34-far-region-creatures.md) |
+| 53 | Uses for the Heartwood and the Starwound: season finale, endgame PvE run, or the story's final act? What lies below the First Root and inside the Seed? | Director's call; unresolved on purpose | [35](35-heart-and-seed.md) |
 
 ## Decided
 
@@ -110,3 +112,4 @@ Please confirm or override:
 | gdd-0.19 | 2026-10-02 | New chapter **30 — Season 4: The Glass Flower** (Bloom Turn, The Nerve map, four new creatures, front goals, finale, story roadmap for Seasons 1–4). Map 7 noted in 16; new creatures noted in 09. |
 | gdd-0.20 | 2026-10-02 | New chapter **31 — Evolution Branches**: Aggression and Tactical Control branches for all 7 lineages, L10 and L15 upgrades, and 3 Ultimate Forms per branch (fights, objectives, unusual). |
 | gdd-0.21 | 2026-10-02 | New chapters **32 — Cross-Resonance** (12 small passives for the non-pair combinations, draft implications) and **33 — Structures of the War** (in-world forms of bases, Enemy Cores, Hubs and nodes for each side). |
+| gdd-0.22 | 2026-10-02 | New chapters **34 — Creatures of the Far Regions** (8 natives, #47–#54; 54 native creatures total) and **35 — The Heart and the Seed** (the two poles of the world, layer by layer, as mirrors and future story spaces). |
