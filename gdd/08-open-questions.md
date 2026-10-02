@@ -12,7 +12,7 @@ Please confirm or override:
 | 3 | Phase 4's label ("Thornrunna and Bonstruction") | "Hunt" phase | [06](06-match-flow.md) |
 | 4 | What do the S1/S2/S3 values for weak points mean? | Regrowth time by the victim's Stage | [04](04-synergies.md#weak-points) |
 | 5 | What is the Base Form species called in-world? | "Base Form" for now | [02](02-ascendant-roster.md) |
-| 15 | The planet has **other naturally occurring creatures**. Should some appear on the map as neutral wildlife, e.g. small camps that drop a few evolution cores, or Base Forms that wander in from the wild? | Not designed yet. It would add a fourth, low-risk core source and make the world feel alive | [03](03-evolution-system.md), [05](05-territory-and-economy.md) |
+| 15 | Wildlife roster: which of the 40 proposed creatures to keep, cut or rework? Should Titan and Brawler get more affinity creatures? | 40 proposed | [09](09-wildlife.md) |
 | 6 | Synergy level vs. Ascendant level | Two separate tracks (pair 1–10, player 1–20) | [04](04-synergies.md) |
 | 7 | The other 12 lineage pairings | Minor cross-resonance passives only | [04](04-synergies.md#open-the-other-12-pairings) |
 | 8 | Win condition | Base Heart, TI at 25:00, or 80% TI mercy rule | [06](06-match-flow.md#win-conditions-proposal) |
@@ -29,6 +29,7 @@ Please confirm or override:
 |---|---|
 | 2026-10-02 | **Greyborn is the planet.** The game's world is named after it; it is not the name of the humanoid Base Form. |
 | 2026-10-02 | **Base Forms are native creatures of Greyborn**, occurring naturally like the planet's other wildlife. Ascendant lineages are their natural evolutionary paths. |
+| 2026-10-02 | **Neutral wildlife is in.** Body plans: four-legged, two-legged, six-legged, eight-legged and insects; 20–50 types, with contrasting creatures. |
 
 ## Design risks to watch
 
@@ -50,3 +51,4 @@ Please confirm or override:
 | gdd-0.1 | 2026-10-02 | Rebuilt from GDD v1.0 pp. 120–124: transcription and decoding, vision, roster, evolution, synergies, territory and economy, match flow, tactical notes. Replaces the placeholder single-player concept in `docs/` and `prototype/`, which was invented before the source pages were shared. |
 | gdd-0.2 | 2026-10-02 | Greyborn confirmed as the planet. Removed the assumption that the humanoid Base Form is "the Greyborn"; added an open question about a planet-wide territory layer. |
 | gdd-0.3 | 2026-10-02 | Base Forms confirmed as native wildlife of Greyborn; lineages framed as natural evolutionary paths. Added an open question on neutral wildlife on the map. |
+| gdd-0.4 | 2026-10-02 | New chapter **09 — Wildlife**: 40 creatures across 5 body-plan groups, 4 threat tiers, lineage affinities, an income cap, 6 proposed biomes. |

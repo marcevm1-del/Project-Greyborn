@@ -24,6 +24,7 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 06 | [Match Flow](gdd/06-match-flow.md) | Draft, four phases, win conditions, respawn |
 | 07 | [Tactical Notes](gdd/07-tactical-notes.md) | Node management, return timing, synergy play, callouts, counterplay |
 | 08 | [Open Questions](gdd/08-open-questions.md) | Decisions needed, risks, iteration log |
+| 09 | [Wildlife](gdd/09-wildlife.md) | 40 native creatures of Greyborn: four-, two-, six- and eight-legged, plus insects |
 
 ## Superseded material
 

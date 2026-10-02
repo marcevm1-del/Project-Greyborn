@@ -1,0 +1,165 @@
+# 09 — Wildlife of Greyborn
+
+Greyborn is a living planet. The humanoid **Base Forms** (which become players)
+are one native species among many. Every match map has **neutral wildlife**
+that belongs to neither team.
+
+> Status: the director approved the feature on 2026-10-02 and set the body
+> plans: four-, two-, six- and eight-legged creatures, plus insects. Every
+> creature, name and number below is a **proposal**.
+
+## Design goals
+
+1. **The world feels alive.** Herds, swarms and predators move through the map
+   whether players are there or not.
+2. **Contrast in every category.** Each body-plan group mixes harmless and
+   deadly, tiny and huge, solitary and swarm, and creatures that are worth
+   more **alive** than dead.
+3. **A fourth, low-risk core source.** Wildlife gives steady evolution cores,
+   but player kills, Enemy Cores and returns must stay the main sources (see the cap below).
+4. **Every creature changes a decision.** None are just loot piñatas. Each one
+   touches territory, sound, weak points, SAP or Tension.
+
+## Rules
+
+### Threat tiers
+
+| Tier | Name | Typical cores | Behaviour | Respawn |
+|---|---|---|---|---|
+| **I** | Critter | 10–20 | Flees; dies in 1–3 hits | 45 s |
+| **II** | Beast | 40–70 | Herds or packs; defends itself | 90 s |
+| **III** | Brute | 120–180 + 20 SAP | Solitary, fights back hard; dangerous to Stage 1 players | 3 min |
+| **IV** | Apex | 400, split among attackers | Map-wide announcement; roams; can kill an unprepared Ascendant | Once per phase from Phase 3 |
+
+### Temperament
+
+**Passive** (never attacks) · **Skittish** (flees and alerts others) ·
+**Territorial** (attacks anyone who comes close) · **Predator** (hunts weak
+or low-Health players) · **Apex** (attacks everything).
+
+### Lineage affinity
+
+Each creature has an **affinity** with one Ascendant lineage. When a player
+of that lineage kills or uses the creature, they get **+25% cores** or a
+stronger effect. This gives every lineage a reason to visit certain parts of the map.
+
+### Income cap (keeps PvP central)
+
+- Each player earns full value from their first **600 wildlife cores** per
+  match, then **50%** after that.
+- Target: wildlife provides about **15–20%** of a player's total EXP over a
+  match. The rest comes from kills, Enemy Cores and returns.
+- Wildlife cores are **carried** like any others, so they still have to be
+  converted at base.
+
+### Habitats (proposed biomes of Greyborn)
+
+| Biome | Look | Typical nodes |
+|---|---|---|
+| **Rootwilds** | Dense living forest | Verdant-friendly, many small nodes |
+| **Ashen Steppe** | Grey grassland, wind, ash | Open sightlines, large nodes |
+| **Bone Flats** | Salt plain covered in fossil bones | Bonespire high ground |
+| **Hollow Mire** | Fog-bound swamp | Sound dampened, ambushes |
+| **Spirecliffs** | Vertical rock and ledges | Chokepoints, vantage points |
+| **Underroot** | Caves beneath the roots | Tunnels between nodes |
+
+---
+
+## Four-legged creatures (quadrupeds)
+
+| # | Creature | Tier | Temperament | Habitat | Affinity | What makes it matter |
+|---|---|---|---|---|---|---|
+| 1 | **Mossback Grazer** | II | Passive, herd of 4 | Rootwilds | Verdant | A grazing herd slowly **erodes enemy roots** on the node it stands on. Herd it toward the enemy instead of killing it |
+| 2 | **Ashfang** | II | Predator, pack of 3 | Ashen Steppe | Thornrunner | Hunts players below 30% Health. A wounded player retreating through the steppe is in danger |
+| 3 | **Stonehide Ox** | III | Territorial | Spirecliffs | Titan | Huge Health. If hit, it charges in a straight line and knocks down anything in its path, including enemies you bait it toward |
+| 4 | **Glimmerfox** | I | Skittish | Rootwilds | Thornrunner | Invisible while still. Killing it gives cores and briefly **reveals enemies** within 15 m |
+| 5 | **Marrowhound** | II | Scavenger | Bone Flats | Bonespire | **Eats cores dropped by dead players** and carries them. Kill it to recover them before the enemy does |
+| 6 | **Duskmane** | III | Predator, solitary | Hollow Mire | Hollow | A big cat that cloaks in fog and pounces on lone players. Drops a Void Pelt that gives +10% Control for 60 s |
+| 7 | **Burrowtusk** | II | Territorial | Underroot | Brawler | Digs **temporary tunnels** between two nodes, creating a new path for 60 s (pre-attack vs. post-attack in miniature) |
+| 8 | **Greyback Colossus** | IV | Apex | Ashen Steppe | Titan | A mountain-sized grazer whose back is a **moving node**. Root it to gain territory that walks across the map |
+
+## Two-legged creatures (bipeds)
+
+| # | Creature | Tier | Temperament | Habitat | Affinity | What makes it matter |
+|---|---|---|---|---|---|---|
+| 9 | **Strays** (wild Base Forms) | I | Skittish, group of 3 | Any | All | The players' own species, living wild. **If left alone for 5 min near your territory, they evolve** into a wild Stage 2 Brute. Nature mirrors the player loop |
+| 10 | **Strider Crane** | I | Skittish, flock | Hollow Mire | — | Harmless. When startled, the flock takes off and **gives away** the position of whoever startled it |
+| 11 | **Rootwalker** | II | Territorial | Rootwilds | Verdant | A slow, tree-like guardian of neutral nodes. Must be defeated or calmed (Verdant only, 3 s channel) before the node can be rooted |
+| 12 | **Knucklebrute** | III | Territorial | Spirecliffs | Brawler | A gorilla-like brawler that challenges the first player it sees. Beating it in a 1v1 gives a 30 s Momentum buff |
+| 13 | **Hollowmonk** | II | Passive | Hollow Mire | Hollow | Silent and gaunt. Its aura **drains Control**: no node can be captured near it while it lives |
+| 14 | **Spurlark** | I | Skittish | Ashen Steppe | Thornrunner | A sprinting bird, faster than most players. Hard to catch, worth double cores |
+| 15 | **Bonewright** | III | Territorial | Bone Flats | Bonespire | Builds **bone totems** that buff nearby wildlife. Destroying the totems first makes it vulnerable |
+| 16 | **The Old Tall** | IV | Apex, wanderer | Any | — | A towering, ancient biped that walks between Resource Hubs. Wherever it stands, **Tension rises 3× faster** |
+
+## Six-legged creatures (hexapods, non-insect)
+
+| # | Creature | Tier | Temperament | Habitat | Affinity | What makes it matter |
+|---|---|---|---|---|---|---|
+| 17 | **Sixhorn Ram** | II | Territorial | Spirecliffs | Titan | Head-butts with heavy knockback. It can push players off ledges |
+| 18 | **Trundleback** | III | Passive | Bone Flats | Bonespire | A six-legged armoured tortoise. Immune to damage except on its **underside weak point**. Its shell is climbable high ground |
+| 19 | **Lantern Lizard** | I | Passive | Underroot | — | Glows. Any player within 8 m is lit up and **visible on the minimap**. Kill it, or use it as an alarm |
+| 20 | **Gravel Skink** | I | Skittish | Ashen Steppe | — | Burrows when approached. Pure, simple core income for Stage 1 players |
+| 21 | **Hexmaw** | III | Predator, ambush | Hollow Mire | Hollow | Hides under mud and **drags** a player toward it. Teammates must break the grip |
+| 22 | **Sapdrinker** | II | Passive | Rootwilds | Verdant | **Drinks SAP** from the node it nests on, reducing that team's income until cleared |
+| 23 | **Rimeback Stag** | II | Skittish, herd | Spirecliffs | — | A six-legged stag. Killing one scatters the herd, which stampedes and knocks back anyone in the way |
+| 24 | **Sixfold Wyrm** | IV | Apex | Underroot | Brawler | A six-legged serpent-dragon that **bursts out of the ground at 100 Tension**. Can be lured into the enemy team |
+
+## Eight-legged creatures (octopods)
+
+| # | Creature | Tier | Temperament | Habitat | Affinity | What makes it matter |
+|---|---|---|---|---|---|---|
+| 25 | **Weavemother** | III | Territorial | Rootwilds | — | Webs a node so it becomes **Inaccessible** until the web is burned or cut (8 s channel) |
+| 26 | **Threadlings** | I | Swarm | Rootwilds | Thornrunner | Tiny spiders in swarms of 12. Harmless alone, slowing in numbers |
+| 27 | **Stiltwalker** | II | Passive | Ashen Steppe | — | A gentle eight-legged giant herbivore on very tall legs. **Players can ride beneath it**, unseen from above |
+| 28 | **Mire Scuttler** | II | Territorial | Hollow Mire | Brawler | A crab-like creature with armoured front claws. Can only be hurt from behind |
+| 29 | **Glasslegs** | II | Predator | Underroot | Hollow | Translucent and invisible while still. Reveals itself only when it strikes |
+| 30 | **Tendril Crawler** | III | Predator | Hollow Mire | Hollow | A land-octopus that grabs with two tentacles at once, catching two players together |
+| 31 | **Bone Harvestman** | II | Passive | Bone Flats | Bonespire | Collects bones into nests. Each **nest is a core cache** (80 cores) that builds up over time |
+| 32 | **Eightfold Matron** | IV | Apex | Underroot | Thornrunner | A spider queen. Her nest spawns Threadling swarms every 20 s until she dies |
+
+## Insects
+
+| # | Creature | Tier | Temperament | Habitat | Affinity | What makes it matter |
+|---|---|---|---|---|---|---|
+| 33 | **Ember Moth** | I | Passive swarm | Ashen Steppe | — | Drawn to the glow of a Stage transformation. Harmless and easy cores |
+| 34 | **Siege Beetle** | III | Territorial | Bone Flats | Titan | Heavily armoured, and it **damages structures**. Lure it into an enemy Hub or Core |
+| 35 | **Rootworm** | I | Passive | Rootwilds | Verdant | Emerges from freshly rooted nodes. Eating them (Verdant) speeds the next root by 30% |
+| 36 | **Thornwasp** | II | Territorial swarm | Spirecliffs | Thornrunner | A nest that sends a swarm after anyone within 10 m. The swarm chases you, and can chase you into enemies |
+| 37 | **Hush Cicada** | I | Passive | Hollow Mire | Hollow | While they're alive, **all sound signatures nearby are muted**. A natural stealth zone |
+| 38 | **Marrow Mantis** | III | Predator, ambush | Bone Flats | Bonespire | Always strikes the **weak point**. A deadly lesson in weak-point play |
+| 39 | **Sapback Aphids** | I | Passive herd | Rootwilds | Verdant | **Worth more alive.** A protected herd on your node produces +2 SAP/s. Enemies want to kill them |
+| 40 | **Hive Colossus** | IV | Apex | Ashen Steppe | Brawler | A walking termite-mound creature. Its body releases swarms, and breaking its four shell plates drops a huge core cache |
+
+---
+
+## Balance overview
+
+| Group | I | II | III | IV | Passive / skittish | Hostile |
+|---|---|---|---|---|---|---|
+| Four-legged | 1 | 4 | 2 | 1 | 2 | 6 |
+| Two-legged | 3 | 2 | 2 | 1 | 4 | 4 |
+| Six-legged | 2 | 3 | 2 | 1 | 5 | 3 |
+| Eight-legged | 1 | 4 | 2 | 1 | 3 | 5 |
+| Insects | 4 | 1 | 2 | 1 | 4 | 4 |
+| **Total (40)** | **11** | **14** | **10** | **5** | **18** | **22** |
+
+Lineage affinities: Verdant 5 · Hollow 6 · Bonespire 5 · Thornrunner 6 ·
+Brawler 5 · Titan 4 · no affinity 8 · all lineages 1 (Strays).
+Threadlings count as passive (harmless alone). Titan and
+Brawler are slightly under-served. A pass should add one more of each.
+
+## How wildlife ties into the other systems
+
+- **Territory ([05](05-territory-and-economy.md)):** Mossback Grazers,
+  Sapdrinkers, Weavemothers, Rootwalkers and Burrowtusks change node states,
+  income and paths.
+- **Sound signatures ([03](03-evolution-system.md)):** Strider Cranes, Lantern
+  Lizards and Hush Cicadas reveal or hide players.
+- **Weak points ([04](04-synergies.md)):** Trundlebacks, Mire Scuttlers and
+  Marrow Mantises teach and reward weak-point play outside PvP.
+- **Tension & events:** the Old Tall, the Sixfold Wyrm and the Greyback
+  Colossus are tied to Tension and phases. Apex spawns can be added to the
+  global-event deck.
+- **Lore:** Strays (wild Base Forms) show the players' species living
+  naturally, and their 5-minute evolution shows the planet's evolution at work
+  without any players involved.

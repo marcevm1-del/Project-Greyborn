@@ -27,6 +27,9 @@ yet progress. They become **EXP** (levels) when **converted**.
 | **2. Destroying Enemy Cores** | Each Enemy Core structure destroyed gives **300 cores** split among nearby attackers, and **denies** the enemy team (see below) | Objective play; the main comeback lever |
 | **3. Returning to base** | Converts carried cores to EXP at the base (**100% + aggression bonus**) | *"Risky but strategic"* |
 
+**Wildlife** (4th source, approved): neutral creatures drop 10–400 cores by
+tier, capped so they provide about 15–20% of a match's EXP. See [09 — Wildlife](09-wildlife.md).
+
 Small passive sources (proposal): **+2 cores/s per player** from team
 territory, scaled by Territorial Influence, so a player who never fights still
 grows slowly.
