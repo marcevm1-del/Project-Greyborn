@@ -41,3 +41,79 @@ is a **seed for a future map**. All are proposals.
 2. **The Skull Basin** (Bone Flats): a circular arena would suit Brood Skirmish 2v2 ([27](27-modes.md#brood-skirmish-2v2)).
 3. **The Ash Sea** (Ashen Steppe): shifting dunes would make every phase
    play differently, in keeping with the "living map" pillar ([01](01-vision.md#design-pillars)).
+
+---
+
+## The landmarks, described
+
+**The Weaver's Hollow (Rootwilds).** A valley so deep and still that a
+single Weavemother, over centuries, has roofed it entirely with one web.
+At dawn, dew on the strands catches the light and the whole valley glows
+like a lantern. Creatures move through it carefully, and nothing breaks the
+web. A map here would be fought on web-bridges between the treetops, where
+cutting the wrong strand drops your enemies, or your allies, to the forest floor.
+
+**The Calving Meadows (Rootwilds).** A wide, gentle clearing ringed by
+breathing oaks, where Mossback herds come every Bloom to give birth. It's one
+of the calmest places on Greyborn, and it changes completely with the year:
+full of calves and flowers in Bloom, golden in Ash, silent and frosted in
+Rime, scorched brown in Fever.
+
+**The Nerve Knot (Underroot).** Where a thousand of the planet's nerve-roots
+meet in one cavern. Signals race along them constantly, so the cavern flickers
+with light like a storm trapped underground. Standing in it feels like being
+inside a thought.
+
+**The Drowned Tunnels (Underroot).** Caves that flooded long ago and never
+drained. The black water is perfectly still and very cold. Sound travels
+strangely: footsteps echo from the wrong direction.
+
+**The Standing Stones (Ashen Steppe).** Huge rocks pushed upright when the
+Mountain That Walked crossed the steppe. Each one marks a footstep. Seen from
+above, they form a line running north, toward the place it lay down.
+
+**The Ash Sea (Ashen Steppe).** Where the wind piles ash into dunes higher
+than a Titan. The dunes move every day, burying and uncovering fossils and meteor glass.
+
+**The Heron Reach (Hollow Mire).** A shallow lake where tens of thousands of
+Strider Cranes nest. When one takes off, they all do, and the sky turns grey
+with wings for a full minute. Nothing hides here for long.
+
+**The Wind Bridge (Spirecliffs).** A natural stone arch over a chasm so deep
+that the bottom is lost in mist. The wind never stops. Crossing it is a test
+of nerve for any creature.
+
+**The Skull Basin (Bone Flats).** The eye socket of a skull so large that its
+other bones are hills. No one knows whose skull it was. It isn't any of the six lineages.
+
+**The Frozen Falls (Rimewastes).** A waterfall that froze mid-fall during some
+ancient Rime and never thawed. Inside the ice, fish and air bubbles hang
+motionless, as if time stopped.
+
+**The Glass Forest (Cinderveil).** A forest burnt by the volcano and then half
+taken by the Murmur, so natural obsidian and Blight stand side by side. It's
+the only place where the planet's fever and the Murmur's glass meet as equals.
+
+**The Breaker's Steps (Shattered Coast).** A line of fist-shaped craters
+running down the cliffs to the sea, where the first Brawler fought the first
+Blightborn tide. Water pools in each one.
+
+**The Singing Field (Glasswaste).** A plain of glass grass that rings in the
+wind like a thousand bells. It's beautiful and deafening. The Murmur seems to
+like it.
+
+## Landmarks on the horizon
+
+Landmarks aren't only future maps. They're visible from today's maps, so the
+world feels larger than any one battlefield:
+
+| From this map | You can see |
+|---|---|
+| Ashfall Crossing | The Standing Stones to the north; the Vertebrae far to the west |
+| The Elder Ribs | The Skull Basin's rim on the horizon |
+| Breathing Canopy | The Weaver's Hollow glowing at dawn |
+| Fevermouth | The Glass Forest's dark edge |
+| The Sleeper | The Frozen Falls in the distance |
+| Shard Reef | The Breaker's Steps down the cliffs |
+
+When a future map opens at one of these landmarks, players will already know it from the horizon.

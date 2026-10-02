@@ -55,3 +55,65 @@ Brawler, Verdant, Hollow** has two true pairs (Commit, Root & Void) and four
 cross-resonances (Rooted Mountain, Cave and Stone, Wild Growth, Storm in the
 Dark). Drafting becomes a puzzle of **maximising connections**, which is
 the source pages' "interdependency" made into team-building.
+
+---
+
+## What each cross-resonance looks and sounds like
+
+When two Ascendants are within range and their cross-resonance is active, a
+faint visual thread connects them: a line of amber pollen (Wildborn) or a
+shimmer of glass dust (Blightborn). Each pairing also has its own small effect.
+
+- **Rooted Mountain (Titan + Verdant):** moss spreads from the Verdant's
+  footprints up the Titan's legs. Behind Bulwark, rooted nodes glow a little
+  brighter, showing they're protected.
+- **Cave and Stone (Titan + Hollow):** the Titan's slams make a hollow, echoing
+  boom inside the Hollow's rifts, like a stone dropped down a well.
+- **Herd and Hunter (Titan + Thornrunner):** dust from the Titan's slam hangs
+  in the air, and the Thornrunner's dash cuts a clear trail through it.
+- **Ridge and Spine (Titan + Bonespire):** the Bonespire's lances leave a faint
+  ridge-shaped trail when fired over the Titan's shoulder.
+- **Wild Growth (Brawler + Verdant):** a Brawler's kill on rooted ground makes
+  flowers burst up around the body.
+- **Storm in the Dark (Brawler + Hollow):** the Brawler's roll through a rift
+  roars like wind through a cave.
+- **Two Claws (Brawler + Thornrunner):** paired claw marks appear on the target.
+- **Break and Mark (Brawler + Bonespire):** the grabbed target's weak point
+  cracks visibly, pointing the Bonespire to it.
+- **Thicket Hunters (Verdant + Thornrunner):** the Thornrunner's thorns sprout
+  leaves while on Verdant territory, blending in.
+- **Root and Fossil (Verdant + Bonespire):** roots grow around Ossuary walls,
+  making them look like ancient fossils.
+- **Silent Hunt (Hollow + Thornrunner):** the Thornrunner's skitter fades to
+  nothing; only a faint thrum of the Hollow's silence remains.
+- **Echo of Bone (Hollow + Bonespire):** lances vanish into one side of a rift
+  and burst out of the other with a doubled crack.
+
+## How players learn cross-resonance
+
+- **In the draft:** when a player hovers a lineage, the draft screen draws
+  thin lines to teammates' lineages, solid for a true pair and dotted for a
+  cross-resonance, with a short description of each.
+- **In the match:** the first time a cross-resonance activates, a small icon
+  appears beside both players' portraits with its name.
+- **In the Den:** a training drill for each cross-resonance ([27](27-modes.md#the-den-training)).
+
+## Tuning targets
+
+| Measure | Target |
+|---|---|
+| Win-rate gain from one active cross-resonance | +0.5% to +1.5% |
+| Win-rate gain from one active true pair | +3% to +5% |
+| Share of matches where a team has at least one cross-resonance | Over 90% (almost every team has some) |
+| Share of matches where a team has two true pairs | 30–50% (common, but not required) |
+
+If a cross-resonance pushes past its target, its numbers are cut first, never
+the true pair it shares a lineage with.
+
+## Draft examples
+
+| Team | True pairs | Cross-resonances | Identity |
+|---|---|---|---|
+| Titan, Brawler, Verdant, Hollow | Commit, Root & Void | Rooted Mountain, Cave and Stone, Wild Growth, Storm in the Dark | Front line and territory, maximum connections |
+| Titan, Verdant, Thornrunner, Bonespire | Hunt | Rooted Mountain, Herd and Hunter, Ridge and Spine, Thicket Hunters, Root and Fossil | One pair, five cross-resonances: flexible and well connected |
+| Brawler, Hollow, Thornrunner, Stillheart | (none) | Storm in the Dark, Two Claws, Silent Hunt (+ Attunement) | A stealthy, aggressive team with no true pairs, relying on Stillheart |

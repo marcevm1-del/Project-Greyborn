@@ -52,3 +52,68 @@ rewards reading the living world, which is the heart of the game's identity.
 
 **Note:** the wildlife reaction rules must not reveal a player more than their
 existing sound signature already does. They're a hint, not a minimap ping.
+
+---
+
+## How behaviour changes with each Stage
+
+Creatures don't only get bigger; they behave differently as they grow.
+
+| Stage | Behaviour |
+|---|---|
+| **Base Form** | Curious, twitchy, playful. Looks around constantly; startles at loud sounds |
+| **Stage 1** | Testing its new body: stretches, flexes, occasionally stumbles over new limbs |
+| **Stage 2** | Confident. Moves with purpose; idles by surveying territory |
+| **Stage 3 (Ascendant)** | Majestic and slow to react to small things. Small creatures and Base Forms scatter from it |
+
+## Brood behaviour
+
+Teammates are a brood, and the animation system shows it.
+
+- **Idling together:** brood-mates standing close turn slightly toward each other.
+- **Returning together:** when two brood-mates convert at the same time, they kneel side by side at the birth-pool.
+- **A fallen brood-mate:** nearby teammates briefly look toward the body. It
+  doesn't interrupt control; it's a short head-turn.
+- **Respawn greeting:** a respawning player and any teammate at the base exchange a short call.
+
+## Death and defeat
+
+| Moment | Wildborn | Blightborn |
+|---|---|---|
+| **Killed** | The creature sinks to its knees, then lies down. Moss starts to creep over it before it fades | The creature freezes in place, glazes over, and shatters into glittering dust |
+| **Base Form killed** | A soft fall, and a faint seed of light drifts back toward the Cradle | A crystal crack, and a spark drifts back toward the Clutch |
+| **Ascendant killed** | A heavy collapse that shakes the ground; flowers open where it lay | A ringing shatter heard across the map; shards scatter |
+
+Deaths are dignified on both sides. The world takes its creatures back gently.
+
+## Blightborn behaviour in detail
+
+The Blightborn's **synchronisation** is their most important behavioural trait.
+
+- **Idle sync:** when two or more Blightborn idle within 10 m, their breathing
+  and small movements gradually align over three seconds.
+- **Head turns:** when one Blightborn turns to look at something, nearby
+  brood-mates turn too, a fraction later.
+- **Calls:** their calls overlap in harmony, never in unison. It sounds like one voice from many throats.
+- **Fear:** Blightborn don't crouch from larger enemies the way Wildborn do.
+  They hold still and watch. The Murmur doesn't feel fear the same way.
+- **The hum (Season 5):** during Season 5, idle Blightborn hum the Murmur's
+  first tune ([47](47-season-5.md)). In Season 7, the hum stops ([51](51-season-7.md)).
+
+## Animation priorities
+
+Animation time is limited, so this is the order of importance:
+
+1. **Gameplay-critical:** attacks, telegraphs, weak-point exposure, Synergy triggers.
+2. **Readability:** Stage silhouettes, hurt and limp states, size-fear crouch.
+3. **Identity:** each lineage's movement style and signature behaviour.
+4. **World feel:** idles, feeding, brood behaviour, death animations.
+5. **Season extras:** the hum, Turn-specific idles (shivering in Rime, panting in Fever).
+
+## Sound of living creatures
+
+Every lineage has a library of non-combat sounds: breathing, footsteps,
+feeding, idle calls. These follow Stage (deeper as it grows) and side (wood
+or glass). Breathing is especially important: a player who stops moving
+should hear their creature breathe, slower when healthy and faster when hurt,
+which tells them their state without a glance at the HUD.

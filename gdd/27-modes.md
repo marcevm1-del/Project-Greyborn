@@ -78,3 +78,65 @@ The lore question from [22](22-season-3.md#open-threads-for-season-4-and-beyond)
 - **Tournament preset:** fixed weather (Clear), patron events **off**
   (comeback mechanics are unpopular in high-level competition; to be tested),
   draft with bans (1 ban per team).
+
+---
+
+## A Brood Skirmish match, walked through
+
+Two friends queue as a Titan and Brawler pair. They're matched against a
+Verdant and Hollow pair on the Skull Basin ([42](42-new-maps.md#map-8--the-skull-basin-brood-skirmish-2v2)).
+
+- **0:00:** both pairs bud on opposite sides of the socket. With double EXP,
+  lineages awaken in about 90 seconds.
+- **2:00:** the Verdant roots fast; the Titan and Brawler hunt the critters on
+  the rim and take the high ground.
+- **4:00:** the Iris (central Hub) is contested. A bone-fall crashes into the
+  basin, creating cover right on the Iris.
+- **6:00:** Stage 2 for everyone. The Verdant and Hollow open their first
+  Void Garden around the Iris.
+- **8:00:** Smash & Roll is still locked (Level 18); the Commit pair wins on
+  cross-play: Titan slams, Brawler dives, and the Hollow is caught outside the garden.
+- **10:00:** the match ends on Territorial Influence. The friends' Pair Bond
+  rank goes up.
+
+## Apex Hunt scoring
+
+| Apex | Points | Notes |
+|---|---|---|
+| Hive Colossus | 3 | Breaking its four shell plates is a team effort |
+| Eightfold Matron | 3 | Her Threadling swarms protect her |
+| Sixfold Wyrm | 4 | It tunnels; catching it surfacing is the skill |
+| Greyback Colossus | 5 | Its back is a moving node: root it for a bonus point |
+| Any apex killed while your team holds its nearest node | +1 | Rewards territory as well as damage |
+
+First team to **10 points** wins, or the most points at 15 minutes.
+
+## The Truce: waves
+
+| Wave | Enemies | New threat |
+|---|---|---|
+| 1 | Shriekers, Spore Kites | Reveal and Scald seeding |
+| 2 | + Ashmouths | Corpses become fuel |
+| 3 | + Kindlers | Wildlife set on fire and stampeding |
+| 4 | + Scald Hulks | Burning trails |
+| 5 | + Ventborn, first Roar-vent | A vent to destroy |
+| 6 | Everything, two Roar-vents | Scald spreading from two points |
+| 7 (final) | **The Roar** | The apex; drowns out calls |
+
+Between waves, players have 30 seconds to repair braided ground (from Season 6, [49](49-season-6.md)) and convert cores.
+
+## Mode rotation and queues
+
+- **Always available:** The Answering (casual), The Answering (Ranked), the Den.
+- **Rotating weekly:** Brood Skirmish and Apex Hunt alternate as the featured casual mode.
+- **Seasonal:** the Truce (from Season 3) and each season's finale mode.
+- **Event modes:** world events ([39](39-world-events.md)) apply to casual queues, never ranked.
+- **Party sizes:** solo, pair, or full brood of four. Pairs queue together into
+  the same true-pair slots where possible, to protect pair play.
+
+## Mode design principles
+
+1. **Every mode teaches something about the core game.** Skirmish teaches
+   pairs; Apex Hunt teaches wildlife; the Truce teaches weak points and territory under pressure.
+2. **No mode breaks the mirror.** Co-op modes mix sides; PvP modes keep them equal.
+3. **Every mode feeds the War Map**, so no player's time is wasted for the season's story.
