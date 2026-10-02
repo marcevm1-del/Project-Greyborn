@@ -60,6 +60,8 @@ Please confirm or override:
 | 54 | Proposed backstory: the Clamor ate the Murmur's home world; a fragment of the Murmur fled in the Starwound stone; the Clamor followed. Adopt it? It sets the tone for the long-term story | Proposal | [37](37-the-clamor.md#the-clamor-and-the-murmur-what-really-happened) |
 | 55 | Memory Catalogue: 40 Memories on 9 Codex pages. Is the scope right (each one is a short cinematic vision)? | Proposed | [38](38-memory-catalogue.md) |
 | 56 | World events: 11 recurring weekend/3-day events, kept out of ranked by default | Proposed | [39](39-world-events.md) |
+| 57 | Hushed Answers as encounters (three crystal hearts each, one skill per boss). Which should appear first after the Glass Range? Is the six-boss endgame co-op mode in scope? | Proposed | [40](40-hushed-answers.md) |
+| 58 | Next map seeds: the Glass Forest, the Skull Basin or the Ash Sea? | Proposed | [41](41-landmarks.md#map-seeds-most-worth-developing-next) |
 
 ## Decided
 
@@ -118,3 +120,4 @@ Please confirm or override:
 | gdd-0.22 | 2026-10-02 | New chapters **34 — Creatures of the Far Regions** (8 natives, #47–#54; 54 native creatures total) and **35 — The Heart and the Seed** (the two poles of the world, layer by layer, as mirrors and future story spaces). |
 | gdd-0.23 | 2026-10-02 | New chapters **36 — Greyborn at a Glance** (five-minute summary, decided facts, reading guide, five core rules) and **37 — The Clamor in Depth** (biology, Scald stages, full roster with the Roar apex, look and sound, proposed backstory). |
 | gdd-0.24 | 2026-10-02 | New chapters **38 — Memory Catalogue** (40 Memories on 9 Codex pages, with sites, visions and rewards) and **39 — World Events** (11 recurring events, rules, a sample year). |
+| gdd-0.25 | 2026-10-02 | New chapters **40 — The Hushed Answers** (all six as encounters, where each fits, an endgame idea) and **41 — Landmarks & Future Map Seeds** (24 landmarks across 12 regions, three map seeds to develop). |

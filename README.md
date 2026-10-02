@@ -58,6 +58,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 37 | [The Clamor in Depth](gdd/37-the-clamor.md) | The rival hive mind's biology, Scald, creatures and apex, and its history with the Murmur |
 | 38 | [Memory Catalogue](gdd/38-memory-catalogue.md) | All 40 planned Memories, page by page, with where they're found and what they show |
 | 39 | [World Events](gdd/39-world-events.md) | Recurring weekend events rooted in the world, and a sample year |
+| 40 | [The Hushed Answers](gdd/40-hushed-answers.md) | The Murmur's six glass guardians as giant encounters |
+| 41 | [Landmarks & Map Seeds](gdd/41-landmarks.md) | 24 landmarks across the Greyreach, each a seed for a future map |
 
 ## Superseded material
 

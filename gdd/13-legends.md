@@ -83,6 +83,8 @@ the **Hushed Answers**. They didn't fall. They wait at the edge of the
 | **The Endless Pursuit** | The Hunt That Never Ended | Runs in the opposite direction around the world, always just out of sight of its original |
 | **The Archive** | The Rememberer | Keeps glass copies of every creature the Murmur has taken |
 
+Each Hushed Answer is designed as a full encounter in [40](40-hushed-answers.md).
+
 **Design hooks:** the Hushed Answers are natural candidates for **seasonal
 boss events**, **Starwound endgame encounters**, or a **PvE mode** (all
 proposals). The pairing *First Answer ↔ Hushed Answer* gives each lineage a

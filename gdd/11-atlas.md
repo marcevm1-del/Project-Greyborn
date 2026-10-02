@@ -149,6 +149,8 @@ pulsing with the Murmur's will. It isn't a place anyone visits casually.
 - **Landmark:** **The Seed**, the meteorite's core, around which the Murmur's thoughts gather.
 - **Use:** for story moments, seasonal events and a possible endgame map. Not a standard match map.
 
+More landmarks per region, each a seed for a future map, are in [41](41-landmarks.md).
+
 ## Proposed launch match maps
 
 | Map | Regions | Starwound crater zone | Heartwood grove | Identity |
