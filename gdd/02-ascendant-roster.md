@@ -21,8 +21,11 @@ and names in this file are **proposals** built on the source pages.
 
 ## Shared Base Form (Levels 1–2)
 
-Every player spawns as the same small humanoid Base Form. *(Its in-world
-name and its link to the planet Greyborn are still open; see [08](08-open-questions.md).)*
+Every player spawns as the same small humanoid Base Form. Base Forms are
+**native creatures of Greyborn**. They occur naturally, like the planet's other
+wildlife. The six Ascendant lineages are the natural evolutionary paths open
+to them: a Base Form becomes a Titan or a Verdant the way a larva becomes a moth.
+*(Decided by the director, 2026-10-02. Their in-world species name is still open.)*
 
 - Kit: light melee combo, dodge, **Root** (channel to capture a node), **Return** (start the trip home).
 - At **Level 3** the lineage *awakens* and the player gets the lineage kit.

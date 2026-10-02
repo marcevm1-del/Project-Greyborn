@@ -6,7 +6,8 @@
 ## Pitch
 
 **Greyborn** is a **4v4 team PvP game** about evolution and territory, set
-on the planet **Greyborn**. Every player spawns as a small humanoid **Base Form** and grows during the match,
+on the planet **Greyborn**. Every player spawns as a small humanoid **Base Form**,
+a native creature of the planet, and grows during the match,
 through 20 levels and 3 Stages, into a towering **Ascendant** monster. The
 lineages are Titan, Brawler, Verdant, Hollow, Thornrunner and Bonespire.
 
