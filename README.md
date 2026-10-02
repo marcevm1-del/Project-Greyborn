@@ -7,7 +7,9 @@ on the planet **Greyborn**. Every player starts as a small humanoid Base Form an
 through 20 levels and 3 Stages, into a towering **Ascendant**: Titan, Brawler,
 Verdant, Hollow, Thornrunner or Bonespire. Paired Ascendants unlock
 **Synergies**, and teams fight to root nodes, hold Resource Hubs and dominate
-the map's Territorial Influence.
+the map's Territorial Influence. Every match is a battle in the war between
+the living planet's **Wildborn** and the **Blightborn**, creatures infected by
+a hive mind that arrived on a meteorite.
 
 ## Design document (`gdd/`)
 
@@ -24,7 +26,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 06 | [Match Flow](gdd/06-match-flow.md) | Draft, four phases, win conditions, respawn |
 | 07 | [Tactical Notes](gdd/07-tactical-notes.md) | Node management, return timing, synergy play, callouts, counterplay |
 | 08 | [Open Questions](gdd/08-open-questions.md) | Decisions needed, risks, iteration log |
-| 09 | [Wildlife](gdd/09-wildlife.md) | 40 native creatures of Greyborn: four-, two-, six- and eight-legged, plus insects |
+| 09 | [Wildlife](gdd/09-wildlife.md) | 40 native creatures of Greyborn: four-, two-, six- and eight-legged, plus insects; infection and rallying |
+| 10 | [The World](gdd/10-world.md) | The living planet, the Starwound meteorite, the Murmur hive mind, Wildborn vs. Blightborn |
 
 ## Superseded material
 

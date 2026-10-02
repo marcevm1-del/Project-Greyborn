@@ -4,8 +4,11 @@
 > The source shows four game states (in the Synergy Access Matrix) but not their
 > timings or the win condition.
 
-## Pre-match: draft
+## Pre-match: sides and draft
 
+0. Each team is **assigned a side** for the match: **Wildborn** (the planet's
+   response) or **Blightborn** (the Murmur's infected). The sides are mirrors
+   in gameplay (see [10](10-world.md)).
 1. Teams draft lineages in alternating picks (1-2-2-2-1). No duplicates within a team.
 2. Each player's lineage is **hidden from the enemy** until it awakens at Level 3.
    The enemy sees only four identical humanoid Base Forms.

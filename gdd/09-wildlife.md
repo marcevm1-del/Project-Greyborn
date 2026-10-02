@@ -163,3 +163,38 @@ Brawler are slightly under-served. A pass should add one more of each.
 - **Lore:** Strays (wild Base Forms) show the players' species living
   naturally, and their 5-minute evolution shows the planet's evolution at work
   without any players involved.
+
+## Infection and rallying
+
+Greyborn's wildlife is caught in the war between the planet and the Murmur
+(see [10 — The World](10-world.md)). The two mechanics below are mirrors of each other.
+
+| | **Infect** (Blightborn) | **Rally** (Wildborn) |
+|---|---|---|
+| How | 3 s channel on a Tier I–III creature below 50% Health | 3 s channel on a Tier I–III creature below 50% Health |
+| Result | It becomes a **Blighted** variant and fights for the Blightborn for 90 s | It becomes **Kin** and fights for the Wildborn for 90 s |
+| Afterwards | It dies, and its cores go to the infector | It returns to the wild, healed, and its cores go to the rallier |
+| Limit | 1 converted creature per player at a time; Apex creatures can't be converted | Same |
+
+**Passive territory effect:** a neutral creature that stays for 30 s on
+territory owned by a team turns **hostile only to the other team** (Blighted on
+Blight, Kin on roots) until it leaves. Holding territory makes the local
+wildlife your guards.
+
+### Notable Blighted variants
+
+Every creature has a Blighted look. These six also change how they behave:
+
+| Creature | Blighted variant |
+|---|---|
+| Mossback Grazer | **Glassback Grazer**: its grazing spreads Blight instead of eroding it |
+| Strays | **Hushed Strays**: wild Base Forms taken by the Murmur. They evolve after 3 min instead of 5 |
+| Marrowhound | **Murmurhound**: delivers the cores it eats to the nearest Blightborn player |
+| Sapback Aphids | **Shard Aphids**: produce SAP for the Blightborn, but crack and die faster |
+| Weavemother | **Glass Weaver**: its webs are crystal. They can't be burned, only shattered (more damage, no channel) |
+| Greyback Colossus | **The Starbacked**: a Colossus with a meteor shard grown into its back. Its moving node is pre-blighted |
+
+### Patron-tied Apex appearances
+
+- **Planet Pulse** events can wake the **Old Tall**, which hunts Blightborn for 45 s.
+- **Murmur Surge** events can split open the ground to release a **Blighted Sixfold Wyrm**, which hunts Wildborn for 45 s.

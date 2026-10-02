@@ -18,6 +18,12 @@ map's nodes, controls **Resource Hubs** and grows **Territorial Influence**.
 Ascendants are built to depend on each other: paired lineages unlock
 **Synergies** that neither can do alone.
 
+**The war:** Greyborn is alive and aware. Long ago a meteorite, the
+**Starwound**, struck it, carrying a hive-mind infection, the **Murmur**. Every
+match is one battle between the planet's **Wildborn** (nature's response) and
+the Murmur's **Blightborn** (the infected), fought over the planet's own body.
+See [10 — The World](10-world.md).
+
 ## Design pillars
 
 1. **Evolution Is the Scoreboard.** A player's size, silhouette and sound

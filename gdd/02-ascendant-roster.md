@@ -8,6 +8,10 @@ The source pages name **six lineages**, grouped into **three synergy pairs**:
 | **Root & Void** | Verdant | Hollow | Territory: claim, deny, extract |
 | **Hunt** | Thornrunner | Bonespire | Picks: mark a weak point and break it |
 
+In the world, the six lineages are the planet's six **answers** (bones, fury,
+growth, silence, hunters, memory). The Blightborn side plays the same six in
+corrupted forms, because the Murmur can only copy the planet's work (see [10](10-world.md)).
+
 A 4-player team can field **at most two complete pairs**, so the draft is
 about which two pair-identities you bring, or whether you split pairs for
 coverage. *(Proposal: no duplicate lineages within a team.)*

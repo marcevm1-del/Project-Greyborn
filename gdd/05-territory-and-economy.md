@@ -86,3 +86,23 @@ TI drives:
 
 - Each event favours a pair. That's the "interdependent" part: events reward
   teams that brought the right pair, or that rotate to the event their pair is good at.
+
+### Patron decks (nature fights back)
+
+The table above is the **neutral deck**. Two patron decks are added (lore in [10](10-world.md)):
+
+| Deck | Fires when… | Example events |
+|---|---|---|
+| **Planet Pulse** (Greyborn) | The Wildborn are **behind** by more than 5% Territorial Influence | **Heartquake:** all Blight in the region cracks; Blightborn nodes there become Vulnerable · **Healing Bloom:** Wildborn in the region regenerate 3% Health/s for 15 s · **The Old Tall wakes** and hunts Blightborn |
+| **Murmur Surge** (the hive mind) | The Blightborn are **behind** by more than 5% | **Shard Rain:** meteor shards fall and damage Wildborn structures · **Thousand Whispers:** all Wildborn are revealed for 10 s · **Blighted Wyrm** erupts and hunts Wildborn |
+| **Neutral** | Territorial Influence is within 5% | Rootquake, Marrow Storm, Stampede, SAP Surge, Core Bloom |
+
+The losing side's patron intervenes. In lore, the planet and the Murmur each
+protect their own. In design, it's a built-in comeback mechanic (see risk #1 in [08](08-open-questions.md)).
+
+### Roots and Blight
+
+Both sides capture with the same rules. Only the material and the words
+change: Wildborn **root** and **purge**; Blightborn **blight** and **consume**.
+Each map has a **Starwound crater** (Blight spreads 2× faster) and a mirrored
+**Heartwood grove** (roots spread 2× faster).
