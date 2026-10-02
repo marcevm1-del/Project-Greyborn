@@ -149,3 +149,153 @@ this enemy before. Players realise, slowly, that the Murmur is afraid.
 - **The Murmur's past** ([37](37-the-clamor.md), [48](48-beyond-the-sky.md)): its fear of the Clamor becomes the key to its whole story.
 - **The Truce** ([27](27-modes.md#the-truce-co-op-season-3)): the first time both sides stand together, even in co-op.
 - **The Roaring** (Season 6, [49](49-season-6.md)): the Clamor in full force, three seasons later.
+
+## The first Landfall, as players will remember it
+
+It's week 4. Players have seen red streaks in the sky for three weeks and
+watched every creature turn to look at them. Then, in the middle of an
+ordinary match on Ashfall Crossing, the sky on the northern flank turns red.
+A roar rolls across the map. Thirty seconds later, something strikes the
+ground near Shardfall Hollow with a shockwave that knocks back everyone
+nearby, and rust-red crust begins racing across both teams' territory.
+
+Shriekers pour out, screaming, and suddenly everyone near them is revealed:
+Wildborn and Blightborn alike. For a few seconds, both teams freeze. Then one
+player calls "Landfall", and the match becomes a three-way fight that no one
+has ever played before.
+
+That moment should be one of the most talked-about moments in Greyborn's
+first year.
+
+## Stillheart's launch season
+
+Season 3 is Stillheart's first season as a playable lineage. It matters that
+its arrival coincides with the Clamor's:
+
+- In lore, Stillheart is the planet's answer to the Clamor (revealed in Season 6).
+- In play, its cold, slowing kit is naturally good against the Clamor's
+  frantic creatures, a quiet hint at its purpose three seasons before the reveal.
+- Its **early Mastery bonus** encourages players to try it.
+- Its **onboarding** ([25](25-calls-and-onboarding.md#onboarding-stillheart-season-3)) introduces it.
+
+## Shard Reef's arrival
+
+The coastal map arrives with the season. Its tides, causeways and the singing
+reef make it a natural stage for the Clamor's arrival: the second stone
+falls into the reef in the finale. Players learn the map's tides through the
+season, and the finale turns that knowledge into survival.
+
+## Introducing the Clamor's creatures
+
+The Clamor's creatures arrive in stages through the season, so players learn them one at a time:
+
+| Week | Creatures in Landfalls |
+|---|---|
+| 4 | Shriekers only |
+| 5 | + Spore Kites |
+| 6 | + Ashmouths |
+| 7 | + Scald Hulks |
+| 8 | + Kindlers |
+| 10 (finale) | + Ventborn and Roar-vents |
+
+The Roar itself doesn't appear until Season 6.
+
+## The Murmur's Memory, revealed
+
+In week 5, the Memory *The Murmur Remembers* unlocks: darkness, a burning
+roar behind, a small glowing stone fleeing across the stars. It's the first
+time players see anything from before the Fall, and the first hint that the
+Murmur isn't only an invader. Many players will understand only later
+(in Seasons 4–6) what they saw. That's intended.
+
+## How the result is presented
+
+1. The War Map darkens; the red streak glows across it.
+2. A short cinematic: the second stone in the Shard Reef, steaming.
+3. **Contained:** the steam fades, the crust cools to ash, and Seedcallers
+   are seen at the edge, waiting. **Taking root:** the crust spreads up the
+   cliffs, and the War Map gains a rust-red region.
+4. The result Memory unlocks for everyone.
+
+## Writing guidance
+
+1. **The Clamor is a disaster, not a villain.** No motives, no faces.
+2. **Both sides are victims of it.** Show Wildborn and Blightborn creatures fleeing together.
+3. **The Murmur is afraid.** Its creatures flinch from the red streaks; its whispers go quiet.
+4. **Plant seeds of the truce.** Small moments where both sides fight the same
+   Shrieker swarm should feel significant, three seasons before the Truce.
+
+## Season 3 at a glance
+
+| | |
+|---|---|
+| Mood | Dread and chaos |
+| Central image | A red streak beside the Fall-line |
+| New lineage | Stillheart |
+| New map | Shard Reef |
+| New threat | The Clamor and Landfalls |
+| Signature sound | The roar |
+| Leaves behind | A question: what is the Murmur afraid of? |
+
+## The Fever Turn in this season
+
+Season 3 falls in **Fever**, the planet's fighting mood ([29](29-the-planets-year.md)):
+
+- **Heat and storms** on every map; Fever Storms as a world event.
+- **Predators are bolder,** making the wildlife more dangerous alongside the Clamor.
+- **Lore irony:** the planet is at its fiercest, burning to drive out the
+  Murmur, and a new fire falls from the sky that burns everything. Fever
+  against fire: the planet can't tell, yet, that it has a new enemy.
+
+## Three invaders? A note on balance
+
+From Season 3, matches have three forces: two teams and the Clamor. Rules
+for keeping it fair:
+
+| Rule | Why |
+|---|---|
+| The Clamor attacks whoever is nearest, never a chosen side | Neither team is favoured |
+| Landfalls strike a random flank, never closer to one base | Mirrored map positions |
+| Rewards go to the last hit | Creates tension, but both teams have equal chances |
+| Scald eats roots and Blight at the same rate | Neither side's territory is safer |
+| One Landfall per match (two from Season 6) | The Clamor disrupts but doesn't dominate |
+
+## The season's community goals, in detail
+
+| Front | Wildborn goal | Blightborn goal | Shared goal |
+|---|---|---|---|
+| **Shattered Coast** | Rally Tide Scuttlers; hold the cliff nodes; purge Blight in the shallows | Infect Tide Scuttlers; hold the reef; consume roots on the cliffs | Destroy Landfall cores |
+| **Rimewastes** | Find Stillheart's Memory sites; survive the ice | Find Stillheart's Memory sites; break ice under enemies | Destroy Landfall cores |
+| **Carry-over front** | As in Season 2 | As in Season 2 | Destroy Landfall cores |
+
+The **shared goal** counts for both sides at once: the first time in the
+game's history that one action helps both races. It foreshadows the shared
+bar of Season 6.
+
+## What Season 3 changes for good
+
+1. **A third colour** on the War Map: Scald.
+2. **A red streak** in every map's sky from now on.
+3. **The Clamor exists.** Every later season lives with it.
+4. **Stillheart is playable.**
+5. **The Murmur has a past.** One Memory, and the story is never quite the same.
+
+## Season 3 rewards, expanded
+
+| Reward | Source |
+|---|---|
+| **Rust-scarred Growths** | Reward track |
+| **Ember Markings** | Fever Storms event |
+| **Landfall brood mark** | 50 Landfall cores destroyed |
+| **Stillheart starter Growth** | Playing Stillheart in 10 matches |
+| **Red Streak brood mark** | Finale participation |
+| **"Contained" or "Taking Root" Memory** | Finale result |
+| **Clamor-roar call voice** | Finale participation |
+
+## Closing note
+
+Season 3 widens the world. Before it, Greyborn is a war between two minds.
+After it, the war has an outside, a dark full of hunger, and every story that
+follows is shaped by the knowledge that something else is listening.
+
+The red streak stays in Greyborn's sky from this season onward, a permanent reminder that the world is not alone.

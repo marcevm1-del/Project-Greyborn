@@ -156,3 +156,134 @@ difference is obvious. The Bonespire lances, and the node shatters.
 **Gaps:** Thornrunner is favoured on many maps and Stillheart on only one.
 Future maps should favour Stillheart (cold, slow, chokepoint-heavy maps),
 and Thornrunner's map advantages should be watched in playtests.
+
+---
+
+## Map 11 · The Weaver's Hollow (4v4)
+
+**Region:** Rootwilds. **Identity:** a vertical map fought on web-bridges
+strung across a deep, forested valley ([41](41-landmarks.md#the-landmarks-described)).
+
+- **Three levels:** the forest floor, the canopy, and the web itself.
+- **Web-bridges:** the Weavemother's ancient web connects the treetops. Players
+  cross the valley on its strands. Any strand can be **cut or burned** (8 s
+  channel or a fire effect), and anyone on it drops to the level below.
+- **Regrowth:** cut strands regrow after 90 s, as the Weavemother repairs them.
+- **The Weavemother** herself lives at the web's centre (a neutral Tier III
+  creature). Disturbing her makes her attack whoever is closest.
+- **Crater zone (east):** a fallen shard caught in the web, glazing the strands around it.
+- **Heartwood grove (west):** the Mother Oak, whose hollow is a sheltered node.
+- **Dawn:** the web glows at dawn, lighting the whole valley.
+- **Favours:** Thornrunner (fast on strands), Verdant (canopy nodes), Bonespire (long views across the valley).
+
+## Map 12 · The Heron Reach (2v2)
+
+**Region:** Hollow Mire. **Mode:** Brood Skirmish. **Identity:** a shallow
+lake where stealth is almost impossible.
+
+- **The flock:** thousands of Strider Cranes nest on the lake. Any fight, or
+  any player moving fast in the open, startles a section of the flock, which
+  lifts into the sky and reveals the players beneath it for 5 seconds.
+- **Reed islands:** small islands of Whisperreed give the only cover.
+- **Fogwell:** a warm spring in the centre pours out fog every two minutes,
+  briefly hiding everything. The only safe moment to move fast.
+- **Favours:** Hollow (silent movement), Stillheart (patient play).
+
+## Map 13 · The Frozen Falls (4v4)
+
+**Region:** Rimewastes. **Identity:** a cliff map built around a waterfall frozen mid-fall.
+
+- **The falls** divide the map vertically. Players can **climb the ice** on
+  marked routes, giving a fast but exposed path to the high ground.
+- **Breakable ice:** heavy hits crack the falls, opening shortcuts through
+  them or dropping climbers.
+- **The pool below** is unfrozen: falling in slows and damages, like The Sleeper's lake.
+- **Snow Halls:** caves in the cliffs where Drift Owlbears sleep; waking one is a tactical risk.
+- **Crater zone:** Rimeglass on the upper plateau. **Grove:** a Warm Spring at the base.
+- **Favours:** Stillheart (cold map, chokepoints), Titan (breaking ice), Bonespire (high ground).
+- **Why:** Stillheart was favoured on only one map. The Frozen Falls is built around it.
+
+## The map pipeline
+
+How a landmark becomes a map:
+
+1. **Landmark** chosen for its silhouette, story and gameplay idea ([41](41-landmarks.md#how-a-landmark-is-designed)).
+2. **One-page concept:** identity, signature mechanic, lineages favoured.
+3. **Greybox:** a playable block-out with nodes, Hubs, Cores and bases following the map rules.
+4. **Balance check:** both bases equal; crater and grove equidistant; every lineage has somewhere to shine.
+5. **Art pass:** region palette, landmarks on the horizon, flora and wildlife.
+6. **Audio pass:** soundscape, signature sounds, the region motif.
+7. **Memory sites** placed.
+8. **Season fit:** which season and Turn it launches in.
+
+## Updated map list
+
+| # | Map | Mode | Status |
+|---|---|---|---|
+| 1–7 | Ashfall Crossing, The Elder Ribs, Breathing Canopy, Fevermouth, The Sleeper, Shard Reef, The Nerve | 4v4 | Launch to Season 4 |
+| 8 | The Skull Basin | 2v2 | With Brood Skirmish |
+| 9 | The Ash Sea | 4v4 | Season 5+ |
+| 10 | The Glass Forest | 4v4 | Season 5+ |
+| 11 | The Weaver's Hollow | 4v4 | Proposal |
+| 12 | The Heron Reach | 2v2 | Proposal |
+| 13 | The Frozen Falls | 4v4 | Proposal (fills the Stillheart gap) |
+
+## Moments on the new maps
+
+**The Weaver's Hollow.** Dawn. The web glows gold across the whole valley.
+A Blightborn Thornrunner races along a strand toward the canopy Hub. Below,
+a Wildborn Verdant reaches the strand's anchor and starts to cut. Three
+seconds left on the channel. The Thornrunner sees it and leaps for the next
+strand. It almost makes it.
+
+**The Heron Reach.** Two Wildborn creep through the reeds. The Blightborn
+pair is somewhere across the lake. A fog pulse rises from the Fogwell, and
+for ten seconds, everyone moves. When the fog clears, a section of the flock
+lifts into the sky with a roar of wings, and both pairs are revealed, ten
+metres apart.
+
+**The Frozen Falls.** A Wildborn Stillheart holds the narrow ledge at the top
+of the falls, Long Night slowing the enemy climbers below. A Blightborn Titan
+slams the ice beneath the ledge. It cracks. The Stillheart's Attuned partner,
+a Bonespire on the far plateau, lances the Titan's back as it slams again.
+
+## Lineage balance with the new maps
+
+| Lineage | Maps that favour it (of 13) |
+|---|---|
+| Titan | Elder Ribs, Fevermouth, Skull Basin, Frozen Falls |
+| Brawler | Elder Ribs, Fevermouth, Shard Reef, Skull Basin |
+| Verdant | Breathing Canopy, The Sleeper, Glass Forest, Weaver's Hollow |
+| Hollow | Breathing Canopy, The Sleeper, Shard Reef, The Nerve, Ash Sea, Heron Reach |
+| Thornrunner | Ashfall Crossing, Breathing Canopy, Fevermouth, Shard Reef, The Nerve, Ash Sea, Glass Forest, Weaver's Hollow |
+| Bonespire | Ashfall Crossing, Elder Ribs, The Sleeper, Ash Sea, Weaver's Hollow, Frozen Falls |
+| Stillheart | The Nerve, Heron Reach, Frozen Falls |
+
+Stillheart now has three maps. Thornrunner is still favoured most often;
+future maps should avoid adding more Thornrunner advantages.
+
+## Design notes for vertical maps
+
+The Weaver's Hollow and the Frozen Falls both use height heavily. Rules for vertical maps:
+
+1. **The map must read from above:** a clear minimap with levels shown.
+2. **Falls are never instant death:** dropping a level costs time and Health, not the match.
+3. **Every level has nodes,** so territory is fought on all of them.
+4. **Large Ascendants need routes too:** Stage 3 creatures must be able to reach every level, even if slowly.
+5. **Sound helps:** footsteps above and below are distinct, so players know where enemies are vertically.
+
+## Map art: horizons for the new maps
+
+| Map | What players see on the horizon |
+|---|---|
+| The Weaver's Hollow | The Mother Oak's crown; the Breathing Canopy rising and falling beyond |
+| The Heron Reach | The Drowned Grove; the fog of the Fogwell |
+| The Frozen Falls | The Sleeper's Lake below; the Snow Halls in the cliffs |
+
+## Closing note
+
+Every map in Greyborn is a place on a real planet, with neighbours on its
+horizon, creatures that live there and a story that passed through it. New maps
+should always begin from a landmark, not a layout.
+
+Thirteen maps, each a real place on Greyborn, and dozens more waiting among the landmarks.
