@@ -144,3 +144,154 @@ Greyborn's mirror rule says the two sides are always equal. That would mean
 nothing if a player could buy an advantage. Every reward is about **who your
 creature is**, not **how strong it is**. This keeps ranked play fair and
 keeps the focus where the game's pillars put it: on growth inside the match.
+
+---
+
+## Lineage Mastery in depth
+
+Each lineage has six Mastery ranks. Every rank unlocks something for **both sides**.
+
+| Rank | Name | Lore meaning | Typical unlocks |
+|---|---|---|---|
+| 1 | **Sprout** | The lineage has begun to take root in you | A basic Growth variant; the lineage's portrait border |
+| 2 | **Sapling** | You've grown into its shape | A call voice for the lineage |
+| 3 | **Rooted** | It's part of you now | A Marking set |
+| 4 | **Deep-rooted** | You know its every movement | An Instinct emote unique to the lineage |
+| 5 | **Old Growth** | You carry its history | An advanced Growth (Stage 3 variant) |
+| 6 | **First Answer's Echo** | You echo the original | A cosmetic inspired by the lineage's First Answer |
+
+**First Answer's Echo examples:**
+
+| Lineage | Echo cosmetic |
+|---|---|
+| Titan | A ridge of peaks along the back, like the Vertebrae |
+| Brawler | Fist-shaped craters left in the ground by its Haymaker |
+| Verdant | Antlers that slowly breathe, like the Rootwilds' canopy |
+| Hollow | A deeper silence: nearby ambient sound fades a little more |
+| Thornrunner | A faint afterimage that runs a moment behind it |
+| Bonespire | Bones on its back arranged like the Elder Ribs |
+| Stillheart | A heartbeat glow visible through its whole body |
+
+## Pair Bonds in depth
+
+Pair Bonds grow when two friends play a true pair together (or Stillheart
+attuned to a friend). Ranks:
+
+| Rank | Name | Unlock |
+|---|---|---|
+| 1 | **Met** | A shared brood mark |
+| 2 | **Hunting Together** | Matching Markings that appear only when you're paired |
+| 3 | **Trusted** | A unique Synergy visual (e.g. Smash & Roll leaves a shared crater pattern) |
+| 4 | **Bonded** | A paired idle animation: the two creatures greet each other |
+| 5 | **Of One Brood** | Matching Growths that only appear together, and a Den decoration showing both creatures resting side by side |
+
+## Markings catalogue (examples)
+
+| Marking | Description |
+|---|---|
+| **Ashstripe** | Grey stripes like drifting ash across the back |
+| **Mossfleck** | Dense moss spots across the body |
+| **Frostlace** | Delicate frost patterns, from the Long Cold event |
+| **Embersear** | Glowing red lines like cooling lava, from Fever |
+| **Starfall** | Tiny glittering points like falling meteor glass |
+| **Riverback** | A long pale stripe down the spine, like the Grey Migration seen from above |
+| **Braidweave** | Interwoven amber and cyan lines (Season 6 only) |
+| **Unravelled** | The same weave, half burnt away (Season 7) |
+
+## Calls catalogue (examples)
+
+| Call voice | Sound |
+|---|---|
+| **Default (Wildborn)** | Hoots, roars, creaks |
+| **Default (Blightborn)** | Chimes, shatters, hisses |
+| **Migration** | Low rolling calls, like distant herds |
+| **Stillsong** | Long, low whale-like notes |
+| **The Hum** (Blightborn, Season 5) | The four-note hum |
+| **The Answer** (Wildborn, Season 5) | A rising wooden note |
+| **Clamor-roar** | A rough shout (from Season 3 finale) |
+
+## Instincts catalogue (examples)
+
+| Instinct | Animation |
+|---|---|
+| **Sniff the Air** | Head raised, nostrils flaring |
+| **Shake Off** | A full-body shake like a wet dog |
+| **Groom** | Cleaning fur, bark or crystal |
+| **Mark Territory** | Scratching the ground |
+| **Howl at the Fall-line** | Head raised to the sky, a long call |
+| **Face North** | The Strays' dusk ritual |
+| **Lie Down** | The First Answers' rest (Long Stand Codex reward) |
+| **Play** | A bounce and a mock pounce, like young Kith |
+| **Listen** | Head tilted, perfectly still |
+
+## Brood marks catalogue (examples)
+
+Brood marks are scratched into the ground at your base at match start, and shown in the Den.
+
+| Brood mark | Source |
+|---|---|
+| **Claw** (default) | Everyone |
+| **Glass Range** (kneeling or standing) | Season 1 finale |
+| **Waking Eye** | Season 2 finale |
+| **Red Streak** | Season 3 finale |
+| **Pale Flower** | Season 4 finale |
+| **Seed** | Season 5 finale |
+| **Braid** | Season 6 finale |
+| **The Last Braid** | Season 7 event |
+| **Apex trophies** | Apex Hunt |
+
+## The season reward track
+
+Each season has a single reward track with free and optional premium rows
+(the business model is still open, [08](08-open-questions.md)). Structure:
+
+- **About 60 steps**, earned through matches and goal actions.
+- **Every step is cosmetic.**
+- **The track follows the season's story:** early steps are themed to the
+  season's opening (frost in Season 2), late steps to its finale (the Sleeper's waking).
+- **Both sides represented:** every Growth or Marking comes in Wildborn and Blightborn forms.
+- **Final step:** a signature cosmetic that becomes a symbol of that season (the Glass-ridge Growth for Season 1).
+
+## Collection principles
+
+1. **Show who you are, never how strong you are.**
+2. **Every reward is part of the world:** a growth, a marking, a call, an instinct.
+3. **History matters:** finale and event rewards can't be earned after the fact, because "I was there" should mean something.
+4. **Friendship is rewarded:** Pair Bonds are the most personal progress in the game.
+5. **Both sides, always.**
+
+## Den decorations
+
+The Den fills up over time with things that mean something:
+
+| Decoration | Source |
+|---|---|
+| **Memory marks** on the walls | Every Memory found |
+| **Pair claw marks** on the floor | Pair Bond ranks |
+| **Apex trophies** on a ledge | Apex Hunt |
+| **A companion creature** curled in a corner | World events (Mossback calf, Lantern Lizard, Lumen Bees, a fawn) |
+| **A braided patch** of ground | Season 6 participation |
+| **A single unravelled root and crystal** | Season 7 participation |
+| **The sky through the crack** | Always the current season's sky |
+
+A veteran player's Den is a museum of everything they've lived through on Greyborn.
+
+## What players can show others
+
+- **The Den**, visitable by friends.
+- **The brood mark** at match start.
+- **Growths and Markings** in every match.
+- **Pair Bond Growths**, visible only when the pair plays together, so other
+  players know these two have played together a long time.
+- **Season "I was there" marks**, the clearest signal of a long-time player.
+
+## Collection and new players
+
+A new player starts with a full set of default cosmetics for every lineage on
+both sides, so no one ever looks unfinished. Their first unlocks come fast:
+the first Mastery rank arrives within a few matches of playing a lineage, the
+first Memory within the onboarding. By the end of their first week, a new
+player should already have a Den that feels like theirs: a few Memory marks
+on the wall, a Sprout-rank Growth on their favourite lineage, and perhaps a
+first Pair Bond with a friend. The collection is meant to grow with the
+player, the same way their creature grows in every match.

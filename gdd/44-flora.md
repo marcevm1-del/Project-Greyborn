@@ -134,3 +134,138 @@ stay fair while the world feels like it's moving through a year.
 - **Blighted creatures** eat nothing, so plants near the Glasswaste grow
   untouched, then turn to glass ([15](15-ecology.md)).
 - **The Clamor** kills plants outright, which is part of what makes it so destructive.
+
+---
+
+## More plants of Greyborn (#27–#40)
+
+The catalogue grows to forty. These fourteen fill out the regions with
+plants that are either useful in matches or essential to a region's character.
+
+| # | Plant | Region | Type | Description and effect |
+|---|---|---|---|---|
+| 27 | **Whisperreed** | Hollow Mire | Ambient | Tall reeds that rustle constantly, even without wind. In Blighted areas, the rustle becomes a faint whisper |
+| 28 | **Stonebloom** | Spirecliffs | Interactable | A flower that grows only on bare rock. Eating it gives +10% damage reduction for 10 s. Titans are drawn to it |
+| 29 | **Marrowmoss** | Bone Flats | Interactable | Pale moss that grows inside old bones. Breaking a bone patch releases a cloud that briefly reveals weak points within 6 m |
+| 30 | **Lantern Fern** | Underroot | Ambient | Ferns whose tips glow faintly blue-green; they dim when something large passes |
+| 31 | **Thornbriar** | Rootwilds, Spirecliffs | Interactable | A thorny hedge that damages anything pushing through it, except Thornrunners, which slip through untouched |
+| 32 | **Sunpod** | Ashen Steppe | Interactable | A round pod that stores daylight. Breaking it at night lights a 10 m area for 20 s |
+| 33 | **Ice Lily** | Rimewastes | Ambient | A white flower that blooms only through snow, in perfect circles |
+| 34 | **Ashcap** | Cinderveil | Interactable | A grey mushroom that grows in fresh ash. Eating it gives brief heat resistance (immune to heat vents for 5 s) |
+| 35 | **Saltglass Kelp** | Shattered Coast | Ambient | Kelp tangled with tiny shards of meteor glass, glittering in the shallows |
+| 36 | **Dreamroot** | Rimewastes, Underroot | Interactable | Pale roots that hum faintly. Standing on them slowly restores Health while still, out of combat. Stillheart's favourite |
+| 37 | **Lattice Vine** | Glasswaste | Ambient | A Blighted vine of pure crystal that never stops growing, slowly, a few centimetres a day |
+| 38 | **Heartmoss** | Heartwood | Ambient | Soft red moss that feels warm, and pulses faintly with the planet's heartbeat |
+| 39 | **Seedcaller's Trail** | Any (Season 4+) | Ambient | Seedlings left by Seedcallers; they grow into Sapbloom within a match |
+| 40 | **Braidgrass** | Season 6 Truce maps; the Last Braid | Ambient | Grass that is half living and half glass, growing only on braided ground |
+
+**Braidgrass** is the rarest plant on Greyborn: after Season 7, it survives
+only around the Last Braid ([51](51-season-7.md#the-last-braid)).
+
+## Flora on each map
+
+| Map | Interactable plants | Signature ambient plant |
+|---|---|---|
+| Ashfall Crossing | Thunderpod, Bellows Gourd, Sunpod, Lanternmoss (tunnels) | Ashgrass |
+| The Elder Ribs | Bonevine, Saltcrust Lichen, Marrowmoss | Bone Thistle |
+| Breathing Canopy | Sapbloom, Tanglewort, Veilfern, Mirrorleaf, Thornbriar | Breathing Oaks, Weepwillow |
+| Fevermouth | Embergrass, Cinderroot, Ashcap | Burnt trunks |
+| The Sleeper | Rimecap, Driftcotton, Dreamroot | Frost Fern, Ice Lily |
+| Shard Reef | Kelpwhip, Echo Bell (cliffs) | Saltglass Kelp |
+| The Nerve | Lanternmoss, Root-lamp, Dreamroot | Lantern Fern |
+| The Skull Basin | Bonevine, Marrowmoss | Bone Thistle |
+| The Ash Sea | Bellows Gourd, Sunpod | Ashgrass |
+| The Glass Forest | Embergrass, Cinderroot, Glasscap | Lattice Vine |
+
+## The Blighted garden
+
+When Blight takes a region, its plants don't die: they turn to glass and
+keep their shapes, as the Murmur copies everything it touches. A Blighted
+meadow is one of Greyborn's strangest sights:
+
+- **Glass Ashgrass** chimes in every breeze, a field of tiny bells.
+- **Crystal Sapbloom** holds a cup of cyan Glow instead of amber SAP.
+- **Glass Breathing Oaks** still rise and fall with the forest's breath, but
+  stiffly, cracking slightly with each breath.
+- **Frozen petals:** flowers caught mid-opening, never finishing.
+- **Lattice Vines** creep over everything, the only plant that grows by the Murmur's will alone.
+
+**Art note:** a Blighted garden must look beautiful and wrong at the same
+time: everything in its right place, but frozen, glossy and silent except for the chiming.
+
+## Recovery after Scald
+
+When the Clamor's Scald burns out, the land is grey ash. Recovery follows a
+clear visual sequence that players can watch across seasons:
+
+1. **Ash:** grey, flat, silent. Nothing grows.
+2. **First shoots:** Seedcaller's Trail and Ashcap appear in patches.
+3. **Grass returns:** Ashgrass, thin at first.
+4. **Flowers:** Sapbloom and Stonebloom.
+5. **Full recovery:** the region's normal plants, with a faint grey tint for a season, like a scar.
+
+This recovery is one of the few things the Clamor's destruction allows that
+the Murmur's does not: the Glasswaste never recovers.
+
+## Flora art guide
+
+1. **Every plant is readable at a glance.** Interactable plants have a subtle
+   glow or movement that marks them as usable; ambient plants don't.
+2. **Plants follow the region's palette** ([23](23-art-direction.md#regions-at-a-glance)).
+3. **Plants react to creatures:** grass bends as creatures pass; flowers close
+   when a large creature comes near; Lantern Ferns dim.
+4. **Plants follow the Turns:** see the Turn table above.
+5. **Blighted versions keep the silhouette** but swap material to glass.
+
+## Flora sound guide
+
+| Plant | Sound |
+|---|---|
+| Ashgrass | A soft hiss in the wind |
+| Echo Bell | A clear ringing note when struck |
+| Breathing Oaks | A slow creak with each breath |
+| Whisperreed | Constant rustling; whispers when Blighted |
+| Thunderpod | A loud pop and a rush of air |
+| Bellows Gourd | A deep whump |
+| Glass versions of anything | Chiming |
+| Scald-burnt plants | Crackling, then silence |
+
+## Flora and the story
+
+Plants carry the story quietly:
+
+- The **Glass Flower** (Season 4) is the most important plant in the game, and it isn't from Greyborn at all.
+- **Bloom Totems and Glass Gardens** (Season 5) are plants as creation.
+- **Braidgrass** (Season 6) is the plant of the alliance.
+- **Braidgrass around the Last Braid** (Season 7) is the plant of hope.
+
+## Updated flora counts
+
+| Group | Count |
+|---|---|
+| Original interactables ([12](12-life-on-greyborn.md)) | 9 |
+| New interactables (#10–#19) | 10 |
+| New ambient (#20–#26) | 7 |
+| Further plants (#27–#40) | 14 |
+| **Total** | **40** |
+
+Of these, 19 are interactable (they do something in matches) and 21 are
+ambient (they give regions their character). Every interactable plant has a
+Blighted form that still works and a Scalded form that dies, keeping the
+Murmur's and the Clamor's natures consistent in the smallest details.
+
+## Plants as a teaching tool
+
+Plants introduce mechanics before the creatures do. A Sapbloom teaches
+healing; a Veilfern teaches hiding from the minimap; Saltcrust Lichen teaches
+that sound gives you away; a Mirrorleaf teaches that weak points glow. A
+player who has learned the plants has already learned half of the game's tools.
+
+## The rarest plants
+
+| Plant | Why it's rare |
+|---|---|
+| **Heartbloom** | Grows only in Heartwood groves, mostly in Bloom |
+| **The Glass Flower** | There is only one (Season 4) |
+| **Braidgrass** | Grows only on braided ground, which almost all burned in Season 7 |
+| **Ice Lily** | Blooms only through snow, in perfect circles, for a few days in Rime |
