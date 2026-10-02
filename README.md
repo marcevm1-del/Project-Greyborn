@@ -38,6 +38,7 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 18 | [The Answering War](gdd/18-the-answering-war.md) | Proposed War Map and seasons; how the war can move when sides are balanced |
 | 19 | [Sound & Music](gdd/19-sound-and-music.md) | The planet's voice vs. the Murmur's, gameplay audio, region soundscapes, music |
 | 20 | [Season 1: The Hush Wakes](gdd/20-season-1.md) | Fronts, community goals, weekly beats, results, and the Glass Range finale mode |
+| 21 | [Season 2: The Sleeper Stirs](gdd/21-season-2.md) | The Waking finale, the seventh lineage Stillheart, and options for Season 3 |
 
 ## Superseded material
 

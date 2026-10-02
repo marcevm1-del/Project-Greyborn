@@ -37,6 +37,9 @@ Please confirm or override:
 | 31 | Season finales: the Hush Wakes, the Sleeper Stirs, the Second Light. Is this the right order? Season 1's finale is now a 4v4 escort-or-stop mode against the Glass Range | Proposed | [18](18-the-answering-war.md#season-finales), [20](20-season-1.md) |
 | 32 | Post-launch maps: Fevermouth (eruptions every 4 min), The Sleeper (breakable ice), Shard Reef (tides every 3 min). Keep, change or reorder? | Proposed | [16](16-launch-maps.md#post-launch-maps) |
 | 33 | Season 1 front goals and week-by-week beats. Do the goals reward the play you want to see? | Proposed | [20](20-season-1.md) |
+| 34 | **Stillheart** (seventh lineage, tempo/support): keep the concept, name and kit? | Draft | [21](21-season-2.md#the-seventh-lineage-stillheart-draft) |
+| 35 | Stillheart breaks the three-pair structure: A (universal partner), B (universal for one season, then an eighth lineage completes a fourth pair) or C (join an existing pair)? | B | [21](21-season-2.md#the-pairing-problem-needs-a-decision) |
+| 36 | What is the **second light** on the Fall-line? 1 (a rival hive mind), 2 (the Murmur's origin calling) or 3 (the planet's moon sending something)? | Director's call | [21](21-season-2.md#looking-ahead-season-3-the-second-light) |
 
 ## Decided
 
@@ -81,3 +84,4 @@ Please confirm or override:
 | gdd-0.10 | 2026-10-02 | New chapters **18 — The Answering War** (War Map and seasons, with the win-rate problem and three options) and **19 — Sound & Music** (the two voices of the world, readable gameplay audio, region soundscapes, adaptive music). Species name candidates added to 12. |
 | gdd-0.11 | 2026-10-02 | Species named **Kith**; War Map decided as **community goals**. |
 | gdd-0.12 | 2026-10-02 | Post-launch maps (Fevermouth, The Sleeper, Shard Reef) added to 16. New chapter **20 — Season 1: The Hush Wakes** (fronts, mirrored goals, weekly beats, results, and the Glass Range Walks finale mode). |
+| gdd-0.13 | 2026-10-02 | New chapter **21 — Season 2: The Sleeper Stirs**: Season 1 carry-over, fronts, weekly beats, The Waking finale, the draft seventh lineage **Stillheart**, the pairing problem, and three options for Season 3's Second Light. |

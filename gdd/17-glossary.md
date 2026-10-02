@@ -60,6 +60,7 @@ were confirmed by the director; everything else is proposed.
 | **Seed, the** | The meteorite's core at the centre of the Starwound | [11](11-atlas.md), [12](12-life-on-greyborn.md) |
 | **Shattered Coast** | Shard-studded cliffs; the wound's edge | [11](11-atlas.md) |
 | **Sleeper, the** | A creature frozen in the Rimewastes; possibly a seventh answer | [13](13-legends.md) |
+| **Stillheart** | Draft seventh lineage: the Sleeper's line, a tempo controller and support | [21](21-season-2.md) |
 | **Spirecliffs** | Towering rock columns; the planet's spine | [11](11-atlas.md) |
 | **Stage 1 / 2 / 3** | Base Form (L1–9), Enhanced Form (L10–19), Ultimate Form (L20) | [03](03-evolution-system.md) |
 | **Starshard** | Meteor glass. Its veins hold core caches | [10](10-world.md) |
