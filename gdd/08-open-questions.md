@@ -34,7 +34,9 @@ Please confirm or override:
 | 27 | The **second light on the Fall-line**: is something else coming from the stars? A future story hook or expansion? | Unresolved on purpose | [15](15-ecology.md#the-sky) |
 | 28 | Launch map mechanics: the Grey Migration (6 min), bone nests, and the breathing canopy (90 s). Do these fit? Verdant and Hollow are favoured on only one map | Proposed | [16](16-launch-maps.md) |
 | 29 | Crater and grove zones sit on the neutral flanks, equidistant from both bases, so neither team has a home-field flank. This replaces the earlier "home and hostile zone" idea | Proposed | [16](16-launch-maps.md#rules-every-map-follows) |
-| 31 | Season finales: the Hush Wakes, the Sleeper Stirs, the Second Light. Is this the right order? Are cooperative/special-rules events in scope? | Proposed | [18](18-the-answering-war.md#season-finales) |
+| 31 | Season finales: the Hush Wakes, the Sleeper Stirs, the Second Light. Is this the right order? Season 1's finale is now a 4v4 escort-or-stop mode against the Glass Range | Proposed | [18](18-the-answering-war.md#season-finales), [20](20-season-1.md) |
+| 32 | Post-launch maps: Fevermouth (eruptions every 4 min), The Sleeper (breakable ice), Shard Reef (tides every 3 min). Keep, change or reorder? | Proposed | [16](16-launch-maps.md#post-launch-maps) |
+| 33 | Season 1 front goals and week-by-week beats. Do the goals reward the play you want to see? | Proposed | [20](20-season-1.md) |
 
 ## Decided
 
@@ -78,3 +80,4 @@ Please confirm or override:
 | gdd-0.9 | 2026-10-02 | New chapters **16 — Launch Maps** (map rules; Ashfall Crossing, The Elder Ribs and Breathing Canopy in detail) and **17 — Glossary**. |
 | gdd-0.10 | 2026-10-02 | New chapters **18 — The Answering War** (War Map and seasons, with the win-rate problem and three options) and **19 — Sound & Music** (the two voices of the world, readable gameplay audio, region soundscapes, adaptive music). Species name candidates added to 12. |
 | gdd-0.11 | 2026-10-02 | Species named **Kith**; War Map decided as **community goals**. |
+| gdd-0.12 | 2026-10-02 | Post-launch maps (Fevermouth, The Sleeper, Shard Reef) added to 16. New chapter **20 — Season 1: The Hush Wakes** (fronts, mirrored goals, weekly beats, results, and the Glass Range Walks finale mode). |

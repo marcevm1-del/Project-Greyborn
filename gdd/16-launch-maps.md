@@ -150,3 +150,74 @@ where the forest itself changes the sightlines.
 
 Every lineage is favoured on at least one map. Verdant and Hollow are
 favoured on only one, which is worth checking in playtests.
+
+---
+
+## Post-launch maps
+
+The three maps named for later in [11](11-atlas.md#proposed-launch-match-maps).
+They follow the same rules as the launch maps.
+
+### Map 4 · Fevermouth
+
+**Region:** Cinderveil. **Identity:** fast, dangerous fights around a volcano
+that reshapes the map on a timer.
+
+- **The Fevermouth (centre):** a volcano with the central Hub on its lower slope.
+- **Eruption cycle:** every **4 minutes** it erupts. Lava runs down **one of
+  three channels**; the channel glows and rumbles **20 s** in advance, so both
+  teams can see where it's going.
+  - Lava burns anyone standing in the channel.
+  - Cells the lava crosses become **cooling rock**: neutral and uncapturable
+    for 60 s. Each eruption cuts a fresh strip through both teams' territory.
+- **Embergrass** fields burn when Titans or Brawlers charge through them.
+- **Crater zone (north flank):** *Ashglass Field*, glass made by the meteor's heat.
+- **Heartwood grove (south flank):** *Ember Root*, an ancient root that survives the heat.
+- **Memory site:** *The Fever*: the planet waking its volcanoes to burn out the infection.
+- **Wildlife:** Cinderfangs, Magma Beetles (lava trails), Ashwing Moths.
+- **Weather pool:** Clear, Ashfall.
+- **Favours:** Brawler and Titan (embergrass charges), Thornrunner (fast rotations between eruptions).
+
+### Map 5 · The Sleeper
+
+**Region:** Rimewastes. **Identity:** slow, tense fights on a frozen lake
+above a giant that might be waking.
+
+- **The frozen lake (centre):** the Sleeper is visible deep beneath the ice.
+- **Breakable ice:** heavy impacts (Titan slams, Brawler Roll Commit, any
+  Stage 3 landing) crack the ice. Cracked ice gives way under the next heavy
+  hit. Anyone who falls into the water is **slowed by 40% and takes damage**
+  until they climb out. Ice refreezes after 90 s.
+- **The Sleeper's pulse:** in Phase 4, the Sleeper's heartbeat sends a
+  shockwave every **60 s** that **cracks all the lake ice at once**. The
+  final fights happen on a breaking surface.
+- **Crater zone (west flank):** *Rimeglass*, frost-Blight creeping over a shard.
+- **Heartwood grove (east flank):** *The Warm Spring*, where SAP keeps the ice open.
+- **Memory site:** *The Seventh*: the planet growing a seventh answer, then stopping.
+- **Wildlife:** Frostfangs, Snowback Grazers, Rime Weavers, Rimeback Stags, Stiltwalkers.
+- **Weather pool:** Clear, Rime Fog, Breathing Night.
+- **Favours:** Hollow and Verdant (control the dry land and the shore nodes),
+  Bonespire (long sightlines across the ice). This helps Verdant and Hollow,
+  who were favoured on only one launch map.
+
+### Map 6 · Shard Reef
+
+**Region:** Shattered Coast. **Identity:** a coastal front where the tide
+opens and closes parts of the map.
+
+- **The tide:** every **3 minutes** the tide comes in for 60 s. Two low-lying
+  nodes on each side flood and become **Inaccessible**. When the tide goes
+  out, **tide pools** appear with small core caches.
+- **The Shard Reef (centre):** a reef of meteor glass that sings in the wind.
+  The central Hub is on it, reached by three causeways that flood at high tide.
+- **Stillsong Whales:** a Planet Pulse event unique to this map. Whale song
+  stops Blight spreading for 20 s.
+- **Crater zone (north flank):** *The Glittering Shallows*, sea water full of Blight.
+- **Heartwood grove (south flank):** *Kelp Root*, where the planet's roots reach the sea.
+- **Lore note:** the coast *looks* half-blighted (cyan-violet water, shard
+  cliffs). In gameplay both teams start equal.
+- **Memory sites:** *The Breaker's Stand* (the cracked cliffs) and *The Deep
+  Swallows* (the Deepmaw rising to swallow meteor fragments).
+- **Wildlife:** Tide Scuttlers, Tidecrawlers, Strider Cranes, Shoal-lights (ambient).
+- **Weather pool:** Clear, Shard Storm, Rime Fog.
+- **Favours:** Thornrunner and Brawler (causeway fights), Hollow (blinking across flooded ground).

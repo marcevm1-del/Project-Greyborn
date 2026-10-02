@@ -33,10 +33,11 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 13 | [Legends](gdd/13-legends.md) | The First Answers, the Fall, the Sleeper, the Hushed Answers, Memories |
 | 14 | [Lineage Forms](gdd/14-lineage-forms.md) | How each lineage looks and sounds at every Stage, Wildborn and Blightborn |
 | 15 | [Ecology, Sky & Sea](gdd/15-ecology.md) | Food web, live predator/prey and herd reactions in matches, overhunting, migrations, the sky, the Stillsea |
-| 16 | [Launch Maps](gdd/16-launch-maps.md) | Ashfall Crossing, The Elder Ribs, Breathing Canopy: layouts, mechanics, wildlife, Memory sites |
+| 16 | [Maps](gdd/16-launch-maps.md) | Launch: Ashfall Crossing, The Elder Ribs, Breathing Canopy. Post-launch: Fevermouth, The Sleeper, Shard Reef |
 | 17 | [Glossary](gdd/17-glossary.md) | Every named term, with decided terms marked |
 | 18 | [The Answering War](gdd/18-the-answering-war.md) | Proposed War Map and seasons; how the war can move when sides are balanced |
 | 19 | [Sound & Music](gdd/19-sound-and-music.md) | The planet's voice vs. the Murmur's, gameplay audio, region soundscapes, music |
+| 20 | [Season 1: The Hush Wakes](gdd/20-season-1.md) | Fronts, community goals, weekly beats, results, and the Glass Range finale mode |
 
 ## Superseded material
 

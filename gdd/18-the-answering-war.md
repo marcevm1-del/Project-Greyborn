@@ -60,7 +60,7 @@ Each season ends with a **limited-time event** that pays off a mystery:
 
 | Season | Possible finale |
 |---|---|
-| 1 | **The Hush Wakes:** a Hushed Answer (for example the Glass Range) walks out of the Starwound. A cooperative or special-rules event to drive it back |
+| 1 | **The Hush Wakes:** a Hushed Answer (for example the Glass Range) walks out of the Starwound. A 4v4 escort-or-stop objective mode; see [20 — Season 1](20-season-1.md#finale-mode-the-glass-range-walks) |
 | 2 | **The Sleeper Stirs:** the frozen creature in the Rimewastes moves. The first hint of a seventh lineage ([13](13-legends.md#the-sleeper-a-seventh-answer)) |
 | 3 | **The Second Light:** the faint light on the Fall-line grows brighter ([15](15-ecology.md#the-sky)). Something else is coming |
 

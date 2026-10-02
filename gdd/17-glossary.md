@@ -31,6 +31,8 @@ were confirmed by the director; everything else is proposed.
 | **First Answers** | The original six creatures of each lineage, now landmarks | [13](13-legends.md) |
 | **Glasswaste** | Land permanently lost to the Murmur | [11](11-atlas.md) |
 | **Glaze / Lattice / Spire** | The visual stages of Blight growth | [12](12-life-on-greyborn.md) |
+| **Front / front points** | A War Map region active in a season, and the points each side earns there | [18](18-the-answering-war.md), [20](20-season-1.md) |
+| **Glass Range** | The Hushed Answer copied from the Mountain That Walked; Season 1's finale threat | [13](13-legends.md), [20](20-season-1.md) |
 | **Global event** | An event triggered when a border reaches 100 Tension | [05](05-territory-and-economy.md) |
 | **Greyborn** | The **planet** (**decided**), and the game's name | [10](10-world.md) |
 | **Grey Eye** | Greyborn's pale sun | [15](15-ecology.md) |
