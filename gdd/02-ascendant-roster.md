@@ -119,6 +119,7 @@ from Level 8 to Level 16.
 | Hollow | 600 → 1,600 → 3,000 | 40 → 115 → 210 | 100 → 100 → 100 | 10 → 55 → 100 |
 | Thornrunner | 600 → 1,500 → 2,800 | 40 → 125 → 230 | 100 → 120 → 135 | 10 → 35 → 60 |
 | Bonespire | 600 → 1,450 → 2,700 | 40 → 140 → 260 | 100 → 92 → 90 | 10 → 45 → 80 |
+| Stillheart (Season 3) | 600 → 2,200 → 4,200 | 40 → 85 → 150 | 100 → 90 → 90 | 10 → 55 → 100 |
 
 - **Speed** is a % of base move speed. Big Ascendants get *relatively* slower,
   except the Thornrunner.

@@ -71,6 +71,21 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 50 | [Master Timeline](gdd/50-master-timeline.md) | The whole story in order, from the deep past to Season 7, with open threads |
 | 51 | [Season 7: The Unbraiding](gdd/51-season-7.md) | The truce breaks: the planet's fever, the Murmur burned again, and the Last Braid |
 
+## Build-ready specification
+
+`spec/` turns the design into numbers an engineering team can build from.
+The GDD says *what* and *why*; the spec says *exactly how much*.
+
+| File | Contents |
+|---|---|
+| [01 — Conventions](spec/01-conventions.md) | Units, tick rate, damage, healing, CC, weak points, sizes, movement, shared actions |
+| [02 — Abilities](spec/02-abilities.md) | Every basic attack, Q/E/R, passive, rank, branch upgrade, Synergy and cross-resonance for all 7 lineages |
+| [03 — Ultimates](spec/03-ultimates.md) | All 42 Ultimate Forms, with balance flags |
+| [04 — Creatures](spec/04-creatures.md) | Stats for all 54 natives, variants, Clamor creatures, the Roar, the Hushed Answers and Wild Ascendants |
+| [05 — Economy](spec/05-economy.md) | Cores, EXP, conversion, SAP, structures, Territorial Influence, Tension, events, respawn, win conditions |
+| [06 — Build Order](spec/06-build-order.md) | Every system, its dependencies, and the milestone order from netcode to launch |
+| [greyborn-tuning.xlsx](spec/greyborn-tuning.xlsx) | The live tuning spreadsheet: every number above, with formulas, so designers can rebalance without engineers |
+
 ## Superseded material
 
 `docs/` and `prototype/` hold an earlier **placeholder concept** (a

@@ -293,7 +293,9 @@ defence moves at once.
 | The Old Tall within 30 m | ×3 on everything |
 | No fighting for 30 s | −0.5 (decay) |
 
-A steady border with one fight a minute reaches 100 in about **2–3 minutes**.
+A steady border with one 10-second fight a minute reaches 100 in about
+**4–5 minutes** (under 4 with Stage 2s fighting), so with Tension building
+from 5:00 the first event lands around 10:00–13:00, on the `gdd/06` pacing target.
 
 ### Which deck
 
