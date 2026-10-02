@@ -63,3 +63,50 @@ depend on players are shown as branches.
 4. **A common enemy** (Season 6): the planet and the Murmur face the Clamor together.
 5. **A tragedy** (Season 7): the truce breaks, and both minds lose something.
 6. **Next:** the Last Braid says it isn't over.
+
+---
+
+## How the story reaches players each season
+
+Every season tells its part of the story through the same set of channels,
+in roughly this order:
+
+| Week | Channel | Example (Season 6) |
+|---|---|---|
+| 1 | **The sky** changes | Red streaks every night |
+| 1–2 | **Creature behaviour** changes | Hushed Kith stop humming |
+| 2–4 | **A new mechanic** appears in matches | Two Landfalls per match |
+| 3–5 | **Memories** unlock | The Roaring (#43) |
+| 5–7 | **The War Map** shifts | Scald spreading across regions |
+| 8 | **Patron week** | Both patrons fire more often |
+| 10 | **The finale** | The Roar Falls |
+| After | **A permanent change** to the world | Braided ground, or a Scald coast |
+
+## The release view: three years at a glance
+
+| Year | Seasons | Turns | Story arc |
+|---|---|---|---|
+| **Launch** | — | — | The war: the planet against the infection |
+| **Year 1** | 1–4 | Ash, Rime, Fever, Bloom | Mysteries: the Hushed, the Sleeper, the Clamor, the Glass Flower |
+| **Year 2** | 5–7 (+8) | Ash, Rime, Fever, (Bloom) | The turn: creation, a common enemy, a broken truce |
+| **Year 3+** | Open | | What the two minds become to each other |
+
+## The forces of the story
+
+| Force | What it wants | Where it stands after Season 7 |
+|---|---|---|
+| **Greyborn (the planet)** | To live and heal | Victorious or not, it has lost the braid and, quietly, regrets it |
+| **The Murmur** | A home | It created, hoped, and was burned again |
+| **The Clamor** | To consume | Burned out or holding the coast; still out there |
+| **The Kith** | To survive with their broods | Fighting a war they don't understand |
+| **Stillheart** | What it was made for: stopping the Clamor | Awake, and needed |
+| **The Old Ones** | Nothing; they remember | Watching |
+| **The Last Braid** | — | Untouched, and unexplained |
+
+## A note on keeping the timeline healthy
+
+As the live game runs, every season adds to this chapter. Three rules keep it useful:
+
+1. **Mark decisions clearly.** Every new event is D or P.
+2. **Record player-driven branches** as they're resolved, so the world stays consistent with what really happened.
+3. **Never retcon a community result.** If players held back the Roaring, that stays true forever.

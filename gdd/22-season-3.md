@@ -99,3 +99,53 @@ community has a reason to fight the Clamor.
 - **A truce?** A future limited mode where Wildborn and Blightborn fight *side by side* against the Clamor.
 - **An eighth lineage** isn't needed for pairing anymore (Stillheart is a
   universal partner), but the Clamor could inspire one, for example a lineage the planet grows specifically to resist burning Scald.
+
+---
+
+## How Season 3 feels
+
+Season 3 is the moment Greyborn's war stops being a two-sided story. For two
+seasons, players have learned the planet and the Murmur: wood against glass,
+roots against Blight. Now, a third sound enters the world: a roar.
+
+The first weeks are full of dread. Red streaks cross the sky every night,
+wildlife watches them, and even Blighted creatures turn their heads. When the
+first Landfall hits, players of both sides experience something new: an enemy
+that doesn't care which side they're on. Scald eats their roots and their
+Blight alike. Shriekers reveal them all.
+
+Teams that have fought each other for months have to decide, in the moment,
+whether to keep fighting or to deal with the fire first. Many matches are
+decided by that choice. Over the season, the community learns a new kind of
+play: three-way fights, timing the last hit on a Landfall core, letting the
+Clamor weaken the enemy before striking.
+
+And at the season's midpoint, the Murmur's Memory reveals that it has seen
+this enemy before. Players realise, slowly, that the Murmur is afraid.
+
+## Landfall tuning targets
+
+| Measure | Target |
+|---|---|
+| Landfall timing | Once per match in Phase 2 or 3 (twice from Season 6) |
+| Warning time | 30 s |
+| Core health | Destroyable by a full brood in about 20 s, or a pair in about 45 s |
+| Scald spread rate | About 1 cell per 4 s until the core falls |
+| Share of matches where the Landfall core is destroyed | 85–95% (it should almost always be dealt with) |
+| Share of Landfall last hits stolen by the team that did less damage | 25–40% (stealing should be possible but not dominant) |
+
+## Season 3 rewards
+
+| Reward | Source |
+|---|---|
+| **Rust-scarred Growths** (every lineage, both sides) | Season reward track |
+| **Landfall brood mark** | Destroying 50 Landfall cores |
+| **"Contained" or "Taking Root" Memory** | Season finale result |
+| **Clamor-roar call voice** (a shout, not a whisper or a creak) | Finale participation |
+| **Stillheart early Mastery bonus** | Playing Stillheart in its first season |
+
+## What Season 3 sets up
+
+- **The Murmur's past** ([37](37-the-clamor.md), [48](48-beyond-the-sky.md)): its fear of the Clamor becomes the key to its whole story.
+- **The Truce** ([27](27-modes.md#the-truce-co-op-season-3)): the first time both sides stand together, even in co-op.
+- **The Roaring** (Season 6, [49](49-season-6.md)): the Clamor in full force, three seasons later.

@@ -81,3 +81,54 @@ plus the Clamor coming in force suggest three directions. The director's call:
 | **A. The Roaring Comes** | The Clamor arrives in full force. The planet and the Murmur must decide whether to stand together | A Truce-focused season ([27](27-modes.md#the-truce-co-op-season-3)); Landfalls on every map |
 | **B. Two Gardens** | The planet and the Murmur both create more and more. Can they share Greyborn? | Seedbeds grow into a bigger system; a new region type on the War Map |
 | **C. The Quiet World Remembered** | The Murmur's memories become clearer; players see its home in full | A special mode set in a vision of the Quiet World |
+
+---
+
+## The Quiet World, described
+
+Imagine a world with no green at all.
+
+Under a pale blue sun, plains of clear crystal stretch to the horizon, so
+smooth and still that the sky reflects in them perfectly. Spires rise from
+the plains in slow spirals, some taller than any mountain on Greyborn, and
+light moves through them in gentle waves, like thoughts. There is no wind to
+speak of. The seas are flat and glassy, and their shores ring very faintly
+when the tide touches them.
+
+Nothing on the Quiet World eats anything else. There are no herds, no
+predators, no roots. There is only the Murmur, everywhere, growing very slowly
+through the crystal, thinking. It whispers, not to anyone, but because a mind
+that large makes a sound as it thinks.
+
+At night, two small moons rise, and glass flowers open across the plains:
+thin, curling petals that catch the moonlight and ring softly. They close
+again at dawn. They are the only thing on the Quiet World that changes every day.
+
+Then a red streak appears in the blue sky.
+
+## Echoes of the Quiet World on Greyborn
+
+The Murmur carries its home with it. Traces of the Quiet World appear on Greyborn:
+
+| Trace | Where | What it is |
+|---|---|---|
+| **The flat note** in the Murmur's theme | All Blightborn music | The Quiet World had a different scale; the Murmur's copies of the planet's music drift toward it |
+| **Spiral spires** | The Lattice Sea in the Starwound | The Murmur grows its spires in the same slow spirals as on its home world |
+| **The Glass Flower** | The Glasswaste (Season 4) | A night flower of the Quiet World, made from memory |
+| **Glass Gardens** | Season 5 | The Murmur's attempt to grow a piece of home |
+| **The hum** | Hushed Kith in Season 5 | A tune from the Quiet World: the first thing the Murmur made that isn't copied from Greyborn |
+| **Two-moon patterns** | Crystal carvings in the Glasswaste | Circles in pairs, scratched into glass by Blighted creatures. They may be the Murmur remembering two moons |
+
+## How players piece it together
+
+The Quiet World is never shown all at once. Players discover it in fragments:
+
+1. **Season 3:** the Murmur's Memory of fleeing (#28) shows only darkness and a roar.
+2. **Season 4:** the Glass Flower is clearly foreign, but from where?
+3. **Season 5:** the full truth of the Flower: a memory of home.
+4. **Memories #41–#46:** the Quiet World itself, the Roaring, the long dark.
+5. **Season 6:** the Roaring happens again, on Greyborn, and players see the
+   Murmur's fear for what it is.
+
+By the end of Season 6, a player who has followed the story understands
+the Murmur completely, without a single word having been spoken.

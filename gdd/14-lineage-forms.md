@@ -100,3 +100,57 @@ The source pages say Stage changes are amplified moments. Proposed treatment:
 - **Blightborn:** a crystal cocoon forms in an instant and shatters outward,
   revealing the new form. A ringing chime and a rush of whispers are heard map-wide.
 - Both last exactly **1.5 s** (invulnerable but rooted in place, per [03](03-evolution-system.md)).
+
+---
+
+## Material reference sheets
+
+Every lineage is built from a small set of materials. These sheets keep the
+two sides consistent.
+
+| Material | Wildborn | Blightborn |
+|---|---|---|
+| **Skin** | Grey, moss-flecked, matte | Grey with glassy patches, slight sheen |
+| **Armour** | Bark, stone, horn | Black glass, chitin, crystal plate |
+| **Growths** | Leaves, moss, flowers, antlers of wood | Crystal spires, glass needles, shard clusters |
+| **Inner light** | Amber, warm, like sap lit from within | Cyan-violet, cold, pulsing |
+| **Eyes** | Amber, soft glow | Violet, flickering |
+| **Weak point** | Amber crystal, sap-filled, glowing | Cyan geode, pulsing |
+
+## Transformation effects, lineage by lineage
+
+The Stage-change moment ([03](03-evolution-system.md#the-feel-of-a-transformation))
+has a lineage-specific flourish on each side.
+
+| Lineage | Wildborn flourish | Blightborn flourish |
+|---|---|---|
+| Titan | Boulders rise and fuse onto the body | Black glass erupts and sets like cooling lava |
+| Brawler | Bark splits and regrows thicker across the fists | Geodes crack open along the arms |
+| Verdant | A burst of leaves and petals | A burst of glass petals that ring as they fall |
+| Hollow | Darkness folds inward, then opens | Shards spiral into the chest cavity |
+| Thornrunner | Thorns lengthen with a creak | Needles shoot out with a chiming snap |
+| Bonespire | Bones rattle up from the ground and lock onto the back | Glass bones grow out of the spine |
+| Stillheart | Frost spreads and thickens into ice | Frost turns to black glass |
+
+## Team colour examples
+
+Because team colours are separate from side colours
+([23](23-art-direction.md#colour-palette)), every creature carries both:
+
+- **Side** is shown by material and inner light (amber or cyan).
+- **Team** is shown by a crisp outline: your team always one colour (e.g. a
+  pale gold), the enemy always another (e.g. a sharp red), whatever side you're on.
+
+So a Blightborn player sees their own Blightborn teammates with a gold
+outline and the Wildborn enemy with a red outline, and next match, playing
+Wildborn, they see their own Wildborn teammates in gold and the Blightborn in
+red. **Outline = friend or foe; material = which side of the story.**
+
+## Common art mistakes to avoid
+
+1. **Giving the two sides different silhouettes.** Even a slightly different
+   horn shape makes the mirror harder to read.
+2. **Using team colours as side colours.** Players will confuse "enemy" with "Blightborn".
+3. **Over-glowing.** If everything glows, weak points stop standing out.
+4. **Making Blightborn look evil.** They're strange and beautiful, not monstrous.
+5. **Forgetting Stage 1.** It's the form players see most often in early fights; it needs as much care as Stage 3.

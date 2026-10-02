@@ -109,3 +109,50 @@ without ever being unfair.
 | 8 | The Skull Basin | Bone Flats | 2v2 | With Brood Skirmish |
 | 9 | The Ash Sea | Ashen Steppe | 4v4 | Season 5+ |
 | 10 | The Glass Forest | Cinderveil / Glasswaste | 4v4 | Season 5+ |
+
+---
+
+## A moment on each map
+
+**The Skull Basin.** A Verdant and Hollow pair hold the Iris. The Titan and
+Brawler come over the rim from both sides at once, sliding down the Bonevine.
+A chunk of the rim cracks above them all, and for two seconds every player
+looks up as it falls, then the fight resumes in the dust around the new
+cover. In a 2v2, every bone-fall changes the arena, and every pair learns to use them.
+
+**The Ash Sea.** Phase 2 begins. The wind rises into a grey wall moving across
+the map, and for twenty seconds nothing can be seen. When it passes, the dune
+that hid the Wildborn's route to the central Hub has moved forty metres east.
+The route is open, and so are they. Across the map, a meteor shard has risen
+out of the ash where no one expected it, and a Blightborn Thornrunner is
+already on its way.
+
+**The Glass Forest.** A Wildborn Bonespire scans the black trunks. Obsidian,
+obsidian, obsidian, and then one trunk with a faint pulse of cyan inside. Not
+obsidian. Blight. A whisper-node hidden among the burnt trees. A heat vent
+erupts nearby, lighting every trunk red for a moment, and in that light the
+difference is obvious. The Bonespire lances, and the node shatters.
+
+## Art and audio notes
+
+| Map | Key art moment | Signature sound |
+|---|---|---|
+| **The Skull Basin** | Looking up from the Iris at the rim of the socket against the sky | Bone cracking and the boom of a rim-fall echoing in the bowl |
+| **The Ash Sea** | A dune storm front rolling across the map like a grey wave | Wind building to a roar, then sudden quiet as it passes |
+| **The Glass Forest** | Black trunks lit red from below, with one cyan pulse among them | Cooling obsidian ticking, under a faint whisper |
+
+## Map-by-map lineage balance check
+
+| Lineage | Maps that favour it (of 10) |
+|---|---|
+| Titan | Elder Ribs, Fevermouth, Skull Basin |
+| Brawler | Elder Ribs, Fevermouth, Shard Reef, Skull Basin |
+| Verdant | Breathing Canopy, The Sleeper, Glass Forest |
+| Hollow | Breathing Canopy, The Sleeper, Shard Reef, The Nerve, Ash Sea |
+| Thornrunner | Ashfall Crossing, Breathing Canopy, Fevermouth, Shard Reef, The Nerve, Ash Sea, Glass Forest |
+| Bonespire | Ashfall Crossing, Elder Ribs, The Sleeper, Ash Sea |
+| Stillheart | The Nerve |
+
+**Gaps:** Thornrunner is favoured on many maps and Stillheart on only one.
+Future maps should favour Stillheart (cold, slow, chokepoint-heavy maps),
+and Thornrunner's map advantages should be watched in playtests.
