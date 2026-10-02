@@ -35,6 +35,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 15 | [Ecology, Sky & Sea](gdd/15-ecology.md) | Food web, live predator/prey and herd reactions in matches, overhunting, migrations, the sky, the Stillsea |
 | 16 | [Launch Maps](gdd/16-launch-maps.md) | Ashfall Crossing, The Elder Ribs, Breathing Canopy: layouts, mechanics, wildlife, Memory sites |
 | 17 | [Glossary](gdd/17-glossary.md) | Every named term, with decided terms marked |
+| 18 | [The Answering War](gdd/18-the-answering-war.md) | Proposed War Map and seasons; how the war can move when sides are balanced |
+| 19 | [Sound & Music](gdd/19-sound-and-music.md) | The planet's voice vs. the Murmur's, gameplay audio, region soundscapes, music |
 
 ## Superseded material
 
