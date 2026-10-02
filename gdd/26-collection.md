@@ -295,3 +295,9 @@ player should already have a Den that feels like theirs: a few Memory marks
 on the wall, a Sprout-rank Growth on their favourite lineage, and perhaps a
 first Pair Bond with a friend. The collection is meant to grow with the
 player, the same way their creature grows in every match.
+
+## One last rule
+
+If a cosmetic would make a player harder to read in a fight, it doesn't ship,
+however beautiful it is. Fairness comes first; beauty comes second, and in
+Greyborn, the two almost always agree.

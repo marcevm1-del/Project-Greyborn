@@ -111,3 +111,156 @@ ultimates. Only visuals and sound differ ([14](14-lineage-forms.md)).
 - The source pages' Synergy unlocks (L12, L15, L18) fall *between* the L10 and
   L20 branch milestones. Players gain something meaningful at L10, L12, L15,
   L18 and L20, so the late game keeps a steady rhythm of power.
+
+---
+
+## Branch identities, lineage by lineage
+
+**Titan.** *Aggression* turns the Titan from a wall into a battering ram:
+longer staggers, double slams, and Ultimates that break structures and weak
+points. *Tactical Control* makes it the ultimate defender: Bulwark protecting
+allies, Fortress, Fault Line, and the extraordinary Mountain's Patience.
+
+**Brawler.** *Aggression* is the Brawler's natural home: faster Haymakers,
+cooldown refunds on kills, Frenzy and Last Stand. *Tactical Control* is the
+surprising choice: a Brawler that grapples enemies off nodes, pins Ascendants
+for its team, and traps fights in a Brawl Circle.
+
+**Verdant.** *Aggression* turns the gardener into a predator: damaging roots,
+thorned walls, Thornstorm, and Sap Frenzy that burns team SAP for power.
+*Tactical Control* deepens the Verdant's core role: healing roots, longer
+walls, Overgrowth, Living Wall and Greenhome.
+
+**Hollow.** *Aggression* makes the void hungry: damaging rifts, echoing steps,
+Collapse and Unmaking. *Tactical Control* makes it the master of space:
+larger rifts, Null Pulse that stops channels, Event Horizon, Silence of the
+Deep and Step Between.
+
+**Thornrunner.** *Aggression* is the purest hunter: longer bleeds, two dashes,
+Hunt Frenzy, Gut the Hoard and Endless Pursuit. *Tactical Control* makes it
+the team's eyes: longer marks that also slow, Pack Hunt, Thicket Traps and Scent Trail.
+
+**Bonespire.** *Aggression* is the sniper's path: piercing lances, two
+charges, Marrow Barrage, Siege Spire and Rememberer's Aim. *Tactical Control*
+is the architect's: longer walls, longer stuns, Bone Cathedral, Ossuary Maze and Fossilise.
+
+**Stillheart.** *Aggression* makes winter a weapon: cold damage, Drowse
+punishment, Killing Frost, Rime March and the reckless Avalanche Heart.
+*Tactical Control* is Stillheart at its purest: longer Hibernate, larger Long
+Night, The Deep Sleep, Winter's Wall and Long Dream.
+
+## Choosing a branch: guidance
+
+| If your team… | Consider |
+|---|---|
+| Is ahead and wants to close the match | Aggression on your damage dealers |
+| Is behind and needs to hold ground | Tactical on your front line and controllers |
+| Has two true pairs | One Aggression and one Tactical in each pair, so each pair can both fight and hold |
+| Is playing a territory-heavy map (Breathing Canopy) | More Tactical |
+| Is playing an open teamfight map (Ashfall Crossing) | More Aggression |
+| Faces an enemy with lots of carriers | Aggression Thornrunner or Brawler to hunt them |
+
+**The branch choice comes at Level 10**, right before Phase 3, so it can
+respond to how the match is going. A team that's losing the map should
+lean Tactical; a team that's winning fights should lean Aggression.
+
+## Ultimate Forms, as they look
+
+Each Ultimate Form changes the Ascendant's body as well as its ability. Examples:
+
+| Ultimate | Visual change |
+|---|---|
+| **Colossus Step** (Titan) | Grows taller; every step cracks the ground |
+| **Fortress** (Titan) | Its shoulders broaden into ramparts of stone |
+| **Frenzy** (Brawler) | Its fur bristles; its knuckles glow |
+| **Brawl Circle** (Brawler) | A ring of torn earth (or shattered glass) traces the circle |
+| **Overgrowth** (Verdant) | Its antlers burst into full bloom |
+| **Thornstorm** (Verdant) | Its bark sprouts long thorns |
+| **Event Horizon** (Hollow) | Its chest cavity widens, pulling the light into it |
+| **Step Between** (Hollow) | It flickers, half-present in many places |
+| **Hunt Frenzy** (Thornrunner) | Its eyes glow; its body lengthens |
+| **Pack Hunt** (Thornrunner) | Faint ghost-runners run alongside it |
+| **Bone Cathedral** (Bonespire) | Its spines rise into towering spires |
+| **Fossilise** (Bonespire) | Stone creeps up its own legs as it casts |
+| **The Deep Sleep** (Stillheart) | A dome of frost forms over it |
+| **Avalanche Heart** (Stillheart) | Its heart blazes white through its chest |
+
+## Branch balance targets
+
+| Measure | Target |
+|---|---|
+| Aggression vs. Tactical pick rate per lineage | Between 35/65 and 65/35 |
+| Each Ultimate's pick rate within its branch | At least 20% |
+| Win-rate spread between a lineage's six Ultimates | Within 3% |
+| Matches decided by a single Ultimate | Rare: Ultimates should swing fights, not end matches alone |
+
+If an Ultimate drops below 20% pick rate, it gets a buff or a redesign;
+every one of the 42 should be a real choice.
+
+## Example builds
+
+**"The Wall" (Titan, Tactical → Fortress).** Holds a Hub alone against two
+enemies while the team fights elsewhere.
+
+**"The Hunter" (Thornrunner, Aggression → Gut the Hoard).** Spends Phase 3
+intercepting carriers, ripping half their cores away, and denying the enemy's
+evolution.
+
+**"The Architect" (Bonespire, Tactical → Ossuary Maze).** Reshapes the map
+before Phase 4 so the enemy's routes to the Base Heart are long and exposed.
+
+**"The Pulse" (Hollow, Tactical → Step Between).** Teleports the whole team
+to a threatened node at the critical moment of the Hunt.
+
+**"Last Night" (Stillheart, Tactical → Long Dream).** Saves the whole team
+from a lost fight by freezing them all at once, then healing them.
+
+## How players discover the branches
+
+- **In the Den:** every lineage's branch tree can be explored, with short
+  animations of each Ultimate Form.
+- **At Level 10 in a match:** a simple two-way choice appears with one line
+  for each branch ("Aggression: hit harder, kills give more cores" /
+  "Tactical: hold ground, capture faster"), so new players aren't overwhelmed.
+- **At Level 20:** three choices, each shown with a two-second preview of the Ultimate.
+- **After the match:** the post-match screen shows which branch and Ultimate
+  each player took, so players learn from what others chose.
+
+## Branches and the two sides
+
+Wildborn and Blightborn Ascendants have the same branches and Ultimates (the
+mirror). Their **visuals differ** in material: a Wildborn Overgrowth bursts
+into flowers, a Blightborn Overgrowth into glass blossoms; a Wildborn Bone
+Cathedral is pale bone, a Blightborn one is black glass. Sounds follow the
+side palettes.
+
+## Branches and Stillheart's Attunement
+
+Stillheart's Attunement bonuses ([21](21-season-2.md#pairing-universal-partner-decided))
+apply to every branch. But some combinations are especially strong:
+
+| Attuned to | Strong combination |
+|---|---|
+| Aggression Titan (Shatterfist) | Lull + root lets the Titan line up its one-hit weak-point break |
+| Tactical Verdant (Overgrowth) | Long Night slows enemy captures while Overgrowth takes everything |
+| Aggression Thornrunner (Gut the Hoard) | Lulled targets can't escape the strike |
+| Tactical Bonespire (Fossilise) | Drowse into Fossilise chains control for over 3 seconds; flagged for balance testing |
+
+## The source pages' tree, fulfilled
+
+The source pages showed an **Evolution Branching & Progression Track** with
+two paths and six leaves, without saying what they were. This chapter gives
+every lineage its two paths and six leaves, which fulfils that diagram for
+all seven lineages: **14 branches and 42 Ultimate Forms.**
+
+## Quick reference: all 42 Ultimate Forms
+
+| Lineage | Aggression | Tactical Control |
+|---|---|---|
+| Titan | Colossus Step · Avalanche · Shatterfist | Fortress · Fault Line · Mountain's Patience |
+| Brawler | Frenzy · Wrecking Rush · Last Stand | Pin · Brawl Circle · Shove of the Storm |
+| Verdant | Thornstorm · Strangling Grove · Sap Frenzy | Overgrowth · Living Wall · Greenhome |
+| Hollow | Collapse · Hollow Out · Unmaking | Event Horizon · Silence of the Deep · Step Between |
+| Thornrunner | Hunt Frenzy · Gut the Hoard · Endless Pursuit | Pack Hunt · Thicket Trap · Scent Trail |
+| Bonespire | Marrow Barrage · Siege Spire · Rememberer's Aim | Bone Cathedral · Ossuary Maze · Fossilise |
+| Stillheart | Killing Frost · Rime March · Avalanche Heart | The Deep Sleep · Winter's Wall · Long Dream |

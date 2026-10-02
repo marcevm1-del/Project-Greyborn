@@ -143,3 +143,141 @@ Even without words, each mind needs a character arc:
   to *allied* (Season 6) to *regretful* (Season 7, a Memory shows it missing the crystal).
 - **The Murmur** goes from *hiding* to *creating* to *hoping* to *betrayed*.
 - **The Clamor** has no arc. It's a storm. That's what makes it frightening.
+
+---
+
+## The planet, in depth
+
+**How it thinks.** Slowly, and in wholes. The planet doesn't think about one
+tree or one Kith; it thinks about forests and broods, seasons and ages. A
+single match is, to the planet, like a single heartbeat: important, but one
+of countless many. When it notices something specific (a Glass Flower, a
+braided patch of ground), that noticing is a big event, and the world shows it:
+roots reaching, ground trembling, creatures turning to look.
+
+**What it feels.** Pain, since the Fall: a constant ache where the Murmur has
+spread, sharpest in the Glasswaste. Warmth, toward its creatures, especially
+the Kith. Fear, rarely, and deeply: of the hunger in the dark that made it
+grow Stillheart, and later of the Clamor. Curiosity, from Season 4: something
+it doesn't understand has appeared on its body. Regret, after Season 7.
+
+**How it acts.** By growing. When it wants to protect, it grows walls of
+trees. When it wants to heal, it grows flowers. When it wants to fight, it
+grows broods and calls them to evolve. When it's sick, it burns (Fever). It
+never acts quickly, except in Fever, and that is when it makes its worst mistake.
+
+**What it wants.** To live, to heal, and to keep growing. Under that: to be
+whole again, as it was before the Fall.
+
+## The Murmur, in depth
+
+**How it thinks.** Everywhere at once, in many small thoughts that move
+together. It thinks through its Blight, its whisper-nodes, and every creature
+it has taken. It is precise, patient, and always learning. It studies
+everything it touches. It remembers everything: every shape it has copied,
+and its lost home.
+
+**What it feels.** For most of its time on Greyborn: fear, carefully hidden.
+It has been devoured once. Loneliness: it was the only mind on the Quiet World
+and is a stranger on this one. Curiosity: Greyborn is full of shapes it has
+never seen. Then, from Season 4, something new: the wish to make something of its own.
+
+**How it acts.** By spreading quietly, taking creatures, copying their shapes,
+and guarding what it has. From Season 5, by creating. In Season 6, by
+standing beside the planet against the Clamor. In Season 7, burned again, by
+retreating into the only thing it trusts: taking.
+
+**What it wants.** A home. On the Quiet World, it *was* its home. On
+Greyborn, it is trying to become part of one.
+
+## The Clamor, in depth
+
+**How it thinks.** It doesn't, in any way the others would recognise. It
+hungers and it hears. It hunts minds by their sound across the dark.
+
+**What it feels.** Hunger. Nothing else is ever shown.
+
+**How it acts.** It falls, burns, spreads, devours, and moves on when nothing is left.
+
+**What it wants.** Everything.
+
+## How each mind sees the Kith
+
+| Mind | Sees the Kith as… | Shown by… |
+|---|---|---|
+| **The planet** | Its children; its most precious creatures; its answers | Calling broods, healing them, taking their bodies gently back into the soil |
+| **The Murmur** | The best shapes it has ever found; material to copy; and, from Season 5, company | Taking them at birth; humming through them |
+| **The Clamor** | Food | Ashmouths eating the fallen |
+
+## How each mind sees the others
+
+| | Sees the planet as… | Sees the Murmur as… | Sees the Clamor as… |
+|---|---|---|---|
+| **The planet** | — | An infection, then (Season 4–6) a puzzle, then an ally, then (Season 7) an infection again, mourned | A wildfire to be burned out |
+| **The Murmur** | A world to become part of; a home it can't have | — | The thing that ate its world |
+| **The Clamor** | Food | Food it lost, and found again | — |
+
+## Vignettes
+
+**The planet, at dawn.** Mist rises from the Rootwilds as the canopy exhales.
+Across the Greyreach, a thousand birth-nodes ripen. In the Heartwood, the
+First Root pulses once, slowly. Somewhere in the north, glass has crept a
+few metres further into the forest overnight, and the planet feels it as an
+ache, and grows a little more forest in the way.
+
+**The Murmur, at night.** In the Lattice Sea, light moves through the spires
+in slow waves. The Murmur is remembering: two moons, glass flowers opening, a
+blue sun. It hums, very quietly, the tune it will one day give to the Hushed
+Kith. Then a red streak crosses the sky, and every spire goes dark at once.
+
+**The Clamor, far away.** In the dark between worlds, a roar. It has been
+silent a long time, listening. Now, faintly, from the direction of a grey
+world, it hears a mind waking up.
+
+## Showing emotion without words
+
+| Emotion | The planet | The Murmur |
+|---|---|---|
+| **Pain** | Roots pulling tight; creatures flinching; a low groan through the ground | Spires cracking; whispers breaking into static |
+| **Curiosity** | Roots reaching slowly toward something; trees turning | Creatures standing still and facing something; whispers falling quiet |
+| **Fear** | The ground going still; creatures fleeing south | Every spire going dark; creatures freezing |
+| **Joy** | Flowers bursting open; birdsong | The hum |
+| **Grief** | A Memory of roots reaching into empty space | A single hum, then silence |
+| **Anger** | Fever: volcanoes, storms | Surges: Blight erupting, Shard Rain |
+
+## The minds and the players
+
+Players never meet the minds directly. They feel them:
+
+- **Through their creature:** the pressure under a Wildborn's feet; the whispers in a Blightborn's ears.
+- **Through patron events:** when their side is losing, their mind steps in.
+- **Through Memories:** the only time players see through a mind's eyes.
+- **Through the seasons:** the story is the minds' story, and the players live inside it.
+
+The goal is that, by Season 7, a player feels something for **both** minds:
+sorrow for the planet's fever and its regret, and sorrow for the Murmur, burned twice.
+
+## Long-term arcs, in brief
+
+| Mind | Arc so far | Status |
+|---|---|---|
+| **The planet** | Wounded → defensive → curious → creating → allied → feverish → regretful | Seasons 1–7 decided in direction; details proposed |
+| **The Murmur** | Hiding → copying → creating → hoping → allied → burned → retreating | Creation and backstory decided; details proposed |
+| **The Clamor** | Distant → arriving → roaring → burned out or entrenched | Rival hive mind decided; no arc by design |
+
+What happens next is the director's call ([50](50-master-timeline.md#threads-still-open)).
+The Last Braid suggests the planet's and the Murmur's arcs aren't finished.
+
+## A rule above all others
+
+**The three minds are never shown as people.** No faces, no voices, no avatars
+that speak for them. They are a planet, a crystal intelligence and a storm.
+The moment one of them becomes a character with a face, the world loses its
+scale. Players should always feel they're living inside something vastly
+larger than themselves.
+
+## For writers, in one line each
+
+- **Write the planet** like weather that loves you.
+- **Write the Murmur** like a lonely, brilliant stranger.
+- **Write the Clamor** like a fire with ears.

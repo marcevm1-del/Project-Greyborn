@@ -273,3 +273,9 @@ When a new season is planned, its Turn should be checked against these questions
 - **Ash:** the planet lets go, and its herds travel.
 - **Rime:** the planet sleeps, and the Murmur creeps.
 - **Fever:** the planet fights, and everything burns.
+
+## Closing thought
+
+A living planet should feel like it has a life beyond the battles fought on
+it. The Turns are how Greyborn shows it: growing, letting go, sleeping and
+fighting, year after year, whatever the broods are doing.
