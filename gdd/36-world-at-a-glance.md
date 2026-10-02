@@ -32,6 +32,8 @@ everything else points to the chapter where it's proposed.
 | **Why the Kith** | The First Answers were Kith; every Kith carries all the lineages sleeping inside it |
 | **The Quiet World** | The Murmur's lost home: a crystal world where it was the native life, until the Clamor devoured it |
 | **Season 6: The Roaring Comes** | The Clamor in full force; the planet and the Murmur face it together |
+| **Stillheart's purpose** | The planet's answer to the Clamor, put to sleep because the planet feared what it was for |
+| **Season 7: the truce breaks** | The war returns harder; one small patch of braided ground, the Last Braid, survives |
 
 ## The war in one paragraph
 

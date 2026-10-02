@@ -12,7 +12,7 @@ depend on players are shown as branches.
 | | The **Kith** are the planet's original creature: every Kith carries all the lineages sleeping inside it | D | [45](45-the-kith.md#why-the-kith) |
 | | The planet grows the **First Answers**: one Kith of each of the six lineages, grown to full potential | D (Kith) / P (details) | [13](13-legends.md#the-first-answers) |
 | | Some early Ascendants grow old instead of lying down: the **Old Ones** | P | [46](46-wild-ascendants.md) |
-| | The planet feels a hunger roaring between the stars, grows **Stillheart** as its answer, then puts it to sleep, afraid of what it's for | P (reveal in Season 6) | [49](49-season-6.md#the-reveal-why-stillheart-sleeps) |
+| | The planet feels a hunger roaring between the stars, grows **Stillheart** as its answer, then puts it to sleep, afraid of what it's for | D (revealed in Season 6) | [49](49-season-6.md#the-reveal-why-stillheart-sleeps) |
 | **Far away, the same age** | On the **Quiet World**, the Murmur is the native, calm life of a crystal world | D | [48](48-beyond-the-sky.md) |
 | | **The Roaring:** the Clamor devours the Quiet World | D | [48](48-beyond-the-sky.md) |
 | | A fragment of the Murmur flees inside a stone, across the long dark | D | [37](37-the-clamor.md) |
@@ -39,13 +39,15 @@ depend on players are shown as branches.
 | **4 · The Glass Flower** | Bloom | The Murmur's first creation, shaped from a memory of home | Players learn "a shape from far away" first **/** "the first made thing" first | D (first creation) / P | [30](30-season-4.md) |
 | **5 · The First Made Thing** | Ash | The turning point: the Murmur creates, the planet answers | The Garden stands **/** the Wound is closed | D (turning point) / P | [47](47-season-5.md) |
 | **6 · The Roaring Comes** | Rime | The Clamor in full force; the two minds face it together | The Roaring is held back **/** it takes the coast | D (direction) / P | [49](49-season-6.md) |
-| **7** | Fever | ? | | Open | |
+| **7 · The Unbraiding** | Fever | The truce breaks: the planet's fever burns the braided ground; the Murmur goes back to taking | The planet reclaims the braids **/** the Murmur does. The **Last Braid** remains either way | D (truce breaks) / P | [51](51-season-7.md) |
+| **8** | Bloom | ? | | Open | |
 
 ## Threads still open
 
 | Thread | Started | Status |
 |---|---|---|
-| Does the truce between the planet and the Murmur last? | Season 6 | Open |
+| Does the truce between the planet and the Murmur last? | Season 6 | **Decided: it breaks** (Season 7) |
+| Why does neither mind touch the Last Braid? | Season 7 | Open: the seed of hope |
 | If the Murmur can create, does it still need to take the planet? | Season 5 | Open |
 | What lies beneath the First Root? | [35](35-heart-and-seed.md) | Unresolved on purpose |
 | What is inside the Seed? | [35](35-heart-and-seed.md) | Unresolved on purpose |
@@ -59,4 +61,5 @@ depend on players are shown as branches.
 2. **A mystery** (Seasons 1–3): what the Murmur is, what the planet hid, and something else coming.
 3. **A revelation** (Seasons 4–5): the Murmur is a refugee, and it can create.
 4. **A common enemy** (Season 6): the planet and the Murmur face the Clamor together.
-5. **Next:** what the two minds become to each other.
+5. **A tragedy** (Season 7): the truce breaks, and both minds lose something.
+6. **Next:** the Last Braid says it isn't over.

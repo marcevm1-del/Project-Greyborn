@@ -63,8 +63,9 @@ Please confirm or override:
 | 62 | Wild Ascendants (neutral Stage 3 threat once per match, rewards a team-wide Wild Echo) and the Old Ones (ancient neutral Ascendants). Keep both? | Proposed | [46](46-wild-ascendants.md) |
 | 63 | Season 5: Seedbeds (both sides create on the battlefield), side-born creatures (#55–#58) as exact mirrors, and Glass Gardens as a new War Map region type. Do these fit the turning point you imagine? | Proposed | [47](47-season-5.md) |
 | 64 | The central question after Season 5: if the Murmur can create, does it still need to take the planet? Where should the story go next? | Director's call | [47](47-season-5.md#the-question-the-turning-point-opens) |
-| 67 | Season 6 reveal: the planet made Stillheart as its answer to the Clamor, and put it to sleep because it feared what it was *for*. Adopt? | Proposed | [49](49-season-6.md#the-reveal-why-stillheart-sleeps) |
 | 68 | Season 6: braided ground, Truce Synergies, a shared community bar, and two Landfalls per PvP match. Do these fit "The Roaring Comes"? | Proposed | [49](49-season-6.md) |
+| 69 | Season 7: the break as a tragedy (the planet's fever burns the braided ground; the Murmur feels betrayed), the Last Braid as hope, Truce mode reframed as a Memory. Do these fit? | Proposed | [51](51-season-7.md) |
+| 70 | Season 8 (Bloom) and beyond: where should the story go after the truce breaks? | Director's call | [51](51-season-7.md#where-this-leaves-the-story) |
 
 ## Decided
 
@@ -86,6 +87,8 @@ Please confirm or override:
 | 2026-10-02 | **After Season 4: a turning-point season** (Season 5). |
 | 2026-10-02 | **The Murmur's lost home is the Quiet World**, a crystal world where it was the native life. |
 | 2026-10-02 | **Season 6 is The Roaring Comes**: the Clamor in full force; will the planet and the Murmur stand together? |
+| 2026-10-02 | **Stillheart's purpose:** the planet sensed the Clamor's hunger long ago, grew Stillheart as its answer, and put it to sleep fearing what it was for. |
+| 2026-10-02 | **Season 7: the truce breaks.** The war returns harder. |
 | 2026-10-02 | **Neutral wildlife is in.** Body plans: four-legged, two-legged, six-legged, eight-legged and insects; 20–50 types, with contrasting creatures. |
 
 ## Design risks to watch
@@ -137,3 +140,4 @@ Please confirm or override:
 | gdd-0.30 | 2026-10-02 | New chapter **48 — Beyond the Sky** (the Quiet World, six new Memories, the Clamor's hunt, the sky as a map, rules, Season 6 options). |
 | gdd-0.31 | 2026-10-02 | Quiet World and Season 6 direction decided. New chapter **49 — Season 6: The Roaring Comes** (the Stillheart reveal, the expanded Truce with braided ground, a shared community bar, The Roar Falls finale). |
 | gdd-0.32 | 2026-10-02 | New chapter **50 — Master Timeline** (the whole story in order, decided vs. proposed, season branches, open threads). |
+| gdd-0.33 | 2026-10-02 | Stillheart's purpose and the broken truce decided. New chapter **51 — Season 7: The Unbraiding** (the break as a tragedy, braided regions as fronts, the Last Braid, Memory of the Truce, The Unbraiding finale). Timeline updated. |

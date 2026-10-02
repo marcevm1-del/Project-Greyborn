@@ -28,7 +28,7 @@ modes and community goals.
 
 Season 2 showed the planet growing a seventh answer and putting it to sleep,
 **flinching as if afraid** (Memory #25, [38](38-memory-catalogue.md)). Season 6
-answers why. Proposal:
+answers why. **Decided (2026-10-02):**
 
 - Long before the Fall, the planet **felt** something far away in the dark:
   a hunger, roaring between the stars. It grew an answer for it: **cold,
