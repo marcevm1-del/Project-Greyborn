@@ -71,3 +71,66 @@ threatening: they strip the map of its tools.
 | Cinderveil | Embergrass, Cinderroot | — |
 | Shattered Coast | Kelpwhip | — |
 | Glasswaste | Glasscap | Glass versions of everything |
+
+---
+
+## Plant portraits
+
+**Sapbloom.** A low, cup-shaped flower whose petals hold a pool of amber SAP.
+Kith lap it up like water. It's the most common healing plant on Greyborn, and
+the first thing a newly budded Kith eats.
+
+**Echo Bell.** Bell-shaped blossoms that hang from cliff-edge vines in the
+Spirecliffs. Struck by anything, wind, a claw or a lance, they ring with a
+clear note that rolls around the rock walls. Hunters use the ringing to mask
+their steps.
+
+**Bellows Gourd.** A swollen green gourd that grows flat on the steppe. It fills
+with gas as it ripens, and anything heavy that steps on a ripe one is thrown
+into the air. Young Kith play on them.
+
+**Mirrorleaf.** A swamp plant with leaves polished like water. In the dim
+Hollow Mire, they catch and reflect any glow, including the glow of a weak
+point around a corner. A useful plant for hunters, and an unwelcome one for the hunted.
+
+**Driftcotton.** Soft white puffs that break free in the Rimewastes wind and
+drift for miles. Anything passing through a cloud of them leaves a visible
+wake, so a moving creature is easy to track across the snow.
+
+**Cinderroot.** Roots that grow deep into volcanic rock. They feel the heat
+coming before it arrives and glow red three seconds before a vent erupts. The
+planet's own warning system.
+
+**Kelpwhip.** Thick seaweed that lies flat on the beach at low tide and comes
+alive as the water rises, wrapping around anything that stands in it.
+
+**Root-lamp.** Glowing bulbs on the nerve-roots of the Underroot. They're how
+the caves are lit. Breaking one makes a pocket of darkness that hides you from
+the nerve pulses.
+
+**Glasscap and Heartbloom.** A mirrored pair. Glasscap is a glossy, crystal
+mushroom that grows only in Blight and heals Blightborn. Heartbloom is a rare
+red flower that grows only in Heartwood groves and heals Wildborn. Each harms the other side.
+
+## Plants through the Turns
+
+| Plant | Bloom | Ash | Rime | Fever |
+|---|---|---|---|---|
+| Sapbloom | Everywhere, full of SAP | Fewer, smaller | Closed and dormant | Wilted in the heat |
+| Embergrass | Green | Golden | Brown | Burning easily |
+| Echo Bell | Full bloom | Ringing in the wind | Frozen silent | Ringing with storms |
+| Driftcotton | Absent | First puffs | Everywhere | Absent |
+| Heartbloom | Most common | Common | Rare | Very rare |
+| Glasscap | Rare | Common | Most common | Cracked |
+
+The Turns change the **frequency** of plants, never their rules, so matches
+stay fair while the world feels like it's moving through a year.
+
+## Plants and wildlife
+
+- **Grazers** feed on Sapbloom and Ashgrass. Where grazers gather, these plants are thinner.
+- **Lumen Bees** pollinate flowers and nodes alike ([30](30-season-4.md#new-creatures-for-bloom)).
+- **Kith** eat Sapbloom and Amber Beetles; wild broods are often found near Sapbloom patches.
+- **Blighted creatures** eat nothing, so plants near the Glasswaste grow
+  untouched, then turn to glass ([15](15-ecology.md)).
+- **The Clamor** kills plants outright, which is part of what makes it so destructive.

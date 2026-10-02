@@ -72,3 +72,61 @@ the world should be able to change enough that players feel their
 history: regions can be won back from the Glasswaste, and new regions can
 fall. A true ending would be a major, planned story event years in, decided by
 the director.
+
+---
+
+## What players see on the War Map
+
+The War Map is a living illustration of the Greyreach ([11](11-atlas.md)), not a
+grid. It's shown in the Den and between matches.
+
+- **The land** is painted in its real colours, with the planet's amber
+  territory glowing warm, the Murmur's Blight glowing cyan-violet, and (from
+  Season 3) the Clamor's Scald glowing rust-red.
+- **The fronts** are marked with slowly pulsing borders. Hovering one shows
+  each side's progress toward its goal as two growing vines: one of roots and
+  one of crystal, climbing toward the target.
+- **The poles:** the Heartwood glows gold in the far south, and the Starwound
+  pulses in the far north. Neither ever changes hands.
+- **Landmarks** appear as small illustrations: the Elder Ribs, the Vertebrae,
+  the Fevermouth, the Last Braid (from Season 7).
+- **Your contribution:** after every match, a small spark flies from your Den to
+  the front you fought on, and the vine grows a little.
+
+## How fronts are chosen
+
+- Each season, **three fronts** are chosen to fit that season's story and Turn
+  (e.g. Rimewastes in a Rime season).
+- At least **one front matches a launch map region**, so every player can contribute from their first match.
+- **Carry-over fronts** let unfinished stories continue (a Contested front can stay active).
+- **No front is ever the Heartwood or the Starwound.** The poles are story
+  places, not battlefields ([35](35-heart-and-seed.md)).
+
+## Community goals: an example
+
+For one front over a 10-week season (numbers are placeholders until beta data):
+
+| Goal action | Points per action | Typical per match | Target |
+|---|---|---|---|
+| Rally / infect a creature | 2 | 6 | |
+| Purge / consume a cell | 0.1 | 40 | |
+| Destroy an Enemy Core | 10 | 1 | |
+| **Total per match (one side)** | | **~26** | |
+| **Front target** | | | ~26 × expected matches on this front × 0.6 |
+
+The 0.6 factor means a side needs to perform somewhat better than average
+across the season to finish its goal, so finishing feels earned, and a
+Contested result (both finish) is possible but not guaranteed.
+
+## The map remembers
+
+The War Map keeps a **history layer**. Players can scroll back through
+seasons and see:
+
+- each front's result (Held, Falling, Contested);
+- landmarks added by finales (the Glass Range kneeling or standing, the Last Braid);
+- Scald regions and when they burned out;
+- Glass Gardens (Season 5) and braided ground (Season 6).
+
+Over years, the War Map becomes a record of everything the community has
+done: a history book of Greyborn written by its players, without words.

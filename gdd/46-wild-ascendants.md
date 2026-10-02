@@ -72,3 +72,75 @@ ancient. These are the **Old Ones**.
   where Ascendants had other purposes.
 - **It sets up a question for the long-term story:** if the war ever ends,
   what would the planet call its Kith to become next?
+
+---
+
+## A Wild Ascendant, described
+
+It starts small. A brood of Strays is left alone near a team's territory, and
+one of them begins to change: limbs lengthening, a ridge of bark along its
+spine. Most players don't notice. Five minutes later, a wild Brute is
+stalking the edge of a Hub. Five minutes after that, if no one has dealt with
+it, the ground near it shakes, and something rises that belongs to no one.
+
+A Wild Ascendant looks like the **planet's first idea** of its lineage: raw,
+asymmetrical and unpolished. A wild Titan's stone is unworked and jagged,
+with no amber glow. A wild Verdant's antlers are bare branches. A wild
+Hollow's chest is empty darkness without seeds. There's no team outline, no
+side colour, and no Blight. It's what a lineage looks like when nothing guides it.
+
+It doesn't hunt players. It **defends** the ground it grew on: the nodes near its
+birthplace. Teams that walk into its territory are attacked; teams that leave
+it alone can still be threatened if their nodes sit too close. Killing it
+takes a full brood, or two teams that happen to be fighting near it, and the
+team that lands the last hit takes the **Wild Echo**.
+
+## The Old Ones, in portrait
+
+**Greymother (Verdant).** At the edge of the Heartwood stands what looks like
+an ancient tree, until it moves. Greymother's antlers have grown into a living
+canopy, and Mossback herds shelter in its shade. She has walked the same few
+miles for longer than any Memory records. When she passes, flowers open behind
+her. Her Memory shows her planting the first seeds of the Rootwilds, one step
+at a time.
+
+**The Cairnback (Titan).** In the Spirecliffs, one mountain moves. The
+Cairnback is a Titan so old it is mostly rock, with Cairnshells living on its
+back and Sky Pines growing from its shoulders. It takes a few steps each
+year. Its Memory shows it raising the Spirecliffs from flat ground.
+
+**Old Hush (Hollow).** Above the Swallowing Pool, something floats so still
+that birds land on it. Old Hush is a Hollow grown vast and silent over ages,
+and the Hollow Mire's quiet may be its doing rather than the Quiet's. Its
+Memory shows it holding back a flood by sinking the waters into the deep.
+
+**The Scarred Runner (Thornrunner).** On the Ashen Steppe, a grey-muzzled,
+one-eyed Thornrunner walks beside the Grey Migration. It never runs any more.
+The herds don't fear it. Its Memory shows it as a young hunter, running beside
+the Hunt That Never Ended for a time, before its legs grew old.
+
+**Proposed additions:**
+
+**The Last Bellow (Brawler).** On the Shattered Coast, an ancient Brawler sits
+facing the sea, its fists worn smooth from pounding the cliffs. It fought
+beside the Breaker during the Fall and survived. Every Fever, it stands and
+roars at the sea once, then sits again.
+
+**The Bone-Keeper (Bonespire).** Deep in the Bone Flats, an old Bonespire
+tends a field of graves, arranging bones in patterns no one understands. It
+may be the Rememberer's last apprentice.
+
+## How the Old Ones see the war
+
+The Old Ones remember Greyborn before the Fall. They are the only living
+creatures that do. They don't take sides, but they aren't indifferent:
+
+- They **avoid the Murmur**. No Old One has ever been taken, and none goes near Blight.
+- They **don't answer the planet's call** either. They were called once, long
+  ago, for other purposes, and those purposes are done.
+- They seem **sad**. Their idle sounds are low and slow, and their Memories end
+  with long, quiet shots of the world as it was.
+
+**In the story**, the Old Ones are a living reminder that the planet's
+Ascendants were once builders and gardeners, not soldiers. If the war ever
+ends, the Old Ones show what the planet's creatures could become again.

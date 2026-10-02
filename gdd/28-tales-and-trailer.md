@@ -80,3 +80,59 @@ card and platform/date card.
 
 **Optional tag (post-credits, 5 s):** night sky. The Fall-line glows. A second,
 faint red light moves along it. Cut to black. (A seed for Season 3.)
+
+---
+
+## Tale 4 · Side by Side
+
+The Titan had fought glass creatures since the day it awakened. It knew the
+ring of them, the cold of them, the way they moved together like one thing.
+It had never stood beside one.
+
+Now the sky was red, and the ground shook with a roaring that came from
+everywhere. Out of the smoke came the burning things, screaming, and the
+Titan raised its arm to slam, and saw, on its left, a Blightborn Brawler
+crouched to roll.
+
+They looked at each other. The whispering around the Brawler was quiet, for
+once. Afraid.
+
+The Titan slammed. The Brawler rolled. The burning thing in front of them
+flew apart, and where the Titan's roots had cracked the ground, the Brawler's
+crystal grew into the cracks, and the two held, woven, against the fire.
+
+Neither of them understood what they had done. But the ground under their
+feet remembered.
+
+## Tale 5 · The Last Braid
+
+After the fever, after the burning, there was one place left.
+
+It was small: a patch of shoreline no wider than a Titan's stride, where a
+root and a crystal had grown so tightly together that the fire could not find
+where one ended and the other began. The planet's heat had passed over it.
+The Murmur's cold had passed over it. Neither had taken it back.
+
+A Stray found it one evening. It sniffed the root, which smelled of soil and
+sap. It sniffed the crystal, which hummed very faintly, a sound like a song
+someone had stopped singing. The Stray lay down between them and slept.
+
+In the morning it was still there, and so was the Braid.
+
+## Second trailer: "The Roaring Comes" (Season 6 cinematic)
+
+**Length:** about 75 seconds. Wordless, like the first trailer.
+
+| Time | Shot | Sound |
+|---|---|---|
+| 0:00 | Night. The Fall-line glows. A second, red streak brightens beside it | The main theme on flute, slow |
+| 0:08 | A Blightborn brood on black glass looks up. Their heads turn together | The theme on glass, the flat note |
+| 0:14 | The Murmur's memory: a crystal world under a blue sun, burning | A roar under everything |
+| 0:20 | The red streak strikes the Shard Reef. A shockwave of steam | Impact, then ringing silence |
+| 0:24 | Scald spreads across roots and Blight alike. Shriekers pour out | Crackling, overlapping shouts |
+| 0:32 | A Wildborn Titan and a Blightborn Brawler, side by side, facing the fire | Silence, one heartbeat |
+| 0:36 | Slam and roll together. Roots crack the ground; crystal grows into the cracks | Both themes together, in harmony, for the first time |
+| 0:46 | Braided ground spreading under a mixed brood's feet as they hold the line | Drums and glass together |
+| 0:54 | The Roar rises from a vent mountain, its back shouting | The roar at full volume |
+| 1:02 | Wide shot: the mixed brood against the Roar, tiny against it | Music swells |
+| 1:08 | Title: **GREYBORN — The Roaring Comes** | Final chord: wood and glass in harmony |
