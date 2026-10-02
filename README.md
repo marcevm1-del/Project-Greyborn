@@ -30,7 +30,16 @@ Each stolen power **Stains** you, and too much Stain changes you permanently.
 - **Restoration:** beating each region's guardian floods the land with colour again and grants a permanent traversal Echo.
 - **5 endings**, decided transparently by Residue, Hearts restored and key choices.
 
+## Play the prototype
+
+Open [`prototype/index.html`](prototype/index.html) in a browser. It is the M0
+prototype of the core loop: rip Hues from enemies, spend them, and manage
+Stain before it becomes permanent Residue. See the
+[prototype notes](prototype/README.md) for what's in it, the tuning values,
+and the playtest script.
+
 ## Status
 
-Design bible **v0.1**: concept stage. See [Open Questions](docs/09-open-questions.md)
-for the assumptions awaiting confirmation.
+Design bible **v0.2** with a playable M0 prototype. See
+[Open Questions](docs/09-open-questions.md) for the assumptions awaiting
+confirmation and the iteration log.

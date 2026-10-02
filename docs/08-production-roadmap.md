@@ -25,7 +25,7 @@
 
 ## Milestones
 
-### M0 — Paper & Greybox prototype (6 weeks)
+### M0 — Paper & Greybox prototype (6 weeks) · **started: see [`prototype/`](../prototype/README.md)**
 - Player controller + base kit; 2 enemy types; Flare/Rip; **1 Hue** (Crimson) with Saturation & Stain.
 - Greybox test room.
 - **Gate:** is "spend vs. bank vs. release" an interesting decision? If not, iterate on Stain numbers before anything else.
