@@ -63,6 +63,8 @@ Please confirm or override:
 | 57 | Hushed Answers as encounters (three crystal hearts each, one skill per boss). Which should appear first after the Glass Range? Is the six-boss endgame co-op mode in scope? | Proposed | [40](40-hushed-answers.md) |
 | 58 | New maps: the Skull Basin (2v2), the Ash Sea (dunes shift each phase) and the Glass Forest (obsidian vs. Blight, with readability safeguards). Keep all three? | Proposed | [42](42-new-maps.md) |
 | 59 | Wildlife reacting to nearby lineages gives observant players free hints (e.g. birds go quiet near a Hollow). Keep it, as long as it never reveals more than sound signatures? | Proposed | [43](43-living-creatures.md#how-wildlife-reacts-to-ascendants) |
+| 60 | Flora: Scald kills interactable plants while Blight keeps them working. Keep that difference? | Proposed | [44](44-flora.md#blighted-and-scalded-forms) |
+| 61 | Lore: the First Answers were Kith grown to full potential, so every Kith carries all six lineages (and Stillheart) inside it. Adopt this as the answer to "why the Kith"? | Proposed | [45](45-the-kith.md#why-the-kith) |
 
 ## Decided
 
@@ -123,3 +125,4 @@ Please confirm or override:
 | gdd-0.24 | 2026-10-02 | New chapters **38 — Memory Catalogue** (40 Memories on 9 Codex pages, with sites, visions and rewards) and **39 — World Events** (11 recurring events, rules, a sample year). |
 | gdd-0.25 | 2026-10-02 | New chapters **40 — The Hushed Answers** (all six as encounters, where each fits, an endgame idea) and **41 — Landmarks & Future Map Seeds** (24 landmarks across 12 regions, three map seeds to develop). |
 | gdd-0.26 | 2026-10-02 | New chapters **42 — Map Seeds, Developed** (the Skull Basin, the Ash Sea, the Glass Forest; a full 10-map list) and **43 — Ascendants as Living Creatures** (movement, idle, feeding and signature behaviour per lineage; wildlife reactions). |
+| gdd-0.27 | 2026-10-02 | New chapters **44 — Flora** (26 plants and fungi, Blighted and Scalded forms, by region) and **45 — The Kith** (body, behaviour, three kinds of Kith, why the planet calls them, life span, art and audio). |

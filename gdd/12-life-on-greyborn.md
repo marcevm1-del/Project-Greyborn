@@ -38,6 +38,8 @@ in its **Base Form**.
 
 ## Flora: plants players interact with
 
+*The full catalogue of 26 plants is in [44 — Flora](44-flora.md). A full portrait of the Kith is in [45 — The Kith](45-the-kith.md).*
+
 Proposed interactable plants, placed by level designers. Each one is a small
 tactical tool.
 

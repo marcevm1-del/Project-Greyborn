@@ -62,6 +62,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 41 | [Landmarks & Map Seeds](gdd/41-landmarks.md) | 24 landmarks across the Greyreach, each a seed for a future map |
 | 42 | [Map Seeds, Developed](gdd/42-new-maps.md) | The Skull Basin (2v2), the Ash Sea, the Glass Forest; the full 10-map list |
 | 43 | [Ascendants as Living Creatures](gdd/43-living-creatures.md) | How each lineage moves, rests and feeds, and how wildlife reacts to it |
+| 44 | [Flora](gdd/44-flora.md) | 26 plants and fungi across every region, with Blighted and Scalded forms |
+| 45 | [The Kith](gdd/45-the-kith.md) | A full portrait of the players' species: body, behaviour, kinds, and why the planet calls them |
 
 ## Superseded material
 
