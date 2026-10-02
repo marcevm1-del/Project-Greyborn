@@ -8,6 +8,10 @@ The source pages name **six lineages**, grouped into **three synergy pairs**:
 | **Root & Void** | Verdant | Hollow | Territory: claim, deny, extract |
 | **Hunt** | Thornrunner | Bonespire | Picks: mark a weak point and break it |
 
+**After launch:** a seventh lineage, **Stillheart** (the Sleeper's line, a
+tempo controller and support), arrives in Season 3. It has no pair of its own
+and is a **universal partner** to any lineage (decided). See [21](21-season-2.md#the-seventh-lineage-stillheart-draft).
+
 In the world, the six lineages are the planet's six **answers** (bones, fury,
 growth, silence, hunters, memory). The Blightborn side plays the same six in
 corrupted forms, because the Murmur can only copy the planet's work (see [10](10-world.md)).

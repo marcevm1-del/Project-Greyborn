@@ -19,7 +19,7 @@ Please confirm or override:
 | 10 | Is "Vaelmoor" the studio, or a region/continent of Greyborn? | Unknown | [00](00-source-pages.md) |
 | 11 | "18 months … Dost-Tamur" on p. 121 | Unknown: production timeline or place name? | [00](00-source-pages.md) |
 | 12 | Camera, platform and input | 3D third-person, PC first (assumed from the wireframe art) | [01](01-vision.md) |
-| 13 | Roster size at launch: 6, or more beyond what's shown? | 6 | [02](02-ascendant-roster.md) |
+| 13 | Roster size at launch: 6, or more beyond what's shown? | 6 at launch; Stillheart (7th) in Season 3 | [02](02-ascendant-roster.md) |
 | 14 | The "4v4" panels show a **world-map heat map**. Is there a planet-wide layer where match results change territory across Greyborn (a seasonal war map)? Now that sides are assigned per match, it could track **planet vs. Murmur** across all matches | Not designed yet | [05](05-territory-and-economy.md) |
 | 15 | Wildlife roster: which of the 42 proposed creatures to keep, cut or rework? Should Titan and Brawler get more affinity creatures? | 40 proposed | [09](09-wildlife.md) |
 | 17 | Blightborn look: black glassy crystal with a starlit cyan-violet glow. Does that fit your vision? | Proposed | [10](10-world.md#the-two-sides) |
@@ -47,6 +47,8 @@ Please confirm or override:
 | 41 | Calls: in-match pings and emotes as creature sounds, audible (without markers) to nearby enemies. Keep that risk? | Proposed | [25](25-calls-and-onboarding.md) |
 | 42 | Onboarding as "The First Budding" (about 35 min, skippable), plus a Blightborn prologue | Proposed | [25](25-calls-and-onboarding.md#part-2--the-first-budding-onboarding) |
 | 43 | Business model (free-to-play, premium, battle pass?). Collection rewards are defined without pricing | Open | [26](26-collection.md) |
+| 44 | Extra modes: Ranked, Brood Skirmish (2v2, one pair per team), Apex Hunt, The Truce (co-op vs. the Clamor), The Den (training), Custom/tournament. Which are in scope for launch? | Proposed | [27](27-modes.md) |
+| 45 | Tournament preset turns patron events (the comeback mechanic) **off**. Agree? | To be tested | [27](27-modes.md#custom--tournament) |
 
 ## Decided
 
@@ -97,3 +99,4 @@ Please confirm or override:
 | gdd-0.14 | 2026-10-02 | Stillheart decided as a universal partner, with an Attunement proposal. Second light decided as a rival hive mind. New chapter **22 — Season 3: The Second Light** (the Clamor, Scald, Landfall events, Clamor creatures, season plan and finale). |
 | gdd-0.15 | 2026-10-02 | New chapters **23 — Art Direction** (style, pillars, palette, region looks, sky, key art briefs, UI) and **24 — The Three Minds** (the planet, the Murmur and the Clamor: personalities, relationships, writing rules). |
 | gdd-0.16 | 2026-10-02 | New chapters **25 — Calls & the First Budding** (wordless call wheel and instinct emotes; story-driven onboarding) and **26 — Collection & Long-Term Progression** (Growths, Markings, Lineage Mastery, Pair Bonds, Memory Codex, season rewards, the Den). |
+| gdd-0.17 | 2026-10-02 | New chapter **27 — Modes**. Consistency pass: Stillheart noted in the roster, glossary and roster-size question; wildlife habitats linked to the atlas. |

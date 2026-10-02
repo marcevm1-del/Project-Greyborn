@@ -52,7 +52,7 @@ were confirmed by the director; everything else is proposed.
 | **Landfall** | A Clamor shard striking a match map; its core can be destroyed for a reward | [22](22-season-3.md) |
 | **Lantern, the** | Greyborn's amber moon | [15](15-ecology.md) |
 | **Lineage Mastery** | Long-term per-lineage progress, from Sprout to First Answer's Echo | [26](26-collection.md) |
-| **Lineage** | One of the six evolutionary paths: Titan, Brawler, Verdant, Hollow, Thornrunner, Bonespire | [02](02-ascendant-roster.md) |
+| **Lineage** | An evolutionary path. Six at launch (Titan, Brawler, Verdant, Hollow, Thornrunner, Bonespire); Stillheart is the seventh, from Season 3 | [02](02-ascendant-roster.md) |
 | **Memory** | A wordless lore vision found at a map site | [13](13-legends.md) |
 | **Murmur, the** | The hive mind from the meteorite (**decided**) | [10](10-world.md) |
 | **Murmur Surge** | Patron events that help the Blightborn when they're behind | [05](05-territory-and-economy.md) |

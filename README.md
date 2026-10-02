@@ -19,7 +19,7 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 |---|---|---|
 | 00 | [Source Pages](gdd/00-source-pages.md) | Transcription of pp. 120–124, with garbled text decoded and interpretations flagged |
 | 01 | [Vision](gdd/01-vision.md) | Pitch, pillars, match arc, genre position |
-| 02 | [Ascendant Roster](gdd/02-ascendant-roster.md) | The 6 lineages: kits, weak points, sound signatures, stat curves |
+| 02 | [Ascendant Roster](gdd/02-ascendant-roster.md) | The 6 launch lineages: kits, weak points, sound signatures, stat curves (Stillheart, the 7th, in 21) |
 | 03 | [Evolution System](gdd/03-evolution-system.md) | Levels & Stages, evolution cores, conversion at base, Enemy Cores, branching, Territorial Dominance |
 | 04 | [Synergies](gdd/04-synergies.md) | Synergy tiers S1–S3, the three pair Synergies, Evolution-Sync Resonance, access matrix, weak points |
 | 05 | [Territory & Economy](gdd/05-territory-and-economy.md) | Nodes, rooting, Territorial Influence, Resource Hubs, SAP, Tension & global events |
@@ -44,6 +44,7 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 24 | [The Three Minds](gdd/24-the-three-minds.md) | How the planet, the Murmur and the Clamor think, and the rules for writing them |
 | 25 | [Calls & the First Budding](gdd/25-calls-and-onboarding.md) | Wordless communication as creature calls; onboarding as a Kith's birth |
 | 26 | [Collection](gdd/26-collection.md) | Cosmetics, Lineage Mastery, Pair Bonds, the Memory Codex, the Den. No in-match power |
+| 27 | [Modes](gdd/27-modes.md) | Ranked, Brood Skirmish (2v2 pairs), Apex Hunt, The Truce (co-op vs. the Clamor), training, custom |
 
 ## Superseded material
 

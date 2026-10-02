@@ -54,6 +54,8 @@ stronger effect. This gives every lineage a reason to visit certain parts of the
 
 ### Habitats (proposed biomes of Greyborn)
 
+The full world map, with 12 regions, is in [11 — Atlas](11-atlas.md).
+
 | Biome | Look | Typical nodes |
 |---|---|---|
 | **Rootwilds** | Dense living forest | Verdant-friendly, many small nodes |
