@@ -56,6 +56,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 35 | [The Heart and the Seed](gdd/35-heart-and-seed.md) | The Heartwood and the Starwound, layer by layer: the world's two poles |
 | 36 | [Greyborn at a Glance](gdd/36-world-at-a-glance.md) | Five-minute summary: decided facts, the war in a paragraph, where to find everything |
 | 37 | [The Clamor in Depth](gdd/37-the-clamor.md) | The rival hive mind's biology, Scald, creatures and apex, and its history with the Murmur |
+| 38 | [Memory Catalogue](gdd/38-memory-catalogue.md) | All 40 planned Memories, page by page, with where they're found and what they show |
+| 39 | [World Events](gdd/39-world-events.md) | Recurring weekend events rooted in the world, and a sample year |
 
 ## Superseded material
 

@@ -15,6 +15,7 @@ landscapes and the instincts of its creatures, and players discover it as
 - Each Memory is added to a **Memory Codex** across matches. It gives no power,
   only lore and cosmetic unlocks (e.g. a Memory-themed skin border).
 - Memories are written so they work in any order. Together they tell the story below.
+- The full list of 40 planned Memories is in [38 — Memory Catalogue](38-memory-catalogue.md).
 
 ## The First Answers
 
