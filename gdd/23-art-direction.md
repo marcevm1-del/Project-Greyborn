@@ -156,3 +156,138 @@ In order, the pieces the art team needs first:
 5. **The Starwound and the Heartwood** as distant horizon views.
 6. **The remaining five lineages**, both sides.
 7. **The 54 creatures**, starting with those on the launch maps.
+
+---
+
+## Building a region: the art recipe
+
+Every region is built from the same five ingredients, in this order:
+
+1. **Ground:** the base material and colour (grey grass, white salt, black rock, ice).
+2. **Silhouettes:** the large shapes that define the horizon (trees, columns, ribs, peaks).
+3. **Life:** plants and creatures placed where they would really live.
+4. **Light:** the region's light at each time of day, set by its palette.
+5. **Atmosphere:** mist, ash, fog, heat haze or snow, used to create depth.
+
+Gameplay glows (weak points, nodes, carriers) are added **last**, on top,
+and nothing in the first five steps may compete with them.
+
+## Creature art guidelines
+
+1. **Animal first.** Every lineage should look like it could exist in nature:
+   believable anatomy, weight and movement.
+2. **The Kith inside.** Stage 1 forms keep the Kith's eyes and ears.
+3. **Material tells the side;** shape tells the lineage; size tells the Stage.
+4. **Weak points are part of the anatomy,** not stuck on: a crystal ridge, a heart plate, a bloom pod.
+5. **Ugly is allowed, cruel is not.** Creatures can be strange, scarred or
+   frightening, but never gory or grotesque in a way that breaks the dignified tone.
+
+## Weather and VFX
+
+| Weather | Visual treatment |
+|---|---|
+| **Clear** | Soft daylight; full saturation of the region palette |
+| **Ashfall** | Grey particles drifting diagonally; distant shapes fade to silhouettes |
+| **Rime Fog** | Low, white fog; tops of creatures visible above it; frost on every surface |
+| **Sap Rain** | Warm amber droplets; wet, glossy surfaces; puddles reflecting the sky |
+| **Shard Storm** | Glittering glass falling in streaks; brief cyan flashes where shards land |
+| **Breathing Night** | Darkness with the Lantern's amber, the Fall-line's cyan and every living glow |
+
+**Rule:** weather never hides team outlines or weak points.
+
+## The screens of the game
+
+| Screen | Art direction |
+|---|---|
+| **HUD** | Minimal: dark teal panels, gold accents, thin lines (from the source pages); carried cores shown as a glowing seed counter |
+| **The Den** | A warm cave with a crack in the roof showing the sky; Memory marks glowing on the walls |
+| **The War Map** | A painted illustration of the Greyreach, not a grid; regions glowing in their colours |
+| **The Codex** | Pages like pressed leaves (planet's Memories) and etched glass (Murmur's Memories) |
+| **The draft** | Six (seven) silhouettes of the First Answers in a ring; lines drawn between teammates for pairs and cross-resonance |
+| **Post-match** | The map seen from above, territory painted in amber and cyan, then the season's war contribution |
+
+## More key art briefs
+
+6. **"The Birth-pool":** a Kith kneeling at an amber pool at night, light pouring from it into the water, its body beginning to swell.
+7. **"Two Hunts Cross":** a long-legged Thornrunner silhouette on a ridge at dusk, and far off, a glittering glass one running the other way.
+8. **"The Sleeper Wakes":** a vast frost-furred head breaking through ice, its eye opening, tiny Kith on the ice around it.
+9. **"Braided Ground":** close-up of roots and crystal grown into each other, amber and cyan threads glowing together.
+10. **"The Last Braid":** a single small woven patch on a grey shore at dawn, a Stray asleep beside it.
+
+## Colour-blind palettes
+
+Greyborn's core contrast is amber vs. cyan, which is readable for most forms
+of colour blindness, but the game offers three alternative palettes:
+
+| Palette | Wildborn | Blightborn | Team outlines |
+|---|---|---|---|
+| Default | Amber | Cyan-violet | Gold / red |
+| Deuteranopia | Orange-yellow | Deep blue | White / magenta |
+| Protanopia | Yellow | Blue | White / orange |
+| Tritanopia | Red-orange | Teal | White / pink |
+
+And always: **material** (matte organic vs. glossy crystal) carries the
+side even without colour.
+
+## The art pipeline
+
+1. **Concept:** silhouettes and material studies.
+2. **Readability test:** greyscale and silhouette checks at match distance.
+3. **Mirror test:** Wildborn and Blightborn versions side by side.
+4. **Model and texture:** all Stages.
+5. **Animation:** gameplay-critical first ([43](43-living-creatures.md#animation-priorities)).
+6. **VFX:** side materials and gameplay glows.
+7. **In-game review** in every weather and time of day.
+
+## Do and don't
+
+| Do | Don't |
+|---|---|
+| Make the world grey and let meaning glow | Make everything glow |
+| Show scale with familiar objects | Leave creatures floating in empty space |
+| Keep Blightborn beautiful and strange | Make Blightborn look evil |
+| Let weather change the mood | Let weather hide information |
+| Give every region one unforgettable silhouette | Make regions differ only by colour |
+
+## Reference boards (descriptions)
+
+- **Planet board:** misty old-growth forests, moss on stone, amber resin,
+  great migrations, mountains seen through haze, roots breaking through soil.
+- **Murmur board:** frost on glass, geodes, obsidian, deep-sea bioluminescence,
+  crystal formations, cold blue light in dark caves.
+- **Clamor board:** wildfire, cooling lava, rust, embers, steam, burnt ground.
+- **Kith board:** young animals: fawns, foxes, lemurs, with large eyes and quick, curious movement.
+
+## Art across the seasons
+
+| Season | Visual signature |
+|---|---|
+| 1 · The Hush Wakes | A glass mountain silhouette on every horizon |
+| 2 · The Sleeper Stirs | Frost on every surface; a giant shape under ice |
+| 3 · The Second Light | A rust-red streak beside the Fall-line |
+| 4 · The Glass Flower | A pale blue glow in the Glasswaste; bright Bloom light |
+| 5 · The First Made Thing | Glass Gardens; amber and glass fawns |
+| 6 · The Roaring Comes | Red nights; braided ground of amber and cyan |
+| 7 · The Unbraiding | Burnt, unravelling braids; one surviving braid |
+
+Each season adds one visual element that stays in the world afterwards, so the
+world's look accumulates its history.
+
+## The one image test
+
+Every major piece of art should pass a simple test: **could this image
+belong to any other game?** If yes, it isn't Greyborn yet. A Greyborn image
+always contains at least one thing only Greyborn has: a Kith, the Fall-line,
+a breathing forest, wood against glass, or a living, grey world glowing with meaning.
+
+## Closing principle
+
+Greyborn should look like a living, grey world where every glow means
+something. If the art team keeps that one idea, the rest follows: the
+planet's warmth, the Murmur's cold beauty, the Clamor's fire, and the small
+grey Kith growing into giants between them.
+
+## Final checklist for any asset
+
+Silhouette readable? Material shows the side? Glow only where it means something?
+Works in every weather and both palettes? Could only belong to Greyborn? Then it ships.

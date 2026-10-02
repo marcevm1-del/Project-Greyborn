@@ -110,3 +110,128 @@ As the live game runs, every season adds to this chapter. Three rules keep it us
 1. **Mark decisions clearly.** Every new event is D or P.
 2. **Record player-driven branches** as they're resolved, so the world stays consistent with what really happened.
 3. **Never retcon a community result.** If players held back the Roaring, that stays true forever.
+
+## The Murmur's own timeline
+
+| When | Event |
+|---|---|
+| Ages before Greyborn's war | The Murmur is the calm, native life of the Quiet World |
+| The Roaring | The Clamor devours the Quiet World |
+| The escape | A fragment of the Murmur flees in a stone |
+| The long dark | It drifts alone, whispering |
+| The Fall | It strikes Greyborn: the Starwound |
+| The Whispering | It hides, spreads slowly, copies |
+| Season 1 | It wakes one of its glass guardians |
+| Season 2 | It races to copy the Sleeper |
+| Season 3 | It sees the red streak and is afraid |
+| Season 4 | It creates its first thing: the Glass Flower |
+| Season 5 | It hums its own tune; it grows Glass Gardens |
+| Season 6 | It stands with the planet against the Clamor |
+| Season 7 | Burned again, it returns to taking; the hum stops |
+
+## The Clamor's own timeline
+
+| When | Event |
+|---|---|
+| Unknown | It devours other worlds (the faint old streaks) |
+| The Roaring | It devours the Quiet World |
+| The long hunt | It follows the Murmur's faint trail |
+| Before Season 3 | It hears the planet wake (the Answering) |
+| Season 3 | Its first stone falls on Greyborn |
+| Season 5 | It hears the Murmur create, and grows louder |
+| Season 6 | It falls in full force: the Roaring comes to Greyborn |
+| Season 7 | Burned out by the planet's fever, or holding the coast |
+
+## How season outcomes chain together
+
+Some community results change what the next season looks like:
+
+| Result | Changes |
+|---|---|
+| Season 1: the Glass Range **retreats** / **stands** | Season 2 opens with it kneeling in the crater / looming over the steppe |
+| Season 2: the planet's version / the Murmur's copy wakes first | Which Stillheart debut Memory plays first in Season 3 |
+| Season 3: the Clamor **contained** / **takes root** | Season 4's Landfall frequency; a Scald region on the War Map |
+| Season 4: "far away" / "first made" learned first | Which half of the Flower's truth Season 5 reveals |
+| Season 5: the Garden **stands** / the Wound **closes** | The first Glass Garden as a landmark, or absorbed into the planet |
+| Season 6: the Roaring **held back** / **takes the coast** | Whether Season 7's danger has passed, or remains |
+| Season 7: the planet / the Murmur reclaims the braids | Which side's quiet regret Memory plays |
+
+Every branch leads somewhere; none is a dead end.
+
+## Possible directions after Season 7
+
+These are for the director; none is committed.
+
+| Option | Story | Turn fit |
+|---|---|---|
+| **The Rootless** | The Old One touched by both minds becomes a bridge between them | Bloom |
+| **The Last Braid grows** | The single surviving braid begins to spread, and neither mind can stop it | Bloom |
+| **Into the Seed** | Broods descend into the Starwound and find the Murmur's oldest self | Ash |
+| **The Clamor returns** | A third, larger stone; a harder choice | Fever |
+| **A new lineage** | The planet answers the broken truce with something new | Any |
+
+## The deep past, expanded
+
+| When | Event | Status |
+|---|---|---|
+| The first age | The planet becomes aware. A single root breaks the soil (Memory: *First Light*) | P |
+| The first herds | Grazers and their predators spread across the steppe | P |
+| The first Kith | Birth-nodes ripen for the first time | D (Kith native) |
+| The First Answers grow | Six Kith grown to full potential; the Mountain That Walked raises the Spirecliffs | D (Kith) / P |
+| The builders' age | Early Ascendants shape the land: Greymother plants the Rootwilds; Old Hush sinks the floods | P |
+| The seventh attempt | The planet senses hunger in the dark, grows Stillheart, and puts it to sleep | D |
+| The Stillsong | The whales first sing the sea still | P |
+
+## The Fall, hour by hour (lore)
+
+| Moment | What happened |
+|---|---|
+| **The light** | A streak crosses the northern sky. Every creature looks up |
+| **The impact** | The stone strikes. The ground shakes across the whole Greyreach |
+| **The pain** | Every root on the planet pulls tight, at once |
+| **The first silence** | Creatures at the crater's edge go quiet |
+| **The turn** | Those creatures turn their heads together, in perfect step: the first Blighted |
+| **The Deepmaw rises** | In the Stillsea, a vast shadow swallows falling fragments |
+| **The waking** | The planet wakes the First Answers |
+
+## Seasons in one line each
+
+1. A glass mountain walks out of the crater.
+2. The planet's hidden seventh answer wakes.
+3. Something else falls from the sky.
+4. The Murmur makes something beautiful.
+5. The Murmur creates, and the planet answers.
+6. The two minds stand together against the fire.
+7. The fever burns the braid, and only one patch survives.
+
+## Using this timeline
+
+- **Writers** check every new Memory, tale and season against it.
+- **Designers** check that new content doesn't contradict a community result.
+- **Producers** use the "how outcomes chain" table to plan each season's two possible openings.
+- **Community teams** use the season lines to explain the story to players in a sentence each.
+
+## The timeline's final rule
+
+**What players did, stays done.** Every community result, once decided, is
+part of Greyborn's history forever. The timeline is the record that keeps
+that promise.
+
+## Timeline at a glance
+
+| Era | Span | Mood |
+|---|---|---|
+| **The Age of Growing** | Before the Fall | Peace, building, creation |
+| **The Fall and the Long Stand** | The war's first age | Pain, sacrifice, legend |
+| **The Whispering** | The long quiet | Hiding, healing |
+| **The Answering, Year 1** | Seasons 1–4 | Mystery |
+| **The Answering, Year 2** | Seasons 5–7 | Revelation, alliance, tragedy |
+| **What comes next** | Season 8 and beyond | Open |
+
+## Where the story stands now
+
+After seven seasons, the planet has burned the braid in its fever and quietly
+regrets it. The Murmur has learned to create, hoped, been burned again, and
+returned to taking. The Clamor has been driven back or holds the coast. And
+on a quiet shore, one small patch of braided ground remains, untouched by
+either mind, with a Stray asleep beside it. What happens next is for the director.
