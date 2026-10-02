@@ -63,6 +63,8 @@ Please confirm or override:
 | 62 | Wild Ascendants (neutral Stage 3 threat once per match, rewards a team-wide Wild Echo) and the Old Ones (ancient neutral Ascendants). Keep both? | Proposed | [46](46-wild-ascendants.md) |
 | 63 | Season 5: Seedbeds (both sides create on the battlefield), side-born creatures (#55–#58) as exact mirrors, and Glass Gardens as a new War Map region type. Do these fit the turning point you imagine? | Proposed | [47](47-season-5.md) |
 | 64 | The central question after Season 5: if the Murmur can create, does it still need to take the planet? Where should the story go next? | Director's call | [47](47-season-5.md#the-question-the-turning-point-opens) |
+| 65 | The Murmur's lost home (the Quiet World), where it was the world's own calm life; the Clamor follows the sound of minds, which is why it finds Greyborn now. Adopt? | Proposed | [48](48-beyond-the-sky.md) |
+| 66 | Season 6: A (The Roaring Comes, truce focus), B (Two Gardens, coexistence) or C (The Quiet World Remembered)? | Director's call | [48](48-beyond-the-sky.md#season-6-options) |
 
 ## Decided
 
@@ -130,3 +132,4 @@ Please confirm or override:
 | gdd-0.27 | 2026-10-02 | New chapters **44 — Flora** (26 plants and fungi, Blighted and Scalded forms, by region) and **45 — The Kith** (body, behaviour, three kinds of Kith, why the planet calls them, life span, art and audio). |
 | gdd-0.28 | 2026-10-02 | New chapter **46 — Wild Ascendants & the Old Ones** (wild evolution of Strays into a neutral threat; ancient surviving Ascendants as living landmarks and events). |
 | gdd-0.29 | 2026-10-02 | Four decisions recorded (Murmur backstory, the Murmur learns to create, why the Kith, a turning-point Season 5) and reflected in 24, 30, 37 and 45. New chapter **47 — Season 5: The First Made Thing** (Seedbeds, Murmur creations and the planet's answers, Glass Gardens, the Garden or the Wound finale). |
+| gdd-0.30 | 2026-10-02 | New chapter **48 — Beyond the Sky** (the Quiet World, six new Memories, the Clamor's hunt, the sky as a map, rules, Season 6 options). |

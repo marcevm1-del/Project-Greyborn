@@ -95,6 +95,11 @@ feel lived-in, not just at war.
 | 39 | **The Elk Drinks** | Heartwood grove (any map) | A Heartwood Elk drinking at an amber pool, in total calm |
 | 40 | **Return** | Any map: a fallen Ascendant site | An Ascendant's body sinking slowly back into the soil, and a flower opening where it lay |
 
+## Page 10 · The Quiet World
+
+Six more Memories (#41–#46) of the Murmur's lost home are in
+[48 — Beyond the Sky](48-beyond-the-sky.md#memories-of-the-quiet-world).
+
 ## Codex rewards
 
 | Page | Reward for completing it |
