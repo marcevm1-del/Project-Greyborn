@@ -33,6 +33,8 @@ Please confirm or override:
 | 25 | **Hushed Answers** (glass copies of the First Answers): seasonal bosses, Starwound endgame, or a PvE mode? | Open | [13](13-legends.md#the-hushed-answers) |
 | 26 | Live ecosystem in matches (predators hunting, herds fleeing fights, overhunting stress). Is this the right amount of simulation for a competitive game, or should wildlife be more static? | Live, with clear readable signals | [15](15-ecology.md) |
 | 27 | The **second light on the Fall-line**: is something else coming from the stars? A future story hook or expansion? | Unresolved on purpose | [15](15-ecology.md#the-sky) |
+| 28 | Launch map mechanics: the Grey Migration (6 min), bone nests, and the breathing canopy (90 s). Do these fit? Verdant and Hollow are favoured on only one map | Proposed | [16](16-launch-maps.md) |
+| 29 | Crater and grove zones sit on the neutral flanks, equidistant from both bases, so neither team has a home-field flank. This replaces the earlier "home and hostile zone" idea | Proposed | [16](16-launch-maps.md#rules-every-map-follows) |
 
 ## Decided
 
@@ -71,3 +73,4 @@ Please confirm or override:
 | gdd-0.6 | 2026-10-02 | Names approved. New chapters **11 — Atlas** (the Greyreach, 12 regions on an infection gradient, launch maps) and **12 — Life on Greyborn** (Base Form life cycle, flora, weather, Murmur biology and Blight stages). |
 | gdd-0.7 | 2026-10-02 | New chapters **13 — Legends** (Memories codex, the six First Answers and their resting places, the Sleeper as a possible seventh answer, the Fall in seven Memories, the Hushed Answers, creature myth-behaviours) and **14 — Lineage Forms** (readability rules, Stage looks for both sides, per-lineage Wildborn/Blightborn art and sound briefs, transformation moments). |
 | gdd-0.8 | 2026-10-02 | Wildlife to 42 (Cairnshell for Titan, Clashhorn Beetles for Brawler), 8 regional variants, a full Blighted variant list. New chapter **15 — Ecology, Sky & Sea**: food web, live hunting and herd reactions, overhunting stress, migrations, the Grey Eye, the Lantern moon, the Fall-line, the Stillsea and its creatures. |
+| gdd-0.9 | 2026-10-02 | New chapters **16 — Launch Maps** (map rules; Ashfall Crossing, The Elder Ribs and Breathing Canopy in detail) and **17 — Glossary**. |

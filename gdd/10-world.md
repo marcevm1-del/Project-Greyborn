@@ -116,8 +116,9 @@ Every map has **one Starwound crater** and **one Heartwood grove**:
 - **Heartwood grove:** an ancient root-knot where the planet is strongest.
   Roots spread 2× faster, Blight 50% slower. Hazard: the **grasping ground**,
   where roots snare intruders. Reward: **SAP springs**.
-- The two sites sit at mirrored positions, so each side has a home-field zone
-  and a hostile one.
+- The two sites sit on the map's two flanks, each equidistant from both bases.
+  Each side has a friendly zone and a hostile one, but neither is closer to
+  either team's base (see [16](16-launch-maps.md#rules-every-map-follows)).
 
 ## Timeline
 

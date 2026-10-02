@@ -33,6 +33,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 13 | [Legends](gdd/13-legends.md) | The First Answers, the Fall, the Sleeper, the Hushed Answers, Memories |
 | 14 | [Lineage Forms](gdd/14-lineage-forms.md) | How each lineage looks and sounds at every Stage, Wildborn and Blightborn |
 | 15 | [Ecology, Sky & Sea](gdd/15-ecology.md) | Food web, live predator/prey and herd reactions in matches, overhunting, migrations, the sky, the Stillsea |
+| 16 | [Launch Maps](gdd/16-launch-maps.md) | Ashfall Crossing, The Elder Ribs, Breathing Canopy: layouts, mechanics, wildlife, Memory sites |
+| 17 | [Glossary](gdd/17-glossary.md) | Every named term, with decided terms marked |
 
 ## Superseded material
 
