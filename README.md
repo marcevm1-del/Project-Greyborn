@@ -1,45 +1,33 @@
 # Project-Greyborn
 
-> *What has no colour can hold any colour.*
+> *Kills fuel evolution. Returns fuel tactical choice. Dominate the map.*
 
-**Greyborn** is a 2D hand-drawn action-metroidvania set in the Pall, a world
-whose colour was sung away. Every living thing carries one **Hue**, a
-soul-colour that is also its magic. You are **Greyborn**: hueless, hunted, and
-the only kind of being who can **rip Hues from enemies and wield them**.
-Each stolen power **Stains** you, and too much Stain changes you permanently.
+**Greyborn** is a **4v4 team PvP game** about evolution and territory. Every
+player starts as a small grey humanoid Base Form and evolves during the match,
+through 20 levels and 3 Stages, into a towering **Ascendant**: Titan, Brawler,
+Verdant, Hollow, Thornrunner or Bonespire. Paired Ascendants unlock
+**Synergies**, and teams fight to root nodes, hold Resource Hubs and dominate
+the map's Territorial Influence.
 
-## Design bible
+## Design document (`gdd/`)
+
+Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 
 | # | Document | Contents |
 |---|---|---|
-| 01 | [Vision & Pillars](docs/01-vision.md) | Pitch, pillars, audience, comparables, USPs |
-| 02 | [World & Lore](docs/02-world-and-lore.md) | The Pall, history, the central secret, factions, the Hue wheel |
-| 03 | [Core Gameplay](docs/03-core-gameplay.md) | Core loop, controls, Flare & Rip, Vessels, Saturation, Stain, Residue, abilities, Blends, Echoes |
-| 04 | [Progression & Economy](docs/04-progression-and-economy.md) | Dross, Grey Arts tree, relics, pacing, difficulty & accessibility |
-| 05 | [Regions, Enemies & Bosses](docs/05-regions-and-enemies.md) | World map, the 8 areas, enemy & boss design rules |
-| 06 | [Narrative](docs/06-narrative.md) | Characters, three-act structure, five endings |
-| 07 | [Art & Audio](docs/07-art-and-audio.md) | Reserved-colour rule, palette, style, adaptive "colour-gaining" score |
-| 08 | [Production & Roadmap](docs/08-production-roadmap.md) | Tech, systems, milestones, team, scope cuts, risks |
-| 09 | [Open Questions & Log](docs/09-open-questions.md) | Assumptions to confirm, open questions, version history |
+| 00 | [Source Pages](gdd/00-source-pages.md) | Transcription of pp. 120–124, with garbled text decoded and interpretations flagged |
+| 01 | [Vision](gdd/01-vision.md) | Pitch, pillars, match arc, genre position |
+| 02 | [Ascendant Roster](gdd/02-ascendant-roster.md) | The 6 lineages: kits, weak points, sound signatures, stat curves |
+| 03 | [Evolution System](gdd/03-evolution-system.md) | Levels & Stages, evolution cores, conversion at base, Enemy Cores, branching, Territorial Dominance |
+| 04 | [Synergies](gdd/04-synergies.md) | Synergy tiers S1–S3, the three pair Synergies, Evolution-Sync Resonance, access matrix, weak points |
+| 05 | [Territory & Economy](gdd/05-territory-and-economy.md) | Nodes, rooting, Territorial Influence, Resource Hubs, SAP, Tension & global events |
+| 06 | [Match Flow](gdd/06-match-flow.md) | Draft, four phases, win conditions, respawn |
+| 07 | [Tactical Notes](gdd/07-tactical-notes.md) | Node management, return timing, synergy play, callouts, counterplay |
+| 08 | [Open Questions](gdd/08-open-questions.md) | Decisions needed, risks, iteration log |
 
-## At a glance
+## Superseded material
 
-- **Core mechanic:** Flare an enemy → Rip its Hue → wield its moveset → manage **Saturation** (how long it lasts) and **Stain** (what it costs you).
-- **6 Hues + 6 Blends** on a colour wheel; adjacent Hues combine, opposites Clash.
-- **Residue:** crossing high Stain leaves permanent colour on your body. It brings power and changes NPC reactions and the ending.
-- **Restoration:** beating each region's guardian floods the land with colour again and grants a permanent traversal Echo.
-- **5 endings**, decided transparently by Residue, Hearts restored and key choices.
-
-## Play the prototype
-
-Open [`prototype/index.html`](prototype/index.html) in a browser. It is the M0
-prototype of the core loop: rip Hues from enemies, spend them, and manage
-Stain before it becomes permanent Residue. See the
-[prototype notes](prototype/README.md) for what's in it, the tuning values,
-and the playtest script.
-
-## Status
-
-Design bible **v0.2** with a playable M0 prototype. See
-[Open Questions](docs/09-open-questions.md) for the assumptions awaiting
-confirmation and the iteration log.
+`docs/` and `prototype/` hold an earlier **placeholder concept** (a
+single-player "Hue-stealing" metroidvania). It was written before the real
+design pages were shared and **does not describe Greyborn**. It's kept for
+reference until the director decides whether to delete it.
