@@ -44,6 +44,9 @@ Please confirm or override:
 | 38 | Art direction: "primal majesty, readable at a glance", three surface materials (roots, Blight, Scald), glow only for meaning, a grey base world. Does this match your vision? | Proposed | [23](23-art-direction.md) |
 | 39 | The source pages show Captured nodes in **cyan**, which is also the Murmur's colour. Show node ownership with team outline colours instead? | Proposed | [23](23-art-direction.md#ui-direction) |
 | 40 | Long-term arc: could the Murmur slowly learn to *create* by copying the planet? Commit to it, or keep it as an option? | Option only | [24](24-the-three-minds.md#how-the-three-relate) |
+| 41 | Calls: in-match pings and emotes as creature sounds, audible (without markers) to nearby enemies. Keep that risk? | Proposed | [25](25-calls-and-onboarding.md) |
+| 42 | Onboarding as "The First Budding" (about 35 min, skippable), plus a Blightborn prologue | Proposed | [25](25-calls-and-onboarding.md#part-2--the-first-budding-onboarding) |
+| 43 | Business model (free-to-play, premium, battle pass?). Collection rewards are defined without pricing | Open | [26](26-collection.md) |
 
 ## Decided
 
@@ -93,3 +96,4 @@ Please confirm or override:
 | gdd-0.13 | 2026-10-02 | New chapter **21 — Season 2: The Sleeper Stirs**: Season 1 carry-over, fronts, weekly beats, The Waking finale, the draft seventh lineage **Stillheart**, the pairing problem, and three options for Season 3's Second Light. |
 | gdd-0.14 | 2026-10-02 | Stillheart decided as a universal partner, with an Attunement proposal. Second light decided as a rival hive mind. New chapter **22 — Season 3: The Second Light** (the Clamor, Scald, Landfall events, Clamor creatures, season plan and finale). |
 | gdd-0.15 | 2026-10-02 | New chapters **23 — Art Direction** (style, pillars, palette, region looks, sky, key art briefs, UI) and **24 — The Three Minds** (the planet, the Murmur and the Clamor: personalities, relationships, writing rules). |
+| gdd-0.16 | 2026-10-02 | New chapters **25 — Calls & the First Budding** (wordless call wheel and instinct emotes; story-driven onboarding) and **26 — Collection & Long-Term Progression** (Growths, Markings, Lineage Mastery, Pair Bonds, Memory Codex, season rewards, the Den). |

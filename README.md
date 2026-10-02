@@ -42,6 +42,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 22 | [Season 3: The Second Light](gdd/22-season-3.md) | The Clamor, a rival hive mind; Landfall events; the Second Stone finale |
 | 23 | [Art Direction](gdd/23-art-direction.md) | Style pillars, palette, region looks, the sky, key art briefs, UI |
 | 24 | [The Three Minds](gdd/24-the-three-minds.md) | How the planet, the Murmur and the Clamor think, and the rules for writing them |
+| 25 | [Calls & the First Budding](gdd/25-calls-and-onboarding.md) | Wordless communication as creature calls; onboarding as a Kith's birth |
+| 26 | [Collection](gdd/26-collection.md) | Cosmetics, Lineage Mastery, Pair Bonds, the Memory Codex, the Den. No in-match power |
 
 ## Superseded material
 

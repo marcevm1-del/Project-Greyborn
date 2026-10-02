@@ -20,10 +20,12 @@ were confirmed by the director; everything else is proposed.
 | **Brood** | A group of Base Forms that budded together. A 4v4 team | [12](12-life-on-greyborn.md) |
 | **C1 / C2 / C3** | Conversion-time tiers at base (15/12/9 s proposed) | [03](03-evolution-system.md) |
 | **Cinderveil** | Volcanic highlands; the planet's fever | [11](11-atlas.md) |
+| **Calls** | Wordless pings and emotes voiced as creature sounds | [25](25-calls-and-onboarding.md) |
 | **Clamor, the** | Proposed name for the rival hive mind from the second meteorite: loud, fast, devouring | [22](22-season-3.md) |
 | **Codex (Memory)** | The collection of Memories a player has found | [13](13-legends.md) |
 | **Conversion** | Turning carried cores into EXP at base (or at a Hub, at 70%) | [03](03-evolution-system.md) |
 | **Control** | Stat: CC strength and node capture/uproot power | [02](02-ascendant-roster.md) |
+| **Den** | A player's profile: a resting place in the Underroot | [26](26-collection.md) |
 | **Enemy Core** | A team's evolution structure. Destroying it denies their progression | [03](03-evolution-system.md) |
 | **Evolution cores** | The personal progression currency; dropped on kills | [03](03-evolution-system.md) |
 | **Evolution-Sync Resonance** | Bonuses for paired partners who evolve together | [04](04-synergies.md) |
@@ -34,8 +36,10 @@ were confirmed by the director; everything else is proposed.
 | **Glaze / Lattice / Spire** | The visual stages of Blight growth | [12](12-life-on-greyborn.md) |
 | **Front / front points** | A War Map region active in a season, and the points each side earns there | [18](18-the-answering-war.md), [20](20-season-1.md) |
 | **Glass Range** | The Hushed Answer copied from the Mountain That Walked; Season 1's finale threat | [13](13-legends.md), [20](20-season-1.md) |
+| **First Budding** | The onboarding: a new player's birth as a Kith | [25](25-calls-and-onboarding.md) |
 | **Global event** | An event triggered when a border reaches 100 Tension | [05](05-territory-and-economy.md) |
 | **Greyborn** | The **planet** (**decided**), and the game's name | [10](10-world.md) |
+| **Growths / Markings** | Cosmetic body variations and patterns; never in-match power | [26](26-collection.md) |
 | **Grey Eye** | Greyborn's pale sun | [15](15-ecology.md) |
 | **Grey Migration** | The great herd crossing; a map event on Ashfall Crossing | [15](15-ecology.md), [16](16-launch-maps.md) |
 | **Greyreach** | Greyborn's single great landmass | [11](11-atlas.md) |
@@ -47,12 +51,14 @@ were confirmed by the director; everything else is proposed.
 | **Kith** | The native humanoid species of Greyborn that every player starts as (**decided**) | [02](02-ascendant-roster.md), [12](12-life-on-greyborn.md) |
 | **Landfall** | A Clamor shard striking a match map; its core can be destroyed for a reward | [22](22-season-3.md) |
 | **Lantern, the** | Greyborn's amber moon | [15](15-ecology.md) |
+| **Lineage Mastery** | Long-term per-lineage progress, from Sprout to First Answer's Echo | [26](26-collection.md) |
 | **Lineage** | One of the six evolutionary paths: Titan, Brawler, Verdant, Hollow, Thornrunner, Bonespire | [02](02-ascendant-roster.md) |
 | **Memory** | A wordless lore vision found at a map site | [13](13-legends.md) |
 | **Murmur, the** | The hive mind from the meteorite (**decided**) | [10](10-world.md) |
 | **Murmur Surge** | Patron events that help the Blightborn when they're behind | [05](05-territory-and-economy.md) |
 | **Node** | A capturable cluster of map cells. States: Captured, Vulnerable, Inaccessible | [05](05-territory-and-economy.md) |
 | **Overhunting / Stressed** | A region becomes dangerous after too many creatures die there | [15](15-ecology.md) |
+| **Pair Bond** | Long-term progress for two friends playing a pair together | [26](26-collection.md) |
 | **Planet Pulse** | Patron events that help the Wildborn when they're behind | [05](05-territory-and-economy.md) |
 | **Resource Hub** | A large node structure; Hub Defense Level 1–10 | [05](05-territory-and-economy.md) |
 | **Rimewastes** | Frozen plateau; the planet's sleep | [11](11-atlas.md) |
