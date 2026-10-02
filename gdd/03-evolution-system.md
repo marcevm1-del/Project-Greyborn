@@ -32,7 +32,7 @@ tier, capped so they provide about 15–20% of a match's EXP. See [09 — Wildli
 
 Small passive sources (proposal): **+2 cores/s per player** from team
 territory, scaled by Territorial Influence, so a player who never fights still
-grows slowly.
+grows slowly. *(Tuned in [spec/05](../spec/05-economy.md#passive-territory-income) to 1.2 × TI cores/s, about 0.6/s at 50% TI, to fit the 10–15% EXP share.)*
 
 ### Level costs (proposal)
 

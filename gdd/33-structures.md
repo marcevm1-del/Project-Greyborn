@@ -145,7 +145,7 @@ players can read it without opening a menu.
 
 | Level | Sap Well (Wildborn) | Glow Well (Blightborn) | Effect (both sides) |
 |---|---|---|---|
-| 1 | A low ring of roots around the pool | A ring of short crystal stubs | Base Hub Health |
+| 1 | A low ring of roots around the pool | A ring of short crystal stubs | +400 Health and +5% ally damage reduction (Level 0 is the bare pool on capture; [spec/05](../spec/05-economy.md#7-structures)) |
 | 2–3 | Roots thicken into knee-high walls | Stubs grow into waist-high pillars | +400 Health and +5% ally damage reduction per level |
 | 4–5 | Walls of root reach shoulder height; moss covers them | Pillars reach shoulder height and begin to glow | |
 | 6–7 | Walls arch over parts of the pool; flowers bloom along them | Pillars lean inward, forming partial arches of crystal | |
