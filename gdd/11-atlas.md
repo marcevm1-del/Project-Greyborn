@@ -161,3 +161,146 @@ More landmarks per region, each a seed for a future map, are in [41](41-landmark
 
 Later maps: **Fevermouth** (Cinderveil, eruption timer), **The Sleeper**
 (Rimewastes, breakable ice) and **Shard Reef** (Shattered Coast, tides).
+
+## A traveller's view of each region
+
+If a creature could walk the whole Greyreach from south to north, this is what it would see.
+
+**The Heartwood.** Mist and gold light. Trees so tall their tops vanish.
+Warm ground. A hum that settles in your chest. Elk drinking at amber lakes.
+It is the calmest place in the world, and the hardest to leave.
+
+**The Rootwilds.** Green and grey, endless forest that rises and falls with
+the planet's breath. Birdsong everywhere. Paths that wind between trunks wider
+than a Titan. Broods of wild Kith playing in the clearings. At dawn, the
+whole forest exhales mist.
+
+**The Hollow Mire.** The trees thin into black water and fog. Sound dies. The
+air is warm and damp, and things move under the surface. Strider Cranes stand
+in the shallows by the thousand. It is beautiful and it makes every creature nervous.
+
+**The Underroot.** Below everything: caves lit by glowing roots, cool air,
+dripping water, and the pulse of the planet's nerves running through the
+walls like slow lightning. Sounds echo from impossible directions.
+
+**The Ashen Steppe.** The land opens into grey grassland under a pale sky.
+Ash drifts constantly. Herds move across it in rivers. The Standing Stones
+march north in a line. It is the widest place in the world, and the most exposed.
+
+**The Spirecliffs.** Rock rises from the steppe in vast grey columns. Wind
+howls between them. Sky Pines cling to the ledges. Far above, the Vertebrae's
+peaks line up like a spine. Every path is a climb or a drop.
+
+**The Bone Flats.** White salt and fossil bones to the horizon. The glare at
+noon is blinding. The Elder Ribs rise like a cathedral. Harvestmen carry bones
+across the plain, and Marrowhounds follow anything that limps.
+
+**The Rimewastes.** Cold. Snow, ice and a low white sky. The silence is
+total, except for the creak of ice and, under the frozen lake, a heartbeat.
+Drifts that look too round, with plumes of frost rising from them.
+
+**The Cinderveil.** Black rock, red light, heat. Rivers of lava run between
+burnt forests. Ash Vultures circle on the hot air. The ground rumbles, and the
+Fevermouth glows on the horizon.
+
+**The Shattered Coast.** Cliffs studded with glowing shards drop into a calm
+grey sea that glitters cyan near the shore. Shard Gulls scream. Whale song
+comes up through the rock. The Shard Reef sings in the wind.
+
+**The Glasswaste.** The forest stops, and the glass begins. Trees, grass and
+creatures frozen in black crystal. No birdsong, no insects, only whispering
+and the chime of glass grass. In Season 5, pale blue gardens grow here.
+
+**The Starwound.** The land drops away into a crater miles wide, its walls a
+staircase of meteor glass. On its floor, six vast shapes stand in a ring. Beyond
+them, a sea of crystal spires hums, and at the centre, something warm pulses.
+
+## How the regions connect
+
+| From | To | How |
+|---|---|---|
+| Heartwood | Rootwilds | The forest thins gradually; the hum fades |
+| Rootwilds | Hollow Mire | The forest floor floods into swamp |
+| Rootwilds | Underroot | Root-tunnels open in the forest floor |
+| Rootwilds | Ashen Steppe | The trees end at a sharp edge of grassland |
+| Ashen Steppe | Spirecliffs | Columns rise out of the grass |
+| Ashen Steppe | Bone Flats | Grass gives way to salt |
+| Spirecliffs | Rimewastes | Climbing west, the cliffs ice over |
+| Bone Flats | Cinderveil | Salt gives way to black rock |
+| Cinderveil | Glasswaste | Burnt forest becomes glass forest (the Glass Forest) |
+| Shattered Coast | Glasswaste | Shard cliffs give way to the glass plain |
+| Glasswaste | Starwound | The glass plain drops into the crater |
+| Underroot | Everywhere | The caves run beneath every region |
+
+## The infection gradient, in numbers (lore)
+
+| Region | Share of land under Blight (start of the war) |
+|---|---|
+| Heartwood | 0% |
+| Rootwilds | ~5% |
+| Rimewastes | ~5% |
+| Ashen Steppe | ~15% |
+| Hollow Mire | ~15% |
+| Spirecliffs | ~20% |
+| Underroot | ~25% (in hidden pockets) |
+| Bone Flats | ~30% |
+| Cinderveil | ~40% |
+| Shattered Coast | ~60% |
+| Glasswaste | ~100% |
+| Starwound | ~100% |
+
+These numbers are the War Map's starting state at launch ([18](18-the-answering-war.md)).
+
+## Regions and lineages
+
+Each region has a natural affinity with the lineages whose First Answer shaped it:
+
+| Region | Lineage it favours | Why |
+|---|---|---|
+| Spirecliffs | Titan | The Mountain That Walked raised it |
+| Shattered Coast | Brawler | The Breaker cracked it |
+| Rootwilds | Verdant | The Breath grew it |
+| Hollow Mire | Hollow | The Quiet's silence fills it |
+| Ashen Steppe | Thornrunner | The Hunt runs across it |
+| Bone Flats | Bonespire | The Rememberer guards it |
+| Rimewastes | Stillheart | The Sleeper lies beneath it |
+
+These affinities show up in the wildlife affinities ([09](09-wildlife.md))
+and in which lineages each map favours ([42](42-new-maps.md)).
+
+## Regions not yet explored
+
+The atlas leaves room for more. The Greyreach is huge, and some parts are
+deliberately unmapped: the far eastern coast beyond the Cinderveil, the deep
+south-west beyond the Rimewastes, the islands of the Stillsea. Future seasons
+can reveal new regions on the War Map as the war spreads or as players
+discover them through Memories.
+
+## Atlas principles
+
+1. **Every region is a part of the planet's body.**
+2. **Every region sits somewhere on the infection gradient.**
+3. **Every region has creatures, plants, a sound and a landmark of its own.**
+4. **Regions change with the Turns and with the war, but never lose their identity.**
+
+## The atlas in one table
+
+| Pole | Heartwood (south) | ← the war → | Starwound (north) |
+|---|---|---|---|
+| Body | Heart | Lungs, nerves, skin, gut, spine, memory, sleep, fever, wound edge, scar | The wound |
+| Colour | Amber | Amber and cyan in every shade | Cyan-violet |
+| Sound | A heartbeat | Wind, herds, water, whispers | A single pulse |
+| Feeling | Belonging | Struggle | Loneliness |
+
+Every map in Greyborn sits somewhere along that line between the heart and the wound.
+
+## Distances (lore)
+
+| Journey | Time for a Kith brood on foot |
+|---|---|
+| Heartwood to the Starwound | A full year: through every Turn |
+| Across the Ashen Steppe | About a month, following the Migration |
+| Through the Rootwilds | Weeks, slowed by the dense forest |
+| Down the Shattered Coast | Days |
+
+The Greyreach is vast. Every match takes place in a small corner of it.

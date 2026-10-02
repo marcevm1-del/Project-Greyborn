@@ -144,3 +144,121 @@ creatures that do. They don't take sides, but they aren't indifferent:
 **In the story**, the Old Ones are a living reminder that the planet's
 Ascendants were once builders and gardeners, not soldiers. If the war ever
 ends, the Old Ones show what the planet's creatures could become again.
+
+## Wild Ascendants, lineage by lineage
+
+A Wild Ascendant is the planet's raw, unguided idea of a lineage. Each one
+looks and behaves differently from a player's Ascendant:
+
+| Lineage | Wild form | Wild behaviour |
+|---|---|---|
+| **Titan** | Jagged, unworked rock with no moss, cracked and uneven; one shoulder higher than the other | Stands on the node where it grew and refuses to move; slams anything that comes close |
+| **Brawler** | Shaggy, scarred, with mismatched fists, one far larger than the other | Charges anything that moves, then returns to its node, panting |
+| **Verdant** | Bare branches for antlers, no flowers; bark peeling in strips | Roots the ground around it constantly, growing a ring of thick, thorny undergrowth |
+| **Hollow** | An empty, ragged hole in its chest; trailing darkness like smoke | Drifts in circles; opens rifts at random intervals |
+| **Thornrunner** | Too many legs, thorns pointing every direction | Circles its territory at full speed, never stopping |
+| **Bonespire** | Spines of bones from every creature it has eaten, piled at odd angles | Fires lances at anything that enters its line of sight, from far away |
+| **Stillheart** | Covered in thick, dirty frost; heart barely beating | Sleeps until disturbed, then freezes everything nearby |
+
+**Wild Echo rewards** copy one passive of the lineage for the whole team for 60 s:
+
+| Wild Ascendant killed | Wild Echo |
+|---|---|
+| Titan | Team takes 10% less damage |
+| Brawler | Team moves 10% faster |
+| Verdant | Team captures 25% faster |
+| Hollow | Team's sound signatures halved |
+| Thornrunner | Enemies carrying 200+ cores revealed to the team |
+| Bonespire | Team deals +20% weak-point damage |
+| Stillheart | Team's cooldowns 10% faster |
+
+## Tuning Wild Ascendants
+
+| Measure | Target |
+|---|---|
+| Matches where a Wild Ascendant appears | 10–20% (rare, a surprise) |
+| Time to kill with a full brood | About 20–30 s |
+| Share killed by the team whose territory it grew in | About 60% (a slight home advantage, because they noticed it first) |
+| Wild Echo impact on win rate | Small: it should swing a fight, not a match |
+
+## How often wild evolution happens in the lore
+
+In the wild, Strays grow into Wild Ascendants only very rarely: perhaps once
+in a generation in a whole region. It takes a long time without the
+planet's call, and most growing Strays are eaten by predators long before they
+finish. When one does finish, it becomes a legend among the creatures of that
+region: the herds avoid its territory, and Kith broods move around it.
+
+Many of the Old Ones may have started as Wild Ascendants who survived, grew
+old and grew wise.
+
+## More Old Ones (proposed)
+
+| Old One | Lineage | Where | Description |
+|---|---|---|---|
+| **The Drowsing One** | Stillheart | Rimewastes, the Snow Halls | Not the Sleeper, but an older, smaller Stillheart that the planet made before it, which never fully slept. It sits motionless in the ice caves, and the Drift Owlbears sleep around it like children |
+| **The Rootless** | Verdant | Glasswaste edge | A Verdant whose roots were glazed by the Murmur long ago. It survived by walking constantly, never rooting, and it still walks the boundary between the forest and the glass |
+
+**The Rootless** is the only Old One that has been touched by the Murmur and
+lived. Its antlers carry a few glass leaves among the real ones. It's a
+quiet image of the two worlds meeting, long before the braid.
+
+## The sound of the Old Ones
+
+The Old Ones are slow and quiet, and their sounds are low and long:
+
+| Old One | Sound |
+|---|---|
+| Greymother | Deep creaking, like an ancient tree in wind; birdsong in her antlers |
+| The Cairnback | Grinding stone, very slow; pebbles falling |
+| Old Hush | Nothing at all; the swamp's sound fades as you approach |
+| The Scarred Runner | A slow clicking walk; a soft panting |
+| The Last Bellow | A single great roar, once each Fever |
+| The Bone-Keeper | Bones clicking into place, one at a time |
+| The Drowsing One | A heartbeat even slower than the Sleeper's |
+| The Rootless | Footsteps that never stop; a faint chime from its glass leaves |
+
+## The Old Ones' future in the story
+
+The Old Ones are a quiet thread that the long-term story can pull on:
+
+- **If the war ever ends,** the Old Ones show what the planet's creatures could become again: builders and gardeners.
+- **The Rootless** proves that a creature can carry both the planet and the
+  Murmur in one body, and live. It's a natural figure for any future story about the braid.
+- **The Drowsing One** could explain more about Stillheart: what the planet tried before it.
+
+## Wild evolution and the planet's call
+
+Why do some Strays grow without being called? The proposed answer: the
+planet's call is always there, faintly, everywhere. Most Kith never feel it.
+A few, especially near territory where the planet's attention is focused,
+feel just enough of it to begin changing on their own. Wild Ascendants are
+what happens when the planet's call is overheard rather than answered.
+
+## Old Ones in matches: where they can be seen
+
+| Old One | Seen from |
+|---|---|
+| Greymother | Southern horizons; Heartwood groves (rarely, as an event) |
+| The Cairnback | Fevermouth and the Elder Ribs (on the western skyline) |
+| Old Hush | Breathing Canopy (above the mire, motionless) |
+| The Scarred Runner | Ashfall Crossing (walking beside the Migration) |
+| The Last Bellow | Shard Reef (on a distant cliff, facing the sea) |
+| The Bone-Keeper | The Elder Ribs (far out on the flats) |
+| The Drowsing One | The Sleeper and the Frozen Falls (deep in an ice cave) |
+| The Rootless | The Glass Forest (walking the edge) |
+
+Old Ones are never targetable in matches. They're part of the world, not the fight.
+
+## In summary
+
+Wild Ascendants show the planet's power when no one guides it: raw, territorial
+and dangerous. The Old Ones show what Ascendants become when the war is over
+for them: slow, wise and quiet. Together, they give the players' own
+Ascendants a past and a possible future beyond the battlefield.
+
+## Open questions for the director
+
+- Should a Wild Ascendant ever appear on the Blightborn side's ground already
+  glazed, as the Murmur's own wild growth? (Currently: no; Wild Ascendants have no side.)
+- Should the Rootless and the Drowsing One join the canon of Old Ones?

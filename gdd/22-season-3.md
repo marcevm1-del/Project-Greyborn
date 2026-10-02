@@ -299,3 +299,7 @@ After it, the war has an outside, a dark full of hunger, and every story that
 follows is shaped by the knowledge that something else is listening.
 
 The red streak stays in Greyborn's sky from this season onward, a permanent reminder that the world is not alone.
+
+Nothing in Greyborn is quite the same after the red streak.
+
+The season of the red streak.

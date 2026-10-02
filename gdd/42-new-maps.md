@@ -287,3 +287,7 @@ horizon, creatures that live there and a story that passed through it. New maps
 should always begin from a landmark, not a layout.
 
 Thirteen maps, each a real place on Greyborn, and dozens more waiting among the landmarks.
+
+New maps begin with places, not layouts.
+
+Places first, always.
