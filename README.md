@@ -33,7 +33,7 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 13 | [Legends](gdd/13-legends.md) | The First Answers, the Fall, the Sleeper, the Hushed Answers, Memories |
 | 14 | [Lineage Forms](gdd/14-lineage-forms.md) | How each lineage looks and sounds at every Stage, Wildborn and Blightborn |
 | 15 | [Ecology, Sky & Sea](gdd/15-ecology.md) | Food web, live predator/prey and herd reactions in matches, overhunting, migrations, the sky, the Stillsea |
-| 16 | [Maps](gdd/16-launch-maps.md) | Launch: Ashfall Crossing, The Elder Ribs, Breathing Canopy. Post-launch: Fevermouth, The Sleeper, Shard Reef |
+| 16 | [Maps](gdd/16-launch-maps.md) | Launch: Ashfall Crossing, The Elder Ribs, Breathing Canopy. Post-launch: Fevermouth, The Sleeper, Shard Reef, The Nerve |
 | 17 | [Glossary](gdd/17-glossary.md) | Every named term, with decided terms marked |
 | 18 | [The Answering War](gdd/18-the-answering-war.md) | Proposed War Map and seasons; how the war can move when sides are balanced |
 | 19 | [Sound & Music](gdd/19-sound-and-music.md) | The planet's voice vs. the Murmur's, gameplay audio, region soundscapes, music |
@@ -47,6 +47,7 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 27 | [Modes](gdd/27-modes.md) | Ranked, Brood Skirmish (2v2 pairs), Apex Hunt, The Truce (co-op vs. the Clamor), training, custom |
 | 28 | [Tales & Trailer](gdd/28-tales-and-trailer.md) | Three short stories for tone; a wordless announcement-trailer storyboard |
 | 29 | [The Planet's Year](gdd/29-the-planets-year.md) | Bloom, Ash, Rime and Fever; how they shape seasons and matches |
+| 30 | [Season 4: The Glass Flower](gdd/30-season-4.md) | The Nerve map, four new creatures, the Glass Flower mystery, a story roadmap for Seasons 1–4 |
 
 ## Superseded material
 

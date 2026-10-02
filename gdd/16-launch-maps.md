@@ -221,3 +221,9 @@ opens and closes parts of the map.
 - **Wildlife:** Tide Scuttlers, Tidecrawlers, Strider Cranes, Shoal-lights (ambient).
 - **Weather pool:** Clear, Shard Storm, Rime Fog.
 - **Favours:** Thornrunner and Brawler (causeway fights), Hollow (blinking across flooded ground).
+
+### Map 7 · The Nerve
+
+**Region:** Underroot. Arrives in Season 4. A three-level cave map where
+nerve pulses reveal anyone in a corridor every 20 s. Full details in
+[30 — Season 4](30-season-4.md#new-map-the-nerve-underroot).

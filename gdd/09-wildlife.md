@@ -203,6 +203,12 @@ Every creature has a Blighted look. These six also change how they behave:
 - **Planet Pulse** events can wake the **Old Tall**, which hunts Blightborn for 45 s.
 - **Murmur Surge** events can split open the ground to release a **Blighted Sixfold Wyrm**, which hunts Wildborn for 45 s.
 
+## Later additions
+
+Season 4 adds **Lumen Bees (#43), Seedcaller (#44), Mossback Calves (#45)
+and Emberbark (#46)**. See [30 — Season 4](30-season-4.md#new-creatures-for-bloom).
+Season 3 adds the hostile Clamor creatures ([22](22-season-3.md#clamor-creatures-proposed)).
+
 ## Regional variants
 
 Creatures adapted to the harshest regions (see [11 — Atlas](11-atlas.md)). They
