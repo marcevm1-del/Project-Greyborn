@@ -136,3 +136,4 @@ Please confirm or override:
 | gdd-0.29 | 2026-10-02 | Four decisions recorded (Murmur backstory, the Murmur learns to create, why the Kith, a turning-point Season 5) and reflected in 24, 30, 37 and 45. New chapter **47 — Season 5: The First Made Thing** (Seedbeds, Murmur creations and the planet's answers, Glass Gardens, the Garden or the Wound finale). |
 | gdd-0.30 | 2026-10-02 | New chapter **48 — Beyond the Sky** (the Quiet World, six new Memories, the Clamor's hunt, the sky as a map, rules, Season 6 options). |
 | gdd-0.31 | 2026-10-02 | Quiet World and Season 6 direction decided. New chapter **49 — Season 6: The Roaring Comes** (the Stillheart reveal, the expanded Truce with braided ground, a shared community bar, The Roar Falls finale). |
+| gdd-0.32 | 2026-10-02 | New chapter **50 — Master Timeline** (the whole story in order, decided vs. proposed, season branches, open threads). |

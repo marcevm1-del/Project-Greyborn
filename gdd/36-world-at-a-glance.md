@@ -53,6 +53,7 @@ able to grow. ([10](10-world.md), [13](13-legends.md), [24](24-the-three-minds.m
 | The lineages and how they look | [02](02-ascendant-roster.md), [14](14-lineage-forms.md), [31](31-evolution-branches.md), [32](32-cross-resonance.md) |
 | The planet, its regions and its life | [10](10-world.md), [11](11-atlas.md), [12](12-life-on-greyborn.md), [15](15-ecology.md), [29](29-the-planets-year.md) |
 | Creatures | [09](09-wildlife.md), [34](34-far-region-creatures.md) |
+| The whole story in order | [50](50-master-timeline.md) |
 | Story and lore | [13](13-legends.md), [24](24-the-three-minds.md), [28](28-tales-and-trailer.md), [35](35-heart-and-seed.md), [37](37-the-clamor.md), [38](38-memory-catalogue.md) |
 | Maps and structures | [16](16-launch-maps.md), [33](33-structures.md) |
 | Seasons and the war | [18](18-the-answering-war.md), [20](20-season-1.md), [21](21-season-2.md), [22](22-season-3.md), [30](30-season-4.md), [39](39-world-events.md) |
