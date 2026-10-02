@@ -26,12 +26,13 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 06 | [Match Flow](gdd/06-match-flow.md) | Draft, four phases, win conditions, respawn |
 | 07 | [Tactical Notes](gdd/07-tactical-notes.md) | Node management, return timing, synergy play, callouts, counterplay |
 | 08 | [Open Questions](gdd/08-open-questions.md) | Decisions needed, risks, iteration log |
-| 09 | [Wildlife](gdd/09-wildlife.md) | 40 native creatures of Greyborn: four-, two-, six- and eight-legged, plus insects; infection and rallying |
+| 09 | [Wildlife](gdd/09-wildlife.md) | 42 native creatures of Greyborn: four-, two-, six- and eight-legged, plus insects; regional and Blighted variants; infection and rallying |
 | 10 | [The World](gdd/10-world.md) | The living planet, the Starwound meteorite, the Murmur hive mind, Wildborn vs. Blightborn |
 | 11 | [Atlas](gdd/11-atlas.md) | The Greyreach: 12 regions from the Heartwood to the Starwound, the infection gradient, launch maps |
 | 12 | [Life on Greyborn](gdd/12-life-on-greyborn.md) | Base Form life cycle, plants, weather, the biology of the Murmur |
 | 13 | [Legends](gdd/13-legends.md) | The First Answers, the Fall, the Sleeper, the Hushed Answers, Memories |
 | 14 | [Lineage Forms](gdd/14-lineage-forms.md) | How each lineage looks and sounds at every Stage, Wildborn and Blightborn |
+| 15 | [Ecology, Sky & Sea](gdd/15-ecology.md) | Food web, live predator/prey and herd reactions in matches, overhunting, migrations, the sky, the Stillsea |
 
 ## Superseded material
 

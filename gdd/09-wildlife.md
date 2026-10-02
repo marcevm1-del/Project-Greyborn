@@ -103,6 +103,7 @@ stronger effect. This gives every lineage a reason to visit certain parts of the
 | 22 | **Sapdrinker** | II | Passive | Rootwilds | Verdant | **Drinks SAP** from the node it nests on, reducing that team's income until cleared |
 | 23 | **Rimeback Stag** | II | Skittish, herd | Spirecliffs | — | A six-legged stag. Killing one scatters the herd, which stampedes and knocks back anyone in the way |
 | 24 | **Sixfold Wyrm** | IV | Apex | Underroot | Brawler | A six-legged serpent-dragon that **bursts out of the ground at 100 Tension**. Can be lured into the enemy team |
+| 41 | **Cairnshell** | II | Passive | Spirecliffs | Titan | A six-legged hermit creature that wears a boulder as a shell. When it dies or is startled, it **drops the boulder**, leaving new cover. Titans can pick the boulder up and throw it |
 
 ## Eight-legged creatures (octopods)
 
@@ -129,6 +130,7 @@ stronger effect. This gives every lineage a reason to visit certain parts of the
 | 38 | **Marrow Mantis** | III | Predator, ambush | Bone Flats | Bonespire | Always strikes the **weak point**. A deadly lesson in weak-point play |
 | 39 | **Sapback Aphids** | I | Passive herd | Rootwilds | Verdant | **Worth more alive.** A protected herd on your node produces +2 SAP/s. Enemies want to kill them |
 | 40 | **Hive Colossus** | IV | Apex | Ashen Steppe | Brawler | A walking termite-mound creature. Its body releases swarms, and breaking its four shell plates drops a huge core cache |
+| 42 | **Clashhorn Beetles** | II | Territorial pair | Ashen Steppe | Brawler | Two horned beetles locked in a constant duel. **While they fight, they ignore everything.** Interrupting them makes both turn on you. Beat both together for a 30 s Momentum buff |
 
 ---
 
@@ -138,15 +140,15 @@ stronger effect. This gives every lineage a reason to visit certain parts of the
 |---|---|---|---|---|---|---|
 | Four-legged | 1 | 4 | 2 | 1 | 2 | 6 |
 | Two-legged | 3 | 2 | 2 | 1 | 4 | 4 |
-| Six-legged | 2 | 3 | 2 | 1 | 5 | 3 |
+| Six-legged | 2 | 4 | 2 | 1 | 6 | 3 |
 | Eight-legged | 1 | 4 | 2 | 1 | 3 | 5 |
-| Insects | 4 | 1 | 2 | 1 | 4 | 4 |
-| **Total (40)** | **11** | **14** | **10** | **5** | **18** | **22** |
+| Insects | 4 | 2 | 2 | 1 | 4 | 5 |
+| **Total (42)** | **11** | **16** | **10** | **5** | **19** | **23** |
 
 Lineage affinities: Verdant 5 · Hollow 6 · Bonespire 5 · Thornrunner 6 ·
-Brawler 5 · Titan 4 · no affinity 8 · all lineages 1 (Strays).
-Threadlings count as passive (harmless alone). Titan and
-Brawler are slightly under-served. A pass should add one more of each.
+Brawler 6 · Titan 5 · no affinity 8 · all lineages 1 (Strays).
+Threadlings count as passive (harmless alone). The Cairnshell (#41) and
+Clashhorn Beetles (#42) were added to even out Titan and Brawler.
 
 ## How wildlife ties into the other systems
 
@@ -198,3 +200,66 @@ Every creature has a Blighted look. These six also change how they behave:
 
 - **Planet Pulse** events can wake the **Old Tall**, which hunts Blightborn for 45 s.
 - **Murmur Surge** events can split open the ground to release a **Blighted Sixfold Wyrm**, which hunts Wildborn for 45 s.
+
+## Regional variants
+
+Creatures adapted to the harshest regions (see [11 — Atlas](11-atlas.md)). They
+have the same rules as their base creature, plus one twist.
+
+| Variant | Base creature | Region | Twist |
+|---|---|---|---|
+| **Frostfang** | Ashfang | Rimewastes | Bites slow the target by 25% for 2 s |
+| **Snowback Grazer** | Mossback Grazer | Rimewastes | Grazing freezes the node's ground, slowing captures there |
+| **Rime Weaver** | Weavemother | Rimewastes | Ice webs: shattered by any heavy hit, but they also freeze anything caught |
+| **Cinderfang** | Ashfang | Cinderveil | Leaves burning pawprints |
+| **Magma Beetle** | Siege Beetle | Cinderveil | Leaves a lava trail that damages anyone, players or structures |
+| **Ashwing Moths** | Ember Moth | Cinderveil | Swarms ignite Embergrass when they touch it |
+| **Tide Scuttler** | Mire Scuttler | Shattered Coast | Can retreat into the surf, where it heals |
+| **Glow Lizard** | Lantern Lizard | Underroot deep caves | Brighter: reveals players within 14 m |
+
+## Complete Blighted variant list
+
+Every creature has a Blighted form (glass, glow and whispers; see [10](10-world.md)).
+The six notable ones are above. The rest are listed here so art can plan the full set.
+Unless a twist is listed, the Blighted form behaves like the original but is
+hostile only to Wildborn while infected.
+
+| # | Creature | Blighted form | Twist |
+|---|---|---|---|
+| 2 | Ashfang | **Shardfang** | Pack shares one mind: if one is hit, all turn |
+| 3 | Stonehide Ox | **Obsidian Ox** | Its charge leaves a line of Glaze |
+| 4 | Glimmerfox | **Glintfox** | Its reveal shows Wildborn only |
+| 6 | Duskmane | **Hushmane** | Cloaks in whispers instead of fog |
+| 7 | Burrowtusk | **Glassdigger** | Its tunnels are lined with Blight |
+| 10 | Strider Crane | **Shard Crane** | Its alarm call is a ringing chime |
+| 11 | Rootwalker | **Lattice Walker** | Guards Blightborn nodes instead of neutral ones |
+| 12 | Knucklebrute | **Geode Brute** | Its weak point is a glowing geode in its back |
+| 13 | Hollowmonk | **Whisper Monk** | Drains Control from Wildborn only |
+| 14 | Spurlark | **Glass Lark** | Leaves glittering trails that reveal its path |
+| 15 | Bonewright | **Glasswright** | Builds crystal totems that buff Blighted creatures |
+| 16 | The Old Tall | **The Tall Hush** | Raises Tension like the original, but only on Wildborn borders |
+| 17 | Sixhorn Ram | **Shardhorn Ram** | Crystal horns: its knockback is longer |
+| 18 | Trundleback | **Geode Shell** | Its underside glows cyan-violet, so the weak point is easier to see |
+| 19 | Lantern Lizard | **Coldlight Lizard** | Its light is cold violet; it reveals Wildborn only |
+| 20 | Gravel Skink | **Glass Skink** | Burrows into Blight, leaving a trail |
+| 21 | Hexmaw | **Glassmaw** | Hides under Glaze instead of mud |
+| 22 | Sapdrinker | **Glowdrinker** | Drinks Wildborn SAP and feeds it to the Blightborn |
+| 23 | Rimeback Stag | **Glassback Stag** | Its stampede leaves Glaze |
+| 24 | Sixfold Wyrm | **Blighted Wyrm** | See *Patron-tied Apex appearances* |
+| 25 | Weavemother | **Glass Weaver** | See above |
+| 26 | Threadlings | **Glassthreads** | Swarm shines and chimes. Easier to spot, harder to kill |
+| 27 | Stiltwalker | **Shardstilt** | Hides Blightborn beneath it, not Wildborn |
+| 28 | Mire Scuttler | **Shard Scuttler** | Its claws are crystal and shatter on a weak-point hit |
+| 29 | Glasslegs | **Truly Glass** | Already nearly invisible; Blight makes it fully silent too |
+| 30 | Tendril Crawler | **Lattice Crawler** | Its tentacles leave Blight on whoever it grabs |
+| 31 | Bone Harvestman | **Shard Harvestman** | Its nests are Starshard caches |
+| 32 | Eightfold Matron | **Glass Matron** | Spawns Glassthreads |
+| 33 | Ember Moth | **Glimmer Moth** | Drawn to Blightborn transformations instead |
+| 34 | Siege Beetle | **Shard Beetle** | Damages Wildborn structures only |
+| 35 | Rootworm | **Shardworm** | Emerges from fresh Blight; speeds the next blight-capture |
+| 36 | Thornwasp | **Glasswasp** | Swarm chases Wildborn only |
+| 37 | Hush Cicada | **Murmur Cicada** | Instead of silence, a constant whisper that hides Blightborn sound |
+| 38 | Marrow Mantis | **Glass Mantis** | Always strikes the weak point, and leaves Glaze on it |
+| 40 | Hive Colossus | **Hive of Glass** | Releases Glassthread swarms |
+| 41 | Cairnshell | **Geode Hermit** | Wears a meteor shard instead of a boulder |
+| 42 | Clashhorn Beetles | **Glasshorn Beetles** | They never fight each other; they're one mind |

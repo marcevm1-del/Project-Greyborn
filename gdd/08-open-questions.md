@@ -21,7 +21,7 @@ Please confirm or override:
 | 12 | Camera, platform and input | 3D third-person, PC first (assumed from the wireframe art) | [01](01-vision.md) |
 | 13 | Roster size at launch: 6, or more beyond what's shown? | 6 | [02](02-ascendant-roster.md) |
 | 14 | The "4v4" panels show a **world-map heat map**. Is there a planet-wide layer where match results change territory across Greyborn (a seasonal war map)? Now that sides are assigned per match, it could track **planet vs. Murmur** across all matches | Not designed yet | [05](05-territory-and-economy.md) |
-| 15 | Wildlife roster: which of the 40 proposed creatures to keep, cut or rework? Should Titan and Brawler get more affinity creatures? | 40 proposed | [09](09-wildlife.md) |
+| 15 | Wildlife roster: which of the 42 proposed creatures to keep, cut or rework? Should Titan and Brawler get more affinity creatures? | 40 proposed | [09](09-wildlife.md) |
 | 17 | Blightborn look: black glassy crystal with a starlit cyan-violet glow. Does that fit your vision? | Proposed | [10](10-world.md#the-two-sides) |
 | 18 | How small are the "small mechanical differences" between sides? Currently only infect vs. rally and the patron decks, both mirrored | Proposed | [10](10-world.md), [09](09-wildlife.md#infection-and-rallying) |
 | 19 | Does the war have an end state (lore or seasonal)? Can the Murmur ever win, or can the planet purge it? | Open | [10](10-world.md#timeline) |
@@ -31,6 +31,8 @@ Please confirm or override:
 | 23 | The Sleeper (Rimewastes) and the Murmur's possible loneliness are left as mysteries. Do you want either developed into a story thread? The Sleeper is now proposed as a possible **seventh answer** (future lineage) | Unresolved on purpose | [13](13-legends.md#the-sleeper-a-seventh-answer), [12](12-life-on-greyborn.md#how-the-murmur-thinks) |
 | 24 | **Memories** (wordless lore visions at map sites, collected in a Codex, cosmetic rewards only). Is this the right way to tell the story with no words? | Proposed | [13](13-legends.md#how-players-learn-the-history-memories) |
 | 25 | **Hushed Answers** (glass copies of the First Answers): seasonal bosses, Starwound endgame, or a PvE mode? | Open | [13](13-legends.md#the-hushed-answers) |
+| 26 | Live ecosystem in matches (predators hunting, herds fleeing fights, overhunting stress). Is this the right amount of simulation for a competitive game, or should wildlife be more static? | Live, with clear readable signals | [15](15-ecology.md) |
+| 27 | The **second light on the Fall-line**: is something else coming from the stars? A future story hook or expansion? | Unresolved on purpose | [15](15-ecology.md#the-sky) |
 
 ## Decided
 
@@ -68,3 +70,4 @@ Please confirm or override:
 | gdd-0.5 | 2026-10-02 | New chapter **10 — The World**: living planet, the Starwound meteorite, the Murmur hive mind, Wildborn vs. Blightborn, lineages as the planet's six answers, timeline, tone. Patron event decks (comeback mechanic), Roots vs. Blight, crater and Heartwood zones, wildlife infection and rallying. |
 | gdd-0.6 | 2026-10-02 | Names approved. New chapters **11 — Atlas** (the Greyreach, 12 regions on an infection gradient, launch maps) and **12 — Life on Greyborn** (Base Form life cycle, flora, weather, Murmur biology and Blight stages). |
 | gdd-0.7 | 2026-10-02 | New chapters **13 — Legends** (Memories codex, the six First Answers and their resting places, the Sleeper as a possible seventh answer, the Fall in seven Memories, the Hushed Answers, creature myth-behaviours) and **14 — Lineage Forms** (readability rules, Stage looks for both sides, per-lineage Wildborn/Blightborn art and sound briefs, transformation moments). |
+| gdd-0.8 | 2026-10-02 | Wildlife to 42 (Cairnshell for Titan, Clashhorn Beetles for Brawler), 8 regional variants, a full Blighted variant list. New chapter **15 — Ecology, Sky & Sea**: food web, live hunting and herd reactions, overhunting stress, migrations, the Grey Eye, the Lantern moon, the Fall-line, the Stillsea and its creatures. |
