@@ -115,3 +115,60 @@ From p. 124 (*"High-Level Territorial Dominance replaces tenacity bonuses…"*),
   your team's Territorial Influence above 50% (e.g. +1% Power per 5% influence
   over half the map).
 - This makes late-game power about *holding the map*, not just individual levels.
+
+---
+
+## Evolution in practice: one player's curve
+
+A typical match for a Brawler who plays aggressively and returns at good moments:
+
+| Time | Level | Cores carried | Event |
+|---|---|---|---|
+| 1:30 | 2 | 60 | Critters and a Stray |
+| 3:00 | 3 | 140 | Awakens as a Brawler |
+| 5:30 | 5 | 310 | Two kills; returns at 310 (+30% bonus) |
+| 6:10 | 7 | 0 | Converted: jumps two levels at once |
+| 9:00 | 10 | 220 | **Stage 2**: picks Aggression |
+| 11:00 | 12 | 0 | Field-converts at a captured Hub (70%) to stay near a fight |
+| 14:00 | 15 | 280 | Killed while carrying; drops 280 cores |
+| 15:30 | 15 | 120 | Respawn, returns to the fight |
+| 17:00 | 18 | 0 | Converts; the Titan partner reaches 18 too: **Smash & Roll** unlocks |
+| 19:30 | 20 | 0 | **Stage 3**: Frenzy |
+
+The biggest single moment is the **6:10** conversion: two levels at once from
+one well-timed return. That's the feeling the carry-and-return system is built to deliver.
+
+## The feel of a transformation
+
+A Stage change is the most important moment in a player's match. It should
+feel like the creature itself is changing, not like an icon updating.
+
+- **0.0 s:** the creature roots in place. Sound drops out for a beat.
+- **0.2 s:** Wildborn: roots burst from the ground and wrap the body.
+  Blightborn: crystal grows over the body in an instant cocoon.
+- **0.8 s:** a map-wide sound: a deep tremor or a ringing chime, so everyone knows.
+- **1.2 s:** the roots fall away, or the cocoon shatters.
+- **1.5 s:** the new form stands, larger, and lets out a call. The camera pulls
+  back slightly to fit the new size.
+
+## Return decisions, worked through
+
+| Situation | Carried | Choice | Why |
+|---|---|---|---|
+| Near base, no enemies seen | 120 | Keep hunting | Too little to be worth the trip |
+| Mid-map, 320 cores, enemy Thornrunner nearby | 320 | Return now | The +30% bonus is maxed; you're on their minimap |
+| At a captured Hub, fight starting nearby | 200 | Field-convert (70%) | Stay in the fight; lose 60 cores of value but no travel |
+| Far from base, 180 cores, partner also heavy | 180 | Return together | Evolution-Sync Resonance (+10%) and an escort |
+| Phase 4, Base Heart under attack | Any | Stay | The match matters more than levels now |
+
+## Where EXP comes from in a typical match
+
+| Source | Share of a player's EXP (target) |
+|---|---|
+| Player kills | 35–45% |
+| Wildlife | 15–20% ([09](09-wildlife.md#income-cap-keeps-pvp-central)) |
+| Enemy Cores | 10–15% |
+| Passive territory income | 10–15% |
+| Aggression and Resonance bonuses | 10–15% |
+
+Kills stay the biggest source, as the source pages require: **kills fuel evolution.**

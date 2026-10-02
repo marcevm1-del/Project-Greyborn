@@ -98,3 +98,48 @@ everything to deal with.
 4. **The Clamor is never explained fully.** It stays a force of nature from outside.
 5. **Gameplay stays a mirror.** No story beat ever gives one playable side a
    mechanical advantage over the other.
+
+---
+
+## How each mind is shown on screen
+
+None of the three minds ever speaks, so each has a visual and audio language.
+
+| Mind | When it acts, players see… | …and hear |
+|---|---|---|
+| **The planet** | Roots reaching, ground rising, flowers opening, an amber glow under the soil | A deep exhale, a slow heartbeat, wood creaking |
+| **The Murmur** | Blight spreading in fine lines, creatures turning together, a cyan-violet pulse | Whispers in harmony, a ringing tone |
+| **The Clamor** | Red streaks in the sky, crust spreading, steam and burning | Overlapping roars and shouts, crackling fire |
+
+## Each mind across the seasons
+
+| Season | The planet | The Murmur | The Clamor |
+|---|---|---|---|
+| 1 · The Hush Wakes | Holds its ground | Wakes a glass copy of its oldest enemy | — |
+| 2 · The Sleeper Stirs | Lets its seventh answer wake | Races to copy it | — |
+| 3 · The Second Light | Faces a new threat | Remembers fleeing | Arrives |
+| 4 · The Glass Flower | Notices something foreign | Creates for the first time | Hears creation |
+| 5 · The First Made Thing | Creates in answer | Hums its own tune | Grows louder |
+| 6 · The Roaring Comes | Fights beside the Murmur | Fights beside the planet | Strikes in full force |
+| 7 · The Unbraiding | Burns the braids in fever | Feels betrayed; returns to taking | Waits |
+
+## Moments where the minds touch
+
+These are the few times in the story when two minds meet directly. They're
+the emotional peaks, and each one should be staged with care.
+
+1. **The Fall:** the Murmur's stone strikes the planet. Pain on one side, hope on the other.
+2. **The Hushed:** the Murmur studies the First Answers. The first time it sees the planet's best work.
+3. **The Glass Flower:** the planet's roots touch the flower and flinch at something foreign.
+4. **Braided ground:** roots and crystal grow into each other against the Clamor.
+5. **The fever:** the planet burns the braid without knowing what it destroys.
+6. **The Last Braid:** neither mind touches it.
+
+## The minds as characters
+
+Even without words, each mind needs a character arc:
+
+- **The planet** goes from *wounded and defensive* to *curious* (Season 4–5)
+  to *allied* (Season 6) to *regretful* (Season 7, a Memory shows it missing the crystal).
+- **The Murmur** goes from *hiding* to *creating* to *hoping* to *betrayed*.
+- **The Clamor** has no arc. It's a storm. That's what makes it frightening.

@@ -71,3 +71,54 @@ able to grow. ([10](10-world.md), [13](13-legends.md), [24](24-the-three-minds.m
 3. **Colour and glow mean something:** amber is the planet, cyan-violet is the Murmur, rust-red is the Clamor; team colours are separate.
 4. **Nothing outside a match gives power inside one.**
 5. **Mysteries stay open on purpose** until the director decides: the Sleeper, the Glass Flower, what's under the First Root, what's inside the Seed.
+
+---
+
+## Key numbers at a glance
+
+| Thing | Number | Source |
+|---|---|---|
+| Players per match | 4v4 | Source pages |
+| Levels / Stages | 20 / 3 | Source pages |
+| Synergy unlocks | Levels 12, 15, 18 | Source pages |
+| Synergy cooldowns (S1/S2/S3) | 15 / 12 / 9 s | Source pages |
+| Hub Defense levels | 1–10 | Source pages |
+| Lineages | 6 at launch + Stillheart (7th) | Source pages / decided |
+| Match length (target) | 18–25 min | Proposed ([06](06-match-flow.md)) |
+| Nodes / Hubs / Enemy Cores per map | ~30 / 5 / 3 per team | Proposed ([16](16-launch-maps.md)) |
+| Native creatures | 54 | Proposed ([09](09-wildlife.md), [34](34-far-region-creatures.md)) |
+| Memories | 46 | Proposed ([38](38-memory-catalogue.md), [48](48-beyond-the-sky.md)) |
+| Maps planned | 10 | Proposed ([42](42-new-maps.md)) |
+| Seasons planned | 7 | Proposed / decided directions |
+
+## Frequently asked questions
+
+**Is Greyborn a MOBA?** It shares team composition and in-match levelling
+with MOBAs, but there are no lanes or minions. Territory, wildlife and the
+risk of carrying cores replace them.
+
+**Why do both sides have the same creatures?** Because the Murmur can only
+copy the planet's life (decided lore). It's also what keeps a competitive
+game fair: both teams always have the same tools.
+
+**Who are the good guys?** Neither side. The planet defends itself; the Murmur
+is the last survivor of a world that was devoured. The only true threat is
+the Clamor, and even it is a force of nature.
+
+**Does anyone talk?** No. The world has no words. Story is told through
+landscape, creature behaviour, sound, music and Memories.
+
+**What does a player keep between matches?** Only cosmetics, Mastery, Pair
+Bonds and Memories. Never in-match power.
+
+**What makes a match feel different each time?** Weather, time of day,
+wildlife behaviour, global events, patron interventions, the season's story
+and the planet's Turn.
+
+**Where does the story go?** Through seven planned seasons, from a war to a
+mystery, to a revelation, to a common enemy, to a broken truce, with the
+Last Braid hinting that it isn't over ([50](50-master-timeline.md)).
+
+## Tone in five words
+
+**Primal. Majestic. Tragic. Alive. Wordless.**

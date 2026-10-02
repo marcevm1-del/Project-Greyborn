@@ -88,3 +88,76 @@ the Starwound's floor where all six stand ([35](35-heart-and-seed.md#the-starwou
 Teams face them one after another, each needing a different skill:
 flanking, punishing, territory, listening, intercepting and add control.
 It would be the hardest challenge in the game.
+
+---
+
+## Look and sound of each Hushed Answer
+
+| Hushed Answer | Look | Sound |
+|---|---|---|
+| **The Glass Range** | A walking mountain of black glass with cyan light flowing inside like veins. Three hearts glow through the glass | A deep tone like a struck glass bowl the size of a hill, with every step |
+| **The Shatterer** | A hunched, knuckle-walking giant whose fists are huge geodes. Shards hang in the air around it | Ringing blows, and the tinkle of falling glass after each one |
+| **The Lattice Grove** | A slowly walking forest of crystal trees, each one chiming as it moves | A forest of wind chimes in a storm |
+| **The Unspoken** | Nothing, until it attacks: then a faint violet outline flickers for a moment | Whispers moving through the air, getting closer |
+| **The Endless Pursuit** | A long, glittering, insect-like runner trailing clouds of glass dust | A rushing, hissing sound like sand through a canyon |
+| **The Archive** | A cathedral of glass bones carrying reliquaries full of frozen creatures | Choral whispers, and the cracking of glass as reliquaries open |
+
+## Each encounter, phase by phase
+
+### The Glass Range
+1. **Walking:** it advances along its path. Glass Quakes every 15 s. The back heart is reachable by flanking.
+2. **Wounded:** after the first heart breaks, it walks faster and raises Rampart Walls to block flankers.
+3. **Desperate:** the chest heart opens. It stops walking and slams constantly, but the slams are smaller. A burst-damage window.
+
+### The Shatterer
+1. **Rolling:** Shard Rolls across the arena; fist hearts exposed after Ringing Blows.
+2. **One-fisted:** after a fist breaks, it rolls more often and its shard lines last longer.
+3. **Cornered:** the chest heart is exposed during a long wind-up. Interrupting the wind-up with crowd control is the key.
+
+### The Lattice Grove
+1. **Spreading:** it glazes nodes as it walks. Hearts hide in three trees.
+2. **Splitting:** after each heart, it splits into more trees and the hearts move.
+3. **Last tree:** the final heart sits in a single tree that tries to flee to the nearest glazed node.
+
+### The Unspoken
+1. **Listening:** invisible; found only by sound. Silence pulses mute the team.
+2. **Fading:** its whispers grow quieter. Teams with Hollow or Stillheart players
+   (who read silence well) have an edge in the lore and the design.
+3. **Last breath:** it attacks constantly, so its sparks give it away more often. A race.
+
+### The Endless Pursuit
+1. **Circling:** it runs the map's edge. Teams must predict its route and set up in its path.
+2. **Faster:** its trail of glass dust lasts longer and blocks routes.
+3. **Hunting:** it pounces on whoever carries the most cores, so a carrier can be used as bait.
+
+### The Archive
+1. **Recalling:** summons glass copies of creatures killed earlier in the match.
+2. **Opening:** each broken reliquary releases its stored creature.
+3. **The whole Archive:** it recalls everything at once. The team must focus the last heart through a crowd.
+
+## Rewards and Memories
+
+| Hushed Answer | Memory on first defeat | Cosmetic |
+|---|---|---|
+| The Glass Range | *The Range Kneels* (or stands, per Season 1) | Glass-ridge Titan Growth |
+| The Shatterer | *The Breaker's Shadow* | Geode-fist Brawler Growth |
+| The Lattice Grove | *The Copied Forest* | Crystal-antler Verdant Growth |
+| The Unspoken | *What the Quiet Heard* | Silent-step Hollow Growth |
+| The Endless Pursuit | *Two Hunts Cross* | Glitter-trail Thornrunner Growth |
+| The Archive | *Every Copy* | Glass-reliquary Bonespire Growth |
+
+## Why each one tests a different skill
+
+The six Hushed Answers are built as a **curriculum**. Each one isolates a
+core skill of Greyborn and asks teams to master it:
+
+| Hushed Answer | Skill |
+|---|---|
+| The Glass Range | Positioning and flanking |
+| The Shatterer | Timing and punishing |
+| The Lattice Grove | Territory control under pressure |
+| The Unspoken | Listening and sound signatures |
+| The Endless Pursuit | Prediction and interception |
+| The Archive | Managing many enemies while focusing one target |
+
+A team that can beat all six has mastered the game.

@@ -79,3 +79,65 @@ story too, not just "the enemy".
 - New players' first **5** real matches are against other new players or AI.
 - **Lineage suggestions:** after the tutorial, the game suggests trying each
   lineage's pair partner, to teach the pair system naturally.
+
+---
+
+## Call wheel design details
+
+- **Input:** hold a button to open the radial wheel, flick toward a call,
+  release. A quick tap without flicking sends a **contextual call**: "Danger"
+  on an enemy, "Root here" on a node, "Gather" on open ground.
+- **Timing:** calls play instantly and the marker lasts 5 s on the map.
+- **Directional audio:** teammates hear the call from the caller's direction,
+  so a call is also a location.
+- **Customisation:** players choose which 8 calls fill the wheel from a
+  larger list, and can swap voices through cosmetics ([26](26-collection.md)).
+- **Pair calls:** the "Pair ready" call automatically uses the right voice for
+  your lineage ("Slam up", "Marked", "Garden"), so it's always meaningful.
+
+## The First Budding, in scenes
+
+**Ripening.** The screen is dark. A heartbeat, slow and deep, fills the
+speakers. Light seeps in from above as something splits open: the player's
+birth-node. The player's first input is to move toward the light.
+
+**The Brood.** Three small Kith tumble out beside the player, blinking. One
+chirps and trots off into the forest. The others follow. So does the player,
+learning the camera by watching them.
+
+**Hunger.** In a clearing, a Glimmerfox flickers. A skink burrows. The
+brood scatters to hunt. The player learns to attack and dodge, and the first
+cores are shown flowing into the creature as light.
+
+**The Call.** The ground trembles. Roots rise from the soil and curl toward
+the brood, pointing at a knot of roots in the ground. The player learns to
+Root a node and watches the territory spread.
+
+**Awakening.** At Level 3, the screen slows. Six shapes appear in a vision:
+the First Answers. Each one moves for a moment, showing its nature. The
+player chooses, and their body changes.
+
+**Heavy.** Carrying cores, the player hears their own aura hum. An Ashfang
+pack howls. The run home to the birth-pool is the first real tension the
+player feels.
+
+**The Whisper.** At the forest edge, moss turns to glass. Strange Kith,
+glazed and moving in perfect step, appear between the trees. The first
+fight against the Blightborn teaches weak points.
+
+**Together.** The player's pair partner (AI) arrives. A prompt to call
+"Pair ready", and the first Synergy fires.
+
+**Memory.** A fossil glows. The player touches it and sees the Fall.
+
+**The Answering.** The vision fades into a real 4v4 against AI broods.
+
+## Accessibility in onboarding
+
+- **Subtitled sound cues:** every important sound in the tutorial (the
+  heartbeat, the planet's call, the Ashfang howl) has an optional caption.
+- **Visual sound indicators** are introduced in the "Heavy" scene, where the
+  player's own carry signature is shown as a ring on screen.
+- **Colour-blind options** are offered before the first match, previewed
+  on the planet's amber and the Murmur's cyan.
+- **Pace control:** every scene waits for the player; nothing times out.
