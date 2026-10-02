@@ -127,3 +127,145 @@ Greyborn uses silence on purpose:
 | 5 · The First Made Thing | The Hushed Kith's hum |
 | 6 · The Roaring Comes | Both themes in harmony; the Clamor's roar at its loudest |
 | 7 · The Unbraiding | The harmony breaks; the hum falls silent |
+
+## The layers of a match's soundscape
+
+Every moment of a match is built from five layers, mixed in this order of priority:
+
+| Priority | Layer | Contents |
+|---|---|---|
+| 1 | **Gameplay information** | Telegraphs, weak-point breaks, Synergy stings, calls, carry signatures, Stage changes |
+| 2 | **Combat** | Hits, abilities, deaths |
+| 3 | **Creatures** | Footsteps, breathing, idle sounds of players and wildlife |
+| 4 | **World** | The region's ambient bed, weather, structures, distant landmarks |
+| 5 | **Music** | The adaptive score |
+
+When the mix gets crowded, lower layers duck to make room for higher ones.
+**Layer 1 never ducks.**
+
+## How sound scales with Stage
+
+| Stage | Footsteps heard from | Breathing | Calls |
+|---|---|---|---|
+| Base Form | ~15 m | Barely audible | High, small |
+| Stage 1 | ~25 m | Audible close up | Fuller |
+| Stage 2 | ~40 m | Clearly audible | Deep |
+| Stage 3 | ~70 m | Heavy, rhythmic | Huge, echoing |
+
+Carrying 150+ cores adds ~15 m to footstep range; 300+ adds ~30 m and the minimap ping ([03](03-evolution-system.md)).
+**Exceptions:** Hollow (no footsteps) and Thornrunner (half range) are quieter by design; Titan is louder.
+
+## Regional music motifs
+
+Each region has a short musical motif woven into its soundscape and its map's score:
+
+| Region | Motif |
+|---|---|
+| Heartwood | A slow, warm chord on low strings, like a heartbeat turned into music |
+| Rootwilds | A rising and falling phrase on wooden flute, timed to the canopy's breath |
+| Underroot | Plucked notes that ripple like the nerve pulses |
+| Ashen Steppe | A wide, open drone with throat singing |
+| Hollow Mire | A single held note that fades in and out |
+| Spirecliffs | Wind instruments in long, high phrases |
+| Bone Flats | Bone percussion: clicks and hollow knocks |
+| Rimewastes | Very sparse; a slow bell-like tone |
+| Cinderveil | Deep frame drums and rumbling |
+| Shattered Coast | Whale-like low tones under shimmering glass |
+| Glasswaste | The Murmur's theme alone, no planet instruments at all |
+
+## The creature sound library
+
+For every lineage, on both sides, the sound team needs:
+
+- **Movement:** footsteps on six surfaces (grass, stone, mud, ice, Blight, ash), at every Stage.
+- **Breathing:** calm, exerted, hurt.
+- **Calls:** the full call wheel ([25](25-calls-and-onboarding.md)), at every Stage.
+- **Abilities:** each ability's cast and impact.
+- **Transformations:** the Stage change sequence for each side.
+- **Death:** each side's death sound, at every Stage.
+- **Idles:** feeding, resting, grooming, the lineage's signature behaviour.
+
+For seven lineages, two sides and four Stages, this is the largest single audio task in the game.
+
+## No voices
+
+Greyborn has **no spoken language** anywhere: no narrator, no announcer, no
+lines. Even the UI's audio feedback is non-verbal: soft wooden clicks for the
+planet's menus, glass taps for the Murmur's. This is a firm rule, not a style
+choice. The world has no words, and neither does the game around it.
+
+## The adaptive music system
+
+| State | Trigger | Music |
+|---|---|---|
+| **Explore** | No combat nearby | Region motif and ambient |
+| **Tension** | Enemy within 40 m, or carrying 300+ | Rhythm enters, quietly |
+| **Combat** | Taking or dealing damage | Full side palette, intensity by Stage |
+| **Synergy** | A Synergy fires nearby | A short swell in that pair's motif |
+| **Patron** | A patron event fires | The patron's theme in full |
+| **Phase change** | New phase | A short transition sting, then the new phase's base |
+| **Victory / Defeat** | Match end | The side's theme, triumphant or quiet |
+
+Transitions between states are always smooth: the music never cuts abruptly
+except for the deliberate half-second silences before huge moments.
+
+## Sound accessibility, in full
+
+- **Visual sound indicators:** directional rings for every Layer 1 sound.
+- **Subtitles for world sounds** (optional): "Distant roar (north)", "Herd approaching (east)".
+- **Separate volume sliders** for music, world, creatures and gameplay information.
+- **Mono audio option**, with directional cues moved to the visual indicators.
+- **Reduced intensity option** for players sensitive to loud sounds (the Roar, Stage 3 transformations).
+
+## The sound of the story, season by season
+
+The audio identity changes as the story does: the planet's wood and the
+Murmur's glass at launch; the Clamor's roar from Season 3; the Murmur's own
+hum in Season 5; the two themes in harmony in Season 6; and in Season 7, the
+harmony breaking and the hum falling silent. A player who listens closely
+hears the whole story of the war without needing to see a single Memory.
+
+## Sound through the Turns
+
+| Turn | How the soundscape changes |
+|---|---|
+| **Bloom** | Busier: birdsong, bees, calves; the music is lighter and brighter |
+| **Ash** | Wind and drifting ash; herds rumbling in the distance; sound carries far |
+| **Rime** | Near-silence; creaking ice; the Sleeper's heartbeat under frozen surfaces; footsteps crunch |
+| **Fever** | Crackling, rumbling volcanoes, storms; the music is more percussive |
+
+## Structures and objects
+
+| Object | Sound |
+|---|---|
+| Birth-pool (idle) | A slow heartbeat (Wildborn) or a steady chime (Blightborn) |
+| Conversion | Sap rising (Wildborn) or a rubbed-glass harmonic (Blightborn) |
+| Heartseed / Shard Heart under attack | A quickening pulse / a rising hum |
+| Hub captured | Roots groaning / crystal singing |
+| Node captured | A low root-pulse (yours) or a dissonant chord (theirs) |
+| Memory site (nearby) | A faint, distant echo of the Memory's own sound |
+
+## Audio direction in one rule
+
+**Every sound in Greyborn is either the world, a creature, or information.**
+There are no abstract UI beeps, no announcer and no music that ignores the
+world. Even the menus sound like wood and glass. The goal is total immersion
+in a wordless, living planet.
+
+## Recording and material notes
+
+- **Wood sounds** should be recorded from real wood: creaking branches,
+  splitting bark, hollow logs, not synthesised.
+- **Glass sounds** from real glass and crystal: bowls, harmonicas, wind chimes,
+  shattering panes, processed carefully so they never become harsh.
+- **Bone sounds** from real bone and antler for the Bonespire and the Bone Flats.
+- **The Clamor** should be built from layered, distorted crowd and fire
+  recordings, so it feels like many voices and much heat.
+- **Whispers** for the Murmur should be breathy, wordless and never resolve into real language.
+
+## The final test
+
+Close your eyes in any match. You should be able to tell: whose territory you
+stand on, which lineages are near and how big they are, whether a fight is
+starting, whether someone nearby is carrying a fortune in cores, and which
+season of the war you're in. If you can, the audio is doing its job.

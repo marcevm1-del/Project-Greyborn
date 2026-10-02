@@ -270,3 +270,5 @@ matches might not, and keep the planet's year visible week by week.
 
 A season with good events feels like a year on a real planet: migrations, storms,
 births, frosts and the occasional strange night when every creature looks up at the sky.
+
+Events are small, but they're how the planet feels lived-in week to week.
