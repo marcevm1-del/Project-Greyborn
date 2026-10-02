@@ -77,3 +77,78 @@ eventually does the same.
   that every Kith (and every player) learns to recognise.
 - **Silhouette:** must be clearly distinct from every lineage at Stage 1, so
   enemies can tell a Kith in Base Form from an awakened one at a distance.
+
+---
+
+## A day in the life of a wild brood
+
+Dawn in the Rootwilds. The canopy exhales its mist, and a brood of five
+Strays wakes in a ring around the split husk of the birth-node they budded
+from two summers ago. The eldest, already grey around the muzzle, is first
+up. It sniffs the air for Ashfangs, then chirps once, and the others rise.
+
+They forage through the morning: Sapbloom petals, a cluster of Amber Beetles,
+a skink one of them corners against a root. They eat little and often, and
+share. When a Glimmerfox flickers past, two of the young ones chase it
+through the ferns for no reason except that it's fun.
+
+At midday they rest in the shade of a breathing oak, pressed together. One of
+them keeps watch, ears turning. A Strider Crane cries from the mire, and every
+head lifts at once. The flock takes off, and the brood knows something is
+moving there. They wait until the birds settle, then sleep again.
+
+In the afternoon, the planet's hum rises under their feet for a moment, a
+pressure everyone feels and no one understands. Somewhere far away, a brood
+like theirs is being called to evolve. Not them. Not today.
+
+At dusk, without any signal, all five turn north toward the scar in the sky
+and stand perfectly still. Then the moment passes, and they return to their
+birth-node and settle in a ring, facing outward, as Kith always have.
+
+## Kith senses
+
+| Sense | Strength | In the game |
+|---|---|---|
+| **Hearing** | Excellent | Sound signatures matter; Kith ears turn toward sounds as an idle animation |
+| **Smell** | Very good | Sniffing the air is a common idle; Strays flee from predators they smell |
+| **Sight** | Good in dim light, poor at long range | Their large amber eyes suit forest light; at range, they rely on hearing |
+| **Feeling the planet** | Unique to Kith | A pressure through the feet when the planet acts. This is how the planet's call reaches them |
+
+**Feeling the planet** is the Kith's most important sense. It's how the
+planet calls broods, and it's what players feel as the deep rumble of a
+Planet Pulse.
+
+## Kith and other creatures
+
+| Creature | Relationship |
+|---|---|
+| Mossback Grazers | Neutral neighbours; young Kith ride on their backs for fun |
+| Ashfangs | Feared predators; a brood forms a ring when they approach |
+| Strider Cranes | Watchmen: Kith rely on their alarm calls |
+| Glimmerfoxes | Playmates and occasional prey |
+| Marrowhounds | Avoided; they follow death |
+| Heartwood Elk | Approached with something like reverence |
+| Blighted creatures | Feared and avoided; the whispers make Strays uneasy |
+
+## How Kith look in each region
+
+Kith are one species, but they adapt to their surroundings over generations:
+
+- **Rootwilds Kith:** greener moss on the skin, slimmer, good climbers.
+- **Steppe Kith:** paler, longer-legged, built for running.
+- **Mire Kith:** darker, with webbed fingers.
+- **Rime Kith:** thicker grey fur, rounder bodies.
+- **Cinderveil Kith:** ash-darkened skin, heat-tolerant.
+
+**In matches**, players always spawn as the standard Base Form, for
+readability. These regional looks appear on **Strays** and in **cosmetics**
+([26](26-collection.md)).
+
+## The Kith and the war
+
+To the Kith themselves, the war isn't a cause. They don't understand the
+Murmur or the planet's purpose. Called Kith feel a hunger and a drive they
+can't refuse; Hushed Kith hear a voice that feels like company. Both are
+creatures doing what their nature tells them. That's the quiet tragedy at the
+heart of Greyborn: the players' species fights a war it doesn't understand,
+for two minds far larger than itself.

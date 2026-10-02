@@ -79,3 +79,68 @@ All Clamor creatures **can't be rallied or infected** ([22](22-season-3.md)).
 **This explains** why the Murmur spreads so slowly and carefully on
 Greyborn (it's hiding), why it may be lonely, and why its first creation, the
 Glass Flower, is shaped like a flower from its lost home ([30](30-season-4.md#the-central-mystery)).
+
+---
+
+## A Landfall, second by second
+
+How a Clamor Landfall plays out in a match, to guide design, art and audio.
+
+- **-30 s:** a thin red streak appears high in the sky, beside the Fall-line. A
+  low, distant roar can be heard by everyone, and the HUD marks the impact flank.
+- **-15 s:** the streak brightens and grows. Wildlife on that flank panics and
+  stampedes toward the other side of the map.
+- **-5 s:** the sky on the impact flank turns red. The roar becomes deafening.
+- **0 s:** impact. A shockwave knocks back anything within 20 m. Rock, root and
+  Blight are blasted away, leaving a smoking crater with the burning **Landfall core** at its centre.
+- **+5 s:** **Spotting** spreads from the crater: rust-red specks racing across
+  roots and Blight alike.
+- **+15 s:** the first **Shriekers** pour out of the crater, screaming. Their
+  noise reveals every player nearby.
+- **+30 s:** Spotting hardens into **Crust**. Cells it covers turn neutral and
+  uncapturable. **Spore Kites** rise and drift toward new ground.
+- **+60 s:** if the core still stands, a **Roar-vent** bursts through the crust,
+  and **Ventborn** crawl out to defend it.
+- **Destroyed:** when the core breaks, the Scald stops spreading, cools, and
+  begins to **burn out** to grey ash over the following minute.
+
+## The Clamor's creatures, described
+
+**Shriekers** are low, six-legged things with no eyes, just wide mouths that
+scream. They run in swarms and never stop shouting. The noise is the weapon:
+anything near them is revealed.
+
+**Spore Kites** are flat, membranous insects that ride the heat rising from
+Scald. They're fragile, but every one that lands starts a new patch of Spotting.
+
+**Ashmouths** are gaunt, two-legged scavengers with jaws that open far too
+wide. They eat corpses, of wildlife, of players, of other Clamor creatures, and
+grow larger with every meal.
+
+**Scald Hulks** are slow, four-legged brutes covered in thick crust, glowing
+like coals at every crack. They leave burning trails and soak up enormous damage.
+
+**Kindlers** are spider-like and quick. They don't fight players directly; they
+set wildlife on fire, sending burning herds stampeding across the map.
+
+**Ventborn** crawl fully armoured out of Roar-vents and defend them to the
+death. They never leave the vent.
+
+**The Roar** is the Clamor's apex: a beast as large as a Greyback Colossus,
+its back split by vents that shout in a deafening chorus.
+
+## How the Clamor sounds over time
+
+| Moment | Sound |
+|---|---|
+| Distant (before Landfall) | A low roar, like a storm far away |
+| Impact | A shattering boom, then ringing ears |
+| Spreading Scald | Crackling, hissing, like fat on a fire |
+| Clamor creatures | Overlapping shouts, never in sync |
+| A Roar-vent | Rhythmic bursts of shouting, like a giant breathing |
+| The Roar | Every Clamor sound at once, layered and deafening |
+| Burn-out | The crackle fading to silence, then wind over ash |
+
+The Clamor's sound design should be the opposite of the Murmur's. Where the
+Murmur is quiet, synchronised and patient, the Clamor is loud, chaotic and
+urgent. A player with eyes closed should know instantly which invader is near.

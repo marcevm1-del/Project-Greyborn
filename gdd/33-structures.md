@@ -73,3 +73,65 @@ Each side sees the same structures through its own nature: the planet grows
 them, the Murmur glazes over them. **Rules, stats and positions are identical**
 (the mirror). Names and looks only tell the story of who holds what, and
 they help players read the battlefield at a glance.
+
+---
+
+## Structures through a match
+
+Structures aren't static. They grow and change with the match, so the
+battlefield tells the story of the fight.
+
+| Phase | The Cradle / the Clutch | Heartseeds / Shard Hearts | Sap Wells / Glow Wells |
+|---|---|---|---|
+| **1 · Stable Flow** | Freshly split, glistening, small | Young: a seedling or a crystal bud | All neutral: open pools ringed by grey roots |
+| **2 · Pre-Aggro** | The birth-pool brightens with every conversion | Swelling as the team's evolution grows | First claimed Wells regrow in their side's material |
+| **3 · Resource Stage** | The ring of knots thickens; roots or crystal spread outward | Fully grown, heart beating fast. The main siege targets | Defense levels climb: walls and pillars grow tall |
+| **4 · Hunt** | The base's edge nodes are open; the oldest knot (the Base Heart) is exposed | Damaged ones show scars; regrown ones are small and fragile | Hubs change hands often; scars of past owners remain |
+
+**Scars remain.** A Hub that changes hands keeps traces of its previous owner:
+a crystal pillar half-overgrown with moss, or roots glazed at the tips. By the
+end of a long match, every Well shows its history.
+
+## The sound of structures
+
+| Structure | Wildborn sound | Blightborn sound |
+|---|---|---|
+| Base (idle) | A slow heartbeat from the birth-pool | A deep, steady chime |
+| Base (conversion) | A rush like sap rising through a trunk | A rising harmonic, like a glass being rubbed |
+| Enemy Core (idle) | A muffled pulse inside the seed husk | A geode humming |
+| Enemy Core (under attack) | The pulse quickens | The hum rises in pitch |
+| Enemy Core (destroyed) | A dry crack and a long exhale | A shatter, then silence |
+| Resource Hub (captured) | Roots groaning as they thicken | Crystal singing as it grows |
+
+A player can tell, by sound alone, that one of their Cores is under attack,
+even if they're across the map.
+
+## When a structure falls
+
+- **A Heartseed falls:** its husk splits, the amber heart dims to grey, and the
+  roots running back toward the Cradle wither one after another. Players can
+  watch the loss travel home.
+- **A Shard Heart falls:** the geode shatters outward in a ring of glittering
+  dust that drifts on the wind for a long time.
+- **A Hub is uprooted:** the pool drains in a spiral, and the walls or pillars
+  sink back into the ground.
+- **A Base Heart falls:** the match ends ([06](06-match-flow.md#how-a-match-ends)).
+
+## Readability rules for structures
+
+1. **Ownership is always clear:** team outline colours on every captured structure, as with creatures.
+2. **Health is visible in the world:** cracks, dimming glow and drooping roots
+   show damage without needing a health bar.
+3. **Attack stages are distinct:** each Hub stage has a different silhouette
+   (whole walls → cracked walls → draining pool), readable at range.
+4. **Regrowing structures look fragile:** a regrown Core is visibly small, so
+   both teams know it's vulnerable.
+
+## Why the Cradle is a birth place
+
+In the lore, Kith bud from birth-nodes ([12](12-life-on-greyborn.md#the-kith-life-cycle)).
+Making each team's base a birth-node cluster ties three systems to one image:
+respawning is being budded again, converting cores is feeding the place you
+were born, and the Base Heart is the oldest knot, the place the whole brood
+came from. Destroying it isn't just winning a match: it's ending a brood's
+ability to be reborn.
