@@ -43,7 +43,6 @@ Please confirm or override:
 | 37 | Clamor Landfall as a hostile third force in 4v4 matches (attacks both teams, one team gets the reward). Does that fit? Is a future Wildborn + Blightborn truce mode interesting? | Proposed | [22](22-season-3.md#how-the-clamor-appears-in-matches) |
 | 38 | Art direction: "primal majesty, readable at a glance", three surface materials (roots, Blight, Scald), glow only for meaning, a grey base world. Does this match your vision? | Proposed | [23](23-art-direction.md) |
 | 39 | The source pages show Captured nodes in **cyan**, which is also the Murmur's colour. Show node ownership with team outline colours instead? | Proposed | [23](23-art-direction.md#ui-direction) |
-| 40 | Long-term arc: could the Murmur slowly learn to *create* by copying the planet? Commit to it, or keep it as an option? | Option only | [24](24-the-three-minds.md#how-the-three-relate) |
 | 41 | Calls: in-match pings and emotes as creature sounds, audible (without markers) to nearby enemies. Keep that risk? | Proposed | [25](25-calls-and-onboarding.md) |
 | 42 | Onboarding as "The First Budding" (about 35 min, skippable), plus a Blightborn prologue | Proposed | [25](25-calls-and-onboarding.md#part-2--the-first-budding-onboarding) |
 | 43 | Business model (free-to-play, premium, battle pass?). Collection rewards are defined without pricing | Open | [26](26-collection.md) |
@@ -51,21 +50,19 @@ Please confirm or override:
 | 45 | Tournament preset turns patron events (the comeback mechanic) **off**. Agree? | To be tested | [27](27-modes.md#custom--tournament) |
 | 46 | Announcement trailer "The Answering" (90 s, wordless). Does the storyboard capture the game? Include the Second Light tag? | Proposed | [28](28-tales-and-trailer.md#announcement-trailer-the-answering-storyboard) |
 | 47 | The planet's year (Bloom, Ash, Rime, Fever), with each live season set in one Turn. Season 4 is now proposed as The Glass Flower | Proposed | [29](29-the-planets-year.md) |
-| 48 | Season 4's Glass Flower keeps question 40 open: a memory of the Murmur's home, or its first creation. The community result tilts it; the director decides | Open by design | [30](30-season-4.md#the-central-mystery) |
-| 49 | After Season 4: an origin season, a turning-point season, or a truce season? | Director's call | [30](30-season-4.md#story-roadmap-seasons-14) |
 | 50 | Evolution branches for all 7 lineages (42 Ultimate Forms). Which feel right for each lineage? Step Between and Shatterfist flagged as possibly too strong | Proposed | [31](31-evolution-branches.md) |
 | 51 | In-world names for structures: Cradle/Clutch (bases), Heartseeds/Shard Hearts (Enemy Cores), Sap Wells/Glow Wells (Hubs), Root-knots/Whisper-nodes (nodes) | Proposed | [33](33-structures.md) |
 | 52 | Far-region creatures (#47–#54), including the unharmable Heartwood Elk, the only creature without a Blighted form | Proposed | [34](34-far-region-creatures.md) |
 | 53 | Uses for the Heartwood and the Starwound: season finale, endgame PvE run, or the story's final act? What lies below the First Root and inside the Seed? | Director's call; unresolved on purpose | [35](35-heart-and-seed.md) |
-| 54 | Proposed backstory: the Clamor ate the Murmur's home world; a fragment of the Murmur fled in the Starwound stone; the Clamor followed. Adopt it? It sets the tone for the long-term story | Proposal | [37](37-the-clamor.md#the-clamor-and-the-murmur-what-really-happened) |
 | 55 | Memory Catalogue: 40 Memories on 9 Codex pages. Is the scope right (each one is a short cinematic vision)? | Proposed | [38](38-memory-catalogue.md) |
 | 56 | World events: 11 recurring weekend/3-day events, kept out of ranked by default | Proposed | [39](39-world-events.md) |
 | 57 | Hushed Answers as encounters (three crystal hearts each, one skill per boss). Which should appear first after the Glass Range? Is the six-boss endgame co-op mode in scope? | Proposed | [40](40-hushed-answers.md) |
 | 58 | New maps: the Skull Basin (2v2), the Ash Sea (dunes shift each phase) and the Glass Forest (obsidian vs. Blight, with readability safeguards). Keep all three? | Proposed | [42](42-new-maps.md) |
 | 59 | Wildlife reacting to nearby lineages gives observant players free hints (e.g. birds go quiet near a Hollow). Keep it, as long as it never reveals more than sound signatures? | Proposed | [43](43-living-creatures.md#how-wildlife-reacts-to-ascendants) |
 | 60 | Flora: Scald kills interactable plants while Blight keeps them working. Keep that difference? | Proposed | [44](44-flora.md#blighted-and-scalded-forms) |
-| 61 | Lore: the First Answers were Kith grown to full potential, so every Kith carries all six lineages (and Stillheart) inside it. Adopt this as the answer to "why the Kith"? | Proposed | [45](45-the-kith.md#why-the-kith) |
 | 62 | Wild Ascendants (neutral Stage 3 threat once per match, rewards a team-wide Wild Echo) and the Old Ones (ancient neutral Ascendants). Keep both? | Proposed | [46](46-wild-ascendants.md) |
+| 63 | Season 5: Seedbeds (both sides create on the battlefield), side-born creatures (#55–#58) as exact mirrors, and Glass Gardens as a new War Map region type. Do these fit the turning point you imagine? | Proposed | [47](47-season-5.md) |
+| 64 | The central question after Season 5: if the Murmur can create, does it still need to take the planet? Where should the story go next? | Director's call | [47](47-season-5.md#the-question-the-turning-point-opens) |
 
 ## Decided
 
@@ -81,6 +78,10 @@ Please confirm or override:
 | 2026-10-02 | **The War Map moves by community goals** (option A): both sides race to complete seasonal goals per front. |
 | 2026-10-02 | **Stillheart is a permanent universal partner** (no Synergy ability of its own). |
 | 2026-10-02 | **The second light is a rival hive mind**: a second meteorite, a rival to the Murmur (Season 3). |
+| 2026-10-02 | **The Murmur's backstory:** the Clamor devoured its home world; a fragment fled inside the meteorite; the Clamor followed. |
+| 2026-10-02 | **The Murmur slowly learns to create.** The Glass Flower is its first creation, shaped from a memory of home. |
+| 2026-10-02 | **Why the Kith:** the First Answers were Kith; every Kith carries all the lineages (and Stillheart) sleeping inside it. |
+| 2026-10-02 | **After Season 4: a turning-point season** (Season 5). |
 | 2026-10-02 | **Neutral wildlife is in.** Body plans: four-legged, two-legged, six-legged, eight-legged and insects; 20–50 types, with contrasting creatures. |
 
 ## Design risks to watch
@@ -128,3 +129,4 @@ Please confirm or override:
 | gdd-0.26 | 2026-10-02 | New chapters **42 — Map Seeds, Developed** (the Skull Basin, the Ash Sea, the Glass Forest; a full 10-map list) and **43 — Ascendants as Living Creatures** (movement, idle, feeding and signature behaviour per lineage; wildlife reactions). |
 | gdd-0.27 | 2026-10-02 | New chapters **44 — Flora** (26 plants and fungi, Blighted and Scalded forms, by region) and **45 — The Kith** (body, behaviour, three kinds of Kith, why the planet calls them, life span, art and audio). |
 | gdd-0.28 | 2026-10-02 | New chapter **46 — Wild Ascendants & the Old Ones** (wild evolution of Strays into a neutral threat; ancient surviving Ascendants as living landmarks and events). |
+| gdd-0.29 | 2026-10-02 | Four decisions recorded (Murmur backstory, the Murmur learns to create, why the Kith, a turning-point Season 5) and reflected in 24, 30, 37 and 45. New chapter **47 — Season 5: The First Made Thing** (Seedbeds, Murmur creations and the planet's answers, Glass Gardens, the Garden or the Wound finale). |

@@ -27,6 +27,9 @@ everything else points to the chapter where it's proposed.
 | **The War Map** | Moves by **community goals** each season |
 | **Stillheart** | A seventh lineage (from Season 3), a **universal partner** |
 | **The second light** | A **rival hive mind** arrives in Season 3 |
+| **The Murmur's past** | The Clamor devoured its home world; a fragment fled in the meteorite; the Clamor followed it |
+| **The Murmur learns to create** | Its first creation is the Glass Flower (Season 4), shaped from a memory of home. Season 5 is the turning point |
+| **Why the Kith** | The First Answers were Kith; every Kith carries all the lineages sleeping inside it |
 
 ## The war in one paragraph
 

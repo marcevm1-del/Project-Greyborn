@@ -34,6 +34,7 @@ were confirmed by the director; everything else is proposed.
 | **Fall, the** | The meteorite's impact and the age of war that followed | [13](13-legends.md) |
 | **Fall-line** | The glowing scar across the sky left by the meteorite | [15](15-ecology.md) |
 | **First Answers** | The original six creatures of each lineage, now landmarks | [13](13-legends.md) |
+| **Glass Garden** | The Murmur's first created growth, not a copy of anything on Greyborn | [47](47-season-5.md) |
 | **Glasswaste** | Land permanently lost to the Murmur | [11](11-atlas.md) |
 | **Glaze / Lattice / Spire** | The visual stages of Blight growth | [12](12-life-on-greyborn.md) |
 | **Front / front points** | A War Map region active in a season, and the points each side earns there | [18](18-the-answering-war.md), [20](20-season-1.md) |
@@ -76,6 +77,7 @@ were confirmed by the director; everything else is proposed.
 | **SAP** | The planet's lifeblood; the team currency | [05](05-territory-and-economy.md) |
 | **Sap Wells / Glow Wells** | Resource Hubs held by Wildborn / Blightborn | [33](33-structures.md) |
 | **Scald** | The Clamor's rust-red spore growth; eats both roots and Blight | [22](22-season-3.md) |
+| **Seedbed** | A neutral map site where either side can grow a creation (Bloom Totem / Glass Garden) | [47](47-season-5.md) |
 | **Seed, the** | The meteorite's core at the centre of the Starwound | [11](11-atlas.md), [12](12-life-on-greyborn.md) |
 | **Shattered Coast** | Shard-studded cliffs; the wound's edge | [11](11-atlas.md) |
 | **Sleeper, the** | A creature frozen in the Rimewastes; possibly a seventh answer | [13](13-legends.md) |

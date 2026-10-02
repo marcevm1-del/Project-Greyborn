@@ -45,7 +45,7 @@ nothing else. For them, the voices are comfort and company ([28](28-tales-and-tr
 ## Why the Kith?
 
 A central lore question: **why does the planet call Kith, and not its
-other creatures, to become Ascendants?** Proposal:
+other creatures, to become Ascendants?** **Decided (2026-10-02):**
 
 - The First Answers ([13](13-legends.md#the-first-answers)) were **Kith** that
   the planet grew to full potential. The Kith are the planet's original

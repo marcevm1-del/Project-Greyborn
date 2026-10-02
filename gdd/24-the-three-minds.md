@@ -82,10 +82,11 @@ everything to deal with.
 - **Clamor vs. both:** a common threat. It raises the question of whether the
   planet and the Murmur could ever stand together, and what the Murmur would be
   if it stopped hiding.
-- **Possible long-term arc (for the director to decide, not committed):** the
-  Murmur slowly changes by copying the planet's creatures. Over many
-  seasons, it might learn to *create*. That would be the turning point of the
-  whole story.
+- **Long-term arc (decided, 2026-10-02):** the Murmur slowly changes by
+  copying the planet's creatures, and it **learns to create**. Its first
+  creation is the Glass Flower (Season 4), and the turning point of the story
+  follows in Season 5 ([47](47-season-5.md)). This also changes one row of the
+  table above: the Murmur starts as "can't create" and grows out of it.
 
 ## Rules for writers and designers
 

@@ -70,13 +70,12 @@ All Clamor creatures **can't be rallied or infected** ([22](22-season-3.md)).
 
 ## The Clamor and the Murmur: what really happened?
 
-Proposed backstory, revealed slowly through Memories:
+**Decided (2026-10-02): this backstory is adopted.** It is revealed slowly through Memories:
 - Far away and long ago, the Murmur lived on another world, copying and spreading slowly.
 - The Clamor came there and **ate that world**, Murmur and all.
 - A fragment of the Murmur escaped inside a stone. That stone became the **Starwound**.
 - The Clamor followed the trail. It is the **second light**.
 
-**This would explain:** why the Murmur spreads so slowly and carefully on
-Greyborn (it's hiding), why it may be lonely, and why the Glass Flower might
-be a memory of its lost home ([30](30-season-4.md#the-central-mystery)).
-**It's a proposal for the director**, and it would set the tone for the whole long-term story.
+**This explains** why the Murmur spreads so slowly and carefully on
+Greyborn (it's hiding), why it may be lonely, and why its first creation, the
+Glass Flower, is shaped like a flower from its lost home ([30](30-season-4.md#the-central-mystery)).

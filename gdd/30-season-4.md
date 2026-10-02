@@ -20,16 +20,20 @@ The Murmur can only copy (decided lore, [24](24-the-three-minds.md)). Every
 Blighted thing is a glass version of something from Greyborn. But the Glass
 Flower isn't a copy of anything on this planet.
 
-There are two possible explanations, and **this season deliberately doesn't
-choose**:
+**Decided (2026-10-02): the Murmur slowly learns to create.** The Glass
+Flower is its **first creation**, and it is shaped like a flower from the
+Murmur's **lost home world** (the backstory is also decided; see
+[37](37-the-clamor.md#the-clamor-and-the-murmur-what-really-happened)). The
+Murmur made something new for the first time, and what it made was a memory of home.
 
-1. **It's a copy from elsewhere:** a memory of the Murmur's home world, the
-   first glimpse of where it came from.
-2. **It's the Murmur's first creation:** the hive mind, after ages of copying
-   the planet's life, has made something new (open question 40).
+Players don't learn this all at once. The two "explanations" are the two
+halves of the truth:
 
-The season finale's community result **tilts** the answer one way, and the
-director decides what that means for later seasons.
+1. **A shape from far away:** the planet recognises it as foreign, a flower from another world.
+2. **The first made thing:** the Murmur didn't copy it from anything here. It made it.
+
+The season finale's community result decides **which half the story reveals
+first**. Season 5 reveals the other half ([47](47-season-5.md)).
 
 ## Season 3 carries forward
 
@@ -114,6 +118,4 @@ gives you away.
 | 3 · The Second Light | Fever | A rival hive mind falls | The Second Stone | The Clamor; did the Murmur flee it once? |
 | 4 · The Glass Flower | Bloom | Something new in the Glasswaste | The Glass Flower | Is it the Murmur's home, or its first creation? |
 
-**Where the story could go next (director's decision):** an origin season
-(where the Murmur came from), a turning-point season (the Murmur creates),
-or a truce season (Wildborn and Blightborn against the Clamor, [27](27-modes.md#the-truce-co-op-season-3)).
+**Next (decided):** a turning-point season. See [47 — Season 5: The First Made Thing](47-season-5.md).
