@@ -1,7 +1,9 @@
 # 18 — The Answering War (seasons and the war map)
 
 A proposal for the planet-wide layer the source pages hint at with their
-world-map heat map (open questions 14 and 19). **Nothing here is decided.**
+world-map heat map (open questions 14 and 19).
+**Decided (2026-10-02): the war moves by community goals (option A).** The
+rest of this chapter is a proposal.
 
 ## The idea
 
@@ -26,7 +28,7 @@ So the war has to be driven by something other than raw win rate. Three options:
 | **B. Margin, not wins** | Fronts move by *how much* a side wins by (Territorial Influence at match end) | Uses existing systems | Still close to 50/50; strong teams decide it |
 | **C. Story-driven** | Designers script each season's outcome. Players influence it through event participation, not results | Full narrative control | Players may feel their effort didn't matter |
 
-**Recommendation: A, with a light touch of C.** The community-goal race
+**Decision: A** (the director chose it), with a light touch of C. The community-goal race
 decides each front, and designers write both possible outcomes in advance so
 either result leads somewhere interesting.
 

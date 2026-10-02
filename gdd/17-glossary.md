@@ -9,7 +9,7 @@ were confirmed by the director; everything else is proposed.
 | **Ascendant** | A player's creature at Stage 3 (Level 20); generally, the evolved monster forms | [03](03-evolution-system.md) |
 | **Ashen Steppe** | Grey grassland region; the planet's skin | [11](11-atlas.md) |
 | **Base** | A team's spawn: a birth-node cluster where cores are converted | [03](03-evolution-system.md), [12](12-life-on-greyborn.md) |
-| **Base Form** | The small humanoid creature every player starts as. Native to Greyborn (**decided**); species name still open | [02](02-ascendant-roster.md) |
+| **Base Form** | The first evolution stage: the small humanoid form of a Kith at Levels 1–2 | [02](02-ascendant-roster.md) |
 | **Birth-node** | A root knot that ripens and splits to release a brood of Base Forms | [12](12-life-on-greyborn.md) |
 | **Blight** | The Murmur's crystal growth. Blightborn territory, the mirror of roots | [10](10-world.md), [12](12-life-on-greyborn.md) |
 | **Blighted** (variant) | A wildlife creature infected by the Murmur | [09](09-wildlife.md) |
@@ -41,6 +41,7 @@ were confirmed by the director; everything else is proposed.
 | **Hollow Mire** | Fog-bound swamp; the planet's gut | [11](11-atlas.md) |
 | **Hushed Answers** | The Murmur's glass copies of the First Answers | [13](13-legends.md) |
 | **Infect / Rally** | Turning a weakened creature to fight for your side (Blightborn / Wildborn) | [09](09-wildlife.md) |
+| **Kith** | The native humanoid species of Greyborn that every player starts as (**decided**) | [02](02-ascendant-roster.md), [12](12-life-on-greyborn.md) |
 | **Lantern, the** | Greyborn's amber moon | [15](15-ecology.md) |
 | **Lineage** | One of the six evolutionary paths: Titan, Brawler, Verdant, Hollow, Thornrunner, Bonespire | [02](02-ascendant-roster.md) |
 | **Memory** | A wordless lore vision found at a map site | [13](13-legends.md) |

@@ -11,7 +11,7 @@ Every value here is a proposal for level design to block out and playtest.
 | Nodes | About 30 nodes, ~110 cells in total (1–6 cells per node) |
 | Resource Hubs | 5: two near each base, one in the centre |
 | Enemy Core sites | 3 per team, in that team's half |
-| Bases | 1 per team: a **birth-node cluster** (see [12](12-life-on-greyborn.md#the-base-form-life-cycle)) |
+| Bases | 1 per team: a **birth-node cluster** (see [12](12-life-on-greyborn.md#the-kith-life-cycle)) |
 | Symmetry | **Rotationally symmetric**: both bases get the same routes, distances and resources |
 | Starwound crater zone + Heartwood grove | On the **two flanks**, each **equidistant from both bases**. Sides are assigned per match independently of base position, so neither team gets a home-field flank |
 | Memory sites | 2–3 per map |

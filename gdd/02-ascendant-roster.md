@@ -29,7 +29,9 @@ Every player spawns as the same small humanoid Base Form. Base Forms are
 **native creatures of Greyborn**. They occur naturally, like the planet's other
 wildlife. The six Ascendant lineages are the natural evolutionary paths open
 to them: a Base Form becomes a Titan or a Verdant the way a larva becomes a moth.
-*(Decided by the director, 2026-10-02. Their in-world species name is still open.)*
+The species is called the **Kith** ("a brood of Kith"). "Base Form" remains
+the name of the first evolution stage.
+*(Both decided by the director, 2026-10-02.)*
 
 - Kit: light melee combo, dodge, **Root** (channel to capture a node), **Return** (start the trip home).
 - At **Level 3** the lineage *awakens* and the player gets the lineage kit.

@@ -82,7 +82,7 @@ stronger effect. This gives every lineage a reason to visit certain parts of the
 
 | # | Creature | Tier | Temperament | Habitat | Affinity | What makes it matter |
 |---|---|---|---|---|---|---|
-| 9 | **Strays** (wild Base Forms) | I | Skittish, group of 3 | Any | All | The players' own species, living wild. **If left alone for 5 min near your territory, they evolve** into a wild Stage 2 Brute. Nature mirrors the player loop |
+| 9 | **Strays** (wild Kith) | I | Skittish, group of 3 | Any | All | The players' own species, living wild. **If left alone for 5 min near your territory, they evolve** into a wild Stage 2 Brute. Nature mirrors the player loop |
 | 10 | **Strider Crane** | I | Skittish, flock | Hollow Mire | — | Harmless. When startled, the flock takes off and **gives away** the position of whoever startled it |
 | 11 | **Rootwalker** | II | Territorial | Rootwilds | Verdant | A slow, tree-like guardian of neutral nodes. Must be defeated or calmed (Verdant only, 3 s channel) before the node can be rooted |
 | 12 | **Knucklebrute** | III | Territorial | Spirecliffs | Brawler | A gorilla-like brawler that challenges the first player it sees. Beating it in a 1v1 gives a 30 s Momentum buff |

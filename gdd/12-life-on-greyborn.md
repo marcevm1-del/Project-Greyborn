@@ -3,7 +3,7 @@
 How life works on the planet: the Base Forms' life cycle, the plants players
 use, weather, and the biology of the Murmur. All content here is a proposal.
 
-## The Base Form life cycle
+## The Kith life cycle
 
 Base Forms are **native creatures of Greyborn** that occur naturally, like the
 rest of its wildlife (decided by the director). Proposed biology:
@@ -29,18 +29,12 @@ rest of its wildlife (decided by the director). Proposed biology:
 clusters**, the place the brood grew from. Respawning is budding again. And
 "returning to base" means returning to the place you were born to grow.
 
-### Species name candidates
+### The Kith
 
-The species still needs a name (open question 20). Options in keeping with a
-wordless, primal world:
-
-| Name | Feel |
-|---|---|
-| **Greylings** | Small children of Greyborn. Ties directly to the planet's name |
-| **Kith** | Old word for kin. Short and primal: "a brood of Kith" |
-| **Budborn** | Describes how they're born. Echoes Wildborn and Blightborn |
-| **Sapkin** | Kin of the planet's blood |
-| **Mosslings** | Gentle and natural. Fits their moss-flecked look |
+The species is named the **Kith** (decided 2026-10-02): an old word for
+kin. A team is "a brood of Kith"; wild ones are Strays; those taken by the
+Murmur at birth are the "Hushed Kith". In gameplay, a Kith at Levels 1–2 is
+in its **Base Form**.
 
 ## Flora: plants players interact with
 

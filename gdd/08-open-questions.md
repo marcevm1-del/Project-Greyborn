@@ -25,7 +25,6 @@ Please confirm or override:
 | 17 | Blightborn look: black glassy crystal with a starlit cyan-violet glow. Does that fit your vision? | Proposed | [10](10-world.md#the-two-sides) |
 | 18 | How small are the "small mechanical differences" between sides? Currently only infect vs. rally and the patron decks, both mirrored | Proposed | [10](10-world.md), [09](09-wildlife.md#infection-and-rallying) |
 | 19 | Does the war have an end state (lore or seasonal)? Can the Murmur ever win, or can the planet purge it? | Open | [10](10-world.md#timeline) |
-| 20 | What are the Base Form species called on Greyborn? Candidates: Greylings, Kith, Budborn, Sapkin, Mosslings | Open | [12](12-life-on-greyborn.md) |
 | 21 | Launch maps: Ashfall Crossing, The Elder Ribs, Breathing Canopy. Are three the right number, and these the right regions? | Proposed | [11](11-atlas.md#proposed-launch-match-maps) |
 | 22 | Should weather and time of day vary per match, or be fixed per map? | Varies per match (visibility and sound only) | [12](12-life-on-greyborn.md#weather-and-time-of-day) |
 | 23 | The Sleeper (Rimewastes) and the Murmur's possible loneliness are left as mysteries. Do you want either developed into a story thread? The Sleeper is now proposed as a possible **seventh answer** (future lineage) | Unresolved on purpose | [13](13-legends.md#the-sleeper-a-seventh-answer), [12](12-life-on-greyborn.md#how-the-murmur-thinks) |
@@ -35,7 +34,6 @@ Please confirm or override:
 | 27 | The **second light on the Fall-line**: is something else coming from the stars? A future story hook or expansion? | Unresolved on purpose | [15](15-ecology.md#the-sky) |
 | 28 | Launch map mechanics: the Grey Migration (6 min), bone nests, and the breathing canopy (90 s). Do these fit? Verdant and Hollow are favoured on only one map | Proposed | [16](16-launch-maps.md) |
 | 29 | Crater and grove zones sit on the neutral flanks, equidistant from both bases, so neither team has a home-field flank. This replaces the earlier "home and hostile zone" idea | Proposed | [16](16-launch-maps.md#rules-every-map-follows) |
-| 30 | **War Map:** with balanced, per-match sides, raw win counts would barely move the war. Option A (community goals for both sides), B (win margin) or C (story-driven)? | A, with a light touch of C | [18](18-the-answering-war.md#the-design-problem-needs-a-decision) |
 | 31 | Season finales: the Hush Wakes, the Sleeper Stirs, the Second Light. Is this the right order? Are cooperative/special-rules events in scope? | Proposed | [18](18-the-answering-war.md#season-finales) |
 
 ## Decided
@@ -48,6 +46,8 @@ Please confirm or override:
 | 2026-10-02 | **The war:** a meteorite carrying a **hive-mind disease** struck Greyborn. One team is **nature's response**, the other the **infected**. |
 | 2026-10-02 | **Mirror rosters** (infected forms of the same six lineages). Sides **assigned per match**. Blight replaces roots, wildlife can be infected, crater zones on maps, nature fights back. |
 | 2026-10-02 | **Names approved:** Starwound (meteorite), the Murmur (hive mind), Wildborn / Blightborn (sides), Heartwood (grove). |
+| 2026-10-02 | **The species is the Kith.** "Base Form" stays as the name of the first stage. |
+| 2026-10-02 | **The War Map moves by community goals** (option A): both sides race to complete seasonal goals per front. |
 | 2026-10-02 | **Neutral wildlife is in.** Body plans: four-legged, two-legged, six-legged, eight-legged and insects; 20–50 types, with contrasting creatures. |
 
 ## Design risks to watch
@@ -77,3 +77,4 @@ Please confirm or override:
 | gdd-0.8 | 2026-10-02 | Wildlife to 42 (Cairnshell for Titan, Clashhorn Beetles for Brawler), 8 regional variants, a full Blighted variant list. New chapter **15 — Ecology, Sky & Sea**: food web, live hunting and herd reactions, overhunting stress, migrations, the Grey Eye, the Lantern moon, the Fall-line, the Stillsea and its creatures. |
 | gdd-0.9 | 2026-10-02 | New chapters **16 — Launch Maps** (map rules; Ashfall Crossing, The Elder Ribs and Breathing Canopy in detail) and **17 — Glossary**. |
 | gdd-0.10 | 2026-10-02 | New chapters **18 — The Answering War** (War Map and seasons, with the win-rate problem and three options) and **19 — Sound & Music** (the two voices of the world, readable gameplay audio, region soundscapes, adaptive music). Species name candidates added to 12. |
+| gdd-0.11 | 2026-10-02 | Species named **Kith**; War Map decided as **community goals**. |
