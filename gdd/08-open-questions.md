@@ -53,6 +53,7 @@ Please confirm or override:
 | 47 | The planet's year (Bloom, Ash, Rime, Fever), with each live season set in one Turn. Season 4 is now proposed as The Glass Flower | Proposed | [29](29-the-planets-year.md) |
 | 48 | Season 4's Glass Flower keeps question 40 open: a memory of the Murmur's home, or its first creation. The community result tilts it; the director decides | Open by design | [30](30-season-4.md#the-central-mystery) |
 | 49 | After Season 4: an origin season, a turning-point season, or a truce season? | Director's call | [30](30-season-4.md#story-roadmap-seasons-14) |
+| 50 | Evolution branches for all 7 lineages (42 Ultimate Forms). Which feel right for each lineage? Step Between and Shatterfist flagged as possibly too strong | Proposed | [31](31-evolution-branches.md) |
 
 ## Decided
 
@@ -106,3 +107,4 @@ Please confirm or override:
 | gdd-0.17 | 2026-10-02 | New chapter **27 — Modes**. Consistency pass: Stillheart noted in the roster, glossary and roster-size question; wildlife habitats linked to the atlas. |
 | gdd-0.18 | 2026-10-02 | New chapters **28 — Tales & Trailer** (three tone stories, a wordless announcement-trailer storyboard) and **29 — The Planet's Year** (four Turns, how they map to live seasons and match atmosphere, the planet's day). |
 | gdd-0.19 | 2026-10-02 | New chapter **30 — Season 4: The Glass Flower** (Bloom Turn, The Nerve map, four new creatures, front goals, finale, story roadmap for Seasons 1–4). Map 7 noted in 16; new creatures noted in 09. |
+| gdd-0.20 | 2026-10-02 | New chapter **31 — Evolution Branches**: Aggression and Tactical Control branches for all 7 lineages, L10 and L15 upgrades, and 3 Ultimate Forms per branch (fights, objectives, unusual). |

@@ -93,6 +93,7 @@ Control**, ending in **6 leaf abilities**. Proposed structure:
   faster. Abilities lean toward zones, CC and objectives.
 - Example (Titan): Aggression → *Colossus Step* / *Avalanche* / *Shatterfist*;
   Tactical → *Fortress* / *Fault Line* / *Mountain's Patience*.
+- **Every lineage's branches and Ultimate Forms:** see [31 — Evolution Branches](31-evolution-branches.md).
 
 ## What evolution amplifies
 
