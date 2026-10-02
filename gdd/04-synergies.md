@@ -167,3 +167,109 @@ Every Synergy has a clear answer, so pairs are powerful but never unbeatable:
 | Void Garden | Needs the Verdant's roots first: kill or displace the Verdant |
 | Co-Stalk | Needs line of sight for the lance: break it after being Marked |
 | Smash & Roll | Needs the Brawler within 1.5 s: spread out, or bait the Titan into slamming alone |
+
+## How Synergy levels are earned
+
+| Action (with your pair partner within 15 m) | Synergy XP |
+|---|---|
+| A kill or assist together | 10 |
+| Capturing a node together | 5 |
+| Converting cores at base together | 5 |
+| Landing your Synergy ability | 15 |
+| Surviving a fight together (both alive at its end) | 5 |
+
+Synergy level *n → n+1* costs 30 × *n* XP. Level 10 (S3) needs 1,350 XP in
+total. A pair that stays together reaches it around minute 18.
+
+## Each Synergy, in numbers (proposal)
+
+| Synergy | Unlock | Trigger window | Effect | Cooldown (S1 / S2 / S3) |
+|---|---|---|---|---|
+| **Void Garden** | Level 12 (both) | Rift on rooted ground, or root inside a rift | 8 m field, 6 s; −50% enemy Control; +50% capture speed for allies | 15 / 12 / 9 s |
+| **Co-Stalk** | Level 15 (both) | Lance within 4 s of Mark | Lance homes to weak point; breaks it instantly; target revealed 4 s | 15 / 12 / 9 s |
+| **Smash & Roll** | Level 18 (both) | Roll within 1.5 s of slam | Target launched 1 s; +40% damage from both; Momentum gained | 15 / 12 / 9 s |
+
+## Resonance perks, in full
+
+| Pair | Synergy level | Perk |
+|---|---|---|
+| Verdant + Hollow | 3 | SAP extraction +30% on Verdant-rooted nodes while the Hollow lives |
+| Verdant + Hollow | 5 | Inside the field, both partners' cooldowns tick 25% faster |
+| Verdant + Hollow | 6 | Team passive territory spread +20% |
+| Thornrunner + Bonespire | 3 | Marked targets show their carried cores |
+| Thornrunner + Bonespire | 5 | Breaking a weak point refunds 30% of Mark Prey's cooldown |
+| Thornrunner + Bonespire | 10 | Co-Stalk kills drop +25% cores |
+| Titan + Brawler | 3 | Momentum converts to cores on a kill (1 core per 2 Momentum) |
+| Titan + Brawler | 10 | Smash & Roll hits make the target drop 10% of carried cores and slow enemy conversion by 1 s for 30 s |
+
+## Weak points, lineage by lineage
+
+| Lineage | Weak point | Exposed from | Easier to hit when… |
+|---|---|---|---|
+| Titan | Crystal spine (back) | Behind | It's slamming |
+| Brawler | Chest plate | Front | Just after Roll Commit |
+| Verdant | Bloom pod (shoulder) | Side | It's channelling a root |
+| Hollow | Core cavity (torso) | Front | It's casting Null Pulse |
+| Thornrunner | Abdomen sac | Below or side | It's frozen before a pounce |
+| Bonespire | Marrow spire (back) | Behind | It's firing a lance |
+| Stillheart | Heart (chest) | Front, always visible | Always |
+
+## Synergies across the modes
+
+| Mode | Synergies |
+|---|---|
+| The Answering | Standard rules; phase restrictions apply |
+| Brood Skirmish | EXP ×2 means Synergies unlock early; no phase restrictions |
+| Apex Hunt | Standard, without phase restrictions |
+| The Truce | Pairs can be split across sides; split pairs also gain a shared shield |
+| Season finales | Varies by finale |
+| The Den | Every Synergy can be drilled with an AI partner |
+
+## How Synergies look on each side
+
+| Synergy | Wildborn | Blightborn | Truce (mixed) |
+|---|---|---|---|
+| Void Garden | Moss and soft darkness | Crystal lattice and turning shards | Amber moss and cyan shards woven together |
+| Co-Stalk | An amber mark; a bone lance | A cyan mark; a glass lance | Both colours in the mark and trail |
+| Smash & Roll | Earth cracking, bark flying | Glass cracking, shards flying | Roots and crystal bursting from the same crater |
+
+## Designing future Synergies
+
+When a new pair is designed, its Synergy must:
+
+1. **Need both partners** within a short, readable window.
+2. **Express the pair's identity** (two parts of the planet's body working as one).
+3. **Have a clear failure state** (like Smash & Roll's cooldown penalty).
+4. **Have a clear counter.**
+5. **Unlock at a Level that fits the match's rhythm** (between the existing unlocks at 12, 15 and 18, or later).
+6. **Look and sound unmistakable** on both sides.
+
+## Synergies FAQ
+
+**Can a pair use its Synergy if one partner is dead?** No. Both must be alive and within range.
+
+**Do Synergy levels carry over between matches?** No. They're earned fresh every match; long-term pair progress is Pair Bonds ([26](26-collection.md)).
+
+**What if my team has no true pair?** Cross-resonance ([32](32-cross-resonance.md)) and Stillheart's Attunement keep every team connected.
+
+**Why are Synergies locked in Phase 4 unless they're S3?** To reward pairs who played together all match (source pages' access matrix).
+
+## Synergy balance targets
+
+| Measure | Target |
+|---|---|
+| Share of matches where at least one Synergy fires | 90%+ |
+| Win-rate gain for a team with an S3 pair in Phase 4 | +4% to +7% |
+| Share of Smash & Roll attempts that fail (Brawler too late) | 20–35%: timing should matter |
+| Share of Co-Stalk lances that land | 50–65% |
+| Average Void Garden captures per match | 2–4 nodes |
+
+## In one sentence
+
+**Synergies are the moments two creatures become one answer: the planet's
+interdependency, made into the game's most powerful plays.**
+
+## Closing note
+
+The source pages called it interdependency. In play, it's two friends calling
+"Slam up" and "Marked" and "Garden" to each other, and the moment it all lands.

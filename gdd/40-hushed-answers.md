@@ -277,3 +277,5 @@ guardians, not its soldiers. They only move when the story calls them.
 The Hushed Answers are the most spectacular encounters in Greyborn, but their
 real job is emotional: to remind players that the Murmur studied the planet's
 heroes with something like admiration, and built them again in glass.
+
+Six copies, six tests, one ring.

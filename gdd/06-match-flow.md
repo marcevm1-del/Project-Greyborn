@@ -161,3 +161,118 @@ The ending should feel like the world itself reacting, not just a scoreboard.
 | First Synergy | 12:00 – 14:00 | Pairs become the focus |
 | First Level 20 | 16:00 – 18:00 | Ultimate Forms arrive for the Hunt |
 | Average match end | 20:00 – 23:00 | Inside the 18–25 minute target |
+
+## The draft, in detail
+
+| Step | Time | What happens |
+|---|---|---|
+| **Sides revealed** | 5 s | Each team learns whether it's Wildborn or Blightborn this match |
+| **Bans** (ranked) | 20 s | Each team bans one lineage |
+| **Picks** | 25 s per pick | Alternating 1-2-2-2-1; pairs queued together are kept in compatible slots |
+| **Branch preview** | 10 s | Players can preview their likely branch plan (optional, not binding) |
+| **Loading** | — | A short view of the map in its current Turn and weather |
+
+**Hidden picks:** each team sees its own picks, but the enemy sees only
+four Base Form silhouettes until the lineages awaken at Level 3 in the match.
+
+## Respawn, in detail
+
+| Level at death | Respawn time |
+|---|---|
+| 1–5 | 6–10 s |
+| 6–10 | 11–15 s |
+| 11–15 | 16–20 s |
+| 16–20 | 21–25 s |
+| Phase 4 | +5 s |
+
+Respawning players bud from a fresh knot at the Cradle or Clutch, with a short
+animation. Carried cores were dropped at death; EXP and levels are kept.
+
+## Win conditions, in detail
+
+| Condition | Detail |
+|---|---|
+| **Base Heart** | The oldest knot at the base's centre. Attackable in Phase 4, or earlier if all three of that team's Enemy Cores are destroyed at once. Health high enough to need a full team push |
+| **Time limit** | At 25:00, the team with higher Territorial Influence wins. If equal to within 1%, a 2-minute **overtime** begins: the first team to capture a node wins |
+| **Mercy rule** | 80% TI for 60 continuous seconds |
+| **Surrender** | Available from 12:00, needs all four players to agree (three in casual if one disconnected) |
+
+## Disconnects
+
+| Case | Rule |
+|---|---|
+| Casual | An AI takes over the disconnected player's lineage at their level |
+| Ranked | No AI; the team plays 3v4; reduced rank loss for the remaining players |
+| Reconnecting | The player returns at their level, with no carried cores |
+
+## The match flow on different maps
+
+| Map | How the flow changes |
+|---|---|
+| Ashfall Crossing | The Migration every 6 minutes splits the match into rhythms |
+| The Elder Ribs | Phase 3 sieges around the Ribs dominate |
+| Breathing Canopy | The 90 s canopy cycle shapes every fight's timing |
+| Fevermouth | Eruptions every 4 minutes reset territory along their paths |
+| The Sleeper | Phase 4 pulses crack the lake every 60 s |
+| Shard Reef | Tides every 3 minutes open and close the centre |
+| The Nerve | Nerve pulses every 20 s shape every movement |
+
+## Match length targets, by map
+
+| Map | Target length |
+|---|---|
+| Ashfall Crossing | 20–23 min |
+| The Elder Ribs | 22–25 min (sieges take time) |
+| Breathing Canopy | 18–21 min (many small nodes change hands fast) |
+| Post-launch maps | 18–25 min |
+
+## What the spectator sees through the match
+
+| Phase | Spectator focus |
+|---|---|
+| 1 | Spread of territory; first awakenings |
+| 2 | Carriers and their routes home; the first Hub fights |
+| 3 | Sieges, events, Stage 2 creatures |
+| 4 | Ascendants, Synergies, the push for the Base Heart |
+
+The broadcast overlay ([27](27-modes.md#spectating-and-replays)) tracks carried
+cores and Synergy levels throughout, because those are the match's real tension.
+
+## Overtime, described
+
+If Territorial Influence is tied (within 1%) at 25:00, the sky darkens and
+the music drops to a single heartbeat. A **2-minute overtime** begins. Every
+node on the map becomes Vulnerable, and the first team to complete a capture
+wins. It's a sudden, frantic scramble, and rare by design.
+
+## Pacing problems to watch
+
+| Problem | Sign | Fix |
+|---|---|---|
+| Matches too long | Average over 25 min; many go to time | Lower level costs; faster conversions |
+| Matches too short | Many end before Phase 4 | Raise Base Heart Health; delay base exposure |
+| Snowballing | One team ahead at 10 min wins 80%+ | Stronger patron events; higher carrier bounties |
+| Passive early game | Few fights before minute 5 | More valuable early wildlife; closer early Hubs |
+| Phase 3 feels empty | Few fights or objectives in 10–16 min | Stronger Enemy Core rewards; more global events |
+
+## A match, from the planet's point of view
+
+To the planet, a match is a moment of pain and effort in one small corner of
+its body. A brood it called wakes and grows. A brood the Murmur took grows
+too, in glass. They fight over its nerves (the nodes) and its blood (the
+Hubs). When a Base Heart falls, the planet either feels a brood's
+birth-place die, or watches its own roots reclaim a place the Murmur held. Then
+the corner goes quiet, and somewhere else, the war goes on.
+
+## Closing note
+
+Every match should feel like a whole life: born small, grown huge, and ending
+in triumph or a dignified fall. The flow in this chapter exists to make sure
+every match tells that story.
+
+## Match flow in one line per phase
+
+1. **Stable Flow:** born small, spread out, learn the enemy.
+2. **Pre-Aggro:** fight for Hubs, carry, return, grow.
+3. **Resource Stage:** siege, upgrade, let the world erupt.
+4. **Hunt:** giants, Synergies, the Base Heart.
