@@ -86,6 +86,12 @@ The GDD says *what* and *why*; the spec says *exactly how much*.
 | [06 — Build Order](spec/06-build-order.md) | Every system, its dependencies, and the milestone order from netcode to launch |
 | [greyborn-tuning.xlsx](spec/greyborn-tuning.xlsx) | The live tuning spreadsheet: every number above, with formulas, so designers can rebalance without engineers |
 
+## Match simulator
+
+`sim/` plays thousands of bot matches with the tuning spreadsheet's numbers
+and scores them against the spec's targets. See [sim/README.md](sim/README.md)
+to run it, and [sim/findings.md](sim/findings.md) for what the first runs found.
+
 ## Superseded material
 
 `docs/` and `prototype/` hold an earlier **placeholder concept** (a
