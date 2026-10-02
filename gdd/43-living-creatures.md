@@ -257,3 +257,19 @@ Because body language carries information, it needs fallbacks:
 
 The rule from sound design applies here too: **every cue that carries
 information must have a second way to be read.**
+
+## A closing principle
+
+Greyborn's creatures should feel like animals first and game pieces second.
+If a player ever stops in a match just to watch a Verdant graze, a Thornrunner
+freeze, or a Titan settle into the ground like a stone, the living-creature
+design has done its job.
+
+## Behaviour glossary
+
+**Size-fear:** a smaller creature crouching near a much larger enemy.
+**Sync:** Blightborn movements gradually aligning when idle together.
+**Freeze-strike:** the Thornrunner's total stillness before a pounce.
+**Settling:** the Titan's rest pose that blends into rock.
+**Brood turn:** teammates briefly looking toward a fallen brood-mate.
+**Hum:** the Season 5 Blightborn idle sound, silenced in Season 7.

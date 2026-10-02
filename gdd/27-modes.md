@@ -140,3 +140,139 @@ Between waves, players have 30 seconds to repair braided ground (from Season 6, 
    pairs; Apex Hunt teaches wildlife; the Truce teaches weak points and territory under pressure.
 2. **No mode breaks the mirror.** Co-op modes mix sides; PvP modes keep them equal.
 3. **Every mode feeds the War Map**, so no player's time is wasted for the season's story.
+
+---
+
+## Ranked in depth
+
+- **Placement:** 10 placement matches set a starting rank.
+- **Ranks:** Seedling, Sapling, Rooted, Old Growth, First Answer. Each of the first four has three tiers.
+- **Side balance:** the matchmaker tracks how often each player has played
+  each side and assigns sides so that, over any 20 matches, the split is close to 10/10.
+- **Pair protection:** players who queue as a pair are drafted into compatible
+  lineage slots where possible, so pairs aren't broken by the draft.
+- **Draft with bans:** each team bans one lineage before picks (Stillheart included from Season 3).
+- **Decay:** ranks above Rooted slowly decay after two weeks of inactivity.
+- **Season reset:** a soft reset at the start of each season, so everyone
+  climbs again with the new season's story.
+- **Rewards:** a rank-themed Growth at the end of each season (e.g. a First
+  Answer Growth that echoes the First Answers' look).
+
+## Brood Skirmish in depth
+
+- **Map pool:** the Skull Basin at launch, then small 2v2 versions of other
+  regions (a Heron Reach map, a Weaver's Hollow map, [41](41-landmarks.md)).
+- **Rules:** 10 minutes, first to 70% Territorial Influence, double EXP,
+  no global events (too few players for Tension to build well), wildlife on.
+- **Queue:** pairs only, or solo players matched into pairs. A pair that
+  queues together gets Pair Bond progress at double rate.
+- **Why no events:** with only four players, a patron event would decide too
+  many matches. Skirmish is about the pair, not the world.
+
+## Apex Hunt in depth
+
+- **Map:** a large open map with several apex lairs (an Ash Sea version is ideal).
+- **Flow:** every three minutes, a new apex wakes in a random lair. Teams race
+  to it, fight each other on the way and at the kill, and the last hit scores.
+- **Scoring:** see the table above; first to 10 points wins.
+- **Why it exists:** the wildlife is one of Greyborn's best features, and
+  this mode puts the biggest creatures front and centre.
+
+## The Truce in depth
+
+- **Team:** four players, two Wildborn and two Blightborn, chosen by the matchmaker.
+- **Map pool:** coastal and Clamor-struck maps (Shard Reef, burning).
+- **Progression:** a separate Truce rank (Spark, Ember, Flame, Hearth) that
+  rewards co-op cosmetics: braided Growths, Truce Bond marks.
+- **Difficulty:** three levels; the hardest adds a second Roar.
+- **In Season 7 and after:** the mode is framed as a **Memory of the Truce**
+  ([51](51-season-7.md)), but it stays playable with all its rewards.
+
+## The Den training list
+
+| Drill | What it teaches |
+|---|---|
+| **Feeding** | Picking up cores; the carry signature |
+| **Rooting** | Capturing nodes; reading node states |
+| **Weak points** | Hitting weak points on dummies of every lineage |
+| **The Return** | Converting; aggression bonus; field conversion |
+| **Smash & Roll** | The 1.5 s timing window with an AI Titan or Brawler |
+| **Co-Stalk** | Marking and lancing within 4 s |
+| **Void Garden** | Placing a rift on rooted ground |
+| **Attunement** | Stillheart bonding with each lineage |
+| **Reading the world** | Wildlife signals and sound cues |
+
+## Spectating and replays
+
+- **Spectator mode** for custom and tournament matches, with three camera
+  options: free camera, follow a player, and a "map view" showing territory
+  in amber and cyan with every creature's Stage.
+- **Replays** of a player's last 20 matches, viewable in the Den.
+- **Broadcast tools:** an overlay showing each team's pairs, Synergy levels and
+  carried cores, so viewers can follow the risk-and-return story of each player.
+
+## Bots and practice
+
+- **AI broods** at three difficulties for practice and onboarding.
+- **AI fill:** in casual modes, a disconnected player is replaced by an AI that
+  plays their lineage, so a match is never ruined for the others.
+- **AI never fills ranked** matches; a disconnect in ranked is handled with
+  reduced rank loss for the remaining players instead.
+
+## Mode-specific rewards
+
+| Mode | Unique rewards |
+|---|---|
+| **Ranked** | Rank Growths; a seasonal rank brood mark |
+| **Brood Skirmish** | Double Pair Bond progress; Skirmish-only paired Markings |
+| **Apex Hunt** | Apex trophies (a small bone or crystal from each apex, shown in the Den) |
+| **The Truce** | Braided Growths; Truce Bond marks; the Truce rank cosmetics |
+| **Season finales** | "I was there" Memories and brood marks |
+| **The Den** | Completion marks for every drill |
+
+## Accessibility across modes
+
+- **Every mode supports** the visual sound indicators, colour-blind palettes
+  and the "always show enemy health" option.
+- **Apex Hunt and the Truce** have a "relaxed" difficulty for players who want
+  the world without the pressure of ranked play.
+- **The Den** lets players slow drills down to half speed while learning timing windows.
+
+## Future mode ideas
+
+Ideas the world already supports, for later seasons (all proposals, none committed):
+
+| Idea | Description | Built on |
+|---|---|---|
+| **The Hushed Watch** | Co-op: a four-player run against all six Hushed Answers in a row, on the Starwound's floor | [40](40-hushed-answers.md), [35](35-heart-and-seed.md) |
+| **Descent into the Seed** | Co-op: a journey inward through the Starwound's five layers | [35](35-heart-and-seed.md#the-starwound-layers-inward) |
+| **The Pilgrimage** | Co-op, gentle: escorting a young Heartwood Elk through the Heartwood's layers, with no combat until the end | [35](35-heart-and-seed.md#the-heartwood-layers-inward) |
+| **Old One Crossing** | Casual 4v4 where an Old One walks across the map, blessing ground for both sides | [46](46-wild-ascendants.md) |
+| **Migration Run** | A race mode: broods run with the Grey Migration and collect cores along the way | [15](15-ecology.md) |
+| **Wild Brood** | Every player starts as a Stray in the wild, and the first to evolve calls the others | [46](46-wild-ascendants.md) |
+
+Each idea is a natural extension of the world, which is the test every
+future mode should pass.
+
+## How modes support the story
+
+Every mode is set in the same world, so every mode carries the season's story:
+
+- **The sky** in every mode shows the current season (the red streak from Season 3, red nights in Season 6).
+- **Creature behaviour** follows the season (the hum in Season 5, silence in Season 7).
+- **Front points** are earned in every mode except the Den.
+- **Memories** can be found on any map in any mode, except where a mode's
+  map is a special finale version.
+
+A player who only ever plays Apex Hunt or the Truce should still experience
+the full story of the season.
+
+## Mode principles, restated
+
+1. **The core 4v4 is the heart of the game.** Every other mode exists to teach
+   it, celebrate the world around it, or give players a different pace.
+2. **The mirror is never broken in PvP.** Co-op modes can mix sides because
+   there's no opposing team to be unfair to.
+3. **No mode wastes a player's time.** Every mode feeds Mastery, Pair Bonds or the War Map.
+4. **Modes should feel like places in the world,** not playlists: the Truce is
+   a memory of an alliance, Apex Hunt is a hunting season, the Den is home.

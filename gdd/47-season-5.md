@@ -126,3 +126,157 @@ Season 5 doesn't answer this. It makes it the central question for everything
 after: a possible future truce, a possible new war, or something neither the
 planet nor the Murmur has imagined yet. And the Clamor, drawn by the sound of
 creation, is coming in greater force.
+
+---
+
+## How Season 5 feels
+
+Season 5 should feel like the ground shifting under a war everyone thought they understood.
+
+It opens quietly. The Ash Turn returns, leaves fall grey, and in the first
+match of the season, Blightborn players notice something under the usual
+whispers: a hum. A simple tune, four notes rising and falling, hummed by
+every Hushed Kith in the brood. It isn't a copy of the planet's music. It
+isn't like anything players have heard from the Murmur before.
+
+Then Seedbeds appear, and both sides start **growing** things on the
+battlefield. For the first time, Blightborn players grow something that isn't
+a glass copy of the planet's life: a Glass Garden, strange and new. Wildborn
+players answer with Bloom Totems. The war becomes, for a season, a
+competition of creation as much as conquest.
+
+By week 3, the truth of the Glass Flower is out, and players understand: the
+Murmur made something, and it made it from a memory of home. The enemy
+they've fought for a year and a half isn't only an infection. It's a
+survivor, trying to make a home.
+
+## The hum, described
+
+The Hushed Kith's hum is the season's signature sound. Four notes, slow,
+rising and then falling back, in the Murmur's glass tones but with a warmth
+the whispers never had. It starts quietly in week 1 and grows through the
+season. By week 8, an idle Blightborn brood hums it together, in harmony.
+
+**Design rule:** the hum is cosmetic only. It doesn't reveal positions any
+more than normal sound signatures. But it changes how the Blightborn side
+**feels** to play, and how Wildborn players feel when they hear it across the map.
+
+## Seedbeds and creations, described
+
+A **Seedbed** is a patch of rich, dark soil in a ring of standing stones,
+glowing faintly at the centre. Holding it for 60 seconds starts a creation.
+
+- **A Bloom Totem** (Wildborn) bursts out of the soil as a young tree that
+  grows to full size in five seconds: twisted trunk, wide canopy, flowers
+  opening along every branch. Lumen Bees arrive within moments.
+- **A Glass Garden** (Blightborn) rises as a cluster of crystal plants unlike
+  anything else on Greyborn: spiral stems, folding petals, a pale blue glow
+  like the Glass Flower's. It rings softly in the wind.
+
+When a creation is destroyed, it doesn't simply vanish: the tree splinters and
+sinks into the soil, or the garden shatters into pale dust, and the Seedbed is
+bare again, ready for the next team.
+
+## Memories of Season 5
+
+| Memory | Vision |
+|---|---|
+| **The First Hum** | A Hushed Kith alone at dusk, humming four notes, then looking around as if surprised by its own voice |
+| **The Whole Truth** | The Glass Flower, overlaid with the Quiet World's night flowers: the same shape |
+| **The Planet Answers** | A root reaching up from the soil and growing, for the first time in an age, into something new: a Firstlight Fawn stepping out |
+| **The Roar Hears** | The red streak in the sky brightening as the hum grows |
+| **The Garden Stands / The Wound Is Closed** | The finale result |
+
+## Season 5 rewards
+
+| Reward | Source |
+|---|---|
+| **Seedbed Growths** (Bloom-totem bark for Wildborn, Glass Garden crystals for Blightborn) | Reward track |
+| **The Hum** call voice (Blightborn only, as the story demands; Wildborn get the **Answer** call, a rising wooden note) | Reward track |
+| **Fawn companion** in the Den (Firstlight or Lattice) | Protecting fawns in 30 matches |
+| **"I was there: The Garden or the Wound"** Memory | Finale participation |
+
+## The finale, walked through
+
+The Ash Sea, special version. The first Glass Garden glows pale blue at the
+centre of the map, surrounded by eight Seedbeds.
+
+**Phase 1.** Both teams race to their nearest Seedbeds and grow creations.
+The dunes are still; the map is open.
+
+**Phase 2.** The wind rises and the dunes shift, exposing some Seedbeds and
+hiding others. Teams fight to destroy each other's creations and regrow their own.
+
+**Midway.** A red streak. A Clamor Landfall strikes a flank, and Scald begins
+eating toward the nearest creations, Totems and Gardens alike. Both teams
+must decide: defend, attack each other, or fight the fire.
+
+**Phase 3.** The Scald is contained or not. The remaining Seedbeds are fought
+over in a final scramble.
+
+**End.** The team with more standing creations wins. Sides swap; the match is played again.
+
+## Writing guidance
+
+1. **The Murmur's creation is beautiful**, not threatening. Players on both
+   sides should find the Glass Gardens strange and lovely.
+2. **The planet's answer is curious**, not hostile. Its new life is a reply, not a weapon.
+3. **The Clamor is the real danger.** Every beat of wonder is shadowed by the red streak growing brighter.
+4. **Nothing is resolved.** The season ends with a question, not an answer.
+
+## The side-born creatures, described
+
+**Prismwings.** Moths that never existed before the Murmur made them. Their
+wings are thin glass that splits light into faint rainbows, the first colours
+other than cyan and violet the Murmur has ever produced. They flutter in slow
+spirals over Blight territory, and their light picks out any Wildborn nearby.
+
+**Dawnwings.** The planet's answer, made in days. Moths of soft amber light
+with wings like autumn leaves, drifting over rooted ground and picking out any
+Blightborn nearby. When a Prismwing and a Dawnwing pass close, they circle
+each other briefly before drifting apart. No one designed that; it just happens.
+
+**Lattice Fawn.** A delicate glass deer with legs like icicles and a pale blue
+glow in its chest. It has no copy anywhere on Greyborn; its shape comes from
+somewhere else. It follows Blightborn at a distance and, when it rests, a tiny
+Glass Garden grows around it.
+
+**Firstlight Fawn.** A deer of living wood with flowers for spots and a
+soft amber glow. It follows Wildborn, and Bloom shoots spring up where it
+rests. Players notice that the two fawns, if they meet, stop and look at each
+other for a long moment.
+
+**Design note:** both pairs are exact mirrors in power. The small moments of
+the two kinds noticing each other are cosmetic, and they foreshadow the
+Truce of Season 6.
+
+## Glass Gardens on the War Map
+
+From week 5, a new kind of region appears on the War Map: **Glass Gardens**.
+They are neither healthy (amber) nor Glasswaste (cyan): they're shown in the
+pale blue of the Glass Flower. They can't be captured by either side's front
+goals during Season 5. They simply grow, a little each week, and the community
+watches them spread.
+
+The finale decides what happens to the first one: it stands, or the planet
+grows over it. Either way, smaller Glass Gardens remain on the map as a
+record of the season.
+
+## What Season 5 sets up
+
+- **The Roaring** (Season 6, [49](49-season-6.md)): creation is loud, and the Clamor hears it.
+- **The Truce:** the fawns and moths noticing each other, and the shared
+  threat of the finale's Landfall, prepare players for the two sides fighting together.
+- **The tragedy** (Season 7, [51](51-season-7.md)): the Murmur hoped, and that
+  hope is what makes its betrayal so painful when the braids burn.
+
+## Season 5 at a glance
+
+| | |
+|---|---|
+| Mood | The ground shifting: wonder turning into unease |
+| Central image | A Glass Garden and a Bloom Totem growing side by side on a Seedbed |
+| New mechanic | Seedbeds: both sides create |
+| New creatures | Prismwings, Dawnwings, Lattice Fawn, Firstlight Fawn |
+| Signature sound | The hum |
+| Leaves behind | The question: does the Murmur still need to take the planet? |

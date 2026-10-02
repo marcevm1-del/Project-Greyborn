@@ -270,3 +270,21 @@ At the end of week 10, the result is revealed in the same way to every player:
    the Flower and flinching, or pulls back as the whispers around it fall silent.
 4. The new Memory unlocks for everyone, and the Glass-and-flower set is granted.
 5. The War Map's history layer ([18](18-the-answering-war.md#the-map-remembers)) records the result forever.
+
+## Writing note
+
+Season 4 is the gentlest season, and it should stay that way. Avoid making the
+Flower dangerous, avoid villainising either side's reaction to it, and let
+the brightness of Bloom carry the mood. Its quiet is what makes the turning
+point that follows land with such force.
+
+## Season 4 at a glance
+
+| | |
+|---|---|
+| Mood | Wonder |
+| Central image | A pale blue flower alone in a field of black glass |
+| New map | The Nerve |
+| New creatures | Lumen Bees, Seedcaller, Mossback Calves, Emberbark |
+| Finale | Listening, not fighting |
+| Leaves behind | A question: what else can the Murmur make? |
