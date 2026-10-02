@@ -102,3 +102,63 @@ Shard Reef, Shattered Coast) and in Memories.
 **Blight in the sea:** near the Shattered Coast, the Stillsea glitters with
 cyan-violet. The Murmur spreads slowly in water, so coastal maps are fronts
 where the infection is held back by the sea itself.
+
+---
+
+## The food web, in one moment
+
+Mid-match on Ashfall Crossing. A Mossback herd grazes on the southern plain.
+An Ashfang pack has been shadowing it for a minute, low in the grass. A
+Wildborn Thornrunner, heading for the central Hub, passes too close; the
+nearest Mossbacks startle, and the whole herd begins to move north at a run.
+The Ashfangs break cover and chase.
+
+The herd thunders across the central plain, right through a fight between
+two Bonespires. Both scatter. A Spurlark flock takes off in alarm, and across
+the map, a Blightborn Verdant sees the birds rise and knows something is
+happening in the south. Behind the stampede, one Mossback calf falls to the
+Ashfangs. Within twenty seconds, a Marrowhound has arrived to scavenge, and
+an Ash Vulture is circling.
+
+None of this was scripted. It's the food web doing what it does, and every
+player on the map read part of it.
+
+## Ecology tuning
+
+| Measure | Target per map |
+|---|---|
+| Wildlife creatures alive at once | 25–40 |
+| Predator packs | 2–3 |
+| Herds | 2–4 |
+| Apex creatures | 0–1 (Phase 3+) |
+| Share of creature movement driven by the food web (not by players) | About 40% |
+| Times per match a stampede crosses a fight | 1–3 |
+
+**Performance note:** creatures far from any player run on a simplified
+simulation: herds move as a single group, and predator hunts resolve
+abstractly. Full behaviour switches on within about 60 m of a player.
+
+## Sky phenomena in depth
+
+| Phenomenon | When | Description |
+|---|---|---|
+| **The Fall-line at night** | Every night | A thin, glowing cyan-violet line across the sky, brightest directly above the Starwound |
+| **Starfall** | Rare nights; Starfall events | Small shards streak along the Fall-line and burn out, or land as Starshard |
+| **The Lantern rising** | Every night | The amber moon rises in the south, over the Heartwood, as if the planet lights its own lamp |
+| **The red streak** | Season 3 onward | A rust-red line beside the Fall-line: the Clamor's road |
+| **Faint old streaks** | Clear nights | Barely visible lines in other directions: other falls, never explained ([48](48-beyond-the-sky.md#the-sky-as-a-map)) |
+| **Ash halo** | Ash Turn | A soft ring around the Grey Eye from ash in the air |
+| **Rime glow** | Rime Turn | Pale light on the northern horizon, from frost catching the Fall-line's glow |
+
+## The Stillsea in depth
+
+The Stillsea is called still because it nearly is. Waves are rare and small,
+and on calm days the sea is a grey mirror stretching to the horizon. The
+Stillsong Whales are said to keep it that way: their song is low enough to
+be felt through the ground on the Shattered Coast.
+
+Near the meteor's landing site, the sea changes. The water glitters cyan, and
+shards of Blight drift in the shallows like ice. The Murmur spreads slowly in
+water, so the sea has held it back for an age: a natural wall the planet
+never had to build. In Season 6, when the Clamor's shard strikes the Shard
+Reef, the sea boils for the first time anyone remembers.

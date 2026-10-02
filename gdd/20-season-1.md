@@ -92,3 +92,54 @@ because teams play both sides.
 - It uses existing systems (weak points, node capture, escort pacing) instead of new rules.
 - It stays PvP, so it's still competitive. Both teams play both roles.
 - It pays off the season story with something huge and visible.
+
+---
+
+## How Season 1 feels
+
+Season 1 is the first time players feel the world move. At launch, the war
+is a backdrop. In week 2, the ground trembles once in every match, and
+players notice. In week 6, a silhouette appears on the horizon of every map,
+something huge, and each week it's a little closer. By week 9, players
+on Ashfall Crossing can see the Glass Range clearly in the north: a walking
+mountain of black glass, glowing faintly from within.
+
+The season teaches the community that **the world has a story, and it's
+happening now.** It also introduces the War Map: the first time players see
+their matches add up to something. Fronts rise and fall, the community
+watches the race, and the finale is the first moment the whole player base
+shares.
+
+## The finale, described
+
+Ashfall Crossing at dusk. The Grey Migration has been stopped; the herds
+have fled south. From the crater zone in the north, the Glass Range walks.
+
+The Blightborn team blight the nodes ahead of it, keeping its path open. Each
+step rings like a struck bell, and Glaze spreads from its feet. The Wildborn
+team flank it from both sides, trying to reach the crystal heart on its back
+while it stomps at them with slow, telegraphed quakes.
+
+The back heart shatters. The Glass Range walks faster and raises a wall of
+glass across the western flank. The Wildborn regroup on the east, root the
+next node in its path, and it stops, for a moment, groaning. The second heart
+breaks. The chest opens.
+
+Then the round ends, the sides swap, and both teams play it again from the other side.
+
+## Season 1 rewards
+
+| Reward | Source |
+|---|---|
+| **Glass-ridge Titan Growth** | Reward track, and first Glass Range defeat |
+| **Ash-themed Markings** (every lineage) | Reward track |
+| **Front sets** (one per front result) | For everyone, whoever won each front |
+| **"I was there: The Glass Range Walks"** Memory and brood mark | Finale participation |
+| **Migration call voice** (a low, rolling call) | The Great Migration event |
+
+## What Season 1 sets up
+
+- **The Hushed Answers** ([40](40-hushed-answers.md)): the Glass Range is the first of six.
+- **The War Map** ([18](18-the-answering-war.md)): the community's first season of shared history.
+- **The Sleeper** (Season 2): in the final week, the Rimewastes front sees a
+  strange frost appear on every map for a single match. A hint of what's next.

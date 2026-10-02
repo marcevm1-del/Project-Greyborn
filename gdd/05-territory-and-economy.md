@@ -106,3 +106,74 @@ Both sides capture with the same rules. Only the material and the words
 change: Wildborn **root** and **purge**; Blightborn **blight** and **consume**.
 Each map has a **Starwound crater** (Blight spreads 2× faster) and a mirrored
 **Heartwood grove** (roots spread 2× faster).
+
+---
+
+## Territory in practice: watching a border
+
+Two nodes face each other across a narrow stream: one rooted by the Wildborn,
+one blighted by the Blightborn. Where their cells meet, the ground is a
+tangle: roots pushing into the stream from one bank, glassy Glaze creeping in
+from the other. This is a **border**, and it builds **Tension**.
+
+Every fight near the border raises it. Every Stage 2 or Stage 3 creature
+nearby raises it faster. Players hear a low drone begin at 75. At 100, the
+border erupts: a global event fires. If the Wildborn are behind on
+Territorial Influence, the ground under the Blight cracks open in a
+**Heartquake**. If the Blightborn are behind, glass shards rain down on the
+Wildborn's structures in **Shard Rain**. If the teams are close, a neutral
+event fires: a Rootquake, a Stampede, a SAP Surge.
+
+Borders are where the map is most alive, and most dangerous.
+
+## SAP spending: examples
+
+| Situation | Spend | Why |
+|---|---|---|
+| Early, holding two Hubs | Hub Defense on the more exposed Hub to Level 3 (600 SAP) | Makes the first enemy push slower |
+| A Verdant in a long fight | Sap Draw heals (SAP cost per heal) | Keeps the front line alive without returning |
+| SAP Surge event nearby | 200 SAP to claim the geyser | Three times the SAP for 60 s |
+| Late, ahead | Hub Defense to Level 8+ on all held Hubs | Locks in the lead before Phase 4 |
+| Late, behind | Save SAP for event responses and Sap Draw | Hub upgrades won't matter if the Hubs fall |
+
+## Global events, described
+
+**Rootquake.** The ground in the region heaves. Every node in it becomes
+Vulnerable for 30 seconds, roots and Blight alike torn loose. A scramble.
+
+**Marrow Storm.** Wind full of bone dust sweeps the region, and every
+creature's weak point glows through it. For 20 seconds, the Hunt pair is king.
+
+**Stampede.** Every herd in the region bolts. Stagger effects last 50% longer
+and Momentum gain doubles. The Commit pair thrives in the chaos.
+
+**SAP Surge.** A geyser of amber SAP bursts from the ground. The first team to
+spend 200 SAP claims it, and it then gives them three times the SAP for a minute.
+
+**Core Bloom.** Four hundred loose cores spill across the region's centre,
+glowing. Everyone wants them. Hunters and divers arrive first.
+
+**Heartquake** (Planet Pulse). The planet shudders. Blight in the region cracks,
+and Blightborn nodes there become Vulnerable.
+
+**Healing Bloom** (Planet Pulse). Flowers burst open across the region, and
+Wildborn standing in them heal quickly.
+
+**Shard Rain** (Murmur Surge). Meteor glass falls from a clear sky onto
+Wildborn structures.
+
+**Thousand Whispers** (Murmur Surge). Every Wildborn on the map is revealed
+for 10 seconds by a wave of whispering.
+
+## The economy at a glance
+
+```
+ Kills, wildlife, Enemy Cores ──► carried cores ──► (return / field-convert) ──► EXP ──► Levels & Stages
+                                                                                       (personal power)
+ Captured nodes ──► SAP ──► Hub Defense, Sap Draw, event responses
+                                    (team power)
+ Captured nodes ──► Territorial Influence ──► passive cores, SAP bonus, Dominance, tiebreak
+```
+
+Two currencies, one map. Personal power comes from fighting and returning;
+team power comes from holding ground.

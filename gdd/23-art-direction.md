@@ -107,3 +107,52 @@ Starting points for concept artists:
   colour. Captured nodes for a Blightborn player could be confused with enemy
   Blight, so the UI should show **team** ownership with team outline colours,
   not side colours. Flagged for UI design.
+
+---
+
+## Lighting by time of day
+
+| Time | Light | Mood |
+|---|---|---|
+| **Dawn** | Low, soft, grey-gold through mist | Calm, waking |
+| **Day** | The Grey Eye's diffuse light; soft shadows | Clear, readable, neutral |
+| **Dusk** | Warm gold fading to violet; long shadows | The most atmospheric; the Fall-line starts to glow |
+| **Night** | The Lantern moon's amber, the Fall-line's cyan-violet, and gameplay glows | Mysterious; glow becomes the main light |
+
+**Rule:** night must stay readable. Ambient light never drops so low that
+silhouettes are lost, and weak points and team outlines are always visible.
+
+## Camera and scale
+
+- **Third-person camera** pulls back as the creature grows: close at Base
+  Form, wide at Stage 3, so the player always sees enough of the battlefield.
+- **Scale references** are built into every map: trees, rocks and fossils at
+  known sizes, so growth is always measured against the world.
+- **Stage 3 creatures** occasionally break the top of the frame for a moment
+  during transformations, to sell their size.
+
+## Visual effects language
+
+| Effect type | Wildborn | Blightborn | Clamor |
+|---|---|---|---|
+| Hit | Splinters, leaves, sap | Shards, glints | Embers, ash |
+| Heal | Petals and amber motes | Glass dust and cyan motes | — |
+| Capture | Roots spreading outward | Glaze spreading in fine lines | Crust spreading in blotches |
+| Death | Moss and flowers | Shatter into dust | Burn-out to ash |
+| Synergy | Pollen threads | Glass threads | — |
+
+Effects are kept **short and crisp** in fights, so they never hide the action.
+Bigger, slower effects are saved for world moments: Stage changes, patron
+events, finales.
+
+## Concept art priorities
+
+In order, the pieces the art team needs first:
+
+1. **The Kith Base Form**, both sides: the form every player starts as.
+2. **One lineage through all Stages, both sides** (the Titan is the clearest test of scale).
+3. **The three surface materials together:** roots, Blight and Scald side by side.
+4. **One launch map in key art** (Ashfall Crossing, with the Migration).
+5. **The Starwound and the Heartwood** as distant horizon views.
+6. **The remaining five lineages**, both sides.
+7. **The 54 creatures**, starting with those on the launch maps.

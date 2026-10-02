@@ -115,3 +115,52 @@ The war is back, and harder. But both minds have now:
 
 They know what they could be to each other. The Last Braid says it isn't
 over. The next direction is the director's call ([50](50-master-timeline.md#threads-still-open)).
+
+---
+
+## How Season 7 feels
+
+Season 6 ended with the two sides standing together. Season 7 begins with
+that memory still fresh, and then takes it away.
+
+In the first weeks, players still see braided ground on every map, and some
+still try to fight around it carefully, as if it matters. Then the Fever
+comes. The braids catch fire. Players watch roots and crystal, grown together
+only weeks ago, burn and pull apart in their matches. The Hushed Kith stop
+humming, and the Blightborn's calls turn cold.
+
+It should feel like **grief**. Not anger at the other side, but sadness at
+what was lost, and at how easily it happened. The Memories make sure players
+see both sides of it: the planet's fever, which it couldn't control, and the
+Murmur's terror of being burned again.
+
+Then, in week 7, players discover the Last Braid, and the season's grief gets
+a single point of light.
+
+## Memories of Season 7
+
+| Memory | Vision |
+|---|---|
+| **The Fever** (planet's view) | Heat rising through the roots; everything foreign glowing red; the braid among it, burning |
+| **Burned Again** (the Murmur's view) | Crystal cracking in the heat; for a moment, the blue sun and the red streak of the Quiet World overlay the scene |
+| **Missing** | (If the planet reclaims the braids) A root reaching into an empty space where crystal used to be |
+| **Alone Again** | (If the Murmur reclaims them) A single hum, then silence |
+| **The Last Braid** | A Stray sleeping between a root and a crystal on a quiet shore |
+
+## Season 7 rewards
+
+| Reward | Source |
+|---|---|
+| **Unravelled Growths** (half-burnt braid patterns for every lineage) | Reward track |
+| **Fever Markings** | Reward track |
+| **The Last Braid brood mark** | Visiting the Last Braid in every coastal match in week 7 |
+| **"I was there: The Unbraiding"** Memory | Finale participation |
+
+## Writing the tragedy: guidance
+
+1. **Never blame either mind.** The planet's fever is like an illness; the Murmur's
+   retreat is like fear. Neither is a choice to betray.
+2. **Show loss, not victory.** Even the side that "wins" the finale should feel it lost something.
+3. **Keep the Last Braid quiet.** No fanfare, no reward ceremony. It's a small thing that endures.
+4. **Leave the door open.** The season ends sad but not hopeless; the Last Braid
+   is the promise that the story isn't over.
