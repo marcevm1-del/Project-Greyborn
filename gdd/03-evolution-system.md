@@ -303,3 +303,9 @@ pours those cores into it, and grows. At Level 3 its lineage awakens; at 10 it
 chooses a path; at 12, 15 and 18 its partner bond becomes a power; at 20 it
 becomes an Ascendant, towering over the map. Every level is visible, every
 carried core is a risk, and every return is a choice.
+
+Kills fuel evolution; returns fuel choice.
+
+Grow, carry, return, evolve.
+
+That is the whole loop.

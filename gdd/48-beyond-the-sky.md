@@ -265,3 +265,5 @@ could find is the one it is slowly, frightened, trying to become part of.**
 The dark beyond the sky is what makes Greyborn's living world shine.
 
 Above the haze, the dark; below it, life.
+
+And the dark is listening.

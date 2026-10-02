@@ -154,3 +154,134 @@ If anyone on Greyborn could study the Murmur, they would note:
 - **It has no single brain.** Thought gathers in whisper-nodes, and densest in the Lattice Sea.
 - **It copies by touch.** A creature taken by Blight is studied, and the Murmur learns its shape.
 - **It can now create** (Season 5): something it had never done on Greyborn before.
+
+## Birth-nodes in detail
+
+A birth-node is a knot where several of the planet's roots meet just under
+the surface. When the planet decides to bud a brood, the knot begins to swell.
+
+| Day (wild) | Stage | What it looks like |
+|---|---|---|
+| 1–3 | **Swelling** | A bump in the ground; the soil cracks around it |
+| 4–6 | **Rising** | A rounded knot of bark pushes up, warm to the touch |
+| 7–9 | **Ripening** | The knot glows faintly from inside; soft movement within |
+| 10 | **Splitting** | The bark splits along its seams; Kith step out, wet and blinking |
+| After | **Husk** | The split husk remains for years, a nest for the brood |
+
+In matches, this whole process happens in seconds at the start (budding)
+and on every respawn (budding again from a fresh knot in the Cradle or Clutch).
+
+**Blighted birth-nodes** go through the same stages, but the bark glazes as it
+swells, and the glow inside is cyan. The Kith that step out are Hushed.
+
+## SAP: the planet's blood
+
+- **Where it comes from:** deep below, rising through the roots.
+- **Where it pools:** Resource Hubs (Sap Wells), the Amber Lakes of the Heartwood, Sapbloom cups.
+- **What it does:** feeds every living thing on Greyborn, directly or through plants.
+- **What the Murmur does with it:** absorbs it through Blight and turns it into
+  Glow, its own light-like blood. That's why Blighted Wells glow cyan.
+- **What the Clamor does with it:** burns it.
+
+## The planet's nervous system
+
+| Part | Description |
+|---|---|
+| **Nerve-roots** | Roots that carry signals, glowing faintly; densest in the Underroot |
+| **Nodes** | Clusters where nerve-roots meet near the surface; the planet's awareness gathers there |
+| **Hubs** | The largest clusters, where SAP pools too |
+| **The First Root** | The trunk of the whole system, plunging to the core |
+
+When a node is captured by a team, it's that team's side the planet (or the
+Murmur) feels through it. When Blight takes a node, the planet loses a little
+of its feeling in that place, like numbness spreading from a wound.
+
+## Blight's growth rates (lore)
+
+| Condition | Blight spreads… |
+|---|---|
+| Normal ground, Ash Turn | A few metres per day |
+| Rime Turn (the planet sleeps) | Several times faster |
+| Bloom Turn | Very slowly; fresh growth pushes back |
+| Fever Turn | Cracks and retreats in the heat |
+| Water | Very slowly (the Stillsea holds it back) |
+| The Heartwood | Not at all |
+
+In matches, territory spreads by game rules, not these rates. They exist to
+keep the lore and the War Map consistent.
+
+## Blighted creatures' biology
+
+A Blighted creature is still alive, but changed:
+
+- Its **body** is partly glazed: glass patches over skin, fur or bark.
+- Its **mind** follows the Murmur's whispers; it moves in step with other Blighted creatures.
+- It **doesn't eat** or need to; Glow sustains it.
+- It **doesn't die** the normal way: it shatters into glass dust, which never returns to the soil.
+- It **can be rallied** (by Wildborn, in matches) only temporarily; the Blight returns.
+
+## Life on Greyborn FAQ
+
+**Do creatures on Greyborn age?** Yes. Wild Kith grow old and grey-muzzled;
+Old Ones are ancient. Called Kith evolve instead.
+
+**Does anything on Greyborn die permanently?** Everything that dies returns to
+the soil and becomes the planet again, except Blighted creatures, which
+shatter, and those the Clamor devours, which burn.
+
+**Can the planet create new kinds of life?** Yes: it created the Kith, the
+First Answers and Stillheart, and in Season 5 it creates new life in answer to the Murmur.
+
+**Is there any intelligent life besides the minds?** No cultures (decided).
+The Kith and some creatures are clever animals, nothing more.
+
+## Weather by region
+
+| Region | Most common weather | Rare weather |
+|---|---|---|
+| Heartwood | Sap Rain, Clear | — |
+| Rootwilds | Clear, Sap Rain | Rime Fog |
+| Underroot | (none: underground) | — |
+| Ashen Steppe | Ashfall, Clear | Fever storms |
+| Hollow Mire | Rime Fog | Sap Rain |
+| Spirecliffs | Clear, wind | Shard Storm |
+| Bone Flats | Clear (salt glare) | Shard Storm |
+| Rimewastes | Rime Fog, snow | Clear, starlit nights |
+| Cinderveil | Ashfall | Clear |
+| Shattered Coast | Clear, sea mist | Shard Storm |
+| Glasswaste | Shard Storm | Never Sap Rain |
+| Starwound | Shard Storm, always | — |
+
+## How life feels at night
+
+At night, Greyborn changes. The Lantern moon rises amber over the south. The
+Fall-line glows across the sky. Lanternmoss and Root-lamps light the forest
+floor and the caves; Blight glows cyan where it has spread. Predators wake:
+Duskmanes in the mire, Glasslegs in the tunnels, Ashfangs on the steppe.
+Kith broods huddle in their rings, facing outward. Every sound carries further.
+
+In matches, night is the most atmospheric time, and its glows make the
+battlefield's meaning (who holds what, who is carrying what) even clearer.
+
+## Life on Greyborn in one paragraph
+
+Greyborn is a body, and everything on it is part of that body: plants drink
+its SAP, creatures eat the plants and each other, and everything returns to
+the soil when it dies. The Kith bud from its root-knots and carry every
+lineage inside them. The weather follows its moods through Bloom, Ash, Rime
+and Fever. Into this living circle, the Murmur brought glass that doesn't eat,
+doesn't die and doesn't return, and later the Clamor brought fire that eats
+everything. Life on Greyborn is the story of a circle, and of two things that break it.
+
+## Rules for anyone adding new life
+
+1. **Every new creature or plant belongs somewhere** on the planet's body.
+2. **It has a place in the food web,** or a clear reason not to (the Heartwood Elk).
+3. **It has a Blighted form** (or a reason why it can't: the Elk).
+4. **It behaves through the Turns.**
+5. **It's readable in matches,** if it appears there.
+
+## Closing note
+
+Life on Greyborn is a circle: the planet feeds everything, and everything
+returns to it. The war is fought over whether that circle will hold.

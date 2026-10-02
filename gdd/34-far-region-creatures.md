@@ -225,3 +225,7 @@ where predators seem to rest.
 The far regions are where Greyborn feels most like a whole planet: places
 most matches never visit, full of creatures that belong only there. Each one
 should make a player who glimpses it wonder what else lives beyond the edge of the map.
+
+Beyond every map's edge, something lives.
+
+Something always does.

@@ -162,3 +162,136 @@ shards of Blight drift in the shallows like ice. The Murmur spreads slowly in
 water, so the sea has held it back for an age: a natural wall the planet
 never had to build. In Season 6, when the Clamor's shard strikes the Shard
 Reef, the sea boils for the first time anyone remembers.
+
+## The food web, creature by creature
+
+| Creature | Eats | Eaten by |
+|---|---|---|
+| Kith (Strays) | Sapbloom, Amber Beetles, critters | Ashfangs, Duskmanes, Hexmaws |
+| Mossback Grazers | Ashgrass, Sapbloom | Ashfangs (calves), Drift Owlbears |
+| Gravel Skinks | Insects | Ashfangs, Spurlarks |
+| Spurlarks | Seeds, insects | Ashfangs |
+| Glimmerfoxes | Insects, small critters | Duskmanes |
+| Strider Cranes | Fish, frogs | Duskmanes, Hexmaws |
+| Lantern Lizards | Insects | Glasslegs |
+| Ember Moths | Nectar | Thornwasps, Spurlarks |
+| Sapback Aphids | SAP from plants | Thornwasps (protected by nothing but players) |
+| Amber Beetles | SAP | Kith, grazers |
+| Ashfangs | Grazers, skinks, larks | Drift Owlbears (rarely) |
+| Duskmanes | Cranes, foxes | Nothing |
+| Marrowhounds | Carrion, dropped cores | Ash Vultures (their leftovers) |
+| Ash Vultures | Carrion | Nothing |
+| Apex creatures | Everything | Nothing |
+
+## Population cycles (lore and events)
+
+- **Bloom:** births everywhere; grazer and Kith numbers rise.
+- **Ash:** the Migration; predators thrive following the herds.
+- **Rime:** numbers fall; many creatures hibernate or die in the cold.
+- **Fever:** predators grow bold; prey becomes scarce and skittish.
+
+In matches, these cycles shift how many creatures spawn and which ones,
+following the Turn ([29](29-the-planets-year.md#the-turns-and-the-creatures)).
+
+## Simulation tiers
+
+| Distance from nearest player | Simulation |
+|---|---|
+| Under 60 m | Full behaviour: hunting, fleeing, reacting to sound and players |
+| 60–150 m | Simplified: herds move as one group; hunts resolve on a timer |
+| Over 150 m | Abstract: creature counts and positions updated occasionally |
+
+The player never notices the switch, because creatures always behave fully
+when they're close enough to see clearly.
+
+## The Stillsea's depths and islands
+
+The Stillsea is mostly unexplored. Proposed details for future seasons:
+
+- **The Shallows:** within sight of the coast; whales, Shoal-lights, Tidecrawlers.
+- **The Glitter:** near the Shattered Coast, where Blight glitters in the water.
+- **The Deep:** beyond the shelf, where the Deepmaw lives. Never shown except in Memories.
+- **The Drift Isles:** small islands of floating root-mats far out to sea, where
+  the planet's roots reach up from the seabed. A possible future map seed.
+
+## Ecology and the three minds, compared
+
+| | The planet | The Murmur | The Clamor |
+|---|---|---|---|
+| Food web | The planet *is* the food web | Breaks it: Blighted creatures don't eat | Devours it: eats everything |
+| Death | Returns to the soil | Shatters to dust | Burns to ash |
+| Recovery | Constant | Never (Glasswaste) | Slowly, after burn-out |
+| Sound of its ecology | Birdsong, herds, insects | Silence and whispers | Shouting and crackling |
+
+## Ecology design principles
+
+1. **The world goes on without players.** Herds move, predators hunt and
+   weather changes whether anyone is watching.
+2. **Every behaviour is readable.** Fleeing herds, circling vultures and
+   silent birds are signals players can learn.
+3. **The ecosystem never decides a match alone.** Stampedes and predators
+   disrupt; they don't win.
+4. **Overhunting has consequences.** The world pushes back against farming.
+5. **The invaders break the circle.** The Murmur stops it; the Clamor burns it.
+
+## An ecology moment for each launch map
+
+**Ashfall Crossing.** The Grey Migration thunders across the centre every six
+minutes. Ashfangs shadow it. Teams fight around the herd, through the tunnels, or not at all.
+
+**The Elder Ribs.** Harvestmen carry bones toward their nests. Marrowhounds
+follow every fight. Ash Vultures circle overhead, and a Marrow Mantis waits,
+perfectly still, on a fossil by the central Hub.
+
+**Breathing Canopy.** The canopy rises and falls. Strider Cranes lift from
+the mire at every disturbance. Lumen Bees drift between flowers, and a
+Weavemother's web glistens over a contested node.
+
+## How players learn the ecology
+
+| Stage | What they learn |
+|---|---|
+| First match | Creatures are food; some fight back |
+| First week | Herds flee fights; scavengers gather; some creatures are worth protecting |
+| First month | Predators hunt prey; overhunting makes a region dangerous; birds and vultures give away fights |
+| Long term | The whole food web as a source of information and opportunity |
+
+## Ecology tuning targets, extended
+
+| Measure | Target |
+|---|---|
+| Share of matches with at least one stampede crossing a fight | 50–70% |
+| Share of matches where a region becomes Stressed (overhunting) | 10–20% |
+| Share of matches where an apex appears (outside events) | 30–40% |
+| Average number of fights started by wildlife (not by players) | 0.5–1 per match |
+
+## The ecology in one sentence
+
+**Greyborn's creatures live, hunt, flee and die around the war, and players
+who learn to read them always know a little more than players who don't.**
+
+## Sounds of the ecology, as a map
+
+| Sound | Means |
+|---|---|
+| Birdsong | Calm; no large predator or Hollow nearby |
+| Birdsong stopping | Something large or silent is close |
+| Rolling hooves | A herd is moving, probably fleeing |
+| Wingbeats overhead (vultures) | A fight is happening or about to |
+| Crane cries | Something moved through the mire |
+| Insects buzzing | Healthy territory |
+| Silence and whispering | Blighted ground |
+| Crackling and shouting | The Clamor |
+
+## Closing note
+
+The ecology is Greyborn's background music made of life. It makes every map
+feel inhabited, gives skilled players information, and shows, more clearly
+than any Memory, what the Murmur and the Clamor take away when they spread.
+
+Read the creatures, and you'll read the battle.
+
+## One more principle
+
+Wildlife should never feel like an obstacle placed by a designer. Every
+creature should feel like it was there before the match, and will be there after.
