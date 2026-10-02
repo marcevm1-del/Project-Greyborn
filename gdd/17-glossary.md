@@ -103,3 +103,102 @@ were confirmed by the director; everything else is proposed.
 | **Whisper-node** | A crystal cluster where the Murmur's thought gathers | [12](12-life-on-greyborn.md) |
 | **Wild Ascendant** | A Stray that evolved to Stage 3 on its own, belonging to neither team | [46](46-wild-ascendants.md) |
 | **Wildborn** | Nature's response; the planet's side (**decided**) | [10](10-world.md) |
+
+## Terms added during the world expansion
+
+| Term | Meaning | See |
+|---|---|---|
+| **Amber Beetles** | Heartwood creatures that carry SAP | [34](34-far-region-creatures.md) |
+| **Ash Vulture** | A scavenger bird that circles fights | [34](34-far-region-creatures.md) |
+| **Braidgrass** | Half-living, half-glass grass that grows only on braided ground | [44](44-flora.md) |
+| **Call wheel** | The 8-slot radial menu of creature calls | [25](25-calls-and-onboarding.md) |
+| **Cinder Salamander** | A lava-swimming lizard | [34](34-far-region-creatures.md) |
+| **Contested** | A front where both sides finished their goals | [18](18-the-answering-war.md) |
+| **Cooling rock** | Uncapturable ground left by Fevermouth's lava | [16](16-launch-maps.md) |
+| **Drift Owlbear** | A snow-sleeping predator of the Rimewastes | [34](34-far-region-creatures.md) |
+| **Elder (Kith)** | An old wild Kith that leads its brood | [45](45-the-kith.md) |
+| **Event Horizon** | A Hollow Ultimate that pulls enemies together | [31](31-evolution-branches.md) |
+| **Falling** | A front the Murmur's side won | [18](18-the-answering-war.md) |
+| **Field conversion** | Converting cores at a held Hub at 70% | [03](03-evolution-system.md) |
+| **Firstlight Fawn** | The planet's answering creature in Season 5 | [47](47-season-5.md) |
+| **Frost Against Fire** | Stillheart's Truce passive against Scald | [49](49-season-6.md) |
+| **Glass Flower** | The Murmur's first creation (Season 4) | [30](30-season-4.md) |
+| **Glow** | The Murmur's light-like blood | [12](12-life-on-greyborn.md) |
+| **Greymother** | An Old One, the Verdant who planted the Rootwilds | [46](46-wild-ascendants.md) |
+| **Heartwood grove** | Each map's planet-favoured zone | [10](10-world.md) |
+| **Held** | A front the planet's side won | [18](18-the-answering-war.md) |
+| **Hibernate** | Stillheart's ice-stasis save | [21](21-season-2.md) |
+| **Hushed Kith** | Kith born into the Murmur's whisper | [45](45-the-kith.md) |
+| **Hushed Watch** | The ring on the Starwound's floor where the Hushed Answers stand | [35](35-heart-and-seed.md) |
+| **Lattice Fawn** | The Murmur's created deer (Season 5) | [47](47-season-5.md) |
+| **Last Braid** | The single braided patch that survived Season 7 | [51](51-season-7.md) |
+| **Lullaby Resonance** | Stillheart's universal partner bonus | [21](21-season-2.md) |
+| **Mercy rule** | 80% Territorial Influence for 60 s wins the match | [06](06-match-flow.md) |
+| **Overtime** | A 2-minute sudden-death capture race after a tie | [06](06-match-flow.md) |
+| **Pair protection** | Keeping queued pairs in compatible draft slots | [27](27-modes.md) |
+| **Prismwings / Dawnwings** | The Murmur's and the planet's created moths (Season 5) | [47](47-season-5.md) |
+| **Rootless, the** | A proposed Old One touched by both minds | [46](46-wild-ascendants.md) |
+| **Season catch-up** | A wordless replay of missed Memories for returning players | [25](25-calls-and-onboarding.md) |
+| **Seedcaller** | A creature that regrows ground as it walks | [30](30-season-4.md) |
+| **Shard Gull** | A coastal bird that collects meteor glass | [34](34-far-region-creatures.md) |
+| **Side balance** | Ranked matchmaking that evens out each player's sides | [27](27-modes.md) |
+| **Silhouette test** | The check that a creature reads in solid black | [26](26-collection.md) |
+| **Simulation tiers** | How wildlife AI scales with distance from players | [15](15-ecology.md) |
+| **Sleeper's Lake** | The frozen lake above the Sleeper | [41](41-landmarks.md) |
+| **The Quiet World** | The Murmur's lost crystal home (team name) | [48](48-beyond-the-sky.md) |
+| **Tidal Strider** | A water-walking coastal creature | [34](34-far-region-creatures.md) |
+| **Truce Synergy** | A split pair's Synergy with a shared shield (Season 6) | [49](49-season-6.md) |
+| **Unravelling** | Braided ground pulling apart in Season 7 | [51](51-season-7.md) |
+| **Wild Echo** | A team buff from killing a Wild Ascendant | [46](46-wild-ascendants.md) |
+| **Wordless hints** | Visual nudges for new players, without text | [25](25-calls-and-onboarding.md) |
+
+## Place names on the launch maps
+
+| Map | Named places |
+|---|---|
+| Ashfall Crossing | The Ash Knoll, Stonefoot, Grassdeep, Herdwater, The Dry Ford, Shardfall Hollow, Old Root Knot |
+| The Elder Ribs | The Heart of the Ribs, The Collarbone, Skullside, The Tail Flats, The Salt Pans, First to Sixth Rib, Graveroot, Glass Fossil Field |
+| Breathing Canopy | The Glade, Mother's Root, Fernhollow, Bee Hollow, Moss Bank, The Swallowing Edge, The Breathing Valley, The Fallen Shard |
+
+## Season names
+
+| Season | Name |
+|---|---|
+| 1 | The Hush Wakes |
+| 2 | The Sleeper Stirs |
+| 3 | The Second Light |
+| 4 | The Glass Flower |
+| 5 | The First Made Thing |
+| 6 | The Roaring Comes |
+| 7 | The Unbraiding |
+
+## How to use this glossary
+
+- **Bold** terms are the names used in-game and in the design docs.
+- **(decided)** marks terms the director confirmed.
+- Terms without a mark are proposals and may change.
+- When a new term is introduced anywhere in the design, add it here.
+
+## Calls (quick reference)
+
+Gather · Attack · Danger · Heavy · Returning · Root here / Blight here ·
+Pair ready · Help · Retreat · Hold · Hunt · Escort · Apex · Landfall ·
+Tension · Memory · Thanks · Sorry ([25](25-calls-and-onboarding.md#the-full-call-list)).
+
+## Turns and weather (quick reference)
+
+**Turns:** Bloom (growing), Ash (shedding), Rime (sleeping), Fever (fighting).
+**Weather:** Clear, Ashfall, Rime Fog, Sap Rain, Shard Storm, Breathing Night.
+**Times of day:** Dawn, Day, Dusk, Night.
+
+## The three minds (quick reference)
+
+**The planet (Greyborn):** roots, SAP, nodes, the First Root; speaks through growth.
+**The Murmur:** Blight, Glow, whisper-nodes, the Seed; speaks through whispers.
+**The Clamor:** Scald, heat, Roar-vents, the Second Stone; speaks through roaring.
+
+## Lineages (quick reference)
+
+Titan · Brawler · Verdant · Hollow · Thornrunner · Bonespire · Stillheart (from Season 3).
+
+When in doubt about a word, check here first, then add it if it's missing.

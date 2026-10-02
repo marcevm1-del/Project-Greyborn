@@ -227,3 +227,91 @@ opens and closes parts of the map.
 **Region:** Underroot. Arrives in Season 4. A three-level cave map where
 nerve pulses reveal anyone in a corridor every 20 s. Full details in
 [30 — Season 4](30-season-4.md#new-map-the-nerve-underroot).
+
+---
+
+## Named places on the launch maps
+
+Every Hub and Enemy Core site has a name rooted in the map's region, so
+players can call them out. Names are the same for both sides; only the
+structure's material changes.
+
+**Ashfall Crossing**
+
+| Structure | Name | Where |
+|---|---|---|
+| Central Hub | **The Ash Knoll** | A low hill in the centre of the plain |
+| West Hubs | **Stonefoot**, **Grassdeep** | By a Standing Stone; in tall Ashgrass |
+| East Hubs | **Herdwater**, **The Dry Ford** | By a watering hole; at a dry river crossing |
+| Enemy Core sites | Three per side, in hollows along the base edges | |
+| Landmark on the horizon | The Standing Stones (north), the Vertebrae (far west) | |
+
+**The Elder Ribs**
+
+| Structure | Name | Where |
+|---|---|---|
+| Central Hub | **The Heart of the Ribs** | Inside the ribcage |
+| North Hubs | **The Collarbone**, **Skullside** | Near the ribcage's head end |
+| South Hubs | **The Tail Flats**, **The Salt Pans** | Near its tail end |
+| Rib entrances | **First Rib** to **Sixth Rib** | Callouts for the six entrances |
+
+**Breathing Canopy**
+
+| Structure | Name | Where |
+|---|---|---|
+| Central Hub | **The Glade** | The centre clearing |
+| West Hubs | **Mother's Root**, **Fernhollow** | Under a great oak; in a fern dell |
+| East Hubs | **Bee Hollow**, **Moss Bank** | Where Lumen Bees gather; on a mossy rise |
+| The mire route | **The Swallowing Edge** | Along the edge of the Swallowing Pool |
+
+## Wildlife spawns per launch map
+
+| Map | Common | Uncommon | Apex |
+|---|---|---|---|
+| Ashfall Crossing | Gravel Skinks, Spurlarks, Mossback herds | Ashfangs, Clashhorn Beetles, Stiltwalkers | Greyback Colossus (Phase 3) |
+| The Elder Ribs | Bone Harvestmen, Marrowhounds | Trundlebacks, Siege Beetles, Bonewrights | None (patron events only) |
+| Breathing Canopy | Glimmerfoxes, Rootworms, Sapback Aphids, Strider Cranes | Weavemother, Duskmane, Hexmaw | Eightfold Matron (Phase 3) |
+
+## The map rules, explained
+
+| Rule | Why |
+|---|---|
+| Rotational symmetry | Sides are assigned per match; neither base can be better |
+| Crater and grove on neutral flanks | Neither team gets a home-field material advantage |
+| Five Hubs | Enough to fight over, few enough to matter |
+| Three Enemy Cores per team | Room for a comeback: losing one isn't losing everything |
+| Return trip under 20 s | Returning should be a choice, not a punishment |
+| 2–3 Memory sites | Lore to find without cluttering the map |
+
+## Map moods by time of day
+
+| Map | Dawn | Day | Dusk | Night |
+|---|---|---|---|---|
+| Ashfall Crossing | Mist over the grass | Pale and open | Gold light, long shadows of the Stones | The Fall-line overhead; the Migration's dust glowing |
+| The Elder Ribs | Salt glittering | Harsh glare | The Ribs glowing orange | Moonlight through the ribs |
+| Breathing Canopy | The canopy exhales mist | Dappled light | Moth Bloom rising | Lanternmoss, fireflies, Blight glow |
+
+## How each map teaches the game
+
+| Map | Teaches |
+|---|---|
+| Ashfall Crossing | Timing (the Migration), open fights, the tunnels |
+| The Elder Ribs | Sieges, chokepoints, weak points (Trundlebacks, Mantises) |
+| Breathing Canopy | Territory, stealth, reading the world (cranes, canopy cycle) |
+
+Together, the three launch maps cover the whole game.
+
+## Named places on the post-launch maps (proposal)
+
+| Map | Named places |
+|---|---|
+| Fevermouth | The Mouth (central Hub), the Three Channels (North, Middle, South), Ashglass Field, Ember Root |
+| The Sleeper | The Eye (centre of the lake), the Shore Hubs, Rimeglass, the Warm Spring, the Snow Halls |
+| Shard Reef | The Singing Reef (central Hub), the Three Causeways, the Glittering Shallows, Kelp Root, the Breaker's Steps |
+| The Nerve | The Knot (central Hub), the Three Levels (Upper, Middle, Deep), the Blight Pocket, the Root Tendril |
+
+Shared callout names make communication easier, even with a wordless call wheel: map markers show these names on the minimap.
+
+## Closing note
+
+Every map is a place on Greyborn first, and a battlefield second.

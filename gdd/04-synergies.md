@@ -273,3 +273,5 @@ interdependency, made into the game's most powerful plays.**
 
 The source pages called it interdependency. In play, it's two friends calling
 "Slam up" and "Marked" and "Garden" to each other, and the moment it all lands.
+
+Slam up. Marked. Garden.

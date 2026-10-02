@@ -276,3 +276,12 @@ every match tells that story.
 2. **Pre-Aggro:** fight for Hubs, carry, return, grow.
 3. **Resource Stage:** siege, upgrade, let the world erupt.
 4. **Hunt:** giants, Synergies, the Base Heart.
+
+Every match, a whole life: budding, growing, and a final stand.
+
+Bud, grow, fight, and stand.
+
+## The flow, as a promise
+
+From the first heartbeat to the last stand, every match follows the same arc,
+and no two matches play out the same way.
