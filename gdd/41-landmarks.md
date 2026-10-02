@@ -33,6 +33,8 @@ is a **seed for a future map**. All are proposals.
 
 ## Map seeds most worth developing next
 
+*All three are now developed in [42](42-new-maps.md).*
+
 1. **The Glass Forest** (Cinderveil): tests whether players can read the
    battlefield when natural obsidian looks like Blight. It's a strong idea,
    but it might confuse players, so prototype it carefully against the readability rules ([23](23-art-direction.md)).

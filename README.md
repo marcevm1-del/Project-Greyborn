@@ -60,6 +60,8 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 39 | [World Events](gdd/39-world-events.md) | Recurring weekend events rooted in the world, and a sample year |
 | 40 | [The Hushed Answers](gdd/40-hushed-answers.md) | The Murmur's six glass guardians as giant encounters |
 | 41 | [Landmarks & Map Seeds](gdd/41-landmarks.md) | 24 landmarks across the Greyreach, each a seed for a future map |
+| 42 | [Map Seeds, Developed](gdd/42-new-maps.md) | The Skull Basin (2v2), the Ash Sea, the Glass Forest; the full 10-map list |
+| 43 | [Ascendants as Living Creatures](gdd/43-living-creatures.md) | How each lineage moves, rests and feeds, and how wildlife reacts to it |
 
 ## Superseded material
 
