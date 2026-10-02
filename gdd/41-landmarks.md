@@ -117,3 +117,101 @@ world feels larger than any one battlefield:
 | Shard Reef | The Breaker's Steps down the cliffs |
 
 When a future map opens at one of these landmarks, players will already know it from the horizon.
+
+---
+
+## More landmarks (#25–#48)
+
+Two more for each region, so the Greyreach has four named places per region.
+
+| # | Region | Landmark | Description |
+|---|---|---|---|
+| 25 | Rootwilds | **The Mother Oak** | The oldest breathing oak, so wide a whole brood of Kith can shelter in its hollow. Its breath sets the rhythm for the trees around it |
+| 26 | Rootwilds | **Bee Hollow** | A sunken glade where Lumen Bees gather in such numbers that the air glows gold at dusk |
+| 27 | Underroot | **The Deep Shaft** | A vertical cave plunging so far down that the nerve-light at the bottom looks like stars |
+| 28 | Underroot | **The Echo Gallery** | A long cavern where every sound repeats seven times, each fainter. The Murmur's whispers here sound like a choir |
+| 29 | Ashen Steppe | **The Herdpath** | A trench worn a metre deep by the Grey Migration over countless ages |
+| 30 | Ashen Steppe | **Lone Spire** | A single standing stone far from the others, said to mark where the Mountain That Walked first stepped onto the steppe |
+| 31 | Hollow Mire | **The Drowned Grove** | A forest standing in black water up to its branches, utterly silent |
+| 32 | Hollow Mire | **Fogwell** | A spring of warm water that pours out fog instead of steam, feeding the mire's mists |
+| 33 | Spirecliffs | **The Eyrie Ledges** | Narrow ledges where Ash Vultures and Sky Pines cling together high above the clouds |
+| 34 | Spirecliffs | **Ram's Crossing** | A field of boulders where Sixhorn Rams gather every Fever to fight; the rocks are scarred by horns |
+| 35 | Bone Flats | **The Graves of the Bone-Keeper** | Fields of bones arranged in patterns, tended by the Old One called the Bone-Keeper ([46](46-wild-ascendants.md)) |
+| 36 | Bone Flats | **The Salt Mirror** | A perfectly flat salt pan that reflects the sky so clearly that walking on it feels like walking on clouds |
+| 37 | Rimewastes | **The Sleeper's Lake** | The frozen lake above the Sleeper itself (the post-launch map's setting) |
+| 38 | Rimewastes | **The Snow Halls** | Caves of blue ice where Drift Owlbears sleep in rows |
+| 39 | Cinderveil | **The Ember Steps** | A staircase of cooled lava terraces, each one glowing faintly from inside |
+| 40 | Cinderveil | **Salamander Pools** | Lava pools where Cinder Salamanders bask by the hundred |
+| 41 | Shattered Coast | **The Gull Cliffs** | Cliffs so crowded with Shard Gull nests that the whole face glitters with collected glass |
+| 42 | Shattered Coast | **Whale Bay** | A sheltered bay where the Stillsong Whales come to sing; the water there is the stillest in the world |
+| 43 | Glasswaste | **The Glass Gardens** (Season 5) | The first Glass Gardens, pale blue and humming |
+| 44 | Glasswaste | **The Flower Field** | Where the Glass Flower bloomed (Season 4) |
+| 45 | Heartwood | **The Root Hills** | Hills made of roots, warm as skin ([35](35-heart-and-seed.md)) |
+| 46 | Heartwood | **Greymother's Walk** | The path the Old One Greymother walks, lined with flowers that open as she passes |
+| 47 | Starwound | **The Lattice Sea** | The crystal plain where the Murmur's mind is densest |
+| 48 | Starwound | **The Seed** | The meteorite itself |
+
+## How a landmark is designed
+
+A good landmark on Greyborn has four things:
+
+1. **A clear silhouette** that can be recognised from far away on another map's horizon.
+2. **A piece of the world's story**: a First Answer, an Old One, a season, a creature.
+3. **A living element**: creatures that gather there, plants that grow there, a sound that belongs to it.
+4. **A gameplay idea**: something about its shape that would make a good map.
+
+The Weaver's Hollow has all four: a glowing web visible at dawn, the
+Weavemother's story, the creatures that pass carefully beneath it, and the
+idea of fighting on web-bridges.
+
+## Landmarks and sound
+
+| Landmark | Its sound, heard from a distance |
+|---|---|
+| The Vertebrae | Wind howling between the peaks |
+| The Elder Ribs | Bones clicking as Harvestmen work |
+| The Weaver's Hollow | Silence, broken by dew dripping from the web |
+| The Echo Gallery | Seven fading repeats of every sound |
+| The Heron Reach | Thousands of wings when the flock lifts |
+| The Fevermouth | A deep rumble before eruptions |
+| Whale Bay | Low whale song through the water and the rock |
+| The Singing Field | A thousand glass bells in the wind |
+| The Seed | A single pulse, felt more than heard |
+
+## Landmarks across the Turns
+
+| Landmark | Bloom | Ash | Rime | Fever |
+|---|---|---|---|---|
+| The Calving Meadows | Full of calves | Golden, empty | Frozen | Scorched |
+| The Weaver's Hollow | Web full of pollen | Web grey with ash | Web frozen into lace | Web brittle in the heat |
+| The Standing Stones | Wildflowers at their feet | Ash drifts on their tops | Ice on their faces | Lightning strikes them |
+| Whale Bay | Calves among the whales | Grey water | Ice at the edges | Storms at the bay's mouth |
+| The Frozen Falls | A brief trickle of meltwater | Snow on the ice | Solid | Slightly cracked |
+
+## Landmarks in Memories
+
+Several landmarks have Memories at them ([38](38-memory-catalogue.md)):
+the Vertebrae (*The Mountain Walks*), the Breaker's Steps (*The Breaker's
+Stand*), the Swallowing Pool (*The Quiet Descends*), the Elder Ribs (*The
+Rememberer's Vigil*), the Frozen Herd, the Shard Reef (*The Sky Breaks*). Every
+new landmark should be considered as a possible Memory site.
+
+## Landmark count
+
+| Group | Count |
+|---|---|
+| Atlas landmarks ([11](11-atlas.md)) | 12 (one per region) |
+| Landmarks #1–#24 (this chapter) | 24 |
+| Landmarks #25–#48 (this chapter) | 24 |
+
+Every region now has at least four named places, which gives writers, artists
+and level designers a rich, consistent world to draw on for years.
+
+## Landmarks as wayfinding
+
+On every map, at least one distant landmark sits on the horizon in each
+cardinal direction. Players use them without thinking: "the fight is
+toward the Vertebrae", "their base is under the Fevermouth". This gives
+callouts a natural vocabulary and makes every map easier to learn. It also
+means the world beyond the map is always visible, reminding players that the
+battle they're in is one small part of a planet at war.
