@@ -144,3 +144,132 @@ its back split by vents that shout in a deafening chorus.
 The Clamor's sound design should be the opposite of the Murmur's. Where the
 Murmur is quiet, synchronised and patient, the Clamor is loud, chaotic and
 urgent. A player with eyes closed should know instantly which invader is near.
+
+---
+
+## The Roar, in depth
+
+The Roar is the largest creature the Clamor has ever grown on Greyborn. It
+walks on four thick, crusted legs, each one leaving a burning footprint. Its
+back is split open by a ridge of Roar-vents, each one a mouth that shouts, and
+together they make a sound like a stadium of voices screaming in different
+languages. Heat ripples off it; plants wither ten metres away.
+
+It has no eyes. It finds prey by sound, and the louder you are, the more it
+wants you. In the Truce mode, players learn to use this: one player draws its
+attention with calls and Stage transformations, while the others attack its vents.
+
+**Weak points:** each Roar-vent is a weak point. Breaking a vent silences part
+of its chorus, and the Roar slows. Break them all, and it collapses into ash.
+
+## The Clamor across the seasons
+
+| Season | The Clamor's presence |
+|---|---|
+| 1–2 | None; a faint second light in the sky at most |
+| 3 · The Second Light | Arrives: one Landfall per match; the Second Stone finale |
+| 4 · The Glass Flower | Contained or rooted, depending on Season 3; drawn by the Flower's tone |
+| 5 · The First Made Thing | Growing louder as creation draws it |
+| 6 · The Roaring Comes | Full force: two Landfalls per match; the Roar; the Truce |
+| 7 · The Unbraiding | Burned out by the planet's fever, or holding the coast |
+
+## Why the Clamor must never "win"
+
+The Clamor is the one force that could end Greyborn's story by devouring
+everything. That makes it a powerful threat, but it can never be allowed to
+succeed, because:
+
+- It has no character arc and nothing to say; a world it won would be empty.
+- It isn't playable, so its victory would mean the players' sides both lost.
+- Its role is to **test** the planet and the Murmur, and to show what they could be together.
+
+So the Clamor's strongest outcome is always a **lasting scar**: a Scald region
+on the War Map, a coast it holds. Never an ending.
+
+## The Clamor and Stillheart
+
+Stillheart is the planet's answer to the Clamor (decided). Cold against
+heat, patience against hunger, slowness against frenzy. When they meet:
+
+- Scald cannot spread near a Stillheart (in co-op, from Season 6).
+- Clamor creatures slow down around it.
+- The Roar's chorus falters when a Stillheart's heartbeat is close.
+
+In lore, this is why the planet grew Stillheart long ago, and why it was
+afraid: something made to stop a fire that hungry could stop anything.
+
+## Guidelines for Clamor encounters
+
+1. **Always a third party.** In PvP, the Clamor attacks both teams equally.
+2. **Always telegraphed.** Every Landfall has a 30-second warning in the sky.
+3. **Always destructible.** Every Landfall has a core that ends it.
+4. **Always a dilemma.** Its reward should make teams choose between fighting it and fighting each other.
+5. **Never the main event of a PvP match.** It disrupts; it doesn't decide.
+
+## Fragments of the Clamor's past
+
+These appear only as hints in Memories, never explained:
+
+- In the Murmur's Memory of the Roaring, the Clamor arrives on the Quiet World
+  as a red streak, the same as on Greyborn.
+- In one Memory, the faint old streaks in Greyborn's sky are shown up close: each
+  one ends at a dark, dead world.
+- In the Season 6 finale Memory, the Roar's vents, when broken, briefly whisper,
+  as if, somewhere inside, the Clamor once devoured something that whispered too.
+
+## Scald on the War Map
+
+From Season 3, the War Map has a third colour. Scald regions appear as
+rust-red patches with drifting smoke and a faint glow at night. Unlike the
+planet's amber and the Murmur's cyan, Scald patches **change on their own**:
+
+- They **spread** during seasons when Landfalls are frequent.
+- They **burn out** to grey ash when the Clamor is contained, and then, over
+  following seasons, the ash slowly greens again as Seedcallers and the
+  planet's growth return ([30](30-season-4.md#new-creatures-for-bloom)).
+- They **never become a playable side's territory.** No front goal ever asks
+  players to *help* the Clamor.
+
+## Clamor creatures in matches
+
+| Creature | What players should do |
+|---|---|
+| **Shriekers** | Kill them fast; while they live, you're revealed |
+| **Spore Kites** | Shoot them before they land; each one starts new Scald |
+| **Ashmouths** | Don't let them feed; fight them away from bodies |
+| **Scald Hulks** | Kite them; avoid their burning trails |
+| **Kindlers** | Protect the herds; a burning stampede can wreck a fight |
+| **Ventborn** | Ignore them unless you're going for the vent |
+| **The Roar** | Make noise to pull it, break its vents, never fight it alone |
+
+## The Clamor's design in one sentence
+
+**The Clamor is the storm that shows what the planet and the Murmur could be
+if they stopped fighting each other, and what they lose when they don't.**
+
+## The Clamor on screen: art checklist
+
+1. **Crude shapes.** Clamor creatures are lumpy and asymmetrical, never elegant. They're grown fast and badly.
+2. **Inner glow like coals**, visible through cracks in the crust.
+3. **Steam and heat haze** around everything it touches.
+4. **Rust-red and ash-black only.** No amber, no cyan.
+5. **Movement is frantic:** twitchy, jerky, never still.
+6. **Scald looks like disease on the land:** blotchy, spreading in patches, not in clean lines like Blight.
+
+## The Clamor and the other two minds, compared
+
+| | The planet | The Murmur | The Clamor |
+|---|---|---|---|
+| Spreads | Like growth | Like frost | Like fire |
+| Sounds | Breath | Whispers | Shouting |
+| Moves | Patiently | Precisely | Frantically |
+| Leaves behind | Life | Glass | Ash |
+| Wants | To live | A home | Everything |
+
+## Writing the Clamor: do and don't
+
+- **Do** make it frightening through scale, noise and speed.
+- **Do** show its effects on wildlife: burning herds, silenced birds, fleeing Kith.
+- **Don't** give it motives a player could sympathise with.
+- **Don't** explain where it comes from beyond the faint streaks in the sky.
+- **Don't** let it become a joke or a routine: every Landfall should feel like a disaster arriving.

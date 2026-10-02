@@ -117,3 +117,145 @@ the true pair it shares a lineage with.
 | Titan, Brawler, Verdant, Hollow | Commit, Root & Void | Rooted Mountain, Cave and Stone, Wild Growth, Storm in the Dark | Front line and territory, maximum connections |
 | Titan, Verdant, Thornrunner, Bonespire | Hunt | Rooted Mountain, Herd and Hunter, Ridge and Spine, Thicket Hunters, Root and Fossil | One pair, five cross-resonances: flexible and well connected |
 | Brawler, Hollow, Thornrunner, Stillheart | (none) | Storm in the Dark, Two Claws, Silent Hunt (+ Attunement) | A stealthy, aggressive team with no true pairs, relying on Stillheart |
+
+## Each cross-resonance in play
+
+**Rooted Mountain (Titan + Verdant).** *Shines:* holding a Hub against a
+push. The Verdant roots behind the Titan, and the Titan's Bulwark makes those
+nodes almost impossible to uproot from the front. *Counter:* flank around the
+Titan, or kill the Verdant first. *Example:* on the Elder Ribs, a Titan
+blocking one rib entrance while the Verdant holds the Hub behind it.
+
+**Cave and Stone (Titan + Hollow).** *Shines:* teamfights in confined spaces.
+The Hollow's rift pulls enemies together, and the Titan's slam hits them
+harder. *Counter:* stay out of the rift. *Example:* in The Nerve's tunnels,
+where there's nowhere to escape a pull.
+
+**Herd and Hunter (Titan + Thornrunner).** *Shines:* chasing down fleeing
+enemies. The Titan staggers a group; the Thornrunner dashes through all of
+them and gets a reset. *Counter:* spread out after a slam.
+
+**Ridge and Spine (Titan + Bonespire).** *Shines:* sieges. The Titan
+Bulwarks forward, the Bonespire fires over it with extra range. *Counter:*
+flank the Bonespire, which is now standing still behind the Titan.
+
+**Wild Growth (Brawler + Verdant).** *Shines:* aggressive pushes into enemy
+territory. Each Brawler kill on rooted ground heals it, so the Verdant roots
+ahead and the Brawler fights on that ground. *Counter:* fight off the roots.
+
+**Storm in the Dark (Brawler + Hollow).** *Shines:* fast engages. The Hollow
+opens a rift and the Brawler rolls through it at speed into the enemy.
+*Counter:* watch for rifts opening near you; it's the tell.
+
+**Two Claws (Brawler + Thornrunner).** *Shines:* picking off a lone target.
+Both hit within two seconds, and the bleed finishes the job. *Counter:* stay grouped.
+
+**Break and Mark (Brawler + Bonespire).** *Shines:* breaking big targets. The
+Brawler grabs a Titan or Stillheart; its weak point cracks open; the Bonespire
+lances it. *Counter:* stay out of grapple range.
+
+**Thicket Hunters (Verdant + Thornrunner).** *Shines:* ambushes in your own
+territory. The Thornrunner disappears from the enemy minimap on Verdant
+ground. *Counter:* don't chase into enemy territory blind.
+
+**Root and Fossil (Verdant + Bonespire).** *Shines:* holding lines. Ossuary
+walls on rooted ground last much longer, creating long-lasting barriers.
+*Counter:* break the walls early, or go around.
+
+**Silent Hunt (Hollow + Thornrunner).** *Shines:* stealth plays. The
+Thornrunner moves near the Hollow without making a sound. *Counter:* watch
+for prey fleeing; wildlife still notices.
+
+**Echo of Bone (Hollow + Bonespire).** *Shines:* surprise long-range shots.
+Lances fired into one side of a rift come out the other, catching enemies from
+an unexpected angle. *Counter:* watch where rifts open, and keep out of line with both sides.
+
+## How cross-resonance interacts with Stillheart
+
+Stillheart has no true pair and no cross-resonances; instead, it has
+**Lullaby Resonance** (with anyone) and **Attunement** (with one chosen ally).
+A team with Stillheart therefore trades two potential cross-resonances for
+Stillheart's flexible support. In drafts, that makes Stillheart the natural
+fourth pick for a team that already has one true pair and needs to fill a gap.
+
+## Cross-resonance in co-op
+
+In the **Truce** mode ([27](27-modes.md)), cross-resonances work across sides:
+a Wildborn Titan and a Blightborn Verdant still get Rooted Mountain. Their
+visual threads mix amber pollen and glass dust. It's a small detail, but it
+makes the alliance visible in every fight.
+
+## Future cross-resonances
+
+When new lineages arrive, each will need cross-resonances with all existing
+lineages. The design test for each one:
+
+1. Does it express how those two parts of the planet's body would work together?
+2. Is it small enough to stay weaker than a true pair?
+3. Does it have a clear visual and sound?
+4. Does it have a clear counter?
+
+## Tuning values (starting points)
+
+| Cross-resonance | Value to tune | Starting value |
+|---|---|---|
+| Rooted Mountain | Uproot resistance behind Bulwark | Uproot 50% slower |
+| Cave and Stone | Bonus slam damage on rift-affected targets | +15% |
+| Herd and Hunter | Thorn Dash resets per stagger | 1 |
+| Ridge and Spine | Lance range bonus behind Bulwark | +20% |
+| Wild Growth | Heal on kill on rooted ground | 10% max Health |
+| Storm in the Dark | Roll speed through a rift | +30% |
+| Two Claws | Bleed window / duration | 2 s window, 1 s bleed |
+| Break and Mark | Weak point exposure after Grapple | 3 s |
+| Thicket Hunters | Minimap hiding on Verdant ground | Full |
+| Root and Fossil | Ossuary duration on rooted ground | +50% |
+| Silent Hunt | Thornrunner sound signature near the Hollow | Muted |
+| Echo of Bone | Lance damage through a rift | +10% |
+
+Every value is a lever. If a cross-resonance is too strong, its value is
+reduced, never removed, so the connection always means something.
+
+## All 15 combinations at a glance
+
+| | Titan | Brawler | Verdant | Hollow | Thornrunner | Bonespire |
+|---|---|---|---|---|---|---|
+| **Titan** | — | **Smash & Roll** (pair) | Rooted Mountain | Cave and Stone | Herd and Hunter | Ridge and Spine |
+| **Brawler** | | — | Wild Growth | Storm in the Dark | Two Claws | Break and Mark |
+| **Verdant** | | | — | **Void Garden** (pair) | Thicket Hunters | Root and Fossil |
+| **Hollow** | | | | — | Silent Hunt | Echo of Bone |
+| **Thornrunner** | | | | | — | **Co-Stalk** (pair) |
+
+Stillheart connects to all six through Lullaby Resonance and Attunement.
+
+## A drafting guide in three questions
+
+1. **Do we have a true pair?** If not, the next pick should complete one.
+2. **Which cross-resonances does our next pick add?** Prefer the pick that adds the most useful ones for the map.
+3. **What role is missing?** Front line, territory, control, scouting, siege, sustain
+   ([02](02-ascendant-roster.md#team-roles)). Fill the gap that hurts most on this map.
+
+## Why cross-resonance exists
+
+The source pages' core idea is **interdependency**. With only three true
+pairs, a team that didn't draft them would have no interdependency at all.
+Cross-resonance makes every combination of lineages connected in some way, so
+interdependency runs through every team, not just the ones with perfect pairs.
+
+## Cross-resonance on each launch map
+
+| Map | Strongest cross-resonances | Why |
+|---|---|---|
+| **Ashfall Crossing** | Ridge and Spine, Herd and Hunter | Long sightlines for lances; open ground for chases |
+| **The Elder Ribs** | Rooted Mountain, Root and Fossil | Holding rib entrances and the central Hub |
+| **Breathing Canopy** | Thicket Hunters, Silent Hunt | Dense cover and many small Verdant-friendly nodes |
+
+## Visual threads, specified
+
+The thread between two resonating creatures is thin and subtle: it must
+never clutter a fight.
+
+- **Wildborn:** drifting amber pollen motes along a curved line, fading at the ends.
+- **Blightborn:** a fine line of glass dust that catches the light.
+- **Truce (mixed):** both together, twisted around each other like braided ground.
+- Threads fade out entirely during intense combat and reappear when it calms,
+  so they inform without distracting.

@@ -137,3 +137,141 @@ Every map has **one Starwound crater** and **one Heartwood grove**:
   through landscape, creature behaviour, sound, and how the world reacts.
 - **Both sides are true to their nature.** The Murmur isn't evil in a human
   sense; it's hunger and will. Playing Blightborn should feel thrilling, not shameful.
+
+---
+
+## Greyborn as a body
+
+To understand Greyborn, imagine a creature so large that its skin is a
+continent. Its fur is forest and grassland. Its bones push up as mountains.
+Its nerves run underground as glowing roots, carrying signals faster than
+anything that walks on it. Its blood, SAP, rises through the soil and pools
+in its hearts, the Resource Hubs. It breathes: the Rootwilds rise and fall
+with every breath, and the mist at dawn is its exhale.
+
+Like any living body, it has an immune system: it can grow defenders when it
+needs them. For most of its life, it didn't need many. Its creatures were
+grazers and hunters, and its Ascendants were builders and gardeners: the
+Mountain That Walked raised the Spirecliffs; Greymother planted the Rootwilds.
+Then something entered its body from outside, and for the first time, the
+planet had to fight.
+
+The Murmur is, from the planet's point of view, an infection: something
+foreign spreading through its nerves and taking its creatures. From the
+Murmur's point of view, Greyborn is the only living world it has found since
+its own was destroyed, and it is trying to become part of it. Neither is wrong.
+
+## The Answering: how the planet calls
+
+When the planet needs defenders, it doesn't speak. It **presses**. Kith feel
+it through their feet first: a warmth, a pressure, a hum too low to hear.
+Then the hunger comes: a drive to eat, to grow, to change. Broods that
+feel it stop wandering and start hunting. Within days (within minutes, in a
+match), they begin to evolve.
+
+The planet doesn't call every brood. It calls the ones near where it's
+threatened, and the ones it senses will grow well. Called broods aren't
+chosen for loyalty; they don't know what they're fighting for. They only know
+the pressure under their feet, and that it feels like being needed.
+
+## The Murmur's daily life on Greyborn
+
+The Murmur spreads slowly. A thin film of Glaze creeps a few metres a day
+through the soil and up the trunks. Where it settles, it listens: to the
+roots, to the creatures, to the planet's slow thoughts. It learns. When a
+creature wanders onto Blight and lingers, the Glaze climbs it, and the
+creature's movements begin to align with the Murmur's whispers. In time, it
+belongs to the Murmur.
+
+When a birth-node ripens on blighted ground, the Murmur is there at the
+moment of budding. The Kith that step out have never known silence. The
+whispers are their first sound and their constant company. These are the
+Hushed Kith, and when the Murmur needs them, they evolve.
+
+## What it's like to be Wildborn
+
+To be Wildborn is to feel the ground. Every node you root sends a small
+warmth back up through your feet. Every Planet Pulse feels like the world
+taking a deep breath around you. Your brood moves as individuals who trust
+each other: each one makes its own choices, and they come together when it matters.
+
+## What it's like to be Blightborn
+
+To be Blightborn is never to be alone. The whispers are always there, and
+your brood moves as if it shares one thought. When you blight a node, you
+feel the Murmur's attention flow into it. When a Murmur Surge fires, it feels
+like a thousand voices rising at once to protect you. It isn't sinister to
+you. It's home.
+
+## The laws of the world
+
+These are the rules the world itself follows, which every system respects:
+
+1. **Everything living belongs to the planet** until something takes it.
+2. **The Murmur takes by touch and copies what it takes.** (From Season 5, it can also create.)
+3. **Nothing on Greyborn speaks in words.**
+4. **What dies returns to the soil**, unless it is Blighted, in which case it shatters to dust.
+5. **The Heartwood can't be Blighted; the Starwound can't hold roots.**
+6. **Kith carry every lineage inside them**; the planet decides which awakens.
+7. **Size and sound grow together.** The more powerful a creature, the more it can be heard.
+
+## The world across the seasons
+
+| Season | What changes in the world |
+|---|---|
+| 1 | A glass mountain wakes on the horizon |
+| 2 | Frost spreads; the Sleeper wakes |
+| 3 | A red streak in the sky; a second stone falls |
+| 4 | A pale blue flower blooms in the Glasswaste |
+| 5 | The Murmur hums; Glass Gardens grow; the planet creates in answer |
+| 6 | The Roaring: red nights, braided ground |
+| 7 | The braid burns; the Last Braid remains |
+
+## The world at peace
+
+Greyborn wasn't always at war, and it isn't at war everywhere. Most of the
+planet, on most days, is simply alive. In the Rootwilds, the canopy breathes
+and broods of wild Kith play in the clearings. On the Ashen Steppe, the herds
+move under a soft grey sky. In the Rimewastes, everything sleeps. The war is
+fought where the Murmur's Blight meets the planet's roots, along fronts that
+shift with every season; but behind those fronts, the world goes on.
+
+This matters for the game's tone. Maps aren't wastelands. They're living
+places where a war happens to be passing through. A player should be able to
+stand still in any match and feel the world continuing around them: birds,
+herds, wind, the planet's slow breath.
+
+## The Kith's place in the world
+
+Among all of Greyborn's creatures, the Kith are the planet's most precious:
+the original creature, carrying every lineage inside it. They aren't the
+largest or the strongest; they're small and quick and fragile. But every Kith
+could become an Ascendant, and that potential is what both the planet and the
+Murmur want.
+
+This gives the war a quiet centre. It isn't fought over land, or SAP, or
+even the Heartwood. It's fought over the **Kith**: which mind will they grow
+into? The planet calls them to become its answers; the Murmur takes them to
+become its copies. And the Kith themselves, who never asked for any of it,
+simply follow the pressure under their feet or the voices in their heads.
+
+## Geography in brief
+
+The Greyreach, Greyborn's one great landmass, is surrounded by the cold,
+still Stillsea. The **Starwound** lies in the far north and the **Heartwood**
+in the far south, exactly opposite each other. Between them, twelve regions
+sit on a gradient from untouched to lost: the breathing Rootwilds, the tunnels
+of the Underroot, the grey Ashen Steppe, the silent Hollow Mire, the towering
+Spirecliffs, the fossil-strewn Bone Flats, the frozen Rimewastes, the
+volcanic Cinderveil, the shard-studded Shattered Coast and the glass of the
+Glasswaste. Full details are in the atlas ([11](11-atlas.md)).
+
+## Questions the world asks
+
+Greyborn's story is built around questions it never answers in words:
+
+- **What is a home?** The planet defends its body; the Murmur seeks a new one after losing its own.
+- **Can two minds understand each other without language?** The planet and the Murmur try, in Seasons 4–6.
+- **What do we owe the creatures who fight for us?** The Kith fight a war they don't understand.
+- **Can something made to copy learn to create?** The Murmur, from Season 4.
+- **What remains after loss?** The Last Braid.
