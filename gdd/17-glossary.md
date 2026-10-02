@@ -67,6 +67,8 @@ were confirmed by the director; everything else is proposed.
 | **Pair Bond** | Long-term progress for two friends playing a pair together | [26](26-collection.md) |
 | **Planet Pulse** | Patron events that help the Wildborn when they're behind | [05](05-territory-and-economy.md) |
 | **Resource Hub** | A large node structure; Hub Defense Level 1–10 | [05](05-territory-and-economy.md) |
+| **Roar, the** | The Clamor's apex creature; its noise drowns out calls | [37](37-the-clamor.md) |
+| **Roar-vent** | A shouting fissure where the Clamor's mind gathers and its creatures spawn | [37](37-the-clamor.md) |
 | **Rimewastes** | Frozen plateau; the planet's sleep | [11](11-atlas.md) |
 | **Rootwilds** | Breathing forest; the planet's lungs | [11](11-atlas.md) |
 | **S1 / S2 / S3** | Synergy tiers (cooldowns 15/12/9 s) | [04](04-synergies.md) |

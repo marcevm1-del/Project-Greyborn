@@ -57,6 +57,7 @@ Please confirm or override:
 | 51 | In-world names for structures: Cradle/Clutch (bases), Heartseeds/Shard Hearts (Enemy Cores), Sap Wells/Glow Wells (Hubs), Root-knots/Whisper-nodes (nodes) | Proposed | [33](33-structures.md) |
 | 52 | Far-region creatures (#47–#54), including the unharmable Heartwood Elk, the only creature without a Blighted form | Proposed | [34](34-far-region-creatures.md) |
 | 53 | Uses for the Heartwood and the Starwound: season finale, endgame PvE run, or the story's final act? What lies below the First Root and inside the Seed? | Director's call; unresolved on purpose | [35](35-heart-and-seed.md) |
+| 54 | Proposed backstory: the Clamor ate the Murmur's home world; a fragment of the Murmur fled in the Starwound stone; the Clamor followed. Adopt it? It sets the tone for the long-term story | Proposal | [37](37-the-clamor.md#the-clamor-and-the-murmur-what-really-happened) |
 
 ## Decided
 
@@ -113,3 +114,4 @@ Please confirm or override:
 | gdd-0.20 | 2026-10-02 | New chapter **31 — Evolution Branches**: Aggression and Tactical Control branches for all 7 lineages, L10 and L15 upgrades, and 3 Ultimate Forms per branch (fights, objectives, unusual). |
 | gdd-0.21 | 2026-10-02 | New chapters **32 — Cross-Resonance** (12 small passives for the non-pair combinations, draft implications) and **33 — Structures of the War** (in-world forms of bases, Enemy Cores, Hubs and nodes for each side). |
 | gdd-0.22 | 2026-10-02 | New chapters **34 — Creatures of the Far Regions** (8 natives, #47–#54; 54 native creatures total) and **35 — The Heart and the Seed** (the two poles of the world, layer by layer, as mirrors and future story spaces). |
+| gdd-0.23 | 2026-10-02 | New chapters **36 — Greyborn at a Glance** (five-minute summary, decided facts, reading guide, five core rules) and **37 — The Clamor in Depth** (biology, Scald stages, full roster with the Roar apex, look and sound, proposed backstory). |

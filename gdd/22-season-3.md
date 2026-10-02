@@ -47,6 +47,8 @@ it attacks both teams.
 | **Ashmouths** | Two-legged | Devour the corpses of anything nearby to grow stronger |
 | **Spore Kites** | Insect | Flying spore-carriers that seed new patches of Scald |
 
+The full Clamor roster, including its apex, **the Roar**, is in [37 — The Clamor in Depth](37-the-clamor.md).
+
 ### Wildlife and the Clamor
 - Clamor creatures **eat wildlife**. A Landfall near herds drives them into a panic.
 - Neither Wildborn nor Blightborn can rally or infect Clamor creatures. They can't be turned.
