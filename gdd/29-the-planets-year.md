@@ -149,3 +149,127 @@ planet feel like a body rather than a backdrop: one that grows, rests, sleeps
 and fights. They also give the live game a natural calendar. Players come to
 expect the Migration in Ash and the Long Cold in Rime the way they expect real
 seasons, and each season's story feels rooted in the time of year it happens.
+
+## A year on the Ashen Steppe
+
+**Bloom.** The grey grass turns green at the roots. Mossback herds calve, and
+the steppe is full of small, unsteady legs. Lumen Bees drift over Sunpods and
+flowers. Wild Kith broods chase each other through the grass. The Grey Eye is
+brightest now, and the Standing Stones cast short shadows.
+
+**Ash.** The grass turns pale and dry. Ash drifts from the distant Cinderveil
+and settles in soft grey layers. The Grey Migration begins: herds gather from
+all directions and pour south in a river that takes weeks to pass, with
+Ashfang packs shadowing them. At dusk, the Strays face north for longer than
+at any other time of year.
+
+**Rime.** Frost creeps in from the west. The grass freezes stiff, and every
+footstep crunches. The herds shelter in valleys. The sky is low and white,
+and the Fall-line glows through it at night. Sound carries strangely in the
+cold: far-off calls seem close.
+
+**Fever.** Heat haze rises from the steppe. Storms build in the afternoons,
+and dry lightning flickers on the horizon. The Ashfangs grow bold and hunt in
+daylight. Embergrass in the steppe catches fire easily, and fires race across
+the grass in lines, leaving black stripes that green again by Bloom.
+
+## The Turns in every region
+
+| Region | Bloom | Ash | Rime | Fever |
+|---|---|---|---|---|
+| **Rootwilds** | Flowers, calves, bees | Leaves falling grey | Canopy breath slows; frost on leaves | Dry, crackling; fires at the edges |
+| **Underroot** | Nerve-light brighter | Steady | Pulses slow and dim | Warm drafts; faster pulses |
+| **Ashen Steppe** | Green roots, calving | The Migration | Frost, sheltering herds | Grass fires, storms |
+| **Hollow Mire** | Insects, warm fog | Thick fog | Ice on the edges | Steam rising |
+| **Spirecliffs** | Wildflowers on ledges | Strong winds | Ice on the peaks | Rockfalls |
+| **Bone Flats** | Bone Thistle blooms | Dry, dusty | Frost on the bones | Blinding salt glare |
+| **Rimewastes** | Ice cracks, brief thaw | Snow begins | Deep freeze; the Sleeper's heartbeat clearest | Slight thaw at the edges |
+| **Cinderveil** | Quiet volcanoes; green shoots | Ash clouds rising | Snow on black rock | Eruptions |
+| **Shattered Coast** | Shard Gulls nesting | Grey seas | Ice in the shallows | Storms on the Stillsea |
+| **Glasswaste** | Lattice Vines grow faster | Unchanged | Bolder whispering | Glass cracking in the heat |
+| **Heartwood** | Overflowing with life | Gold light | Calm, slow | Untouched |
+| **Starwound** | Unchanged | Unchanged | Unchanged | Unchanged: the Murmur's heart ignores the planet's year |
+
+**Note:** the Starwound never changes with the Turns. It's the one place on
+Greyborn that doesn't belong to the planet's rhythm, and that's part of what makes it feel alien.
+
+## The Turns and the three minds
+
+- **The planet** *is* the Turns. They are its moods.
+- **The Murmur** is strongest when the planet sleeps (Rime) and weakest when it
+  grows (Bloom) or burns (Fever). It has learned to wait.
+- **The Clamor** doesn't care about the Turns at all. It arrives when it hears a
+  mind, whatever the season. In lore, its first stone (Season 3) fell in
+  Fever and its Roaring (Season 6) came in Rime, when the planet was least able to answer.
+
+## The Turns in the Den and on the War Map
+
+- **The Den** changes with each Turn: flowers in Bloom, ash in Ash, frost in Rime, heat shimmer in Fever ([26](26-collection.md#the-den-in-depth)).
+- **The War Map** shows the Turn as a soft overlay: green tint in Bloom, grey
+  drift in Ash, frost at the edges in Rime, a red heat glow in Fever.
+- **The music** of the menus shifts too: lighter in Bloom, slower in Rime, more percussive in Fever.
+
+## A calendar of one year
+
+| Months | Live season | Turn | Story | Events |
+|---|---|---|---|---|
+| 1–3 | Season 1 | Ash | A glass mountain wakes | Great Migration, Moth Bloom, Starfall Nights |
+| 4–6 | Season 2 | Rime | The Sleeper wakes | The Long Cold, The Quiet Hours |
+| 7–9 | Season 3 | Fever | The Clamor arrives | Fever Storms, Landfall Rush, Hunt Weekend |
+| 10–12 | Season 4 | Bloom | The Glass Flower | Calving Days, Sap Rain, Whale Song |
+
+The second year repeats the Turns with a new story: Season 5 in Ash, Season 6
+in Rime, Season 7 in Fever, and Season 8 in Bloom.
+
+## Why the Turns don't touch balance
+
+The Turns change **how often** things appear (plants, creatures, weather),
+never **what they do**. A Sapbloom heals the same amount in Rime as in Bloom;
+there are just fewer of them. The lore says the Murmur is stronger in Rime,
+but the Blightborn are not stronger in Rime matches. That separation lets the
+world feel alive and seasonal while keeping every match fair.
+
+## The Turns and Memories
+
+Some Memories can only be found in a particular Turn, which gives players a
+reason to revisit maps through the year:
+
+| Memory | Turn | Where |
+|---|---|---|
+| **Calving** | Bloom | Ashfall Crossing |
+| **Moth Bloom** | Ash (dusk) | Any map |
+| **The Planet Sleeps** | Rime | The Sleeper |
+| **The Fever** (planet's view) | Fever | Fevermouth |
+
+## How players feel the Turns
+
+The Turns are subtle in a single match and powerful over months. A player
+might not notice that there are fewer Sapblooms in Rime. But after a year of
+play, they will remember the first frost appearing on the Ashfall plains,
+the steppe burning in Fever, and the calves stumbling through the grass in
+Bloom. The planet's year becomes part of their own year with the game.
+
+## Turn-change moments
+
+When a new Turn begins (with each new season), every player's first match of
+the season opens with a short wordless moment before the brood buds: the
+map shown briefly in its new Turn. Frost spreading across a field, ash
+beginning to fall, flowers opening, or heat haze rising. Then the
+birth-nodes split, and the match begins.
+
+## Turn design checklist
+
+When a new season is planned, its Turn should be checked against these questions:
+
+1. Does the season's story fit the planet's mood in this Turn?
+2. Do the Turn's weather and wildlife changes support the story's images?
+3. Are the Turn's Memories and events ready?
+4. Do the Den and the War Map overlays match?
+5. Has every Turn effect been confirmed to change only frequency and atmosphere, never rules or power?
+
+## The planet's year in one line each
+
+- **Bloom:** the planet grows, and its creatures play.
+- **Ash:** the planet lets go, and its herds travel.
+- **Rime:** the planet sleeps, and the Murmur creeps.
+- **Fever:** the planet fights, and everything burns.
