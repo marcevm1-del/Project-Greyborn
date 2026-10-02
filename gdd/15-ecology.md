@@ -295,3 +295,5 @@ Read the creatures, and you'll read the battle.
 
 Wildlife should never feel like an obstacle placed by a designer. Every
 creature should feel like it was there before the match, and will be there after.
+
+The world was here first.

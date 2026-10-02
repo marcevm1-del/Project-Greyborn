@@ -161,3 +161,119 @@ core skill of Greyborn and asks teams to master it:
 | The Archive | Managing many enemies while focusing one target |
 
 A team that can beat all six has mastered the game.
+
+## Encounter numbers (proposal)
+
+| Hushed Answer | Health (per heart) | Main attack damage | Speed | Duration target |
+|---|---|---|---|---|
+| The Glass Range | 4,000 | Heavy, slow | Slow walk | 10–12 min |
+| The Shatterer | 3,000 | Heavy bursts | Fast rolls | 6–8 min |
+| The Lattice Grove | 2,500 (per tree heart) | Light, constant | Slow | 8–10 min |
+| The Unspoken | 2,000 | Medium, from nowhere | Fast, unseen | 6–8 min |
+| The Endless Pursuit | 2,500 | Medium pounces | Very fast | 8–10 min |
+| The Archive | 3,500 | Light, plus adds | Stationary | 8–10 min |
+
+## PvP vs. co-op rules
+
+| | PvP finales | Co-op modes |
+|---|---|---|
+| **Who it attacks** | Only Wildborn (as in Season 1) | Everyone |
+| **Who wins** | The team with the better objective result | The team, together, if it breaks all hearts |
+| **Sides** | Two teams, swapping sides between rounds | Mixed teams |
+| **Scaling** | Fixed | Scales with difficulty tier |
+
+## Difficulty tiers (co-op)
+
+| Tier | Change |
+|---|---|
+| **Hushed** (normal) | Base numbers |
+| **Ringing** (hard) | +50% heart Health; faster attacks |
+| **Shattering** (hardest) | +100% heart Health; an extra phase; no respawns in the final phase |
+
+## The Hushed Watch, in detail
+
+The endgame idea from [35](35-heart-and-seed.md) and above, as a full design proposal:
+
+- **Setting:** the Starwound's floor, the ring where the six stand.
+- **Players:** four, any mix of sides.
+- **Structure:** six rooms around the ring, one per Hushed Answer, faced in any order.
+  Between rooms, a short walk across glass with Shard Storms and Blighted creatures.
+- **The final room:** after all six fall, the ring's centre opens toward the
+  Lattice Sea, and the run ends with a view of the Seed in the distance,
+  pulsing. No fight there. Just the view, for now.
+- **Reward:** the six encounter Memories, and a unique brood mark: six glass shapes in a ring, all kneeling.
+
+## Production notes
+
+- **Each Hushed Answer** is a large, unique asset with three heart states and
+  phase changes: plan them as the biggest single creatures in the game.
+- **Shared tech:** the Glass Range's walking path, the Lattice Grove's
+  node-glazing and the Endless Pursuit's map-circling all reuse systems that exist
+  for ordinary play (paths, territory, wildlife movement).
+- **Audio:** each needs one signature tone, layered on the Murmur's palette.
+- **Order of production:** the Glass Range first (Season 1), then whichever
+  the next finale needs. The Unspoken last: it needs the most audio and accessibility work.
+
+## Why the Hushed Answers matter to the story
+
+They are the Murmur's copies of the planet's greatest creatures. Defeating
+them is never a victory over the Murmur. Each defeat Memory shows something
+sad: a copy beside its original's resting place, a whisper inside silence,
+two hunts that will never meet. They are the clearest sign that the Murmur
+once looked at the planet's best work and wanted it for itself.
+
+## How players first meet each Hushed Answer
+
+| Hushed Answer | First appearance |
+|---|---|
+| The Glass Range | Season 1: on every horizon, then the finale |
+| The Shatterer | A coastal finale or a Truce wave boss (proposal) |
+| The Lattice Grove | A Bloom-season event (proposal) |
+| The Unspoken | A Rime-season event on The Nerve (proposal) |
+| The Endless Pursuit | A Hunt Weekend special (proposal) |
+| The Archive | A finale about memory (proposal) |
+
+Each first appearance should be preceded by weeks of hints on the horizon or
+in Memories, the way the Glass Range was in Season 1.
+
+## Encounter design rules
+
+1. **Weak points are the key.** Every Hushed Answer is beaten by breaking hearts, never by raw damage.
+2. **One skill each.** Each encounter isolates one core skill of the game.
+3. **Telegraphed attacks.** Every big attack has a clear wind-up, readable by shape and sound.
+4. **Phases change behaviour,** not just numbers.
+5. **No unwinnable moments:** a team that plays well can always recover.
+6. **Respect the mirror** in PvP: the encounter must be fair to both teams across the two rounds.
+
+## The Hushed Answers and Stillheart
+
+None of the Hushed Answers is a copy of Stillheart. The Murmur reached the
+Sleeper too late (Season 2), or copied it only after it woke. Whether the
+Murmur will one day make a seventh Hushed Answer, a glass Stillheart, is an
+open question for the director. In lore, it would be the Murmur's answer to
+the planet's answer: a glass copy of the creature made to stop the Clamor.
+
+## In one sentence
+
+**Six perfect glass copies of the planet's first heroes, standing in a ring
+at the edge of the crater, each one a test of a different skill, and each one
+a little sad to defeat.**
+
+## Hushed Answers FAQ
+
+**Are the Hushed Answers alive?** In a way: they're held by the Murmur's will,
+like every Blighted thing, but they have no Kith inside them. They are pure copies.
+
+**Can they be rallied or infected?** No. They belong entirely to the Murmur.
+
+**Can a Hushed Answer be destroyed for good?** In lore, no: defeated ones
+return to the Hushed Watch and reform. Only the story's ending could change that.
+
+**Why don't they fight in every match?** Because they're the Murmur's
+guardians, not its soldiers. They only move when the story calls them.
+
+## Closing note
+
+The Hushed Answers are the most spectacular encounters in Greyborn, but their
+real job is emotional: to remind players that the Murmur studied the planet's
+heroes with something like admiration, and built them again in glass.

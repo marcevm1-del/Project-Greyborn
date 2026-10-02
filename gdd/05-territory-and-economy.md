@@ -177,3 +177,114 @@ for 10 seconds by a wave of whispering.
 
 Two currencies, one map. Personal power comes from fighting and returning;
 team power comes from holding ground.
+
+## Nodes in detail
+
+| Node size | Cells | Typical location | Capture time (base, 4 s per channel) | Uproot time (S1 / S2 / S3) |
+|---|---|---|---|---|
+| Small | 1–2 | Forest clearings, cave junctions | One channel | 5–10 s / 4–8 s / 3–6 s |
+| Medium | 3–4 | Open ground, ridges | One channel, then spread | 15–20 s / 12–16 s / 9–12 s |
+| Large | 5–6 | Plains, Hub surroundings | One channel, then spread | 25–30 s / 20–24 s / 15–18 s |
+| Hub | 6 + structure | The five Resource Hubs | Attack stages first ([33](33-structures.md)) | Only in Exposed and Collapsing stages |
+
+**Capture** roots the node's core cell; the rest of the node fills over a few
+seconds as roots (or Blight) spread from it. **Uprooting** works cell by cell,
+so bigger nodes take longer to take back.
+
+## How Territorial Influence is calculated
+
+TI = (cells your team holds ÷ all capturable cells) × 100%, with **Hubs
+counting extra** (+10% weight each). Proposal for launch maps:
+
+| Holding | Approximate TI |
+|---|---|
+| Your half of the map, no Hubs | ~40% |
+| Your half plus your two Hubs | ~50% |
+| Your half, your Hubs and the centre | ~60% |
+| Your half and all five Hubs | ~75% |
+| The mercy rule | 80% for 60 seconds |
+
+## Tension in numbers
+
+| Factor | Tension added per second at a border |
+|---|---|
+| Borders touching (base rate) | +0.2 |
+| Each fight within 15 m of the border | +1.0 |
+| Each Stage 2 creature nearby | ×1.5 |
+| Each Stage 3 creature nearby | ×2 |
+| No fighting for 30 s | −0.5 (decay) |
+
+At 75, the drone starts. At 100, the event fires, and that border's Tension resets to 0.
+
+## The event deck, with weights
+
+| Deck | Event | Weight |
+|---|---|---|
+| Neutral | Rootquake | 25% |
+| Neutral | Marrow Storm | 20% |
+| Neutral | Stampede | 20% |
+| Neutral | SAP Surge | 20% |
+| Neutral | Core Bloom | 15% |
+| Planet Pulse | Heartquake | 40% |
+| Planet Pulse | Healing Bloom | 40% |
+| Planet Pulse | The Old Tall wakes | 20% |
+| Murmur Surge | Shard Rain | 40% |
+| Murmur Surge | Thousand Whispers | 40% |
+| Murmur Surge | Blighted Wyrm | 20% |
+
+The apex events (the Old Tall, the Blighted Wyrm) are rarer because they're
+the most powerful. A deck never fires the same event twice in a row in one match.
+
+## SAP across a match (example, one team)
+
+| Time | Nodes held | Hubs | SAP income per minute | Spent on |
+|---|---|---|---|---|
+| 0–5 min | 6 small | 0 | ~400 | Saved |
+| 5–10 min | 10 | 1 | ~800 | Hub Defense to Level 3 |
+| 10–15 min | 14 | 2 | ~1,300 | Sap Draw; an event response (SAP Surge) |
+| 15–20 min | 12 | 2 | ~1,100 | Hub Defense to Level 7 on the threatened Hub |
+| 20+ min | Varies | Varies | Varies | Everything into the last stand |
+
+## Territory strategies
+
+| Strategy | How | Strength | Weakness |
+|---|---|---|---|
+| **Turtle** | Hold your half, max your Hubs' Defense | Hard to break; strong late | Concedes the centre; enemy patron events won't help you |
+| **Spread** | Take many small nodes everywhere | High passive income | Thin; easy to uproot |
+| **Centre control** | Hold the central Hub and its surroundings | Rotates fastest to any fight | Exposed on two sides |
+| **Cut the bridges** | Uproot the enemy's connecting nodes | Turns enemy nodes Inaccessible to them | Takes coordination and timing |
+| **Event farming** | Keep borders hot where events favour you | Free swings | Unpredictable |
+
+## Territory edge cases
+
+| Case | Rule |
+|---|---|
+| Two teams channel the same neutral node | Both channels pause; neither progresses until one is interrupted |
+| A Hub's last owner disconnects | The Hub stays the team's; ownership is by team, not player |
+| Scald covers a node (Season 3+) | The node becomes neutral and uncapturable until the Scald burns out or its Landfall core is destroyed |
+| A node is Inaccessible to both teams | Possible in Phase 1 only; Phase 2 opens all central nodes |
+
+## Territory UI
+
+- **The minimap** shows territory as amber and cyan, with team outlines for clarity.
+- **Node states** use the source pages' colours: cyan = Captured, gold =
+  Inaccessible, red = Vulnerable, shown with team-coloured borders to avoid
+  the cyan clash with the Murmur ([23](23-art-direction.md#ui-direction)).
+- **TI** is shown as two bars at the top of the screen, filling toward each other.
+- **Tension** is shown on borders as a glowing line that brightens toward 100.
+
+## Territory principles
+
+1. **The map is the planet's body.** Territory is its nerves, claimed by roots or Blight.
+2. **Two currencies, two jobs:** cores for personal power, SAP for team power.
+3. **Borders make the map alive** through Tension and events.
+4. **The losing side's patron helps,** so territory leads are never permanent.
+5. **Territory is always readable,** in colour, in material and on the UI.
+
+## Territory in one paragraph
+
+Every node on the map is a cluster of the living planet's nerves. Teams claim
+them with roots or Blight, extract SAP from them, and build Territorial
+Influence across the map. Where territories touch, Tension rises until the
+world itself erupts in an event, and the losing side's patron steps in. The
+team that holds the map grows richer, but never safe.
