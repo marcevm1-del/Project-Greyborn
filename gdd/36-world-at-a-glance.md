@@ -122,3 +122,133 @@ Last Braid hinting that it isn't over ([50](50-master-timeline.md)).
 ## Tone in five words
 
 **Primal. Majestic. Tragic. Alive. Wordless.**
+
+## The core loop, explained simply
+
+1. **Grow:** eat creatures, kill enemies, destroy Enemy Cores, collect evolution cores.
+2. **Risk:** the cores you carry make you louder and more valuable to hunt.
+3. **Return:** carry them home to convert them into levels, or convert at a Hub for less.
+4. **Evolve:** level up, change Stage, pick a branch, unlock Synergies with your partner.
+5. **Claim:** root nodes, hold Hubs, build Territorial Influence and SAP.
+6. **Dominate:** win the map and the final fights, and feed your side's war.
+
+## Greyborn in ten images
+
+1. A root knot splitting open and a small grey Kith stepping out.
+2. A glowing scar across the night sky.
+3. Moss turning to glass mid-leaf at a forest's edge.
+4. A Titan of stone and a Titan of black glass, identical in shape, colliding.
+5. A river of herds thundering across a grey steppe between two fighting broods.
+6. A Kith kneeling at an amber pool as light pours out of it.
+7. A walking mountain of black glass on the horizon.
+8. A pale blue flower alone in a field of glass.
+9. Roots and crystal woven together, holding back a rust-red fire.
+10. A single braided patch on a quiet shore, with a Stray asleep beside it.
+
+## Every chapter in one line
+
+| # | Chapter | In one line |
+|---|---|---|
+| 00 | Source Pages | Your GDD pages transcribed, decoded and interpreted |
+| 01 | Vision | The pitch, pillars and player experience |
+| 02 | Ascendant Roster | The seven lineages and their kits |
+| 03 | Evolution System | Levels, Stages, cores, returns and branches |
+| 04 | Synergies | Pair abilities, tiers, Resonance and weak points |
+| 05 | Territory & Economy | Nodes, Hubs, SAP, Tension and events |
+| 06 | Match Flow | A match from budding to the Base Heart |
+| 07 | Tactical Notes | How to play well |
+| 08 | Open Questions | What still needs deciding, and the log |
+| 09 | Wildlife | The 42 core creatures and their rules |
+| 10 | The World | The living planet and the war |
+| 11 | Atlas | Twelve regions on an infection gradient |
+| 12 | Life on Greyborn | The Kith life cycle, plants, weather, the Murmur's biology |
+| 13 | Legends | The First Answers and the Fall |
+| 14 | Lineage Forms | How each lineage looks on each side |
+| 15 | Ecology, Sky & Sea | Food web, sky and ocean |
+| 16 | Maps | The seven main maps |
+| 17 | Glossary | Every term |
+| 18 | The Answering War | The War Map and seasons |
+| 19 | Sound & Music | The two voices of the world |
+| 20 | Season 1 | The Glass Range walks |
+| 21 | Season 2 | The Sleeper wakes; Stillheart |
+| 22 | Season 3 | The Clamor arrives |
+| 23 | Art Direction | Style, palette and light |
+| 24 | The Three Minds | The planet, the Murmur and the Clamor |
+| 25 | Calls & First Budding | Wordless pings and onboarding |
+| 26 | Collection | Cosmetics and long-term progress |
+| 27 | Modes | Every way to play |
+| 28 | Tales & Trailer | Stories and trailers for tone |
+| 29 | The Planet's Year | Bloom, Ash, Rime and Fever |
+| 30 | Season 4 | The Glass Flower |
+| 31 | Evolution Branches | 42 Ultimate Forms |
+| 32 | Cross-Resonance | The other 12 pairings |
+| 33 | Structures | Bases, Cores, Hubs and nodes in the world |
+| 34 | Far-Region Creatures | Natives of the outer regions |
+| 35 | The Heart and the Seed | The two poles of the world |
+| 36 | At a Glance | This summary |
+| 37 | The Clamor in Depth | The rival hive mind |
+| 38 | Memory Catalogue | Every wordless vision |
+| 39 | World Events | Recurring events |
+| 40 | Hushed Answers | Six glass guardians as encounters |
+| 41 | Landmarks | Places and future maps |
+| 42 | Map Seeds | Three more maps developed |
+| 43 | Living Creatures | Ascendants as animals |
+| 44 | Flora | 26 plants |
+| 45 | The Kith | The players' species |
+| 46 | Wild Ascendants & Old Ones | Evolution outside the war |
+| 47 | Season 5 | The turning point |
+| 48 | Beyond the Sky | The Murmur's lost home |
+| 49 | Season 6 | The Roaring Comes |
+| 50 | Master Timeline | The whole story in order |
+| 51 | Season 7 | The truce breaks |
+
+## The planet's body, mapped
+
+| Part of the body | Region | What it means in play |
+|---|---|---|
+| Heart | Heartwood | The goal the Murmur can never reach; a story place |
+| Lungs | Rootwilds | Breathing canopy; many small nodes |
+| Nerves | Underroot | Tunnels and pulses of light |
+| Skin | Ashen Steppe | Open ground and migrations |
+| Gut | Hollow Mire | Silence and ambush |
+| Spine | Spirecliffs | Height and chokepoints |
+| Memory | Bone Flats | Fossils and sieges |
+| Sleep | Rimewastes | Ice and the Sleeper |
+| Fever | Cinderveil | Volcanoes and heat |
+| Wound edge | Shattered Coast | The sea holding back the Blight |
+| Scar tissue | Glasswaste | Land lost to the Murmur |
+| The wound | Starwound | Where the Murmur fell |
+
+## Ten words every team member should know
+
+| Word | Meaning |
+|---|---|
+| **Kith** | The players' species, native to Greyborn |
+| **Ascendant** | A fully evolved Kith (Level 20) |
+| **Wildborn / Blightborn** | The planet's side / the Murmur's side |
+| **The Murmur** | The hive mind from the meteorite |
+| **Blight** | The Murmur's crystal growth |
+| **Evolution cores** | What you carry and convert into levels |
+| **SAP** | The planet's blood; the team currency |
+| **Synergy** | A pair ability between two lineages |
+| **Memory** | A wordless lore vision |
+| **The Clamor** | The rival hive mind that devours |
+
+## Decisions so far, in brief
+
+The director has decided: the planet's name and nature; the Kith; the
+meteorite and the hive mind; mirror sides assigned per match; Blight, infected
+wildlife, crater zones and nature fighting back; neutral wildlife; the names
+Starwound, Murmur, Wildborn, Blightborn and Heartwood; community goals for the
+War Map; Stillheart as a universal partner, made to answer the Clamor; the
+rival hive mind; the Murmur's backstory and the Quiet World; the Murmur
+learning to create; why the Kith are called; and the directions of Seasons
+5, 6 and 7. Everything else is proposed. The full list is in [08](08-open-questions.md).
+
+## How to use this document
+
+- **Designers:** start with 03–06 for rules, then 31–33 for detail.
+- **Artists:** 14, 23, 43 and 44, then the creature and region chapters.
+- **Writers:** 10, 13, 24, 28, 38, 48 and 50.
+- **Audio:** 19, then any chapter's "sound" sections.
+- **Producers:** 08 for decisions, 18–22 and 30, 47, 49, 51 for the season roadmap.

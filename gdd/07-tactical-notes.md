@@ -113,3 +113,129 @@ The living world constantly tells observant players what is happening.
   every fight, deny enemy evolution through kills, close the match early in Phase 4.
 - **One pair plus Stillheart** (Titan, Brawler, Stillheart, Verdant): a slow,
   safe team that protects carriers with Hibernate and wins on Territorial Influence at time.
+
+## 10. Phase-by-phase play guide
+
+**Phase 1 (Stable Flow).** This is a race for value, not a fight. Base Forms
+are fragile, so trading kills is risky. The best teams spread into pairs,
+take the nodes nearest their base, farm the safe wildlife, and watch the
+enemy's awakenings to learn their draft. A single early kill on a careless
+enemy Kith is worth taking; a long chase into enemy territory is not.
+
+**Phase 2 (Pre-Aggro Resource Control).** Hubs open as the main objective.
+This is when the first carriers appear, so hunters (Thornrunners, Brawlers)
+should be watching the routes home. Take your first return at a good moment,
+ideally together with your pair partner for Resonance. Aim to reach Stage 2
+before Phase 3 begins.
+
+**Phase 3 (Resource Stage).** Synergies slow down (31 s / 20 s), so
+fights are less decisive. Use this phase to build an advantage that lasts:
+Hub Defense upgrades, Enemy Core sieges, territory that feeds passive income.
+Global events start firing; position your team near borders whose events
+favour your pairs.
+
+**Phase 4 (Hunt).** Only S3 Synergies work. If your pairs reached S3, this is
+your moment: force fights. If they didn't, play for territory and time. The
+bases are open; protect your Heartseeds or Shard Hearts and look for the
+moment to strike at the enemy's Base Heart.
+
+## 11. Pair play guides
+
+**Commit pair (Titan + Brawler).** The Titan leads and the Brawler follows,
+never the other way around. The Brawler should stay within roll range of the
+Titan at all times once Smash & Roll is close (Level 18). Before that, the
+Brawler roams for kills while the Titan holds ground, and they meet for fights.
+Call "Slam up" before every engage.
+
+**Root & Void pair (Verdant + Hollow).** The Verdant roots first; the Hollow
+waits. The Void Garden is strongest on contested nodes and Hubs, where enemies
+must stand to capture. The Hollow should protect the Verdant above all: a
+dead Verdant means no garden.
+
+**Hunt pair (Thornrunner + Bonespire).** The Thornrunner scouts and marks; the
+Bonespire waits at range with a clear line of sight. They rarely stand
+together, but they always know where each other is. The 4-second window
+between Mark and lance is the whole pair's skill. Call "Marked" every time.
+
+**Stillheart and any partner.** Attune early to the teammate who carries the
+most cores or takes the most risks. Keep Hibernate for saves, not damage.
+
+## 12. Playing from behind, playing from ahead
+
+| Situation | What to do |
+|---|---|
+| **Behind** | Avoid even fights; take Enemy Cores and Landfall cores; position near borders (your patron is likely to intervene); hunt enemy carriers to deny their evolution |
+| **Slightly behind** | Trade objectives instead of fights; field-convert to stay present |
+| **Even** | Play your pairs' strengths; control Hubs |
+| **Ahead** | Upgrade Hub Defense; don't overextend into borders (the enemy patron is coming); protect your carriers |
+| **Far ahead** | Close the match in Phase 4; take the Base Heart before comeback tools turn it |
+
+## 13. Map tactics for the launch maps
+
+- **Ashfall Crossing:** plan rotations around the Grey Migration every 6
+  minutes; when it passes, the tunnels are the only route, and whoever holds
+  the tunnel exits holds the map.
+- **The Elder Ribs:** hold the rib-tops for vision; patrol the bone nests
+  outside; the six entrances mean defenders must be able to rotate fast.
+- **Breathing Canopy:** fight when the canopy is down if you're an ambush
+  team, when it's up if you have Bonespires; the mire is the safest route for carriers.
+
+## 14. Advanced: managing Tension
+
+Tension builds where borders touch, and at 100 it fires a global event. Good teams **manage** it:
+
+- **Let it build** on borders where an event would favour you (your pair's event, or your patron if you're behind).
+- **Bleed it off** by pulling back from borders where an event would favour the enemy.
+- **Watch for the drone at 75,** and decide in advance who will be where when it fires.
+
+## 15. What to do against each lineage
+
+| Enemy | How to beat it |
+|---|---|
+| **Titan** | Flank to its back weak point; bait its slam when its Brawler is far away (+50% cooldown); kite it at range |
+| **Brawler** | Punish the moment after Roll Commit, when its chest is exposed; stay grouped so it can't isolate anyone |
+| **Verdant** | Dive it first: it's fragile, and without it there are no roots and no Void Garden |
+| **Hollow** | Mark it (Thornrunner) to reveal it; fight outside its rifts; Null Pulse can't be cast while staggered |
+| **Thornrunner** | Stay grouped; watch for prey fleeing with no visible predator; hit it hard when it commits |
+| **Bonespire** | Break line of sight; dive it with Brawler or Thornrunner; its loud lance gives away its position |
+| **Stillheart** | Poke from range; don't overcommit into Lull; burst its visible heart weak point |
+
+## 16. Protecting carriers
+
+A teammate carrying 300+ cores is the most valuable thing on your team.
+
+- **Escort:** one teammate walks home with them, ideally their pair partner (for Resonance).
+- **Route:** go through your own territory; avoid borders and open ground.
+- **Stealth:** use the Hollow Mire, Veilfern patches and Hush Cicada colonies to mute the carry signature.
+- **Saves:** Stillheart's Hibernate keeps all carried cores through a killing blow.
+- **Field-convert:** if the route home is blocked, convert at a held Hub. 70% is better than nothing.
+
+## 17. Communicating with calls
+
+- **Call every Synergy** ("Slam up", "Marked", "Garden"); it's the difference between a combo and two separate attacks.
+- **Call "Heavy"** when you pass 300 cores; your team needs to know.
+- **Call "Danger"** on every enemy you spot; a team that shares information wins more fights.
+- **Don't call near enemies** unless you want them to hear you; calls carry.
+- **Use the contextual tap** for speed: tap on an enemy for Danger, on a node for Root here.
+
+## 18. Reading the enemy draft
+
+Lineages are hidden until Level 3, so the first minutes are guesswork:
+
+- **Watch where the enemy goes:** Base Forms that head straight for nodes may be Verdants; ones that farm the flanks may be Thornrunners.
+- **Listen at 2:30–3:30** for the awakening sounds: a heavy footfall (Titan), a skitter (Thornrunner), a pressing silence (Hollow).
+- **Count the pairs:** two true pairs means a coordinated team; split pairs mean flexibility but weaker Synergies.
+- **Adjust your plan** within the first minute after the awakenings.
+
+## 19. Wildlife as a tool
+
+| Creature | Tactical use |
+|---|---|
+| **Mossback herd** | Herd it toward enemy nodes to erode their roots or Blight |
+| **Siege Beetle** | Lure it into an enemy Hub or Core |
+| **Stonehide Ox** | Bait its charge into the enemy team |
+| **Stiltwalker** | Hide beneath it to cross open ground unseen |
+| **Hush Cicadas** | Fight inside their colony to mute your sounds |
+| **Strider Cranes** | Avoid startling them, or startle them on purpose as a distraction |
+| **Lantern Lizard** | Kill it before an ambush, or leave it as an alarm |
+| **Strays** | Don't let them grow near your nodes, or a Wild Ascendant will rise |

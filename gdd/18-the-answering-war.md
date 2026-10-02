@@ -130,3 +130,140 @@ seasons and see:
 
 Over years, the War Map becomes a record of everything the community has
 done: a history book of Greyborn written by its players, without words.
+
+## A season of the war, as players experience it
+
+**Week 1.** A player opens the game and the War Map unfolds in the Den: the
+Greyreach painted in amber and cyan, three fronts pulsing. They play a match on
+Ashfall Crossing as Wildborn and win. A spark flies from their Den to the
+Ashen Steppe front, and the root-vine climbs a fraction. Next match, they're
+Blightborn, and their spark feeds the crystal vine on the same front. They're
+contributing to **both** races, every week, whichever side they're assigned.
+
+**Week 4.** The community has noticed that the Blightborn are ahead on the
+Bone Flats front. Players talk about it. Wildborn goals there involve
+breaking weak points and destroying Enemy Cores, so players who care about
+the planet's side push harder on those actions when they play Wildborn.
+
+**Week 8.** Patron week. Planet Pulse and Murmur Surge events fire more often,
+and the vines on every front jump.
+
+**Week 9.** The fronts close. The War Map shows the results with a short
+animation: on the Ashen Steppe, roots flood across the region (Held); on the
+Bone Flats, crystal spreads (Falling); on the Rootwilds, both vines reached
+the top in the same week, and the region becomes a front line (Contested).
+
+**Week 10.** The finale. Then the new season, and the map remembers.
+
+## Every region as a potential front
+
+| Region | Wildborn goal theme | Blightborn goal theme | Best season Turn |
+|---|---|---|---|
+| Rootwilds | Protect the breath: Aphids, Bees, canopy nodes | Glaze the lungs | Bloom |
+| Underroot | Guard the nerves | Creep through the tunnels | Any |
+| Ashen Steppe | Guide the herds | Take the herds | Ash |
+| Hollow Mire | Keep the silence | Fill it with whispers | Rime |
+| Spirecliffs | Hold the spine | Climb it | Fever |
+| Bone Flats | Guard the memory | Copy the memory | Ash |
+| Rimewastes | Wake the Sleeper safely | Reach it first | Rime |
+| Cinderveil | Burn out the Blight | Survive the fever | Fever |
+| Shattered Coast | Hold the wound's edge | Push past the sea | Any |
+| Glasswaste | Reclaim lost ground | Hold the scar | Bloom |
+
+**Never fronts:** the Heartwood and the Starwound ([35](35-heart-and-seed.md)).
+
+## The three results, shown on the map
+
+- **Held:** the region glows amber. Roots spread visibly across it, and small
+  flowers appear on the illustration. The region's maps get their bloom variant.
+- **Falling:** the region glows cyan-violet. Glass creeps across it, and the
+  illustration shows spires rising. The region's maps get their glass variant.
+- **Contested:** the region is split by a jagged line of amber and cyan, both
+  materials tangled along it. The region's maps get a front-line variant.
+
+## The season-end ceremony
+
+At the end of every season, every player sees the same short, wordless sequence:
+
+1. The War Map zooms out to show the whole Greyreach.
+2. Each front's result plays in turn, with its sound: a deep exhale for Held,
+   a ringing chime for Falling, both together for Contested.
+3. The season's finale result plays last, with its Memory.
+4. The camera settles on the next season's sky, and the new fronts light up.
+
+## Fairness rules for the war
+
+1. **Every match counts the same,** ranked or casual, win or loss.
+2. **Both sides earn from every match:** the winning and losing team both
+   earn front points for their side's actions.
+3. **Map rotation is balanced** so each front's map comes up equally.
+4. **No side ever gets a gameplay advantage** from war results; only cosmetics and atmosphere change.
+5. **Goals are announced at season start** and never changed mid-season.
+
+## War Map FAQ
+
+**Does losing matches hurt my side?** No. Front points come from actions
+(rallying, purging, destroying Cores), not from wins.
+
+**Can I choose a side to support?** Not directly; sides are assigned per match.
+But you can choose which actions to focus on when you play each side.
+
+**What if one side is clearly winning everything?** Patron events and
+balanced goals keep the war close, and every result is fun either way.
+The world changes, but no one is punished.
+
+## How a season's goals are designed
+
+1. **Start from the story.** What is the season about? (Season 2: racing to the Sleeper.)
+2. **Choose fronts** that fit the story and the Turn, with at least one launch-map region.
+3. **Pick three mirrored actions per front** that make players do what the
+   story is about (Season 2's Rimewastes front rewards finding the Sleeper's
+   Memory sites and surviving the ice).
+4. **Make every action possible on both sides,** with the side's flavour.
+5. **Set targets** from expected matches per front, with the 0.6 factor.
+6. **Write both outcomes** for every front before the season starts, so either
+   result leads to an interesting change.
+7. **Plan the finale** so it pays off the season's story and feeds the next.
+
+## The war for new players
+
+A player who joins in the middle of a season shouldn't feel left out:
+
+- **The War Map explains itself:** the first time a player opens it, a short
+  wordless animation shows the Fall, the Answering, and the current fronts.
+- **Every match contributes**, from the first one.
+- **The history layer** lets new players scroll back and see what happened
+  before they arrived, told through the map's changes and the Memories each season left behind.
+- **Finale rewards** are earned by taking part, not by having played all season.
+
+## The war across years
+
+Over several years, the War Map becomes the record of Greyborn's history:
+
+- Regions that have been Held, Falling and Contested in turn, each leaving traces.
+- Landmarks added by finales: the Glass Range kneeling or standing, Glass
+  Gardens, Scald scars, the Last Braid.
+- Each season's sky, preserved in the history layer: the first red streak,
+  the red nights of the Roaring.
+
+The long-term goal is a map where a veteran player can point to a region and
+say *"I was there when that fell"*, and a new player can scroll back and see it happen.
+
+## What the war is not
+
+- **Not a faction loyalty system.** Players don't pledge to a side; they play both.
+- **Not a balance lever.** Results never change match rules or power.
+- **Not a grind.** No player needs to play every week to get the finale's rewards.
+- **Not the end of the story.** Neither side can win the war outright; only
+  the director can write its ending, years from now ([18](18-the-answering-war.md#can-the-war-end)).
+
+## The War Map's sound and motion
+
+- **Idle:** the map breathes slowly, like the planet. Held regions pulse with
+  a faint amber heartbeat; Falling regions shimmer; Contested lines flicker where the materials tangle.
+- **A spark arriving:** a soft chime (Blightborn) or a creak (Wildborn) as your
+  contribution lands, and the front's vine grows by a visible step.
+- **Patron week:** the whole map glows brighter, and both patrons' sounds play
+  faintly underneath: the planet's exhale and the Murmur's whisper.
+- **Scald regions (Season 3+):** crackle and smoke on the map; burnt-out
+  regions turn grey and quiet, and slowly green again over the following seasons.
