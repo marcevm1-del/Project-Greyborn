@@ -20,6 +20,7 @@ were confirmed by the director; everything else is proposed.
 | **Brood** | A group of Base Forms that budded together. A 4v4 team | [12](12-life-on-greyborn.md) |
 | **C1 / C2 / C3** | Conversion-time tiers at base (15/12/9 s proposed) | [03](03-evolution-system.md) |
 | **Cinderveil** | Volcanic highlands; the planet's fever | [11](11-atlas.md) |
+| **Clamor, the** | Proposed name for the rival hive mind from the second meteorite: loud, fast, devouring | [22](22-season-3.md) |
 | **Codex (Memory)** | The collection of Memories a player has found | [13](13-legends.md) |
 | **Conversion** | Turning carried cores into EXP at base (or at a Hub, at 70%) | [03](03-evolution-system.md) |
 | **Control** | Stat: CC strength and node capture/uproot power | [02](02-ascendant-roster.md) |
@@ -44,6 +45,7 @@ were confirmed by the director; everything else is proposed.
 | **Hushed Answers** | The Murmur's glass copies of the First Answers | [13](13-legends.md) |
 | **Infect / Rally** | Turning a weakened creature to fight for your side (Blightborn / Wildborn) | [09](09-wildlife.md) |
 | **Kith** | The native humanoid species of Greyborn that every player starts as (**decided**) | [02](02-ascendant-roster.md), [12](12-life-on-greyborn.md) |
+| **Landfall** | A Clamor shard striking a match map; its core can be destroyed for a reward | [22](22-season-3.md) |
 | **Lantern, the** | Greyborn's amber moon | [15](15-ecology.md) |
 | **Lineage** | One of the six evolutionary paths: Titan, Brawler, Verdant, Hollow, Thornrunner, Bonespire | [02](02-ascendant-roster.md) |
 | **Memory** | A wordless lore vision found at a map site | [13](13-legends.md) |
@@ -57,10 +59,11 @@ were confirmed by the director; everything else is proposed.
 | **Rootwilds** | Breathing forest; the planet's lungs | [11](11-atlas.md) |
 | **S1 / S2 / S3** | Synergy tiers (cooldowns 15/12/9 s) | [04](04-synergies.md) |
 | **SAP** | The planet's lifeblood; the team currency | [05](05-territory-and-economy.md) |
+| **Scald** | The Clamor's rust-red spore growth; eats both roots and Blight | [22](22-season-3.md) |
 | **Seed, the** | The meteorite's core at the centre of the Starwound | [11](11-atlas.md), [12](12-life-on-greyborn.md) |
 | **Shattered Coast** | Shard-studded cliffs; the wound's edge | [11](11-atlas.md) |
 | **Sleeper, the** | A creature frozen in the Rimewastes; possibly a seventh answer | [13](13-legends.md) |
-| **Stillheart** | Draft seventh lineage: the Sleeper's line, a tempo controller and support | [21](21-season-2.md) |
+| **Stillheart** | Seventh lineage (draft kit): the Sleeper's line, a tempo controller and **universal partner** (**decided**) | [21](21-season-2.md) |
 | **Spirecliffs** | Towering rock columns; the planet's spine | [11](11-atlas.md) |
 | **Stage 1 / 2 / 3** | Base Form (L1–9), Enhanced Form (L10–19), Ultimate Form (L20) | [03](03-evolution-system.md) |
 | **Starshard** | Meteor glass. Its veins hold core caches | [10](10-world.md) |

@@ -95,21 +95,35 @@ find, so it must be protected).
 
 **Stats (L20 proposal):** Health 3,600 · Power 150 · Speed 90 · Control 120.
 
-### The pairing problem (needs a decision)
+### Pairing: universal partner (decided)
 
-The roster is built on **three pairs**. A seventh lineage breaks that pattern.
+**Decided (2026-10-02): Stillheart is a permanent universal partner.** It
+never gets a Synergy ability of its own. Instead it strengthens whoever it
+fights beside, which fits its lore as the answer from *before* the planet
+split its power into six.
 
-| Option | How it works | Pros | Cons |
-|---|---|---|---|
-| **A. Universal partner** | Stillheart has a weak **Lullaby Resonance** with any lineage: its partner's Synergy cooldowns are 10% shorter within 15 m. No Synergy ability of its own | Fits the lore (the answer from before the six were split). Flexible in the draft | Weaker identity; may feel like a pick without a payoff |
-| **B. Wait for an eighth** *(recommended)* | Stillheart uses option A **for one season**, then gets a true partner in Season 3 or 4, forming a **fourth pair** with a real Synergy | Keeps the pair design intact. Gives a reason for an eighth lineage | Stillheart spends a season half-finished |
-| **C. Pair with an existing lineage** | Stillheart joins an existing pair as a trio, or swaps into one | No eighth lineage needed | Breaks the clean three-pair structure |
+**Lullaby Resonance (base):** an ally within 15 m has their Synergy cooldowns
+reduced by **10%**.
+
+**Attunement (proposal, to give the pick a strong identity):** once per life,
+Stillheart can **attune** to one ally (2 s channel). Until either dies, it
+gets a small bonus tuned to that ally's lineage:
+
+| Attuned to | Bonus |
+|---|---|
+| Titan | Lull also roots slammed targets for 0.5 s |
+| Brawler | Hibernate on the Brawler ends with a free Roll Commit |
+| Verdant | Long Night also slows enemy capture speed by 30% |
+| Hollow | Drowse lasts 0.5 s longer inside a Void Rift |
+| Thornrunner | Marked targets are also Lulled |
+| Bonespire | Drowsing targets take 2× weak-point damage from the Bonespire's next lance |
+
+This keeps Stillheart flexible in the draft while giving each partnership its own flavour.
 
 ## Looking ahead: Season 3, The Second Light
 
-The faint light moving along the Fall-line ([15](15-ecology.md#the-sky)) grows
-brighter. What it is changes the whole future of the game, so it's the
-director's call:
+**Decided (2026-10-02): the second light is a rival hive mind.** See
+[22 — Season 3](22-season-3.md). The options that were considered:
 
 | Option | What the light is | What it brings |
 |---|---|---|

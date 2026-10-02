@@ -38,8 +38,9 @@ Please confirm or override:
 | 32 | Post-launch maps: Fevermouth (eruptions every 4 min), The Sleeper (breakable ice), Shard Reef (tides every 3 min). Keep, change or reorder? | Proposed | [16](16-launch-maps.md#post-launch-maps) |
 | 33 | Season 1 front goals and week-by-week beats. Do the goals reward the play you want to see? | Proposed | [20](20-season-1.md) |
 | 34 | **Stillheart** (seventh lineage, tempo/support): keep the concept, name and kit? | Draft | [21](21-season-2.md#the-seventh-lineage-stillheart-draft) |
-| 35 | Stillheart breaks the three-pair structure: A (universal partner), B (universal for one season, then an eighth lineage completes a fourth pair) or C (join an existing pair)? | B | [21](21-season-2.md#the-pairing-problem-needs-a-decision) |
-| 36 | What is the **second light** on the Fall-line? 1 (a rival hive mind), 2 (the Murmur's origin calling) or 3 (the planet's moon sending something)? | Director's call | [21](21-season-2.md#looking-ahead-season-3-the-second-light) |
+| 35 | Stillheart **Attunement** (a small bonus tuned to one chosen ally per life) to give the universal partner a strong identity. Keep it? | Proposed | [21](21-season-2.md#pairing-universal-partner-decided) |
+| 36 | The rival hive mind: names **the Clamor** (hive) and **Scald** (its growth); loud, fast and devouring, the opposite of the Murmur | Proposed | [22](22-season-3.md) |
+| 37 | Clamor Landfall as a hostile third force in 4v4 matches (attacks both teams, one team gets the reward). Does that fit? Is a future Wildborn + Blightborn truce mode interesting? | Proposed | [22](22-season-3.md#how-the-clamor-appears-in-matches) |
 
 ## Decided
 
@@ -53,6 +54,8 @@ Please confirm or override:
 | 2026-10-02 | **Names approved:** Starwound (meteorite), the Murmur (hive mind), Wildborn / Blightborn (sides), Heartwood (grove). |
 | 2026-10-02 | **The species is the Kith.** "Base Form" stays as the name of the first stage. |
 | 2026-10-02 | **The War Map moves by community goals** (option A): both sides race to complete seasonal goals per front. |
+| 2026-10-02 | **Stillheart is a permanent universal partner** (no Synergy ability of its own). |
+| 2026-10-02 | **The second light is a rival hive mind**: a second meteorite, a rival to the Murmur (Season 3). |
 | 2026-10-02 | **Neutral wildlife is in.** Body plans: four-legged, two-legged, six-legged, eight-legged and insects; 20–50 types, with contrasting creatures. |
 
 ## Design risks to watch
@@ -85,3 +88,4 @@ Please confirm or override:
 | gdd-0.11 | 2026-10-02 | Species named **Kith**; War Map decided as **community goals**. |
 | gdd-0.12 | 2026-10-02 | Post-launch maps (Fevermouth, The Sleeper, Shard Reef) added to 16. New chapter **20 — Season 1: The Hush Wakes** (fronts, mirrored goals, weekly beats, results, and the Glass Range Walks finale mode). |
 | gdd-0.13 | 2026-10-02 | New chapter **21 — Season 2: The Sleeper Stirs**: Season 1 carry-over, fronts, weekly beats, The Waking finale, the draft seventh lineage **Stillheart**, the pairing problem, and three options for Season 3's Second Light. |
+| gdd-0.14 | 2026-10-02 | Stillheart decided as a universal partner, with an Attunement proposal. Second light decided as a rival hive mind. New chapter **22 — Season 3: The Second Light** (the Clamor, Scald, Landfall events, Clamor creatures, season plan and finale). |
