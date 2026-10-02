@@ -256,3 +256,12 @@ Beyond Greyborn's sky lies a dark full of dead worlds and one hungry fire.
 Everything in this chapter exists to make the living planet feel precious,
 and the Murmur's arrival feel like what it was: a lonely survivor landing on
 the only living world it could find, and not knowing how to belong there.
+
+## Beyond the sky, in one sentence
+
+**Somewhere in the dark, worlds have died, and the only living one the Murmur
+could find is the one it is slowly, frightened, trying to become part of.**
+
+The dark beyond the sky is what makes Greyborn's living world shine.
+
+Above the haze, the dark; below it, life.

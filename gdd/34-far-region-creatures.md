@@ -128,3 +128,100 @@ their own. Each far region now has creatures that could live nowhere else:
 a bear that sleeps in snowdrifts, a lizard that swims in lava, a strider that
 walks on the sea, and an elk so close to the planet's heart that the Murmur
 has never touched one.
+
+## Each creature, in more depth
+
+| Creature | Behaviour AI | Sound | Art note |
+|---|---|---|---|
+| **Drift Owlbear** | Dormant until a player steps within 3 m of its drift; then attacks the nearest creature for 20 s and returns to sleep if unharmed | A deep snore under the snow; an explosive roar on waking | The drift must look *almost* natural: slightly too round, with a thin plume of frost |
+| **Hoarfrost Mites** | Swarm toward the nearest Stillheart; otherwise drift slowly across ice, leaving slick frost | A faint crackle, like frost forming | Tiny glints of white light moving across the ice |
+| **Cinder Salamander** | Basks on cooling rock; dives into lava when any creature comes within 10 m | A hiss and a soft plop into lava | Black skin with glowing orange veins that brighten when it dives |
+| **Ash Vulture** | Circles any area where combat has happened in the last 10 s; lands only on dead creatures | Rough croaks; wingbeats on hot air | Grey feathers, bald red heads, wings like tattered cloth |
+| **Tidal Strider** | Walks slow loops over water at high tide; stands still on the beach at low tide | Soft splashes; a low hum | Long, thin legs with wide flat feet that dimple the water |
+| **Shard Gull** | Dives into the surf for glass; mobs any creature that comes near its nest | Shrill cries; glass clinking in its beak | White and grey with glittering flecks; glass in its beak |
+| **Heartwood Elk** | Walks a slow path through the grove; ignores combat entirely | Deep, slow breaths; a soft hum | Taller than a Titan; antlers like living trees with leaves and flowers |
+| **Amber Beetles** | Crawl slowly between SAP pools; harmless | A faint clicking | A bead of amber SAP on the back, glowing like a jewel |
+
+## The far-region creatures through the Turns
+
+| Creature | Bloom | Ash | Rime | Fever |
+|---|---|---|---|---|
+| Drift Owlbear | Awake, hunting | Drowsy | Deep sleep under drifts | Restless, irritable |
+| Hoarfrost Mites | Few | Gathering | Swarming | Absent |
+| Cinder Salamander | Basking | Active | Hiding in deep lava | Everywhere |
+| Ash Vulture | Few | Many (the Migration brings death) | Few | Many (predators are bolder) |
+| Tidal Strider | Breeding in the bays | Common | Rare (icy shallows) | Restless in storms |
+| Shard Gull | Nesting | Common | Huddled on the cliffs | Storm-tossed |
+| Heartwood Elk | Calves appear | Common | Rarely seen | Unchanged |
+| Amber Beetles | Everywhere | Common | Dormant | Few |
+
+## How they fit the food web
+
+- **Ash Vultures** are scavengers, joining Marrowhounds at the end of the chain ([15](15-ecology.md)).
+- **Drift Owlbears** are apex-like predators of the Rimewastes, hunting Snowback Grazers and Rimeback Stags.
+- **Cinder Salamanders** eat insects drawn to the heat; Ash Vultures sometimes catch them.
+- **Shard Gulls** eat Tidecrawlers and small sea creatures, and collect glass.
+- **Amber Beetles** feed on SAP and are eaten by Kith and grazers alike.
+- **The Heartwood Elk** eats nothing anyone has seen. It may drink only SAP.
+
+## Rarity and placement in matches
+
+| Creature | Per match (on its maps) |
+|---|---|
+| Drift Owlbear | 2–3 drifts |
+| Hoarfrost Mites | 3–5 swarms |
+| Cinder Salamander | 4–6 |
+| Ash Vulture | 3–8 (more during fights) |
+| Tidal Strider | 2–3 at high tide |
+| Shard Gull | A flock of 6–10 on the cliffs |
+| Heartwood Elk | 0–1, rarely |
+| Amber Beetles | 5–10 near groves and pools |
+
+## Ideas for more far-region creatures
+
+| Idea | Region | Concept |
+|---|---|---|
+| **Ice Weaver** | Rimewastes | A spider that weaves bridges of frost across chasms |
+| **Lava Crab** | Cinderveil | A slow, armoured crab that walks through lava and leaves cooled stone behind |
+| **Deep Lanterns** | Shattered Coast (night) | Glowing jellyfish washed onto the beach that light the shore |
+| **Rootmoles** | Heartwood | Tiny burrowers that keep the Root Hills' soil soft |
+| **Glass Wisps** | Glasswaste (Season 5+) | Pale blue floating creatures, among the Murmur's first creations |
+
+## The far regions as habitats
+
+**The Rimewastes** support only the hardiest life: animals with thick fur,
+slow hearts and long sleeps. Everything here waits out the cold. The Drift
+Owlbears, Hoarfrost Mites, Snowback Grazers and Frostfangs all share one
+trait: they move slowly most of the time and very fast when they must, like
+Stillheart, the lineage that comes from this land.
+
+**The Cinderveil** is the opposite: life that loves heat. Salamanders swim in
+lava; vultures ride the rising air; Ashcap mushrooms grow in fresh ash.
+Nothing lives here comfortably, but some creatures live here well.
+
+**The Shattered Coast** is life at the edge of two worlds: the planet's land
+and its sea, the planet's life and the Murmur's glass. Gulls collect the
+Murmur's shards, Striders walk the shallows, and the whales sing the Blight still.
+
+**The Heartwood** is life at its most peaceful. The Elk and the Amber Beetles
+are gentle, and nothing here hunts openly. It is the only place on Greyborn
+where predators seem to rest.
+
+## Far-region creatures and the lineages
+
+| Creature | Affinity | Why |
+|---|---|---|
+| Drift Owlbear | Brawler | Explosive, sudden fury |
+| Hoarfrost Mites | Stillheart | Cold and patient, drawn to its frost |
+| Cinder Salamander | Titan | Shaped by the earth's heat; leaves stone behind |
+| Ash Vulture | Bonespire | Gathers what the dead leave |
+| Tidal Strider | Hollow | Moves silently over the surface of things |
+| Shard Gull | Thornrunner | A quick hunter of glittering prey |
+| Heartwood Elk | Verdant | The planet's growth, embodied |
+| Amber Beetles | Verdant | Carriers of the planet's blood |
+
+## Closing note
+
+The far regions are where Greyborn feels most like a whole planet: places
+most matches never visit, full of creatures that belong only there. Each one
+should make a player who glimpses it wonder what else lives beyond the edge of the map.

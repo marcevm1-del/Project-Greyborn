@@ -172,3 +172,134 @@ feel like the creature itself is changing, not like an icon updating.
 | Aggression and Resonance bonuses | 10–15% |
 
 Kills stay the biggest source, as the source pages require: **kills fuel evolution.**
+
+## EXP per level, in full (proposal)
+
+| Level → next | EXP needed | Cumulative |
+|---|---|---|
+| 1 → 2 | 100 | 100 |
+| 2 → 3 | 120 | 220 |
+| 3 → 4 | 140 | 360 |
+| 4 → 5 | 160 | 520 |
+| 5 → 6 | 180 | 700 |
+| 6 → 7 | 200 | 900 |
+| 7 → 8 | 220 | 1,120 |
+| 8 → 9 | 240 | 1,360 |
+| 9 → 10 | 260 | 1,620 |
+| 10 → 11 | 280 | 1,900 |
+| 11 → 12 | 300 | 2,200 |
+| 12 → 13 | 320 | 2,520 |
+| 13 → 14 | 340 | 2,860 |
+| 14 → 15 | 360 | 3,220 |
+| 15 → 16 | 380 | 3,600 |
+| 16 → 17 | 400 | 4,000 |
+| 17 → 18 | 420 | 4,420 |
+| 18 → 19 | 440 | 4,860 |
+| 19 → 20 | 460 | 5,320 |
+
+## What each level brings
+
+| Level | Gain |
+|---|---|
+| 1–2 | Base Form; faster each level |
+| 3 | **Lineage awakens:** full kit |
+| 5 | First ability upgrade |
+| 8 | Cross-resonance unlocks ([32](32-cross-resonance.md)) |
+| 10 | **Stage 2:** branch choice and first branch upgrade |
+| 12 | Void Garden (Verdant + Hollow) |
+| 15 | Second branch upgrade; Co-Stalk (Thornrunner + Bonespire); Tenacity cap |
+| 16+ | Territorial Dominance share per level |
+| 18 | Smash & Roll (Titan + Brawler) |
+| 20 | **Stage 3:** Ultimate Form |
+
+## Death and cores, in detail
+
+- On death, a player drops **all carried cores** where they fall, plus a **bounty** (60 + 10 × level) for the killer's team.
+- Dropped cores glow on the ground for **30 s**. Anyone (allies, enemies, Marrowhounds) can pick them up.
+- If a teammate recovers them, they count as that teammate's carried cores.
+- **EXP already converted is never lost.** Levels never go down.
+
+## Edge cases
+
+| Case | Rule |
+|---|---|
+| Carrying over the cap (450) | Extra cores aren't picked up; they stay on the ground |
+| Disconnecting while carrying | Cores drop as on death; the player's levels are kept for reconnection |
+| Converting when at Level 20 | Cores convert to team SAP instead (1 SAP per 2 cores), so late-game carrying still matters |
+| Field-converting at a Hub that's lost mid-channel | The channel breaks; cores are kept |
+| Stage change during a fight | The 1.5 s transformation is invulnerable but rooted; it can be timed defensively |
+
+## Evolution UI
+
+- **Carried cores:** a glowing seed counter by the health bar, with three
+  tiers of glow (under 150, 150–299, 300+) matching the carry signature.
+- **EXP bar:** fills only on conversion, so the gap between carried and banked is always visible.
+- **Next milestone:** a small icon shows the next big unlock (Stage, Synergy, branch).
+- **Partner's level:** shown beside your own, so Evolution-Sync Resonance is easy to manage.
+
+## Balance levers
+
+| Lever | Effect of raising it |
+|---|---|
+| Kill bounty | Faster snowballing; more aggressive play |
+| Wildlife core values | More farming; less PvP |
+| Aggression bonus cap | Longer carrying; more risk |
+| Field conversion efficiency | Fewer trips home; less carry risk |
+| Conversion times (C1/C2/C3) | Returns cost more map time |
+| Level costs | Slower matches; later Synergies |
+
+Each lever should be tuned one at a time in playtests, watching match length
+and the share of EXP from each source ([03](03-evolution-system.md#where-exp-comes-from-in-a-typical-match)).
+
+## Stat growth for one lineage, level by level (Titan, proposal)
+
+| Level | Health | Power | Speed | Control |
+|---|---|---|---|---|
+| 1 | 600 | 40 | 100 | 10 |
+| 3 | 1,000 | 55 | 97 | 18 |
+| 5 | 1,500 | 70 | 95 | 25 |
+| 8 | 2,200 | 88 | 92 | 34 |
+| 10 | 2,600 | 100 | 90 | 40 |
+| 12 | 3,100 | 115 | 89 | 48 |
+| 15 | 3,900 | 140 | 87 | 58 |
+| 18 | 4,700 | 165 | 86 | 66 |
+| 20 | 5,200 | 180 | 85 | 70 |
+
+Growth follows an S-curve: slow at first, fastest between Levels 8 and 16,
+then levelling off, so the middle of the match is where power changes most.
+
+## Evolution across the modes
+
+| Mode | Evolution changes |
+|---|---|
+| The Answering | Standard rules |
+| Brood Skirmish | EXP ×2; matches end around Level 15–18 |
+| Apex Hunt | Cores convert instantly; no carrying risk |
+| The Truce | Shared birth-pool; carrying risk from the Clamor only |
+| Season finales | Varies (e.g. The Glass Flower favours holding ground over evolution) |
+| The Den | Any Level can be set freely for practice |
+
+## Evolution and the story
+
+Evolution is the game's mechanic and the world's story at once. In the lore,
+the planet calls Kith, and they grow; in the game, players eat, carry and
+convert, and they grow. Every match is a Kith's life compressed into twenty
+minutes: budding, hunting, growing, and, if all goes well, becoming an Ascendant.
+
+## Evolution principles
+
+1. **Growth is visible.** Every level shows on the body.
+2. **Progress is risky until it's banked.** Carried cores can be lost; EXP never is.
+3. **Kills fuel evolution** (the source pages' first principle).
+4. **Returns fuel tactical choice** (the source pages' second principle).
+5. **The late game belongs to the map,** not just to levels (Territorial Dominance).
+
+## Evolution in one paragraph
+
+A Kith buds small and fragile. It eats critters, Strays and careless enemies,
+and carries what it eats as glowing cores that make it louder with every
+bite. When it judges the moment right, it runs home to its birth-pool and
+pours those cores into it, and grows. At Level 3 its lineage awakens; at 10 it
+chooses a path; at 12, 15 and 18 its partner bond becomes a power; at 20 it
+becomes an Ascendant, towering over the map. Every level is visible, every
+carried core is a risk, and every return is a choice.

@@ -314,3 +314,5 @@ The truce breaks; the braid remains.
 Grief, and one woven patch of hope.
 
 The braid remains.
+
+Always the braid.
