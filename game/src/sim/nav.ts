@@ -72,7 +72,7 @@ export class NavGrid {
   }
 
   /** A* path from a to b as smoothed waypoints (excludes the start). Empty if unreachable. */
-  findPath(a: Vec2, b: Vec2, maxExpand = 6000): Vec2[] {
+  findPath(a: Vec2, b: Vec2, maxExpand = 3500): Vec2[] {
     if (this.clearLine(a, b)) return [b];
     const [si, sj] = this.nearestOpen(...this.cellOf(a.x, a.z));
     const [gi, gj] = this.nearestOpen(...this.cellOf(b.x, b.z));

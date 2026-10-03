@@ -66,7 +66,7 @@ All keyboard/mouse bindings can be changed in Settings.
 | Structures: Hubs, Enemy Cores, Base Hearts | Done |
 | Wildlife: 7 species, 5 behaviours | Done |
 | Bots for the other 7 Ascendants | Done |
-| Phases, win conditions (Base Heart, mercy, time limit) | Done |
+| Phases, win conditions (Base Heart, mercy, time limit, overtime capture) | Done |
 | HUD, minimap, nameplates, damage numbers | Done |
 | Menus: title, lineage select, pause, settings, help, results | Done |
 | Audio: synthesised SFX, ambience, generative music, 3D positioning | Done |
@@ -78,7 +78,6 @@ All keyboard/mouse bindings can be changed in Settings.
 - Branch choice at L10 and the three Ultimate choices per branch at L20 (this build gives one Ultimate per lineage)
 - Synergy levels and Smash & Roll
 - Tension, global events and patron decks
-- Overtime capture rule
 - Online 4v4 (server-authoritative)
 - Tutorial (The First Budding, `gdd/25`)
 
@@ -94,6 +93,7 @@ All keyboard/mouse bindings can be changed in Settings.
 | Decision | Why |
 |---|---|
 | **Until Level 3, cores become EXP when picked up** (awakening rule) | Resolves a contradiction found by the simulator (`../sim/findings.md`, A2): the spec's targets needed a return before 3:30 but put the first return at 5–7 minutes. The GDD's own example player awakens without returning. |
+| **Playtest overrides** for SAP, the EXP curve, bounties, Enemy Core reward and Base Heart Health (`src/data/playtest-overrides.json`) | With the spec's values, bots ended matches around Level 5. The overrides come from the simulator's proposals (A1, A3, A6); they're layered on top of the spec, logged at load and easy to remove. |
 | **Short match option (default on)**: phases and time limit halved, EXP ×2 | A full 25-minute match against bots is long for a first session; the spec's numbers still apply in a Standard match. |
 | **Hub Defense is bought automatically for the team** | SAP spending UI isn't built yet; the team AI spends it as the spec's examples describe. |
 | **Enemies outside your team's sight are hidden** | Spec 01's sight radius (30 m, 40 m at Stage 3); carriers of 300+ cores are always shown. |

@@ -15,11 +15,29 @@ const results = [];
 const check = (name, ok, detail = '') => { results.push({ name, ok, detail }); console.log(`${ok ? 'PASS' : 'FAIL'} ${name} ${detail}`); };
 
 // software rendering in CI: use low quality so the test runs at a usable frame rate
-await p.addInitScript(() => localStorage.setItem('greyborn.settings', JSON.stringify({ quality: 'low', showFps: true })));
 await p.goto(url);
+await p.evaluate(() => localStorage.setItem('greyborn.settings', JSON.stringify({ quality: 'low', showFps: true })));
+await p.reload();
 await p.waitForFunction(() => window.greyborn && window.greyborn.state() === 'title', null, { timeout: 30000 });
 check('title screen loads', true);
 await p.screenshot({ path: `${out}/01-title.png` });
+
+// settings persist across a reload (change FOV through the real settings screen)
+await p.click('text=Settings');
+await p.$eval('input[data-k="fov"]', (el) => { el.value = '75'; el.dispatchEvent(new Event('input', { bubbles: true })); });
+await p.click('button:has-text("Done")');
+await p.reload();
+await p.waitForFunction(() => window.greyborn && window.greyborn.state() === 'title', null, { timeout: 60000 });
+const fov = await p.evaluate(() => JSON.parse(localStorage.getItem('greyborn.settings')).fov);
+check('settings persist across reload', fov === 75, `fov ${fov}`);
+// corrupt saved settings must not break startup
+await p.evaluate(() => localStorage.setItem('greyborn.settings', '{not json'));
+await p.reload();
+const ok = await p.waitForFunction(() => window.greyborn && window.greyborn.state() === 'title', null, { timeout: 60000 }).then(() => true, () => false);
+check('corrupt settings fall back to defaults', ok);
+await p.evaluate(() => localStorage.setItem('greyborn.settings', JSON.stringify({ quality: 'low', showFps: true })));
+await p.reload();
+await p.waitForFunction(() => window.greyborn && window.greyborn.state() === 'title', null, { timeout: 60000 });
 
 // start through the real menu
 await p.click('text=Play · 4v4 vs bots');

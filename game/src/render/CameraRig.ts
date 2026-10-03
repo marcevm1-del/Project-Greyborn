@@ -14,7 +14,19 @@ export class CameraRig {
   shakeScale = 1;
   baseFov = 62;
 
+  /** Rocks and other solid props the camera must not pass through (x, z, radius). */
+  colliders: { x: number; z: number; r: number }[] = [];
+
   constructor(private cam: THREE.PerspectiveCamera) {}
+
+  private blocked(p: THREE.Vector3): boolean {
+    if (heightAt(p.x, p.z) + 0.6 > p.y) return true;
+    for (const o of this.colliders) {
+      const dx = p.x - o.x, dz = p.z - o.z;
+      if (dx * dx + dz * dz < (o.r + 0.4) ** 2 && p.y < heightAt(o.x, o.z) + o.r * 1.5) return true;
+    }
+    return false;
+  }
 
   look(dx: number, dy: number, sensitivity: number, invertY: boolean) {
     this.yaw -= dx * 0.0025 * sensitivity;
@@ -49,10 +61,10 @@ export class CameraRig {
     const dir = new THREE.Vector3(-Math.sin(this.yaw) * cp, sp, -Math.cos(this.yaw) * cp);
     let d = this.dist;
     // terrain collision: pull in until the line from target to camera clears the ground
-    for (let i = 1; i <= 8; i++) {
-      const k = (i / 8) * d;
+    for (let i = 1; i <= 12; i++) {
+      const k = (i / 12) * d;
       const p = this.target.clone().addScaledVector(dir, k);
-      if (heightAt(p.x, p.z) + 0.6 > p.y) { d = Math.max(1.5, k - 0.5); break; }
+      if (this.blocked(p)) { d = Math.max(1.5, k - 0.5); break; }
     }
     const pos = this.target.clone().addScaledVector(dir, d);
     const g = heightAt(pos.x, pos.z) + 0.8;

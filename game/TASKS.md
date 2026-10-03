@@ -22,12 +22,11 @@
 3. Branch choice (L10) and Ultimate choice (L20) UI
 4. Synergy levels; Smash & Roll
 5. Tension and global events
-6. Overtime capture rule
-7. Manual playtest on real GPU hardware; performance budget pass
+6. Manual playtest on real GPU hardware; performance budget pass
 
 ## Blocked (needs the director)
 
-- **Balance decisions** from `../sim/findings.md` (A1–A6). This build adopts only A2 (the awakening rule).
+- **Sign-off on balance** from `../sim/findings.md`. The game runs A2 (awakening rule) plus playtest overrides for A1, A3, A6 (`src/data/playtest-overrides.json`); the spec still holds the original values until the director decides.
 - **Hosting** a public web build (e.g. Vercel): an external, possibly paid service.
 - **Online multiplayer** backend choice.
 

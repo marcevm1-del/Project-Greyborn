@@ -61,6 +61,8 @@ export class World {
   readonly timeScale: number;
   readonly expMult: number;
   player: Creature | null = null;
+  /** True once the time limit hit with Territorial Influence within 1% (Spec 05 §10). */
+  overtime = false;
   /** A* searches bots may still run this tick (reset every step). */
   pathBudget = 2;
 
@@ -358,6 +360,8 @@ export class World {
       const hub = this.hubs.find((h) => h.node === ch.node);
       if (hub) { hub.level = 0; hub.hp = econ('Hub base Health'); hub.uproot = 0; }
       this.emit({ type: 'capture', node: ch.node, team: wasEnemy ? -1 : team, by: c.id });
+      // Overtime (Spec 05 §10): the first team to capture a node wins
+      if (this.overtime && !wasEnemy) this.end(team, 'Overtime capture');
     }
   }
 
@@ -608,7 +612,11 @@ export class World {
     }
     if (this.time >= this.timeLimit && !this.result) {
       const a = this.ti(0), b = this.ti(1);
-      this.end(Math.abs(a - b) <= 0.01 ? null : a > b ? 0 : 1, 'Time limit (territory)');
+      if (Math.abs(a - b) > 0.01) this.end(a > b ? 0 : 1, 'Time limit (territory)');
+      else if (!this.overtime) { this.overtime = true; this.emit({ type: 'phase', phase: 5 }); }
+      else if (this.time >= this.timeLimit + econ('Overtime') * this.timeScale) {
+        this.end(Math.abs(a - b) <= 1e-9 ? null : a > b ? 0 : 1, 'Overtime (territory)');
+      }
     }
   }
 

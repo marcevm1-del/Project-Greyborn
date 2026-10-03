@@ -100,11 +100,11 @@ export class Hud {
     const myTeam = (me?.team ?? w.opts.playerTeam) as Team;
     const enemy = (1 - myTeam) as Team;
     // top: timer, phase, territory
-    const left = Math.max(0, w.timeLimit - w.time);
+    const left = w.overtime ? Math.max(0, w.timeLimit + econ('Overtime') * w.timeScale - w.time) : Math.max(0, w.timeLimit - w.time);
     this.timer.textContent = `${Math.floor(left / 60)}:${String(Math.floor(left % 60)).padStart(2, '0')}`;
     const names = ['Stable Flow', 'Pre-Aggro Resource Control', 'Resource Stage', 'Hunt'];
     const nextPhase = w.phase < 4 ? w.phaseStart(w.phase + 1) - w.time : 0;
-    this.phase.textContent = `Phase ${w.phase} · ${names[w.phase - 1]}${w.phase < 4 ? ` · next in ${Math.ceil(nextPhase)}s` : w.heartOpen(enemy) ? ' · Base Hearts open' : ''}`;
+    this.phase.textContent = w.overtime ? 'OVERTIME · first team to root a node wins' : `Phase ${w.phase} · ${names[w.phase - 1]}${w.phase < 4 ? ` · next in ${Math.ceil(nextPhase)}s` : w.heartOpen(enemy) ? ' · Base Hearts open' : ''}`;
     const a = w.ti(myTeam), b = w.ti(enemy);
     this.tiA.style.width = `${a * 100}%`;
     this.tiB.style.width = `${b * 100}%`;

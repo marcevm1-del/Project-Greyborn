@@ -8,10 +8,9 @@
 | 4 | Only Titan and Brawler are playable; all bots use them too. | Scope | Milestone 2 |
 | 5 | One Ultimate per lineage (Avalanche, Frenzy) instead of a choice of three per branch; no branch choice at L10. | Scope | Milestone 2 |
 | 6 | No Synergies, Tension or global events yet. | Scope | Milestone 2 |
-| 7 | Time-limit ties end in a draw; the spec's overtime capture rule isn't implemented. | Low | Milestone 2 |
 | 8 | Hub Defense is bought automatically by the team; players can't spend SAP. | Low | By design for now |
 | 9 | Bots are simple: they don't coordinate pushes, peel for carriers, or use Bulwark well. | Medium | Ongoing |
 | 10 | Creature models are code-built placeholders; animation is procedural (no skeletal rigs or IK). | Art | Planned art pipeline |
-| 11 | Balance uses the spec's starting values; the simulator found that levelling is slow and SAP too high (`../sim/findings.md`). Only the awakening rule (A2) is adopted. | Medium | Waiting on the director's decisions |
-| 12 | Camera can clip into large rocks (collision only checks the terrain). | Low | Open |
+| 11 | Balance runs on **playtest overrides** (`src/data/playtest-overrides.json`: SAP 0.1/cell, EXP 60 + 15 × L, bounty 100 + 15 × level, Enemy Core reward 900, Base Heart 12,000), taken from `../sim/findings.md` and not yet signed off; the spec files still hold the original values. | Medium | Waiting on the director's sign-off |
+| 12 | Every bot-only match so far ends on the time limit: bots don't coordinate Base Heart pushes (the simulator predicted this too). | Medium | Bot behaviour work in M2 |
 | 13 | Online multiplayer isn't built; it's bots only. | Scope | Milestone 5 |

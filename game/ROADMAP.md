@@ -35,5 +35,4 @@ Status is kept honest: **Done** means implemented, integrated and tested.
 3. Branch choice at L10 and the 3-of-6 Ultimate choice at L20 (Spec 03).
 4. Synergy levels (gdd/04) and Smash & Roll for the Commit pair.
 5. Tension, the event deck and patron decks (Spec 05 §8).
-6. Overtime capture rule.
-7. Re-run `../sim/` with the director's decisions on the findings and re-export tuning.
+6. Re-run `../sim/` with the director's decisions on the findings and re-export tuning.

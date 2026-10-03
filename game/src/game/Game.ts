@@ -107,6 +107,7 @@ export class Game {
     const wildTeam = this.world.sides[0] === 'Wildborn' ? 0 : 1;
     this.terrain.wildbornTeam = wildTeam;
     this.structures = new StructureView(this.rig.scene, this.world, wildTeam);
+    this.cam.colliders = this.world.obstacles.filter((o) => o.r > 1.2);
     this.brains = this.world.creatures.filter((c) => c.kind === 'ascendant' && !c.isPlayer).map((c) => new BotBrain(c.id, this.world));
     this.acc = 0;
     const focus = this.world.player ?? this.world.creatures[0];
@@ -363,8 +364,8 @@ export class Game {
           if (e.destroyed && me) this.hud.feedLine(e.team === me.team ? '<b style="color:var(--foe)">One of your Enemy Cores fell</b>' : '<b style="color:var(--friend)">Enemy Core destroyed</b>');
           break;
         case 'phase': {
-          const names = ['', 'Stable Flow', 'Pre-Aggro Resource Control', 'Resource Stage', 'Hunt'];
-          const rules = ['', '', 'The centre is open', 'Enemy Cores are under siege', 'Base Hearts are open'];
+          const names = ['', 'Stable Flow', 'Pre-Aggro Resource Control', 'Resource Stage', 'Hunt', 'Overtime'];
+          const rules = ['', '', 'The centre is open', 'Enemy Cores are under siege', 'Base Hearts are open', 'First team to root a node wins'];
           if (this.state === 'playing') this.hud.toast(`Phase ${e.phase} · ${names[e.phase]}`, rules[e.phase], 3);
           if (me) this.audio.play('phase', null, { glass: w.sideOf(me.team as Team) === 'Blightborn' });
           break;
