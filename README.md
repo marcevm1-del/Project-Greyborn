@@ -71,6 +71,12 @@ Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
 | 50 | [Master Timeline](gdd/50-master-timeline.md) | The whole story in order, from the deep past to Season 7, with open threads |
 | 51 | [Season 7: The Unbraiding](gdd/51-season-7.md) | The truce breaks: the planet's fever, the Murmur burned again, and the Last Braid |
 
+## Play the game
+
+`game/` is the playable 3D game (three.js + TypeScript): a 4v4 vertical
+slice on Ashfall Crossing with the Titan and Brawler. See
+[game/README.md](game/README.md) to run it.
+
 ## Build-ready specification
 
 `spec/` turns the design into numbers an engineering team can build from.

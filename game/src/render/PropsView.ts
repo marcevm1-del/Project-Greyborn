@@ -41,7 +41,7 @@ export class PropsView {
 
   constructor(scene: THREE.Scene, obstacles: Obstacle[], grassDensity: number) {
     scene.add(this.group);
-    const rockMat = new THREE.MeshStandardMaterial({ color: PALETTE.stone, roughness: 0.92, flatShading: true });
+    const rockMat = new THREE.MeshStandardMaterial({ color: 0x8c877c, roughness: 0.92, flatShading: true });
     const shardMat = new THREE.MeshStandardMaterial({ color: PALETTE.glass, roughness: 0.15, metalness: 0.3, emissive: PALETTE.cyan, emissiveIntensity: 0.55, flatShading: true });
     const rootMat = new THREE.MeshStandardMaterial({ color: 0x5b4632, roughness: 0.9, flatShading: true });
 

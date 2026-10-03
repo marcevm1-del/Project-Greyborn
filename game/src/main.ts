@@ -1,22 +1,15 @@
-import { SceneRig } from './render/Scene';
-import { TerrainView } from './render/TerrainView';
-import { PropsView } from './render/PropsView';
-import { World } from './sim/World';
+import './ui/styles.css';
+import { Game } from './game/Game';
 
 const app = document.getElementById('app')!;
-const rig = new SceneRig(app, { shadows: true, shadowSize: 2048, pixelRatio: 1.5, grassDensity: 1 });
-const world = new World({ playerLineage: 'Brawler', playerTeam: 0, short: true, seed: 1 });
-const terrain = new TerrainView(rig.scene, world.sides[0] === 'Wildborn' ? 0 : 1);
-const props = new PropsView(rig.scene, world.obstacles, 1);
-rig.camera.position.set(-95, 22, 30);
-rig.camera.lookAt(-40, 2, 0);
-const pulse = new Float32Array(240);
-function frame(t: number) {
-  terrain.updateTerritory(world.cellOwner, pulse, t / 1000);
-  props.update(t / 1000, rig.camera.position);
-  rig.followShadow(rig.camera.position, 60);
-  rig.render();
-  requestAnimationFrame(frame);
+try {
+  const game = new Game(app);
+  (window as unknown as { greyborn: unknown }).greyborn = game.debugApi();
+} catch (err) {
+  // WebGL unavailable or a startup failure: show a readable message instead of a blank page
+  app.innerHTML = `<div style="padding:40px;font-family:sans-serif;color:#ece6d6">
+    <h2 style="color:#e2b866">Greyborn couldn't start</h2>
+    <p>${String((err as Error)?.message ?? err)}</p>
+    <p>Greyborn needs a browser with WebGL 2 (recent Chrome, Edge, Firefox or Safari).</p></div>`;
+  console.error(err);
 }
-requestAnimationFrame(frame);
-(window as unknown as { __ready: boolean }).__ready = true;

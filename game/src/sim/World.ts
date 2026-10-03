@@ -310,7 +310,7 @@ export class World {
     if (!c.intent.interact || moving || !canAct(this, c) || (c.cast && !c.cast.done)) { c.channel = null; return; }
     if (!c.channel) {
       const reach = 2.5 + this.radius(c);
-      if (c.carried > 0 && this.dist2d(c.pos, BASES[team]) <= BASE_RADIUS) {
+      if (c.carried >= 1 && this.dist2d(c.pos, BASES[team]) <= BASE_RADIUS) {
         c.channel = { kind: 'convert', t: 0, dur: R.convertTime(this.hubsHeld(team), this.coresLost(team)) };
       } else {
         const node = this.nodes.find((n) => this.dist2d(n.core, c.pos) <= reach + (n.hub !== null ? 3 : 0) && this.capturable(team, n.id));
@@ -328,7 +328,7 @@ export class World {
           c.channel = { kind: enemyOwned ? 'uproot' : 'root', node: node.id, t: 0, dur };
         } else {
           const hub = this.hubNear(c.pos, 8 + this.radius(c));
-          if (hub && this.nodeOwner[hub.node] === team && c.carried > 0) {
+          if (hub && this.nodeOwner[hub.node] === team && c.carried >= 1) {
             c.channel = { kind: 'field', t: 0, dur: R.convertTime(this.hubsHeld(team), this.coresLost(team)) };
           }
         }

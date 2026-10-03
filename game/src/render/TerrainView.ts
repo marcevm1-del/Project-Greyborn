@@ -13,7 +13,9 @@ export class TerrainView {
   private ownerData: Uint8Array;
   private shaderUniforms: { [k: string]: THREE.IUniform } = {};
 
-  constructor(scene: THREE.Scene, private wildbornTeam: number) {
+  wildbornTeam: number;
+  constructor(scene: THREE.Scene, wildbornTeam: number) {
+    this.wildbornTeam = wildbornTeam;
     // playable area: 1 m resolution
     const geo = new THREE.PlaneGeometry(MAP_W, MAP_D, MAP_W, MAP_D);
     geo.rotateX(-Math.PI / 2);
@@ -64,16 +66,17 @@ export class TerrainView {
             // territory overlay
             vec2 uv = (vWorld.xz + mapSize * 0.5) / mapSize;
             vec4 own = texture2D(ownerTex, uv);   // r = Wildborn share, g = Blightborn share, b = spread pulse
+            own.rg *= 1.0 - smoothstep(0.25, 0.45, slope); // veins stay on walkable ground, not cliffs
             float v = veins(vWorld.xz * 0.35 + vec2(0.0, time * 0.02));
-            float root = smoothstep(0.82, 0.97, v) * own.r;
-            float lattice = smoothstep(0.86, 0.98, veins(vWorld.xz * 0.5 + 13.0)) * own.g;
-            col = mix(col, col * vec3(1.0, 0.92, 0.78), own.r * 0.35);
-            col = mix(col, col * vec3(0.78, 0.86, 0.95), own.g * 0.45);
+            float root = smoothstep(0.95, 0.99, v) * own.r * smoothstep(0.3, 0.6, fbm(vWorld.xz * 0.05 + 3.0));
+            float lattice = smoothstep(0.955, 0.99, veins(vWorld.xz * 0.45 + 13.0)) * own.g;
+            col = mix(col, col * vec3(1.02, 0.95, 0.82), own.r * 0.25);
+            col = mix(col, col * vec3(0.80, 0.86, 0.94), own.g * 0.35);
             col = mix(col, vec3(0.20, 0.10, 0.03), root * 0.85);
             col = mix(col, vec3(0.01, 0.012, 0.02), lattice * 0.85);
             diffuseColor.rgb = col;
             // inner light (added to emissive below)
-            vTerrGlow = vec3(0.80, 0.36, 0.04) * root * (0.45 + 0.4 * own.b) + vec3(0.11, 0.65, 0.75) * lattice * (0.5 + 0.4 * own.b);
+            vTerrGlow = vec3(0.80, 0.36, 0.04) * root * (0.30 + 0.6 * own.b) + vec3(0.11, 0.65, 0.75) * lattice * (0.35 + 0.6 * own.b);
           }`)
         .replace('#include <common>', '#include <common>\nvec3 vTerrGlow = vec3(0.0);')
         .replace('#include <emissivemap_fragment>', '#include <emissivemap_fragment>\ntotalEmissiveRadiance += vTerrGlow;');

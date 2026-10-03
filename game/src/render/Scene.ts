@@ -1,6 +1,7 @@
 // Renderer, lights, sky and fog. Visual targets from gdd/23 (art direction):
 // a pale grey-gold haze, warm low sun, amber vs cyan inner light.
 import * as THREE from 'three';
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 
 export const PALETTE = {
   stone: 0x6e6a62,
@@ -42,8 +43,10 @@ export class SceneRig {
     this.scene.fog = new THREE.FogExp2(PALETTE.haze, 0.0042);
     this.scene.background = new THREE.Color(PALETTE.haze);
 
-    this.hemi = new THREE.HemisphereLight(0xdcd6c4, 0x3c3a32, 0.95);
+    this.hemi = new THREE.HemisphereLight(0xdcd6c4, 0x5a5546, 1.0);
     this.scene.add(this.hemi);
+    // soft fill so backlit creatures and rock faces keep readable form
+    this.scene.add(new THREE.AmbientLight(0xc8c2b0, 0.9));
     this.sun = new THREE.DirectionalLight(0xffe0ae, 2.4);
     this.sun.position.set(-60, 90, 40);
     this.sun.castShadow = quality.shadows;
@@ -54,6 +57,11 @@ export class SceneRig {
     this.sun.shadow.normalBias = 0.04;
     this.scene.add(this.sun, this.sun.target);
 
+    // image-based lighting so glass and metal (Blightborn) reflect something instead of going black
+    const pmrem = new THREE.PMREMGenerator(this.renderer);
+    this.scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    this.scene.environmentIntensity = 0.45;
+    pmrem.dispose();
     this.sky = this.makeSky();
     this.scene.add(this.sky);
     window.addEventListener('resize', () => this.resize());
