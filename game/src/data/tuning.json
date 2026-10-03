@@ -1,0 +1,1826 @@
+{
+ "source": "spec/greyborn-tuning.xlsx",
+ "stats": {
+  "Titan": {
+   "Health": [
+    600,
+    745,
+    948,
+    1193,
+    1461,
+    1739,
+    2007,
+    2252,
+    2455,
+    2600,
+    2766,
+    2995,
+    3271,
+    3578,
+    3900,
+    4222,
+    4529,
+    4805,
+    5034,
+    5200
+   ],
+   "Power": [
+    40,
+    44,
+    50,
+    58,
+    66,
+    74,
+    82,
+    90,
+    96,
+    100,
+    105,
+    112,
+    121,
+    130,
+    140,
+    150,
+    159,
+    168,
+    175,
+    180
+   ],
+   "Speed %": [
+    100,
+    99,
+    98,
+    97,
+    96,
+    94,
+    93,
+    92,
+    91,
+    90,
+    90,
+    89,
+    89,
+    88,
+    88,
+    87,
+    86,
+    86,
+    85,
+    85
+   ],
+   "Control": [
+    10,
+    12,
+    15,
+    19,
+    23,
+    27,
+    31,
+    35,
+    38,
+    40,
+    42,
+    45,
+    48,
+    51,
+    55,
+    59,
+    62,
+    65,
+    68,
+    70
+   ]
+  },
+  "Brawler": {
+   "Health": [
+    600,
+    702,
+    844,
+    1015,
+    1203,
+    1397,
+    1585,
+    1756,
+    1898,
+    2000,
+    2115,
+    2274,
+    2464,
+    2677,
+    2900,
+    3123,
+    3336,
+    3526,
+    3685,
+    3800
+   ],
+   "Power": [
+    40,
+    47,
+    56,
+    67,
+    79,
+    91,
+    103,
+    114,
+    123,
+    130,
+    137,
+    147,
+    158,
+    171,
+    185,
+    199,
+    212,
+    223,
+    233,
+    240
+   ],
+   "Speed %": [
+    100,
+    100,
+    101,
+    101,
+    102,
+    103,
+    104,
+    104,
+    105,
+    105,
+    105,
+    106,
+    106,
+    107,
+    108,
+    108,
+    109,
+    109,
+    110,
+    110
+   ],
+   "Control": [
+    10,
+    11,
+    13,
+    16,
+    19,
+    21,
+    24,
+    27,
+    29,
+    30,
+    31,
+    33,
+    35,
+    38,
+    40,
+    42,
+    45,
+    47,
+    49,
+    50
+   ]
+  },
+  "Verdant": {
+   "Health": [
+    600,
+    687,
+    809,
+    956,
+    1117,
+    1283,
+    1444,
+    1591,
+    1713,
+    1800,
+    1902,
+    2043,
+    2213,
+    2402,
+    2600,
+    2798,
+    2987,
+    3157,
+    3298,
+    3400
+   ],
+   "Power": [
+    40,
+    43,
+    48,
+    53,
+    59,
+    66,
+    72,
+    77,
+    82,
+    85,
+    89,
+    95,
+    102,
+    109,
+    118,
+    126,
+    133,
+    140,
+    146,
+    150
+   ],
+   "Speed %": [
+    100,
+    100,
+    99,
+    99,
+    98,
+    97,
+    96,
+    96,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95
+   ],
+   "Control": [
+    10,
+    14,
+    19,
+    25,
+    32,
+    38,
+    45,
+    51,
+    56,
+    60,
+    63,
+    68,
+    73,
+    79,
+    85,
+    91,
+    97,
+    102,
+    107,
+    110
+   ]
+  },
+  "Hollow": {
+   "Health": [
+    600,
+    673,
+    774,
+    896,
+    1031,
+    1169,
+    1304,
+    1426,
+    1527,
+    1600,
+    1690,
+    1813,
+    1961,
+    2126,
+    2300,
+    2474,
+    2639,
+    2787,
+    2910,
+    3000
+   ],
+   "Power": [
+    40,
+    45,
+    53,
+    62,
+    72,
+    83,
+    93,
+    102,
+    110,
+    115,
+    121,
+    129,
+    140,
+    151,
+    163,
+    174,
+    185,
+    196,
+    204,
+    210
+   ],
+   "Speed %": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "Control": [
+    10,
+    13,
+    18,
+    23,
+    29,
+    36,
+    42,
+    47,
+    52,
+    55,
+    58,
+    62,
+    67,
+    72,
+    78,
+    83,
+    88,
+    93,
+    97,
+    100
+   ]
+  },
+  "Thornrunner": {
+   "Health": [
+    600,
+    665,
+    757,
+    867,
+    988,
+    1112,
+    1233,
+    1343,
+    1435,
+    1500,
+    1583,
+    1698,
+    1835,
+    1989,
+    2150,
+    2311,
+    2465,
+    2602,
+    2717,
+    2800
+   ],
+   "Power": [
+    40,
+    46,
+    55,
+    65,
+    77,
+    88,
+    100,
+    110,
+    119,
+    125,
+    132,
+    141,
+    152,
+    164,
+    178,
+    191,
+    203,
+    214,
+    223,
+    230
+   ],
+   "Speed %": [
+    100,
+    101,
+    103,
+    106,
+    109,
+    111,
+    114,
+    117,
+    119,
+    120,
+    121,
+    122,
+    124,
+    126,
+    128,
+    129,
+    131,
+    133,
+    134,
+    135
+   ],
+   "Control": [
+    10,
+    12,
+    14,
+    17,
+    21,
+    24,
+    28,
+    31,
+    33,
+    35,
+    37,
+    39,
+    41,
+    44,
+    48,
+    51,
+    54,
+    56,
+    58,
+    60
+   ]
+  },
+  "Bonespire": {
+   "Health": [
+    600,
+    662,
+    748,
+    852,
+    966,
+    1084,
+    1198,
+    1302,
+    1388,
+    1450,
+    1530,
+    1640,
+    1773,
+    1920,
+    2075,
+    2230,
+    2378,
+    2510,
+    2620,
+    2700
+   ],
+   "Power": [
+    40,
+    47,
+    57,
+    70,
+    83,
+    97,
+    110,
+    123,
+    133,
+    140,
+    148,
+    158,
+    171,
+    185,
+    200,
+    215,
+    229,
+    242,
+    252,
+    260
+   ],
+   "Speed %": [
+    100,
+    99,
+    99,
+    98,
+    97,
+    95,
+    94,
+    93,
+    93,
+    92,
+    92,
+    92,
+    91,
+    91,
+    91,
+    91,
+    91,
+    90,
+    90,
+    90
+   ],
+   "Control": [
+    10,
+    13,
+    16,
+    20,
+    25,
+    30,
+    35,
+    39,
+    42,
+    45,
+    47,
+    50,
+    54,
+    58,
+    63,
+    67,
+    71,
+    75,
+    78,
+    80
+   ]
+  },
+  "Stillheart": {
+   "Health": [
+    600,
+    716,
+    879,
+    1074,
+    1289,
+    1511,
+    1726,
+    1921,
+    2084,
+    2200,
+    2328,
+    2504,
+    2716,
+    2952,
+    3200,
+    3448,
+    3684,
+    3896,
+    4072,
+    4200
+   ],
+   "Power": [
+    40,
+    43,
+    48,
+    53,
+    59,
+    66,
+    72,
+    77,
+    82,
+    85,
+    89,
+    95,
+    102,
+    109,
+    118,
+    126,
+    133,
+    140,
+    146,
+    150
+   ],
+   "Speed %": [
+    100,
+    99,
+    98,
+    97,
+    96,
+    94,
+    93,
+    92,
+    91,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90,
+    90
+   ],
+   "Control": [
+    10,
+    13,
+    18,
+    23,
+    29,
+    36,
+    42,
+    47,
+    52,
+    55,
+    58,
+    62,
+    67,
+    72,
+    78,
+    83,
+    88,
+    93,
+    97,
+    100
+   ]
+  }
+ },
+ "expToNext": [
+  100,
+  120,
+  140,
+  160,
+  180,
+  200,
+  220,
+  240,
+  260,
+  280,
+  300,
+  320,
+  340,
+  360,
+  380,
+  400,
+  420,
+  440,
+  460
+ ],
+ "expParams": {
+  "EXP base": 80,
+  "EXP per level": 20,
+  "Respawn base (s)": 5,
+  "Respawn per level (s)": 1,
+  "Phase 4 respawn extra (s)": 5,
+  "Tenacity per level (L2–L15)": 0.02,
+  "Tenacity cap": 0.28,
+  "Bounty base": 60,
+  "Bounty per level": 10
+ },
+ "basic": {
+  "Titan": {
+   "ratio": 1.2,
+   "rate": 0.8
+  },
+  "Brawler": {
+   "ratio": 1,
+   "rate": 1.4
+  },
+  "Verdant": {
+   "ratio": 0.9,
+   "rate": 1.0
+  },
+  "Hollow": {
+   "ratio": 0.8,
+   "rate": 1.0
+  },
+  "Thornrunner": {
+   "ratio": 0.8,
+   "rate": 1.6
+  },
+  "Bonespire": {
+   "ratio": 1.1,
+   "rate": 0.9
+  },
+  "Stillheart": {
+   "ratio": 0.9,
+   "rate": 0.9
+  }
+ },
+ "abilities": {
+  "Titan": [
+   {
+    "slot": "Q",
+    "name": "Quake Slam",
+    "base": 60,
+    "ratio": 0.8,
+    "cd": 12
+   },
+   {
+    "slot": "E",
+    "name": "Bulwark",
+    "base": null,
+    "ratio": null,
+    "cd": 16
+   },
+   {
+    "slot": "R",
+    "name": "Rampart Charge",
+    "base": 80,
+    "ratio": 1,
+    "cd": 18
+   }
+  ],
+  "Brawler": [
+   {
+    "slot": "Q",
+    "name": "Roll Commit",
+    "base": 70,
+    "ratio": 1,
+    "cd": 10
+   },
+   {
+    "slot": "E",
+    "name": "Haymaker",
+    "base": 50,
+    "ratio": 0.6,
+    "cd": 9
+   },
+   {
+    "slot": "R",
+    "name": "Grapple",
+    "base": 40,
+    "ratio": 0.5,
+    "cd": 16
+   }
+  ],
+  "Verdant": [
+   {
+    "slot": "Q",
+    "name": "Bramble Wall",
+    "base": 400,
+    "ratio": 2,
+    "cd": 18
+   },
+   {
+    "slot": "E",
+    "name": "Sap Draw",
+    "base": 120,
+    "ratio": 1,
+    "cd": 10
+   },
+   {
+    "slot": "R",
+    "name": "Entangle",
+    "base": 30,
+    "ratio": 0.4,
+    "cd": 14
+   }
+  ],
+  "Hollow": [
+   {
+    "slot": "Q",
+    "name": "Void Rift",
+    "base": null,
+    "ratio": null,
+    "cd": 14
+   },
+   {
+    "slot": "E",
+    "name": "Hollow Step",
+    "base": null,
+    "ratio": null,
+    "cd": 12
+   },
+   {
+    "slot": "R",
+    "name": "Null Pulse",
+    "base": 40,
+    "ratio": 0.5,
+    "cd": 20
+   }
+  ],
+  "Thornrunner": [
+   {
+    "slot": "Q",
+    "name": "Thorn Dash",
+    "base": 40,
+    "ratio": 0.6,
+    "cd": 8
+   },
+   {
+    "slot": "E",
+    "name": "Mark Prey",
+    "base": null,
+    "ratio": null,
+    "cd": 16
+   },
+   {
+    "slot": "R",
+    "name": "Barb Volley",
+    "base": 12,
+    "ratio": 0.15,
+    "cd": 10
+   }
+  ],
+  "Bonespire": [
+   {
+    "slot": "Q",
+    "name": "Spire Lance",
+    "base": 90,
+    "ratio": 1.2,
+    "cd": 9
+   },
+   {
+    "slot": "E",
+    "name": "Ossuary",
+    "base": 300,
+    "ratio": 1.5,
+    "cd": 16
+   },
+   {
+    "slot": "R",
+    "name": "Calcify",
+    "base": 25,
+    "ratio": 0.3,
+    "cd": 6
+   }
+  ],
+  "Stillheart": [
+   {
+    "slot": "Q",
+    "name": "Lull",
+    "base": 20,
+    "ratio": 0.3,
+    "cd": 7
+   },
+   {
+    "slot": "E",
+    "name": "Hibernate",
+    "base": null,
+    "ratio": null,
+    "cd": 24
+   },
+   {
+    "slot": "R",
+    "name": "Long Night",
+    "base": null,
+    "ratio": null,
+    "cd": 22
+   }
+  ]
+ },
+ "ultimates": {
+  "Titan": [
+   {
+    "name": "Colossus Step",
+    "base": 30,
+    "ratio": 0.3,
+    "cd": 100
+   },
+   {
+    "name": "Avalanche",
+    "base": 100,
+    "ratio": 1,
+    "cd": 110
+   },
+   {
+    "name": "Shatterfist",
+    "base": 150,
+    "ratio": 1.5,
+    "cd": 90
+   },
+   {
+    "name": "Fortress",
+    "base": null,
+    "ratio": null,
+    "cd": 100
+   },
+   {
+    "name": "Fault Line",
+    "base": null,
+    "ratio": null,
+    "cd": 120
+   },
+   {
+    "name": "Mountain's Patience",
+    "base": null,
+    "ratio": null,
+    "cd": 130
+   }
+  ],
+  "Brawler": [
+   {
+    "name": "Frenzy",
+    "base": null,
+    "ratio": null,
+    "cd": 90
+   },
+   {
+    "name": "Wrecking Rush",
+    "base": 80,
+    "ratio": 0.8,
+    "cd": 110
+   },
+   {
+    "name": "Last Stand",
+    "base": null,
+    "ratio": null,
+    "cd": 120
+   },
+   {
+    "name": "Pin",
+    "base": null,
+    "ratio": null,
+    "cd": 100
+   },
+   {
+    "name": "Brawl Circle",
+    "base": null,
+    "ratio": null,
+    "cd": 110
+   },
+   {
+    "name": "Shove of the Storm",
+    "base": 60,
+    "ratio": 0.6,
+    "cd": 90
+   }
+  ],
+  "Verdant": [
+   {
+    "name": "Thornstorm",
+    "base": 40,
+    "ratio": 0.4,
+    "cd": 100
+   },
+   {
+    "name": "Strangling Grove",
+    "base": 150,
+    "ratio": 1.5,
+    "cd": 120
+   },
+   {
+    "name": "Sap Frenzy",
+    "base": null,
+    "ratio": null,
+    "cd": 100
+   },
+   {
+    "name": "Overgrowth",
+    "base": null,
+    "ratio": null,
+    "cd": 140
+   },
+   {
+    "name": "Living Wall",
+    "base": 1500,
+    "ratio": 5,
+    "cd": 120
+   },
+   {
+    "name": "Greenhome",
+    "base": null,
+    "ratio": null,
+    "cd": 110
+   }
+  ],
+  "Hollow": [
+   {
+    "name": "Collapse",
+    "base": 200,
+    "ratio": 2,
+    "cd": 100
+   },
+   {
+    "name": "Hollow Out",
+    "base": null,
+    "ratio": null,
+    "cd": 120
+   },
+   {
+    "name": "Unmaking",
+    "base": null,
+    "ratio": null,
+    "cd": 90
+   },
+   {
+    "name": "Event Horizon",
+    "base": 80,
+    "ratio": 0.8,
+    "cd": 110
+   },
+   {
+    "name": "Silence of the Deep",
+    "base": null,
+    "ratio": null,
+    "cd": 120
+   },
+   {
+    "name": "Step Between",
+    "base": null,
+    "ratio": null,
+    "cd": 150
+   }
+  ],
+  "Thornrunner": [
+   {
+    "name": "Hunt Frenzy",
+    "base": null,
+    "ratio": null,
+    "cd": 100
+   },
+   {
+    "name": "Gut the Hoard",
+    "base": 120,
+    "ratio": 1,
+    "cd": 90
+   },
+   {
+    "name": "Endless Pursuit",
+    "base": null,
+    "ratio": null,
+    "cd": 110
+   },
+   {
+    "name": "Pack Hunt",
+    "base": null,
+    "ratio": null,
+    "cd": 100
+   },
+   {
+    "name": "Thicket Trap",
+    "base": 40,
+    "ratio": 0.4,
+    "cd": 110
+   },
+   {
+    "name": "Scent Trail",
+    "base": null,
+    "ratio": null,
+    "cd": 120
+   }
+  ],
+  "Bonespire": [
+   {
+    "name": "Marrow Barrage",
+    "base": 70,
+    "ratio": 0.9,
+    "cd": 100
+   },
+   {
+    "name": "Siege Spire",
+    "base": 150,
+    "ratio": 1.5,
+    "cd": 110
+   },
+   {
+    "name": "Rememberer's Aim",
+    "base": null,
+    "ratio": null,
+    "cd": 110
+   },
+   {
+    "name": "Bone Cathedral",
+    "base": 100,
+    "ratio": 1,
+    "cd": 120
+   },
+   {
+    "name": "Ossuary Maze",
+    "base": null,
+    "ratio": null,
+    "cd": 120
+   },
+   {
+    "name": "Fossilise",
+    "base": null,
+    "ratio": null,
+    "cd": 110
+   }
+  ],
+  "Stillheart": [
+   {
+    "name": "Killing Frost",
+    "base": 150,
+    "ratio": 1.5,
+    "cd": 100
+   },
+   {
+    "name": "Rime March",
+    "base": null,
+    "ratio": null,
+    "cd": 110
+   },
+   {
+    "name": "Avalanche Heart",
+    "base": 300,
+    "ratio": 2.5,
+    "cd": 100
+   },
+   {
+    "name": "The Deep Sleep",
+    "base": null,
+    "ratio": null,
+    "cd": 130
+   },
+   {
+    "name": "Winter's Wall",
+    "base": 1200,
+    "ratio": 5,
+    "cd": 110
+   },
+   {
+    "name": "Long Dream",
+    "base": null,
+    "ratio": null,
+    "cd": 150
+   }
+  ]
+ },
+ "synergies": [
+  {
+   "name": "Void Garden",
+   "pair": [
+    "Verdant",
+    "Hollow"
+   ],
+   "unlock": 12,
+   "cds": [
+    15,
+    12,
+    9
+   ]
+  },
+  {
+   "name": "Co-Stalk",
+   "pair": [
+    "Thornrunner",
+    "Bonespire"
+   ],
+   "unlock": 15,
+   "cds": [
+    15,
+    12,
+    9
+   ]
+  },
+  {
+   "name": "Smash & Roll",
+   "pair": [
+    "Titan",
+    "Brawler"
+   ],
+   "unlock": 18,
+   "cds": [
+    15,
+    12,
+    9
+   ]
+  }
+ ],
+ "phaseSynergy": {
+  "1": [
+   15,
+   12,
+   9
+  ],
+  "2": [
+   15,
+   12,
+   9
+  ],
+  "3": [
+   null,
+   31,
+   20
+  ],
+  "4": [
+   null,
+   null,
+   9
+  ]
+ },
+ "creatures": [
+  {
+   "name": "Mossback Grazer",
+   "group": "Four-legged",
+   "tier": "II",
+   "health": 900,
+   "cores": 45,
+   "sap": 0
+  },
+  {
+   "name": "Ashfang",
+   "group": "Four-legged",
+   "tier": "II",
+   "health": 700,
+   "cores": 50,
+   "sap": 0
+  },
+  {
+   "name": "Stonehide Ox",
+   "group": "Four-legged",
+   "tier": "III",
+   "health": 3500,
+   "cores": 160,
+   "sap": 20
+  },
+  {
+   "name": "Glimmerfox",
+   "group": "Four-legged",
+   "tier": "I",
+   "health": 150,
+   "cores": 20,
+   "sap": 0
+  },
+  {
+   "name": "Marrowhound",
+   "group": "Four-legged",
+   "tier": "II",
+   "health": 800,
+   "cores": 50,
+   "sap": 0
+  },
+  {
+   "name": "Duskmane",
+   "group": "Four-legged",
+   "tier": "III",
+   "health": 2600,
+   "cores": 150,
+   "sap": 20
+  },
+  {
+   "name": "Burrowtusk",
+   "group": "Four-legged",
+   "tier": "II",
+   "health": 1000,
+   "cores": 50,
+   "sap": 0
+  },
+  {
+   "name": "Greyback Colossus",
+   "group": "Four-legged",
+   "tier": "IV",
+   "health": 30000,
+   "cores": 400,
+   "sap": 100
+  },
+  {
+   "name": "Mossback Calves",
+   "group": "Four-legged",
+   "tier": "I",
+   "health": 200,
+   "cores": 15,
+   "sap": 0
+  },
+  {
+   "name": "Cinder Salamander",
+   "group": "Four-legged",
+   "tier": "II",
+   "health": 600,
+   "cores": 45,
+   "sap": 0
+  },
+  {
+   "name": "Heartwood Elk",
+   "group": "Four-legged",
+   "tier": "IV",
+   "health": null,
+   "cores": 0,
+   "sap": 0
+  },
+  {
+   "name": "Strays (wild Kith)",
+   "group": "Two-legged",
+   "tier": "I",
+   "health": 200,
+   "cores": 15,
+   "sap": 0
+  },
+  {
+   "name": "Strider Crane",
+   "group": "Two-legged",
+   "tier": "I",
+   "health": 120,
+   "cores": 10,
+   "sap": 0
+  },
+  {
+   "name": "Rootwalker",
+   "group": "Two-legged",
+   "tier": "II",
+   "health": 1200,
+   "cores": 60,
+   "sap": 0
+  },
+  {
+   "name": "Knucklebrute",
+   "group": "Two-legged",
+   "tier": "III",
+   "health": 3000,
+   "cores": 170,
+   "sap": 20
+  },
+  {
+   "name": "Hollowmonk",
+   "group": "Two-legged",
+   "tier": "II",
+   "health": 900,
+   "cores": 55,
+   "sap": 0
+  },
+  {
+   "name": "Spurlark",
+   "group": "Two-legged",
+   "tier": "I",
+   "health": 160,
+   "cores": 40,
+   "sap": 0
+  },
+  {
+   "name": "Bonewright",
+   "group": "Two-legged",
+   "tier": "III",
+   "health": 2400,
+   "cores": 150,
+   "sap": 20
+  },
+  {
+   "name": "The Old Tall",
+   "group": "Two-legged",
+   "tier": "IV",
+   "health": 25000,
+   "cores": 400,
+   "sap": 100
+  },
+  {
+   "name": "Seedcaller",
+   "group": "Two-legged",
+   "tier": "II",
+   "health": 700,
+   "cores": 45,
+   "sap": 0
+  },
+  {
+   "name": "Drift Owlbear",
+   "group": "Two-legged",
+   "tier": "III",
+   "health": 3400,
+   "cores": 170,
+   "sap": 20
+  },
+  {
+   "name": "Ash Vulture",
+   "group": "Two-legged",
+   "tier": "I",
+   "health": 150,
+   "cores": 15,
+   "sap": 0
+  },
+  {
+   "name": "Shard Gull",
+   "group": "Two-legged",
+   "tier": "I",
+   "health": 120,
+   "cores": 15,
+   "sap": 0
+  },
+  {
+   "name": "Sixhorn Ram",
+   "group": "Six-legged",
+   "tier": "II",
+   "health": 1000,
+   "cores": 55,
+   "sap": 0
+  },
+  {
+   "name": "Trundleback",
+   "group": "Six-legged",
+   "tier": "III",
+   "health": 4000,
+   "cores": 180,
+   "sap": 20
+  },
+  {
+   "name": "Lantern Lizard",
+   "group": "Six-legged",
+   "tier": "I",
+   "health": 150,
+   "cores": 10,
+   "sap": 0
+  },
+  {
+   "name": "Gravel Skink",
+   "group": "Six-legged",
+   "tier": "I",
+   "health": 180,
+   "cores": 15,
+   "sap": 0
+  },
+  {
+   "name": "Hexmaw",
+   "group": "Six-legged",
+   "tier": "III",
+   "health": 2800,
+   "cores": 160,
+   "sap": 20
+  },
+  {
+   "name": "Sapdrinker",
+   "group": "Six-legged",
+   "tier": "II",
+   "health": 700,
+   "cores": 45,
+   "sap": 0
+  },
+  {
+   "name": "Rimeback Stag",
+   "group": "Six-legged",
+   "tier": "II",
+   "health": 800,
+   "cores": 45,
+   "sap": 0
+  },
+  {
+   "name": "Sixfold Wyrm",
+   "group": "Six-legged",
+   "tier": "IV",
+   "health": 28000,
+   "cores": 400,
+   "sap": 100
+  },
+  {
+   "name": "Cairnshell",
+   "group": "Six-legged",
+   "tier": "II",
+   "health": 1100,
+   "cores": 50,
+   "sap": 0
+  },
+  {
+   "name": "Emberbark",
+   "group": "Six-legged",
+   "tier": "III",
+   "health": 3200,
+   "cores": 160,
+   "sap": 20
+  },
+  {
+   "name": "Tidal Strider",
+   "group": "Six-legged",
+   "tier": "II",
+   "health": 1300,
+   "cores": 55,
+   "sap": 0
+  },
+  {
+   "name": "Weavemother",
+   "group": "Eight-legged",
+   "tier": "III",
+   "health": 2600,
+   "cores": 150,
+   "sap": 20
+  },
+  {
+   "name": "Threadlings",
+   "group": "Eight-legged",
+   "tier": "I",
+   "health": 40,
+   "cores": 24,
+   "sap": 0
+  },
+  {
+   "name": "Stiltwalker",
+   "group": "Eight-legged",
+   "tier": "II",
+   "health": 1500,
+   "cores": 60,
+   "sap": 0
+  },
+  {
+   "name": "Mire Scuttler",
+   "group": "Eight-legged",
+   "tier": "II",
+   "health": 1000,
+   "cores": 55,
+   "sap": 0
+  },
+  {
+   "name": "Glasslegs",
+   "group": "Eight-legged",
+   "tier": "II",
+   "health": 800,
+   "cores": 55,
+   "sap": 0
+  },
+  {
+   "name": "Tendril Crawler",
+   "group": "Eight-legged",
+   "tier": "III",
+   "health": 3000,
+   "cores": 170,
+   "sap": 20
+  },
+  {
+   "name": "Bone Harvestman",
+   "group": "Eight-legged",
+   "tier": "II",
+   "health": 900,
+   "cores": 40,
+   "sap": 0
+  },
+  {
+   "name": "Eightfold Matron",
+   "group": "Eight-legged",
+   "tier": "IV",
+   "health": 22000,
+   "cores": 400,
+   "sap": 100
+  },
+  {
+   "name": "Hoarfrost Mites",
+   "group": "Eight-legged",
+   "tier": "I",
+   "health": 30,
+   "cores": 15,
+   "sap": 0
+  },
+  {
+   "name": "Ember Moth",
+   "group": "Insect",
+   "tier": "I",
+   "health": 60,
+   "cores": 16,
+   "sap": 0
+  },
+  {
+   "name": "Siege Beetle",
+   "group": "Insect",
+   "tier": "III",
+   "health": 3200,
+   "cores": 170,
+   "sap": 20
+  },
+  {
+   "name": "Rootworm",
+   "group": "Insect",
+   "tier": "I",
+   "health": 80,
+   "cores": 10,
+   "sap": 0
+  },
+  {
+   "name": "Thornwasp",
+   "group": "Insect",
+   "tier": "II",
+   "health": null,
+   "cores": 50,
+   "sap": 0
+  },
+  {
+   "name": "Hush Cicada",
+   "group": "Insect",
+   "tier": "I",
+   "health": 60,
+   "cores": 10,
+   "sap": 0
+  },
+  {
+   "name": "Marrow Mantis",
+   "group": "Insect",
+   "tier": "III",
+   "health": 2400,
+   "cores": 160,
+   "sap": 20
+  },
+  {
+   "name": "Sapback Aphids",
+   "group": "Insect",
+   "tier": "I",
+   "health": 100,
+   "cores": 10,
+   "sap": 0
+  },
+  {
+   "name": "Hive Colossus",
+   "group": "Insect",
+   "tier": "IV",
+   "health": 26000,
+   "cores": 400,
+   "sap": 100
+  },
+  {
+   "name": "Clashhorn Beetles",
+   "group": "Insect",
+   "tier": "II",
+   "health": 900,
+   "cores": 50,
+   "sap": 0
+  },
+  {
+   "name": "Lumen Bees",
+   "group": "Insect",
+   "tier": "I",
+   "health": 80,
+   "cores": 18,
+   "sap": 0
+  },
+  {
+   "name": "Amber Beetles",
+   "group": "Insect",
+   "tier": "I",
+   "health": 100,
+   "cores": 0,
+   "sap": 15
+  },
+  {
+   "name": "Shriekers",
+   "group": "Clamor",
+   "tier": "I",
+   "health": 100,
+   "cores": 30,
+   "sap": 0
+  },
+  {
+   "name": "Spore Kites",
+   "group": "Clamor",
+   "tier": "I",
+   "health": 120,
+   "cores": 15,
+   "sap": 0
+  },
+  {
+   "name": "Ashmouths",
+   "group": "Clamor",
+   "tier": "II",
+   "health": 900,
+   "cores": 60,
+   "sap": 0
+  },
+  {
+   "name": "Kindlers",
+   "group": "Clamor",
+   "tier": "II",
+   "health": 700,
+   "cores": 50,
+   "sap": 0
+  },
+  {
+   "name": "Scald Hulks",
+   "group": "Clamor",
+   "tier": "III",
+   "health": 3800,
+   "cores": 180,
+   "sap": 20
+  },
+  {
+   "name": "Ventborn",
+   "group": "Clamor",
+   "tier": "III",
+   "health": 3000,
+   "cores": 160,
+   "sap": 20
+  },
+  {
+   "name": "The Roar",
+   "group": "Clamor",
+   "tier": "IV",
+   "health": null,
+   "cores": 800,
+   "sap": 200
+  }
+ ],
+ "phaseMult": [
+  1,
+  1.15,
+  1.3,
+  1.45
+ ],
+ "affinityMult": 1.25,
+ "econ": {
+  "Carry cap": 450,
+  "Dropped cores last": 30,
+  "Wildlife full-value cap": 600,
+  "Wildlife value after cap": 0.5,
+  "Assist bounty share": 0.3,
+  "Passive income factor": 1.2,
+  "Passive loss per Enemy Core lost": 0.15,
+  "C1 conversion (0–1 Hubs)": 15,
+  "C2 conversion (2 Hubs)": 12,
+  "C3 conversion (3+ Hubs)": 9,
+  "Conversion floor after Core losses": 18,
+  "Aggression bonus per full 100 carried": 0.1,
+  "Aggression bonus cap": 0.3,
+  "Evolution-Sync Resonance": 0.1,
+  "Field conversion efficiency": 0.7,
+  "L20 cores per SAP": 2,
+  "Capturable cells (standard map)": 240,
+  "TI per Hub held": 3,
+  "Mercy TI": 0.8,
+  "Mercy hold": 60,
+  "Territorial Growth interval": 20,
+  "Root channel": 4,
+  "Root channel (Verdant)": 2,
+  "SAP per cell": 1,
+  "SAP bonus per Hub": 0.15,
+  "Hub Defense cost per level": 100,
+  "Structure damage modifier": 0.5,
+  "Hub base Health": 6000,
+  "Hub Health per level": 400,
+  "Hub ally DR per level": 0.05,
+  "Hub shield threshold": 0.66,
+  "Enemy Core Health": 5000,
+  "Enemy Core reward": 300,
+  "Enemy Core regrowth": 240,
+  "Base Heart Health": 20000,
+  "Event region cooldown": 90,
+  "Global event spacing": 60,
+  "Patron deck chance when behind": 0.6,
+  "Patron trigger TI gap": 0.05,
+  "Time limit": 1500,
+  "Overtime": 120
+ },
+ "tension": {
+  "Borders touching (base)": 0.2,
+  "Each fight within 15 m of a border": 1,
+  "Stage 2 nearby": 1.5,
+  "Stage 3 nearby": 2,
+  "Old Tall within 30 m": 3,
+  "Decay after 30 s without fighting": -0.5,
+  "Event threshold": 100
+ },
+ "events": [
+  {
+   "deck": "Neutral",
+   "name": "Rootquake",
+   "weight": 0.25,
+   "duration": 30
+  },
+  {
+   "deck": "Neutral",
+   "name": "Marrow Storm",
+   "weight": 0.2,
+   "duration": 20
+  },
+  {
+   "deck": "Neutral",
+   "name": "Stampede",
+   "weight": 0.2,
+   "duration": 30
+  },
+  {
+   "deck": "Neutral",
+   "name": "SAP Surge",
+   "weight": 0.2,
+   "duration": 30
+  },
+  {
+   "deck": "Neutral",
+   "name": "Core Bloom",
+   "weight": 0.15,
+   "duration": 30
+  },
+  {
+   "deck": "Planet Pulse",
+   "name": "Heartquake",
+   "weight": 0.4,
+   "duration": 20
+  },
+  {
+   "deck": "Planet Pulse",
+   "name": "Healing Bloom",
+   "weight": 0.4,
+   "duration": 15
+  },
+  {
+   "deck": "Planet Pulse",
+   "name": "The Old Tall wakes",
+   "weight": 0.2,
+   "duration": 45
+  },
+  {
+   "deck": "Murmur Surge",
+   "name": "Shard Rain",
+   "weight": 0.4,
+   "duration": 15
+  },
+  {
+   "deck": "Murmur Surge",
+   "name": "Thousand Whispers",
+   "weight": 0.4,
+   "duration": 10
+  },
+  {
+   "deck": "Murmur Surge",
+   "name": "Blighted Wyrm",
+   "weight": 0.2,
+   "duration": 45
+  },
+  {
+   "deck": "Neutral",
+   "name": null,
+   "weight": 1,
+   "duration": null
+  },
+  {
+   "deck": "Planet Pulse",
+   "name": null,
+   "weight": 1,
+   "duration": null
+  },
+  {
+   "deck": "Murmur Surge",
+   "name": null,
+   "weight": 1,
+   "duration": null
+  }
+ ]
+}
