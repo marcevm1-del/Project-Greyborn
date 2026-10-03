@@ -61,6 +61,8 @@ export class World {
   readonly timeScale: number;
   readonly expMult: number;
   player: Creature | null = null;
+  /** A* searches bots may still run this tick (reset every step). */
+  pathBudget = 2;
 
   constructor(opts: MatchOptions) {
     this.opts = opts;
@@ -379,6 +381,7 @@ export class World {
   // ------------------------------------------------------------------ main step
   step(dt = R.DT) {
     if (this.result) return;
+    this.pathBudget = 2;
     this.time += dt;
     const newPhase = this.time >= this.phaseStart(4) ? 4 : this.time >= this.phaseStart(3) ? 3 : this.time >= this.phaseStart(2) ? 2 : 1;
     if (newPhase !== this.phase) { this.phase = newPhase; this.emit({ type: 'phase', phase: newPhase }); }
@@ -459,7 +462,10 @@ export class World {
     if (c.kind === 'wild') speed = c.wildSpeed ?? speed;
     const nx = c.pos.x + want.x * speed * dt;
     const nz = c.pos.z + want.z * speed * dt;
-    const ok = (x: number, z: number) => this.nav.walkable(x, z) && Math.abs(heightAt(x, z) - c.pos.y) < 1.2 + this.radius(c);
+    // A creature knocked or pushed onto blocked ground (steep edge, inside a rock's margin) may
+    // always move, so it can walk back out instead of being stuck forever.
+    const escaping = !this.nav.walkable(c.pos.x, c.pos.z);
+    const ok = (x: number, z: number) => escaping || (this.nav.walkable(x, z) && Math.abs(heightAt(x, z) - c.pos.y) < 1.2 + this.radius(c));
     let moved = false;
     if (ok(nx, nz)) { c.pos.x = nx; c.pos.z = nz; moved = true; }
     else if (ok(nx, c.pos.z)) { c.pos.x = nx; moved = true; }

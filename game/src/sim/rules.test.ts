@@ -1,16 +1,20 @@
 import { describe, expect, it } from 'vitest';
 import * as R from './rules';
-import { stat, ability } from './tuning';
+import { stat, ability, APPLIED_OVERRIDES } from './tuning';
 
 describe('levels', () => {
-  it('total EXP to L20 is 5,320 (Spec 05 §2)', () => {
-    expect(R.expToReach(20)).toBe(5320);
+  it('playtest overrides are applied and record the spec value', () => {
+    expect(APPLIED_OVERRIDES['EXP base']).toEqual({ spec: 80, playtest: 60 });
+    expect(APPLIED_OVERRIDES['SAP per cell'].spec).toBe(1);
+  });
+  it('total EXP to L20 with the playtest curve 60 + 15 × L', () => {
+    expect(R.expToReach(20)).toBe(3990);
   });
   it('maps EXP to levels at the boundaries', () => {
     expect(R.levelForExp(0)).toBe(1);
-    expect(R.levelForExp(219)).toBe(2);
-    expect(R.levelForExp(220)).toBe(3);
-    expect(R.levelForExp(1620)).toBe(10);
+    expect(R.levelForExp(164)).toBe(2);
+    expect(R.levelForExp(165)).toBe(3);
+    expect(R.levelForExp(1215)).toBe(10);
     expect(R.levelForExp(99999)).toBe(20);
   });
   it('forms and stages', () => {
@@ -48,7 +52,7 @@ describe('economy', () => {
     expect(R.convertTime(1, 1)).toBe(18);
   });
   it('bounty, respawn, TI', () => {
-    expect(R.bounty(10)).toBe(160);
+    expect(R.bounty(10)).toBe(250); // playtest bounty 100 + 15 × level
     expect(R.respawnTime(20, 4)).toBe(30);
     expect(R.territorialInfluence(108, 240, 2)).toBeCloseTo(0.51);
   });

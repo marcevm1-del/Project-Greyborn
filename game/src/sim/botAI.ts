@@ -37,7 +37,9 @@ export class BotBrain {
     const c = w.creatures[this.id];
     if (!c.alive) { this.path = []; return; }
     const it = c.intent;
-    it.basic = it.q = it.r = it.evade = false;
+    it.basic = it.q = it.r = it.evade = it.ult = false;
+    // E is "held" only while a Haymaker is charging; otherwise a stuck E would fire Haymakers that cancel channels
+    it.e = c.cast?.slot === 'E' && w.time < this.haymakerRelease;
     if (w.time >= this.nextThink) { this.think(w, c); this.nextThink = w.time + 0.5 + w.rng.next() * 0.4; }
     this.act(w, c);
   }
@@ -132,7 +134,8 @@ export class BotBrain {
   private goTo(w: World, c: Creature, to: Vec2, stopAt: number): number {
     const d = w.dist2d(c.pos, to);
     if (d <= stopAt) { c.intent.move = { x: 0, z: 0 }; return d; }
-    if (w.time >= this.nextPath || !this.pathTo || w.dist2d(this.pathTo, to) > 3) {
+    if ((w.time >= this.nextPath || !this.pathTo || w.dist2d(this.pathTo, to) > 3) && w.pathBudget > 0) {
+      w.pathBudget--; // at most a few A* searches per tick, so many bots repathing at once can't cause a hitch
       this.path = w.nav.findPath({ x: c.pos.x, z: c.pos.z }, to);
       this.pathTo = { ...to };
       this.nextPath = w.time + 1.5 + w.rng.next();
@@ -162,9 +165,13 @@ export class BotBrain {
     it.interact = false;
     switch (g.kind) {
       case 'return': {
-        const d = this.goTo(w, c, BASES[team], 6);
-        if (d <= 7) { it.move = { x: 0, z: 0 }; it.interact = c.carried > 0; if (!c.carried && !c.channel) this.nextThink = 0; }
-        if (d > 7) this.combatReflexes(w, c, null);
+        // conversion works anywhere within 14 m of the base centre: stop as soon as we're inside
+        const d = this.goTo(w, c, BASES[team], 10);
+        if (d <= 11) {
+          it.move = { x: 0, z: 0 };
+          it.interact = c.carried >= 1;
+          if (c.carried < 1 && !c.channel) this.nextThink = 0;
+        } else this.combatReflexes(w, c, null);
         return;
       }
       case 'capture': {

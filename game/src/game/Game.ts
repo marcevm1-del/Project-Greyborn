@@ -57,6 +57,7 @@ export class Game {
   private wasLocked = false;
   private timeScale = 1;
   private autopiloting = false;
+  private pausedAt = 0;
 
   constructor(container: HTMLElement) {
     this.applyUiScale();
@@ -132,6 +133,7 @@ export class Game {
   pause() {
     if (this.state !== 'playing') return;
     this.state = 'paused';
+    this.pausedAt = performance.now();
     // release the mouse so the menu can be used (P or gamepad Start don't release it on their own)
     if (document.pointerLockElement) document.exitPointerLock();
     this.menus.pause();
@@ -177,7 +179,8 @@ export class Game {
     this.last = t;
     this.input.poll();
     if (this.state === 'playing' && this.input.tapped('pause') && !this.menus.open) this.pause();
-    else if (this.state === 'paused' && this.input.tapped('pause')) { this.menus.close(); this.resume(); }
+    // Esc both releases pointer lock (which pauses) and arrives as a key press: ignore the key briefly after pausing
+    else if (this.state === 'paused' && this.input.tapped('pause') && performance.now() - this.pausedAt > 400) { this.menus.close(); this.resume(); }
 
     const running = this.state === 'playing' || this.state === 'title' || this.state === 'ended';
     const t0 = performance.now();
@@ -448,7 +451,7 @@ export class Game {
     const fp = this.views.get(focus.id)?.pos ?? new THREE.Vector3(focus.pos.x, focus.pos.y, focus.pos.z);
     if (me) {
       const sprint = w.time - me.lastCombatAt > 4 && me.moveSpeed > 5;
-      this.cam.update(dt, fp, w.height(me), R.FORM_CAMERA[R.formForLevel(me.level)], sprint);
+      this.cam.update(dt, fp, w.height(me), Math.max(R.FORM_CAMERA[R.formForLevel(me.level)], w.height(me) * 2.1), sprint);
     } else {
       this.cam.yaw += dt * 0.05;
       this.cam.pitch = 0.35;

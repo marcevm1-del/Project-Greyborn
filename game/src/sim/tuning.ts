@@ -1,6 +1,7 @@
 // Typed access to the tuning data exported from spec/greyborn-tuning.xlsx.
 // Regenerate with `npm run data` after changing the workbook.
 import raw from '../data/tuning.json';
+import overrides from '../data/playtest-overrides.json';
 
 export type Lineage = 'Titan' | 'Brawler' | 'Verdant' | 'Hollow' | 'Thornrunner' | 'Bonespire' | 'Stillheart';
 export type StatName = 'Health' | 'Power' | 'Speed %' | 'Control';
@@ -23,6 +24,22 @@ interface TuningData {
 }
 
 export const T = raw as unknown as TuningData;
+
+/** Playtest overrides (see data/playtest-overrides.json): applied once at load, then logged. */
+export const APPLIED_OVERRIDES: Record<string, { spec: number; playtest: number }> = {};
+for (const [k, v] of Object.entries(overrides.econ as Record<string, number>)) {
+  if (!(k in T.econ)) throw new Error(`playtest override for unknown economy value "${k}"`);
+  APPLIED_OVERRIDES[k] = { spec: T.econ[k], playtest: v };
+  T.econ[k] = v;
+}
+for (const [k, v] of Object.entries(overrides.expParams as Record<string, number>)) {
+  if (!(k in T.expParams)) throw new Error(`playtest override for unknown EXP parameter "${k}"`);
+  APPLIED_OVERRIDES[k] = { spec: T.expParams[k], playtest: v };
+  T.expParams[k] = v;
+}
+if ('EXP base' in overrides.expParams || 'EXP per level' in overrides.expParams) {
+  T.expToNext = T.expToNext.map((_, i) => T.expParams['EXP base'] + T.expParams['EXP per level'] * (i + 1));
+}
 
 /** Stat value for a lineage at a level (1–20). */
 export function stat(lineage: Lineage, name: StatName, level: number): number {
