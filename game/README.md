@@ -10,6 +10,16 @@ Brawler. You start as a small Kith and grow through three Stages into a
 7.5 m Ascendant while rooting territory, taking Hubs and sieging the
 enemy's Enemy Cores and Base Heart.
 
+## Screenshots
+
+Captured by the automated tests under software rendering (no GPU), so
+they show the Low/Medium presets.
+
+| | |
+|---|---|
+| ![Title](docs/screenshots/title.png) | ![Phase 3](docs/screenshots/match-phase3.png) |
+| ![Titan, Stage 1](docs/screenshots/titan-stage1.png) | ![Titan, Stage 3](docs/screenshots/titan-stage3.png) |
+
 ## Play it
 
 Needs Node.js 20+ and a browser with WebGL 2.
