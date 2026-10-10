@@ -11,6 +11,16 @@ the map's Territorial Influence. Every match is a battle in the war between
 the living planet's **Wildborn** and the **Blightborn**, creatures infected by
 a hive mind that arrived on a meteorite.
 
+## Maps & Monsters Design Bible (`design-bible/`)
+
+A production-level reference for every map, creature, Ascendant and structure:
+stat blocks for all 54 creatures and the bosses, every lineage Stage by Stage,
+map layouts with coordinates and diagrams, structures, and world systems. It
+consolidates `gdd/`, `spec/` and the playable build, and labels each value as
+Spec, Built or Proposal. Start at [`design-bible/00-README.md`](design-bible/00-README.md),
+or open the single-file exports: [Word](design-bible/Greyborn-Design-Bible.docx) ·
+[PDF](design-bible/Greyborn-Design-Bible.pdf).
+
 ## Design document (`gdd/`)
 
 Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
