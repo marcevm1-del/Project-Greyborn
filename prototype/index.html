@@ -1,0 +1,958 @@
+<title>Greyborn Prototype</title>
+<meta name="description" content="Greyborn M0 prototype: steal Hues, spend them, and manage Stain.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: one column — title strip, the arena canvas, then a two-column field journal (controls | playtest log) that stacks on phones.
+   Single deliberate dark look: the game's rule is "the world is grey, colour means something", so the page follows it too. */
+:root {
+  color-scheme: dark;
+  --ink: #131315;        /* page ground */
+  --slate: #1c1c20;      /* panels */
+  --rule: #34343a;       /* hairlines */
+  --ash: #8f8c87;        /* muted text */
+  --bone: #dcd9d2;       /* main text */
+  --crimson: #e0473f;    /* Hue: Crimson (text-legible on ink) */
+  --azure: #5a9bd8;      /* Hue: Azure (text-legible on ink) */
+  --white-hue: #f4f1ea;  /* the Pale Church */
+  --f-display: "IM Fell English SC", "Iowan Old Style", Georgia, serif;
+  --f-body: "Spectral", "Iowan Old Style", Georgia, serif;
+  --f-data: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--ink);
+  color: var(--bone);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.55;
+  padding-block: 20px 40px;
+  padding-inline: 16px;
+}
+.wrap { max-width: 1000px; margin: 0 auto; display: grid; gap: 18px; }
+header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 20px; }
+h1 { font-family: var(--f-display); font-weight: 400; font-size: clamp(2rem, 5vw, 3rem); letter-spacing: 0.04em; margin: 0; line-height: 1; }
+header p { margin: 0; color: var(--ash); font-style: italic; max-width: 46ch; }
+.stage { position: relative; }
+canvas {
+  display: block; width: 100%; max-width: 100%; aspect-ratio: 16 / 9;
+  background: #0d0d0f; border: 1px solid var(--rule); border-radius: 4px;
+  touch-action: none;
+}
+canvas:focus-visible { outline: 2px solid var(--bone); outline-offset: 3px; }
+.touch { display: none; gap: 8px; grid-template-columns: repeat(6, 1fr); margin-top: 10px; }
+@media (pointer: coarse) { .touch { display: grid; } }
+.touch button {
+  font: 600 0.82rem var(--f-body); color: var(--bone); background: var(--slate);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 12px 2px; user-select: none; -webkit-user-select: none;
+  touch-action: none;
+}
+.touch button:active { background: var(--rule); }
+.journal { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media (max-width: 720px) { .journal { grid-template-columns: 1fr; } }
+section.card { background: var(--slate); border: 1px solid var(--rule); border-radius: 4px; padding: 16px 18px; min-width: 0; }
+h2 { font-family: var(--f-display); font-weight: 400; font-size: 1.35rem; letter-spacing: 0.05em; margin: 0 0 10px; text-wrap: balance; }
+.keys { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; margin: 0; }
+.keys dt { font-family: var(--f-data); font-size: 0.82rem; color: var(--bone); white-space: nowrap; }
+.keys dd { margin: 0; color: var(--ash); font-size: 0.92rem; }
+.log { display: grid; grid-template-columns: 1fr auto; gap: 3px 14px; margin: 0; font-variant-numeric: tabular-nums; }
+.log dt { color: var(--ash); font-size: 0.92rem; }
+.log dd { margin: 0; font-family: var(--f-data); font-size: 0.88rem; text-align: right; }
+.gate { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--rule); font-size: 0.92rem; color: var(--ash); }
+.gate strong { color: var(--bone); font-weight: 600; }
+.rules { columns: 2 280px; column-gap: 28px; margin: 0; padding-left: 1.1em; color: var(--ash); font-size: 0.95rem; }
+.rules li { break-inside: avoid; margin-bottom: 6px; }
+.rules b { color: var(--bone); font-weight: 600; }
+.c { color: var(--crimson); } .a { color: var(--azure); } .w { color: var(--white-hue); }
+.tune { font-family: var(--f-data); font-size: 0.8rem; color: var(--ash); margin-top: 8px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Greyborn</h1>
+    <p>Milestone 0 prototype. Rip a Hue from a flared enemy, spend it, and get rid of it before it Stains you for good.</p>
+  </header>
+
+  <div class="stage">
+    <canvas id="game" width="960" height="540" tabindex="0" aria-label="Greyborn game arena. Press Enter to begin."></canvas>
+    <div class="touch" id="touch" aria-label="Touch controls">
+      <button data-a="left">◀</button><button data-a="right">▶</button><button data-a="jump">Jump</button>
+      <button data-a="attack">Blade</button><button data-a="dodge">Dodge</button><button data-a="parry">Parry</button>
+      <button data-a="art">Hue Art</button><button data-a="rip">Rip</button><button data-a="release">Release</button>
+      <button data-a="mend">Mend</button><button data-a="rest">Rest</button><button data-a="down">Drop</button>
+    </div>
+  </div>
+
+  <div class="journal">
+    <section class="card">
+      <h2>Controls</h2>
+      <dl class="keys">
+        <dt>A / D · ← →</dt><dd>Move</dd>
+        <dt>W · ↑ · Space</dt><dd>Jump (S / ↓ drops through a ledge)</dd>
+        <dt>J</dt><dd>Grey Blade, a 3-hit string</dd>
+        <dt>K · Shift</dt><dd>Dodge (the held Hue changes it)</dd>
+        <dt>L</dt><dd>Parry. Builds Flare 3× faster than hits</dd>
+        <dt>I</dt><dd>Hue Art (costs 25 Saturation)</dd>
+        <dt>E</dt><dd>Rip a <em>flared</em> enemy and take its Hue</dd>
+        <dt>Q</dt><dd>Release the held Hue</dd>
+        <dt>H</dt><dd>Mend (heal 40, 3 charges)</dd>
+        <dt>R</dt><dd>Rest at the Lantern: heal, clear Stain, lose the held Hue</dd>
+        <dt>P</dt><dd>Pause</dd>
+      </dl>
+    </section>
+    <section class="card">
+      <h2>Playtest log</h2>
+      <dl class="log" id="log"></dl>
+      <p class="gate"><strong>M0 gate:</strong> did you release a Hue on purpose to avoid Stain? If “Voluntary releases” stays at 0 across testers, the Stain numbers need work.</p>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Rules in this build</h2>
+    <ul class="rules">
+      <li><b>Flare &amp; Rip.</b> Hits and parries fill an enemy's Flare bar. When it is full the enemy glows and staggers. Press E to rip its Hue into your Vessel.</li>
+      <li><b class="c">▲ Crimson</b> (Cinder Hounds). Art: Kindle, a burning 3-hit lunge. Dodge becomes a flame-dash. Parry explodes.</li>
+      <li><b class="a">◆ Azure</b> (Drowned Knights). Art: Undertow, a wave that pulls enemies in. Dodge becomes a long slide. Parry raises a 2-hit tide-shield.</li>
+      <li><b class="w">○ Bleached Wardens</b> can't be ripped. A white glyph means the attack can't be parried, so dodge it.</li>
+      <li><b>Saturation</b> fades 1 per second and drains with use. At 0 the Hue fades for free.</li>
+      <li><b>Stain</b> rises while you hold a Hue, use its Art, or take hits. Mark (34+) adds damage. Brand (67+) adds more damage plus a Vice. At 100 you get Overcolour for 10 s, then you are Husked.</li>
+      <li><b>Residue.</b> Each time Stain crosses 67 you gain a permanent point: Crimson gives +4% blade damage, Azure gives −3% damage taken. Each point also raises that Hue's Stain floor by 6.</li>
+      <li><b>Death</b> drops your Dross as a grey shade. Touch it to recover the Dross.</li>
+    </ul>
+    <p class="tune" id="tune"></p>
+  </section>
+</div>
+
+<script>
+(() => {
+"use strict";
+
+// ---------- Tuning (mirrors docs/03, with M0 pacing changes noted in prototype/README.md) ----------
+const T = {
+  gravity: 2100, jumpV: 770, runSpeed: 255,
+  parryWindow: 0.15, dodgeIframes: 0.24,
+  satFade: 1, artCost: 25, modCost: 5, parryModCost: 8,
+  stainHold: 0.6, stainArt: 4, stainHit: 3, stainDrain: 5,
+  mark: 34, brand: 67, overcolourTime: 10, residueFloor: 6, residueMax: 5,
+  flareHit: 12, flareParry: 36, flareSameHue: 0.5,
+};
+document.getElementById("tune").textContent =
+  `Tuning — Stain: +${T.stainHold}/s held, +${T.stainArt} per Art, +${T.stainHit} per hit taken, −${T.stainDrain}/s when released · Saturation: −${T.satFade}/s, Art ${T.artCost} · parry window ${T.parryWindow * 1000} ms`;
+
+const HUES = {
+  crimson: { name: "Crimson", c: "#C8322B", a: "#FF7A3D", glyph: "▲" },
+  azure:   { name: "Azure",   c: "#2C6FB0", a: "#7FC4F0", glyph: "◆" },
+  white:   { name: "White",   c: "#F4F1EA", a: "#FFFFFF", glyph: "○" },
+};
+const PLAYABLE = ["crimson", "azure"];
+
+const ENEMY = {
+  hound:  { hue: "crimson", w: 46, h: 30, hp: 55,  speed: 175, range: 150, windup: 0.42, strike: 0.26, recover: 0.65, dmg: 12, parryable: true,  dross: 30, label: "Cinder Hound" },
+  knight: { hue: "azure",   w: 34, h: 62, hp: 115, speed: 72,  range: 74,  windup: 0.62, strike: 0.16, recover: 0.8,  dmg: 20, parryable: true,  dross: 55, label: "Drowned Knight" },
+  warden: { hue: "white",   w: 32, h: 64, hp: 90,  speed: 96,  range: 118, windup: 0.72, strike: 0.16, recover: 0.75, dmg: 24, parryable: false, dross: 45, label: "Bleached Warden" },
+};
+
+// ---------- Canvas & world ----------
+const W = 960, H = 540, GROUND = 474;
+const cv = document.getElementById("game");
+const ctx = cv.getContext("2d");
+const platforms = [ { x: 190, y: 368, w: 170 }, { x: 600, y: 368, w: 170 }, { x: 395, y: 262, w: 170 } ];
+const LANTERN_X = 64;
+
+function rng(seed) { return () => (seed = (seed * 16807) % 2147483647) / 2147483647; }
+const r = rng(7);
+const farSpires = Array.from({ length: 16 }, (_, i) => ({ x: i * 64 + r() * 40 - 20, w: 26 + r() * 40, h: 90 + r() * 170, tip: r() > 0.4 }));
+const nearRuins = Array.from({ length: 9 }, (_, i) => ({ x: i * 118 + r() * 50 - 30, w: 50 + r() * 70, h: 50 + r() * 110, arch: r() > 0.5 }));
+const motes = Array.from({ length: 40 }, () => ({ x: r() * W, y: r() * H, s: 0.5 + r() * 1.6, v: 6 + r() * 14 }));
+
+// ---------- Input ----------
+const KEYMAP = {
+  ArrowLeft: "left", KeyA: "left", ArrowRight: "right", KeyD: "right",
+  ArrowUp: "jump", KeyW: "jump", Space: "jump", ArrowDown: "down", KeyS: "down",
+  KeyJ: "attack", KeyK: "dodge", ShiftLeft: "dodge", ShiftRight: "dodge", KeyL: "parry",
+  KeyI: "art", KeyE: "rip", KeyQ: "release", KeyH: "mend", KeyR: "rest", KeyP: "pause", Enter: "start",
+};
+const held = new Set();
+const buffer = {};
+const BUFFER_S = 0.14;
+const nowS = () => performance.now() / 1000;
+function press(a) { if (!held.has(a)) buffer[a] = nowS(); held.add(a); }
+function release(a) { held.delete(a); }
+function take(a) { if (buffer[a] != null && nowS() - buffer[a] < BUFFER_S) { buffer[a] = null; return true; } return false; }
+
+addEventListener("keydown", (e) => {
+  const a = KEYMAP[e.code]; if (!a) return;
+  if (mode === "play" || document.activeElement === cv) e.preventDefault();
+  if (e.repeat) return;
+  if (a === "start" || (mode === "title")) { begin(); return; }
+  if (a === "pause") { togglePause(); return; }
+  press(a);
+});
+addEventListener("keyup", (e) => { const a = KEYMAP[e.code]; if (a) release(a); });
+addEventListener("blur", () => { held.clear(); if (mode === "play") togglePause(); });
+cv.addEventListener("pointerdown", () => { cv.focus(); if (mode === "title") begin(); else if (mode === "paused") togglePause(); });
+document.querySelectorAll("#touch button").forEach((b) => {
+  const a = b.dataset.a;
+  b.addEventListener("pointerdown", (e) => { e.preventDefault(); if (mode === "title") begin(); press(a); });
+  ["pointerup", "pointercancel", "pointerleave"].forEach((ev) => b.addEventListener(ev, () => release(a)));
+});
+
+// ---------- State ----------
+let mode = "title";
+let player, enemies, fires, waves, wisps, particles, toasts, shade;
+let hitstop = 0, shake = 0, spawnT = 0, clock = 0;
+const metrics = { time: 0, kills: 0, rips: 0, replaced: 0, released: 0, faded: 0, residue: 0, deaths: 0, husked: 0, parries: 0 };
+
+function newPlayer() {
+  return {
+    x: LANTERN_X + 40, y: GROUND - 56, w: 26, h: 56, vx: 0, vy: 0, face: 1, onGround: true, coyote: 0, dropT: 0,
+    hp: 100, maxHp: 100, mend: 3, state: "idle", t: 0, combo: 0, hitDone: false, hitIdx: 0, dashHit: new Set(),
+    iframes: 0, hurtFlash: 0, wrathLock: 0, shield: 0, dross: 0,
+    vessel: null, stain: { crimson: 0, azure: 0 }, residue: { crimson: 0, azure: 0 }, brandArmed: { crimson: true, azure: true },
+    overcolour: 0, overHue: null, ripTarget: null,
+  };
+}
+function resetEncounter() { enemies = []; fires = []; waves = []; wisps = []; spawnT = 1.2; }
+function init() {
+  player = newPlayer(); particles = []; toasts = []; shade = null; resetEncounter();
+  // A resting scene for the title screen.
+  enemies.push(makeEnemy("hound", 640), makeEnemy("knight", 820));
+}
+init();
+
+function begin() {
+  if (mode !== "title") return;
+  mode = "play"; cv.focus();
+  toast("Flare an enemy, then press E to rip its Hue", "#d9d6d0", 4);
+}
+function togglePause() { if (mode === "play") mode = "paused"; else if (mode === "paused") mode = "play"; }
+
+// ---------- Helpers ----------
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const overlap = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+const cx = (b) => b.x + b.w / 2, cy = (b) => b.y + b.h / 2;
+function frontBox(b, reach, h, yOff) { return { x: b.face > 0 ? b.x + b.w : b.x - reach, y: b.y + yOff, w: reach, h }; }
+function toast(text, col = "#d9d6d0", life = 2.2) { toasts.push({ text, col, t: life, life }); if (toasts.length > 3) toasts.shift(); }
+function burst(x, y, col, n = 10, spd = 220, life = 0.5, size = 3) {
+  for (let i = 0; i < n; i++) {
+    const a = Math.random() * Math.PI * 2, s = spd * (0.3 + Math.random());
+    particles.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s - 60, life, max: life, col, size: size * (0.6 + Math.random()) });
+  }
+}
+function tier(hue) { const s = player.stain[hue]; return s >= 100 ? 3 : s >= T.brand ? 2 : s >= T.mark ? 1 : 0; }
+function floorOf(hue) { return player.residue[hue] * T.residueFloor; }
+function heldHue() { return player.vessel ? player.vessel.hue : null; }
+function artMult() {
+  const h = heldHue(); if (!h) return 1;
+  if (player.overcolour > 0) return 2;
+  return [1, 1.15, 1.3, 1.3][tier(h)];
+}
+
+function moveBody(b, dt, usePlatforms) {
+  b.vy = Math.min(b.vy + T.gravity * dt, 1400);
+  b.x += b.vx * dt;
+  const prevBottom = b.y + b.h;
+  b.y += b.vy * dt;
+  b.onGround = false;
+  if (b.y + b.h >= GROUND) { b.y = GROUND - b.h; b.vy = 0; b.onGround = true; }
+  if (usePlatforms && b.vy >= 0 && !(b.dropT > 0)) {
+    for (const p of platforms) {
+      if (b.x + b.w > p.x && b.x < p.x + p.w && prevBottom <= p.y + 2 && b.y + b.h >= p.y) { b.y = p.y - b.h; b.vy = 0; b.onGround = true; }
+    }
+  }
+  b.x = clamp(b.x, 0, W - b.w);
+}
+
+// ---------- Enemies ----------
+function makeEnemy(type, x) {
+  const d = ENEMY[type];
+  return { type, d, hue: d.hue, x, y: GROUND - d.h, w: d.w, h: d.h, vx: 0, vy: 0, face: -1, onGround: true,
+    hp: d.hp, flare: 0, canFlare: d.hue !== "white", state: "approach", t: 0, cool: 0.6 + Math.random(), hitDone: false,
+    hitFlash: 0, pullT: 0, stagT: 0, burnTick: 0, dead: false };
+}
+function level() { return 1 + Math.floor(metrics.kills / 5); }
+function spawnEnemy() {
+  const lv = level();
+  const pool = ["hound", "hound", "knight"];
+  if (lv >= 2) pool.push("warden");
+  if (lv >= 3) pool.push("knight", "warden");
+  const type = pool[Math.floor(Math.random() * pool.length)];
+  const right = cx(player) < W / 2 ? true : Math.random() < 0.3;
+  const e = makeEnemy(type, right ? W - 70 : 150);
+  enemies.push(e);
+  burst(cx(e), cy(e), "#77736d", 14, 120, 0.6);
+}
+
+function damageEnemy(e, dmg, flareAmt, srcHue, fromBlade) {
+  if (e.dead) return;
+  let guarded = false;
+  if (e.type === "knight" && fromBlade && !["stagger", "flared", "windup"].includes(e.state) && Math.sign(cx(player) - cx(e)) === e.face) {
+    dmg *= 0.5; flareAmt *= 0.6; guarded = true;
+  }
+  e.hp -= dmg; e.hitFlash = 0.1;
+  if (e.canFlare && e.state !== "flared") {
+    e.flare += flareAmt * (srcHue === e.hue ? T.flareSameHue : 1);
+    if (e.flare >= 100) {
+      e.flare = 100; e.state = "flared"; e.t = 0; e.vx = 0;
+      burst(cx(e), cy(e), HUES[e.hue].a, 22, 260, 0.7, 3.5);
+    }
+  }
+  const col = guarded ? "#9c9a95" : "#e6e3dc";
+  burst(cx(e), cy(e), col, guarded ? 4 : 6, 180, 0.3, 2);
+  if (e.type === "hound" && e.state === "approach") { e.vx = Math.sign(cx(e) - cx(player)) * 160; }
+  if (e.hp <= 0) killEnemy(e, false);
+}
+function killEnemy(e, ripped) {
+  e.dead = true; metrics.kills++;
+  player.dross += e.d.dross;
+  const col = e.hue === "white" ? "#bdbab4" : ripped ? HUES[e.hue].a : "#77736d";
+  burst(cx(e), cy(e), col, ripped ? 26 : 16, 240, 0.7, 3);
+  if (metrics.kills % 5 === 0) toast(`Level ${level()}${level() === 2 ? ": Bleached Wardens join" : ""}`, "#d9d6d0");
+}
+function parrySuccess(e) {
+  metrics.parries++;
+  e.state = "stagger"; e.stagT = 0.9; e.t = 0; e.vx = -e.face * 120;
+  hitstop = 0.1; shake = 4;
+  burst((cx(e) + cx(player)) / 2, cy(player) - 6, "#ffffff", 16, 300, 0.35, 2.5);
+  damageEnemy(e, 4, T.flareParry, null, false);
+  const h = heldHue();
+  if (h === "crimson" && spend(T.parryModCost)) {
+    burst(cx(player) + player.face * 30, cy(player), HUES.crimson.a, 24, 320, 0.45, 3.5);
+    for (const o of enemies) if (!o.dead && Math.abs(cx(o) - cx(player)) < 110 && Math.abs(cy(o) - cy(player)) < 80) damageEnemy(o, 18 * artMult(), 10, "crimson", false);
+  } else if (h === "azure" && spend(T.parryModCost)) {
+    player.shield = 2; toast("Tide-shield: absorbs 2 hits", HUES.azure.a, 1.6);
+  }
+}
+function enemyStrike(e, box) {
+  if (e.hitDone || player.state === "dead" || !overlap(box, player)) return;
+  e.hitDone = true;
+  if (player.iframes > 0) { burst(cx(player), cy(player), "#5d5b57", 5, 90, 0.3, 2); return; }
+  if (player.state === "parry" && player.t <= T.parryWindow && e.d.parryable) { parrySuccess(e); return; }
+  damagePlayer(e.d.dmg, Math.sign(cx(player) - cx(e)) || 1);
+}
+
+function updateEnemy(e, dt) {
+  e.t += dt; e.hitFlash -= dt;
+  const d = e.d, dx = cx(player) - cx(e), dist = Math.abs(dx);
+  const playerAbove = player.y + player.h < e.y - 20;
+  switch (e.state) {
+    case "approach": {
+      e.face = Math.sign(dx) || e.face;
+      if (player.state === "dead") { e.vx *= 0.8; break; }
+      if (dist > d.range || (playerAbove && e.type !== "hound")) e.vx = e.face * d.speed * (dist > d.range ? 1 : 0);
+      else { e.vx = 0; if (e.t > e.cool) { e.state = "windup"; e.t = 0; } }
+      if (playerAbove && e.type !== "hound" && dist < 60) e.vx = -e.face * d.speed * 0.6; // back off, wait below
+      break;
+    }
+    case "windup":
+      e.vx = 0; e.face = Math.sign(dx) || e.face;
+      if (e.t >= d.windup) {
+        e.state = "strike"; e.t = 0; e.hitDone = false;
+        if (e.type === "hound") { e.vx = e.face * 560; e.vy = playerAbove ? -720 : -260; }
+      }
+      break;
+    case "strike": {
+      let box;
+      if (e.type === "hound") box = { x: e.x - 4, y: e.y - 4, w: e.w + 8, h: e.h + 8 };
+      else if (e.type === "knight") box = frontBox(e, 66, 44, 12);
+      else box = frontBox(e, 112, 18, 26);
+      e.strikeBox = box;
+      enemyStrike(e, box);
+      if (e.t >= d.strike && (e.type !== "hound" || e.onGround)) { e.state = "recover"; e.t = 0; e.strikeBox = null; }
+      break;
+    }
+    case "recover":
+      e.vx *= Math.pow(0.02, dt);
+      if (e.t >= d.recover) { e.state = "approach"; e.t = 0; e.cool = 0.2 + Math.random() * 0.8; }
+      break;
+    case "stagger":
+      e.vx *= Math.pow(0.05, dt);
+      if (e.t >= e.stagT) { e.state = "approach"; e.t = 0; e.cool = 0.4; }
+      break;
+    case "flared":
+      e.vx = 0;
+      if (e.t >= 1.6) { e.state = "approach"; e.flare = 0; e.t = 0; e.cool = 0.3; }
+      break;
+  }
+  if (e.pullT > 0) { e.pullT -= dt; e.vx = Math.sign(dx) * 330; }
+  moveBody(e, dt, false);
+  // Burning ground
+  e.burnTick -= dt;
+  if (e.burnTick <= 0) for (const f of fires) if (cx(e) > f.x && cx(e) < f.x + f.w && e.y + e.h >= GROUND - 4) { damageEnemy(e, 5, 3, "crimson", false); e.burnTick = 0.33; break; }
+}
+
+// ---------- Player ----------
+function spend(cost) {
+  const v = player.vessel; if (!v) return false;
+  if (player.overcolour > 0) return true;
+  if (v.sat < cost) return false;
+  v.sat -= cost; return true;
+}
+function addStain(hue, amt) { if (hue && player.overcolour <= 0) player.stain[hue] = Math.min(100, player.stain[hue] + amt); }
+
+function damagePlayer(dmg, dir) {
+  const p = player;
+  if (p.shield > 0) { p.shield--; burst(cx(p), cy(p), HUES.azure.a, 14, 200, 0.4); hitstop = 0.05; return; }
+  const h = heldHue();
+  let m = 1 - 0.03 * p.residue.azure;
+  if (h === "azure" && tier("azure") >= 2) m *= 0.7; // Despair: slower, but tougher
+  p.hp -= dmg * m; p.hurtFlash = 0.3; shake = 7; hitstop = 0.07;
+  addStain(h, T.stainHit);
+  burst(cx(p), cy(p), "#c9c6bf", 10, 220, 0.4);
+  if (p.hp <= 0) { die(false); return; }
+  if (!["art", "rip"].includes(p.state)) { p.state = "hurt"; p.t = 0; p.vx = dir * 260; p.vy = -260; p.iframes = 0.45; }
+}
+function die(husked) {
+  const p = player;
+  if (p.state === "dead") return;
+  metrics.deaths++;
+  if (husked) {
+    metrics.husked++;
+    const h = p.overHue;
+    const gain = Math.min(2, T.residueMax - p.residue[h]);
+    p.residue[h] += gain; metrics.residue += gain;
+    toast(`Husked by ${HUES[h].name}. +${gain} Residue`, HUES[h].a, 3.5);
+  }
+  if (p.dross > 0) { shade = { x: cx(p), y: Math.min(p.y + p.h, GROUND), dross: p.dross }; p.dross = 0; }
+  p.state = "dead"; p.t = 0; p.vx = 0; p.hp = 0; p.vessel = null; p.overcolour = 0;
+  burst(cx(p), cy(p), "#8f8c87", 30, 200, 1.0, 3);
+}
+function respawn() {
+  const keep = { residue: player.residue, brandArmed: player.brandArmed };
+  player = newPlayer();
+  player.residue = keep.residue;
+  for (const h of PLAYABLE) { player.stain[h] = floorOf(h); }
+  resetEncounter();
+  toast("You wake at the Lantern", "#d9d6d0");
+}
+function rest() {
+  const p = player;
+  p.hp = p.maxHp; p.mend = 3;
+  if (p.vessel) toast(`The Lantern takes the ${HUES[p.vessel.hue].name}`, HUES[p.vessel.hue].a);
+  p.vessel = null; p.shield = 0;
+  for (const h of PLAYABLE) p.stain[h] = floorOf(h);
+  resetEncounter();
+  burst(LANTERN_X, GROUND - 70, "#e8e4da", 30, 160, 0.9, 2.5);
+  toast("Rested. The grey returns", "#d9d6d0");
+}
+function gainHue(hue) {
+  const p = player;
+  if (p.state === "dead") return;
+  if (p.vessel && p.vessel.hue !== hue) { metrics.replaced++; toast(`${HUES[p.vessel.hue].name} is forced out by ${HUES[hue].name}`, HUES[hue].a); }
+  else if (p.vessel) toast(`${HUES[hue].name} refilled`, HUES[hue].a, 1.4);
+  else toast(`You hold ${HUES[hue].name}`, HUES[hue].a, 1.6);
+  p.vessel = { hue, sat: 100 };
+  burst(cx(p), cy(p), HUES[hue].a, 18, 200, 0.5);
+}
+
+function hitInBox(box, dmg, flareAmt, hue, fromBlade, onHit) {
+  for (const e of enemies) if (!e.dead && overlap(box, e)) { damageEnemy(e, dmg, flareAmt, hue, fromBlade); if (onHit) onHit(e); }
+}
+
+function updatePlayer(dt) {
+  const p = player;
+  p.t += dt; p.iframes = Math.max(0, p.iframes - dt); p.hurtFlash -= dt; p.wrathLock -= dt; p.dropT -= dt;
+  if (p.state === "dead") { if (p.t > 1.8) respawn(); return; }
+
+  const h = heldHue();
+  const vice = h && (tier(h) >= 2 || p.overcolour > 0) ? h : null;
+  const speed = T.runSpeed * (vice === "azure" ? 0.8 : 1);
+  const ix = (held.has("right") ? 1 : 0) - (held.has("left") ? 1 : 0);
+  const free = p.state === "idle";
+
+  if (free) { p.vx = ix * speed; if (ix) p.face = ix; }
+  else if (p.state === "attack") p.vx = ix * speed * 0.25;
+
+  if (p.onGround) p.coyote = 0.1; else p.coyote -= dt;
+  if (free && p.coyote > 0 && take("jump")) { p.vy = -T.jumpV; p.coyote = 0; }
+  if (p.vy < 0 && !held.has("jump") && free) p.vy += T.gravity * 1.2 * dt; // short hops
+  if (take("down") && p.onGround && p.y + p.h < GROUND - 1) { p.dropT = 0.25; p.y += 3; }
+
+  // Actions
+  const canCancel = p.state === "attack" && p.t > 0.12;
+  if ((free || canCancel) && p.wrathLock <= 0 && take("dodge")) {
+    p.state = "dodge"; p.t = 0; p.dashHit = new Set();
+    const dir = ix || p.face; p.face = dir;
+    p.dodgeKind = h === "crimson" && spend(T.modCost) ? "flame" : h === "azure" && spend(T.modCost) ? "slide" : "roll";
+    p.dodgeDur = { roll: 0.32, flame: 0.24, slide: 0.48 }[p.dodgeKind];
+    p.vx = dir * { roll: 470, flame: 660, slide: 430 }[p.dodgeKind];
+    p.iframes = p.dodgeKind === "slide" ? 0.36 : T.dodgeIframes;
+  } else if (free && take("parry")) {
+    p.state = "parry"; p.t = 0; p.vx = 0;
+  } else if (free && h && take("art")) {
+    if (spend(T.artCost)) {
+      p.state = "art"; p.t = 0; p.hitIdx = 0; p.artHue = h; addStain(h, T.stainArt);
+      if (vice === "crimson") p.wrathLock = 1;
+    } else toast("Not enough Saturation", "#9c9a95", 1.2);
+  } else if (free && take("rip")) {
+    const target = enemies.filter((e) => !e.dead && e.state === "flared" && Math.abs(cx(e) - cx(p)) < 100 && Math.abs(cy(e) - cy(p)) < 90)
+      .sort((a, b) => Math.abs(cx(a) - cx(p)) - Math.abs(cx(b) - cx(p)))[0];
+    if (target) {
+      p.state = "rip"; p.t = 0; p.vx = 0; p.iframes = 0.45; p.face = Math.sign(cx(target) - cx(p)) || p.face;
+      hitstop = 0.17; shake = 8; metrics.rips++;
+      wisps.push({ x: cx(target), y: cy(target), hue: target.hue, t: 0 });
+      killEnemy(target, true);
+    }
+  } else if ((free || (canCancel && p.combo < 2)) && take("attack")) {
+    p.combo = p.state === "attack" ? p.combo + 1 : 0;
+    p.state = "attack"; p.t = 0; p.hitDone = false;
+    if (vice === "crimson") p.wrathLock = 1; // Wrath: no dodging right after you swing
+  } else if (free && p.onGround && p.mend > 0 && take("mend")) {
+    p.state = "mend"; p.t = 0; p.vx = 0; p.mend--;
+  } else if (free && Math.abs(cx(p) - LANTERN_X) < 60 && take("rest")) {
+    rest(); return;
+  }
+  if (h && take("release")) {
+    metrics.released++; toast(`Released ${HUES[h].name}`, "#9c9a95", 1.4);
+    burst(cx(p), cy(p), HUES[h].c, 14, 140, 0.6);
+    p.vessel = null; if (p.overcolour > 0) { p.overcolour = 0.001; }
+  }
+
+  // State updates
+  switch (p.state) {
+    case "attack": {
+      if (!p.hitDone && p.t >= 0.07) {
+        p.hitDone = true;
+        const dmg = (p.combo === 2 ? 16 : 10) * (1 + 0.04 * p.residue.crimson) * (p.overcolour > 0 ? 1.5 : 1);
+        hitInBox(frontBox(p, 58, 40, 6), dmg, T.flareHit, null, true, () => { hitstop = Math.max(hitstop, 0.05); });
+      }
+      if (p.t >= 0.3) { p.state = "idle"; p.t = 0; }
+      break;
+    }
+    case "dodge":
+      if (p.dodgeKind === "flame") {
+        if (Math.random() < 0.7) particles.push({ x: cx(p), y: p.y + p.h - 6, vx: 0, vy: -40, life: 0.35, max: 0.35, col: HUES.crimson.a, size: 4 });
+        for (const e of enemies) if (!e.dead && !p.dashHit.has(e) && overlap(p, e)) { p.dashHit.add(e); damageEnemy(e, 8 * artMult(), 10, "crimson", false); }
+      }
+      if (p.dodgeKind === "slide" && Math.random() < 0.6) particles.push({ x: cx(p), y: p.y + p.h - 4, vx: -p.vx * 0.2, vy: -60, life: 0.4, max: 0.4, col: HUES.azure.a, size: 3 });
+      if (p.t >= p.dodgeDur) { p.state = "idle"; p.t = 0; }
+      break;
+    case "parry":
+      if (p.t >= 0.38) { p.state = "idle"; p.t = 0; }
+      break;
+    case "art":
+      if (p.artHue === "crimson") {
+        p.vx = p.face * 380;
+        const marks = [0.08, 0.24, 0.4];
+        if (p.hitIdx < 3 && p.t >= marks[p.hitIdx]) {
+          p.hitIdx++;
+          hitInBox(frontBox(p, 64, 46, 4), 14 * artMult(), 10, "crimson", false, () => { hitstop = Math.max(hitstop, 0.06); });
+          fires.push({ x: cx(p) - 30, w: 60, t: 3 });
+          burst(cx(p) + p.face * 30, cy(p), HUES.crimson.a, 10, 240, 0.35, 3);
+        }
+        if (p.t >= 0.55) { p.state = "idle"; p.t = 0; p.vx = 0; }
+      } else {
+        p.vx = 0;
+        if (p.hitIdx === 0 && p.t >= 0.12) {
+          p.hitIdx = 1;
+          waves.push({ x: p.face > 0 ? p.x + p.w : p.x - 40, y: GROUND - 64, w: 40, h: 64, vx: p.face * 560, life: 0.8, hit: new Set(), mult: artMult() });
+        }
+        if (p.t >= 0.4) { p.state = "idle"; p.t = 0; }
+      }
+      break;
+    case "rip":
+      if (p.t >= 0.4) { p.state = "idle"; p.t = 0; }
+      break;
+    case "mend":
+      if (p.t >= 0.7) { p.hp = Math.min(p.maxHp, p.hp + 40); p.state = "idle"; p.t = 0; burst(cx(p), cy(p), "#e8e4da", 12, 120, 0.6, 2); }
+      break;
+    case "hurt":
+      p.vx *= Math.pow(0.01, dt);
+      if (p.t >= 0.28) { p.state = "idle"; p.t = 0; }
+      break;
+  }
+  moveBody(p, dt, true);
+
+  // Shade recovery
+  if (shade && Math.abs(cx(p) - shade.x) < 30 && Math.abs(p.y + p.h - shade.y) < 60) {
+    p.dross += shade.dross; toast(`Recovered ${shade.dross} Dross`, "#d9d6d0", 1.6); shade = null;
+  }
+
+  // Saturation, Stain, Residue, Overcolour
+  if (p.vessel && p.overcolour <= 0) {
+    p.vessel.sat -= T.satFade * dt;
+    if (p.vessel.sat <= 0) { metrics.faded++; toast(`${HUES[p.vessel.hue].name} faded`, "#9c9a95", 1.4); p.vessel = null; }
+  }
+  for (const hue of PLAYABLE) {
+    const holding = heldHue() === hue;
+    if (holding) addStain(hue, T.stainHold * dt);
+    else if (!(p.overcolour > 0 && p.overHue === hue)) p.stain[hue] = Math.max(floorOf(hue), p.stain[hue] - T.stainDrain * dt);
+    if (p.stain[hue] >= T.brand && p.brandArmed[hue]) {
+      p.brandArmed[hue] = false;
+      if (p.residue[hue] < T.residueMax) { p.residue[hue]++; metrics.residue++; toast(`Branded. ${HUES[hue].name} Residue +1 (permanent)`, HUES[hue].a, 2.8); }
+    }
+    if (p.stain[hue] < T.brand - 7 && !p.brandArmed[hue]) p.brandArmed[hue] = true;
+    if (p.stain[hue] >= 100 && holding && p.overcolour <= 0) {
+      p.overcolour = T.overcolourTime; p.overHue = hue; shake = 10;
+      toast(`OVERCOLOUR. ${HUES[hue].name} takes the wheel`, HUES[hue].a, 3);
+    }
+  }
+  if (p.overcolour > 0) {
+    p.overcolour -= dt;
+    if (p.overcolour <= 0) {
+      if (heldHue() === p.overHue) die(true);
+      else { p.stain[p.overHue] = Math.max(floorOf(p.overHue), 80); p.overcolour = 0; toast("You let go just in time", "#d9d6d0", 2); }
+    }
+  }
+}
+
+// ---------- Step ----------
+function step(dt) {
+  clock += dt;
+  if (hitstop > 0) { hitstop -= dt; updateParticles(dt * 0.25); return; }
+  metrics.time += dt;
+  updatePlayer(dt);
+  for (const e of enemies) if (!e.dead) updateEnemy(e, dt);
+  enemies = enemies.filter((e) => !e.dead);
+
+  const lv = level();
+  const maxAlive = Math.min(2 + Math.floor((lv - 1) / 2), 4);
+  if (player.state !== "dead" && enemies.length < maxAlive) {
+    spawnT -= dt;
+    if (spawnT <= 0) { spawnEnemy(); spawnT = 2.5 + Math.random() * 2; }
+  }
+  for (const f of fires) f.t -= dt;
+  fires = fires.filter((f) => f.t > 0);
+  for (const w of waves) {
+    w.x += w.vx * dt; w.life -= dt;
+    for (const e of enemies) if (!w.hit.has(e) && overlap(w, e)) { w.hit.add(e); e.pullT = 0.32; damageEnemy(e, 16 * w.mult, 14, "azure", false); }
+    if (Math.random() < 0.8) particles.push({ x: w.x + Math.random() * w.w, y: w.y + Math.random() * w.h, vx: w.vx * 0.1, vy: -30, life: 0.4, max: 0.4, col: HUES.azure.a, size: 3 });
+  }
+  waves = waves.filter((w) => w.life > 0);
+  for (const s of wisps) {
+    s.t += dt;
+    const tx = cx(player), ty = cy(player);
+    const k = Math.min(1, dt * (4 + s.t * 10));
+    s.x += (tx - s.x) * k; s.y += (ty - s.y) * k - Math.sin(s.t * 10) * 2;
+    if (Math.random() < 0.9) particles.push({ x: s.x, y: s.y, vx: 0, vy: -20, life: 0.4, max: 0.4, col: HUES[s.hue].a, size: 3 });
+    if (Math.hypot(tx - s.x, ty - s.y) < 10 || s.t > 1.2) { s.done = true; gainHue(s.hue); }
+  }
+  wisps = wisps.filter((s) => !s.done);
+  updateParticles(dt);
+  for (const t of toasts) t.t -= dt;
+  toasts = toasts.filter((t) => t.t > 0);
+  shake = Math.max(0, shake - dt * 30);
+}
+function updateParticles(dt) {
+  for (const q of particles) { q.x += q.vx * dt; q.y += q.vy * dt; q.vy += 300 * dt; q.life -= dt; }
+  particles = particles.filter((q) => q.life > 0);
+}
+
+// ---------- Render ----------
+function drawBackground() {
+  const g = ctx.createLinearGradient(0, 0, 0, H);
+  g.addColorStop(0, "#2a2a2d"); g.addColorStop(0.6, "#3a3a3c"); g.addColorStop(1, "#1d1d1f");
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  // pale sun, colourless
+  ctx.fillStyle = "rgba(220,216,208,0.08)"; ctx.beginPath(); ctx.arc(720, 120, 70, 0, 7); ctx.fill();
+  ctx.fillStyle = "#2f2f32";
+  for (const s of farSpires) {
+    ctx.fillRect(s.x, GROUND - 40 - s.h, s.w, s.h + 40);
+    if (s.tip) { ctx.beginPath(); ctx.moveTo(s.x, GROUND - 40 - s.h); ctx.lineTo(s.x + s.w / 2, GROUND - 80 - s.h); ctx.lineTo(s.x + s.w, GROUND - 40 - s.h); ctx.fill(); }
+  }
+  ctx.fillStyle = "#262628";
+  for (const n of nearRuins) {
+    ctx.fillRect(n.x, GROUND - n.h, n.w, n.h);
+    if (n.arch) { ctx.fillStyle = "#333336"; ctx.beginPath(); ctx.arc(n.x + n.w / 2, GROUND - n.h * 0.35, n.w * 0.25, Math.PI, 0); ctx.rect(n.x + n.w * 0.25, GROUND - n.h * 0.35, n.w * 0.5, n.h * 0.35); ctx.fill(); ctx.fillStyle = "#262628"; }
+  }
+  // ash motes
+  ctx.fillStyle = "rgba(210,206,198,0.35)";
+  for (const m of motes) { const y = (m.y + clock * m.v) % H; ctx.fillRect((m.x + Math.sin(clock + m.y) * 8 + W) % W, y, m.s, m.s); }
+  // ground
+  ctx.fillStyle = "#18181a"; ctx.fillRect(0, GROUND, W, H - GROUND);
+  ctx.fillStyle = "#4a4a4d"; ctx.fillRect(0, GROUND, W, 2);
+  ctx.strokeStyle = "rgba(255,255,255,0.04)"; ctx.lineWidth = 1;
+  for (let x = 12; x < W; x += 46) { ctx.beginPath(); ctx.moveTo(x, GROUND + 10); ctx.lineTo(x + 18, GROUND + 10); ctx.stroke(); }
+  for (const p of platforms) {
+    ctx.fillStyle = "#2b2b2e"; ctx.fillRect(p.x, p.y, p.w, 14);
+    ctx.fillStyle = "#56565a"; ctx.fillRect(p.x, p.y, p.w, 2);
+    ctx.fillStyle = "#202022"; ctx.fillRect(p.x + 10, p.y + 14, 8, 10); ctx.fillRect(p.x + p.w - 18, p.y + 14, 8, 10);
+  }
+  // Lantern: grey flame (it holds no Hue)
+  ctx.fillStyle = "#3d3d40"; ctx.fillRect(LANTERN_X - 3, GROUND - 92, 6, 92);
+  ctx.fillRect(LANTERN_X - 14, GROUND - 100, 28, 4);
+  const fl = 0.8 + Math.sin(clock * 7) * 0.1 + Math.sin(clock * 13) * 0.05;
+  const lg = ctx.createRadialGradient(LANTERN_X, GROUND - 82, 2, LANTERN_X, GROUND - 82, 70 * fl);
+  lg.addColorStop(0, "rgba(236,232,222,0.55)"); lg.addColorStop(1, "rgba(236,232,222,0)");
+  ctx.fillStyle = lg; ctx.beginPath(); ctx.arc(LANTERN_X, GROUND - 82, 70 * fl, 0, 7); ctx.fill();
+  ctx.fillStyle = "#e9e5db"; ctx.beginPath(); ctx.ellipse(LANTERN_X, GROUND - 82, 4, 8 * fl, 0, 0, 7); ctx.fill();
+  ctx.strokeStyle = "#57575b"; ctx.lineWidth = 2; ctx.strokeRect(LANTERN_X - 10, GROUND - 96, 20, 26);
+}
+
+function drawFires() {
+  for (const f of fires) {
+    const a = Math.min(1, f.t / 0.6);
+    for (let i = 0; i < 6; i++) {
+      const x = f.x + (i + 0.5) * (f.w / 6), hgt = 10 + Math.sin(clock * 14 + i * 2 + f.x) * 5;
+      ctx.fillStyle = `rgba(255,122,61,${0.6 * a})`;
+      ctx.beginPath(); ctx.moveTo(x - 5, GROUND); ctx.lineTo(x, GROUND - hgt); ctx.lineTo(x + 5, GROUND); ctx.fill();
+    }
+    ctx.fillStyle = `rgba(200,50,43,${0.35 * a})`; ctx.fillRect(f.x, GROUND - 3, f.w, 3);
+  }
+  for (const w of waves) {
+    const g = ctx.createLinearGradient(w.x, 0, w.x + w.w, 0);
+    g.addColorStop(0, "rgba(44,111,176,0)"); g.addColorStop(0.5, "rgba(127,196,240,0.7)"); g.addColorStop(1, "rgba(44,111,176,0)");
+    ctx.fillStyle = g;
+    ctx.beginPath(); ctx.moveTo(w.x, GROUND); ctx.quadraticCurveTo(w.x + w.w / 2, w.y - 10, w.x + w.w, GROUND); ctx.fill();
+  }
+}
+
+function drawEnemy(e) {
+  const hue = HUES[e.hue], d = e.d;
+  const winding = e.state === "windup";
+  const flared = e.state === "flared";
+  ctx.save();
+  ctx.translate(cx(e), e.y + e.h);
+  if (flared) {
+    const pulse = 0.5 + Math.sin(clock * 12) * 0.2;
+    const g = ctx.createRadialGradient(0, -e.h / 2, 4, 0, -e.h / 2, e.h + 20);
+    g.addColorStop(0, hue.a + "cc"); g.addColorStop(1, hue.c + "00");
+    ctx.globalAlpha = pulse; ctx.fillStyle = g; ctx.beginPath(); ctx.arc(0, -e.h / 2, e.h + 20, 0, 7); ctx.fill(); ctx.globalAlpha = 1;
+  }
+  ctx.scale(e.face, 1);
+  const body = e.hitFlash > 0 ? "#e8e5de" : flared ? hue.c : "#4b4a48";
+  const accent = winding || flared ? hue.a : e.hue === "white" ? "#cfccc5" : hue.c;
+  if (e.type === "hound") {
+    ctx.fillStyle = body;
+    ctx.beginPath(); ctx.ellipse(-2, -16, 22, 10, 0, 0, 7); ctx.fill();
+    ctx.beginPath(); ctx.ellipse(18, -22, 9, 7, -0.3, 0, 7); ctx.fill();
+    const leg = e.state === "approach" && Math.abs(e.vx) > 1 ? Math.sin(clock * 22) * 5 : 0;
+    ctx.fillRect(-16 + leg, -10, 4, 10); ctx.fillRect(-6 - leg, -10, 4, 10); ctx.fillRect(6 + leg, -10, 4, 10); ctx.fillRect(14 - leg, -10, 4, 10);
+    ctx.fillStyle = accent; // ember mane & eye
+    for (let i = 0; i < 4; i++) { ctx.beginPath(); ctx.moveTo(-10 + i * 7, -25); ctx.lineTo(-7 + i * 7, -33 - Math.sin(clock * 9 + i) * 3); ctx.lineTo(-4 + i * 7, -25); ctx.fill(); }
+    ctx.fillRect(21, -25, 3, 3);
+  } else if (e.type === "knight") {
+    ctx.fillStyle = body;
+    ctx.fillRect(-14, -50, 28, 50);
+    ctx.beginPath(); ctx.arc(0, -54, 11, 0, 7); ctx.fill();
+    ctx.fillStyle = accent; ctx.fillRect(3, -56, 9, 3); // visor glint
+    ctx.fillStyle = e.hitFlash > 0 ? "#f0eee8" : "#5c5b58"; ctx.fillRect(12, -44, 7, 32); // shield
+    ctx.fillStyle = accent; ctx.fillRect(14, -36, 3, 14);
+    const swing = e.state === "strike" ? 1 : winding ? -0.9 : 0.4;
+    ctx.save(); ctx.translate(-6, -36); ctx.rotate(-swing); ctx.fillStyle = "#8a8884"; ctx.fillRect(0, -3, 50, 4); ctx.restore();
+    for (let i = 0; i < 3; i++) { ctx.fillStyle = "rgba(127,196,240,0.5)"; ctx.fillRect(-12 + i * 9, -6 + Math.sin(clock * 3 + i) * 2, 3, 3); } // dripping
+  } else {
+    ctx.fillStyle = e.hitFlash > 0 ? "#ffffff" : "#bdb9b1";
+    ctx.beginPath(); ctx.moveTo(-16, 0); ctx.lineTo(16, 0); ctx.lineTo(8, -48); ctx.lineTo(-8, -48); ctx.fill();
+    ctx.fillStyle = "#f4f1ea"; ctx.beginPath(); ctx.ellipse(0, -55, 9, 11, 0, 0, 7); ctx.fill(); // porcelain mask
+    ctx.fillStyle = "#2a2a2c"; ctx.fillRect(-4, -57, 2, 2); ctx.fillRect(3, -57, 2, 2);
+    const reach = e.state === "strike" ? 70 : winding ? -8 : 20;
+    ctx.fillStyle = "#e9e6df"; ctx.fillRect(4, -38, 40 + reach, 3);
+  }
+  ctx.restore();
+  // Attack tell glyph (colour = parryable Hue, white circle = unparryable)
+  if (winding) {
+    const k = Math.min(1, e.t / d.windup);
+    ctx.font = "bold 22px Spectral, Georgia, serif"; ctx.textAlign = "center";
+    ctx.fillStyle = d.parryable ? hue.a : "#ffffff";
+    ctx.globalAlpha = 0.4 + 0.6 * k;
+    ctx.fillText(d.parryable ? hue.glyph : "○", cx(e), e.y - 30 - k * 6);
+    ctx.globalAlpha = 1;
+  }
+  // bars
+  const bw = 44, bx = cx(e) - bw / 2, by = e.y - 16;
+  ctx.fillStyle = "#0e0e10"; ctx.fillRect(bx - 1, by - 1, bw + 2, 5);
+  ctx.fillStyle = "#cfccc5"; ctx.fillRect(bx, by, bw * Math.max(0, e.hp / d.hp), 3);
+  if (e.canFlare) {
+    ctx.fillStyle = "#0e0e10"; ctx.fillRect(bx - 1, by + 5, bw + 2, 4);
+    ctx.fillStyle = hue.c; ctx.fillRect(bx, by + 6, bw * (e.flare / 100), 2);
+  }
+  if (flared && player.state !== "dead" && Math.abs(cx(e) - cx(player)) < 100 && Math.abs(cy(e) - cy(player)) < 90) {
+    ctx.font = "600 15px Spectral, Georgia, serif"; ctx.textAlign = "center"; ctx.fillStyle = hue.a;
+    ctx.fillText("E · Rip", cx(e), e.y - 34);
+  }
+}
+
+const RES_SPOTS = { crimson: [[-6, -10], [6, -18], [-4, -26], [5, -32], [0, -44]], azure: [[5, -8], [-6, -18], [4, -24], [-5, -32], [-2, -48]] };
+function drawPlayer() {
+  const p = player;
+  if (p.state === "dead") {
+    ctx.fillStyle = "rgba(111,109,105," + Math.max(0, 1 - p.t / 1.2) + ")";
+    ctx.beginPath(); ctx.ellipse(cx(p), GROUND - 4, 20, 5, 0, 0, 7); ctx.fill(); return;
+  }
+  const h = heldHue(), hue = h ? HUES[h] : null;
+  ctx.save();
+  ctx.translate(cx(p), p.y + p.h);
+  if (p.hurtFlash > 0 && Math.floor(clock * 30) % 2) ctx.globalAlpha = 0.5;
+  if (p.state === "dodge") ctx.globalAlpha = 0.65;
+  if (p.overcolour > 0) { // overcolour aura
+    const g = ctx.createRadialGradient(0, -30, 4, 0, -30, 70);
+    g.addColorStop(0, HUES[p.overHue].a + "aa"); g.addColorStop(1, HUES[p.overHue].c + "00");
+    ctx.fillStyle = g; ctx.beginPath(); ctx.arc(0, -30, 70, 0, 7); ctx.fill();
+  }
+  ctx.scale(p.face, 1);
+  const squash = p.state === "dodge" && p.dodgeKind !== "flame" ? 0.6 : 1;
+  ctx.scale(1, squash);
+  // cloak
+  ctx.fillStyle = "#6f6d69";
+  ctx.beginPath(); ctx.moveTo(-15, 0); ctx.lineTo(13, 0); ctx.lineTo(8, -38); ctx.lineTo(-9, -38); ctx.closePath(); ctx.fill();
+  if (hue) { ctx.strokeStyle = hue.c; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(-15, -1); ctx.lineTo(13, -1); ctx.stroke(); }
+  // residue: permanent patches
+  for (const rh of PLAYABLE) for (let i = 0; i < p.residue[rh]; i++) {
+    const [x, y] = RES_SPOTS[rh][i]; ctx.fillStyle = HUES[rh].c; ctx.globalAlpha *= 0.9;
+    ctx.beginPath(); ctx.ellipse(x, y, 4, 3, 0.4, 0, 7); ctx.fill(); ctx.globalAlpha = p.state === "dodge" ? 0.65 : 1;
+  }
+  // stain veins for the held hue
+  if (h) {
+    const t = tier(h);
+    if (t >= 1) { ctx.strokeStyle = hue.a; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(6, -24); ctx.lineTo(2, -30); ctx.lineTo(5, -36); ctx.moveTo(-5, -20); ctx.lineTo(-2, -28); ctx.stroke(); }
+  }
+  // head
+  ctx.fillStyle = "#b3b0aa"; ctx.beginPath(); ctx.arc(0, -46, 9, 0, 7); ctx.fill();
+  ctx.fillStyle = "#58564f"; ctx.beginPath(); ctx.moveTo(-10, -46); ctx.quadraticCurveTo(0, -62, 10, -46); ctx.lineTo(7, -50); ctx.lineTo(-8, -50); ctx.fill(); // hood
+  ctx.fillStyle = h && tier(h) >= 2 ? hue.a : "#2b2b2d"; ctx.fillRect(3, -47, 3, 2); // eyes glow at Brand
+  // blade
+  const bladeCol = hue ? hue.a : "#d9d6d0";
+  ctx.strokeStyle = bladeCol; ctx.lineWidth = 3; ctx.lineCap = "round";
+  if (p.state === "attack" || (p.state === "art" && p.artHue === "crimson")) {
+    const k = Math.min(1, p.t / 0.12);
+    const start = p.combo === 1 ? 1.2 : -1.3, end = p.combo === 1 ? -1.0 : 1.0;
+    const ang = start + (end - start) * k;
+    ctx.save(); ctx.translate(6, -28); ctx.rotate(ang);
+    ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(46, 0); ctx.stroke(); ctx.restore();
+    if (k < 1 || p.t < 0.18) {
+      ctx.globalAlpha = 0.35; ctx.fillStyle = bladeCol;
+      ctx.beginPath(); ctx.moveTo(6, -28); ctx.arc(6, -28, 54, Math.min(start, end), Math.max(start, end)); ctx.closePath(); ctx.fill(); ctx.globalAlpha = 1;
+    }
+  } else {
+    ctx.beginPath(); ctx.moveTo(8, -24); ctx.lineTo(30, -6); ctx.stroke();
+  }
+  if (p.state === "parry") {
+    const live = p.t <= T.parryWindow;
+    ctx.strokeStyle = live ? (h === "azure" ? HUES.azure.a : "#ffffff") : "#77736d"; ctx.lineWidth = live ? 3 : 1.5;
+    ctx.beginPath(); ctx.arc(10, -28, 30, -1.1, 1.1); ctx.stroke();
+  }
+  if (p.state === "mend") { ctx.fillStyle = "rgba(233,229,219,0.5)"; ctx.beginPath(); ctx.arc(0, -28, 12 + p.t * 20, 0, 7); ctx.fill(); }
+  ctx.restore();
+  if (p.shield > 0) { ctx.strokeStyle = HUES.azure.a; ctx.lineWidth = 2; ctx.globalAlpha = 0.7; ctx.beginPath(); ctx.arc(cx(p), cy(p), 36, 0, 7); ctx.stroke(); ctx.globalAlpha = 1; }
+}
+
+function bar(x, y, w, h, frac, col, back = "#0e0e10") { ctx.fillStyle = back; ctx.fillRect(x - 1, y - 1, w + 2, h + 2); ctx.fillStyle = col; ctx.fillRect(x, y, w * clamp(frac, 0, 1), h); }
+
+function drawHUD() {
+  const p = player;
+  ctx.textAlign = "left";
+  // Health (grey thread) + mends
+  bar(24, 24, 200, 6, p.hp / p.maxHp, "#dcd9d2");
+  for (let i = 0; i < 3; i++) { ctx.fillStyle = i < p.mend ? "#dcd9d2" : "#3a3a3d"; ctx.beginPath(); ctx.arc(30 + i * 16, 46, 5, 0, 7); ctx.fill(); }
+  // Vessel orb
+  const ox = 260, oy = 38, h = heldHue();
+  ctx.fillStyle = "#0e0e10"; ctx.beginPath(); ctx.arc(ox, oy, 20, 0, 7); ctx.fill();
+  ctx.strokeStyle = "#4a4a4d"; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(ox, oy, 20, 0, 7); ctx.stroke();
+  if (h) {
+    const hue = HUES[h];
+    ctx.fillStyle = hue.c; ctx.beginPath(); ctx.arc(ox, oy, 15, 0, 7); ctx.fill();
+    ctx.strokeStyle = hue.a; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.arc(ox, oy, 20, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * (p.overcolour > 0 ? 1 : p.vessel.sat / 100)); ctx.stroke();
+    ctx.fillStyle = "#f4f1ea"; ctx.font = "bold 14px Spectral, Georgia, serif"; ctx.textAlign = "center"; ctx.fillText(hue.glyph, ox, oy + 5);
+    ctx.textAlign = "left";
+  } else { ctx.fillStyle = "#5d5b57"; ctx.font = "italic 12px Spectral, Georgia, serif"; ctx.textAlign = "center"; ctx.fillText("empty", ox, oy + 4); ctx.textAlign = "left"; }
+  // Stain meters with tier ticks + residue pips
+  PLAYABLE.forEach((hk, i) => {
+    const y = 22 + i * 24, x = 300, hue = HUES[hk], s = p.stain[hk];
+    ctx.font = "12px Spectral, Georgia, serif"; ctx.fillStyle = heldHue() === hk ? hue.a : "#8f8c87";
+    ctx.fillText(`${hue.glyph} ${hue.name}`, x, y + 7);
+    const bx = x + 74;
+    bar(bx, y, 150, 6, s / 100, hue.c);
+    ctx.fillStyle = "#5d5b57"; ctx.fillRect(bx, y, 150 * floorOf(hk) / 100, 6); // permanent floor
+    ctx.fillStyle = "#cfccc5"; for (const tk of [T.mark, T.brand]) ctx.fillRect(bx + 150 * tk / 100, y - 2, 1, 10);
+    ctx.fillStyle = "#8f8c87"; ctx.fillText(["Tinge", "Mark", "Brand", "Over"][tier(hk)], bx + 158, y + 7);
+    for (let k = 0; k < T.residueMax; k++) { ctx.fillStyle = k < p.residue[hk] ? hue.c : "#2c2c2f"; ctx.fillRect(bx + 200 + k * 9, y, 6, 6); }
+  });
+  // Dross
+  ctx.textAlign = "right"; ctx.font = "14px Spectral, Georgia, serif"; ctx.fillStyle = "#dcd9d2";
+  ctx.fillText(`${p.dross} Dross`, W - 24, 34);
+  ctx.fillStyle = "#8f8c87"; ctx.font = "12px Spectral, Georgia, serif"; ctx.fillText(`Level ${level()}`, W - 24, 52);
+  if (p.overcolour > 0) { ctx.textAlign = "center"; ctx.fillStyle = HUES[p.overHue].a; ctx.font = "20px 'IM Fell English SC', Georgia, serif"; ctx.fillText(`Overcolour ${p.overcolour.toFixed(1)}s · press Q to let go`, W / 2, 90); }
+  // Lantern prompt
+  if (p.state !== "dead" && Math.abs(cx(p) - LANTERN_X) < 60) { ctx.textAlign = "center"; ctx.fillStyle = "#dcd9d2"; ctx.font = "600 14px Spectral, Georgia, serif"; ctx.fillText("R · Rest", LANTERN_X + 4, GROUND - 112); }
+  // Toasts
+  ctx.textAlign = "center";
+  toasts.forEach((t, i) => {
+    ctx.globalAlpha = Math.min(1, t.t / 0.4, (t.life - t.t) / 0.15 + 0.2);
+    ctx.font = "18px 'IM Fell English SC', Georgia, serif"; ctx.fillStyle = t.col;
+    ctx.fillText(t.text, W / 2, 128 + i * 26);
+  });
+  ctx.globalAlpha = 1;
+}
+
+function drawVignette() {
+  const h = heldHue();
+  const t = h ? tier(h) : 0;
+  if (t >= 2 || player.overcolour > 0) {
+    const hue = HUES[player.overcolour > 0 ? player.overHue : h];
+    const g = ctx.createRadialGradient(W / 2, H / 2, H * 0.35, W / 2, H / 2, W * 0.65);
+    g.addColorStop(0, hue.c + "00"); g.addColorStop(1, hue.c + (player.overcolour > 0 ? "88" : "4a"));
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  } else {
+    const g = ctx.createRadialGradient(W / 2, H / 2, H * 0.4, W / 2, H / 2, W * 0.7);
+    g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(1, "rgba(0,0,0,0.45)");
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  }
+}
+
+function drawOverlay(title, sub, sub2) {
+  ctx.fillStyle = "rgba(10,10,12,0.62)"; ctx.fillRect(0, 0, W, H);
+  ctx.textAlign = "center"; ctx.fillStyle = "#e9e5db";
+  ctx.font = "64px 'IM Fell English SC', Georgia, serif"; ctx.fillText(title, W / 2, H / 2 - 18);
+  ctx.font = "italic 19px Spectral, Georgia, serif"; ctx.fillStyle = "#b9b6af"; ctx.fillText(sub, W / 2, H / 2 + 22);
+  if (sub2) { ctx.font = "15px Spectral, Georgia, serif"; ctx.fillStyle = "#8f8c87"; ctx.fillText(sub2, W / 2, H / 2 + 52); }
+}
+
+function render() {
+  ctx.save();
+  if (shake > 0) ctx.translate((Math.random() - 0.5) * shake, (Math.random() - 0.5) * shake);
+  drawBackground();
+  drawFires();
+  if (shade) {
+    const bob = Math.sin(clock * 3) * 3;
+    ctx.fillStyle = "rgba(160,157,150,0.55)"; ctx.beginPath(); ctx.ellipse(shade.x, shade.y - 26 + bob, 10, 22, 0, 0, 7); ctx.fill();
+    ctx.fillStyle = "#cfccc5"; ctx.font = "12px Spectral, Georgia, serif"; ctx.textAlign = "center"; ctx.fillText(`${shade.dross}`, shade.x, shade.y - 56 + bob);
+  }
+  for (const e of enemies) drawEnemy(e);
+  drawPlayer();
+  for (const q of particles) { ctx.globalAlpha = Math.max(0, q.life / q.max); ctx.fillStyle = q.col; ctx.fillRect(q.x - q.size / 2, q.y - q.size / 2, q.size, q.size); }
+  ctx.globalAlpha = 1;
+  for (const s of wisps) { ctx.fillStyle = HUES[s.hue].a; ctx.beginPath(); ctx.arc(s.x, s.y, 6, 0, 7); ctx.fill(); }
+  ctx.restore();
+  drawVignette();
+  drawHUD();
+  if (mode === "title") drawOverlay("Greyborn", "What has no colour can hold any colour.", "Press Enter or tap to begin");
+  else if (mode === "paused") drawOverlay("Paused", "Press P or tap to return", null);
+  else if (player.state === "dead" && player.t > 0.4) {
+    ctx.textAlign = "center"; ctx.fillStyle = "#cfccc5"; ctx.font = "34px 'IM Fell English SC', Georgia, serif";
+    ctx.fillText("The grey takes you", W / 2, H / 2);
+  }
+}
+
+// ---------- Playtest log ----------
+const logEl = document.getElementById("log");
+function renderLog() {
+  const m = metrics;
+  const rows = [
+    ["Time played", `${Math.floor(m.time / 60)}:${String(Math.floor(m.time % 60)).padStart(2, "0")}`],
+    ["Kills", m.kills], ["Hues ripped", m.rips], ["Successful parries", m.parries],
+    ["Voluntary releases", m.released], ["Hues forced out by a new rip", m.replaced], ["Hues that faded", m.faded],
+    ["Residue gained", m.residue], ["Deaths", m.deaths], ["Husked", m.husked],
+  ];
+  logEl.innerHTML = rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
+}
+
+// ---------- Loop ----------
+let last = performance.now(), acc = 0, logT = 0;
+const STEP = 1 / 60;
+function frame(ts) {
+  const dt = Math.min(0.1, (ts - last) / 1000); last = ts;
+  if (mode === "play") { acc += dt; while (acc >= STEP) { step(STEP); acc -= STEP; } }
+  else { clock += dt; }
+  render();
+  logT -= dt; if (logT <= 0) { renderLog(); logT = 0.25; }
+  requestAnimationFrame(frame);
+}
+renderLog();
+requestAnimationFrame(frame);
+// Read-only hook for automated playtests (prototype/README.md).
+window.greyborn = { get player() { return player; }, get enemies() { return enemies; }, metrics, T, get mode() { return mode; } };
+})();
+</script>

@@ -1,0 +1,23 @@
+{
+  "_about": "Playtest tuning applied on top of tuning.json (spec/greyborn-tuning.xlsx). These values come from the simulator's proposals in sim/findings.md and are PENDING the director's sign-off. Delete an entry to fall back to the spec value.",
+  "econ": {
+    "SAP per cell": 0.1,
+    "Enemy Core reward": 900,
+    "Base Heart Health": 12000
+  },
+  "expParams": {
+    "EXP base": 60,
+    "EXP per level": 15,
+    "Bounty base": 100,
+    "Bounty per level": 15
+  },
+  "sources": {
+    "SAP per cell": "findings A1",
+    "Enemy Core reward": "findings A3",
+    "Base Heart Health": "findings section B",
+    "EXP base": "findings A6",
+    "EXP per level": "findings A6",
+    "Bounty base": "findings A6",
+    "Bounty per level": "findings A6"
+  }
+}
