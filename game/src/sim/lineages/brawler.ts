@@ -3,6 +3,7 @@ import * as R from '../rules';
 import { ability } from '../tuning';
 import { applyCC, dealDamage, heal, knockback, power } from '../combat';
 import { dash, dirOf, targetsIn } from './shared';
+import { onRollHit, onRollStart } from './synergies';
 import type { LineageDef } from './types';
 
 export const Brawler: LineageDef = {
@@ -37,10 +38,12 @@ export const Brawler: LineageDef = {
     const { P, scale, r0, now, dmg } = ctx;
     if (cast.slot === 'Q') { // Roll Commit: 8 m in 0.6 s, unstoppable, uppercut stagger 0.5
       c.unstoppableUntil = now + 0.1;
+      if (cast.t <= dt + 1e-9) onRollStart(w, c); // Smash & Roll: follow-up to the partner's Slam?
       if (cast.t <= 0.6) { dash(w, c, (8 * scale) / 0.6, dt); return; }
       for (const t of targetsIn(w, c, c.pos.x, c.pos.z, 2.5 * scale + r0, c.yaw, Math.PI / 3)) {
         dealDamage(w, c, t, dmg, { weakPoint: true });
         applyCC(w, c, t, 'stagger', 0.5);
+        if (t.alive) onRollHit(w, c, t);
       }
       w.hitStructures(c, ctx.front(r0 + 1), 3 * scale, dmg);
       c.chestExposedUntil = now + 1.0;

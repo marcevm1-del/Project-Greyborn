@@ -4,6 +4,7 @@ import { stat, econ, T } from './tuning';
 import { SPECIES } from './species';
 import { lin } from './lineages/registry';
 import { angleDiff } from './lineages/shared';
+import { synergyDamageMult } from './lineages/synergies';
 import type { Creature } from './types';
 import type { World } from './World';
 
@@ -71,6 +72,7 @@ export function dealDamage(w: World, src: Creature | null, tgt: Creature, raw: n
     mult *= R.WEAK_POINT_MULT;
   }
   if (now < tgt.weakBrokenUntil) mult *= 1.1;
+  if (src) mult *= synergyDamageMult(w, src, tgt);
   const amount = raw * mult * (1 - R.combineReduction(...reductions));
   tgt.hp -= amount;
   tgt.lastDamagedAt = now;
@@ -81,7 +83,7 @@ export function dealDamage(w: World, src: Creature | null, tgt: Creature, raw: n
     tgt.assists.set(src.id, now);
     if (src.kind === 'ascendant') lin(src).onDealtDamage?.(w, src, tgt, amount);
   }
-  if (tgt.channel) tgt.channel = null; // channels break on damage
+  if (tgt.channel && tgt.channel.kind !== 'field') tgt.channel = null; // channels break on damage (field conversion only pauses)
   w.emit({ type: 'hit', source: src?.id ?? -1, target: tgt.id, amount, weak, pos: { ...tgt.pos } });
   if (weak) {
     if (now - tgt.weakLastHit > 8) tgt.weakDamage = 0;

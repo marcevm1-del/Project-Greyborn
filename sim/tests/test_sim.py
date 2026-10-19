@@ -15,7 +15,7 @@ T = data.load()
 
 class WorkbookTests(unittest.TestCase):
     def test_exp_curve_total(self):
-        self.assertEqual(T.exp_total, 5320)  # Spec 05 section 2
+        self.assertEqual(T.exp_total, 3990)  # 60 + 15 x L (findings A6, approved 2026-10-19)
 
     def test_counts(self):
         self.assertEqual(sum(len(v) for v in T.ults.values()), 42)
@@ -34,7 +34,7 @@ class WorkbookTests(unittest.TestCase):
     def test_override(self):
         t = data.load(overrides={"Economy:SAP per cell": 0.1, "EXP:EXP base": 60})
         self.assertEqual(t.econ["SAP per cell"], 0.1)
-        self.assertEqual(t.exp_to_next[1], 80)  # 60 + 20 x 1
+        self.assertEqual(t.exp_to_next[1], 75)  # 60 + 15 x 1
         with self.assertRaises(KeyError):
             data.load(overrides={"Economy:No such row": 1})
 
@@ -57,7 +57,7 @@ class RuleTests(unittest.TestCase):
 
     def test_levels_follow_curve(self):
         p = self.m.players[0]
-        self.m.gain_exp(p, 1620, {"kills": 1.0})
+        self.m.gain_exp(p, 1215, {"kills": 1.0})  # cumulative EXP to reach L10 on the 60 + 15 x L curve
         self.assertEqual(p.level, 10)
 
     def test_territorial_influence(self):

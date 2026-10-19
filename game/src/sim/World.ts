@@ -14,6 +14,7 @@ import { dealDamage, maxHp, heal, control } from './combat';
 import { tryCasts, updateCast, canAct } from './abilities';
 import { updateWild } from './wildAI';
 import { lin } from './lineages/registry';
+import { emptySynergy, synergyTick } from './lineages/synergies';
 import { Rng } from '../core/rng';
 
 export interface MatchOptions {
@@ -23,7 +24,7 @@ export interface MatchOptions {
   seed: number;
 }
 
-export interface Hub { node: number; pos: Vec2; level: number; hp: number; lastHit: number; uproot: number }
+export interface Hub { node: number; pos: Vec2; level: number; hp: number; lastHit: number; uproot: number; held: number }
 export interface EnemyCore { team: Team; pos: Vec2; hp: number; max: number; alive: boolean; regrowAt: number; reward: number; lastHit: number }
 export interface Heart { team: Team; pos: Vec2; hp: number; lastHit: number }
 export interface Pickup { id: number; pos: { x: number; y: number; z: number }; amount: number; expires: number }
@@ -49,7 +50,6 @@ export class World {
   hubs: Hub[];
   cores: EnemyCore[];
   hearts: Heart[];
-  sap: [number, number] = [0, 0];
   readonly obstacles: Obstacle[];
   readonly nav: NavGrid;
   camps: Camp[] = [];
@@ -66,6 +66,8 @@ export class World {
   overtime = false;
   /** A* searches bots may still run this tick (reset every step). */
   pathBudget = 2;
+  /** Time each pair's Synergy is ready again, keyed by the pair's lower creature id. */
+  pairReadyAt = new Map<number, number>();
 
   constructor(opts: MatchOptions) {
     this.opts = opts;
@@ -85,7 +87,7 @@ export class World {
       }
     });
     this.hubs = this.nodes.filter((n) => n.hub !== null).map((n) => ({
-      node: n.id, pos: HUBS[n.hub!], level: 0, hp: econ('Hub base Health'), lastHit: -99, uproot: 0,
+      node: n.id, pos: HUBS[n.hub!], level: 0, hp: econ('Hub base Health'), lastHit: -99, uproot: 0, held: 0,
     }));
     this.cores = ([0, 1] as Team[]).flatMap((team) => CORE_SITES[team].map((pos) => ({
       team, pos, hp: econ('Enemy Core Health'), max: econ('Enemy Core Health'), alive: true, regrowAt: 0,
@@ -106,7 +108,7 @@ export class World {
       level: 1, exp: 0, hp: 600, alive: true, respawnAt: 0, transformUntil: 0, carried: 0, wildCores: 0,
       stunUntil: 0, staggerUntil: 0, rootUntil: 0, slowUntil: 0, slowPct: 0, airborneUntil: 0, ccImmuneUntil: 0,
       unstoppableUntil: 0, invulnUntil: 0, bulwarkUntil: 0, chestExposedUntil: 0, grabbedBy: null,
-      cd: {}, cast: null, channel: null, momentum: 0, ultUntil: 0, fortressUntil: 0, branch: null,
+      cd: {}, cast: null, channel: null, momentum: 0, ultUntil: 0, fortressUntil: 0, branch: null, syn: emptySynergy(),
       weakDamage: 0, weakLastHit: -99, weakBrokenUntil: 0,
       lastDamagedAt: -99, lastCombatAt: -99, lastAttacker: null, assists: new Map(),
       intent: emptyIntent(), kills: 0, deaths: 0,
@@ -189,6 +191,16 @@ export class World {
   phaseStart(p: number): number { return [0, 300, 600, 960][p - 1] * this.timeScale; }
   get timeLimit(): number { return 1500 * this.timeScale; }
   hubNear(p: Vec2, r: number): Hub | undefined { return this.hubs.find((h) => this.dist2d(h.pos, p) <= r); }
+  /** Hunt phase (Phase 4): territory moves faster (Version B §4, audit D-07). */
+  territoryMult(): number { return this.phase === 4 ? econ('Hunt territory speed multiplier') : 1; }
+  /** Field conversion channel at a held Hub (Version B §5, audit D-08): 6 s + 1 s per 50 cores,
+   *  −25% per extra ally inside the Hub ring (max −50%). */
+  fieldChannelTime(c: Creature, hub: Hub): number {
+    const allies = this.creatures.filter((a) => a.kind === 'ascendant' && a.alive && a.team === c.team && a.id !== c.id
+      && this.dist2d(a.pos, hub.pos) <= econ('Hub ring radius')).length;
+    const base = econ('Field channel base') + econ('Field channel per 50 cores') * Math.floor(c.carried / 50);
+    return base * (1 - Math.min(econ('Field ally speedup cap'), allies * econ('Field ally speedup')));
+  }
   hubsHeld(team: Team): number { return this.hubs.filter((h) => this.nodeOwner[h.node] === team).length; }
   coresLost(team: Team): number { return this.cores.filter((c) => c.team === team && !c.alive).length; }
   ti(team: Team): number {
@@ -255,6 +267,13 @@ export class World {
     }
   }
 
+  /** Adds held time to a Hub; every 45 s held raises its Defense Level (max 10). */
+  addHubTime(h: Hub, seconds: number) {
+    h.held += seconds;
+    const level = Math.min(10, Math.floor(h.held / econ('Hub Defense seconds per level')));
+    if (level > h.level) { h.hp += econ('Hub Health per level') * (level - h.level); h.level = level; }
+  }
+
   heartOpen(team: Team): boolean {
     return this.phase === 4 || this.cores.filter((c) => c.team === team).every((c) => !c.alive);
   }
@@ -307,7 +326,6 @@ export class World {
     killer.wildCores += value;
     value = full + (value - full) * econ('Wildlife value after cap');
     const got = this.addCores(killer, value, 'wildlife');
-    this.sap[killer.team as Team] += sp.sap;
     this.emit({ type: 'pickup', id: killer.id, amount: got, pos: { ...c.pos } });
   }
 
@@ -325,9 +343,9 @@ export class World {
         const node = this.nodes.find((n) => this.dist2d(n.core, c.pos) <= reach + (n.hub !== null ? 3 : 0) && this.capturable(team, n.id));
         if (node) {
           const enemyOwned = this.nodeOwner[node.id] !== -1;
-          let dur = R.rootChannel(control(c));
+          let dur = R.rootChannel(control(c)) / this.territoryMult();
           if (enemyOwned) {
-            dur = node.cells.length * R.uprootPerCell(0);
+            dur = node.cells.length * R.uprootPerCell(0) / this.territoryMult();
             if (node.hub !== null) {
               const h = this.hubs.find((x) => x.node === node.id)!;
               const max = econ('Hub base Health') + econ('Hub Health per level') * h.level;
@@ -338,13 +356,22 @@ export class World {
         } else {
           const hub = this.hubNear(c.pos, 8 + this.radius(c));
           if (hub && this.nodeOwner[hub.node] === team && c.carried >= 1) {
-            c.channel = { kind: 'field', t: 0, dur: R.convertTime(this.hubsHeld(team), this.coresLost(team)) };
+            c.channel = { kind: 'field', t: 0, dur: this.fieldChannelTime(c, hub) };
           }
         }
       }
       return;
     }
     const ch = c.channel;
+    if (ch.kind === 'field') {
+      // contested: allies speed it up as they arrive or leave; recent damage pauses it
+      const hub = this.hubNear(c.pos, 8 + this.radius(c));
+      if (!hub || this.nodeOwner[hub.node] !== team) { c.channel = null; return; }
+      const dur = this.fieldChannelTime(c, hub);
+      ch.t = (ch.t / ch.dur) * dur;
+      ch.dur = dur;
+      if (this.time - c.lastDamagedAt < econ('Field damage pause')) return;
+    }
     ch.t += dt;
     if (ch.t < ch.dur) return;
     c.channel = null;
@@ -352,7 +379,10 @@ export class World {
       const partner = c.partner !== null ? this.creatures[c.partner] : null;
       const sync = !!partner && partner.channel?.kind === 'convert';
       if (c.level >= 20) {
-        this.sap[team] += c.carried / econ('L20 cores per SAP');
+        // Level 20: converted cores strengthen every Hub the team holds (Version B has no SAP)
+        const bonus = (c.carried / 100) * econ('L20 Hub seconds per 100 cores');
+        for (const h of this.hubs) if (this.nodeOwner[h.node] === team) this.addHubTime(h, bonus);
+        this.emit({ type: 'convert', id: c.id, exp: 0, field: ch.kind === 'field' });
       } else {
         const exp = R.conversionExp(c.carried, { field: ch.kind === 'field', partnerSync: sync }) * this.expMult;
         this.gainExp(c, exp);
@@ -363,7 +393,7 @@ export class World {
       const wasEnemy = this.nodeOwner[ch.node] !== -1;
       this.setOwner(ch.node, wasEnemy ? -1 : team);
       const hub = this.hubs.find((h) => h.node === ch.node);
-      if (hub) { hub.level = 0; hub.hp = econ('Hub base Health'); hub.uproot = 0; }
+      if (hub) { hub.level = 0; hub.hp = econ('Hub base Health'); hub.uproot = 0; hub.held = 0; }
       this.emit({ type: 'capture', node: ch.node, team: wasEnemy ? -1 : team, by: c.id });
       // Overtime (Spec 05 §10): the first team to capture a node wins
       if (this.overtime && !wasEnemy) this.end(team, 'Overtime capture');
@@ -409,6 +439,7 @@ export class World {
       }
       this.move(c, dt);
     }
+    synergyTick(this);
     this.separate();
     this.updatePickups();
     this.secondAcc += dt;
@@ -558,17 +589,8 @@ export class World {
         c.hp = Math.min(maxHp(c), c.hp + 0.05 * maxHp(c));
       }
     }
-    // SAP income and Hub Defense purchases (team-level, automatic in this build)
-    for (const team of [0, 1] as Team[]) {
-      const cells = this.nodes.reduce((s, n) => s + (this.nodeOwner[n.id] === team ? n.cells.length : 0), 0);
-      this.sap[team] += cells * econ('SAP per cell') * (1 + econ('SAP bonus per Hub') * this.hubsHeld(team));
-      const owned = this.hubs.filter((h) => this.nodeOwner[h.node] === team && h.level < 10).sort((a, b) => a.level - b.level);
-      if (owned.length) {
-        const h = owned[0];
-        const cost = econ('Hub Defense cost per level') * (h.level + 1);
-        if (this.sap[team] >= cost + 200) { this.sap[team] -= cost; h.level++; h.hp += econ('Hub Health per level'); }
-      }
-    }
+    // Hub Defense rises one level per 45 s held (Version B §8, audit D-05: no SAP)
+    for (const h of this.hubs) if (this.nodeOwner[h.node] !== -1) this.addHubTime(h, 1);
     // territorial growth: border nodes spread into adjacent neutral nodes
     const interval = econ('Territorial Growth interval');
     for (const n of this.nodes) {
@@ -576,7 +598,7 @@ export class World {
       for (const team of [0, 1] as Team[]) {
         if (!this.capturable(team, n.id)) continue;
         const border = n.neighbours.filter((nb) => this.nodeOwner[nb] === team).length;
-        this.growth[n.id] += (border / interval) * (team === 0 ? 1 : -1);
+        this.growth[n.id] += (border / interval) * this.territoryMult() * (team === 0 ? 1 : -1);
       }
       if (this.growth[n.id] >= n.cells.length) { this.setOwner(n.id, 0); this.emit({ type: 'capture', node: n.id, team: 0, by: -1 }); }
       else if (this.growth[n.id] <= -n.cells.length) { this.setOwner(n.id, 1); this.emit({ type: 'capture', node: n.id, team: 1, by: -1 }); }

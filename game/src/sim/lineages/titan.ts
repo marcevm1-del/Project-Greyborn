@@ -3,6 +3,7 @@ import * as R from '../rules';
 import { applyCC, dealDamage, knockback, maxHp, power } from '../combat';
 import { ultimateRow } from '../tuning';
 import { dash, targetsIn } from './shared';
+import { onSlam } from './synergies';
 import type { LineageDef } from './types';
 
 export const Titan: LineageDef = {
@@ -31,11 +32,14 @@ export const Titan: LineageDef = {
       if (cast.t >= 0.5 && !cast.done) {
         cast.done = true;
         w.emit({ type: 'ability', id: c.id, name: 'Quake Slam impact', pos: { ...c.pos }, yaw: c.yaw, radius });
+        const staggered: number[] = [];
         for (const t of targetsIn(w, c, c.pos.x, c.pos.z, radius, null, 0)) {
           dealDamage(w, c, t, dmg, { weakPoint: true });
           applyCC(w, c, t, 'stagger', 0.8);
+          if (t.alive && w.time < t.staggerUntil) staggered.push(t.id);
         }
         w.hitStructures(c, c.pos, radius, dmg);
+        onSlam(w, c, staggered);
       }
       if (cast.t >= 0.75) ctx.end();
     } else if (cast.slot === 'E') { // Bulwark: 3 s, −60% from the front, slowed 30%

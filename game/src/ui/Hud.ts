@@ -108,7 +108,7 @@ export class Hud {
     const a = w.ti(myTeam), b = w.ti(enemy);
     this.tiA.style.width = `${a * 100}%`;
     this.tiB.style.width = `${b * 100}%`;
-    this.tiLabels.innerHTML = `<span>You ${(a * 100).toFixed(0)}% · ${w.sideOf(myTeam)} · SAP ${Math.floor(w.sap[myTeam])}</span><span>${(b * 100).toFixed(0)}% Enemy</span>`;
+    this.tiLabels.innerHTML = `<span>You ${(a * 100).toFixed(0)}% · ${w.sideOf(myTeam)}</span><span>${(b * 100).toFixed(0)}% Enemy</span>`;
 
     if (me) {
       const mhp = maxHp(me);

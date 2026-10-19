@@ -1,5 +1,6 @@
 import type { Lineage } from './tuning';
 import type { Branch } from './lineages/types';
+import type { SynergyState } from './lineages/synergies';
 import type { Team, Vec2 } from './map';
 
 export type Side = 'Wildborn' | 'Blightborn';
@@ -87,6 +88,7 @@ export interface Creature {
   momentum: number;
   ultUntil: number;
   fortressUntil: number;    // Titan Ultimate (Tactical)
+  syn: SynergyState;        // pair Synergy bookkeeping
 
   weakDamage: number;
   weakLastHit: number;
@@ -126,5 +128,6 @@ export type GameEvent =
   | { type: 'phase'; phase: number }
   | { type: 'evade'; id: number }
   | { type: 'weakbreak'; id: number }
+  | { type: 'synergy'; id: number; partner: number; name: string; pos: Vec2 & { y: number } }
   | { type: 'swing'; id: number; pos: Vec2 & { y: number }; yaw: number }
   | { type: 'end'; winner: Team | null; how: string };

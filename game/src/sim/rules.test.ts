@@ -1,13 +1,15 @@
 import { describe, expect, it } from 'vitest';
 import * as R from './rules';
-import { stat, ability, APPLIED_OVERRIDES } from './tuning';
+import { stat, ability, econ, T } from './tuning';
 
 describe('levels', () => {
-  it('playtest overrides are applied and record the spec value', () => {
-    expect(APPLIED_OVERRIDES['EXP base']).toEqual({ spec: 80, playtest: 60 });
-    expect(APPLIED_OVERRIDES['SAP per cell'].spec).toBe(1);
+  it('the former playtest values are now workbook values (audit D-09)', () => {
+    expect(T.expParams['EXP base']).toBe(60);
+    expect(T.expParams['EXP per level']).toBe(15);
+    expect(econ('Enemy Core reward')).toBe(900);
+    expect(econ('Base Heart Health')).toBe(12000);
   });
-  it('total EXP to L20 with the playtest curve 60 + 15 × L', () => {
+  it('total EXP to L20 with the curve 60 + 15 × L', () => {
     expect(R.expToReach(20)).toBe(3990);
   });
   it('maps EXP to levels at the boundaries', () => {
@@ -52,7 +54,7 @@ describe('economy', () => {
     expect(R.convertTime(1, 1)).toBe(18);
   });
   it('bounty, respawn, TI', () => {
-    expect(R.bounty(10)).toBe(250); // playtest bounty 100 + 15 × level
+    expect(R.bounty(10)).toBe(250); // bounty 100 + 15 × level
     expect(R.respawnTime(20, 4)).toBe(30);
     expect(R.territorialInfluence(108, 240, 2)).toBeCloseTo(0.51);
   });
