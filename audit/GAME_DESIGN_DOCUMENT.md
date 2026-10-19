@@ -6,7 +6,7 @@ Deliverable 7. An implementation-ready specification of **Version B**
 Where this file is silent, `spec/` values apply. Every change from the
 current design is listed in `CHANGELOG_DESIGN.md` with its reason.
 
-Status: **proposal, awaiting the director's approval.** Nothing in `gdd/`,
+Status: **approved by the director on 2026-10-19.** This is the plan being built. At the time of the audit nothing in `gdd/`,
 `spec/` or the code has been changed by this audit.
 
 ---

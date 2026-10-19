@@ -90,6 +90,10 @@ Please confirm or override:
 | 2026-10-02 | **Stillheart's purpose:** the planet sensed the Clamor's hunger long ago, grew Stillheart as its answer, and put it to sleep fearing what it was for. |
 | 2026-10-02 | **Season 7: the truce breaks.** The war returns harder. |
 | 2026-10-02 | **Neutral wildlife is in.** Body plans: four-legged, two-legged, six-legged, eight-legged and insects; 20–50 types, with contrasting creatures. |
+| 2026-10-19 | **All 16 audit proposals approved** (`audit/CHANGELOG_DESIGN.md`, D-01 to D-16): build **Version B, "Greyborn: Brood"** (`audit/GAME_DESIGN_DOCUMENT.md`). Bots-first; 4 lineages; 8 Ultimates; Synergies without tracks; no SAP, Tension or event decks; 12:30 matches; contested field conversion; bot difficulty; 3-minute First Life; lineage registry; static wildlife; **lore freeze**. |
+| 2026-10-19 | **Q1 closed:** conversion channels are **15 / 12 / 9 s** by Hubs held (as built). |
+| 2026-10-19 | **Q39 closed:** node ownership is shown in **team colours** (gold / red, colour-blind option), never side colours (as built). |
+| 2026-10-19 | **Four forms:** Base Form plus Stages 1–3 (as built), resolving the source pages' "Stage 1 = Base Form" reading. |
 
 ## Design risks to watch
 
