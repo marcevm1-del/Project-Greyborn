@@ -14,8 +14,9 @@ import { dealDamage, maxHp, heal, control, branchMult, applyCC } from './combat'
 import type { Branch } from './lineages/types';
 import { tryCasts, updateCast, canAct } from './abilities';
 import { updateWild } from './wildAI';
-import { lin } from './lineages/registry';
+import { lin, PAIRS } from './lineages/registry';
 import { emptySynergy, synergyTick } from './lineages/synergies';
+import { blockByWalls, hitWalls, inZone, updateFields, zonesAt, type Wall, type Zone } from './fields';
 import { Rng } from '../core/rng';
 
 export interface MatchOptions {
@@ -69,6 +70,12 @@ export class World {
   pathBudget = 2;
   /** Time each pair's Synergy is ready again, keyed by the pair's lower creature id. */
   pairReadyAt = new Map<number, number>();
+  /** Ground effects (Void Rift, Void Garden, Thornstorm, Entangle thorns) and Bramble Walls. */
+  zones: Zone[] = [];
+  walls: Wall[] = [];
+  nextFieldId = 1;
+  /** Creature that last rooted each node (Deep Root spread, Void Garden trigger). */
+  nodeRootedBy: (number | null)[];
 
   constructor(opts: MatchOptions) {
     this.opts = opts;
@@ -81,6 +88,7 @@ export class World {
     this.nodeOwner = this.nodes.map(() => -1 as const);
     this.cellOwner = new Array(240).fill(-1);
     this.growth = this.nodes.map(() => 0);
+    this.nodeRootedBy = this.nodes.map(() => null);
     // each team starts owning the nodes around its base
     this.nodes.forEach((n) => {
       for (const t of [0, 1] as Team[]) {
@@ -110,6 +118,7 @@ export class World {
       stunUntil: 0, staggerUntil: 0, rootUntil: 0, slowUntil: 0, slowPct: 0, airborneUntil: 0, ccImmuneUntil: 0,
       unstoppableUntil: 0, invulnUntil: 0, bulwarkUntil: 0, chestExposedUntil: 0, grabbedBy: null,
       cd: {}, cast: null, channel: null, momentum: 0, ultUntil: 0, fortressUntil: 0, branch: null, syn: emptySynergy(),
+      controlLoss: 0, controlLossUntil: 0, silencedUntil: 0, sapDrawUntil: 0,
       weakDamage: 0, weakLastHit: -99, weakBrokenUntil: 0,
       lastDamagedAt: -99, lastCombatAt: -99, lastAttacker: null, assists: new Map(),
       intent: emptyIntent(), kills: 0, deaths: 0,
@@ -122,7 +131,7 @@ export class World {
   private spawnTeams() {
     const names = [['Ash', 'Moss', 'Cinder', 'Fern'], ['Glint', 'Shard', 'Hush', 'Facet']];
     for (const team of [0, 1] as Team[]) {
-      const pairs: [Lineage, Lineage][] = [['Titan', 'Brawler'], ['Titan', 'Brawler']];
+      const pairs = PAIRS; // Version B: Titan + Brawler, Verdant + Hollow
       let i = 0;
       for (const [a, b] of pairs) {
         const ca = this.newCreature({ kind: 'ascendant', team, name: names[team][i++], lineage: a });
@@ -235,6 +244,7 @@ export class World {
    *  `final` is siege damage applied once per structure (tracked in `once`). */
   hitStructures(c: Creature, pos: Vec2, radius: number, dmg: number, final = 0, once?: Set<number>) {
     if (c.kind !== 'ascendant') return;
+    hitWalls(this, c, pos, radius, final > 0 ? final : dmg);
     const enemy = (1 - (c.team as number)) as Team;
     const stage = R.stageForLevel(c.level);
     const mod = econ('Structure damage modifier');
@@ -318,7 +328,17 @@ export class World {
       const max = econ('Hub base Health') + econ('Hub Health per level') * h.level;
       if (h.hp >= econ('Hub shield threshold') * max) return false; // shielded Hubs can't be uprooted
     }
+    if (owner !== -1 && zonesAt(this, n.core, 'garden', owner).length) return false; // Void Garden: can't be uprooted
     return n.neighbours.some((nb) => this.nodeOwner[nb] === team);
+  }
+
+  /** Void Garden: the owning team captures neutral nodes inside it faster. */
+  gardenSpeed(team: Team, node: number): number {
+    return this.nodeOwner[node] === -1 && zonesAt(this, this.nodes[node].core, 'garden', team).length ? 1 + econ('Void Garden capture speedup') : 1;
+  }
+  /** Is `c` standing in an enemy Void Garden (can't capture)? */
+  inEnemyGarden(c: Creature): boolean {
+    return c.kind === 'ascendant' && this.zones.some((z) => z.kind === 'garden' && z.team !== c.team && this.time >= z.start && inZone(z, c.pos));
   }
 
   // ------------------------------------------------------------------ wildlife hooks
@@ -350,10 +370,11 @@ export class World {
       if (c.carried >= 1 && this.dist2d(c.pos, BASES[team]) <= BASE_RADIUS) {
         c.channel = { kind: 'convert', t: 0, dur: R.convertTime(this.hubsHeld(team), this.coresLost(team)) };
       } else {
-        const node = this.nodes.find((n) => this.dist2d(n.core, c.pos) <= reach + (n.hub !== null ? 3 : 0) && this.capturable(team, n.id));
+        const node = this.inEnemyGarden(c) ? undefined
+          : this.nodes.find((n) => this.dist2d(n.core, c.pos) <= reach + (n.hub !== null ? 3 : 0) && this.capturable(team, n.id));
         if (node) {
           const enemyOwned = this.nodeOwner[node.id] !== -1;
-          let dur = R.rootChannel(control(c)) / this.territoryMult() / (c.branch === 'Tactical' ? 1 + econ('Tactical capture speedup') : 1);
+          let dur = R.rootChannel(control(c), lin(c).fastRoot) / this.territoryMult() / this.gardenSpeed(team, node.id) / (c.branch === 'Tactical' ? 1 + econ('Tactical capture speedup') : 1);
           if (enemyOwned) {
             dur = node.cells.length * R.uprootPerCell(0) / this.territoryMult();
             if (node.hub !== null) {
@@ -373,6 +394,7 @@ export class World {
       return;
     }
     const ch = c.channel;
+    if ((ch.kind === 'root' || ch.kind === 'uproot') && this.inEnemyGarden(c)) { c.channel = null; return; }
     if (ch.kind === 'field') {
       // contested: allies speed it up as they arrive or leave; recent damage pauses it
       const hub = this.hubNear(c.pos, 8 + this.radius(c));
@@ -402,9 +424,11 @@ export class World {
     } else if (ch.node !== undefined && this.capturable(team, ch.node)) {
       const wasEnemy = this.nodeOwner[ch.node] !== -1;
       this.setOwner(ch.node, wasEnemy ? -1 : team);
+      this.nodeRootedBy[ch.node] = wasEnemy ? null : c.id;
       const hub = this.hubs.find((h) => h.node === ch.node);
       if (hub) { hub.level = 0; hub.hp = econ('Hub base Health'); hub.uproot = 0; hub.held = 0; }
       this.emit({ type: 'capture', node: ch.node, team: wasEnemy ? -1 : team, by: c.id });
+      if (!wasEnemy) lin(c).onRooted?.(this, c, ch.node);
       // Overtime (Spec 05 §10): the first team to capture a node wins
       if (this.overtime && !wasEnemy) this.end(team, 'Overtime capture');
     }
@@ -452,6 +476,7 @@ export class World {
       this.move(c, dt);
     }
     synergyTick(this);
+    updateFields(this, dt);
     this.separate();
     this.updatePickups();
     this.secondAcc += dt;
@@ -541,6 +566,7 @@ export class World {
       const d = Math.hypot(dx, dz);
       if (d < min && d > 1e-4) { c.pos.x = o.x + (dx / d) * min; c.pos.z = o.z + (dz / d) * min; }
     }
+    blockByWalls(this, c);
   }
 
   statSpeed(c: Creature): number {
@@ -612,7 +638,12 @@ export class World {
       if (this.nodeOwner[n.id] !== -1 || n.hub !== null) continue;
       for (const team of [0, 1] as Team[]) {
         if (!this.capturable(team, n.id)) continue;
-        const border = n.neighbours.filter((nb) => this.nodeOwner[nb] === team).length;
+        // Deep Root (Verdant): nodes it rooted spread twice as fast
+        const border = n.neighbours.reduce((s, nb) => {
+          if (this.nodeOwner[nb] !== team) return s;
+          const by = this.nodeRootedBy[nb];
+          return s + (by !== null && this.creatures[by].kind === 'ascendant' && lin(this.creatures[by]).fastRoot ? 2 : 1);
+        }, 0);
         this.growth[n.id] += (border / interval) * this.territoryMult() * (team === 0 ? 1 : -1);
       }
       if (this.growth[n.id] >= n.cells.length) { this.setOwner(n.id, 0); this.emit({ type: 'capture', node: n.id, team: 0, by: -1 }); }

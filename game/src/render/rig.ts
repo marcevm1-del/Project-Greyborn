@@ -13,7 +13,7 @@ export interface Rig {
   arms: THREE.Object3D[];
   weak?: THREE.Mesh;
   height: number;
-  gait: 'biped' | 'knuckle' | 'quad' | 'hexapod';
+  gait: 'biped' | 'knuckle' | 'quad' | 'hexapod' | 'float';
 }
 
 export function part(geo: THREE.BufferGeometry, mat: THREE.Material, outline: THREE.Material | null, x = 0, y = 0, z = 0): THREE.Mesh {
@@ -41,6 +41,7 @@ export const G = {
   box: (w: number, h: number, d: number) => cached(`b${w},${h},${d}`, () => new THREE.BoxGeometry(w, h, d)),
   ball: (r: number, d = 1) => cached(`s${r},${d}`, () => new THREE.IcosahedronGeometry(r, d)),
   cap: (r: number, l: number) => cached(`c${r},${l}`, () => new THREE.CapsuleGeometry(r, l, 3, 8)),
+  torus: (r: number, t: number) => cached(`t${r},${t}`, () => new THREE.TorusGeometry(r, t, 6, 12)),
   cone: (r: number, h: number, s = 5) => cached(`k${r},${h},${s}`, () => new THREE.ConeGeometry(r, h, s)),
 };
 

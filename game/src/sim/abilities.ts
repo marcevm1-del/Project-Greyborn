@@ -5,6 +5,8 @@ import { ability, ultimateRow } from './tuning';
 import { basicStats, dealDamage, power } from './combat';
 import { lin } from './lineages/registry';
 import { dirOf, lenOf, norm, targetsIn } from './lineages/shared';
+import { wallBetween } from './fields';
+import type { Team } from './map';
 import type { Creature, Slot } from './types';
 import type { World } from './World';
 
@@ -49,6 +51,7 @@ export function tryCasts(w: World, c: Creature) {
   const form = R.formForLevel(c.level);
   const def = lin(c);
   const disabledR = now < c.weakBrokenUntil; // broken weak point disables R
+  const silenced = now < c.silencedUntil;     // Null Pulse: basic attacks only
   const start = (slot: Slot | 'ult') => {
     const info = abilityInfo(c, slot)!;
     if (now < (c.cd[slot] ?? 0)) return false;
@@ -59,7 +62,7 @@ export function tryCasts(w: World, c: Creature) {
     w.emit({ type: 'ability', id: c.id, name: info.name, pos: { ...c.pos }, yaw: c.yaw, radius: 0 });
     return true;
   };
-  if (form >= 1) {
+  if (form >= 1 && !silenced) {
     if (it.q && start('Q')) return;
     if (it.e && start('E')) return;
     if (it.r && !disabledR && start('R')) return;
@@ -101,12 +104,16 @@ export function updateCast(w: World, c: Creature, dt: number) {
       if (cast.t >= wind && !cast.done) {
         cast.done = true;
         const bs = basicStats(c);
-        const range = bs.range * scale + r0;
-        const hits = targetsIn(w, c, c.pos.x, c.pos.z, range, c.yaw, Math.PI * 0.4);
+        const ranged = R.formForLevel(c.level) >= 1 && !!lin(c).rangedBasic;
+        const range = ranged ? bs.range + r0 : bs.range * scale + r0;
+        const hits = targetsIn(w, c, c.pos.x, c.pos.z, range, c.yaw, ranged ? 0.15 : Math.PI * 0.4);
         hits.sort((a, b) => w.dist(a.pos, c.pos) - w.dist(b.pos, c.pos));
         w.emit({ type: 'swing', id: c.id, pos: { ...c.pos }, yaw: c.yaw });
         const target = hits[0];
-        if (target) dealDamage(w, c, target, bs.ratio * P, { weakPoint: true });
+        const wall = ranged ? wallBetween(w, c.pos, target ? target.pos : front(range), c.team as Team) : null;
+        if (wall) wall.hp -= bs.ratio * P;
+        else if (target) dealDamage(w, c, target, bs.ratio * P, { weakPoint: true });
+        else if (ranged) w.hitStructures(c, front(range * 0.6), range * 0.4 + 2, bs.ratio * P);
         else w.hitStructures(c, front(range * 0.7), bs.range * scale * 0.8 + 2, bs.ratio * P);
       }
       if (cast.t >= 0.3) c.cast = null;

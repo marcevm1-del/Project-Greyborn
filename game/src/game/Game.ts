@@ -13,6 +13,8 @@ import { SceneRig, type Quality } from '../render/Scene';
 import { TerrainView } from '../render/TerrainView';
 import { PropsView } from '../render/PropsView';
 import { StructureView } from '../render/StructureView';
+import { FieldView } from '../render/FieldView';
+import { lin } from '../sim/lineages/registry';
 import { CreatureView, setTeamColors } from '../render/CreatureView';
 import { CameraRig } from '../render/CameraRig';
 import { Vfx } from '../render/Vfx';
@@ -45,6 +47,7 @@ export class Game {
   private props: PropsView;
   world!: World;
   private structures: StructureView | null = null;
+  private fields: FieldView | null = null;
   private views = new Map<number, CreatureView>();
   private brains: BotBrain[] = [];
   private prev = new Map<number, { x: number; y: number; z: number }>();
@@ -107,6 +110,8 @@ export class Game {
     const wildTeam = this.world.sides[0] === 'Wildborn' ? 0 : 1;
     this.terrain.wildbornTeam = wildTeam;
     this.structures = new StructureView(this.rig.scene, this.world, wildTeam);
+    this.fields?.dispose();
+    this.fields = new FieldView(this.rig.scene);
     this.cam.colliders = this.world.obstacles.filter((o) => o.r > 1.2);
     this.brains = this.world.creatures.filter((c) => c.kind === 'ascendant' && !c.isPlayer).map((c) => new BotBrain(c.id, this.world));
     this.acc = 0;
@@ -279,6 +284,10 @@ export class Game {
           } else if (e.name === 'Uppercut') {
             view?.onAttack('basic');
             this.vfx.burst(p.clone().setY(p.y + 1), col, 20, 6, 0.4, 0.6);
+          } else if (e.name.endsWith(' impact')) { // Entangle, Null Pulse, Collapse, Event Horizon
+            view?.onAttack('slam');
+            this.vfx.ring(p, e.radius, e.name.startsWith('Entangle') ? 0x6b8a3a : 0x8a5cd6, 0.5);
+            this.audio.play('slam', p, { size: 1.5 });
           } else if (e.name === 'Frenzy') {
             this.vfx.burst(p.clone().setY(p.y + 2), 0xff6a3a, 50, 5, 0.6, 1);
           } else {
@@ -286,6 +295,13 @@ export class Game {
             this.vfx.burst(p.clone().setY(p.y + 0.5), col, 12, 3, 0.4, 0.5);
           }
           if (c.isPlayer) this.cam.kick(0.3);
+          break;
+        }
+        case 'synergy': {
+          const p = this.vec(e.pos);
+          this.vfx.ring(p, 8, 0xffffff, 0.8);
+          this.vfx.burst(p.clone().setY(p.y + 1), 0xfff2c0, 40, 6, 0.6, 1);
+          this.audio.play('capture', p);
           break;
         }
         case 'telegraph': this.vfx.ring(this.vec(e.pos), e.radius, 0xffffff, e.time, true); break;
@@ -441,7 +457,7 @@ export class Game {
         if (acc >= stride) {
           this.stepDist.set(c.id, 0);
           const glass = c.kind === 'ascendant' && w.sideOf(c.team as Team) === 'Blightborn';
-          const quiet = c.kind === 'wild' && SPECIES[c.species!].size < 1;
+          const quiet = c.kind === 'wild' ? SPECIES[c.species!].size < 1 : !!lin(c).silentSteps && R.formForLevel(c.level) >= 1; // Hollow: Hush
           if (!quiet) this.audio.play('step', new THREE.Vector3(x, y, z), { size: w.height(c), glass });
           if (w.height(c) >= 4) this.vfx.burst(new THREE.Vector3(x, y + 0.2, z), 0xb0a68e, 6, 2, 0.6, 0.6, 3);
         } else this.stepDist.set(c.id, acc);
@@ -463,6 +479,7 @@ export class Game {
     this.terrain.updateTerritory(w.cellOwner, this.pulse, time);
     this.props.update(time, this.rig.camera.position);
     this.structures?.update(time);
+    this.fields?.update(w, time);
     this.vfx.update(dt);
     // audio listener and music intensity
     const f = new THREE.Vector3();

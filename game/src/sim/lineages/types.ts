@@ -39,6 +39,12 @@ export interface LineageDef {
   /** An ability held to charge: its cooldown starts on release, and the caster moves at half speed. */
   chargedSlot?: Slot;
   ultimates: Record<Branch, string>;
+  /** Passive: Root channel 2 s instead of 4 s, and nodes it rooted spread twice as fast (Verdant Deep Root). */
+  fastRoot?: boolean;
+  /** Basic attack is a ranged bolt: a narrow line that doesn't scale with Stage and is stopped by walls. */
+  rangedBasic?: boolean;
+  /** Passive: no footstep sounds (Hollow Hush). */
+  silentSteps?: boolean;
 
   /** Is `src` (at `off` radians from the target's facing, 0 = in front) able to hit the weak point? */
   weakPointExposed(w: World, src: Creature, tgt: Creature, off: number): boolean;
@@ -52,6 +58,8 @@ export interface LineageDef {
   allyDamageReduction?(w: World, protector: Creature, tgt: Creature, src: Creature): number;
   /** Called after this lineage's creature deals damage. */
   onDealtDamage?(w: World, src: Creature, tgt: Creature, amount: number): void;
+  /** Called when this creature finishes rooting a neutral node. */
+  onRooted?(w: World, c: Creature, node: number): void;
   /** Runs every tick for living creatures of this lineage. */
   tick?(w: World, c: Creature, dt: number): void;
   /** Advances a Q / E / R cast. */

@@ -4,6 +4,8 @@
 import * as R from '../rules';
 import { econ } from '../tuning';
 import { applyCC } from '../combat';
+import { addZone } from '../fields';
+import type { Team, Vec2 } from '../map';
 import type { Creature } from '../types';
 import type { World } from '../World';
 import { lin } from './registry';
@@ -102,4 +104,18 @@ export function synergyTick(w: World) {
     const cd = c.cd.Q ?? 0;
     if (cd > w.time) c.cd.Q = cd + (cd - s.slamAt) * econ('Commitment Slam penalty');
   }
+}
+
+// ------------------------------------------------------------ Void Garden (Verdant + Hollow)
+
+/** Opens a Void Garden at `pos` if the pair's Synergy is ready. Triggers: a Void Rift opens on
+ *  ground the Verdant rooted, or the Verdant finishes a root inside the Hollow's Rift. */
+export function tryVoidGarden(w: World, c: Creature, pos: Vec2): boolean {
+  if (synergyName(c) !== 'Void Garden' || !synergyReady(w, c)) return false;
+  addZone(w, {
+    kind: 'garden', team: c.team as Team, owner: c.id, pos: { ...pos }, r: econ('Void Garden radius'),
+    start: w.time, until: w.time + econ('Void Garden duration'), controlLoss: econ('Void Garden Control loss'),
+  });
+  fire(w, c, 'Void Garden');
+  return true;
 }

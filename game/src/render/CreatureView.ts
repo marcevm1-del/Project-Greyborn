@@ -252,7 +252,7 @@ export class CreatureView {
       l.rotation.x = Math.sin(this.phase + (side > 0 ? 0 : Math.PI) + pairPhase) * amp;
     });
     const idle = Math.sin(time * 2 + c.id) * 0.02;
-    rig.body.position.y = Math.abs(Math.cos(this.phase)) * amp * 0.06 + idle;
+    rig.body.position.y = rig.gait === 'float' ? 0.12 + Math.sin(time * 1.6 + c.id) * 0.05 : Math.abs(Math.cos(this.phase)) * amp * 0.06 + idle;
     rig.body.rotation.x = (rig.gait === 'knuckle' ? 0.25 : 0.05) * Math.min(1, speed / 3);
     rig.arms.forEach((a, i) => {
       const side = i % 2 === 0 ? 1 : -1;

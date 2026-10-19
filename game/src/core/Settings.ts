@@ -2,6 +2,9 @@
 // validation. Stored data is never trusted: every field is checked and clamped,
 // and corrupt data falls back to defaults.
 
+/** Lineages a stored profile may name (Version B's four). */
+const LINEAGE_IDS = ['Titan', 'Brawler', 'Verdant', 'Hollow'];
+
 export type Action = 'forward' | 'back' | 'left' | 'right' | 'basic' | 'q' | 'e' | 'r' | 'ult' | 'evade' | 'interact' | 'pause' | 'scoreboard';
 
 export interface Settings {
@@ -128,7 +131,7 @@ export function sanitizeProfile(raw: unknown): Profile {
     wins: Math.floor(num(r.wins, 0, 1e6, 0)),
     bestLevel: Math.floor(num(r.bestLevel, 1, 20, 1)),
     totalKills: Math.floor(num(r.totalKills, 0, 1e7, 0)),
-    lastLineage: r.lastLineage === 'Titan' || r.lastLineage === 'Brawler' ? r.lastLineage : 'Brawler',
+    lastLineage: typeof r.lastLineage === 'string' && LINEAGE_IDS.includes(r.lastLineage) ? r.lastLineage : 'Brawler',
   };
 }
 

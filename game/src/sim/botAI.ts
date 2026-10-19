@@ -213,7 +213,7 @@ export class BotBrain {
 
   private engage(w: World, c: Creature, t: Creature) {
     const it = c.intent;
-    const reach = w.radius(c) + w.radius(t) + (R.formForLevel(c.level) === 0 ? 2 : lin(c).basicRange) * R.areaScale(c.level) * 0.9;
+    const reach = w.radius(c) + w.radius(t) + (R.formForLevel(c.level) === 0 ? 2 * R.areaScale(c.level) : lin(c).rangedBasic ? lin(c).basicRange : lin(c).basicRange * R.areaScale(c.level)) * 0.9;
     const d = w.dist(c.pos, t.pos);
     it.aimYaw = yawTo(c.pos, t.pos);
     if (d > reach) this.goTo(w, c, { x: t.pos.x, z: t.pos.z }, reach * 0.8);

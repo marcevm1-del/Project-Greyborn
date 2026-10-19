@@ -17,7 +17,7 @@ const LINEAGES: { id: Lineage; role: string; text: string; kit: string[] }[] = [
     kit: ['<b>Q · Roll Commit</b>: unstoppable roll, uppercut stagger. Exposes your chest weak point for 1 s.',
       '<b>E · Haymaker</b>: hold to charge; full charge knocks back 6 m.',
       '<b>R · Grapple</b>: grab a lower-Stage target and throw it 8 m.',
-      '<b>Momentum</b>: hits build it; at 100, +15% attack speed.', '<b>T · Frenzy</b> (L20): +40% attack speed, lifesteal.'],
+      '<b>Momentum</b>: hits build it; at 100, +15% attack speed.', '<b>T · Frenzy</b> (Aggression) or <b>Shove of the Storm</b> (Tactical) at L20.'],
   },
   {
     id: 'Titan', role: 'Juggernaut / frontline · the mountain that fights',
@@ -25,7 +25,23 @@ const LINEAGES: { id: Lineage; role: string; text: string; kit: string[] }[] = [
     kit: ['<b>Q · Quake Slam</b>: telegraphed ground slam, staggers everyone around you.',
       '<b>E · Bulwark</b>: −60% damage from the front for 3 s.',
       '<b>R · Rampart Charge</b>: unstoppable charge that carries up to 2 enemies.',
-      '<b>Immovable</b>: can\'t be knocked back or grappled.', '<b>T · Avalanche</b> (L20): a 30 m siege roll that wrecks structures.'],
+      '<b>Immovable</b>: can\'t be knocked back or grappled.', '<b>T · Avalanche</b> (Aggression) or <b>Fortress</b> (Tactical) at L20.'],
+  },
+  {
+    id: 'Verdant', role: 'Territory / sustain · the root that holds',
+    text: 'A bark-and-moss stag that takes ground fast, walls off paths and keeps allies alive.',
+    kit: ['<b>Q · Bramble Wall</b>: a 10 m wall of thorns that blocks movement and bolts.',
+      '<b>E · Sap Draw</b>: allies within 8 m heal 3% Health per second for 4 s.',
+      '<b>R · Entangle</b>: after 0.6 s, roots everyone in a 3 m circle.',
+      '<b>Deep Root</b>: roots nodes in 2 s; your nodes spread twice as fast.', '<b>T · Thornstorm</b> (Aggression) or <b>Overgrowth</b> (Tactical, up to 4 nodes) at L20.'],
+  },
+  {
+    id: 'Hollow', role: 'Zone denial · the void that waits',
+    text: 'A floating shape with a hole through its body that fights from 15 m and shuts down areas.',
+    kit: ['<b>Basic · Void bolt</b>: ranged, 15 m. Walls stop it.',
+      '<b>Q · Void Rift</b>: slows enemies 30% and cuts their Control by 40% for 4 s.',
+      '<b>E · Hollow Step</b>: blink 8 m, through units and walls.',
+      '<b>R · Null Pulse</b>: silences everyone around you for 1.5 s.', '<b>T · Collapse</b> (Aggression) or <b>Event Horizon</b> (Tactical) at L20.'],
   },
 ];
 
@@ -89,7 +105,7 @@ export class Menus {
         <button data-a="help">How to play</button>
         <button data-a="settings">Settings</button>
         <div style="margin-top:14px;color:var(--muted);font-size:.85em">Matches ${p.matches} · Wins ${p.wins} · Best level ${p.bestLevel}</div>
-        <div style="margin-top:6px;color:var(--muted);font-size:.75em">Vertical slice · Ashfall Crossing · Titan and Brawler</div>
+        <div style="margin-top:6px;color:var(--muted);font-size:.75em">Greyborn: Brood · Ashfall Crossing · Titan, Brawler, Verdant and Hollow</div>
       </div>`);
     s.querySelector('[data-a=play]')!.addEventListener('click', () => this.select());
     s.querySelector('[data-a=help]')!.addEventListener('click', () => this.help(() => this.title()));
@@ -104,7 +120,7 @@ export class Menus {
       </div>`).join('');
     const s = this.show(`
       <h2>Choose your lineage</h2>
-      <div style="color:var(--muted);margin-bottom:12px">You start as a small Kith Base Form. Your lineage awakens at Level 3. Your partner plays the other half of the Commit pair. Sides are assigned when the match starts.</div>
+      <div style="color:var(--muted);margin-bottom:12px">You start as a small Kith Base Form. Your lineage awakens at Level 3. Your partner plays the other half of your pair (Titan with Brawler, Verdant with Hollow); near each other at Stage 2 you unlock a Synergy. At Level 10 you pick a branch (1 Aggression, 2 Tactical). Sides are assigned when the match starts.</div>
       <div class="cards">${cards}</div>
       <div class="menu" style="flex-direction:row;justify-content:center;margin-top:16px">
         <button data-a="back">Back</button><button class="primary" data-a="go">Bud into the world</button>

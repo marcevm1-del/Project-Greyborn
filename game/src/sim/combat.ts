@@ -8,7 +8,7 @@ import { synergyDamageMult } from './lineages/synergies';
 import type { Creature } from './types';
 import type { World } from './World';
 
-export type CC = 'stun' | 'stagger' | 'root' | 'slow' | 'airborne';
+export type CC = 'stun' | 'stagger' | 'root' | 'slow' | 'airborne' | 'silence';
 
 /** Yaw from `from` to `to` (0 = +z). */
 export function yawTo(from: { x: number; z: number }, to: { x: number; z: number }): number {
@@ -40,7 +40,8 @@ export function power(c: Creature): number {
   return c.kind === 'wild' ? 0 : stat(c.lineage, 'Power', c.level) * branchMult(c, 'Power');
 }
 export function control(c: Creature): number {
-  return c.kind === 'wild' ? 0 : stat(c.lineage, 'Control', c.level) * branchMult(c, 'Control');
+  // Void Rift / Void Garden lower Control while the creature stands inside (fields.ts clears it)
+  return c.kind === 'wild' ? 0 : stat(c.lineage, 'Control', c.level) * branchMult(c, 'Control') * (1 - c.controlLoss);
 }
 
 export function isEnemy(a: Creature, b: Creature): boolean {
@@ -136,9 +137,10 @@ export function applyCC(w: World, src: Creature, tgt: Creature, kind: CC, base: 
     case 'root': tgt.rootUntil = Math.max(tgt.rootUntil, until); tgt.ccImmuneUntil = until + R.CC_IMMUNITY; break;
     case 'stagger': tgt.staggerUntil = Math.max(tgt.staggerUntil, until); break;
     case 'airborne': tgt.airborneUntil = Math.max(tgt.airborneUntil, until); tgt.vel.y = 7; tgt.grounded = false; break;
+    case 'silence': tgt.silencedUntil = Math.max(tgt.silencedUntil, until); break;
     case 'slow': tgt.slowUntil = Math.max(tgt.slowUntil, until); tgt.slowPct = Math.max(tgt.slowPct, slowPct); break;
   }
-  if (kind !== 'slow') {
+  if (kind !== 'slow' && kind !== 'silence') {
     // stagger, stun and airborne interrupt casts and channels
     if (tgt.cast && !(w.time < tgt.unstoppableUntil)) tgt.cast = null;
     tgt.channel = null;

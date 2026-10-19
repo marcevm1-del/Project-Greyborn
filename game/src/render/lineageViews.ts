@@ -86,4 +86,66 @@ const brawler: Builder = (form, sk, outline, { root, body, legs, arms }) => {
   return { root, body, head, legs, arms, weak, height: 1, gait: 'knuckle' };
 };
 
-export const LINEAGE_VIEWS: Partial<Record<Lineage, Builder>> = { Titan: titan, Brawler: brawler };
+const verdant: Builder = (form, sk, outline, { root, body, legs, arms }) => {
+  const detail = form;
+  // Verdant: a stag of bark and moss; antlers grow with each Stage; bloom pods on the shoulders (weak point)
+  const torso = part(G.cap(0.2, 0.5), sk.body, outline, 0, 0.62, 0);
+  torso.rotation.x = Math.PI / 2;
+  body.add(torso);
+  const moss = part(G.box(0.34, 0.08, 0.6), sk.armour, null, 0, 0.82, 0);
+  body.add(moss);
+  const neck = part(G.cap(0.08, 0.22), sk.body, outline, 0, 0.86, 0.34);
+  neck.rotation.x = 0.6;
+  body.add(neck);
+  const head = part(G.box(0.14, 0.14, 0.24), sk.body, outline, 0, 1.0, 0.48);
+  head.add(part(G.ball(0.025, 0), sk.eye, null, -0.06, 0.03, 0.08), part(G.ball(0.025, 0), sk.eye, null, 0.06, 0.03, 0.08));
+  for (const s of [-1, 1]) {
+    // antlers: one tine per Stage
+    for (let i = 0; i <= detail; i++) {
+      const tine = part(G.cone(0.025, 0.22 + i * 0.04, 4), sk.armour, null, s * (0.06 + i * 0.05), 0.12 + i * 0.06, -0.04 - i * 0.02);
+      tine.rotation.z = -s * (0.4 + i * 0.15);
+      head.add(tine);
+    }
+  }
+  body.add(head);
+  let weak: THREE.Mesh | undefined;
+  for (const s of [-1, 1]) {
+    const pod = part(G.ball(0.09 + detail * 0.01, 1), sk.glow, null, s * 0.2, 0.8, 0.2);
+    if (!weak) weak = pod;
+    body.add(pod);
+    for (const z of [0.22, -0.22]) {
+      const leg = limb(G.cap(0.05, 0.36), sk.body, outline, s * 0.13, 0.48, z, 0.48);
+      legs.push(leg); root.add(leg);
+    }
+    if (detail >= 2) body.add(part(G.cone(0.06, 0.24, 5), sk.dark, null, s * 0.1, 0.92, -0.2));
+  }
+  return { root, body, head, legs, arms, weak, height: 1, gait: 'quad' };
+};
+
+const hollow: Builder = (form, sk, outline, { root, body, legs, arms }) => {
+  const detail = form;
+  // Hollow: a thin floating shape with a hole through its torso; the core cavity glows in front (weak point)
+  const ring = part(G.torus(0.2, 0.07), sk.body, outline, 0, 0.7, 0);
+  body.add(ring);
+  const weak = part(G.ball(0.08 + detail * 0.01, 1), sk.glow, null, 0, 0.7, 0.02);
+  body.add(weak);
+  const spine = part(G.cap(0.06, 0.4), sk.dark, null, 0, 0.32, -0.02);
+  body.add(spine);
+  const head = part(G.cone(0.11, 0.26, 6), sk.armour, outline, 0, 1.06, 0);
+  head.rotation.x = Math.PI;
+  head.add(part(G.ball(0.025, 0), sk.eye, null, -0.04, 0.02, 0.09), part(G.ball(0.025, 0), sk.eye, null, 0.04, 0.02, 0.09));
+  body.add(head);
+  for (const s of [-1, 1]) {
+    const arm = limb(G.cap(0.035, 0.5), sk.body, outline, s * 0.26, 0.86, 0, 0.6);
+    arm.add(part(G.cone(0.04, 0.16, 4), sk.glow, null, 0, -0.66, 0));
+    arms.push(arm); body.add(arm);
+    // trailing veil (no legs: it floats)
+    const veil = part(G.cone(0.08, 0.36, 4), sk.dark, null, s * 0.08, 0.08, -0.04);
+    veil.rotation.x = Math.PI;
+    body.add(veil);
+    if (detail >= 2) body.add(part(G.ball(0.04, 0), sk.glow, null, s * 0.3, 0.7, 0));
+  }
+  return { root, body, head, legs, arms, weak, height: 1, gait: 'float' };
+};
+
+export const LINEAGE_VIEWS: Partial<Record<Lineage, Builder>> = { Titan: titan, Brawler: brawler, Verdant: verdant, Hollow: hollow };

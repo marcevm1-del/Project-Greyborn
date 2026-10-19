@@ -30,6 +30,7 @@ export interface Cast {
   charge?: number;    // Haymaker charge seconds
   hit?: Set<number>;  // creatures already hit by this cast
   carried?: number[]; // Rampart Charge / Grapple victims
+  pos?: Vec2;         // ground target (Entangle, Collapse, Event Horizon)
   done?: boolean;
 }
 
@@ -90,6 +91,10 @@ export interface Creature {
   momentum: number;
   ultUntil: number;
   fortressUntil: number;    // Titan Ultimate (Tactical)
+  controlLoss: number;      // Control reduction from Void Rift / Void Garden (0..1)
+  controlLossUntil: number;
+  silencedUntil: number;    // Null Pulse: no abilities (basic attacks allowed)
+  sapDrawUntil: number;     // Verdant Sap Draw aura
   syn: SynergyState;        // pair Synergy bookkeeping
 
   weakDamage: number;
