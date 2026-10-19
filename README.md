@@ -11,6 +11,11 @@ the map's Territorial Influence. Every match is a battle in the war between
 the living planet's **Wildborn** and the **Blightborn**, creatures infected by
 a hive mind that arrived on a meteorite.
 
+## Design audit, October 2026 (`audit/`)
+
+A full audit with research, a recommended scope ("Greyborn: Brood"), a
+roadmap and the first five tasks. Start at [`audit/README.md`](audit/README.md).
+
 ## Maps & Monsters Design Bible (`design-bible/`)
 
 A production-level reference for every map, creature, Ascendant and structure:
