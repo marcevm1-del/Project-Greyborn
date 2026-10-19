@@ -1769,7 +1769,14 @@
   "Void Garden capture speedup": 0.5,
   "Fortress duration": 6,
   "Fortress self reduction": 0.5,
-  "Fortress ally reduction": 0.4
+  "Fortress ally reduction": 0.4,
+  "Aggression Power bonus": 0.1,
+  "Aggression Speed bonus": 0.05,
+  "Aggression kill core bonus": 0.15,
+  "Tactical Control bonus": 0.15,
+  "Tactical Health bonus": 0.1,
+  "Tactical capture speedup": 0.25,
+  "Bulwark ally reduction": 0.3
  },
  "tension": {
   "Borders touching (base)": 0.2,

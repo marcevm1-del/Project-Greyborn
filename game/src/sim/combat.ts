@@ -27,14 +27,20 @@ export function weakPointExposed(w: World, src: Creature, tgt: Creature): boolea
   return lin(tgt).weakPointExposed(w, src, tgt, off);
 }
 
+/** Branch stats (gdd/31): Aggression +10% Power, +5% Speed; Tactical +15% Control, +10% Health. */
+export function branchMult(c: Creature, stat: 'Health' | 'Power' | 'Speed' | 'Control'): number {
+  if (c.branch === 'Aggression') return stat === 'Power' ? 1 + econ('Aggression Power bonus') : stat === 'Speed' ? 1 + econ('Aggression Speed bonus') : 1;
+  if (c.branch === 'Tactical') return stat === 'Control' ? 1 + econ('Tactical Control bonus') : stat === 'Health' ? 1 + econ('Tactical Health bonus') : 1;
+  return 1;
+}
 export function maxHp(c: Creature): number {
-  return c.maxHpOverride ?? stat(c.lineage, 'Health', c.level);
+  return c.maxHpOverride ?? stat(c.lineage, 'Health', c.level) * branchMult(c, 'Health');
 }
 export function power(c: Creature): number {
-  return c.kind === 'wild' ? 0 : stat(c.lineage, 'Power', c.level);
+  return c.kind === 'wild' ? 0 : stat(c.lineage, 'Power', c.level) * branchMult(c, 'Power');
 }
 export function control(c: Creature): number {
-  return c.kind === 'wild' ? 0 : stat(c.lineage, 'Control', c.level);
+  return c.kind === 'wild' ? 0 : stat(c.lineage, 'Control', c.level) * branchMult(c, 'Control');
 }
 
 export function isEnemy(a: Creature, b: Creature): boolean {
@@ -59,6 +65,12 @@ export function dealDamage(w: World, src: Creature | null, tgt: Creature, raw: n
     if (tgt.kind === 'ascendant') {
       const extra = lin(tgt).damageReduction?.(w, tgt, src) ?? 0;
       if (extra > 0) reductions.push(extra);
+      // protection from nearby allies (Titan Bulwark at Tactical L10, Fortress)
+      for (const a of w.creatures) {
+        if (a === tgt || a.kind !== 'ascendant' || !a.alive || a.team !== tgt.team || w.dist(a.pos, tgt.pos) > 8) continue;
+        const r = lin(a).allyDamageReduction?.(w, a, tgt, src) ?? 0;
+        if (r > 0) reductions.push(r);
+      }
     }
   }
   if (tgt.kind === 'ascendant' && tgt.team !== -1) {
@@ -169,7 +181,7 @@ export function kill(w: World, victim: Creature, killer: Creature | null) {
       && w.dist(c.pos, victim.pos) <= 30).sort((a, b) => w.dist(a.pos, victim.pos) - w.dist(b.pos, victim.pos))[0] ?? null;
   }
   if (!credit) return;
-  const b = R.bounty(victim.level);
+  const b = R.bounty(victim.level) * (credit.branch === 'Aggression' ? 1 + econ('Aggression kill core bonus') : 1);
   credit.kills++;
   w.addCores(credit, b, 'kills');
   for (const [id, t] of victim.assists) {

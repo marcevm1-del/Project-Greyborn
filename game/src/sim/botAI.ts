@@ -42,6 +42,11 @@ export class BotBrain {
     it.basic = it.q = it.r = it.evade = it.ult = false;
     // E is "held" only while a charged E (Haymaker) is charging; otherwise a stuck E would fire casts that cancel channels
     it.e = c.cast?.slot === 'E' && lin(c).chargedSlot === 'E' && w.time < this.holdUntil;
+    // branch at Stage 2 (gdd/31 guidance): behind on territory → Tactical, otherwise Aggression
+    if (!c.branch && R.formForLevel(c.level) >= 2) {
+      const team = c.team as Team;
+      it.branch = w.ti(team) < w.ti((1 - team) as Team) ? 'Tactical' : 'Aggression';
+    }
     if (w.time >= this.nextThink) { this.think(w, c); this.nextThink = w.time + 0.5 + w.rng.next() * 0.4; }
     this.act(w, c);
   }

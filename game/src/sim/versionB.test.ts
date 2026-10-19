@@ -111,3 +111,29 @@ describe('Smash & Roll (D-04)', () => {
     expect(titan.cd.Q).toBeGreaterThan(plain + 4);
   });
 });
+
+describe('Branch choice (D-03)', () => {
+  it('only from Stage 2; applies branch stats and decides the Ultimate', async () => {
+    const { ultimateName } = await import('./abilities');
+    const { power, maxHp } = await import('./combat');
+    const w = world();
+    const titan = w.creatures.find((c) => c.kind === 'ascendant' && c.lineage === 'Titan')!;
+    setLevel(w, titan, 5);
+    titan.intent.branch = 'Tactical';
+    w.step(R.DT);
+    expect(titan.branch).toBeNull(); // too early
+    setLevel(w, titan, 10);
+    const hp = maxHp(titan);
+    w.step(R.DT);
+    expect(titan.branch).toBe('Tactical');
+    expect(maxHp(titan)).toBeCloseTo(hp * 1.1);
+    expect(ultimateName(titan)).toBe('Fortress');
+    const brawler = w.creatures[titan.partner!];
+    setLevel(w, brawler, 20);
+    const p = power(brawler);
+    w.step(R.DT); // no choice by L20: Aggression
+    expect(brawler.branch).toBe('Aggression');
+    expect(power(brawler)).toBeCloseTo(p * 1.1);
+    expect(ultimateName(brawler)).toBe('Frenzy');
+  });
+});

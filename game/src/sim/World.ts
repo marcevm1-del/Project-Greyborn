@@ -10,7 +10,8 @@ import {
 import { NavGrid } from './nav';
 import { SPECIES } from './species';
 import { emptyIntent, type Creature, type GameEvent, type Side } from './types';
-import { dealDamage, maxHp, heal, control } from './combat';
+import { dealDamage, maxHp, heal, control, branchMult, applyCC } from './combat';
+import type { Branch } from './lineages/types';
 import { tryCasts, updateCast, canAct } from './abilities';
 import { updateWild } from './wildAI';
 import { lin } from './lineages/registry';
@@ -267,6 +268,15 @@ export class World {
     }
   }
 
+  /** Locks in a creature's branch (once, at Stage 2+): branch stats and its Ultimate. */
+  chooseBranch(c: Creature, branch: Branch) {
+    if (c.branch) return;
+    const frac = c.hp / maxHp(c);
+    c.branch = branch;
+    c.hp = frac * maxHp(c);
+    this.emit({ type: 'branch', id: c.id, branch });
+  }
+
   /** Adds held time to a Hub; every 45 s held raises its Defense Level (max 10). */
   addHubTime(h: Hub, seconds: number) {
     h.held += seconds;
@@ -343,7 +353,7 @@ export class World {
         const node = this.nodes.find((n) => this.dist2d(n.core, c.pos) <= reach + (n.hub !== null ? 3 : 0) && this.capturable(team, n.id));
         if (node) {
           const enemyOwned = this.nodeOwner[node.id] !== -1;
-          let dur = R.rootChannel(control(c)) / this.territoryMult();
+          let dur = R.rootChannel(control(c)) / this.territoryMult() / (c.branch === 'Tactical' ? 1 + econ('Tactical capture speedup') : 1);
           if (enemyOwned) {
             dur = node.cells.length * R.uprootPerCell(0) / this.territoryMult();
             if (node.hub !== null) {
@@ -432,6 +442,8 @@ export class World {
       }
       if (c.kind === 'wild') updateWild(this, c, dt);
       else {
+        if (c.intent.branch && !c.branch && R.formForLevel(c.level) >= 2) this.chooseBranch(c, c.intent.branch);
+        if (!c.branch && c.level >= 20) this.chooseBranch(c, 'Aggression'); // no choice made by L20: default
         tryCasts(this, c);
         updateCast(this, c, dt);
         this.updateInteract(c, dt);
@@ -476,15 +488,18 @@ export class World {
         c.grounded = true;
         c.vel.x = c.vel.z = c.vel.y = 0;
         if (c.landingBy !== undefined) {
-          dealDamage(this, this.creatures[c.landingBy], c, 40);
+          const by = this.creatures[c.landingBy];
+          dealDamage(this, by, c, 40);
+          if (c.landingStagger) applyCC(this, by, c, 'stagger', c.landingStagger);
           c.landingBy = undefined;
+          c.landingStagger = undefined;
         }
       }
       c.moveSpeed = 0;
       return;
     }
     if (c.grabbedBy !== null) { c.moveSpeed = 0; return; }
-    const frozen = now < c.stunUntil || now < c.rootUntil || now < c.transformUntil || now < c.airborneUntil
+    const frozen = now < c.stunUntil || now < c.rootUntil || now < c.fortressUntil || now < c.transformUntil || now < c.airborneUntil
       || (c.cast && !c.cast.done && c.cast.slot !== 'basic' && c.cast.slot !== 'E') || c.channel;
     let want = frozen ? { x: 0, z: 0 } : c.intent.move;
     const len = Math.hypot(want.x, want.z);
@@ -529,7 +544,7 @@ export class World {
   }
 
   statSpeed(c: Creature): number {
-    return c.kind === 'ascendant' ? stat(c.lineage, 'Speed %', c.level) : 100;
+    return c.kind === 'ascendant' ? stat(c.lineage, 'Speed %', c.level) * branchMult(c, 'Speed') : 100;
   }
 
   private clampBounds(c: Creature) {

@@ -48,6 +48,8 @@ export interface LineageDef {
   attackRateMult?(w: World, c: Creature): number;
   /** Extra damage reduction the target gets against `src` (0..1). */
   damageReduction?(w: World, tgt: Creature, src: Creature): number;
+  /** Damage reduction this creature (`protector`) gives a nearby ally `tgt` against `src` (0..1). */
+  allyDamageReduction?(w: World, protector: Creature, tgt: Creature, src: Creature): number;
   /** Called after this lineage's creature deals damage. */
   onDealtDamage?(w: World, src: Creature, tgt: Creature, amount: number): void;
   /** Runs every tick for living creatures of this lineage. */

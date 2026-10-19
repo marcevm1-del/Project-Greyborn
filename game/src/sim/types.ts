@@ -16,10 +16,11 @@ export interface Intent {
   evade: boolean;
   interact: boolean;   // held: Root / Uproot / Convert
   ult: boolean;        // Ultimate Form ability (L20)
+  branch: Branch | null; // branch choice at Stage 2 (Level 10); applied once
 }
 
 export function emptyIntent(): Intent {
-  return { move: { x: 0, z: 0 }, aimYaw: 0, basic: false, q: false, e: false, r: false, evade: false, interact: false, ult: false };
+  return { move: { x: 0, z: 0 }, aimYaw: 0, basic: false, q: false, e: false, r: false, evade: false, interact: false, ult: false, branch: null };
 }
 
 export interface Cast {
@@ -81,6 +82,7 @@ export interface Creature {
   chestExposedUntil: number;
   grabbedBy: number | null;
   landingBy?: number;       // thrown by Grapple: takes landing damage from this creature
+  landingStagger?: number;  // ...and is staggered this long on landing
 
   cd: Record<string, number>;  // ready-at times
   cast: Cast | null;
@@ -128,6 +130,7 @@ export type GameEvent =
   | { type: 'phase'; phase: number }
   | { type: 'evade'; id: number }
   | { type: 'weakbreak'; id: number }
+  | { type: 'branch'; id: number; branch: Branch }
   | { type: 'synergy'; id: number; partner: number; name: string; pos: Vec2 & { y: number } }
   | { type: 'swing'; id: number; pos: Vec2 & { y: number }; yaw: number }
   | { type: 'end'; winner: Team | null; how: string };

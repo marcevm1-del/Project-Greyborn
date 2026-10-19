@@ -50,7 +50,7 @@ export const Brawler: LineageDef = {
       w.emit({ type: 'ability', id: c.id, name: 'Uppercut', pos: { ...c.pos }, yaw: c.yaw, radius: 2.5 * scale });
       ctx.end();
     } else if (cast.slot === 'E') { // Haymaker: hold to charge 0.3–1.5 s (1.3 s at L5)
-      const full = c.level >= 5 ? 1.3 : 1.5;
+      const full = (c.level >= 5 ? 1.3 : 1.5) / (c.branch === 'Aggression' ? 1.3 : 1); // Aggression L10: 30% faster
       const held = c.intent.e && cast.t < full;
       c.yaw = c.intent.aimYaw;
       cast.dir = dirOf(c.yaw);
@@ -91,6 +91,7 @@ export const Brawler: LineageDef = {
       const dist = 8 * scale;
       t.vel.x = Math.sin(yaw) * dist / 0.8; t.vel.z = Math.cos(yaw) * dist / 0.8; t.vel.y = 6; t.grounded = false;
       t.landingBy = c.id; // +40 damage on landing (Spec 02)
+      if (c.branch === 'Tactical') t.landingStagger = 0.5; // Tactical L10: the landing staggers and breaks channels
       ctx.end();
     }
   },

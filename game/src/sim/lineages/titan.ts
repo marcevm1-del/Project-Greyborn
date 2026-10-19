@@ -2,7 +2,9 @@
 import * as R from '../rules';
 import { applyCC, dealDamage, knockback, maxHp, power } from '../combat';
 import { ultimateRow } from '../tuning';
-import { dash, targetsIn } from './shared';
+import { angleDiff, dash, targetsIn } from './shared';
+import { econ } from '../tuning';
+import { yawTo } from '../combat';
 import { onSlam } from './synergies';
 import type { LineageDef } from './types';
 
@@ -18,9 +20,20 @@ export const Titan: LineageDef = {
   weakPointExposed: (_w, _src, _tgt, off) => off >= Math.PI - Math.PI / 3,
   weakPointLit: () => true,
 
-  // Immovable: −10% damage from lower-Stage enemies
-  damageReduction(_w, tgt, src) {
-    if (R.formForLevel(tgt.level) >= 1 && src.kind === 'ascendant' && R.stageForLevel(src.level) < R.stageForLevel(tgt.level)) return 0.1;
+  // Immovable: −10% damage from lower-Stage enemies; Fortress: −50%
+  damageReduction(w, tgt, src) {
+    let r = 0;
+    if (R.formForLevel(tgt.level) >= 1 && src.kind === 'ascendant' && R.stageForLevel(src.level) < R.stageForLevel(tgt.level)) r = 0.1;
+    if (w.time < tgt.fortressUntil) r = 1 - (1 - r) * (1 - econ('Fortress self reduction'));
+    return r;
+  },
+
+  // allies behind the Titan: Fortress (120° cone, 6 m, −40%); Tactical L10 Bulwark (60° cone, 4 m, −30%)
+  allyDamageReduction(w, titan, tgt) {
+    const behind = angleDiff(yawTo(titan.pos, tgt.pos), titan.yaw + Math.PI);
+    const d = w.dist(titan.pos, tgt.pos);
+    if (w.time < titan.fortressUntil && d <= 6 && behind <= Math.PI / 3) return econ('Fortress ally reduction');
+    if (titan.branch === 'Tactical' && w.time < titan.bulwarkUntil && d <= 4 && behind <= Math.PI / 6) return econ('Bulwark ally reduction');
     return 0;
   },
 
@@ -35,7 +48,7 @@ export const Titan: LineageDef = {
         const staggered: number[] = [];
         for (const t of targetsIn(w, c, c.pos.x, c.pos.z, radius, null, 0)) {
           dealDamage(w, c, t, dmg, { weakPoint: true });
-          applyCC(w, c, t, 'stagger', 0.8);
+          applyCC(w, c, t, 'stagger', c.branch === 'Aggression' ? 1.0 : 0.8); // Aggression L10: 1.0 s
           if (t.alive && w.time < t.staggerUntil) staggered.push(t.id);
         }
         w.hitStructures(c, c.pos, radius, dmg);
@@ -73,7 +86,7 @@ export const Titan: LineageDef = {
     const u = ultimateRow('Titan', name);
     const P = power(c);
     if (name === 'Fortress') { // 6 s immovable; −50% damage taken; allies in the 120° cone behind take −40%
-      c.fortressUntil = w.time + (u.duration ?? 6);
+      c.fortressUntil = w.time + econ('Fortress duration');
       w.emit({ type: 'ability', id: c.id, name: 'Fortress', pos: { ...c.pos }, yaw: c.yaw, radius: 6 });
       c.cast = null;
       return;
