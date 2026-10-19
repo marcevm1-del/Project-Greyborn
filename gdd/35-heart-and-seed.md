@@ -1,0 +1,270 @@
+# 35 — The Heart and the Seed
+
+The two poles of Greyborn: the **Heartwood** (the planet's heart, far south)
+and the **Starwound** (the meteorite's crater, far north) ([11](11-atlas.md)).
+Neither is a standard match map. They're the places the story points toward,
+and they could host **finales, special modes or a future endgame**. All
+content is a proposal.
+
+## The Heartwood: layers inward
+
+The Heartwood is described from its edge to its centre. Each layer is
+stranger and more alive than the last.
+
+| Layer | Name | What's there |
+|---|---|---|
+| 1 | **The Old Edge** | Trees so tall their canopies are lost in mist. Mossback herds, Amber Beetles. The air hums faintly |
+| 2 | **The Amber Lakes** | Open pools of SAP, glowing gold. Heartwood Elk drink here. Every sound is soft |
+| 3 | **The Root Hills** | Roots so large they form hills and valleys. Paths wind between them. The ground is warm, like skin |
+| 4 | **The Listening Grove** | Trees that turn slowly to face anyone who enters. The planet's awareness is strongest here; Kith feel watched, but kindly |
+| 5 | **The First Root** | A single root as wide as a mountain, rising from the ground and plunging down toward the planet's core. It pulses slowly, like a heart |
+
+**What lies below the First Root?** No Memory has ever shown it. Possibly the
+**planet's core**: its mind, its oldest memory, or the place the Sleeper was
+first grown. Left unresolved on purpose.
+
+### Heartwood rules (if it's ever used as a play space)
+- **Blight can't grow here.** The Murmur's lattice cracks and crumbles within
+  minutes. This is the place the Murmur most wants and can't reach.
+- **Heartwood Elk** appear, and roots spread 3× faster near them ([34](34-far-region-creatures.md)).
+- Any mode here should be **co-op or special-rules**, not standard 4v4, so
+  the mirror isn't broken (Blightborn would be at a disadvantage).
+
+## The Starwound: layers inward
+
+The crater, from its rim to its centre.
+
+| Layer | Name | What's there |
+|---|---|---|
+| 1 | **The Glass Rim** | Where the Glasswaste meets the crater. Frozen creatures in glass, whispering everywhere |
+| 2 | **The Stair of Shards** | The crater wall: a slope of meteor glass in giant steps. Shard storms rage constantly |
+| 3 | **The Hushed Watch** | A ring on the crater floor where the **Hushed Answers** stand guard, motionless ([13](13-legends.md#the-hushed-answers)) |
+| 4 | **The Lattice Sea** | A plain of tall Blight spires, humming in unison. The Murmur's mind is densest here, like a brain made of crystal |
+| 5 | **The Seed** | The meteorite itself, still warm, pulsing cyan-violet. The Murmur's heart |
+
+**What's inside the Seed?** Unknown. Possibly the Murmur's oldest memory: the
+place it came from, and what it fled (the Clamor, [24](24-the-three-minds.md)).
+This links to Season 4's Glass Flower mystery ([30](30-season-4.md#the-central-mystery)).
+
+### Starwound rules (if it's ever used as a play space)
+- **Roots can't hold here.** They're glazed within minutes. A mirror of the Heartwood rule.
+- **The Hushed Answers** are present and can wake.
+- As with the Heartwood, any mode here should be **co-op or special-rules**.
+
+## The two poles as mirrors
+
+| Heartwood | Starwound |
+|---|---|
+| The First Root, plunging into the planet | The Seed, fallen from the sky |
+| The Listening Grove: trees that turn to watch you | The Lattice Sea: spires that hum in unison |
+| Heartwood Elk, the planet's messengers | The Hushed Answers, the Murmur's guardians |
+| Amber Lakes of SAP | Glow pooling in the crystal |
+| Blight can't grow | Roots can't hold |
+| Below the First Root: the planet's oldest secret | Inside the Seed: the Murmur's oldest secret |
+
+## Possible uses (all for the director to decide)
+
+1. **A season finale** set in one of the poles, as a special mode (e.g. a
+   Truce-style co-op in the Lattice Sea against a waking Hushed Answer).
+2. **An endgame PvE mode:** a run inward through the five layers of the Starwound.
+3. **The story's final act,** years in: a journey to one of the poles to
+   end, or change, the war ([18](18-the-answering-war.md#can-the-war-end)).
+
+---
+
+## Walking into the Heartwood
+
+A description to guide artists and writers, as if a Kith walked from the
+edge to the centre.
+
+At the **Old Edge**, the trees are so tall that the Kith can't see their
+tops. The light comes down in amber shafts through mist. The air is warm and
+smells of sap and soil, and a faint hum sits under every other sound, so low
+it is felt rather than heard.
+
+At the **Amber Lakes**, the ground opens into pools of SAP so still they
+reflect the canopy perfectly. Heartwood Elk drink at the edges, unafraid.
+Amber Beetles crawl along the shores. Every sound here is soft: footsteps
+sink into moss, and even the Kith's own breathing seems quieter.
+
+In the **Root Hills**, the roots are so large the Kith walks *between* them
+as if through valleys. The bark is warm to the touch, like skin, and it moves
+very slightly, the way a sleeping animal's flank rises and falls.
+
+In the **Listening Grove**, the trees turn. Slowly, over minutes, every trunk
+in sight rotates to face the Kith. It's not frightening. It feels like being
+noticed by someone kind, and very old.
+
+At the **First Root**, the hum becomes a heartbeat. A single root, as wide as
+a mountain, rises out of the ground and plunges down into darkness. Its bark
+glows faintly from inside with a slow, amber pulse. Standing beside it, the
+Kith feels the planet's whole attention, for one moment, on it alone.
+
+## Walking into the Starwound
+
+The same journey toward the other pole.
+
+At the **Glass Rim**, the forest turns to black glass mid-leaf. Creatures stand
+frozen inside the crystal, mid-step, mid-flight. Whispering comes from
+everywhere, too soft to follow, never stopping.
+
+On the **Stair of Shards**, the crater wall drops away in giant steps of meteor
+glass. Shard storms howl down the slope, and every surface cuts. The whispers
+grow louder, and now they seem to be *saying* something, just beyond understanding.
+
+At the **Hushed Watch**, six enormous shapes stand in a ring on the crater
+floor: the Hushed Answers, motionless, perfect, made of glass. They don't turn
+to look. They don't need to.
+
+In the **Lattice Sea**, crystal spires rise in every direction, humming in
+unison. Light pulses through them in slow waves, like thoughts moving through
+a brain. The Kith realises it's walking *inside* the Murmur's mind.
+
+At **the Seed**, the meteorite lies in the centre of everything, still warm,
+pulsing cyan-violet. The whispers fall silent. For one moment the Kith has
+the feeling of being looked at by something that is very far from home,
+and very alone.
+
+## Glimpses of the poles in today's matches
+
+The poles aren't playable yet, but players should feel them:
+
+| Glimpse | Where |
+|---|---|
+| A warm amber glow on the southern horizon at night | Maps in the southern regions |
+| A cyan-violet pulse on the northern horizon | Maps in the northern regions |
+| A Heartwood Elk appearing in a grove | Any map, rarely ([34](34-far-region-creatures.md)) |
+| Memories of the First Root and the Seed | The Memory catalogue ([38](38-memory-catalogue.md)) |
+| The Season 1 finale silhouette of the Glass Range walking from the north | [20](20-season-1.md) |
+
+## The poles and the story's end
+
+The war began when the Seed struck the north. The Murmur's goal is the
+Heartwood in the south. Any final chapter of Greyborn's story, years from now,
+will most likely bring the two poles together: a journey to the First Root, a
+journey into the Seed, or the moment the planet's heart and the Murmur's heart
+finally meet. What happens then is for the director to decide.
+
+## Life at the poles
+
+| | The Heartwood | The Starwound |
+|---|---|---|
+| **Creatures** | Heartwood Elk, Amber Beetles, Mossback herds, Greymother (Old One), Lumen Bees | Hushed Answers, Blighted creatures frozen in glass, Glass Weavers, Lattice Fawns (Season 5) |
+| **Plants** | Heartwood Giants, Heartmoss, Heartbloom, Sapbloom | Lattice Vines, glass versions of everything, the Glass Flower's kin |
+| **Sound** | A deep, slow heartbeat; soft birdsong; the First Root's hum | Whispers in harmony; spires humming; the Seed's pulse |
+| **Light** | Warm amber shafts through mist | Cold cyan-violet waves through crystal |
+| **Weather** | Sap Rain, gentle mist | Shard Storm, never anything else |
+
+## The poles through the seasons
+
+| Season | The Heartwood | The Starwound |
+|---|---|---|
+| 1 | Untouched | The Glass Range leaves the Hushed Watch |
+| 2 | Calm | The Murmur's attention turns to the Rimewastes |
+| 3 | The planet's heartbeat quickens at the red streak | The spires go dark at the red streak |
+| 4 | The First Root pulses toward the north, toward the Glass Flower | The Seed hums a new tone |
+| 5 | The planet creates new life in its groves | Glass Gardens spread from the rim |
+| 6 | The heartbeat races in Rime; the planet wakes early | The Lattice Sea shakes with the Roaring |
+| 7 | Heat reaches the Heartwood's edges in the Fever, but nothing there burns | The spires go cold and silent |
+
+## Beneath the First Root: possible answers
+
+The story keeps this unresolved ([35](35-heart-and-seed.md#the-heartwood-layers-inward)). Possible answers, for the director when the time comes:
+
+1. **The planet's oldest memory:** the moment it first became aware.
+2. **Where the Kith are first imagined:** the source of every birth-node.
+3. **A second Sleeper:** another answer the planet has hidden.
+4. **Nothing:** the root goes down forever, and that is the planet's mind: an endless depth.
+
+## Inside the Seed: possible answers
+
+1. **A last piece of the Quiet World:** a fragment of crystal from the Murmur's home, still glowing with its blue sun.
+2. **The Murmur's original mind:** the part of it that fled, small and frightened, at the centre of everything it has become.
+3. **A message:** something the Murmur carried for someone, or something, it lost.
+4. **The Clamor's mark:** a scorch from the Roaring, proof of what it fled.
+
+## How the poles could host the story's ending
+
+Three sketches, none committed:
+
+- **The Meeting:** the planet's root and the Murmur's crystal grow toward each
+  other across the whole Greyreach, meeting halfway at the Last Braid.
+- **The Descent:** broods of both sides descend together into the Seed, and
+  find the Murmur's oldest self, alone.
+- **The Pilgrimage:** a Hushed Kith walks, alone and unharmed, all the way
+  south to the First Root, and the planet lets it touch the root.
+
+## Art and sound per layer
+
+| Layer | Key art note | Key sound note |
+|---|---|---|
+| Old Edge | Scale: trees too tall to see the tops | A hum under everything |
+| Amber Lakes | Perfect reflections | Softness: every sound muffled |
+| Root Hills | Warm, skin-like bark | The bark's slow movement creaking |
+| Listening Grove | Trees caught mid-turn | Silence, then a creak as they turn |
+| First Root | A pulse of amber light inside the bark | A heartbeat |
+| Glass Rim | Creatures frozen mid-step | Whispers everywhere |
+| Stair of Shards | Giant glass steps, howling storms | Wind through glass |
+| Hushed Watch | Six vast still shapes | Total silence |
+| Lattice Sea | Light moving like thought | Spires humming in unison |
+| The Seed | A warm stone glowing at the centre | Whispers falling silent, then one pulse |
+
+## Why the poles stay unplayable (for now)
+
+The Heartwood and the Starwound are the two most powerful places in the
+world. Keeping them out of regular play does three things:
+
+1. **It protects the mirror.** Each pole favours one side by its nature
+   (Blight can't grow in one; roots can't hold in the other). No fair PvP map could be set there.
+2. **It keeps them special.** A place players can only glimpse on the horizon
+   stays mysterious. The first time they set foot there should be an event.
+3. **It saves them for the story.** The ending of Greyborn's war, whenever it
+   comes, will most likely happen at one of the poles, or between them.
+
+## Glimpses players already get
+
+- **The southern glow** on the horizon at night, over the Heartwood.
+- **The northern pulse** over the Starwound.
+- **The Heartwood Elk** in groves, the planet's messenger.
+- **The Hushed Answers**, walking out of the Starwound (the Glass Range in Season 1).
+- **Memories** of the First Root and the Seed.
+- **The Den's sky**, where both glows can be seen through the crack in the roof on clear nights.
+
+## Proposed first visits
+
+| Pole | First visit idea | When |
+|---|---|---|
+| The Starwound | **The Hushed Watch** co-op mode: facing all six Hushed Answers ([40](40-hushed-answers.md#the-six-together)) | A future season's finale |
+| The Heartwood | **The Pilgrimage**: a gentle co-op journey with a Heartwood Elk calf ([27](27-modes.md#future-mode-ideas)) | A Bloom season |
+| Both | **The Meeting**: the story's final act | Years in, the director's decision |
+
+## The poles in one image each
+
+- **The Heartwood:** a single root as wide as a mountain, glowing amber from inside, plunging into darkness.
+- **The Starwound:** a warm stone at the centre of a crystal sea, pulsing, alone.
+
+## Rules for anyone writing about the poles
+
+1. **Never show the bottom of the First Root** or **the inside of the Seed**
+   until the director decides what's there.
+2. **Never let either pole be captured, damaged or changed** by ordinary
+   seasons. They change only in the ways listed in this chapter.
+3. **Keep the mirror:** whatever the Heartwood gains in a season, the Starwound
+   gains something of equal weight, and vice versa.
+4. **Keep them quiet:** the poles are the calmest places in the world, the
+   Heartwood in its warmth and the Starwound in its stillness. Noise belongs to the war in between.
+
+## The two poles and the players
+
+Most players will never walk in either place. But every player should know
+where they are, feel them on the horizon, and wonder what lies at their
+centres. That wondering is part of what keeps the world larger than any match,
+and it's what will make the first real visit, whenever it comes, unforgettable.
+
+The heart and the seed are the beginning and the end of every story told on Greyborn.
+
+## In summary
+
+The Heartwood is warmth, memory and the planet's heart. The Starwound is
+stillness, loneliness and the Murmur's heart. They face each other across the
+world, and everything in between is the war.
