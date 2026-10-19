@@ -6,6 +6,7 @@ import { BASES, type Team, type Vec2 } from './map';
 import { SPECIES } from './species';
 import { maxHp, yawTo } from './combat';
 import { abilityInfo } from './abilities';
+import { lin } from './lineages/registry';
 import type { Creature } from './types';
 import type { World } from './World';
 
@@ -25,7 +26,8 @@ export class BotBrain {
   nextThink = 0;
   nextPath = 0;
   returnAt: number;
-  haymakerRelease = 0;
+  /** Release time for a charged ability (Haymaker); read and set by the lineage's bot logic. */
+  holdUntil = 0;
   stuckSince = 0;
   lastPos: Vec2 = { x: 0, z: 0 };
 
@@ -38,8 +40,8 @@ export class BotBrain {
     if (!c.alive) { this.path = []; return; }
     const it = c.intent;
     it.basic = it.q = it.r = it.evade = it.ult = false;
-    // E is "held" only while a Haymaker is charging; otherwise a stuck E would fire Haymakers that cancel channels
-    it.e = c.cast?.slot === 'E' && w.time < this.haymakerRelease;
+    // E is "held" only while a charged E (Haymaker) is charging; otherwise a stuck E would fire casts that cancel channels
+    it.e = c.cast?.slot === 'E' && lin(c).chargedSlot === 'E' && w.time < this.holdUntil;
     if (w.time >= this.nextThink) { this.think(w, c); this.nextThink = w.time + 0.5 + w.rng.next() * 0.4; }
     this.act(w, c);
   }
@@ -99,7 +101,7 @@ export class BotBrain {
       v: (n.hub !== null ? 2.5 : 1) * (w.nodeOwner[n.id] === -1 ? 1 : 0.8),
     }));
     caps.sort((a, b) => a.d / a.v - b.d / b.v);
-    if (caps.length) options.push({ score: 2 + caps[0].v * 0.4 - caps[0].d / 80 + (c.lineage === 'Titan' ? 0.2 : 0), goal: { kind: 'capture', node: caps[0].n.id } });
+    if (caps.length) options.push({ score: 2 + caps[0].v * 0.4 - caps[0].d / 80 + lin(c).bot.captureBias, goal: { kind: 'capture', node: caps[0].n.id } });
     // farm wildlife
     const prey = w.creatures.filter((t) => {
       if (t.kind !== 'wild' || !t.alive || w.time < t.invulnUntil) return false;
@@ -206,7 +208,7 @@ export class BotBrain {
 
   private engage(w: World, c: Creature, t: Creature) {
     const it = c.intent;
-    const reach = w.radius(c) + w.radius(t) + (R.formForLevel(c.level) === 0 ? 2 : c.lineage === 'Brawler' ? 2.5 : 3) * R.areaScale(c.level) * 0.9;
+    const reach = w.radius(c) + w.radius(t) + (R.formForLevel(c.level) === 0 ? 2 : lin(c).basicRange) * R.areaScale(c.level) * 0.9;
     const d = w.dist(c.pos, t.pos);
     it.aimYaw = yawTo(c.pos, t.pos);
     if (d > reach) this.goTo(w, c, { x: t.pos.x, z: t.pos.z }, reach * 0.8);
@@ -220,20 +222,13 @@ export class BotBrain {
     if (R.formForLevel(c.level) === 0) return;
     const scale = R.areaScale(c.level);
     const ready = (s: string) => (c.cd[s] ?? 0) <= w.time;
+    const brain = this;
     it.ult = c.level >= 20 && !!abilityInfo(c, 'ult') && ready('ult') && (t?.kind === 'ascendant' || !t);
-    if (c.lineage === 'Titan') {
-      if (ready('Q') && d < 4.5 * scale + w.radius(c)) it.q = true;
-      else if (ready('R') && t && t.kind === 'ascendant' && d > 4 && d < 11 * scale) it.r = true;
-      else if (ready('E') && c.hp < 0.6 * maxHp(c) && t?.kind === 'ascendant') it.e = true;
-      else it.e = false;
-    } else if (c.lineage === 'Brawler') {
-      if (ready('Q') && t && d > 3 && d < 8 * scale) it.q = true;
-      else if (ready('R') && t && d < 3 * scale + w.radius(c) && R.stageForLevel(t.level) < R.stageForLevel(c.level)) it.r = true;
-      // Haymaker: hold E for a full charge, then release
-      if (c.cast?.slot === 'E') { it.e = w.time < this.haymakerRelease; }
-      else if (ready('E') && d < 3 * scale + w.radius(c) + 1) { it.e = true; this.haymakerRelease = w.time + 1.3 + w.rng.next() * 0.3; }
-      else it.e = false;
-    }
+    lin(c).bot.useAbilities(w, c, t, d, {
+      ready, scale,
+      get holdUntil() { return brain.holdUntil; },
+      set holdUntil(v: number) { brain.holdUntil = v; },
+    });
   }
 
   private combatReflexes(w: World, c: Creature, _t: Creature | null) {

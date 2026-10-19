@@ -13,6 +13,7 @@ import { emptyIntent, type Creature, type GameEvent, type Side } from './types';
 import { dealDamage, maxHp, heal, control } from './combat';
 import { tryCasts, updateCast, canAct } from './abilities';
 import { updateWild } from './wildAI';
+import { lin } from './lineages/registry';
 import { Rng } from '../core/rng';
 
 export interface MatchOptions {
@@ -105,7 +106,7 @@ export class World {
       level: 1, exp: 0, hp: 600, alive: true, respawnAt: 0, transformUntil: 0, carried: 0, wildCores: 0,
       stunUntil: 0, staggerUntil: 0, rootUntil: 0, slowUntil: 0, slowPct: 0, airborneUntil: 0, ccImmuneUntil: 0,
       unstoppableUntil: 0, invulnUntil: 0, bulwarkUntil: 0, chestExposedUntil: 0, grabbedBy: null,
-      cd: {}, cast: null, channel: null, momentum: 0, ultUntil: 0,
+      cd: {}, cast: null, channel: null, momentum: 0, ultUntil: 0, fortressUntil: 0, branch: null,
       weakDamage: 0, weakLastHit: -99, weakBrokenUntil: 0,
       lastDamagedAt: -99, lastCombatAt: -99, lastAttacker: null, assists: new Map(),
       intent: emptyIntent(), kills: 0, deaths: 0,
@@ -172,11 +173,15 @@ export class World {
   dist2d(a: Vec2, b: Vec2) { return Math.hypot(a.x - b.x, a.z - b.z); }
   radius(c: Creature): number {
     if (c.kind === 'wild') return SPECIES[c.species!].size * 0.45;
-    return R.FORM_RADIUS[R.formForLevel(c.level)] * (c.lineage === 'Titan' ? 1.15 : 1);
+    return R.FORM_RADIUS[R.formForLevel(c.level)] * lin(c).sizeMul.radius;
   }
   height(c: Creature): number {
     if (c.kind === 'wild') return SPECIES[c.species!].size;
-    return R.FORM_HEIGHT[R.formForLevel(c.level)] * (c.lineage === 'Titan' ? 1.3 : 1);
+    return R.FORM_HEIGHT[R.formForLevel(c.level)] * lin(c).sizeMul.height;
+  }
+  /** Immovable passive: no knockback, carrying or Grapple (`awake`: only once the lineage has awakened). */
+  isImmovable(c: Creature, awake: boolean): boolean {
+    return c.kind === 'ascendant' && lin(c).immovable && (!awake || R.formForLevel(c.level) >= 1);
   }
   phaseMult(): number {
     return [1, 1.15, 1.3, 1.45][this.phase - 1];
@@ -400,7 +405,7 @@ export class World {
         tryCasts(this, c);
         updateCast(this, c, dt);
         this.updateInteract(c, dt);
-        if (c.lineage === 'Brawler' && this.time - c.lastCombatAt > 3) c.momentum = Math.max(0, c.momentum - 10 * dt);
+        lin(c).tick?.(this, c, dt);
       }
       this.move(c, dt);
     }
@@ -458,7 +463,7 @@ export class World {
       speed *= (this.statSpeed(c)) / 100;
       if (now - c.lastCombatAt > 4 && now - c.lastDamagedAt > 4) speed *= 1.3; // sprint out of combat
       if (now < c.bulwarkUntil) speed *= 0.7;
-      if (c.cast && c.cast.slot === 'E' && c.lineage === 'Brawler') speed *= 0.5;
+      if (c.cast && c.cast.slot === lin(c).chargedSlot) speed *= 0.5; // charging (Haymaker)
     }
     if (now < c.staggerUntil) speed *= 0.5;
     if (now < c.slowUntil) speed *= 1 - c.slowPct;

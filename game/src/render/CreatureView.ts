@@ -8,8 +8,11 @@ import * as R from '../sim/rules';
 import { SPECIES } from '../sim/species';
 import type { Creature, Side } from '../sim/types';
 import { PALETTE } from './Scene';
+import { G, limb, part, type Rig, type Skin } from './rig';
+import { LINEAGE_VIEWS } from './lineageViews';
+import { lineageDef } from '../sim/lineages/registry';
+import type { Lineage } from '../sim/tuning';
 
-interface Skin { body: THREE.Material; armour: THREE.Material; glow: THREE.Material; eye: THREE.Material; dark: THREE.Material }
 
 /** Friend / foe colours, shown as a rim light on every creature (gdd/14: "outline = friend or foe"). */
 export const TEAM_RIM = { friend: new THREE.Color(PALETTE.friend), foe: new THREE.Color(PALETTE.foe) };
@@ -51,56 +54,8 @@ function skins(side: Side, friendly: boolean): Skin {
   return sk;
 }
 
-/** A rig is a set of named pivots the animator drives. All sizes are for a 1 m tall body; the root is scaled. */
-interface Rig {
-  root: THREE.Group;     // positioned and yawed in the world
-  body: THREE.Group;     // bob / lean
-  head?: THREE.Object3D;
-  legs: THREE.Object3D[];       // swing around x
-  arms: THREE.Object3D[];
-  weak?: THREE.Mesh;
-  height: number;
-  gait: 'biped' | 'knuckle' | 'quad' | 'hexapod';
-}
-
-function part(geo: THREE.BufferGeometry, mat: THREE.Material, outline: THREE.Material | null, x = 0, y = 0, z = 0): THREE.Mesh {
-  const m = new THREE.Mesh(geo, mat);
-  m.position.set(x, y, z);
-  m.castShadow = true;
-  if (outline) {
-    const o = new THREE.Mesh(geo, outline);
-    o.scale.setScalar(1.08);
-    o.castShadow = false;
-    o.raycast = () => {};
-    m.add(o);
-  }
-  return m;
-}
-
-// geometry cache: creatures share geometry; only materials and transforms differ
-const geoCache = new Map<string, THREE.BufferGeometry>();
-function cached(key: string, make: () => THREE.BufferGeometry) {
-  let g = geoCache.get(key);
-  if (!g) { g = make(); geoCache.set(key, g); }
-  return g;
-}
-const G = {
-  box: (w: number, h: number, d: number) => cached(`b${w},${h},${d}`, () => new THREE.BoxGeometry(w, h, d)),
-  ball: (r: number, d = 1) => cached(`s${r},${d}`, () => new THREE.IcosahedronGeometry(r, d)),
-  cap: (r: number, l: number) => cached(`c${r},${l}`, () => new THREE.CapsuleGeometry(r, l, 3, 8)),
-  cone: (r: number, h: number, s = 5) => cached(`k${r},${h},${s}`, () => new THREE.ConeGeometry(r, h, s)),
-};
-
-function limb(geo: THREE.BufferGeometry, mat: THREE.Material, outline: THREE.Material | null, x: number, y: number, z: number, len: number): THREE.Group {
-  const pivot = new THREE.Group();
-  pivot.position.set(x, y, z);
-  const m = part(geo, mat, outline, 0, -len / 2, 0);
-  pivot.add(m);
-  return pivot;
-}
-
 /** Builds an Ascendant for a lineage and form. */
-function buildAscendant(lineage: string, form: number, sk: Skin, outline: THREE.Material | null): Rig {
+function buildAscendant(lineage: Lineage, form: number, sk: Skin, outline: THREE.Material | null): Rig {
   const root = new THREE.Group();
   const body = new THREE.Group();
   root.add(body);
@@ -127,76 +82,7 @@ function buildAscendant(lineage: string, form: number, sk: Skin, outline: THREE.
     return { root, body, head, legs, arms, weak, height: 1, gait: 'biped' };
   }
 
-  const detail = form; // 1..3 adds growths
-  if (lineage === 'Titan') {
-    // hunched stone colossus; amber/cyan crystal ridge along the spine (weak point)
-    const torso = part(G.ball(0.38, 1), sk.armour, outline, 0, 0.58, 0);
-    torso.scale.set(1.25, 0.95, 1.1);
-    body.add(torso);
-    const belly = part(G.ball(0.28, 1), sk.body, null, 0, 0.45, 0.12);
-    body.add(belly);
-    head = part(G.box(0.24, 0.2, 0.26), sk.armour, outline, 0, 0.66, 0.38);
-    head.add(part(G.ball(0.035, 0), sk.eye, null, -0.06, 0.0, 0.14), part(G.ball(0.035, 0), sk.eye, null, 0.06, 0.0, 0.14));
-    body.add(head);
-    weak = new THREE.Mesh();
-    const ridge = new THREE.Group();
-    for (let i = 0; i < 3 + detail; i++) {
-      const c = part(G.cone(0.07 + detail * 0.01, 0.28 + detail * 0.05, 4), sk.glow, null, 0, 0.9 - i * 0.035, -0.05 - i * 0.09);
-      c.rotation.x = -0.5;
-      ridge.add(c);
-    }
-    weak = ridge.children[0] as THREE.Mesh;
-    body.add(ridge);
-    for (const s of [-1, 1]) {
-      const arm = limb(G.cap(0.11, 0.42), sk.armour, outline, s * 0.42, 0.72, 0.12, 0.6);
-      arm.add(part(G.ball(0.13, 0), sk.body, outline, 0, -0.62, 0));
-      arms.push(arm); body.add(arm);
-      const leg = limb(G.cap(0.12, 0.2), sk.armour, outline, s * 0.22, 0.34, -0.12, 0.32);
-      legs.push(leg); root.add(leg);
-      // shoulder plates and (Stage 2+) moss / glass growths
-      const plate = part(G.box(0.3, 0.12, 0.3), sk.armour, outline, s * 0.36, 0.92, 0.05);
-      plate.rotation.z = s * 0.4;
-      body.add(plate);
-      if (detail >= 2) {
-        const growth = part(sk.armour === sk.dark ? G.cone(0.05, 0.3) : G.cone(0.06, 0.32, 4), sk.dark, null, s * 0.38, 1.05, 0.0);
-        body.add(growth);
-      }
-      if (detail >= 3) {
-        // Stage 3: small trees (Wildborn) or glass spires (Blightborn) on the shoulders
-        const tree = part(G.cone(0.12, 0.42, 6), sk.armour, null, s * 0.36, 1.25, -0.05);
-        body.add(tree);
-      }
-    }
-    return { root, body, head, legs, arms, weak, height: 1, gait: 'knuckle' };
-  }
-
-  // Brawler: long-armed, knuckle-walking beast, chest plate is the weak point
-  const torso = part(G.ball(0.3, 1), sk.body, outline, 0, 0.62, 0.02);
-  torso.scale.set(1.05, 1.1, 0.95);
-  body.add(torso);
-  const chest = part(G.box(0.3, 0.26, 0.08), sk.armour, null, 0, 0.62, 0.28);
-  body.add(chest);
-  weak = part(G.ball(0.07, 0), sk.glow, null, 0, 0.64, 0.33);
-  body.add(weak);
-  head = part(G.ball(0.15, 1), sk.body, outline, 0, 0.9, 0.18);
-  head.add(part(G.ball(0.03, 0), sk.eye, null, -0.05, 0.02, 0.13), part(G.ball(0.03, 0), sk.eye, null, 0.05, 0.02, 0.13));
-  body.add(head);
-  for (const s of [-1, 1]) {
-    const arm = limb(G.cap(0.08, 0.48), sk.body, outline, s * 0.32, 0.8, 0.1, 0.66);
-    const fist = part(G.ball(0.12 + detail * 0.012, 0), sk.armour, outline, 0, -0.7, 0);
-    arm.add(fist);
-    arms.push(arm); body.add(arm);
-    const leg = limb(G.cap(0.08, 0.22), sk.body, outline, s * 0.16, 0.36, -0.08, 0.34);
-    legs.push(leg); root.add(leg);
-    if (detail >= 2) {
-      for (let i = 0; i < 2; i++) {
-        const spike = part(G.cone(0.04, 0.2, 4), sk.armour, null, s * 0.08, 0.86 - i * 0.12, -0.24);
-        spike.rotation.x = -0.9;
-        body.add(spike);
-      }
-    }
-  }
-  return { root, body, head, legs, arms, weak, height: 1, gait: 'knuckle' };
+  return LINEAGE_VIEWS[lineage]!(form, sk, outline, { root, body, legs, arms });
 }
 
 /** Wildlife models by body plan. */
@@ -329,7 +215,7 @@ export class CreatureView {
   private targetHeight(): number {
     const c = this.c;
     if (c.kind === 'wild') return SPECIES[c.species!].size;
-    return R.FORM_HEIGHT[R.formForLevel(c.level)] * (c.lineage === 'Titan' ? 1.3 : 1);
+    return R.FORM_HEIGHT[R.formForLevel(c.level)] * lineageDef(c.lineage).sizeMul.height;
   }
 
   onHit() { this.hurtFlash = 1; }
@@ -396,7 +282,7 @@ export class CreatureView {
       rig.body.position.z = 0;
     }
     // Haymaker charge pose / Bulwark brace
-    if (c.cast?.slot === 'E' && c.lineage === 'Brawler' && c.kind === 'ascendant') {
+    if (c.kind === 'ascendant' && c.cast?.slot === 'E' && lineageDef(c.lineage).chargedSlot === 'E') {
       if (rig.arms[0]) rig.arms[0].rotation.x = 1.2;
       rig.body.rotation.y = -0.4;
     }
@@ -406,7 +292,7 @@ export class CreatureView {
     }
     // weak point pulse (and visible exposure for Brawler after Roll Commit)
     if (rig.weak) {
-      const exposed = c.kind === 'ascendant' && c.lineage === 'Brawler' ? time < c.chestExposedUntil : true;
+      const exposed = c.kind === 'ascendant' ? lineageDef(c.lineage).weakPointLit(c, time) : true;
       const m = rig.weak.material as THREE.MeshStandardMaterial;
       if (m.emissiveIntensity !== undefined) m.emissiveIntensity = (exposed ? 1.6 : 0.5) + Math.sin(time * 5) * 0.4 + (time < c.weakBrokenUntil ? -0.8 : 0);
     }

@@ -1,4 +1,5 @@
 import type { Lineage } from './tuning';
+import type { Branch } from './lineages/types';
 import type { Team, Vec2 } from './map';
 
 export type Side = 'Wildborn' | 'Blightborn';
@@ -43,6 +44,7 @@ export interface Creature {
   team: Team | -1;          // -1 = wildlife
   name: string;
   lineage: Lineage;         // wildlife use 'Titan' as a stat placeholder (unused)
+  branch: Branch | null;    // chosen at Level 10 (Stage 2); decides the Ultimate
   species?: string;
   isPlayer: boolean;
   partner: number | null;
@@ -84,6 +86,7 @@ export interface Creature {
   channel: Channel | null;
   momentum: number;
   ultUntil: number;
+  fortressUntil: number;    // Titan Ultimate (Tactical)
 
   weakDamage: number;
   weakLastHit: number;

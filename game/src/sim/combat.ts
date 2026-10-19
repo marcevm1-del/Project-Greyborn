@@ -2,17 +2,12 @@
 import * as R from './rules';
 import { stat, econ, T } from './tuning';
 import { SPECIES } from './species';
+import { lin } from './lineages/registry';
+import { angleDiff } from './lineages/shared';
 import type { Creature } from './types';
 import type { World } from './World';
 
 export type CC = 'stun' | 'stagger' | 'root' | 'slow' | 'airborne';
-
-function angleDiff(a: number, b: number): number {
-  let d = a - b;
-  while (d > Math.PI) d -= Math.PI * 2;
-  while (d < -Math.PI) d += Math.PI * 2;
-  return Math.abs(d);
-}
 
 /** Yaw from `from` to `to` (0 = +z). */
 export function yawTo(from: { x: number; z: number }, to: { x: number; z: number }): number {
@@ -28,13 +23,7 @@ export function weakPointExposed(w: World, src: Creature, tgt: Creature): boolea
     return sp.tier !== 'I' && off >= Math.PI - Math.PI / 4; // rear 90°
   }
   if (R.formForLevel(tgt.level) === 0) return off >= Math.PI - Math.PI / 3;
-  switch (tgt.lineage) {
-    case 'Brawler':
-      return w.time < tgt.chestExposedUntil && off <= Math.PI / 4;
-    case 'Titan':
-    default:
-      return off >= Math.PI - Math.PI / 3; // rear 120°
-  }
+  return lin(tgt).weakPointExposed(w, src, tgt, off);
 }
 
 export function maxHp(c: Creature): number {
@@ -65,9 +54,11 @@ export function dealDamage(w: World, src: Creature | null, tgt: Creature, raw: n
   if (src) {
     // Bulwark: −60% from the front 120°
     if (now < tgt.bulwarkUntil && angleDiff(yawTo(tgt.pos, src.pos), tgt.yaw) <= Math.PI / 3) reductions.push(0.6);
-    // Titan passive Immovable: −10% from lower-Stage enemies
-    if (tgt.kind === 'ascendant' && tgt.lineage === 'Titan' && R.formForLevel(tgt.level) >= 1
-      && src.kind === 'ascendant' && R.stageForLevel(src.level) < R.stageForLevel(tgt.level)) reductions.push(0.1);
+    // lineage passives (e.g. Titan Immovable: −10% from lower-Stage enemies)
+    if (tgt.kind === 'ascendant') {
+      const extra = lin(tgt).damageReduction?.(w, tgt, src) ?? 0;
+      if (extra > 0) reductions.push(extra);
+    }
   }
   if (tgt.kind === 'ascendant' && tgt.team !== -1) {
     const hub = w.hubNear(tgt.pos, 12);
@@ -88,11 +79,7 @@ export function dealDamage(w: World, src: Creature | null, tgt: Creature, raw: n
     src.lastCombatAt = now;
     tgt.lastAttacker = src.id;
     tgt.assists.set(src.id, now);
-    if (src.lineage === 'Brawler' && src.kind === 'ascendant') src.momentum = Math.min(100, src.momentum + 5);
-    if (src.kind === 'ascendant' && now < src.ultUntil && src.lineage === 'Brawler') {
-      // Frenzy: 20% lifesteal, subject to the healing cap
-      heal(w, src, amount * 0.2);
-    }
+    if (src.kind === 'ascendant') lin(src).onDealtDamage?.(w, src, tgt, amount);
   }
   if (tgt.channel) tgt.channel = null; // channels break on damage
   w.emit({ type: 'hit', source: src?.id ?? -1, target: tgt.id, amount, weak, pos: { ...tgt.pos } });
@@ -146,7 +133,7 @@ export function applyCC(w: World, src: Creature, tgt: Creature, kind: CC, base: 
 
 export function knockback(w: World, src: { x: number; z: number }, tgt: Creature, distance: number, lift = 3) {
   if (!tgt.alive || w.time < tgt.unstoppableUntil) return;
-  if (tgt.kind === 'ascendant' && tgt.lineage === 'Titan' && R.formForLevel(tgt.level) >= 1) return; // Immovable
+  if (w.isImmovable(tgt, true)) return;
   const yaw = yawTo(src, tgt.pos);
   // launch speed so the arc travels about `distance` metres
   const airTime = 2 * lift / 25 + 0.25;
@@ -195,6 +182,6 @@ export function kill(w: World, victim: Creature, killer: Creature | null) {
 export function basicStats(c: Creature): { ratio: number; rate: number; range: number } {
   if (R.formForLevel(c.level) === 0) return { ratio: 1.0, rate: 1.2, range: 2 };
   const b = T.basic[c.lineage];
-  const range = c.lineage === 'Brawler' ? 2.5 : 3;
+  const range = lin(c).basicRange;
   return { ratio: b.ratio, rate: b.rate, range };
 }

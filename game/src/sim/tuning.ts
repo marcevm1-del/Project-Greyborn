@@ -7,6 +7,7 @@ export type Lineage = 'Titan' | 'Brawler' | 'Verdant' | 'Hollow' | 'Thornrunner'
 export type StatName = 'Health' | 'Power' | 'Speed %' | 'Control';
 
 export interface AbilityRow { slot: 'Q' | 'E' | 'R'; name: string; base: number | null; ratio: number | null; cd: number | null }
+export interface UltimateRow { name: string; base: number | null; ratio: number | null; cd: number; duration?: number }
 export interface CreatureRow { name: string; group: string; tier: string; health: number | null; cores: number; sap: number }
 
 interface TuningData {
@@ -15,6 +16,7 @@ interface TuningData {
   expParams: Record<string, number>;
   basic: Record<string, { ratio: number; rate: number }>;
   abilities: Record<string, AbilityRow[]>;
+  ultimates: Record<string, UltimateRow[]>;
   creatures: CreatureRow[];
   phaseMult: number[];
   affinityMult: number;
@@ -51,6 +53,13 @@ export function stat(lineage: Lineage, name: StatName, level: number): number {
 export function ability(lineage: Lineage, slot: 'Q' | 'E' | 'R'): AbilityRow {
   const row = T.abilities[lineage]?.find((a) => a.slot === slot);
   if (!row) throw new Error(`No ${slot} ability for ${lineage} in tuning data`);
+  return row;
+}
+
+/** Ultimate row (base, ratio, cooldown) by lineage and name (Spec 03). */
+export function ultimateRow(lineage: Lineage, name: string): UltimateRow {
+  const row = T.ultimates[lineage]?.find((u) => u.name === name);
+  if (!row) throw new Error(`No Ultimate "${name}" for ${lineage} in tuning data`);
   return row;
 }
 
