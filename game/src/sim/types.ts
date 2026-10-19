@@ -137,5 +137,6 @@ export type GameEvent =
   | { type: 'weakbreak'; id: number }
   | { type: 'branch'; id: number; branch: Branch }
   | { type: 'synergy'; id: number; partner: number; name: string; pos: Vec2 & { y: number } }
+  | { type: 'migration'; state: 'none' | 'warning' | 'active' }
   | { type: 'swing'; id: number; pos: Vec2 & { y: number }; yaw: number }
   | { type: 'end'; winner: Team | null; how: string };

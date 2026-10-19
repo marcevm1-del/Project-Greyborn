@@ -1,9 +1,10 @@
 // Title, lineage select, pause, settings (with rebinding), how-to-play and results screens.
 import { DEFAULT_BINDINGS, type Action, type Settings, type Profile } from '../core/Settings';
 import type { Lineage } from '../sim/tuning';
+import type { Difficulty } from '../sim/World';
 
 export interface MenuCallbacks {
-  start(lineage: Lineage): void;
+  start(lineage: Lineage, difficulty: Difficulty): void;
   resume(): void;
   quit(): void;
   settingsChanged(s: Settings): void;
@@ -60,6 +61,7 @@ export class Menus {
   private host = document.createElement('div');
   private screen: HTMLElement | null = null;
   private selected: Lineage;
+  private difficulty: Difficulty = 'Normal';
   private rebinding: Action | null = null;
 
   constructor(parent: HTMLElement, private cb: MenuCallbacks, private getSettings: () => Settings, private getProfile: () => Profile) {
@@ -122,6 +124,9 @@ export class Menus {
       <h2>Choose your lineage</h2>
       <div style="color:var(--muted);margin-bottom:12px">You start as a small Kith Base Form. Your lineage awakens at Level 3. Your partner plays the other half of your pair (Titan with Brawler, Verdant with Hollow); near each other at Stage 2 you unlock a Synergy. At Level 10 you pick a branch (1 Aggression, 2 Tactical). Sides are assigned when the match starts.</div>
       <div class="cards">${cards}</div>
+      <div class="difficulty" role="radiogroup" aria-label="Bot difficulty">Bots:
+        ${(['Easy', 'Normal', 'Hard'] as Difficulty[]).map((d) => `<button data-d="${d}" class="${d === this.difficulty ? 'sel' : ''}" role="radio" aria-checked="${d === this.difficulty}">${d}</button>`).join('')}
+      </div>
       <div class="menu" style="flex-direction:row;justify-content:center;margin-top:16px">
         <button data-a="back">Back</button><button class="primary" data-a="go">Bud into the world</button>
       </div>`);
@@ -134,8 +139,12 @@ export class Menus {
       c.addEventListener('click', pick);
       c.addEventListener('keydown', (e) => { if ((e as KeyboardEvent).key === 'Enter') pick(); });
     });
+    s.querySelectorAll<HTMLElement>('[data-d]').forEach((b) => b.addEventListener('click', () => {
+      this.difficulty = b.dataset.d as Difficulty;
+      s.querySelectorAll<HTMLElement>('[data-d]').forEach((x) => { x.classList.toggle('sel', x === b); x.setAttribute('aria-checked', String(x === b)); });
+    }));
     s.querySelector('[data-a=back]')!.addEventListener('click', () => this.title());
-    s.querySelector('[data-a=go]')!.addEventListener('click', () => { this.close(); this.cb.start(this.selected); });
+    s.querySelector('[data-a=go]')!.addEventListener('click', () => { this.close(); this.cb.start(this.selected, this.difficulty); });
   }
 
   pause() {

@@ -137,3 +137,55 @@ describe('Branch choice (D-03)', () => {
     expect(ultimateName(brawler)).toBe('Frenzy');
   });
 });
+
+describe('Bot difficulty (D-10)', () => {
+  it('reads reaction, aim error and return thresholds from the workbook', async () => {
+    const { BotBrain } = await import('./botAI');
+    for (const d of ['Easy', 'Normal', 'Hard'] as const) {
+      const w = new World({ playerLineage: null, playerTeam: 0, short: true, seed: 2, difficulty: d });
+      const b = new BotBrain(0, w);
+      expect(b.difficulty).toBe(d);
+      expect(b.returnAt).toBeGreaterThanOrEqual(econ(`Bot return min ${d}`));
+      expect(b.returnAt).toBeLessThanOrEqual(econ(`Bot return max ${d}`));
+    }
+  });
+
+  it('Hard bots win more than Easy bots over a few matches', async () => {
+    const { BotBrain } = await import('./botAI');
+    let hardTI = 0, easyTI = 0;
+    for (const seed of [1, 2, 3]) {
+      const w = world(seed);
+      const brains = w.creatures.filter((c) => c.kind === 'ascendant').map((c) => new BotBrain(c.id, w, c.team === 0 ? 'Hard' : 'Easy'));
+      for (let i = 0; i < Math.round(300 / R.DT) && !w.result; i++) { for (const b of brains) b.update(w); w.step(R.DT); w.drainEvents(); }
+      hardTI += w.ti(0); easyTI += w.ti(1);
+    }
+    expect(hardTI).toBeGreaterThan(easyTI);
+  });
+});
+
+describe('Grey Migration (D-06)', () => {
+  it('warns 20 s ahead, then hurts and pushes creatures on the road for 60 s; the Knoll is safe', async () => {
+    const { onRoad } = await import('./migration');
+    const w = world(4);
+    const asc = w.creatures.filter((c) => c.kind === 'ascendant');
+    for (const c of w.creatures) if (c.kind === 'wild') { c.alive = false; c.respawnAt = 1e9; }
+    const [road, knoll] = asc;
+    for (const c of asc) place(c, 100 + c.id * 3, 50);
+    const start = econ('Grey Migration time');
+    w.time = start - 21;
+    const states: string[] = [];
+    for (let i = 0; i < 31; i++) { w.step(R.DT); for (const e of w.drainEvents()) if (e.type === 'migration') states.push(e.state); }
+    expect(states).toEqual(['warning']);
+    place(road, 2, 40);
+    place(knoll, 2, 2);
+    road.hp = 1e5; road.maxHpOverride = 1e5;
+    const hp = road.hp, kh = knoll.hp;
+    step(w, 23); // 3 s into the event
+    expect(w.migration).toBe('active');
+    expect(road.hp).toBeLessThan(hp);
+    expect(onRoad(road.pos)).toBe(false); // pushed off
+    expect(knoll.hp).toBeGreaterThanOrEqual(kh);
+    step(w, econ('Grey Migration duration'));
+    expect(w.migration).toBe('none');
+  });
+});

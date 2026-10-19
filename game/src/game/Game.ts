@@ -2,7 +2,8 @@
 // The simulation runs at a fixed 30 Hz; rendering interpolates between ticks.
 import * as THREE from 'three';
 import * as R from '../sim/rules';
-import { World } from '../sim/World';
+import { World, type Difficulty } from '../sim/World';
+import { heightAt } from '../sim/terrain';
 import { BotBrain } from '../sim/botAI';
 import { maxHp } from '../sim/combat';
 import { SPECIES } from '../sim/species';
@@ -70,7 +71,7 @@ export class Game {
     this.input = new Input(this.rig.renderer.domElement, () => this.settings);
     this.hud = new Hud(document.body);
     this.menus = new Menus(document.body, {
-      start: (l) => this.startMatch(l),
+      start: (l, d) => this.startMatch(l, d),
       resume: () => this.resume(),
       quit: () => this.toTitle(),
       settingsChanged: (s) => this.applySettings(s),
@@ -121,13 +122,13 @@ export class Game {
     this.cam.snap(new THREE.Vector3(focus.pos.x, focus.pos.y, focus.pos.z), this.world.height(focus), R.FORM_CAMERA[0]);
   }
 
-  startMatch(lineage: Lineage) {
+  startMatch(lineage: Lineage, difficulty: Difficulty = 'Normal') {
     this.autopiloting = false;
     this.audio.start();
     this.profile.lastLineage = lineage;
     saveProfile(this.profile);
     const team = (Math.random() < 0.5 ? 0 : 1) as Team;
-    this.world = new World({ playerLineage: lineage, playerTeam: team, short: this.settings.shortMatch, seed: Math.floor(Math.random() * 1e9) });
+    this.world = new World({ playerLineage: lineage, playerTeam: team, short: this.settings.shortMatch, seed: Math.floor(Math.random() * 1e9), difficulty });
     this.bindWorld();
     this.state = 'playing';
     this.hud.setVisible(true);
@@ -379,6 +380,14 @@ export class Game {
         case 'structure':
           if (e.destroyed && me) this.hud.feedLine(e.team === me.team ? '<b style="color:var(--foe)">One of your Enemy Cores fell</b>' : '<b style="color:var(--friend)">Enemy Core destroyed</b>');
           break;
+        case 'migration': {
+          if (this.state !== 'playing') break;
+          if (e.state === 'warning') this.hud.toast('The Grey Migration is coming', 'In 20 s the herds run down the centre road. Get off it, or hold the Knoll.', 4);
+          else if (e.state === 'active') this.hud.toast('The Grey Migration', 'The centre road is deadly for 60 s. The Knoll is an island.', 3);
+          else this.hud.toast('The herds have passed', 'The centre road is open again.', 2.5);
+          this.audio.play('phase', null);
+          break;
+        }
         case 'phase': {
           const names = ['', 'Stable Flow', 'Pre-Aggro Resource Control', 'Resource Stage', 'Hunt', 'Overtime'];
           const rules = ['', '', 'The centre is open', 'Enemy Cores are under siege', 'Base Hearts are open', 'First team to root a node wins'];
@@ -480,6 +489,14 @@ export class Game {
     this.props.update(time, this.rig.camera.position);
     this.structures?.update(time);
     this.fields?.update(w, time);
+    // Grey Migration: dust from the herds along the road (cosmetic)
+    if (w.migration === 'active' && Math.random() < dt * 12) {
+      const z = -80 + Math.random() * 160;
+      if (Math.abs(z) > 14) {
+        const x = (Math.random() * 2 - 1) * 9;
+        this.vfx.burst(new THREE.Vector3(x, heightAt(x, z) + 0.5, z), 0xb0a68e, 14, 4, 0.9, 1.4, 4);
+      }
+    }
     this.vfx.update(dt);
     // audio listener and music intensity
     const f = new THREE.Vector3();

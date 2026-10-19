@@ -6,7 +6,7 @@ import { applyCC, dealDamage, heal, maxHp, power } from '../combat';
 import { econ, ultimateRow } from '../tuning';
 import { addZone, inZone } from '../fields';
 import { groundTarget, targetsIn } from './shared';
-import { tryVoidGarden } from './synergies';
+import { synergyReady, tryVoidGarden } from './synergies';
 import type { Team } from '../map';
 import type { LineageDef } from './types';
 
@@ -114,6 +114,13 @@ export const Verdant: LineageDef = {
       it.r = b.ready('R') && d < 14;
       // a wall between us when losing the fight
       it.q = !it.r && b.ready('Q') && c.hp < 0.45 * maxHp(c) && d < 12 && R.formForLevel(c.level) >= 1;
+    },
+    // Hard: root a node inside the partner Hollow's Rift (Void Garden)
+    coordinate(w, c) {
+      if (!synergyReady(w, c)) return;
+      const rift = w.zones.find((z) => z.kind === 'rift' && z.owner === c.partner && w.time < z.until - 2);
+      const node = rift && w.nodes.find((n) => w.nodeOwner[n.id] === -1 && inZone(rift, n.core) && w.capturable(c.team as Team, n.id));
+      return node ? { capture: node.id } : undefined;
     },
   },
 };

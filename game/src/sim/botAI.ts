@@ -7,8 +7,9 @@ import { SPECIES } from './species';
 import { maxHp, yawTo } from './combat';
 import { abilityInfo } from './abilities';
 import { lin } from './lineages/registry';
+import { onRoad } from './migration';
 import type { Creature } from './types';
-import type { World } from './World';
+import type { Difficulty, World } from './World';
 
 type Goal =
   | { kind: 'return' }
@@ -30,9 +31,17 @@ export class BotBrain {
   holdUntil = 0;
   stuckSince = 0;
   lastPos: Vec2 = { x: 0, z: 0 };
+  /** Difficulty profile (Version B §10): reaction time, aim error and return discipline from the workbook. */
+  readonly difficulty: Difficulty;
+  private reaction: number;
+  private aimError: number;   // radians, ± around the true aim
+  private aimOffset = 0;      // resampled on every think
 
-  constructor(public readonly id: number, w: World) {
-    this.returnAt = w.rng.range(180, 340);
+  constructor(public readonly id: number, w: World, difficulty: Difficulty = w.opts.difficulty ?? 'Normal') {
+    this.difficulty = difficulty;
+    this.reaction = econ(`Bot reaction ${difficulty}`);
+    this.aimError = (econ(`Bot aim error ${difficulty}`) * Math.PI) / 180;
+    this.returnAt = w.rng.range(econ(`Bot return min ${difficulty}`), econ(`Bot return max ${difficulty}`));
   }
 
   update(w: World) {
@@ -47,7 +56,11 @@ export class BotBrain {
       const team = c.team as Team;
       it.branch = w.ti(team) < w.ti((1 - team) as Team) ? 'Tactical' : 'Aggression';
     }
-    if (w.time >= this.nextThink) { this.think(w, c); this.nextThink = w.time + 0.5 + w.rng.next() * 0.4; }
+    if (w.time >= this.nextThink) {
+      this.think(w, c);
+      this.nextThink = w.time + this.reaction + 0.15 + w.rng.next() * 0.4;
+      this.aimOffset = this.difficulty === 'Normal' ? 0 : (w.rng.next() * 2 - 1) * this.aimError;
+    }
     this.act(w, c);
   }
 
@@ -64,7 +77,8 @@ export class BotBrain {
     if (c.channel && (c.channel.kind === 'convert' || c.channel.kind === 'root' || c.channel.kind === 'uproot')) return;
 
     const enemies = w.creatures.filter((e) => e.kind === 'ascendant' && e.alive && e.team === enemy);
-    const near = enemies.filter((e) => w.dist(e.pos, c.pos) < 22).sort((a, b) => w.dist(a.pos, c.pos) - w.dist(b.pos, c.pos));
+    const notice = this.difficulty === 'Easy' ? 12 : 22; // Easy bots don't join fights they aren't in
+    const near = enemies.filter((e) => w.dist(e.pos, c.pos) < notice).sort((a, b) => w.dist(a.pos, c.pos) - w.dist(b.pos, c.pos));
     const allies = w.creatures.filter((a) => a.kind === 'ascendant' && a.alive && a.team === team && a.id !== c.id);
     const alliesNear = allies.filter((a) => w.dist(a.pos, c.pos) < 22).length;
 
@@ -74,6 +88,8 @@ export class BotBrain {
     const wantsHome = c.carried > 0 && (c.carried >= threshold || (c.carried >= 120 && hpFrac < 0.35) || c.carried >= econ('Carry cap') - 10
       || (atBase && c.carried >= 40));
     if (hpFrac < 0.25 && near.length) { this.setGoal(w, { kind: 'return' }); return; }
+    // Hard: bank the cores before a fight it would lose
+    if (this.difficulty === 'Hard' && c.carried >= 60 && near.length > alliesNear + 1) { this.setGoal(w, { kind: 'return' }); return; }
     if (wantsHome && !(w.phase === 4 && w.heartOpen(enemy) && c.carried < econ('Carry cap'))) { this.setGoal(w, { kind: 'return' }); return; }
 
     // fight nearby enemies when the odds are acceptable
@@ -94,7 +110,15 @@ export class BotBrain {
     const options: { score: number; goal: Goal }[] = [];
     // siege (Stage 2+)
     if (stage >= 2 && w.phase >= 2) {
-      if (w.heartOpen(enemy)) options.push({ score: 6, goal: { kind: 'siege', pos: w.hearts[enemy].pos } });
+      if (w.heartOpen(enemy)) {
+        const heart = w.hearts[enemy].pos;
+        // Hard: gather at a rally point until three of the team are together, then push
+        const rally = { x: heart.x * 0.55, z: 0 };
+        const grouped = allies.filter((a) => w.dist2d(a.pos, c.pos) < 25).length >= 2;
+        const pushing = w.dist2d(c.pos, heart) < w.dist2d(rally, heart);
+        const goal: Goal = this.difficulty === 'Hard' && !grouped && !pushing ? { kind: 'idle', pos: rally } : { kind: 'siege', pos: heart };
+        options.push({ score: 6, goal });
+      }
       const core = w.cores.filter((k) => k.team === enemy && k.alive).sort((a, b) => w.dist2d(a.pos, c.pos) - w.dist2d(b.pos, c.pos))[0];
       if (core) options.push({ score: 2.5 + (w.phase >= 3 ? 1 : 0) - w.dist2d(core.pos, c.pos) / 120, goal: { kind: 'siege', pos: core.pos } });
       const hub = w.hubs.filter((h) => w.nodeOwner[h.node] === enemy).sort((a, b) => w.dist2d(a.pos, c.pos) - w.dist2d(b.pos, c.pos))[0];
@@ -106,6 +130,8 @@ export class BotBrain {
       v: (n.hub !== null ? 2.5 : 1) * (w.nodeOwner[n.id] === -1 ? 1 : 0.8),
     }));
     caps.sort((a, b) => a.d / a.v - b.d / b.v);
+    const coord = this.difficulty === 'Hard' ? lin(c).bot.coordinate?.(w, c) : undefined;
+    if (coord?.capture !== undefined && w.capturable(team, coord.capture)) options.push({ score: 5, goal: { kind: 'capture', node: coord.capture } });
     if (caps.length) options.push({ score: 2 + caps[0].v * 0.4 - caps[0].d / 80 + lin(c).bot.captureBias, goal: { kind: 'capture', node: caps[0].n.id } });
     // farm wildlife
     const prey = w.creatures.filter((t) => {
@@ -152,6 +178,11 @@ export class BotBrain {
     const dx = wp.x - c.pos.x, dz = wp.z - c.pos.z;
     const l = Math.hypot(dx, dz) || 1;
     c.intent.move = { x: dx / l, z: dz / l };
+    // Grey Migration: get off the road and don't step onto it while the herds run
+    if (w.migration !== 'none') {
+      if (onRoad(c.pos)) c.intent.move = { x: c.pos.x >= 0 ? 1 : -1, z: 0 };
+      else if (onRoad({ x: c.pos.x + c.intent.move.x * 3, z: c.pos.z + c.intent.move.z * 3 })) c.intent.move = { x: 0, z: 0 };
+    }
     // unstick: if barely moving for 2 s, sidestep
     if (w.dist2d(this.lastPos, c.pos) < 0.05) {
       if (!this.stuckSince) this.stuckSince = w.time;
@@ -215,7 +246,7 @@ export class BotBrain {
     const it = c.intent;
     const reach = w.radius(c) + w.radius(t) + (R.formForLevel(c.level) === 0 ? 2 * R.areaScale(c.level) : lin(c).rangedBasic ? lin(c).basicRange : lin(c).basicRange * R.areaScale(c.level)) * 0.9;
     const d = w.dist(c.pos, t.pos);
-    it.aimYaw = yawTo(c.pos, t.pos);
+    it.aimYaw = yawTo(c.pos, t.pos) + this.aimOffset;
     if (d > reach) this.goTo(w, c, { x: t.pos.x, z: t.pos.z }, reach * 0.8);
     else { it.move = { x: 0, z: 0 }; it.basic = true; }
     this.useAbilities(w, c, t, d);
@@ -230,7 +261,7 @@ export class BotBrain {
     const brain = this;
     it.ult = c.level >= 20 && !!abilityInfo(c, 'ult') && ready('ult') && (t?.kind === 'ascendant' || !t);
     lin(c).bot.useAbilities(w, c, t, d, {
-      ready, scale,
+      ready, scale, hard: this.difficulty === 'Hard',
       get holdUntil() { return brain.holdUntil; },
       set holdUntil(v: number) { brain.holdUntil = v; },
     });

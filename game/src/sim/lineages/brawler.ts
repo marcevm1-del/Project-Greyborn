@@ -1,9 +1,9 @@
 // Brawler (Commit pair): diver and bruiser. Spec 02 §2, Spec 03.
 import * as R from '../rules';
 import { ability } from '../tuning';
-import { applyCC, dealDamage, heal, knockback, power } from '../combat';
+import { applyCC, dealDamage, heal, knockback, power, yawTo } from '../combat';
 import { dash, dirOf, targetsIn } from './shared';
-import { onRollHit, onRollStart } from './synergies';
+import { onRollHit, onRollStart, synergyReady } from './synergies';
 import type { LineageDef } from './types';
 
 export const Brawler: LineageDef = {
@@ -121,6 +121,13 @@ export const Brawler: LineageDef = {
     captureBias: 0,
     useAbilities(w, c, t, d, b) {
       const it = c.intent;
+      // Hard: follow the partner Titan's Quake Slam with Roll Commit (Smash & Roll)
+      if (b.hard && b.ready('Q') && synergyReady(w, c)) {
+        const titan = w.creatures[c.partner!];
+        const slammed = !titan.syn.slamChecked && titan.syn.slamTargets.map((id) => w.creatures[id])
+          .find((x) => x.alive && w.dist(x.pos, c.pos) < 8 * b.scale);
+        if (slammed) { it.aimYaw = yawTo(c.pos, slammed.pos); it.q = true; return; }
+      }
       if (b.ready('Q') && t && d > 3 && d < 8 * b.scale) it.q = true;
       else if (b.ready('R') && t && d < 3 * b.scale + w.radius(c) && R.stageForLevel(t.level) < R.stageForLevel(c.level)) it.r = true;
       // Haymaker: hold E for a full charge, then release

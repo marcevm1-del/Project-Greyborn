@@ -93,6 +93,8 @@ button.primary:hover { background: #a8732a; }
 .cards { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
 .card { width: 270px; background: #0b1f24; border: 2px solid #2c4a50; border-radius: 10px; padding: 14px; cursor: pointer; }
 .card:hover, .card.sel { border-color: var(--gold); }
+.difficulty { display: flex; gap: 8px; justify-content: center; align-items: center; margin-top: 14px; color: var(--muted); }
+.difficulty button.sel { border-color: var(--gold); color: var(--gold); }
 .card h3 { margin: 0 0 4px; color: var(--gold); }
 .card .role { color: var(--muted); font-size: .85em; margin-bottom: 8px; }
 .card li { font-size: .85em; margin-bottom: 4px; }

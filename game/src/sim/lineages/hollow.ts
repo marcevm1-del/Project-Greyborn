@@ -4,7 +4,7 @@ import { ultimateRow } from '../tuning';
 import { addZone } from '../fields';
 import { heightAt } from '../terrain';
 import { groundTarget, pull, targetsIn } from './shared';
-import { tryVoidGarden } from './synergies';
+import { synergyReady, tryVoidGarden } from './synergies';
 import type { Team } from '../map';
 import type { LineageDef } from './types';
 
@@ -96,6 +96,13 @@ export const Hollow: LineageDef = {
     captureBias: 0.3,
     useAbilities(w, c, t, d, b) {
       const it = c.intent;
+      // Hard: open a Rift on the node the partner Verdant is rooting, so the root completes inside it (Void Garden)
+      const v = c.partner !== null ? w.creatures[c.partner] : null;
+      if (b.hard && b.ready('Q') && v?.channel?.kind === 'root' && v.channel.node !== undefined && synergyReady(w, c)) {
+        const core = w.nodes[v.channel.node].core;
+        const dd = w.dist(c.pos, core);
+        if (dd > 18 * 0.6 - 4 * b.scale && dd < 18 * 0.6 + 4 * b.scale) { it.aimYaw = yawTo(c.pos, core); it.q = true; return; }
+      }
       if (t?.kind !== 'ascendant') { it.q = it.r = it.e = false; return; }
       it.r = b.ready('R') && d < 5.5 * b.scale;
       it.q = !it.r && b.ready('Q') && d < 17;

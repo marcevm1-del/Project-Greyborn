@@ -16,6 +16,7 @@ import { tryCasts, updateCast, canAct } from './abilities';
 import { updateWild } from './wildAI';
 import { lin, PAIRS } from './lineages/registry';
 import { emptySynergy, synergyTick } from './lineages/synergies';
+import { updateMigration, type MigrationState } from './migration';
 import { blockByWalls, hitWalls, inZone, updateFields, zonesAt, type Wall, type Zone } from './fields';
 import { Rng } from '../core/rng';
 
@@ -24,7 +25,11 @@ export interface MatchOptions {
   playerTeam: Team;
   short: boolean;                  // short match: phases ×0.5, EXP ×2
   seed: number;
+  /** Bot difficulty (Version B §10); Normal when omitted. */
+  difficulty?: Difficulty;
 }
+
+export type Difficulty = 'Easy' | 'Normal' | 'Hard';
 
 export interface Hub { node: number; pos: Vec2; level: number; hp: number; lastHit: number; uproot: number; held: number }
 export interface EnemyCore { team: Team; pos: Vec2; hp: number; max: number; alive: boolean; regrowAt: number; reward: number; lastHit: number }
@@ -74,6 +79,8 @@ export class World {
   zones: Zone[] = [];
   walls: Wall[] = [];
   nextFieldId = 1;
+  /** Grey Migration state, updated every tick (sim/migration.ts). */
+  migration: MigrationState = 'none';
   /** Creature that last rooted each node (Deep Root spread, Void Garden trigger). */
   nodeRootedBy: (number | null)[];
 
@@ -477,6 +484,7 @@ export class World {
     }
     synergyTick(this);
     updateFields(this, dt);
+    updateMigration(this, dt);
     this.separate();
     this.updatePickups();
     this.secondAcc += dt;

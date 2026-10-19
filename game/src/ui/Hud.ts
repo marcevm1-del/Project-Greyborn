@@ -1,6 +1,7 @@
 // In-match HUD: timer and phase, Territorial Influence, vitals, carried cores,
 // EXP, ability bar, channel bar, prompts, kill feed, minimap, nameplates and
 // floating damage numbers.
+import { migrationWindow } from '../sim/migration';
 import * as THREE from 'three';
 import * as R from '../sim/rules';
 import { econ } from '../sim/tuning';
@@ -104,7 +105,9 @@ export class Hud {
     this.timer.textContent = `${Math.floor(left / 60)}:${String(Math.floor(left % 60)).padStart(2, '0')}`;
     const names = ['Stable Flow', 'Pre-Aggro Resource Control', 'Resource Stage', 'Hunt'];
     const nextPhase = w.phase < 4 ? w.phaseStart(w.phase + 1) - w.time : 0;
-    this.phase.textContent = w.overtime ? 'OVERTIME · first team to root a node wins' : `Phase ${w.phase} · ${names[w.phase - 1]}${w.phase < 4 ? ` · next in ${Math.ceil(nextPhase)}s` : w.heartOpen(enemy) ? ' · Base Hearts open' : ''}`;
+    const mig = migrationWindow();
+    const migText = w.migration === 'warning' ? ` · Grey Migration in ${Math.ceil(mig.start - w.time)}s` : w.migration === 'active' ? ` · Grey Migration · ${Math.ceil(mig.end - w.time)}s` : '';
+    this.phase.textContent = (w.overtime ? 'OVERTIME · first team to root a node wins' : `Phase ${w.phase} · ${names[w.phase - 1]}${w.phase < 4 ? ` · next in ${Math.ceil(nextPhase)}s` : w.heartOpen(enemy) ? ' · Base Hearts open' : ''}`) + migText;
     const a = w.ti(myTeam), b = w.ti(enemy);
     this.tiA.style.width = `${a * 100}%`;
     this.tiB.style.width = `${b * 100}%`;

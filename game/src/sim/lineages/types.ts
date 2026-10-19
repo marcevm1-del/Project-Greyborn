@@ -23,6 +23,8 @@ export interface CastCtx {
 export interface BotCtx {
   ready(slot: string): boolean;
   scale: number;
+  /** Hard bots use Synergies on purpose (Version B §10). */
+  hard: boolean;
   /** Time until which a charged ability is held before release. */
   holdUntil: number;
 }
@@ -72,5 +74,7 @@ export interface LineageDef {
     captureBias: number;
     /** Sets Q / E / R intents against target `t` at distance `d`. */
     useAbilities(w: World, c: Creature, t: Creature | null, d: number, b: BotCtx): void;
+    /** Hard bots: a node to capture to set up the pair's Synergy. */
+    coordinate?(w: World, c: Creature): { capture?: number } | void;
   };
 }
