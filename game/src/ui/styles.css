@@ -108,3 +108,17 @@ button.primary:hover { background: #a8732a; }
 .stats td, .stats th { padding: 4px 8px; border-bottom: 1px solid #ffffff1a; text-align: left; }
 .win { color: var(--friend); } .loss { color: var(--foe); }
 @media (max-width: 700px) { .settings, .help { grid-template-columns: 1fr; columns: 1; } h1 { font-size: 36px; } }
+
+.ab .icon svg { width: 70%; height: 70%; }
+.synergy { position: absolute; left: 50%; bottom: calc(96px * var(--ui-scale)); transform: translateX(-50%); background: var(--panel); padding: 3px 10px; border-radius: 5px; font-size: .8em; color: var(--muted); white-space: nowrap; }
+.synergy .ok { color: var(--gold); font-weight: bold; }
+.branch { position: absolute; left: 50%; top: 30%; transform: translateX(-50%); background: var(--panel); padding: 10px 16px; border-radius: 8px; border: 1px solid var(--gold); display: flex; flex-direction: column; gap: 4px; }
+.branch .key { display: inline-block; min-width: 1.4em; text-align: center; background: #000a; border-radius: 4px; color: var(--gold); }
+.branch small { color: var(--muted); }
+.objective { position: absolute; left: 20px; top: 90px; max-width: 340px; background: var(--panel); padding: 8px 12px; border-radius: 6px; border-left: 3px solid var(--gold); }
+.objective b { color: var(--gold); }
+.objective small { display: block; color: var(--muted); margin-top: 3px; }
+.tip { position: absolute; right: 20px; top: 40%; max-width: 300px; background: var(--panel); padding: 10px 14px; border-radius: 8px; border: 1px solid var(--gold); animation: fadein .3s; }
+.tip b { color: var(--gold); display: block; margin-bottom: 4px; }
+.marker { position: absolute; transform: translate(-50%, -100%); color: var(--gold); font-weight: bold; text-shadow: 0 1px 3px #000; pointer-events: none; }
+.marker::after { content: ''; display: block; width: 14px; height: 14px; margin: 2px auto 0; border: 3px solid var(--gold); transform: rotate(45deg); }

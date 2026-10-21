@@ -35,5 +35,13 @@ describe('profile validation', () => {
     expect(p.wins).toBe(2);
     expect(p.bestLevel).toBe(20);
     expect(p.lastLineage).toBe('Brawler');
+    expect(p.firstLifeDone).toBe(false);
+    expect(p.tips).toEqual([]);
+  });
+  it('keeps the four Version B lineages and only known tips', () => {
+    const p = sanitizeProfile({ lastLineage: 'Hollow', firstLifeDone: true, tips: ['synergy', 'bogus', 3] });
+    expect(p.lastLineage).toBe('Hollow');
+    expect(p.firstLifeDone).toBe(true);
+    expect(p.tips).toEqual(['synergy']);
   });
 });

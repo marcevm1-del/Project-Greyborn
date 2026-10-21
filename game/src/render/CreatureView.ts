@@ -190,11 +190,17 @@ export class CreatureView {
   private skin: Skin | null = null;
   private prevPos = new THREE.Vector3();
   readonly pos = new THREE.Vector3();
+  /** Carried cores glow as a seed of light above the body, brighter the more is carried (Version B §13). */
+  private seed: THREE.Mesh | null = null;
 
   constructor(private c: Creature, side: Side | null, friendly: boolean) {
     if (c.kind === 'ascendant') this.skin = skins(side!, friendly);
     this.rig = this.build();
     this.root.add(this.rig.root);
+    if (c.kind === 'ascendant') {
+      this.seed = new THREE.Mesh(new THREE.IcosahedronGeometry(0.18, 1), new THREE.MeshBasicMaterial({ color: 0xffd76a, transparent: true, opacity: 0.85 }));
+      this.root.add(this.seed);
+    }
   }
 
   private build(): Rig {
@@ -296,6 +302,14 @@ export class CreatureView {
       const m = rig.weak.material as THREE.MeshStandardMaterial;
       if (m.emissiveIntensity !== undefined) m.emissiveIntensity = (exposed ? 1.6 : 0.5) + Math.sin(time * 5) * 0.4 + (time < c.weakBrokenUntil ? -0.8 : 0);
     }
+    // carried cores: a seed of light above the body
+    if (this.seed) {
+      const k = Math.min(1, c.carried / 300);
+      this.seed.visible = c.alive && c.carried >= 1;
+      this.seed.position.y = s * 1.15 + 0.4 + Math.sin(time * 3) * 0.08;
+      this.seed.scale.setScalar(0.7 + k * 1.6);
+      (this.seed.material as THREE.MeshBasicMaterial).color.setHex(c.carried >= 300 ? 0xff9b5a : 0xffd76a);
+    }
     // airborne / grabbed tumble
     rig.root.rotation.x = !c.grounded ? Math.sin(time * 12) * 0.4 : 0;
     // hit flash: briefly scale up and back
@@ -315,6 +329,7 @@ export class CreatureView {
 
   dispose() {
     // geometry is shared through the cache; materials are per side and shared too
+    if (this.seed) { this.seed.geometry.dispose(); (this.seed.material as THREE.Material).dispose(); }
     this.root.removeFromParent();
   }
 }

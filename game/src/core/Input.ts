@@ -50,6 +50,9 @@ export class Input {
     return this.bound(a).some((k) => this.pressed.has(k)) || this.padTapped(a);
   }
 
+  /** A raw key that went down this frame (keys outside the rebindable actions, e.g. Enter to skip). */
+  tappedCode(code: string): boolean { return this.pressed.has(code); }
+
   /** Movement vector in camera space: x = right, y = forward. */
   moveAxes(): { x: number; y: number } {
     let x = 0, y = 0;
@@ -72,8 +75,8 @@ export class Input {
     return l > 1 ? { x: x / l, y: y / l } : { x, y };
   }
 
-  // Standard gamepad mapping: A=0 evade, B=1 interact, X=2 basic, Y=3 ult, LB=4 Q, RB=5 E, LT=6 R, Start=9 pause
-  private static PAD: Partial<Record<Action, number>> = { evade: 0, interact: 1, basic: 2, ult: 3, q: 4, e: 5, r: 6, pause: 9, scoreboard: 8 };
+  // Standard gamepad mapping: A=0 evade, B=1 interact, X=2 basic, Y=3 ult, LB=4 Q, RB=5 E, LT=6 R, Start=9 pause, d-pad 14/15 branch
+  private static PAD: Partial<Record<Action, number>> = { evade: 0, interact: 1, basic: 2, ult: 3, q: 4, e: 5, r: 6, pause: 9, scoreboard: 8, branch1: 14, branch2: 15 }; // d-pad left / right pick the branch
   private padHeld(a: Action): boolean {
     const i = Input.PAD[a];
     return i !== undefined && !!this.gamepad?.buttons[i]?.pressed;

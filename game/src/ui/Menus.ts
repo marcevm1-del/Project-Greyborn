@@ -5,6 +5,7 @@ import type { Difficulty } from '../sim/World';
 
 export interface MenuCallbacks {
   start(lineage: Lineage, difficulty: Difficulty): void;
+  firstLife(lineage: Lineage): void;
   resume(): void;
   quit(): void;
   settingsChanged(s: Settings): void;
@@ -49,7 +50,7 @@ const LINEAGES: { id: Lineage; role: string; text: string; kit: string[] }[] = [
 const ACTION_NAMES: Record<Action, string> = {
   forward: 'Move forward', back: 'Move back', left: 'Move left', right: 'Move right', basic: 'Basic attack',
   q: 'Ability Q', e: 'Ability E', r: 'Ability R', ult: 'Ultimate', evade: 'Evade', interact: 'Root / Convert (hold)',
-  pause: 'Pause', scoreboard: 'Scoreboard',
+  pause: 'Pause', scoreboard: 'Scoreboard', branch1: 'Branch: Aggression (L10)', branch2: 'Branch: Tactical (L10)',
 };
 
 function keyName(code: string): string {
@@ -128,7 +129,9 @@ export class Menus {
         ${(['Easy', 'Normal', 'Hard'] as Difficulty[]).map((d) => `<button data-d="${d}" class="${d === this.difficulty ? 'sel' : ''}" role="radio" aria-checked="${d === this.difficulty}">${d}</button>`).join('')}
       </div>
       <div class="menu" style="flex-direction:row;justify-content:center;margin-top:16px">
-        <button data-a="back">Back</button><button class="primary" data-a="go">Bud into the world</button>
+        <button data-a="back">Back</button>
+        <button class="${this.getProfile().firstLifeDone ? '' : 'primary'}" data-a="first">First Life · tutorial (3 min)</button>
+        <button class="${this.getProfile().firstLifeDone ? 'primary' : ''}" data-a="go">Bud into the world</button>
       </div>`);
     s.querySelectorAll('.card').forEach((c) => {
       const pick = () => {
@@ -144,6 +147,7 @@ export class Menus {
       s.querySelectorAll<HTMLElement>('[data-d]').forEach((x) => { x.classList.toggle('sel', x === b); x.setAttribute('aria-checked', String(x === b)); });
     }));
     s.querySelector('[data-a=back]')!.addEventListener('click', () => this.title());
+    s.querySelector('[data-a=first]')!.addEventListener('click', () => { this.close(); this.cb.firstLife(this.selected); });
     s.querySelector('[data-a=go]')!.addEventListener('click', () => { this.close(); this.cb.start(this.selected, this.difficulty); });
   }
 
@@ -200,7 +204,7 @@ export class Menus {
         ${check('reduceMotion', 'Reduce motion (less shake and particles)')}
         ${check('colorBlind', 'Colour-blind friendly team colours')}
         ${check('showFps', 'Show performance stats')}
-        ${check('shortMatch', 'Short match (12:30, EXP ×2)')}
+        ${check('shortMatch', 'Standard match, 12:30 (untick for the 25:00 long test match)')}
         <label>Graphics quality<select data-k="quality">${['low', 'medium', 'high'].map((q) => `<option ${st.quality === q ? 'selected' : ''}>${q}</option>`).join('')}</select></label>
       </div>
       <h2 style="margin-top:16px;font-size:1.1em">Controls <span style="font-size:.7em;color:var(--muted)">(click a binding, then press a key or mouse button)</span></h2>

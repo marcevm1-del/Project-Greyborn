@@ -5,7 +5,7 @@
 /** Lineages a stored profile may name (Version B's four). */
 const LINEAGE_IDS = ['Titan', 'Brawler', 'Verdant', 'Hollow'];
 
-export type Action = 'forward' | 'back' | 'left' | 'right' | 'basic' | 'q' | 'e' | 'r' | 'ult' | 'evade' | 'interact' | 'pause' | 'scoreboard';
+export type Action = 'forward' | 'back' | 'left' | 'right' | 'basic' | 'q' | 'e' | 'r' | 'ult' | 'evade' | 'interact' | 'pause' | 'scoreboard' | 'branch1' | 'branch2';
 
 export interface Settings {
   version: number;
@@ -44,6 +44,8 @@ export const DEFAULT_BINDINGS: Record<Action, string[]> = {
   interact: ['KeyF'],
   pause: ['Escape', 'KeyP'],
   scoreboard: ['Tab'],
+  branch1: ['Digit1'],   // Level 10 branch choice: Aggression
+  branch2: ['Digit2'],   // ...or Tactical
 };
 
 export function defaultSettings(): Settings {
@@ -121,7 +123,12 @@ export interface Profile {
   bestLevel: number;
   totalKills: number;
   lastLineage: string;
+  firstLifeDone: boolean;  // finished or skipped the First Life tutorial
+  tips: string[];          // one-time tooltips already shown
 }
+
+/** One-time tooltips (Version B §12). */
+export const TIPS = ['stageup', 'deathcores', 'field', 'synergy', 'branch'] as const;
 
 export function sanitizeProfile(raw: unknown): Profile {
   const r = (raw && typeof raw === 'object' ? raw : {}) as Record<string, unknown>;
@@ -132,6 +139,8 @@ export function sanitizeProfile(raw: unknown): Profile {
     bestLevel: Math.floor(num(r.bestLevel, 1, 20, 1)),
     totalKills: Math.floor(num(r.totalKills, 0, 1e7, 0)),
     lastLineage: typeof r.lastLineage === 'string' && LINEAGE_IDS.includes(r.lastLineage) ? r.lastLineage : 'Brawler',
+    firstLifeDone: bool(r.firstLifeDone, false),
+    tips: Array.isArray(r.tips) ? r.tips.filter((t): t is string => typeof t === 'string' && (TIPS as readonly string[]).includes(t)) : [],
   };
 }
 

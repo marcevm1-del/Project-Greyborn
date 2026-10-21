@@ -6,16 +6,15 @@ import * as THREE from 'three';
 import * as R from '../sim/rules';
 import { econ } from '../sim/tuning';
 import { BASES, GRID_W, GRID_H, cellCenter, type Team } from '../sim/map';
-import { HALF_W, HALF_D, MAP_W, MAP_D } from '../sim/terrain';
+import { HALF_W, HALF_D, MAP_W, MAP_D, heightAt } from '../sim/terrain';
 import { abilityInfo } from '../sim/abilities';
+import { abilityIcon, LOCK } from './icons';
+import { lin } from '../sim/lineages/registry';
+import { synergyCooldownLeft, synergyName, synergyReady } from '../sim/lineages/synergies';
 import { maxHp } from '../sim/combat';
 import type { World } from '../sim/World';
 import type { Creature } from '../sim/types';
 
-const ICONS: Record<string, string> = {
-  'Quake Slam': '◎', Bulwark: '⛉', 'Rampart Charge': '➤', 'Roll Commit': '⟳', Haymaker: '✊', Grapple: '✋',
-  Avalanche: '⛰', Frenzy: '✸',
-};
 
 function el(tag: string, cls = '', html = ''): HTMLElement {
   const e = document.createElement(tag);
@@ -42,6 +41,13 @@ export class Hud {
   private minimap = document.createElement('canvas');
   private fps = el('div', 'fps hidden');
   private respawn = el('div', 'respawn hidden');
+  private synergy = el('div', 'synergy hidden');
+  private branch = el('div', 'branch hidden');
+  private objective = el('div', 'objective hidden');
+  private tipEl = el('div', 'tip hidden');
+  private tipUntil = 0;
+  private markerEl = el('div', 'marker hidden');
+  private markerPos: { x: number; z: number } | null = null;
   private plates = new Map<number, HTMLElement>();
   private plateLayer = el('div');
   private dmgLayer = el('div');
@@ -57,7 +63,8 @@ export class Hud {
     this.minimap.id = 'minimap';
     this.minimap.width = 280; this.minimap.height = 180;
     this.root.append(this.plateLayer, this.dmgLayer, top, this.vitals, this.abilities, this.channel, this.prompt,
-      this.feed, this.toastEl, this.minimap, this.fps, el('div', 'crosshair'), this.respawn);
+      this.feed, this.toastEl, this.minimap, this.fps, el('div', 'crosshair'), this.respawn,
+      this.synergy, this.branch, this.objective, this.tipEl, this.markerEl);
     for (const k of ['Q', 'E', 'R', 'ult']) {
       const box = el('div', 'ab');
       const icon = el('div', 'icon');
@@ -81,6 +88,22 @@ export class Hud {
     this.toastUntil = now + dur;
   }
 
+  /** A persistent objective line (First Life). */
+  setObjective(html: string | null) {
+    this.objective.classList.toggle('hidden', !html);
+    if (html && this.objective.innerHTML !== html) this.objective.innerHTML = html;
+  }
+
+  /** A ground marker (First Life objectives), clamped to the screen edge when off-screen. */
+  setMarker(pos: { x: number; z: number } | null) { this.markerPos = pos; }
+
+  /** A one-time tooltip card. */
+  tip(title: string, text: string, dur = 9, now = performance.now() / 1000) {
+    this.tipEl.innerHTML = `<b>${title}</b><div>${text}</div>`;
+    this.tipEl.classList.remove('hidden');
+    this.tipUntil = now + dur;
+  }
+
   feedLine(html: string) {
     const d = el('div', '', html);
     this.feed.prepend(d);
@@ -98,6 +121,7 @@ export class Hud {
   update(w: World, me: Creature | null, cam: THREE.Camera, visible: (c: Creature) => boolean, dt: number) {
     const now = performance.now() / 1000;
     if (now > this.toastUntil) this.toastEl.classList.add('hidden');
+    if (now > this.tipUntil) this.tipEl.classList.add('hidden');
     const myTeam = (me?.team ?? w.opts.playerTeam) as Team;
     const enemy = (1 - myTeam) as Team;
     // top: timer, phase, territory
@@ -133,7 +157,8 @@ export class Hud {
         const lockedText = k === 'ult' ? 'Level 20' : 'Level 3';
         ab.box.classList.toggle('locked', !info);
         ab.label.textContent = info ? info.name : lockedText;
-        ab.icon.textContent = info ? (ICONS[info.name] ?? '•') : '🔒';
+        const iconKey = info ? info.name : 'locked';
+        if (ab.icon.dataset.k !== iconKey) { ab.icon.dataset.k = iconKey; ab.icon.innerHTML = info ? abilityIcon(info.name) : LOCK; }
         const ready = me.cd[k] ?? 0;
         const remain = Math.max(0, ready - w.time);
         const broken = k === 'R' && w.time < me.weakBrokenUntil;
@@ -141,6 +166,28 @@ export class Hud {
         ab.num.textContent = info && remain > 0 ? String(Math.ceil(remain)) : broken ? '✕' : '';
         ab.box.classList.toggle('ready', !!info && remain <= 0 && !broken);
       }
+      // pair Synergy indicator
+      const syn = me.kind === 'ascendant' ? synergyName(me) : null;
+      if (syn && R.formForLevel(me.level) >= 1) {
+        const partner = me.partner !== null ? w.creatures[me.partner] : null;
+        const cd = synergyCooldownLeft(w, me);
+        const state = synergyReady(w, me) ? '<span class="ok">ready</span>'
+          : R.formForLevel(me.level) < 2 || (partner && R.formForLevel(partner.level) < 2) ? 'both partners need Stage 2'
+          : !partner?.alive ? 'partner down'
+          : cd > 0 ? `${Math.ceil(cd)}s`
+          : `partner too far (${Math.round(w.dist(me.pos, partner.pos))} m / ${econ('Synergy range')} m)`;
+        this.synergy.innerHTML = `${syn} · ${partner?.name ?? ''} the ${partner?.lineage ?? ''} · ${state}`;
+        this.synergy.classList.remove('hidden');
+      } else this.synergy.classList.add('hidden');
+      // Level 10 branch prompt
+      if (!me.branch && R.formForLevel(me.level) >= 2 && me.alive) {
+        const u = lin(me).ultimates;
+        this.branch.innerHTML = `<b>Choose your branch</b>
+          <div><span class="key">1</span> <b>Aggression</b>: +10% Power, +5% Speed · Ultimate <i>${u.Aggression}</i></div>
+          <div><span class="key">2</span> <b>Tactical</b>: +15% Control, +10% Health · Ultimate <i>${u.Tactical}</i></div>
+          <small>Not chosen by Level 20: Aggression</small>`;
+        this.branch.classList.remove('hidden');
+      } else this.branch.classList.add('hidden');
       // channel bar
       if (me.channel) {
         const labels = { root: 'Rooting', uproot: 'Uprooting', convert: 'Converting cores', field: 'Field converting (70%)' };
@@ -156,6 +203,16 @@ export class Hud {
         this.respawn.innerHTML = `<div>You were cut down</div><div style="font-size:.6em;color:var(--muted)">Budding again in ${Math.ceil(me.respawnAt - w.time)}s · your carried cores were dropped</div>`;
       } else this.respawn.classList.add('hidden');
     }
+    if (this.markerPos && me) {
+      this.v.set(this.markerPos.x, heightAt(this.markerPos.x, this.markerPos.z) + 2, this.markerPos.z).project(cam);
+      const behind = this.v.z > 1;
+      let x = behind ? -this.v.x : this.v.x, y = behind ? -1 : this.v.y;
+      x = Math.max(-0.92, Math.min(0.92, x)); y = Math.max(-0.85, Math.min(0.85, y));
+      this.markerEl.style.left = `${(x * 0.5 + 0.5) * window.innerWidth}px`;
+      this.markerEl.style.top = `${(-y * 0.5 + 0.5) * window.innerHeight}px`;
+      this.markerEl.textContent = `${Math.round(w.dist2d(me.pos, this.markerPos))} m`;
+      this.markerEl.classList.remove('hidden');
+    } else this.markerEl.classList.add('hidden');
     this.drawMinimap(w, me, myTeam, visible);
     this.updatePlates(w, me, cam, visible);
     // damage numbers drift up and fade

@@ -21,7 +21,8 @@ import { CameraRig } from '../render/CameraRig';
 import { Vfx } from '../render/Vfx';
 import { AudioEngine } from '../audio/Audio';
 import { Input } from '../core/Input';
-import { loadSettings, saveSettings, loadProfile, saveProfile, type Settings, type Profile } from '../core/Settings';
+import { loadSettings, saveSettings, loadProfile, saveProfile, TIPS, type Settings, type Profile } from '../core/Settings';
+import { FirstLife } from './FirstLife';
 import { Hud } from '../ui/Hud';
 import { Menus } from '../ui/Menus';
 
@@ -62,6 +63,9 @@ export class Game {
   private timeScale = 1;
   private autopiloting = false;
   private pausedAt = 0;
+  /** Cores the player carried before the last tick (deaths drop them before the event is read). */
+  private carriedBefore = 0;
+  firstLife: FirstLife | null = null;
 
   constructor(container: HTMLElement) {
     this.applyUiScale();
@@ -72,6 +76,7 @@ export class Game {
     this.hud = new Hud(document.body);
     this.menus = new Menus(document.body, {
       start: (l, d) => this.startMatch(l, d),
+      firstLife: (l) => this.startFirstLife(l),
       resume: () => this.resume(),
       quit: () => this.toTitle(),
       settingsChanged: (s) => this.applySettings(s),
@@ -124,6 +129,9 @@ export class Game {
 
   startMatch(lineage: Lineage, difficulty: Difficulty = 'Normal') {
     this.autopiloting = false;
+    this.firstLife = null;
+    this.hud.setObjective(null);
+    this.hud.setMarker(null);
     this.audio.start();
     this.profile.lastLineage = lineage;
     saveProfile(this.profile);
@@ -135,6 +143,24 @@ export class Game {
     this.input.lockPointer();
     const me = this.world.player!;
     this.hud.toast(`You are ${this.world.sideOf(me.team as Team)}`, me.team === 0 ? 'Your base is in the west' : 'Your base is in the east', 4);
+  }
+
+  /** First Life: a scripted solo start, then the real match with bots on Easy. */
+  startFirstLife(lineage: Lineage) {
+    this.startMatch(lineage, 'Easy');
+    this.brains = []; // the other Ascendants wait at their bases
+    this.firstLife = new FirstLife(this.world);
+  }
+
+  private endFirstLife() {
+    const lineage = this.world.player!.lineage;
+    this.firstLife = null;
+    this.hud.setObjective(null);
+    this.hud.setMarker(null);
+    this.profile.firstLifeDone = true;
+    saveProfile(this.profile);
+    this.startMatch(lineage, 'Easy');
+    this.hud.toast('The match begins', 'Bots are on Easy. Choose Normal or Hard on the lineage screen next time.', 4);
   }
 
   pause() {
@@ -198,13 +224,22 @@ export class Game {
       while (this.acc >= R.DT && steps < 8) {
         for (const c of this.world.creatures) this.prev.set(c.id, { ...c.pos });
         for (const b of this.brains) b.update(this.world);
+        this.carriedBefore = this.world.player?.carried ?? 0;
         this.world.step(R.DT);
         this.latched = { q: false, r: false, ult: false, evade: false };
-        this.handleEvents(this.world.drainEvents());
+        const events = this.world.drainEvents();
+        this.firstLife?.onEvents(events);
+        this.handleEvents(events);
         this.acc -= R.DT;
         steps++;
       }
       if (steps === 8) this.acc = 0;
+      if (this.firstLife && this.state === 'playing') {
+        const o = this.firstLife.update();
+        this.hud.setObjective(o.text || null);
+        this.hud.setMarker(o.marker);
+        if (this.firstLife.done || this.input.tappedCode('Enter')) this.endFirstLife();
+      }
     } else if (this.world.result && this.state === 'title') {
       this.world = this.attractWorld(); // keep the backdrop alive
       this.bindWorld();
@@ -237,6 +272,18 @@ export class Game {
     it.e = this.input.held('e');
     it.basic = this.input.held('basic');
     it.interact = this.input.held('interact');
+    if (!me.branch && R.formForLevel(me.level) >= 2) { // the branch prompt is open
+      if (this.input.tapped('branch1')) it.branch = 'Aggression';
+      if (this.input.tapped('branch2')) it.branch = 'Tactical';
+    }
+  }
+
+  /** Shows a one-time tooltip (Version B §12), remembered in the profile. */
+  showTip(key: (typeof TIPS)[number], title: string, text: string) {
+    if (this.profile.tips.includes(key) || this.state !== 'playing') return;
+    this.profile.tips.push(key);
+    saveProfile(this.profile);
+    this.hud.tip(title, text);
   }
 
   private vec(p: { x: number; y: number; z: number }, up = 0) { return new THREE.Vector3(p.x, p.y + up, p.z); }
@@ -300,6 +347,9 @@ export class Game {
         }
         case 'synergy': {
           const p = this.vec(e.pos);
+          if (me && (e.id === me.id || e.partner === me.id)) this.showTip('synergy', e.name, e.name === 'Smash & Roll'
+            ? 'Titan\'s Quake Slam, then the Brawler\'s Roll Commit within 1.5 s, launches the target: it takes +40% damage from both of you. 20 s cooldown for the pair.'
+            : 'A Void Rift on ground the Verdant rooted (or a root finished inside a Rift) grows an 8 m garden for 6 s: enemies lose half their Control and can\'t capture, your nodes inside can\'t be uprooted.');
           this.vfx.ring(p, 8, 0xffffff, 0.8);
           this.vfx.burst(p.clone().setY(p.y + 1), 0xfff2c0, 40, 6, 0.6, 1);
           this.audio.play('capture', p);
@@ -318,6 +368,7 @@ export class Game {
           const p = this.vec(e.pos, 1);
           this.vfx.burst(p, c.kind === 'ascendant' && w.sideOf(c.team as Team) === 'Blightborn' ? 0x5fd4e0 : 0xe8a23a, c.kind === 'ascendant' ? 50 : 18, 6, 0.5, 1.1);
           this.audio.play('death', p, { size: w.height(c) });
+          if (c.isPlayer && this.carriedBefore >= 1) this.showTip('deathcores', 'Your cores were dropped', 'Dying drops everything you carry where you fell. Pick it back up, or return to your base (or a held Hub) more often to bank it as EXP.');
           if (c.kind === 'ascendant') {
             const killer = e.killer !== null ? w.creatures[e.killer] : null;
             const mine = (x: Creature | null) => x && me && x.team === me.team;
@@ -350,6 +401,7 @@ export class Game {
           this.audio.play('transform', p);
           if (c.isPlayer) {
             this.cam.shake(0.6);
+            if (e.form >= 2) this.showTip('stageup', 'You reached a new Stage', 'You are bigger, tougher and easier to spot. At Stage 2 you and your partner unlock your pair\'s Synergy, and you choose a branch: press 1 for Aggression or 2 for Tactical.');
             const names = ['', `${c.lineage} awakens`, 'Stage 2 · Enhanced Form', 'Stage 3 · Ultimate Form'];
             this.hud.toast(names[e.form], e.form === 1 ? 'Q, E and R are ready' : e.form === 3 ? 'Press T for your Ultimate' : 'You are larger, stronger and louder', 3);
           }
@@ -373,6 +425,7 @@ export class Game {
           if (c.isPlayer) {
             this.audio.play('convert');
             this.hud.toast(`+${Math.round(e.exp)} EXP`, e.field ? 'Field conversion (70%)' : 'Cores fed to the birth-pool', 1.8);
+            if (e.field) this.showTip('field', 'Field conversion', 'Converting at a held Hub saves the walk home but gives 70% of the EXP. It takes 6 s plus 1 s per 50 cores, faster with allies in the Hub ring, and pauses while you take damage.');
             this.vfx.burst(this.vec(c.pos, 1), 0xffe2a0, 60, 4, 0.5, 1.2, -1);
           }
           break;
