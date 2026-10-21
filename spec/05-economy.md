@@ -27,7 +27,7 @@ first Stage 2 at 8:00–10:00, first L20 at 16:00–18:00, average end 20:00–2
 
 ## 2. Levels and EXP
 
-**EXP to go from level L to L+1 = 80 + 20 × L.** Total to L20 = **5,320**.
+**EXP to go from level L to L+1 = 60 + 15 × L.** Total to L20 = **3,990**. *(Version B, D-09; was 80 + 20 × L, 5,320. The table below still shows the old curve.)*
 
 | Level | EXP to next | Cumulative | Unlock |
 |---|---|---|---|
@@ -92,7 +92,7 @@ and the aggression bonus is easier to reach with bigger fights.
 | Rule | Value |
 |---|---|
 | Victim drops | **All carried cores** where they die |
-| Bounty | **60 + 10 × victim level** (L1 70 · L10 160 · L20 260), as carried cores |
+| Bounty | **100 + 15 × victim level** (L1 115 · L10 250 · L20 400), as carried cores *(Version B, D-09; was 60 + 10 × level)* |
 | Bounty split | Killer **100%**; each assist (damage or CC on the victim in the last 10 s) **+30%** extra, created by the system |
 | Executions (wildlife or structure kills) | Bounty goes to the nearest enemy player within 30 m, else is lost |
 | Disconnect | Carried cores drop as on death; no bounty |
@@ -128,9 +128,9 @@ Affinity: +25%.
 | Base conversion rate | 100% of carried cores → EXP |
 | **Aggression bonus** | +10% per **full** 100 carried at the start of the channel: 100–199 +10% · 200–299 +20% · 300+ +30% |
 | **Evolution-Sync Resonance** | +10% if the pair partner converts within 10 s of you, within 15 m |
-| **Field conversion** at a held Hub | Same channel time; **70%**, no aggression bonus, no Resonance |
+| **Field conversion** at a held Hub | *Version B (D-08):* 6 s + 1 s per 50 cores, −25% per extra ally in the Hub ring (max −50%); damage pauses it for 1 s instead of breaking it. **70%**, no aggression bonus, no Resonance |
 | Interrupt | Any damage breaks the channel; cores are kept |
-| At Level 20 | Cores convert to **team SAP at 1 SAP per 2 cores** (bonuses apply) |
+| At Level 20 | *Version B (D-05): no SAP. Every 100 cores converted add 10 s of held time to every Hub the team holds.* (Was: team SAP at 1 SAP per 2 cores.) |
 | Respawn | Does **not** convert; you must channel |
 
 **Worked example:** 320 cores at base with the partner: 320 × (1 + 0.30 + 0.10) = **448 EXP**.
@@ -184,6 +184,8 @@ Power bonus % = (level − 15) ÷ 5 × max(0, TI − 50) ÷ 5
 At L20 with 70% TI: **+4% Power**. At 80% TI: +6%. Below 50% TI: nothing.
 
 ## 6. SAP
+
+> **Version B (approved 2026-10-19, `audit/CHANGELOG_DESIGN.md`):** the tuning workbook holds the current values. **SAP is removed** (D-05). Hub Defense rises one level per **45 s held** (+400 Health per level, max 10) and resets when the Hub changes hands. Verdant's Sap Draw costs nothing. The rules below are kept for reference only.
 
 | Rule | Value |
 |---|---|
@@ -370,7 +372,7 @@ except Ultimates and Synergies.
 ## 12. Balance levers, in order of preference
 
 1. **Conversion times** (C1/C2/C3) and the aggression bonus thresholds.
-2. **Bounty formula** (60 + 10 × level).
+2. **Bounty formula** (Version B: 100 + 15 × level).
 3. **Passive income factor** (1.2 × TI).
 4. **Hub Defense cost** (100 × level) and Health per level (400).
 5. **Event weights** and the patron-deck chance (60%).

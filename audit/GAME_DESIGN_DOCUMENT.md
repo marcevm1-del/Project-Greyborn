@@ -6,8 +6,9 @@ Deliverable 7. An implementation-ready specification of **Version B**
 Where this file is silent, `spec/` values apply. Every change from the
 current design is listed in `CHANGELOG_DESIGN.md` with its reason.
 
-Status: **approved by the director on 2026-10-19.** This is the plan being built. At the time of the audit nothing in `gdd/`,
-`spec/` or the code has been changed by this audit.
+Status: **approved by the director on 2026-10-19 and built on 2026-10-21**
+(branch `claude/vigilant-franklin-rjy3mj`; see `game/CHANGELOG.md` 0.2.0). The
+tuning workbook and `spec/` were updated to match; `gdd/` lore is unchanged.
 
 ---
 

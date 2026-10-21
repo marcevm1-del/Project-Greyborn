@@ -9,18 +9,27 @@
 | Performance and progression | `npm test` | Full short bot match: average tick < 2 ms, 99th percentile < 8 ms, someone reaches L15+, nobody stuck at awakening (`perf.test.ts`) | ~15 s |
 | Typecheck | `npm run typecheck` | Strict TypeScript across the project | ~5 s |
 | Browser playtest | `node tests/e2e/smoke.mjs <url> <outDir>` | Real Chromium, production build: title → lineage select → match via real clicks; WASD movement speed; attack and evade inputs; Esc pause and resume; a whole match played out by autopilot; no console errors; screenshots | ~10–20 min under software WebGL |
+| Version B browser checks | `node tests/e2e/versionB.mjs <url> <outDir>` | Four lineage cards and difficulty selector; First Life objective, marker, skip and saved profile; Level 10 branch prompt and key 2; Synergy indicator; SVG icons; Void Rift and Bramble Wall in the browser; no console errors | ~3 min |
 | Visual showcase | `node tests/e2e/showcase.mjs <url> <outDir>` | Screenshots of both lineages at Base Form and Stages 1–3 | ~10 min |
 
 Run the browser tests against `npm run build && npm run preview`, not the
 dev server: hot reload restarts the page when files change mid-test.
 
-## Latest results (2026-10-03)
+## Latest results (2026-10-21, Version B)
 
 | Suite | Result |
 |---|---|
-| Unit + headless + performance | **25 / 25 passed** |
+| Unit + headless + performance (incl. `versionB.test.ts`, `rootVoid.test.ts`, `FirstLife.test.ts`) | **51 / 51 passed** |
 | Typecheck | Passed |
-| Browser playtest | See the table below |
+| Production build | Passed |
+| Browser playtest (`smoke.mjs`) | **12 / 12 passed** (full 12:30 match, no console errors) |
+| Version B browser checks (`versionB.mjs`) | **15 / 15 passed** |
+
+The performance test failed once (99th percentile 8.4 ms against 8 ms) while
+another long simulation was running on the same machine; it passed on every
+run alone.
+
+## Earlier results (2026-10-03)
 
 ### Browser playtest checks
 

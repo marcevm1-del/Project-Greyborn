@@ -90,7 +90,7 @@ Verdant rooted spread into one adjacent neutral cell every 20 s.
 | Slot | Ability | Range / area | Timing | Effect | Damage / heal | Cooldown |
 |---|---|---|---|---|---|---|
 | **Q** | **Bramble Wall** | Wall, 10 m long *(scales)*, 1.5 m tall, placed up to 15 m away | 0.4 s to grow; lasts 6 s | Blocks movement and projectiles; can be destroyed | Wall Health 400 + 2 × P | 18 s |
-| **E** | **Sap Draw** | Ally or self within 15 m | Heal over 4 s | Heals the target; **costs 40 team SAP** | Heal 120 + 1.0 × P | 10 s |
+| **E** | **Sap Draw** | *Version B:* aura, allies within 8 m (self included) | 4 s | Heals **3% max Health per second**; no SAP cost *(was: one ally within 15 m, 120 + 1.0 × P, 40 SAP, 10 s)* | 3%/s for 4 s | 16 s |
 | **R** | **Entangle** | Circle, radius 3 m *(scales)*, up to 15 m away | 0.6 s delay | **Root 1.2 s** | 30 + 0.4 × P | 14 s |
 
 **Rank 2 (L5):** Entangle root 1.5 s.

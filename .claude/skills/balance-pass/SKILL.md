@@ -1,6 +1,6 @@
 ---
 name: balance-pass
-description: Run Greyborn's balance checks after any tuning or rule change - the Python match simulator and headless game matches - and report results against the pacing targets. Use when numbers in spec/greyborn-tuning.xlsx or playtest-overrides.json change, or when asked whether the game is balanced.
+description: Run Greyborn's balance checks after any tuning or rule change - the Python match simulator and headless game matches - and report results against the pacing targets. Use when numbers in spec/greyborn-tuning.xlsx change, or when asked whether the game is balanced.
 argument-hint: "[what changed]"
 allowed-tools: Read Grep Glob
 ---

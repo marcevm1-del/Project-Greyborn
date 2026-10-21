@@ -59,7 +59,7 @@ export class BotBrain {
     if (w.time >= this.nextThink) {
       this.think(w, c);
       this.nextThink = w.time + this.reaction + 0.15 + w.rng.next() * 0.4;
-      this.aimOffset = this.difficulty === 'Normal' ? 0 : (w.rng.next() * 2 - 1) * this.aimError;
+      this.aimOffset = (w.rng.next() * 2 - 1) * this.aimError;
     }
     this.act(w, c);
   }
