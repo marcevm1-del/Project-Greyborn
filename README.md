@@ -21,14 +21,6 @@ Spec, Built or Proposal. Start at [`design-bible/00-README.md`](design-bible/00-
 or open the single-file exports: [Word](design-bible/Greyborn-Design-Bible.docx) ·
 [PDF](design-bible/Greyborn-Design-Bible.pdf).
 
-## Idea vault (`ideas/`)
-
-An [Obsidian](https://obsidian.md) vault: open the `ideas/` folder with *Open folder as vault*.
-It holds a linked note for every creature, region, lineage, map and structure, with the concept
-art embedded, plus an Idea Inbox and templates for new ideas. The generated notes come from the
-design bible; rebuild them with `python3 design-bible/tools/build_vault.py`. Notes in
-`ideas/Ideas/` and `ideas/Templates/` are never overwritten.
-
 ## Design document (`gdd/`)
 
 Built from **GDD v1.0, pp. 120–124** (Chapters 6, 7 and 11).
