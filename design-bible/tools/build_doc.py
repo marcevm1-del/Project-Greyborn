@@ -21,7 +21,8 @@ for i, p in enumerate(parts):
     def inline(m):
         path = os.path.join(src, m.group(1))
         data = base64.b64encode(open(path, 'rb').read()).decode()
-        return 'src="data:image/png;base64,' + data + '" width="640"'
+        mime = 'image/jpeg' if path.endswith(('.jpg', '.jpeg')) else 'image/png'
+        return 'src="data:' + mime + ';base64,' + data + '" width="640"'
     html = re.sub(r'src="(img/[^"]+)"', inline, html)
     t = re.search(r'<h1>(.*?)</h1>', html)
     if t: toc.append(t.group(1))

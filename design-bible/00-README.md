@@ -21,6 +21,8 @@ start building.
 | 9 | `09-maps-ribs-canopy.md` | The Elder Ribs and Breathing Canopy in full |
 | 10 | `10-maps-post-launch.md` | Fevermouth, The Sleeper, Shard Reef, The Nerve and the six later maps |
 | 11 | `11-world-systems.md` | Weather, time of day, Turns, Tension events, hazards, sound |
+| 12 | `12-region-field-guide.md` | Landscape detail for all 12 regions: landforms, materials, light, history layers, food webs, set-dressing kits, with key art |
+| 13 | `13-bestiary-gallery.md` | AI concept art for all 71 creatures (natives, sea, Clamor, Hushed Answers) |
 
 ## Status of the content
 
@@ -55,8 +57,8 @@ When the built game and the spec disagree, the difference is listed in `game/KNO
 
 | Discipline | Start with |
 |---|---|
-| Level design | Parts 1, 7, 8, 9, 10, 11 |
-| Character art | Parts 1, 2, 4, 5, 6 (anatomy, silhouettes, materials, sizes) |
+| Level design | Parts 1, 7, 8, 9, 10, 11, 12 |
+| Character art | Parts 1, 2, 4, 5, 6, 13 (anatomy, silhouettes, materials, sizes, concept art) |
 | Animation | Parts 1, 2, 4, 5, 6 (animation lists, telegraph timings) |
 | VFX | Parts 1, 2, 6, 7, 11 |
 | Audio | Every "Audio" row, and Part 11 |

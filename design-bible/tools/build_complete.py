@@ -75,9 +75,10 @@ def render(path):
             return m.group(0)
         data = base64.b64encode(open(img, "rb").read()).decode()
         width = 290 if "screenshots" in img else 600  # screenshots sit two to a table row
-        return 'src="data:image/png;base64,' + data + '" width="' + str(width) + '"'
+        mime = "image/jpeg" if img.endswith((".jpg", ".jpeg")) else "image/png"
+        return 'src="data:' + mime + ';base64,' + data + '" width="' + str(width) + '"'
 
-    return re.sub(r'src="([^":]+\.png)"', inline, html)
+    return re.sub(r'src="([^":]+\.(?:png|jpe?g))"', inline, html)
 
 
 def main(out):
